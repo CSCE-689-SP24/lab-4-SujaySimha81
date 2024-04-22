@@ -1,0 +1,232 @@
+/opt/coe/synopsys/vcs/Q-2020.03-SP2-12/bin/vcs: line 6316: tclsh: command not found
+
+Warning-[DEBUG_DEP] Option will be deprecated
+  The option '-debug_pp' will be deprecated in a future release.  Please use 
+  '-debug_acc+pp+dmptf -debug_region+cell+encrypt' instead.
+
+
+Warning-[DEBUG_DEP] Option will be deprecated
+  The option '-debug_pp' will be deprecated in a future release.  Please use 
+  '-debug_acc+pp+dmptf -debug_region+cell+encrypt' instead.
+
+                         Chronologic VCS (TM)
+     Version Q-2020.03-SP2-12_Full64 -- Thu Apr 18 02:44:01 2024
+               Copyright (c) 1991-2020 by Synopsys Inc.
+                         ALL RIGHTS RESERVED
+
+This program is proprietary and confidential information of Synopsys Inc.
+and may be used and disclosed only as authorized in a license agreement
+controlling such use and disclosure.
+
+
+Note-[BC_USE] Backward Compatibility features in use.
+  Using BC configuration 
+  /opt/coe/synopsys/zebu/Q-2020.03-SP1-4/etc/vcs/synopsys_bc.setup     
+
+
+Warning-[LCA_FEATURES_ENABLED] Usage warning
+  LCA features enabled by '-lca' argument on the command line.  For more 
+  information regarding list of LCA features please refer to Chapter "LCA 
+  features" in the VCS Release Notes
+
+UNIZFE: Turning ON UNIZFE mode
+Parsing design file '../source/design/parity_check.sv'
+Parsing design file '../source/design/fifo.sv'
+Parsing design file '../source/design/clkg.sv'
+Parsing design file '../source/design/dut.sv'
+Parsing design file '../source/design/parity.sv'
+Parsing design file '../source/stb/ram.sv'
+Parsing design file '../source/stb/rom.sv'
+Parsing design file '../source/stb/stb.sv'
+Parsing design file '../source/stb/top.sv'
+Parsing design file '../source/stb/proba.sv'
+Parsing design file '../source/stb/bind_spy.sv'
+Parsing design file '../source/stb/fifo_usage_spy.sv'
+Parsing design file '../source/stb/wave.sv'
+Parsing library directory file '/opt/coe/synopsys/vcs/Q-2020.03-SP2-12/etc/unizfe/verilog/zceiClockPort.v'
+Top Level Modules:
+       top
+       wave
+No TimeScale specified
+
+Warning-[TFIPC] Too few instance port connections
+../source/stb/stb.sv, 38
+stb, "zceiClockPort u_clk0( .cclock (clk0));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+../source/stb/stb.sv, 47
+stb, "zceiClockPort u_clk1( .cclock (clk1));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+[UFE_FLOW]: RhinoDB Rtl Population based on design traversal started
+[UFE_FLOW]: Trying to load NameDB library without path: libNameDB.so
+[UFE_FLOW]: RhinoDB encryption support is disabled
+[UFE_FLOW PROBES]: Status after DIRECTED matching: Processed 5 probes: 5 matched, resulting 5 signals collected for protection.
+
+Warning-[ZEBU_SVA-NOAB] Assertion with an action block
+../source/stb/top.sv, 54
+"assert_design_req1_empty_assert: assert property(p1)$display("FIFO empty assertion passed");  else $error("FIFO empty assertion failed"); "
+  Only severity is supported in user defined fail action block, ignoring any 
+  other statements in the action block
+
+
+Warning-[ZEBU_SVA-NOAB] Assertion with an action block
+../source/stb/top.sv, 60
+"assert_design_req2_full_assert: assert property(p2)$display("FIFO full assertion passed");  else $error("FIFO full assertion failed"); "
+  Only severity is supported in user defined fail action block, ignoring any 
+  other statements in the action block
+
+
+Warning-[SVAC-IAAB] Immediate assert action block
+../source/design/parity_check.sv, 26
+parity_check, "assert((!error))$display("SVA: Passing assertion");  else $error("SVA: Parity error detected.");"
+  Action blocks in immediate and deferred assertions are not supported.
+  The action block is ignored.
+
+
+Warning-[ZEBU_SVA-NOAB] Assertion with an action block
+../source/design/parity_check.sv, 26
+parity_check, "assert((!error));  else $error("SVA: Parity error detected.");"
+  Only severity is supported in user defined fail action block, ignoring any 
+  other statements in the action block
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|        Function Name|          Path|# Inp|# Out|                    Source File|Source L|Call |                         Filtered Reason|DPI Type|       Status|
++---------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|fifo_usage_spy_notify|fifo_usage_spy|    4|    0|../source/stb/fifo_usage_spy.sv|      29|    1|        DPI synthesis enabled for module|  import|  synthesized|
++---------------------------------------------------------------------------------------------------------------------------------------------------------------+
+Processing DPI imported functions in module fifo_usage_spy.
+Processing DPI imported functions in module stb.
+#   step INFO : RTLDB version is Build Q-2020.03-SP1-4 Oct 17 2022 (4399324)
+Info: Invoking Simon...
+Info: Simon VCS Start
+                                SIMON
+     Version Q-2020.03-SP2-12_Full64 -- Thu Apr 18 02:44:02 2024
+               Copyright (c) 1991-2020 by Synopsys Inc.
+                         ALL RIGHTS RESERVED
+
+This program is proprietary and confidential information of Synopsys Inc.
+and may be used and disclosed only as authorized in a license agreement
+controlling such use and disclosure.
+
+
+Note-[SM_PME] Processing Module/Entity
+  Processing: fifo_usage_spy Parameterized Name: fifo_usage_spy
+
+
+Note-[SM_PF] Processing finished
+  Processing of all modules finished
+
+
+Note-[SM_POME] Processing Module/Entity
+  Performing post-processing optimizations on Module/Entity: parity_check
+
+
+Note-[SM_POME] Processing Module/Entity
+  Performing post-processing optimizations on Module/Entity: clkg
+
+
+Note-[SM_POME] Processing Module/Entity
+  Performing post-processing optimizations on Module/Entity: fifo_usage_spy
+
+
+Note-[SM_POME] Processing Module/Entity
+  Performing post-processing optimizations on Module/Entity: fifo_0000
+
+
+Note-[SM_POME] Processing Module/Entity
+  Performing post-processing optimizations on Module/Entity: parity
+
+
+Note-[SM_POME] Processing Module/Entity
+  Performing post-processing optimizations on Module/Entity: dut
+
+
+Note-[SM_POME] Processing Module/Entity
+  Performing post-processing optimizations on Module/Entity: proba
+
+
+Note-[SM_POME] Processing Module/Entity
+  Performing post-processing optimizations on Module/Entity: rom
+
+
+Note-[SM_MEM_INFO] Module has inferred memories
+../source/stb/rom.sv, 8
+  Inferred memory statistics for module 'rom' (Instances: 1)
+  ------------------------------------------------------------------------------
+  |Name |Size |TotalPorts |ReadPorts |WritePorts |Reset |Initial |
+  ------------------------------------------------------------------------------
+  | mem | 2304(256x9) |TP:1 |RP:1(A:1,S:0) |WP:0(A:0,S:0) |R:None |I:No |
+  ------------------------------------------------------------------------------
+
+
+Note-[SM_POME] Processing Module/Entity
+  Performing post-processing optimizations on Module/Entity: proba_0000
+
+
+Note-[SM_POME] Processing Module/Entity
+  Performing post-processing optimizations on Module/Entity: ram
+
+
+Note-[SM_MEM_INFO] Module has inferred memories
+../source/stb/ram.sv, 8
+  Inferred memory statistics for module 'ram' (Instances: 1)
+  ------------------------------------------------------------------------------
+  |Name |Size |TotalPorts |ReadPorts |WritePorts |Reset |Initial |
+  ------------------------------------------------------------------------------
+  | mem | 2304(256x9) |TP:1 |RP:0(A:0,S:0) |WP:1(A:0,S:1) |R:None |I:No |
+  ------------------------------------------------------------------------------
+
+
+Note-[SM_POME] Processing Module/Entity
+  Performing post-processing optimizations on Module/Entity: stb
+
+
+Note-[SM_POME] Processing Module/Entity
+  Performing post-processing optimizations on Module/Entity: top
+
+
+Note-[SM_POF] Processing finished
+  Post-processing optimizations of all modules finished
+
+
+Warning-[SM_BB_LIST] Blackbox module list
+  List of modules in design which are blackboxed by tool/user (7): 
+  M_RTL_ZDPI_TASK00 M_RTL_ZDPI_TASK01 M_RTL_ZDPI_TASK10 M_RTL_ZDPI_TASK110 
+  M_RTL_ZDPI_TASK20 M_RTL_ZDPI_TASK21 M_RTL_ZSVA_IMM_TASK30
+
+
+Warning-[SM_INFRA_BB_LIST] Infra blackbox module list
+  List of tool's instrumented blackbox modules (6): 
+  ZSVA_MOD_0 ZSVA_MOD_1 __ZEBU_mem_a256_d9_ra __ZEBU_mem_a256_d9_ws 
+  eVe_initial zebu_reqsig_clock_zcompositeclock
+
+=======================================================
+VCS pre-synth CPU Time        : 0.41 sec
+VCS pre-synth Wall-Clock Time : 1.00 sec
+VCS pre-synth Current Memory  : 585 MB
+SIMON Master CPU Time         : 0.14 sec
+SIMON Total  CPU Time         : 0.14 sec
+SIMON Master Wall-Clock Time  : 2.17 sec
+SIMON Master Current Memory   : 592 MB
+SIMON Master Peak Memory      : 592 MB
+SIMON Distribution            : 0.01,0.00,0.00,0.00 sec
+=======================================================
+Info: Simon VCS Finished
+Info: Simon call complete 
+Info: Exiting after Simon Analysis 
+
+#   exec summary : wall clock 0m3s, user 0m0.344s, sys 0m0.225s
+#   exec summary : Total memory: 606676kB - RSS memory: 157224 kB - Data memory: 158844 kB
+#   exec summary : Successful execution
+
+# end time is Thu Apr 18 02:44:04 2024
+
+CPU time: .688 seconds to compile
+command exit code is '0'

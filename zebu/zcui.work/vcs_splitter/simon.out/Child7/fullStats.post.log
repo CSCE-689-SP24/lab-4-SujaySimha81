@@ -1,0 +1,22 @@
+
+Processing rom
+before constantPropagate: 0u 0s 1150e 601540kB
+after constantPropagate: 0u 0s 1150e 601540kB
+before removeUnusedSignals circuit: 0u 0s 1150e 601540kB
+after removeUnusedSignals circuit: 0u 0s 1150e 601540kB
+before optimize latch enable: 0u 0s 1150e 601540kB
+after optimize latch enable: 0u 0s 1150e 601540kB
+before removeReadAfterMissingWrite: 0u 0s 1150e 601540kB
+after removeReadAfterMissingWrite: 0u 0s 1150e 601540kB
+before undoDimensionalSplitOfMemories: 0u 0s 1150e 601540kB
+after undoDimensionalSplitOfMemories: 0u 0s 1150e 601540kB
+before extractMemories: 0u 0s 1150e 601540kB
+after extractMemories: 0u 0s 1164e 601540kB
+before extractHolds: 0u 0s 1163e 601540kB
+after extractHolds: 0u 0s 1163e 601540kB
+before simplifyAdders: 0u 0s 1163e 601540kB
+after simplifyAdders: 0u 0s 1163e 601540kB
+before reportUnresolvedType: 0u 0s 1163e 601540kB
+after reportUnresolvedType: 0u 0s 1163e 601540kB
+before dumpingPerModuleScm : 0u 0s 1163e 601540kB
+after dumpingPerModuleScm : 0u 0s 1163e 601540kB

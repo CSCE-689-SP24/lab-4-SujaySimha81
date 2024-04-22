@@ -37,9 +37,9 @@ if {[file exists $dir] && [file isdirectory $dir]} {
 }
 
 # TODO: Connect to the ZeBu emulator with zRci output directory name ​​runtime_output
-
+start_zebu runtime_output
 # TODO: Initialize the content of the ROM with the data in ../memories/rom.hex
-
+memory -load top.u_stb.u_rom.mem -file ../memories/rom.hex
 #----------------------------------------
 # Section for SVAs only - activation
 #----------------------------------------
@@ -49,19 +49,22 @@ proc sva_callback {success severity message filename line scope start_time end_t
 
 # Start SVA processing
 if {[sva -has_assertions] == 1} { 
-sva -start -clock top.u_stb.clk0 -action sva_callback 
+sva -start -clock top.u_stb.clk0 -action sva_callback
 sva -enable -report
+#sva -start -clock top.u_stb.clk0 -file sva.ztdb
+#zsvaReport –i dump.zsva –z ../../zcui.work/zebu.work/
 } 
 #------------END OF SECTION for SVA ---------------
 
 #----------------------------------------
 # Section for DPI only - activation
 #----------------------------------------
-# TODO: Load the DPI dynamic library libDPI.so 
-
+# TODO: Load the DPI dynamic library libDPI.so
+ccall -load ../libDPI/libDPI.so
 # TODO: Set the sampling clock to top.u_stb.clk0
-
+ccall -sampling_clock -expression "top.u_stb.clk0"
 # TODO: Enable DPI calls
+ccall -enable
 
 #------------END OF SECTION for DPI ---------------
 
@@ -98,9 +101,13 @@ force top.u_stb.proba_wr\[9:0\] [proba2hex 30] -radix hexa -freeze
 puts "# Resetting design during 10 clock cycles"
 # TODO: 
 # Force rstn signal to enable reset
+force top.u_stb.rstn 'b0 -freeze
 # Run for 10 cycles
+run 10
 # Disable reset
+force top.u_stb.rstn 'b1 -freeze
 # Run for 1000 cycles
+run 1000
 
 puts "# Running 1000 cycles"
 
@@ -111,7 +118,7 @@ puts "# on output: [get top.u_stb.cnt_error_out -radix dec]"
 
 puts "# Storing ram memory content to memdump.hex file"
 # TODO: Dump the content of the RAM to a memdump.hex text file
-
+memory -store top.u_stb.u_rom.mem -file memdump.hex
 
 puts "#############################################"
   
@@ -132,4 +139,4 @@ dump -close -fid $fwc_fid
 #----------------------------------------------------------------
 # TODO: Closing Emulation - Last command of script, for all scenarios
 #----------------------------------------------------------------
-
+finish

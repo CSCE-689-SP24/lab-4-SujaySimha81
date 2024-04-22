@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ZeBuUiDoc version="1.0" creator="zCui" type="xcui">
+ <Metrics>
+  <Attribute id="compileStatus">
+   <Value>PASS</Value>
+  </Attribute>
+  <Attribute id="frontendCompileTime">
+   <Value>27</Value>
+  </Attribute>
+  <Attribute id="frontendCPU">
+   <Value>13</Value>
+  </Attribute>
+  <Attribute id="backendCompileTime">
+   <Value>43</Value>
+  </Attribute>
+  <Attribute id="backendCPU">
+   <Value>5</Value>
+  </Attribute>
+  <Attribute id="overallCompileTime">
+   <Value>70</Value>
+  </Attribute>
+  <Attribute id="compileTimeWithGrid">
+   <Value>47</Value>
+  </Attribute>
+  <Attribute id="compileTimeWithoutGrid">
+   <Value>18</Value>
+  </Attribute>
+  <Attribute id="idealCompileTime">
+   <Value>8</Value>
+  </Attribute>
+  <Attribute id="ZebuLocal_CumulativeTime">
+   <Value>13</Value>
+  </Attribute>
+  <Attribute id="ZebuSynthesis_CumulativeTime">
+   <Value>4</Value>
+  </Attribute>
+  <Attribute id="Zebu_CumulativeTime">
+   <Value>30</Value>
+  </Attribute>
+  <Attribute id="boardNumber">
+   <Value>1</Value>
+  </Attribute>
+  <Attribute id="fpgaNumber">
+   <Value>3</Value>
+  </Attribute>
+  <Attribute id="systemArchitecture">
+   <Value>ZS3</Value>
+  </Attribute>
+  <Attribute id="softwareRelease">
+   <Value>Q-2020.03-SP1-4</Value>
+  </Attribute>
+  <Attribute id="driverClockFrequencyKHz">
+   <Value>10000</Value>
+  </Attribute>
+  <Table id="main_stage_duration">
+   <Header>
+    <VCS>
+     <Title>vcs</Title>
+    </VCS>
+    <VCS_ANALYZER>
+     <Title>vcs analyzer</Title>
+    </VCS_ANALYZER>
+    <SYNTHESIS>
+     <Title>synthesis</Title>
+    </SYNTHESIS>
+    <RTLDB_INDEXER>
+     <Title>rtldb indexer</Title>
+    </RTLDB_INDEXER>
+   </Header>
+   <Row>
+    <VCS>6</VCS>
+    <VCS_ANALYZER>1</VCS_ANALYZER>
+    <SYNTHESIS>4</SYNTHESIS>
+    <RTLDB_INDEXER>2</RTLDB_INDEXER>
+   </Row>
+   <Row>
+    <VCS>4</VCS>
+    <VCS_ANALYZER>1</VCS_ANALYZER>
+    <SYNTHESIS>2</SYNTHESIS>
+    <RTLDB_INDEXER>0</RTLDB_INDEXER>
+   </Row>
+   <Row>
+    <VCS> 160084</VCS>
+    <VCS_ANALYZER>0</VCS_ANALYZER>
+    <SYNTHESIS> 82168</SYNTHESIS>
+    <RTLDB_INDEXER> 77948</RTLDB_INDEXER>
+   </Row>
+  </Table>
+ </Metrics>
+</ZeBuUiDoc>

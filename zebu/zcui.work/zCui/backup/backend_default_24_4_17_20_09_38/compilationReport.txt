@@ -1,0 +1,274 @@
+Compile Profile Report
+BETA version: results may not be fully accurate
+
+____________________________________________________________________________________________________
+Table Of Contents
+
+1 Compilation Summary
+2 Compile time with delay (slot and grid)
+3 Compile time without delay
+4 Main Compilation Stages
+5 Hosts
+6 Memory usage
+7 Job Queue Memory Analysis
+8 Grid Delay
+9 Grid Delay Per Job Queue
+
+____________________________________________________________________________________________________
+Compilation Summary
+
+Last session wall clock times:
+    FE     : 38s
+    BE     : 4min 59s
+    Total  : 5min 37s
+
+All sessions cumulative compile times:
+    without delay  : 13min 06s
+    with delay*    : 13min 20s
+
+*including slot and grid delays, difference with total wall clock time could be NFS wait or internal flow handling delays
+
+
+           Phase               (%)     Slot delay   Grid delay   Elapsed time              Host               Total # of jobs fired   Max memory consumption
+---------------------------- -------- ------------ ------------ -------------- ----------------------------- ----------------------- -----------------------
+VCS                             1.40     00:00:00     00:00:02       00:00:11   csce-quinn-s1.engr.tamu.edu                       1                 156.27MB
+Synthesis                       0.38     00:00:00     00:00:02       00:00:03   csce-quinn-s1.engr.tamu.edu                       1                  80.24MB
+zTopBuild                       1.02     00:00:00     00:00:02       00:00:08   csce-quinn-s1.engr.tamu.edu                       1                 313.72MB
+zCoreBuild                      1.40     00:00:00     00:00:01       00:00:11   csce-quinn-s1.engr.tamu.edu                       1                 460.23MB
+zPar                            1.53     00:00:00     00:00:00       00:00:12                                                     0                       0B
+Create Timing DB (SDF Mode)     0.38     00:00:00     00:00:00       00:00:03                                                     0                       0B
+Other tasks                    93.89     00:00:00     00:00:07       00:12:18                             -                       4                        -
+Total                         100.00     00:00:00     00:00:14       00:13:06                             -                       8                        -
+
+Columns:
+ - Phase                  : compilation phase
+ - (%)                    : percentage of contribution to the overall compile time
+ - Slot delay             : time waiting for a slot on the grid
+ - Grid delay             : time between the task is spawed and the task is launched
+ - Elapsed time           : contribution to the overall compile time
+ - Host                   : host where the task was launched (only for tasks external to zCui)
+ - Total # of jobs fired  : number of jobs with same phase fired
+ - Max memory consumption : job in the phase with max memory taken
+
+____________________________________________________________________________________________________
+Compile time with delay (slot and grid)
+
+
+                Task                     (%)     Slot delay   Grid delay   Elapsed time   Spawn Time   Finish Time              Host            
+-------------------------------------- -------- ------------ ------------ -------------- ------------ ------------- ----------------------------
+Check Vcs Binaries Version                0.00     00:00:00     00:00:02       00:00:00     00:00:00      00:00:02   csce-quinn-s1.engr.tamu.edu
+Target Configuration                      0.00     00:00:00     00:00:02       00:00:00     00:00:02      00:00:04   csce-quinn-s1.engr.tamu.edu
+Analyze Target Configuration Results      0.00     00:00:00     00:00:00       00:00:00     00:00:04      00:00:04                              
+Build Fs Macro Script                     0.00     00:00:00     00:00:00       00:00:00     00:00:06      00:00:06                              
+Build Fs Macro Library                    0.00     00:00:00     00:00:00       00:00:00     00:00:00      00:00:00                              
+VCS                                       1.40     00:00:00     00:00:02       00:00:11     00:00:08      00:00:21   csce-quinn-s1.engr.tamu.edu
+Analyze VCS Results                       0.64     00:00:00     00:00:00       00:00:05     00:00:21      00:00:26                              
+Bundle 0                                  0.38     00:00:00     00:00:02       00:00:03     00:00:28      00:00:33   csce-quinn-s1.engr.tamu.edu
+Bundle_0_Analyzer                         0.00     00:00:00     00:00:00       00:00:00     00:00:33      00:00:33                              
+Prepare Backend Flow                      0.13     00:00:00     00:00:00       00:00:01     00:00:35      00:00:36                              
+Make RTL DB indexes                       0.13     00:00:00     00:00:01       00:00:01     00:00:39      00:00:41   csce-quinn-s1.engr.tamu.edu
+Make RTL DB link                          0.00     00:00:00     00:00:02       00:00:00     00:00:41      00:00:43   csce-quinn-s1.engr.tamu.edu
+zTopBuild                                 1.02     00:00:00     00:00:02       00:00:08     00:00:43      00:00:53   csce-quinn-s1.engr.tamu.edu
+Analyze System Building Results           0.00     00:00:00     00:00:00       00:00:00     00:00:53      00:00:53                              
+Build zCore Part_0                        1.40     00:00:00     00:00:01       00:00:11     00:00:56      00:01:08   csce-quinn-s1.engr.tamu.edu
+Analyze zCore Building Results Part_0     0.00     00:00:00     00:00:00       00:00:00     00:01:08      00:01:08                              
+Post ZCore Compilation Join               0.13     00:00:00     00:00:00       00:00:01     00:01:10      00:01:11                              
+Pre PAR Script Builder                    0.00     00:00:00     00:00:00       00:00:00     00:01:13      00:01:13                              
+zPar                                      1.53     00:00:00     00:00:00       00:00:12     00:00:00      00:00:00                              
+Analyze zPar result                       0.00     00:00:00     00:00:00       00:00:00     00:01:15      00:01:15                              
+Create RTB Configuration: U0_M0_IF        1.27     00:00:00     00:00:00       00:00:10     00:00:00      00:00:00                              
+Analyze zRTB_FW result: U0_M0_IF          0.00     00:00:00     00:00:00       00:00:00     00:01:19      00:01:19                              
+Controller_U0_M0_IF                      91.60     00:00:00     00:00:00       00:12:00     00:00:00      00:00:00                              
+Create Timing DB (SDF Mode)               0.38     00:00:00     00:00:00       00:00:03     00:00:00      00:00:00                              
+Total time                              100.00     00:00:00     00:00:14       00:13:06            -             -   -                          
+
+Columns:
+ - Task                   : task label
+ - (%)                    : percentage of contribution to the overall compile time
+ - Slot delay             : time waiting for a slot on the grid
+ - Grid delay             : time between the task is spawed and the task is launched
+ - Elapsed time           : contribution to the overall compile time
+ - Spawn time             : time spawning on the grid, taking the spawn time of the first task as reference
+ - Finish time            : time finishing, taking the spawn time of the first task as reference
+ - Host                   : host where the task was launched (only for tasks external to zCui)
+
+
+____________________________________________________________________________________________________
+Compile time without delay
+
+
+                Task                     (%)     Elapsed time              Host            
+-------------------------------------- -------- -------------- ----------------------------
+Check Vcs Binaries Version                0.00       00:00:00   csce-quinn-s1.engr.tamu.edu
+Target Configuration                      0.00       00:00:00   csce-quinn-s1.engr.tamu.edu
+Analyze Target Configuration Results      0.00       00:00:00                              
+Build Fs Macro Script                     0.00       00:00:00                              
+Build Fs Macro Library                    0.00       00:00:00                              
+VCS                                       1.40       00:00:11   csce-quinn-s1.engr.tamu.edu
+Analyze VCS Results                       0.64       00:00:05                              
+Bundle 0                                  0.38       00:00:03   csce-quinn-s1.engr.tamu.edu
+Bundle_0_Analyzer                         0.00       00:00:00                              
+Prepare Backend Flow                      0.13       00:00:01                              
+Make RTL DB indexes                       0.13       00:00:01   csce-quinn-s1.engr.tamu.edu
+Make RTL DB link                          0.00       00:00:00   csce-quinn-s1.engr.tamu.edu
+zTopBuild                                 1.02       00:00:08   csce-quinn-s1.engr.tamu.edu
+Analyze System Building Results           0.00       00:00:00                              
+Build zCore Part_0                        1.40       00:00:11   csce-quinn-s1.engr.tamu.edu
+Analyze zCore Building Results Part_0     0.00       00:00:00                              
+Post ZCore Compilation Join               0.13       00:00:01                              
+Pre PAR Script Builder                    0.00       00:00:00                              
+zPar                                      1.53       00:00:12                              
+Analyze zPar result                       0.00       00:00:00                              
+Create RTB Configuration: U0_M0_IF        1.27       00:00:10                              
+Analyze zRTB_FW result: U0_M0_IF          0.00       00:00:00                              
+Controller_U0_M0_IF                      91.60       00:12:00                              
+Create Timing DB (SDF Mode)               0.38       00:00:03                              
+Total                                   100.00       00:13:06   -                          
+
+Columns:
+ - Task                   : task label
+ - (%)                    : percentage of contribution to the overall compile time
+ - Elapsed time           : contribution to the overall compile time
+ - Host                   : host where the task was launched (only for tasks external to zCui)
+
+
+
+____________________________________________________________________________________________________
+Main Compilation Stages
+
+
+Front End Stages Timing
+
+
+        Task           Elapsed time   Execution time
+--------------------- -------------- ---------------
+Launch VCS                 00:00:13         00:00:11
+Elaboration Analyzer       00:00:05         00:00:05
+Launch Verdi               00:00:05         00:00:03
+Synthesis                  00:00:05         00:00:03
+Back end Entry             00:00:02         00:00:01
+
+Columns :
+ - elapsed time   : the time for the task being spawed and released
+ - execution time : the time for the task being executed
+
+Top 10 Synthesis Bundles
+
+
+  Duration      Waiting for Slot Duration   Total Duration
+-------------- --------------------------- ---------------
+Bundle 0 (3s)   Bundle 0 (2s)               Bundle 0 (5s) 
+
+
+Back-end Stages
+
+Back End Stages Timing for backend_default
+
+            Task               Elapsed time   Execution time
+----------------------------- -------------- ---------------
+Build Accessibility Graphs         00:00:02         00:00:01
+Build System                       00:00:10         00:00:08
+Build zCore Part_0                 00:00:12         00:00:11
+Convert Netlist                    00:00:02         00:00:01
+Create Timing DB                   00:00:04         00:00:02
+Create Timing DB (SDF Mode)        00:00:00         00:00:00
+Create Timing DB (post FPGA)       00:00:00         00:00:00
+Place and Route System             00:00:00         00:00:00
+Simulate Graphs                    00:00:02         00:00:01
+
+Columns :
+ - elapsed time   : the time for the task being spawed and released
+ - execution time : the time for the task being executed
+
+Top 5 zCore
+
+
+        Duration           Waiting for Slot Duration        Total Duration     
+------------------------- --------------------------- -------------------------
+Build zCore Part_0 (11s)   Build zCore Part_0 (1s)     Build zCore Part_0 (12s)
+
+
+Top 10 FPGAs
+
+
+          Duration              Waiting for Slot Duration          Total Duration        
+------------------------------ --------------------------- ------------------------------
+U0_M0_F00 Original (4min 06s)   U0_M0_F00 Original (2s)     U0_M0_F00 Original (4min 08s)
+
+
+
+____________________________________________________________________________________________________
+Hosts
+
+
+       Machine name                           Model name                   CPU (MHz)   Cache size   CPU cores   Bogomips             Address sizes              Percent of CPU
+---------------------------- -------------------------------------------- ----------- ------------ ----------- ---------- ------------------------------------ ---------------
+csce-quinn-s1.engr.tamu.edu    Intel(R) Xeon(R) CPU E5-2650 v3 @ 2.30GHz    2496.673     25600 KB          10    4600.38    46 bits physical, 48 bits virtual               2%
+
+
+
+____________________________________________________________________________________________________
+Memory usage
+
+
+                                  Task                                      Maximum resident set size                     Task Label                       Job Queue  
+-------------------------------------------------------------------------- --------------------------- ------------------------------------------------ --------------
+backend_default_U0_M0_F00_Original                                                             3.07GB   Original                                         ZebuIse      
+backend_default_zCoreBuild_Part_0                                                            460.23MB   Build zCore Part_0                               Zebu         
+backend_default_zSimzilla                                                                    351.93MB   Simulate Graphs                                  Zebu         
+backend_default_zTopBuild                                                                    313.72MB   Build System                                     Zebu         
+BE_Version_Checker                                                                           243.12MB   Check Back-End Binaries Version                  ZebuLocal    
+backend_default_zRtlToEqui                                                                   160.62MB   Convert Netlist                                  Zebu         
+vcs_splitter_VCS_Task_Builder                                                                156.27MB   Launch VCS                                       Zebu         
+backend_default_zGraphGenerator                                                              155.36MB   Build Accessibility Graphs                       Zebu         
+backend_default_U0_M0_F08_FpgaPostProc                                                       140.93MB   FPGA post Process                                Zebu         
+backend_default_zEquiGenerator                                                               121.70MB   Build Equipotentials                             Zebu         
+backend_default_zTime                                                                        117.11MB   Create Timing DB                                 Zebu         
+backend_default_zSimuFsdbHeader                                                              104.72MB   zSimuFsdbHeader                                  Zebu         
+RhinoFsdb_Builder                                                                             83.02MB   Build Rhino Fsdb                                 Zebu         
+design_Default_RTL_GroupBundle_0_Synthesis                                                    80.24MB   Bundle 0                                         ZebuSynthesis
+backend_default_RTL_DB_Indexer                                                                76.12MB   Make RTL DB indexes                              Zebu         
+Vcs_Version_Checker                                                                           48.77MB   Check Vcs Binaries Version                       ZebuLocal    
+backend_default_RTL_DB_RunTime                                                                44.35MB   Make RTL DB for Run Time                         Zebu         
+backend_default_RTL_DB_Link                                                                   44.35MB   Make RTL DB link                                 Zebu         
+Verdi_Compilation                                                                             43.18MB   Launch Verdi                                     Zebu         
+Target_Config                                                                                 40.24MB   Target Configuration                             Zebu         
+backend_default_Intermediate_Profiling_Results_Analyzer_VCSAnalyzer                           18.03MB   Compilation Profiler (after VCSAnalyzer)         ZebuLocal    
+backend_default_Intermediate_Profiling_Results_Analyzer_BackendEntry                          18.03MB   Compilation Profiler (after BackendEntry)        ZebuLocal    
+backend_default_Intermediate_Profiling_Results_Analyzer_ZTopBuildAnalyzer                     18.03MB   Compilation Profiler (after ZTopBuildAnalyzer)   ZebuLocal    
+FE_Version_Checker                                                                            10.89MB   Check Front-End Binaries Version                 ZebuLocal    
+backend_default_U0_M0_F00_Cleaning                                                             2.03MB   Cleaning All PaRs                                Zebu         
+
+
+
+____________________________________________________________________________________________________
+Job Queue Memory Analysis
+
+
+  Job queue     Maximum RSS : max value   Maximum RSS : average value
+-------------- ------------------------- ----------------------------
+Zebu                           460.23MB                      142.11MB
+ZebuIse                          3.07GB                        3.07GB
+ZebuLocal                      243.12MB                       59.48MB
+ZebuSynthesis                   80.24MB                       80.24MB
+
+
+
+____________________________________________________________________________________________________
+Grid Delay
+
+There are no tasks with grid delay > 30s
+
+
+____________________________________________________________________________________________________
+Grid Delay Per Job Queue
+
+
+  Job queue     Wait(max)   Wait(average)
+-------------- ----------- --------------
+Zebu             00:00:04        00:00:01
+ZebuIse          00:00:02        00:00:02
+ZebuLocal        00:00:02        00:00:01
+ZebuSynthesis    00:00:02        00:00:02
+
+

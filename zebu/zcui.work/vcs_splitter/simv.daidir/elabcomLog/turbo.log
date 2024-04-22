@@ -1,0 +1,6 @@
+Command Line: /opt/coe/synopsys/vcs/Q-2020.03-SP2-12/linux64/bin/elabcom -logdir /home/grads/s/sujaysimha/CSCE_689/lab-4-SujaySimha81/zebu/zcui.work/vcs_splitter/simv.daidir/elabcomLog -simvdaidir /home/grads/s/sujaysimha/CSCE_689/lab-4-SujaySimha81/zebu/zcui.work/vcs_splitter/simv.daidir -lib /home/grads/s/sujaysimha/CSCE_689/lab-4-SujaySimha81/zebu/zcui.work/vcs_splitter/simv.daidir/work -saveLevel -elab /home/grads/s/sujaysimha/CSCE_689/lab-4-SujaySimha81/zebu/zcui.work/vcs_splitter/simv.daidir/kdb -simflow -topfile /home/grads/s/sujaysimha/CSCE_689/lab-4-SujaySimha81/zebu/zcui.work/vcs_splitter/simv.daidir/.elabcomTopFile -ssz -ssv -ssy +disable_message+C00371 +disable_message+C00380+C00381 +disable_message+C00388+C00389
+uname(Linux csce-quinn-s1.engr.tamu.edu 3.10.0-1160.108.1.el7.x86_64 #1 SMP Thu Jan 4 14:55:32 EST 2024 x86_64)
+[INFO] error/warning message 'C00371' has been suppressed.
+[INFO] error/warning message 'C00388' has been suppressed.
+[INFO] error/warning message 'C00389' has been suppressed.
+au time 1.620889 0.022838 0.048657 delta 100786176 100786176 total 208191488 208191488

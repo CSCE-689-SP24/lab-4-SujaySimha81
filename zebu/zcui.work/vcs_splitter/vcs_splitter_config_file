@@ -1,0 +1,10 @@
+UCSetZcuiWorkDir {/home/grads/s/sujaysimha/CSCE_689/lab-4-SujaySimha81/zebu/zcui.work}
+UCSetVcsDumpDir {/home/grads/s/sujaysimha/CSCE_689/lab-4-SujaySimha81/zebu/zcui.work/vcs_splitter}
+UCSetUTFDumpDir {/home/grads/s/sujaysimha/CSCE_689/lab-4-SujaySimha81/zebu/zcui.work/utf_generatefiles}
+UCSetUTFFile {/home/grads/s/sujaysimha/CSCE_689/lab-4-SujaySimha81/zebu/src/project.utf}
+UCSetZfeIsRemoved -true
+UCSetArchitecture -server zs3 -fpga vtx7
+UCSetWlsFlow -default
+UCSetFmCheckDebug -default
+UCSetOverrideFpga -false
+UCSetVcsVerdiFlow -true

@@ -1,0 +1,45 @@
+Module top{
+P _I_vcs_cdx_s_rw_topu_stb_clk0->_I_vcs_cdx_s_rw_topu_stb_clk0
+P _I_vcs_cdx_s_rw_topu_stb_clk1->_I_vcs_cdx_s_rw_topu_stb_clk1
+}
+Module dut{
+}
+Module stb{
+}
+Module ZSVA_MOD_0{
+}
+Module ZSVA_MOD_1{
+}
+
+EdfPortBounds dut{
+8 0 datain
+8 0 dataout
+}
+EdfPortBounds ZSVA_MOD_0{
+0 0 sva_busy
+0 0 sva_end
+0 0 sva_start
+0 0 sva_success
+0 0 temp_busy
+0 0 temp_end
+0 0 temp_start
+0 0 temp_success
+}
+EdfPortBounds stb{
+8 0 data_rd
+8 0 data_wr
+}
+EdfPortBounds ZSVA_MOD_1{
+0 0 sva_busy
+0 0 sva_end
+0 0 sva_start
+0 0 sva_success
+0 0 temp_busy
+0 0 temp_end
+0 0 temp_start
+0 0 temp_success
+}
+NonAliasNets top{
+ended_toggle_assert_design_req1_empty_assert    f   64 0
+ended_toggle_assert_design_req2_full_assert    f   65 0
+}

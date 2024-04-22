@@ -1,64 +1,270 @@
 icsaSetZebuWork \
-           /slowfs/vgondemand01/eveeval8/dipal_fifolab/zebu_training_2022/ZeBu_BasicLabs/zebu/zcui.work/backend_default
+           /home/grads/s/sujaysimha/CSCE_689/lab-4-SujaySimha81/zebu/zcui.work/backend_default
 simSetSimulator "-vcssv" -exec \
-           "/slowfs/vgondemand01/eveeval8/dipal_fifolab/zebu_training_2022/ZeBu_BasicLabs/zebu/zcui.work/backend_default/../vcs_splitter//simv" \
+           "/home/grads/s/sujaysimha/CSCE_689/lab-4-SujaySimha81/zebu/zcui.work/backend_default/../vcs_splitter//simv" \
            -args
 debImport "-dbdir" \
-          "/slowfs/vgondemand01/eveeval8/dipal_fifolab/zebu_training_2022/ZeBu_BasicLabs/zebu/zcui.work/backend_default/../vcs_splitter//simv.daidir" \
+          "/home/grads/s/sujaysimha/CSCE_689/lab-4-SujaySimha81/zebu/zcui.work/backend_default/../vcs_splitter//simv.daidir" \
           "-dbdir" \
-          "/slowfs/vgondemand01/eveeval8/dipal_fifolab/zebu_training_2022/ZeBu_BasicLabs/zebu/zcui.work/backend_default/../vcs_splitter//simv.daidir"
+          "/home/grads/s/sujaysimha/CSCE_689/lab-4-SujaySimha81/zebu/zcui.work/backend_default/../vcs_splitter//simv.daidir"
 debLoadSimResult \
-           /slowfs/vgondemand01/eveeval8/dipal_fifolab/zebu_training_2022/ZeBu_BasicLabs/zebu/run/run_directory/dynprobes_dump.vf
+           /home/grads/s/sujaysimha/CSCE_689/lab-4-SujaySimha81/zebu/run/run_directory/dynprobes_dump_1.vf
 wvCreateWindow
+verdiWindowResize -win $_Verdi_1 "8" "31" "888" "768"
+wvZoomAll -win $_nWave2
+verdiWindowResize -win $_Verdi_1 "0" "23" "1280" "729"
+wvSetCursor -win $_nWave2 1002.036719
+wvSetCursor -win $_nWave2 1002.036719
+wvSetCursor -win $_nWave2 1002.036719
+wvSetCursor -win $_nWave2 1024.783655
 srcDeselectAll -win $_nTrace1
-srcSelect -signal "clk0" -line 10 -pos 1 -win $_nTrace1
-srcSelect -win $_nTrace1 -range {10 32 4 1 3 1}
-srcDeselectAll -win $_nTrace1
-srcDeselectAll -win $_nTrace1
-srcSelect -signal "data_read" -line 14 -pos 1 -win $_nTrace1
-srcDeselectAll -win $_nTrace1
-srcSelect -signal "clk0" -line 10 -pos 1 -win $_nTrace1
-srcSelect -win $_nTrace1 -range {10 24 4 1 3 1}
-srcDeselectAll -win $_nTrace1
-srcDeselectAll -win $_nTrace1
-srcSelect -signal "clk0" -line 10 -pos 1 -win $_nTrace1
+wvZoomIn -win $_nWave2
+verdiWindowResize -win $_Verdi_1 "8" "31" "888" "768"
+wvSetCursor -win $_nWave2 652.731441
+verdiWindowResize -win $_Verdi_1 "0" "0" "1280" "729"
 wvSelectGroup -win $_nWave2 {G1}
 wvSelectGroup -win $_nWave2 {G1}
-wvAddSignal -win $_nWave2 "/top/clk0"
-wvSetPosition -win $_nWave2 {("G1" 0)}
-wvSetPosition -win $_nWave2 {("G1" 1)}
-wvSetPosition -win $_nWave2 {("G1" 1)}
-srcDeselectAll -win $_nTrace1
-srcSelect -signal "we" -line 22 -pos 2 -win $_nTrace1
-srcDeselectAll -win $_nTrace1
-srcSelect -signal "we" -line 22 -pos 2 -win $_nTrace1
-srcSelect -win $_nTrace1 -range {20 22 7 6 1 2} -backward
-srcDeselectAll -win $_nTrace1
-srcSelect -signal "we" -line 22 -pos 2 -win $_nTrace1
-wvSelectGroup -win $_nWave2 {G2}
-wvAddSignal -win $_nWave2 "/top/we"
-wvSetPosition -win $_nWave2 {("G1" 1)}
-wvSetPosition -win $_nWave2 {("G1" 2)}
-srcDeselectAll -win $_nTrace1
-srcSelect -signal "data_write" -line 23 -pos 1 -win $_nTrace1
-wvSelectGroup -win $_nWave2 {G2}
-wvAddSignal -win $_nWave2 "/top/data_write\[8:0\]"
-wvSetPosition -win $_nWave2 {("G1" 2)}
-wvSetPosition -win $_nWave2 {("G1" 3)}
-srcDeselectAll -win $_nTrace1
-srcSelect -signal "re" -line 24 -pos 2 -win $_nTrace1
-wvAddSignal -win $_nWave2 "/top/re"
-wvSetPosition -win $_nWave2 {("G1" 3)}
-wvSetPosition -win $_nWave2 {("G1" 4)}
-srcDeselectAll -win $_nTrace1
-srcSelect -signal "data_read" -line 26 -pos 1 -win $_nTrace1
-wvSelectSignal -win $_nWave2 {( "G1" 4 )} 
-wvAddSignal -win $_nWave2 "/top/data_read\[8:0\]"
-wvSetPosition -win $_nWave2 {("G1" 4)}
+wvGetSignalOpen -win $_nWave2
+wvGetSignalSetScope -win $_nWave2 "/top"
+wvSetPosition -win $_nWave2 {("G1" 5)}
+wvSetPosition -win $_nWave2 {("G1" 5)}
+wvAddSignal -win $_nWave2 -clear
+wvAddSignal -win $_nWave2 -group {"G1" \
+{/top/clk0} \
+{/top/we} \
+{/top/data_write\[8:0\]} \
+{/top/re} \
+{/top/data_read\[8:0\]} \
+}
+wvAddSignal -win $_nWave2 -group {"G2" \
+}
+wvSelectSignal -win $_nWave2 {( "G1" 5 )} 
+wvSetPosition -win $_nWave2 {("G1" 5)}
+wvSetPosition -win $_nWave2 {("G1" 5)}
+wvSetPosition -win $_nWave2 {("G1" 5)}
+wvAddSignal -win $_nWave2 -clear
+wvAddSignal -win $_nWave2 -group {"G1" \
+{/top/clk0} \
+{/top/we} \
+{/top/data_write\[8:0\]} \
+{/top/re} \
+{/top/data_read\[8:0\]} \
+}
+wvAddSignal -win $_nWave2 -group {"G2" \
+}
+wvSelectSignal -win $_nWave2 {( "G1" 5 )} 
+wvSetPosition -win $_nWave2 {("G1" 5)}
+wvGetSignalClose -win $_nWave2
+wvSetPosition -win $_nWave2 {("G2" 0)}
+wvZoomAll -win $_nWave2
+wvGetSignalOpen -win $_nWave2
+wvGetSignalSetScope -win $_nWave2 "/top"
+wvGetSignalSetScope -win $_nWave2 "/top"
+wvGetSignalSetScope -win $_nWave2 "/top/u_dut/u_fifo"
+wvSetPosition -win $_nWave2 {("G2" 5)}
+wvSetPosition -win $_nWave2 {("G2" 5)}
+wvAddSignal -win $_nWave2 -clear
+wvAddSignal -win $_nWave2 -group {"G1" \
+{/top/clk0} \
+{/top/we} \
+{/top/data_write\[8:0\]} \
+{/top/re} \
+{/top/data_read\[8:0\]} \
+}
+wvAddSignal -win $_nWave2 -group {"G2" \
+{/top/u_dut/u_fifo/rclk_i} \
+{/top/u_dut/u_fifo/re_i} \
+{/top/u_dut/u_fifo/re} \
+{/top/u_dut/u_fifo/ef_o} \
+{/top/u_dut/u_fifo/rstn_i} \
+}
+wvAddSignal -win $_nWave2 -group {"G3" \
+}
+wvSelectSignal -win $_nWave2 {( "G2" 5 )} 
+wvSetPosition -win $_nWave2 {("G2" 5)}
 wvSetPosition -win $_nWave2 {("G1" 5)}
 wvScrollUp -win $_nWave2 1
-wvScrollUp -win $_nWave2 1
+wvSetPosition -win $_nWave2 {("G1" 1)}
+wvGetSignalSetScope -win $_nWave2 "/top/u_dut/u_check"
+wvGetSignalSetScope -win $_nWave2 "/top/u_dut"
+wvGetSignalSetScope -win $_nWave2 "/top"
+wvSetPosition -win $_nWave2 {("G2" 6)}
+wvSetPosition -win $_nWave2 {("G2" 6)}
+wvAddSignal -win $_nWave2 -clear
+wvAddSignal -win $_nWave2 -group {"G1" \
+{/top/clk0} \
+{/top/we} \
+{/top/data_write\[8:0\]} \
+{/top/re} \
+{/top/data_read\[8:0\]} \
+}
+wvAddSignal -win $_nWave2 -group {"G2" \
+{/top/u_dut/u_fifo/rclk_i} \
+{/top/u_dut/u_fifo/re_i} \
+{/top/u_dut/u_fifo/re} \
+{/top/u_dut/u_fifo/ef_o} \
+{/top/u_dut/u_fifo/rstn_i} \
+{/top/rstn} \
+}
+wvAddSignal -win $_nWave2 -group {"G3" \
+}
+wvSelectSignal -win $_nWave2 {( "G2" 6 )} 
+wvSetPosition -win $_nWave2 {("G2" 6)}
+wvSetPosition -win $_nWave2 {("G2" 6)}
+wvSetPosition -win $_nWave2 {("G2" 6)}
+wvAddSignal -win $_nWave2 -clear
+wvAddSignal -win $_nWave2 -group {"G1" \
+{/top/clk0} \
+{/top/we} \
+{/top/data_write\[8:0\]} \
+{/top/re} \
+{/top/data_read\[8:0\]} \
+}
+wvAddSignal -win $_nWave2 -group {"G2" \
+{/top/u_dut/u_fifo/rclk_i} \
+{/top/u_dut/u_fifo/re_i} \
+{/top/u_dut/u_fifo/re} \
+{/top/u_dut/u_fifo/ef_o} \
+{/top/u_dut/u_fifo/rstn_i} \
+{/top/rstn} \
+}
+wvAddSignal -win $_nWave2 -group {"G3" \
+}
+wvSelectSignal -win $_nWave2 {( "G2" 6 )} 
+wvSetPosition -win $_nWave2 {("G2" 6)}
+wvGetSignalClose -win $_nWave2
+wvSelectSignal -win $_nWave2 {( "G2" 6 )} 
+wvSetPosition -win $_nWave2 {("G2" 4)}
+wvSetPosition -win $_nWave2 {("G2" 1)}
+wvSetPosition -win $_nWave2 {("G2" 0)}
+wvSetPosition -win $_nWave2 {("G1" 5)}
+wvSetPosition -win $_nWave2 {("G1" 4)}
+wvSetPosition -win $_nWave2 {("G1" 3)}
+wvSetPosition -win $_nWave2 {("G1" 2)}
+wvSetPosition -win $_nWave2 {("G1" 1)}
+wvSetPosition -win $_nWave2 {("G1" 0)}
+wvSetPosition -win $_nWave2 {("G1" 1)}
+wvMoveSelected -win $_nWave2
+wvSetPosition -win $_nWave2 {("G1" 1)}
+wvSetPosition -win $_nWave2 {("G1" 2)}
+wvSelectSignal -win $_nWave2 {( "G1" 2 )} 
+wvZoomAll -win $_nWave2
+wvZoomAll -win $_nWave2
 wvScrollDown -win $_nWave2 1
 wvScrollDown -win $_nWave2 1
 wvScrollDown -win $_nWave2 1
-debExit
+wvSetCursor -win $_nWave2 16.896066 -snap {("G2" 5)}
+wvZoom -win $_nWave2 0.000000 177.408696
+wvSetCursor -win $_nWave2 24.793141 -snap {("G2" 2)}
+wvSelectSignal -win $_nWave2 {( "G2" 1 )} 
+wvSetOptions -win $_nWave2 -hierName on
+wvSelectSignal -win $_nWave2 {( "G2" 3 )} 
+wvSelectSignal -win $_nWave2 {( "G2" 3 4 )} 
+wvSelectSignal -win $_nWave2 {( "G1" 5 )} 
+wvSelectSignal -win $_nWave2 {( "G2" 3 )} 
+wvSelectSignal -win $_nWave2 {( "G2" 3 4 )} 
+wvSetCursor -win $_nWave2 24.912271 -snap {("G2" 3)}
+wvSelectSignal -win $_nWave2 {( "G1" 2 )} 
+wvSelectGroup -win $_nWave2 {G1}
+wvCreateWindow
+wvSetPosition -win $_nWave3 {("G1" 0)}
+wvOpenFile -win $_nWave3 \
+           {/home/grads/s/sujaysimha/CSCE_689/lab-4-SujaySimha81/zebu/run/run_directory/fwc_dump_1.vf}
+srcHBSelect "wave.fwc_fifo_ports" -win $_nTrace1
+srcHBSelect "wave.fwc_essential_signals" -win $_nTrace1
+srcSetScope -win $_nTrace1 "wave.fwc_essential_signals" -delim "."
+srcHBSelect "wave.fwc_essential_signals" -win $_nTrace1
+srcHBSelect "wave.fwc_essential_signals" -win $_nTrace1
+srcHBSelect "wave.fwc_essential_signals" -win $_nTrace1
+srcHBSelect "wave.fwc_essential_signals" -win $_nTrace1
+srcHBSelect "wave.fwc_essential_signals" -win $_nTrace1
+srcHBSelect "wave.fwc_essential_signals" -win $_nTrace1
+srcSetScope -win $_nTrace1 "wave.fwc_essential_signals" -delim "."
+srcHBSelect "wave.fwc_essential_signals" -win $_nTrace1
+srcHBSelect "wave.fwc_essential_signals" -win $_nTrace1
+srcSetScope -win $_nTrace1 "wave.fwc_essential_signals" -delim "."
+srcHBSelect "wave.fwc_essential_signals" -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -word -line 1 -pos 6 -win $_nTrace1
+srcAction -pos 1 6 3 -win $_nTrace1 -name "fwc_essential_signals" -ctrlKey off
+srcDeselectAll -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -word -line 1 -pos 6 -win $_nTrace1
+srcHBSelect "wave.fwc_essential_signals" -win $_nTrace1
+srcHBSelect "wave.fwc_essential_signals" -win $_nTrace1
+srcSetScope -win $_nTrace1 "wave.fwc_essential_signals" -delim "."
+srcHBSelect "wave.fwc_essential_signals" -win $_nTrace1
+srcHBSelect "wave.fwc_fifo_ports" -win $_nTrace1
+srcHBSelect "wave.fwc_fifo_ports" -win $_nTrace1
+srcSetScope -win $_nTrace1 "wave.fwc_fifo_ports" -delim "."
+srcHBSelect "wave.fwc_fifo_ports" -win $_nTrace1
+srcHBSelect "wave.fwc_fifo_ports" -win $_nTrace1
+wvGetSignalOpen -win $_nWave3
+wvGetSignalSetScope -win $_nWave3 "/top"
+wvGetSignalSetScope -win $_nWave3 "/top/u_dut/u_fifo"
+wvSetPosition -win $_nWave3 {("G2" 11)}
+wvSetPosition -win $_nWave3 {("G2" 11)}
+wvAddSignal -win $_nWave3 -clear
+wvAddSignal -win $_nWave3 -group {"G1" \
+{/top/clk0} \
+{/top/clk1} \
+}
+wvAddSignal -win $_nWave3 -group {"G2" \
+{/top/u_dut/u_fifo/rstn_i} \
+{/top/u_dut/u_fifo/wclk_i} \
+{/top/u_dut/u_fifo/rclk_i} \
+{/top/u_dut/u_fifo/we_i} \
+{/top/u_dut/u_fifo/d_i\[7:0\]} \
+{/top/u_dut/u_fifo/re_i} \
+{/top/u_dut/u_fifo/q_o\[7:0\]} \
+{/top/u_dut/u_fifo/qa_o\[7:0\]} \
+{/top/u_dut/u_fifo/ff_o} \
+{/top/u_dut/u_fifo/hff_o} \
+{/top/u_dut/u_fifo/ef_o} \
+}
+wvAddSignal -win $_nWave3 -group {"G3" \
+}
+wvSelectSignal -win $_nWave3 {( "G2" 11 )} 
+wvSetPosition -win $_nWave3 {("G2" 11)}
+wvSetPosition -win $_nWave3 {("G2" 11)}
+wvSetPosition -win $_nWave3 {("G2" 11)}
+wvAddSignal -win $_nWave3 -clear
+wvAddSignal -win $_nWave3 -group {"G1" \
+{/top/clk0} \
+{/top/clk1} \
+}
+wvAddSignal -win $_nWave3 -group {"G2" \
+{/top/u_dut/u_fifo/rstn_i} \
+{/top/u_dut/u_fifo/wclk_i} \
+{/top/u_dut/u_fifo/rclk_i} \
+{/top/u_dut/u_fifo/we_i} \
+{/top/u_dut/u_fifo/d_i\[7:0\]} \
+{/top/u_dut/u_fifo/re_i} \
+{/top/u_dut/u_fifo/q_o\[7:0\]} \
+{/top/u_dut/u_fifo/qa_o\[7:0\]} \
+{/top/u_dut/u_fifo/ff_o} \
+{/top/u_dut/u_fifo/hff_o} \
+{/top/u_dut/u_fifo/ef_o} \
+}
+wvAddSignal -win $_nWave3 -group {"G3" \
+}
+wvSelectSignal -win $_nWave3 {( "G2" 11 )} 
+wvSetPosition -win $_nWave3 {("G2" 11)}
+wvGetSignalClose -win $_nWave3
+wvScrollUp -win $_nWave3 1
+wvZoomAll -win $_nWave3
+wvZoomAll -win $_nWave3
+wvZoom -win $_nWave3 0.000000 222.047629
+wvSelectSignal -win $_nWave3 {( "G2" 7 )} 
+wvSelectSignal -win $_nWave3 {( "G2" 8 )} 
+wvScrollDown -win $_nWave3 1
+wvSelectSignal -win $_nWave3 {( "G2" 11 )} 
+wvSelectSignal -win $_nWave3 {( "G2" 6 11 )} 
+wvSetCursor -win $_nWave3 24.884648 -snap {("G2" 6)}
+wvTpfCloseForm -win $_nWave2
+wvGetSignalClose -win $_nWave2
+wvCloseWindow -win $_nWave2
+srcHBSelect "wave" -win $_nTrace1
+srcHBSelect "wave" -win $_nTrace1
+srcSetScope -win $_nTrace1 "wave" -delim "."
+srcHBSelect "wave" -win $_nTrace1

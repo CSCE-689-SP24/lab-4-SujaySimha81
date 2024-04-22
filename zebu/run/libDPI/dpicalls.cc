@@ -12,9 +12,23 @@
 #include <iostream>
 #include <iomanip>
 #include <string>
+#include "Collect.hh"
 
-
-extern "C" void fifo_usage_spy_notify( )
+using namespace std;
+extern "C" void fifo_usage_spy_notify (const svBitVecVal *_arg_min)
 {
- // TODO
+// to retrieve the scope, the function must be declared as 'context'
+  svScope scope = svGetScope ();
+
+  void *ctx = svGetUserData(scope, (void*)(fifo_usage_spy_notify));
+  if (ctx == NULL)
+  {
+    // first call
+    const char *i_name = svGetNameFromScope (scope);
+    ctx = new Collect(i_name);
+    svPutUserData(scope, (void*)fifo_usage_spy_notify, ctx);
+  }
+
+  ((Collect*)ctx)->setMin(_arg_min[0]);
+  
 }

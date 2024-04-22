@@ -1,0 +1,36 @@
+
+Processing fifo_usage_spy
+before buildCfgFromIStructural: 0u 0s 31e 601540kB
+Before processing instances: 0u 0s 45e 601540kB
+After processing instances: 0u 0s 46e 601540kB
+before processing cont assigns: 0u 0s 46e 601540kB
+after processing cont assigns: 0u 0s 46e 601540kB
+before processing processes: 0u 0s 46e 601540kB
+after processing processes: 0u 0s 350e 601540kB
+after buildCfgFromIStructural: 0u 0s 352e 601540kB
+before ns->mergeSimpleProcesses: 0u 0s 352e 601540kB
+after ns->mergeSimpleProcesses: 0u 0s 352e 601540kB
+before ns->splitPartialWrites: 0u 0s 352e 601540kB
+after ns->splitPartialWrites: 0u 0s 352e 601540kB
+before removeUnneededLatches: 0u 0s 352e 601540kB
+after removeUnneededLatches: 0u 0s 352e 601540kB
+before printMsgForBothBAandNBAAccrossProcess: 0u 0s 352e 601540kB
+after printMsgForBothBAandNBAAccrossProcess: 0u 0s 352e 601540kB
+after other NameScope processing: 0u 0s 352e 601540kB
+before rebuildInstGraph: 0u 0s 352e 601540kB
+  before addAllInScope: 0u 0s 352e 601540kB
+  after addAllInScope: 0u 0s 352e 601540kB
+after rebuildInstGraph: 0u 0s 352e 601540kB
+before markTristateCones : 0u 0s 362e 601540kB
+after markTristateCones : 0u 0s 362e 601540kB
+after scheduling: 0u 0s 418e 601540kB
+after model->finalize: 0u 0s 424e 601540kB
+before attribute propagation: 0.01u 0s 440e 601540kB
+after attribute propagation: 0.01u 0s 440e 601540kB
+before constantPropagate: 0.01u 0s 440e 601540kB
+after constantPropagate: 0.01u 0s 440e 601540kB
+before removeUnusedSignals circuit: 0.01u 0s 440e 601540kB
+after removeUnusedSignals circuit: 0.01u 0s 440e 601540kB
+before optimize latch enable: 0.01u 0s 440e 601540kB
+after optimize latch enable: 0.01u 0s 440e 601540kB
+after circuit->load: 0.01u 0s 440e 601540kB

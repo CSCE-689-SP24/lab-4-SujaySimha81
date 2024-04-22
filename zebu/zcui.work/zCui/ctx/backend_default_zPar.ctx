@@ -1,0 +1,16 @@
+zPar_env:303306768
+backend_default_zPar_cmdline:3318763937
+utf_generatefiles/zPar_config.tcl:1713297306 718367530
+utf_generatefiles/zTime_config.tcl:1713297306 965609720
+/home/grads/s/sujaysimha/CSCE_689/lab-4-SujaySimha81/zebu/zcui.work/utf_generatefiles/new_zPar_config.tcl:1713297306 420467323
+/home/grads/s/sujaysimha/CSCE_689/lab-4-SujaySimha81/zebu/zcui.work/utf_generatefiles/new_zTime_config.tcl:1713297306 3767317739
+backend_default/zPar_dve.tcl:1713297345 3436156562
+backend_default/zPar_cmds.tcl:1713297354 255593686
+backend_default/edif/top.edf.gz:1713297354 1224532137
+backend_default/zPar_target_conf.tcl:1713297354 2254742979
+backend_default/./tools/zRTB_FE/dut_io_zpar.edf.gz:1713297359 3822488318
+backend_default/work.Part_0//./edif/top.edf.gz:1713297370 2444967005
+backend_default/work.Part_0//./edif/U0_M0.edf.gz:1713297370 3766834244
+backend_default/work.Part_0//./zPar_core_conf.tcl:1713297370 4272473853
+backend_default/work.Part_0//./zPar_cmds.tcl:1713297370 2508588278
+backend_default/zPar_zCui.tcl:1713297380 1129925728

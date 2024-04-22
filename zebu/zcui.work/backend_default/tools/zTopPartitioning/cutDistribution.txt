@@ -1,0 +1,31 @@
+[Cut range] -- number of blocks
+Instance Path 
+LUT,LUT6,RAM,REG,DSP,RAMLUT,FWC_IP_NUM,FWC_IP_BITS,QIWC_IP_BITS,READ_PORT_IPS,READ_PORT_BITS,WRITE_PORT_IPS,WRITE_PORT_BITS,ZC_TRACE_BIT,ZCEI_MESSAGE_INPUT,ZCEI_MESSAGE_OUTPUT,FW_RESOURCES,ZPRD_BB,ZFORCE,ZVIEW,ZRM_SLOTS,ZRM_PORTS(size), path, cut, 
+[0] --- 3
+[1] --- 7
+[2] --- 5
+[3] --- 7
+[4] --- 4
+Instance paths : 
+	top.zfast_9bva7lnd5m8p,4,1.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 
+
+	top.zfast_fghdd7qi7m56,4,1.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 
+
+	top.zsva_trigger_assert_design_req1_empty_assert,4,2.00 0.00 0.00 1.43 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 
+
+	top.zsva_trigger_assert_design_req2_full_assert,4,2.00 0.00 0.00 1.43 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 
+
+[5] --- 2
+Instance paths : 
+	top.assert_design_req1_empty_assert,5,0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 
+
+	top.assert_design_req2_full_assert,5,0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 
+
+[28] --- 1
+Instance paths : 
+	top.u_stb,28,869.00 7.00 0.00 972.86 0.00 72.00 2.00 107.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 
+
+[40] --- 1
+Instance paths : 
+	top.u_dut,40,364.00 22.00 0.00 231.57 0.00 0.00 1.00 24.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 
+

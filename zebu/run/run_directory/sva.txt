@@ -1,0 +1,42 @@
+
+The directory ./runtime_output has been deleted.
+
+#############################################
+# Forcing signals: ( wr : 30 % , rd : 30 % )
+# Resetting design during 10 clock cycles
+-- ZeBu : zRci : ZTDB dump mode. opening file(s) for data slice #0
+-- ZeBu : zRci: Callback added to queue: `sva_callback 0 2 {FIFO empty assertion failed} ../source/stb/top.sv 54 top.assert_design_req1_empty_assert -1 21`
+-- ZeBu : zRci: Callback added to queue: `sva_callback 0 2 {FIFO empty assertion failed} ../source/stb/top.sv 54 top.assert_design_req1_empty_assert -1 23`
+-- ZeBu : zRci: Callback added to queue: `sva_callback 0 2 {FIFO empty assertion failed} ../source/stb/top.sv 54 top.assert_design_req1_empty_assert -1 25`
+-- ZeBu : zRci: Callback added to queue: `sva_callback 0 2 {FIFO empty assertion failed} ../source/stb/top.sv 54 top.assert_design_req1_empty_assert -1 31`
+-- ZeBu : zRci: Callback added to queue: `sva_callback 0 2 {FIFO empty assertion failed} ../source/stb/top.sv 54 top.assert_design_req1_empty_assert -1 33`
+-- ZeBu : zRci: Callback added to queue: `sva_callback 0 2 {FIFO empty assertion failed} ../source/stb/top.sv 54 top.assert_design_req1_empty_assert -1 37`
+-- ZeBu : zRci: Callback added to queue: `sva_callback 0 2 {FIFO empty assertion failed} ../source/stb/top.sv 54 top.assert_design_req1_empty_assert -1 39`
+-- ZeBu : zRci: Callback added to queue: `sva_callback 0 2 {FIFO empty assertion failed} ../source/stb/top.sv 54 top.assert_design_req1_empty_assert -1 41`
+-- ZeBu : zRci: Callback added to queue: `sva_callback 0 2 {FIFO empty assertion failed} ../source/stb/top.sv 54 top.assert_design_req1_empty_assert -1 43`
+-- ZeBu : zRci: Callback added to queue: `sva_callback 0 2 {FIFO empty assertion failed} ../source/stb/top.sv 54 top.assert_design_req1_empty_assert -1 45`
+-- ZeBu : zRci: Callback added to queue: `sva_callback 0 2 {FIFO empty assertion failed} ../source/stb/top.sv 54 top.assert_design_req1_empty_assert -1 47`
+-- ZeBu : zRci: Callback added to queue: `sva_callback 0 2 {FIFO empty assertion failed} ../source/stb/top.sv 54 top.assert_design_req1_empty_assert -1 55`
+-- ZeBu : zRci: Callback added to queue: `sva_callback 0 2 {SVA: Parity error detected.} ../source/design/parity_check.sv 26 top.u_dut.u_check.sva_parity_error -1 161`
+-- ZeBu : zRci: Callback added to queue: `sva_callback 0 2 {SVA: Parity error detected.} ../source/design/parity_check.sv 26 top.u_dut.u_check.sva_parity_error -1 295`
+-- ZeBu : zRci: Callback added to queue: `sva_callback 0 2 {SVA: Parity error detected.} ../source/design/parity_check.sv 26 top.u_dut.u_check.sva_parity_error -1 477`
+-- ZeBu : zRci: Callback added to queue: `sva_callback 0 2 {SVA: Parity error detected.} ../source/design/parity_check.sv 26 top.u_dut.u_check.sva_parity_error -1 559`
+-- ZeBu : zRci: Callback added to queue: `sva_callback 0 2 {SVA: Parity error detected.} ../source/design/parity_check.sv 26 top.u_dut.u_check.sva_parity_error -1 617`
+-- ZeBu : zRci: Callback added to queue: `sva_callback 0 2 {SVA: Parity error detected.} ../source/design/parity_check.sv 26 top.u_dut.u_check.sva_parity_error -1 671`
+-- ZeBu : zRci: Callback added to queue: `sva_callback 0 2 {SVA: Parity error detected.} ../source/design/parity_check.sv 26 top.u_dut.u_check.sva_parity_error -1 867`
+-- ZeBu : zRci: Callback added to queue: `sva_callback 0 2 {SVA: Parity error detected.} ../source/design/parity_check.sv 26 top.u_dut.u_check.sva_parity_error -1 919`
+-- ZeBu : zRci: Callback added to queue: `sva_callback 0 2 {SVA: Parity error detected.} ../source/design/parity_check.sv 26 top.u_dut.u_check.sva_parity_error -1 1047`
+-- ZeBu : zRci: Callback added to queue: `sva_callback 0 2 {SVA: Parity error detected.} ../source/design/parity_check.sv 26 top.u_dut.u_check.sva_parity_error -1 1143`
+-- ZeBu : zRci: Callback added to queue: `sva_callback 0 2 {SVA: Parity error detected.} ../source/design/parity_check.sv 26 top.u_dut.u_check.sva_parity_error -1 1271`
+-- ZeBu : zRci: Callback added to queue: `sva_callback 0 2 {SVA: Parity error detected.} ../source/design/parity_check.sv 26 top.u_dut.u_check.sva_parity_error -1 1371`
+-- ZeBu : zRci: Callback added to queue: `sva_callback 0 2 {SVA: Parity error detected.} ../source/design/parity_check.sv 26 top.u_dut.u_check.sva_parity_error -1 1583`
+-- ZeBu : zRci: Callback added to queue: `sva_callback 0 2 {SVA: Parity error detected.} ../source/design/parity_check.sv 26 top.u_dut.u_check.sva_parity_error -1 1631`
+-- ZeBu : zRci: Callback added to queue: `sva_callback 0 2 {SVA: Parity error detected.} ../source/design/parity_check.sv 26 top.u_dut.u_check.sva_parity_error -1 1815`
+-- ZeBu : zRci: Callback added to queue: `sva_callback 0 2 {SVA: Parity error detected.} ../source/design/parity_check.sv 26 top.u_dut.u_check.sva_parity_error -1 1885`
+
+# Running 1000 cycles
+# Number of errors detected:
+# on input : 32'd16
+# on output: 32'd0
+# Storing ram memory content to memdump.hex file
+#############################################

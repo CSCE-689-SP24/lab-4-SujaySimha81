@@ -1,0 +1,35 @@
+disable defmapping_error_check
+cluster_generated -part_name U0_M0_F00 -lut 5341 -bram 5951 -reg 72 -dsp 3 -ramlut 138 -cut 0
+defmapping {top.assert_design_req1_empty_assert} U0_M0_F00
+defmapping {top.assert_design_req1_empty_assert_sva_enable} U0_M0_F00
+defmapping {top.assert_design_req2_full_assert} U0_M0_F00
+defmapping {top.assert_design_req2_full_assert_sva_enable} U0_M0_F00
+defmapping {top.ended_toggle_assert_design_req1_empty_assert} U0_M0_F00
+defmapping {top.ended_toggle_assert_design_req2_full_assert} U0_M0_F00
+defmapping {top.inv90} U0_M0_F00
+defmapping {top.inv91} U0_M0_F00
+defmapping {top.u_dut} U0_M0_F00
+defmapping {top.u_stb} U0_M0_F00
+defmapping {top.val} U0_M0_F00
+defmapping {top.zNegEdgeFilterClk_zpc_ft} U0_M0_F00
+defmapping {top.zafth__I_vcs_cdx_s_rw_topu_stb_clk0} U0_M0_F00
+defmapping {top.zafth__I_vcs_cdx_s_rw_topu_stb_clk1} U0_M0_F00
+defmapping {top.zebu_clockGen} U0_M0_F00
+defmapping {top.zebu_filter__I_vcs_cdx_s_rw_topu_stb_clk0} U0_M0_F00
+defmapping {top.zebu_filter__I_vcs_cdx_s_rw_topu_stb_clk1} U0_M0_F00
+defmapping {top.zfast_13dazc5xo4v01} U0_M0_F00
+defmapping {top.zfast_9bva7lnd5m8p} U0_M0_F00
+defmapping {top.zfast_fghdd7qi7m56} U0_M0_F00
+defmapping {top.zfast_nes3tozxfg5o2} U0_M0_F00
+defmapping {top.zfast_ttitjas49lqq1} U0_M0_F00
+defmapping {top.zfast_zew6gorl0sct} U0_M0_F00
+defmapping {top.zforce_rstn} U0_M0_F00
+defmapping {top.zfwc_ip__I_vcs_cdx_s_rw_topu_stb_clk0} U0_M0_F00
+defmapping {top.zfwc_ip__I_vcs_cdx_s_rw_topu_stb_clk0_0} U0_M0_F00
+defmapping {top.zfwc_ip__I_vcs_cdx_s_rw_topu_stb_clk1} U0_M0_F00
+defmapping {top.zfwc_ip__I_vcs_cdx_s_rw_topu_stb_clk1_0} U0_M0_F00
+defmapping {top.zfwc_ip_monitor} U0_M0_F00
+defmapping {top.zfwc_ip_monitor_0} U0_M0_F00
+defmapping {top.zsfg_filter_zpc_ft} U0_M0_F00
+defmapping {top.zsva_trigger_assert_design_req1_empty_assert} U0_M0_F00
+defmapping {top.zsva_trigger_assert_design_req2_full_assert} U0_M0_F00

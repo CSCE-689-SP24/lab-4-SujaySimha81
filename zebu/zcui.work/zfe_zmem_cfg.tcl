@@ -1,0 +1,1 @@
+zfe_zmem_opt -addScript ../../../../additionalZmemCommandFile.tcl -addScript /home/grads/s/sujaysimha/CSCE_689/lab-4-SujaySimha81/zebu/zcui.work/utf_generatefiles/zMem_config.tcl -debug 

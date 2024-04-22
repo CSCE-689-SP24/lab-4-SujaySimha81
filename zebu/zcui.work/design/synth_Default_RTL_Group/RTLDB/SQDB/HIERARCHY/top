@@ -1,0 +1,5 @@
+top
+u_stb -> u_stb -> stb
+u_dut -> u_dut -> dut
+assert_design_req1_empty_assert -> assert_design_req1_empty_assert -> ZSVA_MOD_0
+assert_design_req2_full_assert -> assert_design_req2_full_assert -> ZSVA_MOD_1

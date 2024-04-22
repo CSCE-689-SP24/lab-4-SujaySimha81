@@ -1,0 +1,166 @@
+.. Command: /opt/coe/synopsys/zebu/Q-2020.03-SP1-4/bin/tracean3.py --top-delay=5 --syn-details=5 --pr-summary-by-time=5 --hhmm --local-time=detect --show-memory --fix-graph --cpu-time /home/grads/s/sujaysimha/CSCE_689/lab-4-SujaySimha81/zebu/zcui.work
+.. Reading /home/grads/s/sujaysimha/CSCE_689/lab-4-SujaySimha81/zebu/zcui.work/zCui/backup/backend_default_24_4_16_14_55_06/prof/tracerun.cui ...
+.. Detected --work=/home/grads/s/sujaysimha/CSCE_689/lab-4-SujaySimha81/zebu/zcui.work/.
+.. Detected --submit-host=csce-quinn-s1.engr.tamu.edu
+.. Detected local time offset of -5.0 hours
+.. The first task started at Tue, 16 Apr 2024 19:55:09 UTC
+.. No timing info for backend_default_Intermediate_Profiling_Results_Analyzer_ZParAnalyzer (execution)
+.. No timing info for backend_default_zFW_U0_M0_IF (execution)
+
+*** Incremental = No ***
+
+Grade  Bogomips  Cache   Count  CPU model (sample machine)
+-----  --------  ------  -----  --------------------------
+ 1.00      4600   25600      1  Intel(R) Xeon(R) CPU E5-2650 v3 @ 2.30GHz (csce-quinn-s1.engr.tamu.edu)
+
+** UNKNOWN COMMAND: backend_default_Intermediate_Profiling_Results_Analyzer_ZParAnalyzer (duration: 0)
+** UNKNOWN COMMAND: backend_default_zFW_U0_M0_IF (duration: 0)
+** UNKNOWN COMMAND: backend_default_U0_M0_F00_Cleaning (duration: 0)
+** UNKNOWN COMMAND: backend_default_U0_M0_F08_Cleaning (duration: 0)
+
+======================================================================
+*** Back-end name: default backend ***
+
+Critical path, based on actual execution timing
+===============================================
+
+Elapsed  %total   SElapsed   SE/E  CPUtime  Stage
+-------  ------  ----------------  -------  -----
+   0:00   2.73%       0:00    1.0    0:00  Checks + config
+   0:00   1.00%       0:00    1.0    0:00  Build Fs Macro Library
+   0:00  10.24%       0:00    1.0    0:00  Launch VCS
+   0:00   6.48%       0:00    1.0    0:00  FE + synthesis
+   0:00   2.65%       0:00    0.5    0:00  RTL DB index + link
+   0:00   9.11%       0:00    1.0    0:00  Build System
+   0:00  15.47%       0:00    1.0    0:00  Build zCore
+   0:00  14.63%       0:00    1.0    0:00  Place and Route System
+-------  ------  ----------------  -------  -----
+   0:00  62.32%       0:00    1.0  * Total *
+
+Columns:
+- Elapsed: the difference between Finish and Submit times [hh:mm].
+- %total: the percentage of Elapsed time in overall compilation. Note that
+  it may add up to less than 100% if there were any gaps between Finish and
+  Submit times of successive stages.
+- SElapsed: sum of Elapsed times for all tasks constituting the stage. It
+  may be greater than Elapsed if some or all of these tasks were executed
+  in parallel [hh:mm].
+- SE/E: equal to SElapsed/Elapsed. A value greater than 1.0 indicates that
+  tasks were executed in parallel.
+- CPUtime: the CPUtime of each task in the stage
+Critical path, assuming timing without scheduling or grid delays
+================================================================
+
+Note: this section lists the same stages as the previous one.
+
+Elapsed  %total   SElapsed   SE/E  CPUtime  Stage
+-------  ------  ----------------  -------  -----
+   0:00   3.32%       0:00    1.3    0:00  Checks + config
+   0:00   1.66%       0:00    1.0    0:00  Build Fs Macro Library
+   0:00  17.02%       0:00    1.0    0:00  Launch VCS
+   0:00  10.77%       0:00    1.0    0:00  FE + synthesis
+   0:00   2.08%       0:00    1.0    0:00  RTL DB index + link
+   0:00  15.14%       0:00    1.0    0:00  Build System
+   0:00  25.71%       0:00    1.0    0:00  Build zCore
+   0:00  24.31%       0:00    1.0    0:00  Place and Route System
+-------  ------  ----------------  -------  -----
+   0:00 100.00%       0:00    1.0  * Total *
+
+
+Critical path, assuming timing without delays, no PARFF and >= 100% CPU usage
+=============================================================================
+
+Note: this section lists the same stages as the previous one.
+
+Elapsed  %total   SElapsed   SE/E  CPUtime  Stage
+-------  ------  ----------------  -------  -----
+   0:00   5.90%       0:00    1.3    0:00  Checks + config
+   0:00   2.22%       0:00    1.0    0:00  Build Fs Macro Library
+   0:00  10.74%       0:00    1.0    0:00  Launch VCS
+   0:00   8.08%       0:00    1.0    0:00  FE + synthesis
+   0:00   1.66%       0:00    1.0    0:00  RTL DB index + link
+   0:00  10.38%       0:00    1.0    0:00  Build System
+   0:00  30.53%       0:00    1.0    0:00  Build zCore
+   0:00  30.49%       0:00    1.0    0:00  Place and Route System
+-------  ------  ----------------  -------  -----
+   0:00 100.00%       0:00    1.0  * Total *
+
+
+Major compilation stages, ordered by submit time
+================================================
+
+Submit Elapsd %total   SExec  SE/E Tasks    %CPU Grade  Stage
+------ ------------- ------------- -------------------  -----
+ 14:55   0:00   2.73    0:00   1.0     4   85.27  1.00  Checks + config
+ 14:55   0:00   1.00    0:00   1.0     1   66.27  1.00  Build Fs Macro Library
+ 14:55   0:00  10.24    0:00   1.0     1   31.22  1.00  Launch VCS
+ 14:55   0:00   0.23    0:00   1.0     1   52.63  1.00  Compilation Profiler (after VCSAnalyzer)
+ 14:55   0:00   0.66    0:00   1.0     1   21.82  1.00  Build Rhino Fsdb
+ 14:55   0:00   1.02    0:00   1.0     1   16.47  1.00  Launch Verdi
+ 14:55   0:00   6.48    0:00   1.0     1   37.11  1.00  FE + synthesis
+ 14:55   0:00   0.26    0:00   1.0     1   50.00  1.00  Compilation Profiler (after BackendEntry)
+ 14:55   0:00   0.28    0:00   1.0     1   60.87  1.00  Make optionsdb dump
+ 14:55   0:00   0.35    0:00   1.0     1   51.72  1.00  Make VCS file links
+ 14:55   0:00   0.36    0:00   1.0     1   40.00  1.00  Analyze DVE
+ 14:55   0:00   2.65    0:00   0.5     2   39.42  1.00  RTL DB index + link
+ 14:55   0:00   0.78    0:00   1.0     1   26.15  1.00  Make RTL DB for Run Time
+ 14:55   0:00   9.11    0:00   1.0     1   33.91  1.00  Build System
+ 14:55   0:00   0.25    0:00   1.0     1   57.14  1.00  Compilation Profiler (after ZTopBuildAnalyzer)
+ 14:55   0:00   0.49    0:00   1.0     1   85.37  1.00  Build Equipotentials
+ 14:55   0:00   0.49    0:00   1.0     1   31.71  1.00  zSimuFsdbHeader
+ 14:55   0:00   1.00    0:00   1.0     1   40.96  1.00  Convert Netlist
+ 14:55   0:00   0.48    0:00   1.0     1   67.50  1.00  Build Accessibility Graphs
+ 14:55   0:00   0.66    0:00   1.0     1   49.09  1.00  RTB Front-End
+ 14:55   0:00   0.75    0:00   1.0     1   83.87  1.00  Simulate Graphs
+ 14:55   0:00  15.47    0:00   1.0     1   58.74  1.00  Build zCore
+ 14:56   0:00  14.63    0:00   1.0     1   62.04  1.00  Place and Route System
+
+Columns:
+- Submit: the submit time of the first task in the stage [hh:mm].
+- Elapsd: the duration of the stage, based on actual timing [hh:mm].
+- %total: the percentage of Elapsd time in overall compilation.
+- SExec: sum of execution times (excluding scheduling and grid delays) for
+  all tasks constituting the stage. It may be greater than Elapsd if some
+  or all of these tasks were executed in parallel [hh:mm].
+- SE/E: equal to SExec/Elapsd. A value greater than 1.0 indicates that
+  tasks were executed in parallel.
+- %CPU: average CPU utilization: total CPU time divided by SExec.
+- Grade: average host grade.
+
+
+Memory usage:  Max Resident Set Size [MB]
+Known Unknown  Min      Avg      Max      Stage
+----- -------  -------- -------- -------- -----
+    4       0      15.0     87.0    246.5 Checks + config
+    1       0      47.5     47.5     47.5 Build Fs Macro Library
+    1       0     153.1    153.1    153.1 Launch VCS
+    1       0      18.0     18.0     18.0 Compilation Profiler (after VCSAnalyzer)
+    1       0      83.0     83.0     83.0 Build Rhino Fsdb
+    1       0      43.2     43.2     43.2 Launch Verdi
+    1       0     107.5    107.5    107.5 FE + synthesis
+    1       0      18.0     18.0     18.0 Compilation Profiler (after BackendEntry)
+    1       0      44.1     44.1     44.1 Make optionsdb dump
+    1       0      44.1     44.1     44.1 Make VCS file links
+    1       0      92.1     92.1     92.1 Analyze DVE
+    2       0      44.1     60.1     76.1 RTL DB index + link
+    1       0      44.1     44.1     44.1 Make RTL DB for Run Time
+    1       0     303.6    303.6    303.6 Build System
+    1       0      18.0     18.0     18.0 Compilation Profiler (after ZTopBuildAnalyzer)
+    1       0     117.9    117.9    117.9 Build Equipotentials
+    1       0     105.2    105.2    105.2 zSimuFsdbHeader
+    1       0     154.7    154.7    154.7 Convert Netlist
+    1       0     148.8    148.8    148.8 Build Accessibility Graphs
+    1       0     120.9    120.9    120.9 RTB Front-End
+    1       0     363.5    363.5    363.5 Simulate Graphs
+    1       0     460.6    460.6    460.6 Build zCore
+    1       0    1498.8   1498.8   1498.8 Place and Route System
+
+
+** There were no tasks with grid delays >= 30 s
+
+=== Details on task group 'Synthesis'
+
+Sched. Startd Ended   S.dlay Duratn %CPU   Grade RSS [MB]  Task
+------ ------ ------  ------ ------ ------ ----- --------  ----
+ 14:55  14:55  14:55    0:00   0:00  37.11  1.00    107.5  design_Default_RTL_GroupBundle_0_Synthesis
+

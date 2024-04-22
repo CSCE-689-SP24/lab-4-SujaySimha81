@@ -1,0 +1,50 @@
+#     Thu Apr 18 02:44:19 2024 : zCreateNameDB Started
+#      : Reading the Serializing VCS Version
+[2024-04-18 02:44:19.539541] [0x00007f9f3f463780] [info]    #      : Reading the Serializing VCS Version
+
+#      : Deserializing names dictionary
+[2024-04-18 02:44:19.541326] [0x00007f9f3f463780] [info]    #      : Deserializing names dictionary
+
+#      : Deserializing libraries
+[2024-04-18 02:44:19.542311] [0x00007f9f3f463780] [info]    #      : Deserializing libraries
+
+#      : Deserializing RTL
+[2024-04-18 02:44:19.543281] [0x00007f9f3f463780] [info]    #      : Deserializing RTL
+
+#      : Deserializing Gate
+[2024-04-18 02:44:19.544111] [0x00007f9f3f463780] [info]    #      : Deserializing Gate
+
+#      : Deserializing design object
+[2024-04-18 02:44:19.544993] [0x00007f9f3f463780] [info]    #      : Deserializing design object
+
+#      : Populating Dfs Table
+[2024-04-18 02:44:19.545766] [0x00007f9f3f463780] [info]    #      : Populating Dfs Table
+
+#      : ReEnumerating design
+#      : Populating dfs mappings
+#      : Building light dfs table
+#      : Building dfs to light dfs table
+#      : Collecting shared modules ids
+#      : Collecting flops weights
+#      : Collecting module licenses
+#      : Collecting indexes
+#      : Serializing RTL
+#      : RTL type container ready
+#      : RTL Light containers ready for module top
+#      : RTL Light containers ready for module parity_check
+#      : RTL Light containers ready for module clkg
+#      : RTL Light containers ready for module dut
+#      : RTL Light containers ready for module parity
+#      : RTL Light containers ready for module ram
+#      : RTL Light containers ready for module rom
+#      : RTL Light containers ready for module stb
+#      : RTL Light containers ready for module proba
+#      : RTL Light containers ready for module fifo_usage_spy
+#      : RTL Light containers ready for module zceiClockPort
+#      : RTL Light containers ready for module fifo_0000
+#      : RTL Light containers ready for module proba_0000
+#      : Serializing design object
+#      : Serializing names dictionary
+#      : Serializing light dfs tables
+zCreateNameDB finished without errors or warnings.
+#     Thu Apr 18 02:44:19 2024 : zCreateNameDB Ended
