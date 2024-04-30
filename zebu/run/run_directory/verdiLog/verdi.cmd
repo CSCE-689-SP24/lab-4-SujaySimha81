@@ -540,3 +540,229 @@ wvZoomAll -win $_nWave3
 wvZoomAll -win $_nWave3
 wvZoomAll -win $_nWave3
 wvSelectSignal -win $_nWave3 {( "G1" 5 )} 
+wvZoom -win $_nWave3 0.000000 159.390625
+verdiDockWidgetSetCurTab -dock windowDock_nWave_4
+wvSetCursor -win $_nWave4 45.487842 -snap {("G2" 1)}
+wvSelectSignal -win $_nWave4 {( "G2" 4 )} 
+wvSelectSignal -win $_nWave4 {( "G2" 3 )} 
+verdiDockWidgetSetCurTab -dock windowDock_nWave_3
+verdiDockWidgetSetCurTab -dock windowDock_nWave_5
+wvZoom -win $_nWave5 0.000000 185.840000
+wvSetCursor -win $_nWave5 32.936000 -snap {("G2" 2)}
+verdiDockWidgetSetCurTab -dock windowDock_nWave_4
+verdiDockWidgetSetCurTab -dock windowDock_nWave_3
+verdiDockWidgetSetCurTab -dock windowDock_nWave_4
+wvSetCursor -win $_nWave4 24.934076 -snap {("G2" 1)}
+verdiDockWidgetSetCurTab -dock windowDock_nWave_5
+verdiDockWidgetSetCurTab -dock windowDock_nWave_3
+verdiDockWidgetSetCurTab -dock windowDock_nWave_5
+verdiDockWidgetSetCurTab -dock windowDock_nWave_3
+verdiDockWidgetSetCurTab -dock windowDock_nWave_5
+verdiDockWidgetSetCurTab -dock windowDock_nWave_4
+verdiDockWidgetSetCurTab -dock windowDock_nWave_3
+verdiDockWidgetSetCurTab -dock windowDock_nWave_4
+wvSelectSignal -win $_nWave4 {( "G2" 5 )} 
+wvSelectSignal -win $_nWave4 {( "G2" 6 )} 
+wvSelectSignal -win $_nWave4 {( "G2" 6 7 8 )} 
+verdiDockWidgetSetCurTab -dock windowDock_nWave_3
+wvSetPosition -win $_nWave3 {("G2" 4)}
+wvSelectSignal -win $_nWave3 {( "G2" 4 )} 
+wvScrollDown -win $_nWave3 0
+wvScrollDown -win $_nWave3 1
+wvSelectSignal -win $_nWave3 {( "G2" 3 )} 
+wvSelectSignal -win $_nWave3 {( "G2" 5 )} 
+wvAddSignal -win $_nWave3 "/top/u_dut/readyout" "/top/u_dut/readyout_n" "/top/re"
+wvSetPosition -win $_nWave3 {("G2" 4)}
+wvSetPosition -win $_nWave3 {("G2" 7)}
+wvSelectSignal -win $_nWave3 {( "G2" 4 )} 
+verdiDockWidgetSetCurTab -dock windowDock_nWave_4
+wvScrollUp -win $_nWave4 1
+wvScrollUp -win $_nWave4 1
+wvScrollUp -win $_nWave4 1
+wvScrollUp -win $_nWave4 1
+verdiDockWidgetSetCurTab -dock windowDock_nWave_3
+wvScrollUp -win $_nWave3 1
+wvScrollUp -win $_nWave3 1
+wvScrollUp -win $_nWave3 1
+wvScrollDown -win $_nWave3 0
+wvScrollDown -win $_nWave3 0
+wvScrollDown -win $_nWave3 0
+wvSetCursor -win $_nWave3 20.079483 -snap {("G1" 1)}
+verdiDockWidgetSetCurTab -dock windowDock_nWave_4
+wvScrollUp -win $_nWave4 1
+wvSetCursor -win $_nWave4 18.195137 -snap {("G1" 0)}
+wvSetCursor -win $_nWave4 28.640493 -snap {("G2" 1)}
+wvScrollDown -win $_nWave4 1
+wvScrollDown -win $_nWave4 1
+wvScrollDown -win $_nWave4 1
+wvScrollDown -win $_nWave4 1
+wvScrollDown -win $_nWave4 1
+verdiDockWidgetSetCurTab -dock windowDock_nWave_3
+wvScrollDown -win $_nWave3 1
+wvScrollDown -win $_nWave3 1
+wvSetCursor -win $_nWave3 33.154495 -snap {("G2" 2)}
+verdiDockWidgetSetCurTab -dock windowDock_nWave_5
+verdiDockWidgetSetCurTab -dock windowDock_nWave_4
+wvSetCursor -win $_nWave4 24.934076 -snap {("G2" 1)}
+wvZoomAll -win $_nWave4
+wvZoom -win $_nWave4 0.000000 235.156457
+wvZoom -win $_nWave4 0.000000 89.344396
+wvSetCursor -win $_nWave4 47.103662 -snap {("G2" 1)}
+wvSetCursor -win $_nWave4 33.468391 -snap {("G2" 1)}
+wvZoomOut -win $_nWave4
+wvZoomOut -win $_nWave4
+wvScrollUp -win $_nWave4 1
+wvScrollUp -win $_nWave4 1
+wvScrollUp -win $_nWave4 1
+wvScrollUp -win $_nWave4 1
+wvScrollUp -win $_nWave4 1
+verdiDockWidgetSetCurTab -dock windowDock_nWave_3
+verdiDockWidgetSetCurTab -dock windowDock_nWave_4
+verdiDockWidgetSetCurTab -dock windowDock_nWave_3
+verdiDockWidgetSetCurTab -dock windowDock_nWave_4
+wvZoom -win $_nWave4 0.000000 154.088093
+verdiDockWidgetSetCurTab -dock windowDock_nWave_3
+verdiDockWidgetSetCurTab -dock windowDock_nWave_4
+verdiDockWidgetSetCurTab -dock windowDock_nWave_3
+verdiDockWidgetSetCurTab -dock windowDock_nWave_4
+verdiDockWidgetSetCurTab -dock windowDock_nWave_3
+wvSelectSignal -win $_nWave3 {( "G1" 5 )} 
+wvZoomAll -win $_nWave3
+wvZoomAll -win $_nWave3
+wvZoomAll -win $_nWave3
+wvZoom -win $_nWave3 0.000000 127.512500
+verdiDockWidgetSetCurTab -dock windowDock_nWave_5
+wvZoomAll -win $_nWave5
+wvZoomAll -win $_nWave5
+verdiDockWidgetSetCurTab -dock windowDock_nWave_4
+verdiDockWidgetSetCurTab -dock windowDock_nWave_3
+verdiDockWidgetSetCurTab -dock windowDock_nWave_4
+wvSetCursor -win $_nWave4 24.996147 -snap {("G2" 1)}
+wvScrollDown -win $_nWave4 1
+wvSetCursor -win $_nWave4 59.036953 -snap {("G2" 1)}
+wvZoomAll -win $_nWave4
+wvZoomAll -win $_nWave4
+wvZoom -win $_nWave4 0.000000 108.868730
+verdiDockWidgetSetCurTab -dock windowDock_nWave_3
+wvSelectSignal -win $_nWave3 {( "G2" 2 )} 
+wvScrollDown -win $_nWave3 1
+wvScrollDown -win $_nWave3 1
+wvScrollDown -win $_nWave3 1
+wvScrollDown -win $_nWave3 0
+wvScrollDown -win $_nWave3 0
+wvScrollDown -win $_nWave3 0
+wvScrollDown -win $_nWave3 0
+wvSetPosition -win $_nWave3 {("G3" 0)}
+wvGetSignalOpen -win $_nWave3
+wvGetSignalSetScope -win $_nWave3 "/top"
+wvGetSignalSetScope -win $_nWave3 "/top/u_dut"
+wvGetSignalSetScope -win $_nWave3 "/top/u_dut/u_fifo"
+wvGetSignalSetScope -win $_nWave3 "/top/u_dut/u_fifo"
+wvGetSignalSetScope -win $_nWave3 "/top/u_dut"
+wvGetSignalSetScope -win $_nWave3 "/top"
+wvSetPosition -win $_nWave3 {("G3" 2)}
+wvSetPosition -win $_nWave3 {("G3" 2)}
+wvAddSignal -win $_nWave3 -clear
+wvAddSignal -win $_nWave3 -group {"G1" \
+{/top/u_dut/u_fifo/rstn_i} \
+{/top/u_dut/u_fifo/wclk_i} \
+{/top/u_dut/u_fifo/we} \
+{/top/u_dut/u_fifo/we_i} \
+{/top/u_dut/u_fifo/ff} \
+{/top/u_dut/u_fifo/ff_o} \
+{/top/u_dut/u_fifo/mem\[0:6\]} \
+{/top/u_dut/u_fifo/d_i\[7:0\]} \
+}
+wvAddSignal -win $_nWave3 -group {"G2" \
+{/top/u_dut/u_fifo/re} \
+{/top/u_dut/u_fifo/re_i} \
+{/top/u_dut/u_fifo/ef} \
+{/top/u_dut/u_fifo/ef_o} \
+{/top/u_dut/readyout} \
+{/top/u_dut/readyout_n} \
+{/top/re} \
+{/top/u_dut/u_fifo/qa_o\[7:0\]} \
+}
+wvAddSignal -win $_nWave3 -group {"G3" \
+{/top/u_dut/re} \
+{/top/re} \
+}
+wvAddSignal -win $_nWave3 -group {"G4" \
+}
+wvSelectSignal -win $_nWave3 {( "G3" 2 )} 
+wvSetPosition -win $_nWave3 {("G3" 2)}
+wvSetPosition -win $_nWave3 {("G3" 2)}
+wvSetPosition -win $_nWave3 {("G3" 2)}
+wvAddSignal -win $_nWave3 -clear
+wvAddSignal -win $_nWave3 -group {"G1" \
+{/top/u_dut/u_fifo/rstn_i} \
+{/top/u_dut/u_fifo/wclk_i} \
+{/top/u_dut/u_fifo/we} \
+{/top/u_dut/u_fifo/we_i} \
+{/top/u_dut/u_fifo/ff} \
+{/top/u_dut/u_fifo/ff_o} \
+{/top/u_dut/u_fifo/mem\[0:6\]} \
+{/top/u_dut/u_fifo/d_i\[7:0\]} \
+}
+wvAddSignal -win $_nWave3 -group {"G2" \
+{/top/u_dut/u_fifo/re} \
+{/top/u_dut/u_fifo/re_i} \
+{/top/u_dut/u_fifo/ef} \
+{/top/u_dut/u_fifo/ef_o} \
+{/top/u_dut/readyout} \
+{/top/u_dut/readyout_n} \
+{/top/re} \
+{/top/u_dut/u_fifo/qa_o\[7:0\]} \
+}
+wvAddSignal -win $_nWave3 -group {"G3" \
+{/top/u_dut/re} \
+{/top/re} \
+}
+wvAddSignal -win $_nWave3 -group {"G4" \
+}
+wvSelectSignal -win $_nWave3 {( "G3" 2 )} 
+wvSetPosition -win $_nWave3 {("G3" 2)}
+wvGetSignalClose -win $_nWave3
+wvSelectSignal -win $_nWave3 {( "G3" 1 )} 
+wvSelectSignal -win $_nWave3 {( "G3" 1 2 )} 
+wvAddSignal -win $_nWave3 "/top/u_dut/readyout" "/top/u_dut/readyout_n" "/top/re"
+wvSetPosition -win $_nWave3 {("G3" 2)}
+wvSetPosition -win $_nWave3 {("G3" 5)}
+wvCut -win $_nWave3
+wvSetPosition -win $_nWave3 {("G3" 2)}
+wvSelectSignal -win $_nWave3 {( "G3" 1 )} 
+wvSelectSignal -win $_nWave3 {( "G3" 1 2 )} 
+verdiDockWidgetSetCurTab -dock windowDock_nWave_4
+wvSetPosition -win $_nWave4 {("G2" 5)}
+wvSelectSignal -win $_nWave4 {( "G2" 5 )} 
+wvAddSignal -win $_nWave4 "/top/u_dut/re" "/top/re"
+wvSetPosition -win $_nWave4 {("G2" 5)}
+wvSetPosition -win $_nWave4 {("G2" 7)}
+wvSetCursor -win $_nWave4 24.631986 -snap {("G2" 6)}
+wvSelectSignal -win $_nWave4 {( "G2" 3 )} 
+wvSetCursor -win $_nWave4 32.881377 -snap {("G2" 6)}
+wvSetCursor -win $_nWave4 35.321338 -snap {("G2" 6)}
+wvSetCursor -win $_nWave4 46.940199 -snap {("G2" 6)}
+wvSetCursor -win $_nWave4 52.865819 -snap {("G2" 6)}
+verdiDockWidgetSetCurTab -dock windowDock_nWave_3
+wvSetCursor -win $_nWave3 34.368604 -snap {("G3" 1)}
+wvSetCursor -win $_nWave3 47.443616 -snap {("G3" 1)}
+wvSetCursor -win $_nWave3 52.549097 -snap {("G3" 1)}
+verdiDockWidgetSetCurTab -dock windowDock_nWave_4
+wvZoomOut -win $_nWave4
+wvZoomOut -win $_nWave4
+verdiDockWidgetSetCurTab -dock windowDock_nWave_3
+wvZoomOut -win $_nWave3
+wvZoomOut -win $_nWave3
+verdiDockWidgetSetCurTab -dock windowDock_nWave_4
+wvSetCursor -win $_nWave4 290.936286 -snap {("G1" 4)}
+wvSetCursor -win $_nWave4 298.372357 -snap {("G1" 4)}
+verdiDockWidgetSetCurTab -dock windowDock_nWave_3
+wvSetCursor -win $_nWave3 289.393604 -snap {("G2" 1)}
+wvSetCursor -win $_nWave3 297.363135 -snap {("G2" 1)}
+wvSetCursor -win $_nWave3 282.420264 -snap {("G2" 1)}
+wvSetCursor -win $_nWave3 294.872656 -snap {("G2" 1)}
+verdiDockWidgetSetCurTab -dock windowDock_nWave_4
+wvZoomAll -win $_nWave4
+wvZoom -win $_nWave4 0.000000 148.061473
+wvSetCursor -win $_nWave4 25.756692 -snap {("G2" 1)}
