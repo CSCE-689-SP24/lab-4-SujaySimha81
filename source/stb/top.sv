@@ -44,7 +44,7 @@ module top; // Top level
   `ifdef ASSERTIONS
    property p1; /*design requirement 1 :If the FIFO is not empty, 
                   then the `read enable` signal should be asserted.*/
-    @(posedge clk1) disable iff (!rstn) !u_dut.u_fifo.ef_o |-> u_dut.u_fifo.re ;
+    @(posedge clk1) disable iff (!rstn) u_dut.u_fifo.re |-> !u_dut.u_fifo.ef_o ;
   endproperty
 
   property p2; /*Design requirement 2: If the FIFO is full,
