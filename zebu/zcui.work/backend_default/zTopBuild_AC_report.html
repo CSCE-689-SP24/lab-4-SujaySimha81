@@ -108,34 +108,35 @@ Primitive count from the top module top
           +--------------------------+--------------------+---------+---------+
           |Primitive                 |              Number|Equiv LUT|Equiv REG|
           +--------------------------+--------------------+---------+---------+
-          |fd                        |                 313|         |      313|
-          |fdc                       |                  39|         |       39|
+          |fd                        |                 350|         |      350|
+          |fd_1                      |                  19|         |       19|
+          |fdc                       |                  34|         |       34|
           |fdce                      |                  19|         |       19|
-          |fde                       |                 132|         |      132|
-          |fdp                       |                   6|         |        6|
+          |fde                       |                 133|         |      133|
+          |fdp                       |                   7|         |        7|
           +--------------------------+--------------------+---------+---------+
-          |Summary Flip-Flops        |                 509|         |      509|
+          |Summary Flip-Flops        |                 562|         |      562|
           =--------------------------+--------------------+---------+---------=
-          |gnd                       |                  13|         |         |
-          |lut2                      |                  63|       63|         |
+          |gnd                       |                  14|         |         |
+          |lut2                      |                  69|       69|         |
           |lut3                      |                  60|       60|         |
-          |lut4                      |                   9|        9|         |
-          |lut5                      |                  10|       10|         |
+          |lut4                      |                   8|        8|         |
+          |lut5                      |                   9|        9|         |
           |lut6                      |                  29|       29|         |
-          |vcc                       |                   6|         |         |
+          |vcc                       |                   7|         |         |
           +--------------------------+--------------------+---------+---------+
-          |Summary General           |  190 (=   171 LUTs)|      171|         |
+          |Summary General           |  196 (=   175 LUTs)|      175|         |
           =--------------------------+--------------------+---------+---------=
           |ld_1                      |                   1|         |        1|
           +--------------------------+--------------------+---------+---------+
           |Summary Latches           |                   1|         |        1|
           =--------------------------+--------------------+---------+---------=
           |and2                      |                  35|       35|         |
-          |inv                       |                  53|         |         |
+          |inv                       |                  59|         |         |
           |xor2                      |                   6|        6|         |
           |xorcy                     |                   2|         |         |
           +--------------------------+--------------------+---------+---------+
-          |Summary Logic Primitives  |   96 (=    41 LUTs)|       41|         |
+          |Summary Logic Primitives  |  102 (=    41 LUTs)|       41|         |
           =--------------------------+--------------------+---------+---------=
           |ram256x1s                 |   18 (=    72 LUTs)|       72|         |
           +--------------------------+--------------------+---------+---------+
@@ -165,18 +166,18 @@ Primitive count from the top module top
 
 Design content summary, Luts, BRams, URAM, Flip-Flops, Latches, Multiplexers, Multipliers, other logic:
           +----------------------------------+---+
-          |Logic LUTs                        |171|
+          |Logic LUTs                        |175|
           |RAMLUTs                           | 72|
-          |Logic LUTs + RAMLUTs              |243|
-          |Logic LUTs + RAMLUTs + other logic|284|
+          |Logic LUTs + RAMLUTs              |247|
+          |Logic LUTs + RAMLUTs + other logic|288|
           |BRAMs                             |  0|
           |URAMs                             |  0|
-          |Flip-Flops                        |509|
+          |Flip-Flops                        |562|
           |Latches                           |  1|
-          |Flip-Flops + Latches + other logic|602|
+          |Flip-Flops + Latches + other logic|655|
           |Multiplexers                      |  2|
           |MULT18/DSP                        |  0|
-          |Other logic                       |407|
+          |Other logic                       |415|
           |Lut equiv other logic             | 41|
           |Reg equiv Other logic             | 92|
           +----------------------------------+---+
@@ -243,9 +244,9 @@ Design content summary, Luts, BRams, URAM, Flip-Flops, Latches, Multiplexers, Mu
 </a></h4>
 <pre>
 Reset time counter
-   1    elapsed:0.23 s    user:0.3 s    system:0.3 s      %cpu:25.34       load:0.46       fm:174094 m     vm:1586 m     vm:+768 m      um:298 m       um:+5 m ZTOPPARTITIONING
-   2     elapsed:0.1 s      user:0 s      system:0 s       %cpu:0.00       load:0.46       fm:174094 m     vm:1586 m       vm:+0 m      um:299 m       um:+0 m AC_netlist_stat
-   3     elapsed:0.2 s      user:0 s      system:0 s       %cpu:0.00       load:0.46       fm:174094 m     vm:1586 m       vm:+0 m      um:299 m       um:+0 m AC_global_cost_estimate
+   1    elapsed:0.16 s    user:0.4 s    system:0.2 s      %cpu:36.36       load:0.43       fm:171236 m     vm:1586 m     vm:+768 m      um:307 m       um:+5 m ZTOPPARTITIONING
+   2     elapsed:0.1 s    user:0.1 s      system:0 s      %cpu:88.89       load:0.43       fm:171236 m     vm:1586 m       vm:+0 m      um:308 m       um:+0 m AC_netlist_stat
+   3     elapsed:0.2 s      user:0 s      system:0 s       %cpu:0.00       load:0.43       fm:171236 m     vm:1586 m       vm:+0 m      um:308 m       um:+0 m AC_global_cost_estimate
 </pre>
 </div>
 </body>

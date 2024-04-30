@@ -24,6 +24,11 @@ EdfPortBounds ram{
 EdfPortBounds proba_0000{
 9 0 level
 }
+EdfPortBounds fifo_usage_spy{
+7 0 datain
+7 0 dataout
+3 0 remain
+}
 EdfPortBounds parity_check{
 8 0 a
 }

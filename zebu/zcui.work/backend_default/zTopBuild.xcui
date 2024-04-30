@@ -9,7 +9,7 @@
 
 <target type="zCoreBuild">
   <label>Part_0</label>
-  <priority rank="885"></priority>
+  <priority rank="942"></priority>
   <repository>work.Part_0/</repository>
   <script typeCrc="crcFile">zCoreBuild_ztb.tcl</script>
   <input typeCrc="crcFile">top.hash</input>

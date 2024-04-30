@@ -43,7 +43,9 @@ module fifo #(
   wire [ ADD_WIDTH : 0 ] w_remain;
 
   // Write process
-  assign we      = we_i && ff;
+  //assign we      = we_i && ff;
+  assign we      = we_i && !ff; //corrected design bug : 
+                                //we is always 0 in teh bug from the beginning as ff is set to 0 in the beginning after reset
   assign wa_nxt  = wa + 1;
   assign wag     = wa ^ {1'b0, wa[ ADD_WIDTH-1:1]};
   assign wag_nxt = wa_nxt ^ {1'b0, wa_nxt[ ADD_WIDTH-1:1]};
@@ -74,7 +76,9 @@ module fifo #(
   always @(posedge rclk_i or negedge rstn_i)
     if (!rstn_i) begin
       ra <= 0;
-      ef <= 0;
+      //ef <= 0;
+      ef <= 1; //corrected design bug
+               //FIFO needs to be empty after reset
       q  <= 0;
     end
     else begin

@@ -29,22 +29,22 @@
   </Header>
   <Row>
     <Part_Name__Res_Used_Available_>Part_0</Part_Name__Res_Used_Available_>
-    <LUT>1250</LUT>
+    <LUT>2666</LUT>
     <LUT6>29</LUT6>
-    <REG>1219</REG>
+    <REG>1726</REG>
     <RAMLUT>72</RAMLUT>
-    <FWC_IP_NUM>3</FWC_IP_NUM>
-    <FWC_IP_BITS>138</FWC_IP_BITS>
+    <FWC_IP_NUM>8</FWC_IP_NUM>
+    <FWC_IP_BITS>194</FWC_IP_BITS>
     <IO>0</IO>
   </Row>
   <Row>
     <Part_Name__Res_Used_Available_>SUM</Part_Name__Res_Used_Available_>
-    <LUT>1250</LUT>
+    <LUT>2666</LUT>
     <LUT6>29</LUT6>
-    <REG>1219</REG>
+    <REG>1726</REG>
     <RAMLUT>72</RAMLUT>
-    <FWC_IP_NUM>3</FWC_IP_NUM>
-    <FWC_IP_BITS>138</FWC_IP_BITS>
+    <FWC_IP_NUM>8</FWC_IP_NUM>
+    <FWC_IP_BITS>194</FWC_IP_BITS>
     <IO>0</IO>
   </Row>
 </Table>

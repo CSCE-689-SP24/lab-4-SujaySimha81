@@ -1,7 +1,7 @@
-fifo_usage_spy
-    OK input design/synth_Default_RTL_Group/script/fifo_usage_spy.tcl same checksum
+fifo_0000
+    OK input design/synth_Default_RTL_Group/script/fifo_0000.tcl same checksum
     OK input design/synth_Default_RTL_Group/../zfepp_Default_RTL_Group.tcl same checksum
     OK input /home/grads/s/sujaysimha/CSCE_689/lab-4-SujaySimha81/zebu/zcui.work/utf_generatefiles/new_global_utf_config.hcsrc same checksum
     OK input /home/grads/s/sujaysimha/CSCE_689/lab-4-SujaySimha81/zebu/zcui.work/utf_generatefiles/global_utf.hcsrc same checksum
-    KO input design/synth_Default_RTL_Group/src/fifo_usage_spy.scm out of date (non equal checksum)
-    OK output design/synth_Default_RTL_Group/edif/fifo_usage_spy/fifo_usage_spy.edf.gz
+    KO input design/synth_Default_RTL_Group/src/fifo_0000.scm out of date (non equal checksum)
+    OK output design/synth_Default_RTL_Group/edif/fifo_0000/fifo_0000.edf.gz

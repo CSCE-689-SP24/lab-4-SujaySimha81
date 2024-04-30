@@ -40,7 +40,8 @@ module top; // Top level
     .ready_rd  (ready_read),
     .error     (errorout)
   );
-
+  
+  `ifdef ASSERTIONS
    property p1; /*design requirement 1 :If the FIFO is not empty, 
                   then the `read enable` signal should be asserted.*/
     @(posedge clk1) disable iff (!rstn) !u_dut.u_fifo.ef_o |-> u_dut.u_fifo.re ;
@@ -50,6 +51,7 @@ module top; // Top level
                 the `write enable` signal should be deasserted.*/
     @(posedge clk0) disable iff (!rstn) u_dut.u_fifo.ff_o |-> !u_dut.u_fifo.we ;
   endproperty
+  `endif
 
   assert_design_req1_empty_assert : assert property (p1)
         $display("FIFO empty assertion passed");

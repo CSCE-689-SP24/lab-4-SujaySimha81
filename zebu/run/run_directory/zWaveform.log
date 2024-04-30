@@ -20,9 +20,9 @@
             Inclusivity and Diversity" (Refer to article 000036315 at
                         https://solvnetplus.synopsys.com)
 
-# zWaveform --work ../../zcui.work/zebu.work/ --ztdb runtime_output/dynprobes_dump.ztdb --fsdb dynprobes_dump_2 --timescale 1ns 
+# zWaveform --work ../../zcui.work/zebu.work/ --ztdb runtime_output/dynprobes_dump.ztdb --fsdb dynprobes_dump_c --timescale 1ns 
 
-# start time is Thu Apr 18 00:16:27 2024
+# start time is Mon Apr 29 15:48:12 2024
 
 
 
@@ -30,25 +30,25 @@
 # Build Date : Oct 18 2022 - 01:01:26
 # ---------------------------System Context--------------------------- 
 # Cpu        40 x bogomips - 4604.90 Intel(R) Xeon(R) CPU E5-2650 v3 @ 2.30GHz
-#            Load: 0.50 0.55 0.53 2/478 24157
+#            Load: 0.00 0.01 0.05 1/494 35513
 #            Hostname: csce-quinn-s1.engr.tamu.edu   OS: Linux 3.10.0-1160.108.1.el7.x86_64
-# Memory     Total: 193183 MB Free: 174440 MB
-#            Total Free including cache: 187849 MB
-#            Swap cache: 0 MB Cached space: 13409 MB
+# Memory     Total: 193183 MB Free: 171265 MB
+#            Total Free including cache: 187497 MB
+#            Swap cache: 0 MB Cached space: 16232 MB
 #            Swap space: 4095 MB Free Swap space: 4095 MB
 #            VmSize: 278 MB VmPeak: 278 MB
-# Disk Space Total: 50 GB Available: 27 GB Used: 23 GB
-#            Free inodes: 104738023
+# Disk Space Total: 50 GB Available: 8 GB Used: 42 GB
+#            Free inodes: 104731903
 # Stack                                Soft Limit           Hard Limit  
 #            Max stack size            8388608              unlimited            bytes     
 # -------------------------------------------------------------------- 
 
 
-#   step WAVEFORM : zSimzilla --zebu-work '../../zcui.work/zebu.work/' --ztdb 'runtime_output/dynprobes_dump.ztdb' --fsdb 'dynprobes_dump_2' --timescale '1ns' --algo 2 --enable-xn-resolution --mudb --log 'zWaveform.simzilla.log'
+#   step WAVEFORM : zSimzilla --zebu-work '../../zcui.work/zebu.work/' --ztdb 'runtime_output/dynprobes_dump.ztdb' --fsdb 'dynprobes_dump_c' --timescale '1ns' --algo 2 --enable-xn-resolution --mudb --log 'zWaveform.simzilla.log'
 
 #   exec summary :    0 warnings,    0 syntax errors,    0 fatal errors,    0 internal errors
-#   exec summary : wall clock 0m5s, user 0m0.53s, sys 0m0.57s
-#   exec summary : Total memory: 349992 kB - RSS memory: 167584 kB - Data memory: 165544 kB
+#   exec summary : wall clock 0m2s, user 0m0.60s, sys 0m0.102s
+#   exec summary : Total memory: 351016 kB - RSS memory: 166212 kB - Data memory: 166568 kB
 #   exec summary : Successful execution
 
-# end time is Thu Apr 18 00:16:32 2024
+# end time is Mon Apr 29 15:48:14 2024

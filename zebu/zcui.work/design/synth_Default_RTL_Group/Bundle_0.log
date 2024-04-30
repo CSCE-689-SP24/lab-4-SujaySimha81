@@ -27,7 +27,7 @@
 #   info : Setup
 #   info : #----------------------------------------------------------------
 # command line is /opt/coe/synopsys/zebu/Q-2020.03-SP1-4/bin/zFe compile_hdr.tcl script/Bundle_0_synp.tcl -log Bundle_0.log -zlog 1 
-# start time is Thu Apr 18 02:44:09 CDT 2024
+# start time is Mon Apr 29 13:43:35 CDT 2024
 #   step Setup : CVS $Revision: #14 $
 #   step Setup : CVS $Date: 2021/08/23 $
 #   step Setup : Tcl executable is /opt/coe/synopsys/zebu/Q-2020.03-SP1-4/bin/ztclsh
@@ -47,7 +47,7 @@
 #   step Setup : 'which zNetgen' is /opt/coe/synopsys/zebu/Q-2020.03-SP1-4/bin/zNetgen
 #   step Setup : 'which zfast' is /opt/coe/synopsys/zebu/Q-2020.03-SP1-4/bin/zfast
 #   step Setup : 'which zCui' is /opt/coe/synopsys/zebu/Q-2020.03-SP1-4/bin/zCui
-#   step Setup : pid_hostname is 39165_csce-quinn-s1.engr.tamu.edu_6620cf49 
+#   step Setup : pid_hostname is 35586_csce-quinn-s1.engr.tamu.edu_662fea57 
 #   step Setup : Environment variable ZEBU_ROOT is /opt/coe/synopsys/zebu/Q-2020.03-SP1-4
 #   step Setup : Have set the data path to /opt/coe/synopsys/zebu/Q-2020.03-SP1-4
 #   step Setup : Environment variable THARAS_ROOT has been set to /opt/coe/synopsys/zebu/Q-2020.03-SP1-4, because it was not set.
@@ -60,7 +60,7 @@
 #   step Setup : Debug flag = 0
 #   step Setup : Attribute files read: /opt/coe/synopsys/zebu/Q-2020.03-SP1-4/etc/vhs/hcsrc.zfs
      /opt/coe/synopsys/zebu/Q-2020.03-SP1-4/etc/vhs/hcsrc.zcui
-#   step Setup : Sourcing file concat_Bundle_0_log_39165_csce-quinn-s1.engr.tamu.edu_6620cf49
+#   step Setup : Sourcing file concat_Bundle_0_log_35586_csce-quinn-s1.engr.tamu.edu_662fea57
 #   step Setup :         NEXT CALL to cmn::option fe_hcsrc /opt/coe/synopsys/zebu/Q-2020.03-SP1-4/etc/vhs/hc ...
 #   step Setup : Start of copy of file /opt/coe/synopsys/zebu/Q-2020.03-SP1-4/etc/vhs/hcsrc.zcui, which has user attributes.
 #-------------------------------------------------------------------------------
@@ -181,13 +181,13 @@ Esx:UnNamedBlockPrefix=(unnamed$$$$_)
 #   info : Synth
 #   info : #----------------------------------------------------------------
 #   step Synth :         NEXT CALL to fs::simple_compile -technology vtx7 -mode block_based -version NewMixe ...
-#   step Synth : Deleting edif_tmp/edif/fifo_usage_spy/fifo_usage_spy.edf.gz
-#   step Synth : Deleting edif_tmp/edif/fifo_usage_spy/fifo_usage_spy.edf.gz_subedifs
-#   step Synth : Deleting zdpi/fifo_usage_spy_ccall.cc
-#   step Synth : Deleting zdpi/fifo_usage_spy_ccall.h
-#   step Synth : Deleting edif/fifo_usage_spy/fifo_usage_spy.edf.gz
+#   step Synth : Deleting edif_tmp/edif/fifo_0000/fifo_0000.edf.gz
+#   step Synth : Deleting edif_tmp/edif/fifo_0000/fifo_0000.edf.gz_subedifs
+#   step Synth : Deleting zdpi/fifo_0000_ccall.cc
+#   step Synth : Deleting zdpi/fifo_0000_ccall.h
+#   step Synth : Deleting edif/fifo_0000/fifo_0000.edf.gz
 #   step Synth : Execing the following command:
-#   step Synth :    zfast +hcs+atf work_dir_Bundle_0_log_39165_csce-quinn-s1.engr.tamu.edu_6620cf49/hcsrc_zfast_01.parsed_args
+#   step Synth :    zfast +hcs+atf work_dir_Bundle_0_log_35586_csce-quinn-s1.engr.tamu.edu_662fea57/hcsrc_zfast_01.parsed_args
 #   step ALWAYS : 
 
                                     ZeBu (R)
@@ -211,18 +211,20 @@ Esx:UnNamedBlockPrefix=(unnamed$$$$_)
             Inclusivity and Diversity" (Refer to article 000036315 at
                         https://solvnetplus.synopsys.com)
 
-#   step REPORT : Synthesizing module : fifo_usage_spy
-#   step REPORT : [39.349] Optimizing module : fifo_usage_spy
-#   step REPORT : Got DPI task gate ZDPI_TASK0: zebu_bb_ZDPI_MOD_fifo_usage_spy_ZDPI_fifo_usage_spy_notify_call0
-#   step REPORT : [6.1690] There are 4 levels of combinational cells
-#   step REPORT : [6.1689] There are 4 distinct nets driving control pins
-#   step REPORT : [6.1695] 2-input LUTs: 2
-#   step REPORT : [6.1695] 3-input LUTs: 4
-#   step REPORT : [6.1695] 4-input LUTs: 1
-#   step REPORT : [6.1695] 5-input LUTs: 1
-#   step REPORT : [6.1696] Total LUT area: 8
-#   step REPORT : [6.1697] State    : 18
-#   step REPORT : [6.1697]   (FF)   : 18
+#   step REPORT : Synthesizing module : fifo_0000
+#   step REPORT : [39.349] Optimizing module : fifo_0000
+#   step REPORT : [6.1690] There are 5 levels of combinational cells
+#   step REPORT : [6.1689] There are 12 distinct nets driving control pins
+#   step REPORT : [6.1695] 2-input LUTs: 9
+#   step REPORT : [6.1695] 3-input LUTs: 19
+#   step REPORT : [6.1695] 4-input LUTs: 3
+#   step REPORT : [6.1695] 6-input LUTs: 21
+#   step REPORT : [6.1696] Total LUT area: 52
+#   step REPORT : [6.1697] State    : 76
+#   step REPORT : [6.1697]   (FF)   : 76
+#   step REPORT : [6.1697] XORCY    : 4
+#   step REPORT : [6.1697] MUXCY    : 4
+#   step REPORT : [6.1697] incl. CARRY4: 1
 #   step REPORT : [6.1884] Renaming SVA module instances in the netlist
 #   step REPORT : [6.1882] Renaming special verilog names in the netlist
 #   step REPORT : [6.1882] Special names renaming stats:
@@ -232,36 +234,36 @@ Esx:UnNamedBlockPrefix=(unnamed$$$$_)
 #   step REPORT : [6.1883] Renaming wires like ports
 #   step REPORT : [6.1883] Renamed wires like ports (0 ports)
 #   step REPORT : [6.1885] Emitting RTLDB information for the netlist
-#   step REPORT : Converting netlist 'fifo_usage_spy' to znl format
+#   step REPORT : Converting netlist 'fifo_0000' to znl format
 #   step STATS :  ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #   step STATS :  |                 reg |                 lut |                bram |                uram |             memsize |              m18x18 |                bufg |                buft |               nbI/O |                nbBB |                nbZV |                nbME |               dsp48 || name
 #   step STATS :  ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-#   step STATS :  |                  18 |                   8 |                   0 |                   0 |                   0 |                   0 |                   0 |                   0 |                   6 |                   2 |                   0 |                   0 |                   0 || fifo_usage_spy
+#   step STATS :  |                  76 |                  57 |                   0 |                   0 |                   0 |                   0 |                   0 |                   0 |                  36 |                   2 |                   0 |                   0 |                   0 || fifo_0000
 #   step STATS :  ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-#   step REPORT : Writing netlist 'fifo_usage_spy' to 'edif/fifo_usage_spy/fifo_usage_spy.edf.gz'
-#   step EDIF GENERATOR : netlist 'zmerge' has changed - regenerate EDIF file 'edif/fifo_usage_spy/fifo_usage_spy.edf.gz'
-#   step SERIALIZE : writing netlist 'zmerge' into znl file 'edif/fifo_usage_spy/fifo_usage_spy.edf.gz'
-#   step SERIALIZE : #bytes in: 1912, #bytes out: 1043, compression ratio: 1.833174
-#   step REPORT : [87.28] Resource usage for fifo_usage_spy: 0.173s 32.1M
+#   step REPORT : Writing netlist 'fifo_0000' to 'edif/fifo_0000/fifo_0000.edf.gz'
+#   step EDIF GENERATOR : netlist 'zmerge' has changed - regenerate EDIF file 'edif/fifo_0000/fifo_0000.edf.gz'
+#   step SERIALIZE : writing netlist 'zmerge' into znl file 'edif/fifo_0000/fifo_0000.edf.gz'
+#   step SERIALIZE : #bytes in: 6107, #bytes out: 3311, compression ratio: 1.844458
+#   step REPORT : [87.28] Resource usage for fifo_0000: 0.187s 32.1M
 #   step Synth : execing Tcl status is 0
 #   step Synth : execing passed (nothing written to stderr)
-#   step Synth : Deleting synthesis_log_dir/fifo_usage_spy.log
+#   step Synth : Deleting synthesis_log_dir/fifo_0000.log
 #   step Synth : RhinoDB status is set by default value: rhino_default_status:1.
 #   step Synth : Using zCreateNameDB from /opt/coe/synopsys/vcs/Q-2020.03-SP2-12/bin/zCreateNameDB for RhinoDB population.
 #   step Synth : Running RhinoDB gate population on 1 modules. To skip this step please set SNPS_RHINODB_INTERNAL_3STEP_DISABLE env var.
 #   step Synth : Execing the following command:
-#   step Synth :    /opt/coe/synopsys/vcs/Q-2020.03-SP2-12/bin/zCreateNameDB -bundle Bundle_0,fifo_usage_spy,  -v -X show_times -z /home/grads/s/sujaysimha/CSCE_689/lab-4-SujaySimha81/zebu/zcui.work/design/synth_Default_RTL_Group
+#   step Synth :    /opt/coe/synopsys/vcs/Q-2020.03-SP2-12/bin/zCreateNameDB -bundle Bundle_0,fifo_0000,  -v -X show_times -z /home/grads/s/sujaysimha/CSCE_689/lab-4-SujaySimha81/zebu/zcui.work/design/synth_Default_RTL_Group
 #   step Synth : execing Tcl status is 0
 #   step Synth : execing passed (nothing written to stderr)
-#   step Synth : Synthesis called the following command: '/opt/coe/synopsys/vcs/Q-2020.03-SP2-12/bin/zCreateNameDB -bundle Bundle_0,fifo_usage_spy,  -v -X show_times -z /home/grads/s/sujaysimha/CSCE_689/lab-4-SujaySimha81/zebu/zcui.work/design/synth_Default_RTL_Group'
-#   step Synth : Deleting work_dir_Bundle_0_log_39165_csce-quinn-s1.engr.tamu.edu_6620cf49
-#   step Synth : Will delete /tmp/ZEBU_zFe_* files older than Sun Apr 14 00:00:00 CDT 2024 (owner must match)
-#   step Synth : Sourcing file concat_Bundle_0_log_39165_csce-quinn-s1.engr.tamu.edu_6620cf49 returned the result string '0'
-#   step Synth : Sourcing file concat_Bundle_0_log_39165_csce-quinn-s1.engr.tamu.edu_6620cf49 has completed.
-#   step Synth : Deleting concat_Bundle_0_log_39165_csce-quinn-s1.engr.tamu.edu_6620cf49
+#   step Synth : Synthesis called the following command: '/opt/coe/synopsys/vcs/Q-2020.03-SP2-12/bin/zCreateNameDB -bundle Bundle_0,fifo_0000,  -v -X show_times -z /home/grads/s/sujaysimha/CSCE_689/lab-4-SujaySimha81/zebu/zcui.work/design/synth_Default_RTL_Group'
+#   step Synth : Deleting work_dir_Bundle_0_log_35586_csce-quinn-s1.engr.tamu.edu_662fea57
+#   step Synth : Will delete /tmp/ZEBU_zFe_* files older than Thu Apr 25 00:00:00 CDT 2024 (owner must match)
+#   step Synth : Sourcing file concat_Bundle_0_log_35586_csce-quinn-s1.engr.tamu.edu_662fea57 returned the result string '0'
+#   step Synth : Sourcing file concat_Bundle_0_log_35586_csce-quinn-s1.engr.tamu.edu_662fea57 has completed.
+#   step Synth : Deleting concat_Bundle_0_log_35586_csce-quinn-s1.engr.tamu.edu_662fea57
 
-#   step exec summary : time 0m2.351s
+#   step exec summary : time 0m1.348s
 #   exec summary : Total memory: 124000 kB minimum 
 #   exec summary : Successful execution
 
-# end time is Thu Apr 18 02:44:11 CDT 2024
+# end time is Mon Apr 29 13:43:36 CDT 2024

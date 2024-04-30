@@ -28,10 +28,12 @@
       [RAS0020W] ZBNF Resources: No resource information can be found for Module zebu_bb_zmem_we
       [RAS0020W] ZBNF Resources: No resource information can be found for Module zebu_bb_zmem_do
       [RAS0020W] ZBNF Resources: No resource information can be found for Module zebu_reqsig_clock_driverclock
+      [RAS0020W] ZBNF Resources: No resource information can be found for Module zebu_bb_ZDPI_MOD_fifo_usage_spy_ZDPI_fifo_usage_spy_notify_call5
+      [RAS0020W] ZBNF Resources: No resource information can be found for Module zebu_bb_ZDPI_MOD_fifo_usage_spy_ZDPI_fifo_usage_spy_notify_call4
+      [RAS0020W] ZBNF Resources: No resource information can be found for Module zebu_bb_ZDPI_MOD_fifo_usage_spy_ZDPI_fifo_usage_spy_notify_call3
+      [RAS0020W] ZBNF Resources: No resource information can be found for Module zebu_bb_ZDPI_MOD_fifo_usage_spy_ZDPI_fifo_usage_spy_notify_call2
+      [RAS0020W] ZBNF Resources: No resource information can be found for Module zebu_bb_ZDPI_MOD_fifo_usage_spy_ZDPI_fifo_usage_spy_notify_call1
       [RAS0020W] ZBNF Resources: No resource information can be found for Module zebu_bb_ZDPI_MOD_fifo_usage_spy_ZDPI_fifo_usage_spy_notify_call0
-      [RAS0020W] ZBNF Resources: No resource information can be found for Module ZSVA_MOD_0
-      [RAS0020W] ZBNF Resources: No resource information can be found for Module ZSVA_MOD_1
-      [RAS0020W] ZBNF Resources: No resource information can be found for Module zebu_clockGen
       [ZTCL0304W] ZMetrics : File (tools/zMetrics/post_partitioning_metrics.xml) already exists and has been replaced
       [KBD0213W] cannot open report file for writing make sure './.zTopBuild_AC_report.log.dir/SEC_AC_OPT_SOLUTION_CORE_SIZE' has writing rights.
       [KBD0213W] cannot open report file for writing make sure './.zTopBuild_AC_report.log.dir/SEC_AC_OPT_SOLUTION_CORE_XO' has writing rights.
@@ -55,7 +57,7 @@
       [RAS0020W] ZBNF Resources: No resource information can be found for Module zebu_bb_zmem_do
       [RAS0020W] ZBNF Resources: No resource information can be found for Module zfwc_hs_48
       [RAS0020W] ZBNF Resources: No resource information can be found for Module ZebuClockFilterData
-      [RAS0020W] ZBNF Resources: No resource information can be found for Module zfwc_hs_4
+      [RAS0020W] ZBNF Resources: No resource information can be found for Module zfwc_hs_10
       [RAS0020W] ZBNF Resources: No resource information can be found for Module ZebuClockFilterClock
       [RAS0020W] ZBNF Resources: No resource information can be found for Module zebu_clockGen
       [ZTCL0304W] ZMetrics : File (tools/zMetrics/post_partitioning_metrics.xml) already exists and has been replaced

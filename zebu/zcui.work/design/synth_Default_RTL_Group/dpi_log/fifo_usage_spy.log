@@ -1,2 +1,3 @@
 # Function Name | Path | Bits Transferred | Source File |Source Line | Call Number
-fifo_usage_spy_notify  {top.u_dut.u_fifo.u_fifo_usage_spy}  4  ../source/stb/fifo_usage_spy.sv  29  0
+fifo_usage_spy_notify  {top.u_dut.u_fifo.u_fifo_usage_spy}  10  ../source/stb/fifo_usage_spy.sv  43  0
+fifo_usage_spy_notify  {top.u_dut.u_fifo.u_fifo_usage_spy}  10  ../source/stb/fifo_usage_spy.sv  40  1

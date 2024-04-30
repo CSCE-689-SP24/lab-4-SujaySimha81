@@ -23,13 +23,13 @@ View: Compile profile
       BETA version: results may not be fully accurate
   Compilation Summary
       Last session wall clock times:
-          FE     : 27s
-          BE     : 43s
-          Total  : 1min 10s
+          FE     : 26s
+          BE     : 19min 08s
+          Total  : 19min 34s
       
       All sessions cumulative compile times:
-          without delay  : 17min 32s
-          with delay*    : 17min 44s
+          without delay  : 18min 44s
+          with delay*    : 19min 16s
       
       *including slot and grid delays, difference with total wall clock time could be NFS wait or internal flow handling delays
 
@@ -81,6 +81,13 @@ View: Compile profile
        - execution time : the time for the task being executed
     Top 5 zCore
       ^TABLE(tools/zCui/globalProfilerTable.xml,top_five_zcore,DDD)Top 5 zCore^TABLE-
+    Top 10 FPGAs
+      ^TABLE(tools/zCui/globalProfilerTable.xml,top_ten_fpga,DDD)Top 10 FPGAs^TABLE-
+  FPGA Winner Details
+      Duration per compilation step for each FPGA
+      ^TABLE(tools/zCui/globalProfilerTable.xml,fpga_compilation,DDD)Durations^TABLE-
+      Annex :
+      WRITE_BIT* : WRITE_BITSTREAM
   Hosts
       ^TABLE(tools/zCui/globalProfilerTable.xml,machine_names,DDDDDDDD)Hosts^TABLE-
   Memory usage
@@ -120,32 +127,32 @@ View: Design
       +-----------+---+---+---------+------+----+-----+----+---+
       |           |REG|LUT|LUT W/O W|RAMLUT|LUT6|MUXCY|BRAM|DSP|
       +-----------+---+---+---------+------+----+-----+----+---+
-      |Design size|601|284|      284|    72|  29|    2|   0|  0|
+      |Design size|654|288|      288|    72|  29|    2|   0|  0|
       +-----------+---+---+---------+------+----+-----+----+---+
       
-             67	Module(s)
+             72	Module(s)
              13	Blackbox module(s)
               0	External memory module(s)
               1	Fast Waveform Capture IP module(s)
-              3	DPI module(s)
+              8	DPI module(s)
               0	Qiwc IP module(s)
               0	Asynchronous ZMEM module(s)
               2	Synchronous ZMEM module(s)
-              2	Disconnected module port(s)    [in=2 out=0 inout=0]
-            254	Disconnected instance port(s)  [in=73 out=181 inout=0]
+              4	Disconnected module port(s)    [in=4 out=0 inout=0]
+            258	Disconnected instance port(s)  [in=75 out=183 inout=0]
               0	Disconnected wire(s)
-              4	Loadless wire(s)
+              6	Loadless wire(s)
               2	Sourceless wire(s)
-            457	Uninitialized Register(s)
-             10	Initialized Register(s)
+            506	Uninitialized Register(s)
+             14	Initialized Register(s)
       
       Detailed manipulation logic size (*)
       +------------------------------+---------------+---------------+---------------+---------------+---------------+----------+---------------+---------------+
       |                              |            REG|            LUT|         RAMLUT|           LUT6|          MUXCY|      BRAM|            DSP|           QIWC|
       +------------------------------+---------------+---------------+---------------+---------------+---------------+----------+---------------+---------------+
-      |        Post-split design size|            601|            284|             72|             29|              2|         0|              0|              0|
+      |        Post-split design size|            654|            288|             72|             29|              2|         0|              0|              0|
       |Sync elements routing cost(**)|              0|              0|              0|              0|              0|         0|              0|              0|
-      |                           SUM|            601|            284|             72|             29|              2|         0|              0|              0|
+      |                           SUM|            654|            288|             72|             29|              2|         0|              0|              0|
       +------------------------------+---------------+---------------+---------------+---------------+---------------+----------+---------------+---------------+
       
       (**)Note that sync elements routing cost include :  reg cost of non-reg sync elements.
@@ -269,9 +276,9 @@ View: Partitioning
       +-------------------------+-----------+---------+-----------+---------+----------+-----------+--+
       |FPGA\ Res(Used/Available)|        LUT|     LUT6|        REG|   RAMLUT|FWC_IP_NUM|FWC_IP_BITS|IO|
       +-------------------------+-----------+---------+-----------+---------+----------+-----------+--+
-      |                U0_M0_F00|5341/671880|29/342048|5951/659664|72/172400|     3/843|  138/68567| 0|
+      |                U0_M0_F00|5285/671880|29/342048|6019/659664|72/172400|     8/843|  194/68567| 0|
       +-------------------------+-----------+---------+-----------+---------+----------+-----------+--+
-      |                      SUM|5341/671880|29/342048|5951/659664|72/172400|     3/843|  138/68567| 0|
+      |                      SUM|5285/671880|29/342048|6019/659664|72/172400|     8/843|  194/68567| 0|
       +-------------------------+-----------+---------+-----------+---------+----------+-----------+--+
       
       
@@ -288,19 +295,19 @@ View: Partitioning
 
 View: Performance
   Timing Analysis
-    Theoretical frequency: 10000 Khz
-         (using default settings)
+    Theoretical frequency: 6249 Khz
+         (using default settings and ignoring clock skew)
       
-         Driver clock frequency is limited by clock paths (driverClk.Period = zClockSkewTime + DELAY_MIN_SKEW_DRVCLK) : 100ns
-         see Clock tab
+         Driver clock frequency is limited by routing data paths : 160ns
+         see Partitioning tab
          see zTime.html
          source : ^LINK(zTime.html)zTime.log^LINK-
       
-         Longest inter-fpga filter path delay is : 33 ns
-         Critical routing data path delay : 80 ns
-         . Constant part    : 20 ns
+         Longest inter-fpga filter path delay is : 31 ns
+         Critical routing data path delay : 160 ns
+         . Constant part    : 40 ns
          . Multiplexed part : 0 ns
-         . Memory latency part : 60 ns
+         . Memory latency part : 120 ns
          Xclock frequency is : 450 MHz
          Longest memory latency is : 120 ns
          Fast Waveform Captures detected, if use at run-time the driverClk frequency might be limited.
@@ -310,7 +317,7 @@ View: Performance
        +------+---+---+------+----+-----+----+---+-------------------+--+
        |ZCORE |REG|LUT|RAMLUT|LUT6|MUXCY|BRAM|DSP|LUT (w/o weighting)|IO|
        +------+---+---+------+----+-----+----+---+-------------------+--+
-       |Part_0|601|284|    72|  29|    2|   0|  0|                284| 0|
+       |Part_0|654|288|    72|  29|    2|   0|  0|                288| 0|
        +------+---+---+------+----+-----+----+---+-------------------+--+
   zCore Compilation : Part_0
     Final resource utilization and IO cut by FPGA
@@ -318,13 +325,13 @@ View: Performance
        FPGAs after partitioning and clock localization steps.
       
        FPGAs after partitioning and clock localization steps.
-      +-------------+------------+----------+------------+----------+----------------------------+-------+----+-------+---+------+
-      |FPGA         |         REG|(*)MUXF7,8|         LUT|    RAMLUT|                   (**)MUXCY|   BRAM|URAM|    DSP|CUT|STATUS|
-      +-------------+------------+----------+------------+----------+----------------------------+-------+----+-------+---+------+
-      |UNIT0.MOD0.F0|956 /2443200|         0|280 /1221600|72 /344800|2/lut(2)/lut_no_weighting(2)|0 /1290|0 /0|0 /2160|  5|    OK|
-      +-------------+------------+----------+------------+----------+----------------------------+-------+----+-------+---+------+
-      |SUM          |956 /2443200|        --|280 /1221600|72 /344800|2/lut(2)/lut_no_weighting(2)|0 /1290|0 /0|0 /2160|  5|    --|
-      +-------------+------------+----------+------------+----------+----------------------------+-------+----+-------+---+------+
+      +-------------+-------------+----------+------------+----------+----------------------------+-------+----+-------+---+------+
+      |FPGA         |          REG|(*)MUXF7,8|         LUT|    RAMLUT|                   (**)MUXCY|   BRAM|URAM|    DSP|CUT|STATUS|
+      +-------------+-------------+----------+------------+----------+----------------------------+-------+----+-------+---+------+
+      |UNIT0.MOD0.F0|1008 /2443200|         0|284 /1221600|72 /344800|2/lut(2)/lut_no_weighting(2)|0 /1290|0 /0|0 /2160|  5|    OK|
+      +-------------+-------------+----------+------------+----------+----------------------------+-------+----+-------+---+------+
+      |SUM          |1008 /2443200|        --|284 /1221600|72 /344800|2/lut(2)/lut_no_weighting(2)|0 /1290|0 /0|0 /2160|  5|    --|
+      +-------------+-------------+----------+------------+----------+----------------------------+-------+----+-------+---+------+
       
        REG        : REG count in generated netlists / FPGA capacity. 
        (*)MUXF7,8 : MUXF7 and MUXF8 count in generated netlists. A cost of 1 register is associated to each MUXF7 or MUXF8, 
@@ -341,30 +348,35 @@ View: Performance
   Routing paths
        Report a maximum of 100 first routing data path(s) 
       
-       +-------+------------------+-------+------+-------------------------------------------+-------------------------------------------+--------------------------------------------------+--------------------------------------------------------+
-       | Slack |    Required Time | Delay | Fpga | Clock Domain Source                       | Clock Domain Target                       |Port Name Source                                  |Port Name Target                                        |
-       +-------+------------------+-------+------+-------------------------------------------+-------------------------------------------+--------------------------------------------------+--------------------------------------------------------+
-       |   0 ns|160 ns ( 2 dvrCk )| 160 ns|     2|top._I_vcs_cdx_s_rw_topu_stb_clk0 (posedge)|top._I_vcs_cdx_s_rw_topu_stb_clk0 (posedge)|top.u_stb.u_rom.mem-r0do                          |U0_M0_F0-U0_M0_F0.U0_M0_F0_core.u_dut.u_check.error.D   |
-       |   0 ns|160 ns ( 2 dvrCk )| 160 ns|     2|top._I_vcs_cdx_s_rw_topu_stb_clk0 (posedge)|top.u_dut.u_fifo.u0_clkg.clkout (posedge)  |top.u_stb.u_rom.mem-r0do                          |U0_M0_F0-U0_M0_F0.U0_M0_F0_core.u_dut.u_fifo.mem[0][7].D|
-       |  75 ns| 80 ns ( 1 dvrCk )|   5 ns|     2|DRIVERCLOCK (system)                       |DRIVERCLOCK (system)                       |zcg_zceiClock[1]@top._I_vcs_cdx_s_rw_topu_stb_clk0|U0_M0_F0.zcg_zceiClock[1]                               |
-       +-------+------------------+-------+------+-------------------------------------------+-------------------------------------------+--------------------------------------------------+--------------------------------------------------------+
-       A total of 3 inter-fpga path(s) displayed
+       +-------+------------------+-------+------+-------------------------------------------+-------------------------------------------+--------------------------------------------------+-----------------------------------------------------------------------------------+
+       | Slack |    Required Time | Delay | Fpga | Clock Domain Source                       | Clock Domain Target                       |Port Name Source                                  |Port Name Target                                                                   |
+       +-------+------------------+-------+------+-------------------------------------------+-------------------------------------------+--------------------------------------------------+-----------------------------------------------------------------------------------+
+       |   0 ns|160 ns ( 1 dvrCk )| 160 ns|     2|top._I_vcs_cdx_s_rw_topu_stb_clk0 (posedge)|top.zforce_rstn.VAL_sync (negedge)         |top.u_stb.u_rom.mem-r0do                          |U0_M0_F0-U0_M0_F0.U0_M0_F0_core.u_dut.u_fifo.u_fifo_usage_spy.zfast_b2jcsmafvke53.D|
+       |   0 ns|160 ns ( 1 dvrCk )| 160 ns|     2|top._I_vcs_cdx_s_rw_topu_stb_clk0 (posedge)|top._I_vcs_cdx_s_rw_topu_stb_clk1 (posedge)|top.u_stb.u_rom.mem-r0do                          |U0_M0_F0-U0_M0_F0.U0_M0_F0_core.u_dut.u_fifo.u_fifo_usage_spy.zfast_wolo7jpfvke53.D|
+       | 155 ns|160 ns ( 1 dvrCk )|   5 ns|     2|DRIVERCLOCK (system)                       |DRIVERCLOCK (system)                       |zcg_zceiClock[1]@top._I_vcs_cdx_s_rw_topu_stb_clk0|U0_M0_F0.zcg_zceiClock[1]                                                          |
+       | 160 ns|320 ns ( 2 dvrCk )| 160 ns|     2|top._I_vcs_cdx_s_rw_topu_stb_clk0 (posedge)|top._I_vcs_cdx_s_rw_topu_stb_clk0 (posedge)|top.u_stb.u_rom.mem-r0do                          |U0_M0_F0-U0_M0_F0.U0_M0_F0_core.u_dut.u_check.error.D                              |
+       | 160 ns|320 ns ( 2 dvrCk )| 160 ns|     2|top._I_vcs_cdx_s_rw_topu_stb_clk0 (posedge)|top.u_dut.u_fifo.u0_clkg.clkout (posedge)  |top.u_stb.u_rom.mem-r0do                          |U0_M0_F0-U0_M0_F0.U0_M0_F0_core.u_dut.u_fifo.mem[0][7].D                           |
+       +-------+------------------+-------+------+-------------------------------------------+-------------------------------------------+--------------------------------------------------+-----------------------------------------------------------------------------------+
+       A total of 5 inter-fpga path(s) displayed
       
        Report a maximum of 50 first different delay(s) 
        +-----------+-----------+-----------+-----------+-----------+
        | Delay     | Paths     | Max Fpga  | Max Hop   | Max Async |
        +-----------+-----------+-----------+-----------+-----------+
-       |    160 ns |         3 |         2 |         0 |         0 |
+       |    160 ns |         2 |         2 |         0 |         0 |
+       |      5 ns |         1 |         2 |         0 |         0 |
+       |    160 ns |         2 |         2 |         0 |         0 |
        +-----------+-----------+-----------+-----------+-----------+
-       A total of 1 different delay(s) displayed
+       A total of 3 different delay(s) displayed
       
        Histogram with a maximum of 50 first different delay(s) 
        +---------------------+--------------------------------------------------+
        | Delay               | Paths                                            |
        +---------------------+--------------------------------------------------+
-       | [  160 ns         ] |---------------------------------------->        3|
+       | [    5 ns:   82 ns] |---------->                                      1|
+       | ]   82 ns:  160 ns[ |---------------------------------------->        4|
        +---------------------+--------------------------------------------------+
-       A total of 1 different delay(s) encountered
+       A total of 3 different delay(s) encountered
       
   Place and Route System
     Resource utilization and IO cut after routing
@@ -423,11 +435,11 @@ View: Target
       +-------------------------------+------+------+------+------+----------+-----------+
       |Resource usage                 |LUT   |LUT6  |REG   |RAMLUT|FWC_IP_NUM|FWC_IP_BITS|
       +-------------------------------+------+------+------+------+----------+-----------+
-      |Estimated size of the design   |1,254 |29    |1,254 |72    |3         |138        |
+      |Estimated size of the design   |2,670 |29    |1,761 |72    |8         |194        |
       |Board size with user fill-rates|5,497K|2,199K|4,838K|1,241K|7,137     |617K       |
       +-------------------------------+------+------+------+------+----------+-----------+
-      | For 1 boards                  |0.0%  |0.0%  |0.0%  |0.0%  |0.0%      |0.0%       |
-      |                  For 2 boards |0.0%  |0.0%  |0.0%  |0.0%  |0.0%      |0.0%       |
+      | For 1 boards                  |0.0%  |0.0%  |0.0%  |0.0%  |0.1%      |0.0%       |
+      |                  For 2 boards |0.0%  |0.0%  |0.0%  |0.0%  |0.1%      |0.0%       |
       |                  For 3 boards |0.0%  |0.0%  |0.0%  |0.0%  |0.0%      |0.0%       |
       |                  For 4 boards |0.0%  |0.0%  |0.0%  |0.0%  |0.0%      |0.0%       |
       |                  For 5 boards |0.0%  |0.0%  |0.0%  |0.0%  |0.0%      |0.0%       |
@@ -471,10 +483,12 @@ View: Warnings/Errors
       [RAS0020W] ZBNF Resources: No resource information can be found for Module zebu_bb_zmem_we
       [RAS0020W] ZBNF Resources: No resource information can be found for Module zebu_bb_zmem_do
       [RAS0020W] ZBNF Resources: No resource information can be found for Module zebu_reqsig_clock_driverclock
+      [RAS0020W] ZBNF Resources: No resource information can be found for Module zebu_bb_ZDPI_MOD_fifo_usage_spy_ZDPI_fifo_usage_spy_notify_call5
+      [RAS0020W] ZBNF Resources: No resource information can be found for Module zebu_bb_ZDPI_MOD_fifo_usage_spy_ZDPI_fifo_usage_spy_notify_call4
+      [RAS0020W] ZBNF Resources: No resource information can be found for Module zebu_bb_ZDPI_MOD_fifo_usage_spy_ZDPI_fifo_usage_spy_notify_call3
+      [RAS0020W] ZBNF Resources: No resource information can be found for Module zebu_bb_ZDPI_MOD_fifo_usage_spy_ZDPI_fifo_usage_spy_notify_call2
+      [RAS0020W] ZBNF Resources: No resource information can be found for Module zebu_bb_ZDPI_MOD_fifo_usage_spy_ZDPI_fifo_usage_spy_notify_call1
       [RAS0020W] ZBNF Resources: No resource information can be found for Module zebu_bb_ZDPI_MOD_fifo_usage_spy_ZDPI_fifo_usage_spy_notify_call0
-      [RAS0020W] ZBNF Resources: No resource information can be found for Module ZSVA_MOD_0
-      [RAS0020W] ZBNF Resources: No resource information can be found for Module ZSVA_MOD_1
-      [RAS0020W] ZBNF Resources: No resource information can be found for Module zebu_clockGen
       [ZTCL0304W] ZMetrics : File (tools/zMetrics/post_partitioning_metrics.xml) already exists and has been replaced
       [KBD0213W] cannot open report file for writing make sure './.zTopBuild_AC_report.log.dir/SEC_AC_OPT_SOLUTION_CORE_SIZE' has writing rights.
       [KBD0213W] cannot open report file for writing make sure './.zTopBuild_AC_report.log.dir/SEC_AC_OPT_SOLUTION_CORE_XO' has writing rights.
@@ -498,7 +512,7 @@ View: Warnings/Errors
       [RAS0020W] ZBNF Resources: No resource information can be found for Module zebu_bb_zmem_do
       [RAS0020W] ZBNF Resources: No resource information can be found for Module zfwc_hs_48
       [RAS0020W] ZBNF Resources: No resource information can be found for Module ZebuClockFilterData
-      [RAS0020W] ZBNF Resources: No resource information can be found for Module zfwc_hs_4
+      [RAS0020W] ZBNF Resources: No resource information can be found for Module zfwc_hs_10
       [RAS0020W] ZBNF Resources: No resource information can be found for Module ZebuClockFilterClock
       [RAS0020W] ZBNF Resources: No resource information can be found for Module zebu_clockGen
       [ZTCL0304W] ZMetrics : File (tools/zMetrics/post_partitioning_metrics.xml) already exists and has been replaced

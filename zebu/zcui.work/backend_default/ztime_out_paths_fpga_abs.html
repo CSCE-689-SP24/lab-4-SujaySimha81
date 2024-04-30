@@ -73,7 +73,7 @@ table  tr:hover {
 <body>
 <div id="title" class="title">
   <p><h1>zTime Report: critical output routing data paths</h1></p>
-<p><h2>Date: Thu Apr 18 00:13:21 2024
+<p><h2>Date: Mon Apr 29 14:02:46 2024
 </h2></p></div>
 <div id="content" class="content">
 </div>
@@ -88,27 +88,43 @@ table  tr:hover {
 </tr>
 <tr>
 <td><a href="ztime_out_paths_fpga.html#p0">0 ns</a></td>
-<td>160 ns<br/> ( 2 driver clock )</td>
+<td>160 ns<br/> ( 1 driver clock )</td>
+<td>160 ns</td>
+<td>2 ( 2 )</td>
+<td>top.u_stb.u_rom.mem-r0do</td>
+<td>U0_M0_F0-U0_M0_F0.U0_M0_F0_core.u_dut.u_fifo.u_fifo_usage...</td>
+</tr>
+<tr>
+<td><a href="ztime_out_paths_fpga.html#p1">0 ns</a></td>
+<td>160 ns<br/> ( 1 driver clock )</td>
+<td>160 ns</td>
+<td>2 ( 2 )</td>
+<td>top.u_stb.u_rom.mem-r0do</td>
+<td>U0_M0_F0-U0_M0_F0.U0_M0_F0_core.u_dut.u_fifo.u_fifo_usage...</td>
+</tr>
+<tr>
+<td><a href="ztime_out_paths_fpga.html#p2">155 ns</a></td>
+<td>160 ns<br/> ( 1 driver clock )</td>
+<td>5 ns</td>
+<td>2 ( 2 )</td>
+<td>zcg_zceiClock[1]@top._I_vcs_cdx_s_rw_topu_stb_clk0</td>
+<td>U0_M0_F0.zcg_zceiClock[1]</td>
+</tr>
+<tr>
+<td><a href="ztime_out_paths_fpga.html#p3">160 ns</a></td>
+<td>320 ns<br/> ( 2 driver clock )</td>
 <td>160 ns</td>
 <td>2 ( 2 )</td>
 <td>top.u_stb.u_rom.mem-r0do</td>
 <td>U0_M0_F0-U0_M0_F0.U0_M0_F0_core.u_dut.u_check.error.D</td>
 </tr>
 <tr>
-<td><a href="ztime_out_paths_fpga.html#p1">0 ns</a></td>
-<td>160 ns<br/> ( 2 driver clock )</td>
+<td><a href="ztime_out_paths_fpga.html#p4">160 ns</a></td>
+<td>320 ns<br/> ( 2 driver clock )</td>
 <td>160 ns</td>
 <td>2 ( 2 )</td>
 <td>top.u_stb.u_rom.mem-r0do</td>
 <td>U0_M0_F0-U0_M0_F0.U0_M0_F0_core.u_dut.u_fifo.mem[0][7].D</td>
-</tr>
-<tr>
-<td><a href="ztime_out_paths_fpga.html#p2">75 ns</a></td>
-<td>80 ns<br/> ( 1 driver clock )</td>
-<td>5 ns</td>
-<td>2 ( 2 )</td>
-<td>zcg_zceiClock[1]@top._I_vcs_cdx_s_rw_topu_stb_clk0</td>
-<td>U0_M0_F0.zcg_zceiClock[1]</td>
 </tr>
 </table><script>
     function replaceButtonText(textA, textB, id){

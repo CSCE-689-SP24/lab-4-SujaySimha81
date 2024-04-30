@@ -28,7 +28,7 @@
 
 # zCoreBuild zCoreBuild_ztb.tcl 
 
-# start time is Wed Apr 17 20:16:36 2024
+# start time is Mon Apr 29 13:43:59 2024
 
 
 
@@ -36,15 +36,15 @@
 # Build Date : Oct 18 2022 - 00:58:46
 # ---------------------------System Context--------------------------- 
 # Cpu        40 x bogomips - 4604.90 Intel(R) Xeon(R) CPU E5-2650 v3 @ 2.30GHz
-#            Load: 0.42 0.65 1.48 4/524 25072
+#            Load: 0.40 0.15 0.16 3/505 35943
 #            Hostname: csce-quinn-s1.engr.tamu.edu   OS: Linux 3.10.0-1160.108.1.el7.x86_64
-# Memory     Total: 193183 MB Free: 173948 MB
-#            Total Free including cache: 187340 MB
-#            Swap cache: 0 MB Cached space: 13392 MB
+# Memory     Total: 193183 MB Free: 171105 MB
+#            Total Free including cache: 187215 MB
+#            Swap cache: 0 MB Cached space: 16110 MB
 #            Swap space: 4095 MB Free Swap space: 4095 MB
 #            VmSize: 380 MB VmPeak: 380 MB
-# Disk Space Total: 50 GB Available: 27 GB Used: 23 GB
-#            Free inodes: 104738108
+# Disk Space Total: 50 GB Available: 8 GB Used: 42 GB
+#            Free inodes: 104731924
 # Stack                                Soft Limit           Hard Limit  
 #            Max stack size            8388608              unlimited            bytes     
 # -------------------------------------------------------------------- 

@@ -1,7 +1,7 @@
 backend_default_Project_Analyzer:  OK input design/fs_macros.edf same date
 VCS_Task_Analyzer:  OK input design/synth_Default_RTL_Group/edif/clkg/clkg.edf.gz same checksum
 VCS_Task_Analyzer:  OK input design/synth_Default_RTL_Group/edif/dut/dut.edf.gz same checksum
-VCS_Task_Analyzer:  OK input design/synth_Default_RTL_Group/edif/fifo_0000/fifo_0000.edf.gz same checksum
+VCS_Task_Analyzer:  KO input design/synth_Default_RTL_Group/edif/fifo_0000/fifo_0000.edf.gz out of date (non equal checksum)
 VCS_Task_Analyzer:  OK input design/synth_Default_RTL_Group/edif/fifo_usage_spy/fifo_usage_spy.edf.gz same checksum
 VCS_Task_Analyzer:  OK input design/synth_Default_RTL_Group/edif/parity/parity.edf.gz same checksum
 VCS_Task_Analyzer:  OK input design/synth_Default_RTL_Group/edif/parity_check/parity_check.edf.gz same checksum

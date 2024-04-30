@@ -1,21 +1,21 @@
-   elapsed:0.37 s   user:0.36 s    system:0.1 s     %cpu:100.54       load:0.25       fm:174417 m      vm:408 m      vm:+31 m      um:129 m      um:+32 m -- read SDF file
-      elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.25       fm:174417 m      vm:408 m       vm:+0 m      um:129 m       um:+0 m -- XDL rename
-      elapsed:0 s    user:0.1 s      system:0 s     %cpu:190.48       load:0.25       fm:174417 m      vm:408 m       vm:+0 m      um:129 m       um:+0 m -- Transformations Identification
-    elapsed:0.6 s      user:1 s    system:0.1 s    %cpu:3549.55       load:0.25       fm:174399 m      vm:562 m     vm:+154 m      um:147 m      um:+18 m -- Find properties based on SDF names
-      elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.25       fm:174399 m      vm:562 m       vm:+0 m      um:147 m       um:+0 m -- Modify instance connections
-      elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.25       fm:174399 m      vm:562 m       vm:+0 m      um:147 m       um:+0 m -- False Timing Arcs
-      elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.25       fm:174399 m      vm:562 m       vm:+0 m      um:147 m       um:+0 m -- User Manipulations
-    elapsed:0.1 s   user:0.22 s      system:0 s    %cpu:3259.26       load:0.25       fm:174399 m      vm:562 m       vm:+0 m      um:147 m       um:+0 m -- False Paths Marking
-      elapsed:1 s      user:1 s    system:0.9 s     %cpu:100.47       load:0.25       fm:174170 m      vm:772 m     vm:+210 m      um:357 m     um:+210 m -- Clock Relationship/Clock Relationship DB populator/Loading EDIF
-    elapsed:0.1 s      user:0 s      system:0 s       %cpu:0.00       load:0.25       fm:174170 m      vm:772 m       vm:+0 m      um:357 m       um:+0 m -- Clock Relationship/Clock Relationship DB populator/Loading SDC file
-      elapsed:0 s    user:0.5 s    system:0.2 s    %cpu:3111.11       load:0.25       fm:174170 m      vm:772 m       vm:+0 m      um:357 m       um:+0 m -- Clock Relationship/Clock Relationship DB populator/Instantiate NPCK_zvu_synchro_db
-      elapsed:0 s    user:0.3 s    system:0.1 s    %cpu:1600.00       load:0.25       fm:174171 m      vm:772 m       vm:+0 m      um:357 m       um:+0 m -- Clock Relationship/Clock Relationship DB populator/Diagnose and fix populator
-      elapsed:1 s      user:1 s   system:0.13 s     %cpu:106.91       load:0.25       fm:174169 m      vm:772 m     vm:+210 m      um:357 m     um:+210 m -- Clock Relationship/Clock Relationship DB populator
-      elapsed:1 s      user:1 s   system:0.13 s     %cpu:106.87       load:0.25       fm:174169 m      vm:772 m     vm:+210 m      um:357 m     um:+210 m -- Clock Relationship
-      elapsed:0 s      user:0 s    system:0.1 s    %cpu:1000.00       load:0.25       fm:174169 m      vm:772 m       vm:+0 m      um:357 m       um:+0 m -- Sanity Check
-      elapsed:0 s      user:0 s    system:0.1 s     %cpu:571.43       load:0.25       fm:174168 m      vm:772 m       vm:+0 m      um:357 m       um:+0 m -- Skew Paths Analysis
-    elapsed:0.3 s    user:0.3 s      system:0 s     %cpu:108.11       load:0.25       fm:174167 m      vm:772 m       vm:+0 m      um:360 m       um:+3 m -- Filter Paths Analysis
-    elapsed:0.2 s   user:0.20 s    system:0.3 s     %cpu:989.25       load:0.25       fm:174163 m      vm:772 m       vm:+0 m      um:362 m       um:+2 m -- Internal Data Paths Analysis
-      elapsed:0 s    user:0.1 s      system:0 s     %cpu:363.64       load:0.25       fm:174163 m      vm:772 m       vm:+0 m      um:362 m       um:+0 m -- From FPGA inputs to data analysis
-      elapsed:0 s    user:0.1 s      system:0 s     %cpu:444.44       load:0.25       fm:174163 m      vm:772 m       vm:+0 m      um:362 m       um:+0 m -- From FPGA inputs to socket analysis
-      elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.25       fm:174163 m      vm:772 m       vm:+0 m      um:362 m       um:+0 m -- From data to FPGA outputs analysis
+   elapsed:0.46 s   user:0.45 s    system:0.1 s      %cpu:99.73       load:0.06       fm:171386 m      vm:414 m      vm:+36 m      um:136 m      um:+36 m -- read SDF file
+      elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.06       fm:171386 m      vm:414 m       vm:+0 m      um:136 m       um:+0 m -- XDL rename
+      elapsed:0 s    user:0.1 s      system:0 s     %cpu:142.86       load:0.06       fm:171386 m      vm:414 m       vm:+0 m      um:136 m       um:+0 m -- Transformations Identification
+    elapsed:0.7 s      user:2 s    system:0.2 s    %cpu:3465.70       load:0.06       fm:171351 m      vm:568 m     vm:+154 m      um:170 m      um:+34 m -- Find properties based on SDF names
+      elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.06       fm:171351 m      vm:568 m       vm:+0 m      um:170 m       um:+0 m -- Modify instance connections
+      elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.06       fm:171351 m      vm:568 m       vm:+0 m      um:170 m       um:+0 m -- False Timing Arcs
+      elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.06       fm:171351 m      vm:568 m       vm:+0 m      um:170 m       um:+0 m -- User Manipulations
+    elapsed:0.1 s   user:0.26 s      system:0 s    %cpu:3151.52       load:0.06       fm:171351 m      vm:568 m       vm:+0 m      um:170 m       um:+0 m -- False Paths Marking
+      elapsed:1 s      user:1 s   system:0.10 s      %cpu:99.84       load:0.30       fm:171124 m      vm:779 m     vm:+211 m      um:377 m     um:+207 m -- Clock Relationship/Clock Relationship DB populator/Loading EDIF
+      elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.30       fm:171124 m      vm:779 m       vm:+0 m      um:377 m       um:+0 m -- Clock Relationship/Clock Relationship DB populator/Loading SDC file
+      elapsed:0 s    user:0.4 s    system:0.3 s    %cpu:2000.00       load:0.30       fm:171124 m      vm:779 m       vm:+0 m      um:378 m       um:+1 m -- Clock Relationship/Clock Relationship DB populator/Instantiate NPCK_zvu_synchro_db
+      elapsed:0 s    user:0.1 s    system:0.4 s    %cpu:1052.63       load:0.30       fm:171125 m      vm:779 m       vm:+0 m      um:378 m       um:+0 m -- Clock Relationship/Clock Relationship DB populator/Diagnose and fix populator
+      elapsed:2 s      user:1 s   system:0.18 s     %cpu:105.97       load:0.30       fm:171123 m      vm:779 m     vm:+211 m      um:378 m     um:+208 m -- Clock Relationship/Clock Relationship DB populator
+      elapsed:2 s      user:1 s   system:0.18 s     %cpu:105.93       load:0.30       fm:171124 m      vm:779 m     vm:+211 m      um:378 m     um:+208 m -- Clock Relationship
+      elapsed:0 s    user:0.1 s      system:0 s    %cpu:4000.00       load:0.30       fm:171124 m      vm:779 m       vm:+0 m      um:378 m       um:+0 m -- Sanity Check
+      elapsed:0 s    user:0.1 s      system:0 s     %cpu:666.67       load:0.30       fm:171121 m      vm:779 m       vm:+0 m      um:378 m       um:+0 m -- Skew Paths Analysis
+    elapsed:0.3 s    user:0.3 s      system:0 s     %cpu:105.26       load:0.30       fm:171119 m      vm:779 m       vm:+0 m      um:380 m       um:+2 m -- Filter Paths Analysis
+    elapsed:0.3 s   user:0.26 s    system:0.4 s     %cpu:952.38       load:0.30       fm:171117 m      vm:779 m       vm:+0 m      um:384 m       um:+4 m -- Internal Data Paths Analysis
+      elapsed:0 s    user:0.1 s      system:0 s     %cpu:266.67       load:0.30       fm:171117 m      vm:779 m       vm:+0 m      um:384 m       um:+0 m -- From FPGA inputs to data analysis
+      elapsed:0 s    user:0.1 s    system:0.1 s     %cpu:615.38       load:0.30       fm:171117 m      vm:779 m       vm:+0 m      um:384 m       um:+0 m -- From FPGA inputs to socket analysis
+      elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.30       fm:171117 m      vm:779 m       vm:+0 m      um:384 m       um:+0 m -- From data to FPGA outputs analysis

@@ -7,7 +7,8 @@
       <core>Part_0</core>
       <directory>U0/M0/F00</directory>
       <name>zrdb/ZebuDB.zdb</name>
-      <netlist_changes minor="f">No stats from previous compilation</netlist_changes>
+      <netlist_changes minor="f">FPGA has now IO cut of 1 from 0
+</netlist_changes>
       <netlist_complexity rank="0"></netlist_complexity>
       <dependencies>
          <dependency type="netlist">wrapper.edf.gz</dependency>

@@ -38,7 +38,7 @@
                 <dependencies>
                     <dependency>design/synth_Default_RTL_Group/src/fifo_usage_spy.scm</dependency>
                 </dependencies>
-                <weight>58</weight>
+                <weight>184</weight>
             </module>
             <module>
                 <name>design/synth_Default_RTL_Group/edif/fifo_0000/fifo_0000.edf.gz</name>
@@ -48,7 +48,7 @@
                 <dependencies>
                     <dependency>design/synth_Default_RTL_Group/src/fifo_0000.scm</dependency>
                 </dependencies>
-                <weight>583</weight>
+                <weight>584</weight>
             </module>
             <module>
                 <name>design/synth_Default_RTL_Group/edif/parity/parity.edf.gz</name>

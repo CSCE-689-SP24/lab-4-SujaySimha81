@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+/* micro reset */
+* {
+	box-sizing: border-box;
+}
+html, body, ul {
+	padding: 0; margin: 0;
+}
+body {
+	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+.main-header {
+	background: #FFF;
+	z-index : 5;
+}
+.header-inner {
+	display: table;
+	width: 100%;
+	max-width: 1100px;
+	margin: 0 auto;
+	padding: 20px 25px;
+}
+.header-inner > * {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.header-nav {
+    background-color: #EEEEEE;
+	text-align: right;
+}
+.header-nav ul,
+.header-nav li {
+	display: inline;
+	list-style: none;
+}
+.header-nav a {
+	position: relative;
+	display: inline-block;
+	padding: 8px 20px;
+	vertical-align: middle;
+	font-weight: 300; /* between regular and light */
+	letter-spacing: 0.025em;
+	color: inherit;
+	text-decoration: none;
+}
+.header-nav a:after {
+	content: "";
+	position: absolute;
+	bottom: 0; right: 20px; left: 20px;
+	height: 2px;
+	background-color: #B13C2E;
+
+	/* for animation */
+	opacity: 0;
+	transform: translateY(5px);
+	transition: all .4s;
+}
+.header-nav a:hover:after,
+.header-nav a:focus:after {
+	opacity: .6;
+	bottom: 0;
+	transform: translateY(0);
+}
+.header-nav a:focus {
+	outline: none; /* I can do it because I already have a style for that */
+}
+
+/* When navbar is stuck */
+.nav-is-stuck .main-header {
+	position: sticky; 
+}
+.nav-is-stuck .main-header {
+	position: fixed;
+	top: 0; left: 0; right: 0;
+	box-shadow: 0 1px 4px rgba(0,0,0,.15);
+	-webkit-box-shadow: 0 1px 4px rgba(0,0,0,.15);
+	-moz-box-shadow: 0 1px 4px rgba(0,0,0,.15);
+	animation: stickAnim .3s;
+}
+
+@keyframes stickAnim {
+	0% {
+		transform: translateY(-86px);
+	}
+	100% {
+		transform: translateY(0);
+	}
+}
+
+#header {
+    margin: 0;
+    width: 100%;
+    padding-top: 10px;
+	padding-bottom: 10px;
+    border: 4px;
+    border-bottom-style: solid;
+    border-bottom-color: #000000;
+    text-align: center;
+    background-color: #88047a;
+    font-family: "Helvetica";
+    font-size: 2.0em;
+    color: #ffffff;
+}
+
+.timestamp {
+   font-family: "Helvetica";
+   font-size: 0.5em;
+}
+
+#footer {
+    margin: 0;
+    width: 100%;
+    border: 1px;
+    border-top-style: solid;
+    border-top-color: #bfbfbf;
+    text-align: center;
+    font-family: "Helvetica";
+    font-size: 1.0em;
+    color: #000000;
+}
+#all {
+    //display: table;
+    margin: 0;
+}
+row {
+    display: table-row;
+    margin: 0;
+}
+
+#content {
+    display : table-cell;
+    margin: 0;
+    border: 1px;
+//    border-left-style: solid;
+//    border-left-color: #bfbfbf;
+//    border-right-style: solid;
+//    border-right-color: #bfbfbf;
+    background-color: #ffffff;
+    font-family: "courier";
+    font-size: 14px;
+	padding-top: 5px;
+    padding-bottom: 50px;
+}
+.contentview {
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-bottom: 80px;
+}
+
+.contenttitle-container {
+    display: block;
+    position: relative;
+}
+.contenttitle-container:after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  bottom: -4px;
+  left: 0;
+  border-bottom: 5px solid #000;
+  z-index: 1;
+}
+
+.contenttitle {
+    position: relative;
+    display: inline-block;
+    background-color: #000000;
+	border-top-right-radius : 15px;
+    color: #ffffff;
+    font-family: "Helvetica";
+    font-size: 30px;
+    padding: 12px;
+	padding-right: 30px;
+	z-index: 0;
+}
+
+.contenttitle:after {
+  position: absolute;
+  bottom: 0px;
+  width: 15px;
+  height: 15px;
+  content: " ";
+  right: -15px;
+  border: 1px solid #000;
+  border-bottom-left-radius: 15px;
+  border-width: 0 0 1px 1px;
+  box-shadow: -4px 4px 0 #000;
+  -webkit-box-shadow: -4px 4px 0 #000;
+  -moz-box-shadow: -4px 4px 0 #000;
+}
+
+.contenttitle-nav {
+   positive: fixed;
+   display: inline-block;
+   float: right;
+   top: 5%;
+   right: 5%;
+   width : 100px;
+   height: 30px;
+}
+
+.atocview {
+    text-decoration: none;
+    color: #ffffff;
+	background-color : #EEEEEE;
+    font-family: "Helvetica";
+    font-size: 22px;
+}
+.atoctitle0 {
+    text-decoration: none;
+    padding-left: 20px;
+    color: #1f1f7f;
+	background-color : #EEEEEE;
+    font-family: "Helvetica";
+    font-size: 20px;
+}
+.atoctitle1 {
+    text-decoration: none;
+    padding-left: 60px;
+    color: #7f7f1f;
+	background-color : #FFFFFF;
+    font-family: "Helvetica";
+    font-size: 18px;
+}
+h1 {
+    /*color: #1f1f7f;*/
+	color: #000000;
+    font-family: "Helvetica";
+}
+h2 {
+    color: #555555;
+    font-family: "Helvetica";
+}
+.toctableview {
+    background-color: #000000;
+    padding: 3px;
+    padding-left: 10px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+.toctable {
+    border: 1px;
+    border-style: solid;
+    margin: 8px;
+    border-inline-start-color: #bfbfbf;
+    border-inline-end-color: #bfbfbf;
+    border-block-start-color: #bfbfbf;
+    border-block-end-color: #bfbfbf;
+    margin-bottom: 20px;
+}
+.glogtable {
+    border: 1px;
+    margin: 8px;
+    border-style: solid;
+    background-color: #efefef;
+    border-collapse: collapse;
+}
+.glogtable th {
+    border: 1px solid #000000;
+	color: #FFFFFF;
+	background-color: #88047a;
+    padding: 2px;
+    text-align: right;
+    font-family: "Helvetica";
+}
+.glogtable td {
+    border: 1px;
+    border-style: solid;
+    padding: 2px;
+    text-align: right;
+}
+
+#menu, #menu ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+#menu {
+    margin-top: 10px;
+    text-align: left;
+}
+#menu li {
+    display: inline-block;
+}
+#menu ul li {
+    display: inherit;
+}
+#menu a {
+    text-decoration: none;
+    display: block;
+	color:#000;
+}
+#menu ul {
+    position: absolute;
+    left: -999em;
+    text-align: left;
+    z-index: 1000;
+}
+#menu li:hover ul {
+    left: auto;
+}
+</style>
+<title>Performance diagnostic profiler</title>
+</head>
+<body>
+<div id="header" class="main-header">
+<div>backend_default [ ZS3 ]<span class="timestamp">&nbsp;Sat 27 Apr 2024 08:24:19 PM CDT</span></div>
+<nav>
+<!-- toc -->
+<ul id="menu" class="header-nav">
+<li><a href="#view0" class="atocview">Design</a><ul>
+<li><a href="#anchor_0" class="atoctitle0">Synthesis</a></li>
+<li><a href="#anchor_1" class="atoctitle1">Top 10 (ordered by reg)</a></li>
+<li><a href="#anchor_2" class="atoctitle1">Top 10 (ordered by lut)</a></li>
+<li><a href="#anchor_3" class="atoctitle1">Top 10 (ordered by IO)</a></li>
+<li><a href="#anchor_4" class="atoctitle0">Memories</a></li>
+<li><a href="#anchor_5" class="atoctitle1">Memory types</a></li>
+</ul></li>
+
+<li><a href="#view1" class="atocview">Compile profile</a><ul>
+<li><a href="#anchor_6" class="atoctitle0">Compilation Summary</a></li>
+<li><a href="#anchor_7" class="atoctitle0">Compile time with delay (slot and grid)</a></li>
+<li><a href="#anchor_8" class="atoctitle0">Compile time without delay</a></li>
+<li><a href="#anchor_9" class="atoctitle0">Main Compilation Stages</a></li>
+<li><a href="#anchor_10" class="atoctitle1">Front End Stages Timing</a></li>
+<li><a href="#anchor_11" class="atoctitle1">Back-end Stages</a></li>
+<li><a href="#anchor_12" class="atoctitle0">Hosts</a></li>
+<li><a href="#anchor_13" class="atoctitle0">Memory usage</a></li>
+<li><a href="#anchor_14" class="atoctitle0">Job Queue Memory Analysis</a></li>
+<li><a href="#anchor_15" class="atoctitle0">Grid Delay</a></li>
+<li><a href="#anchor_16" class="atoctitle0">Grid Delay Per Job Queue</a></li>
+<li><a href="#anchor_17" class="atoctitle0">Compile times</a></li>
+<li><a href="#anchor_18" class="atoctitle0">FPGA compilation</a></li>
+</ul></li></ul>
+
+</nav>
+</div>
+
+<div id="all">
+<div id="row">
+<div id="content">
+<!-- view Design -->
+<a name="view0" class="contenttitle-container"><div class="contenttitle">Design</div></a>
+<div class="contentview">
+<a name="anchor_0"><h1>Synthesis</h1></a>
+<a name="anchor_1"><h2>Top 10 (ordered by reg)</h2></a>
+<error while loading table><br>
+<a name="anchor_2"><h2>Top 10 (ordered by lut)</h2></a>
+<error while loading table><br>
+<a name="anchor_3"><h2>Top 10 (ordered by IO)</h2></a>
+<error while loading table><br>
+<a name="anchor_4"><h1>Memories</h1></a>
+<a name="anchor_5"><h2>Memory types</h2></a>
+Number of memory types ordered by memory size:<br>
+logic: A(ll) C(onst write) F(forced) P(orts too many)<br>
+<error while loading table><br>
+</div>
+<!-- view Compile profile -->
+<a name="view1" class="contenttitle-container"><div class="contenttitle">Compile profile</div></a>
+<div class="contentview">
+<br>
+<br>
+BETA version: results may not be fully accurate<br>
+<a name="anchor_6"><h1>Compilation Summary</h1></a>
+Last session wall clock times:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;FE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: 0s<br>
+&nbsp;&nbsp;&nbsp;&nbsp;BE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: 476185h 24min 11s<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Total&nbsp;&nbsp;: 476185h 24min 11s<br>
+<br>
+All sessions cumulative compile times:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;without delay&nbsp;&nbsp;: 1s<br>
+&nbsp;&nbsp;&nbsp;&nbsp;with delay*&nbsp;&nbsp;&nbsp;&nbsp;: 9s<br>
+<br>
+*including slot and grid delays, difference with total wall clock time could be NFS wait or internal flow handling delays
+<br>
+<table class="glogtable">
+<tr><th>&nbsp;Phase&nbsp;</th><th>&nbsp;(%)&nbsp;</th><th>&nbsp;Slot delay&nbsp;</th><th>&nbsp;Grid delay&nbsp;</th><th>&nbsp;Elapsed time&nbsp;</th><th>&nbsp;Host&nbsp;</th><th>&nbsp;Total # of jobs fired&nbsp;</th><th>&nbsp;Max memory consumption&nbsp;</th></tr>
+<tr><td style="text-align:right">&nbsp;VCS&nbsp;</td><td style="text-align:right">&nbsp;66.67&nbsp;</td><td style="text-align:right">&nbsp;00:00:00&nbsp;</td><td style="text-align:right">&nbsp;00:00:02&nbsp;</td><td style="text-align:right">&nbsp;00:00:02&nbsp;</td><td style="text-align:right">&nbsp;csce-quinn-s1.engr.tamu.edu&nbsp;</td><td style="text-align:right">&nbsp;1&nbsp;</td><td style="text-align:right">&nbsp;82.30MB&nbsp;</td></tr>
+<tr><td style="text-align:right">&nbsp;Other tasks&nbsp;</td><td style="text-align:right">&nbsp;33.33&nbsp;</td><td style="text-align:right">&nbsp;00:00:00&nbsp;</td><td style="text-align:right">&nbsp;00:00:04&nbsp;</td><td style="text-align:right">&nbsp;00:00:01&nbsp;</td><td style="text-align:right">&nbsp;-&nbsp;</td><td style="text-align:right">&nbsp;2&nbsp;</td><td style="text-align:right">&nbsp;-&nbsp;</td></tr>
+<tr><td style="text-align:right">&nbsp;Total&nbsp;</td><td style="text-align:right">&nbsp;100.00&nbsp;</td><td style="text-align:right">&nbsp;00:00:00&nbsp;</td><td style="text-align:right">&nbsp;00:00:06&nbsp;</td><td style="text-align:right">&nbsp;00:00:03&nbsp;</td><td style="text-align:right">&nbsp;-&nbsp;</td><td style="text-align:right">&nbsp;3&nbsp;</td><td style="text-align:right">&nbsp;-&nbsp;</td></tr>
+</table>
+Columns:<br>
+ - Phase&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: compilation phase<br>
+ - (%)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: percentage of contribution to the overall compile time<br>
+ - Slot delay&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: time waiting for a slot on the grid<br>
+ - Grid delay&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: time between the task is spawed and the task is launched<br>
+ - Elapsed time&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: contribution to the overall compile time<br>
+ - Host&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: host where the task was launched (only for tasks external to zCui)<br>
+ - Total # of jobs fired&nbsp;&nbsp;: number of jobs with same phase fired<br>
+ - Max memory consumption : job in the phase with max memory taken<br>
+<a name="anchor_7"><h1>Compile time with delay (slot and grid)</h1></a>
+<table class="glogtable">
+<tr><th>&nbsp;Task&nbsp;</th><th>&nbsp;(%)&nbsp;</th><th>&nbsp;Slot delay&nbsp;</th><th>&nbsp;Grid delay&nbsp;</th><th>&nbsp;Elapsed time&nbsp;</th><th>&nbsp;Spawn Time&nbsp;</th><th>&nbsp;Finish Time&nbsp;</th><th>&nbsp;Host&nbsp;</th></tr>
+<tr><td style="text-align:right">&nbsp;Check Vcs Binaries Version&nbsp;</td><td style="text-align:right">&nbsp;0.00&nbsp;</td><td style="text-align:right">&nbsp;00:00:00&nbsp;</td><td style="text-align:right">&nbsp;00:00:02&nbsp;</td><td style="text-align:right">&nbsp;00:00:00&nbsp;</td><td style="text-align:right">&nbsp;00:00:00&nbsp;</td><td style="text-align:right">&nbsp;00:00:02&nbsp;</td><td style="text-align:right">&nbsp;csce-quinn-s1.engr.tamu.edu&nbsp;</td></tr>
+<tr><td style="text-align:right">&nbsp;Target Configuration&nbsp;</td><td style="text-align:right">&nbsp;0.00&nbsp;</td><td style="text-align:right">&nbsp;00:00:00&nbsp;</td><td style="text-align:right">&nbsp;00:00:02&nbsp;</td><td style="text-align:right">&nbsp;00:00:00&nbsp;</td><td style="text-align:right">&nbsp;00:00:02&nbsp;</td><td style="text-align:right">&nbsp;00:00:04&nbsp;</td><td style="text-align:right">&nbsp;csce-quinn-s1.engr.tamu.edu&nbsp;</td></tr>
+<tr><td style="text-align:right">&nbsp;Analyze Target Configuration Results&nbsp;</td><td style="text-align:right">&nbsp;33.33&nbsp;</td><td style="text-align:right">&nbsp;00:00:00&nbsp;</td><td style="text-align:right">&nbsp;00:00:00&nbsp;</td><td style="text-align:right">&nbsp;00:00:01&nbsp;</td><td style="text-align:right">&nbsp;00:00:04&nbsp;</td><td style="text-align:right">&nbsp;00:00:05&nbsp;</td><td style="text-align:right">&nbsp;&nbsp;</td></tr>
+<tr><td style="text-align:right">&nbsp;Build Fs Macro Script&nbsp;</td><td style="text-align:right">&nbsp;0.00&nbsp;</td><td style="text-align:right">&nbsp;00:00:00&nbsp;</td><td style="text-align:right">&nbsp;00:00:00&nbsp;</td><td style="text-align:right">&nbsp;00:00:00&nbsp;</td><td style="text-align:right">&nbsp;00:00:07&nbsp;</td><td style="text-align:right">&nbsp;00:00:07&nbsp;</td><td style="text-align:right">&nbsp;&nbsp;</td></tr>
+<tr><td style="text-align:right">&nbsp;Build Fs Macro Library&nbsp;</td><td style="text-align:right">&nbsp;0.00&nbsp;</td><td style="text-align:right">&nbsp;00:00:00&nbsp;</td><td style="text-align:right">&nbsp;00:00:00&nbsp;</td><td style="text-align:right">&nbsp;00:00:00&nbsp;</td><td style="text-align:right">&nbsp;00:00:00&nbsp;</td><td style="text-align:right">&nbsp;00:00:00&nbsp;</td><td style="text-align:right">&nbsp;&nbsp;</td></tr>
+<tr><td style="text-align:right">&nbsp;VCS&nbsp;</td><td style="text-align:right">&nbsp;66.67&nbsp;</td><td style="text-align:right">&nbsp;00:00:00&nbsp;</td><td style="text-align:right">&nbsp;00:00:02&nbsp;</td><td style="text-align:right">&nbsp;00:00:02&nbsp;</td><td style="text-align:right">&nbsp;00:00:11&nbsp;</td><td style="text-align:right">&nbsp;00:00:15&nbsp;</td><td style="text-align:right">&nbsp;csce-quinn-s1.engr.tamu.edu&nbsp;</td></tr>
+<tr><td style="text-align:right">&nbsp;Total time&nbsp;</td><td style="text-align:right">&nbsp;100.00&nbsp;</td><td style="text-align:right">&nbsp;00:00:00&nbsp;</td><td style="text-align:right">&nbsp;00:00:06&nbsp;</td><td style="text-align:right">&nbsp;00:00:03&nbsp;</td><td style="text-align:right">&nbsp;-&nbsp;</td><td style="text-align:right">&nbsp;-&nbsp;</td><td style="text-align:right">&nbsp;-&nbsp;</td></tr>
+</table>
+Columns:<br>
+ - Task&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: task label<br>
+ - (%)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: percentage of contribution to the overall compile time<br>
+ - Slot delay&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: time waiting for a slot on the grid<br>
+ - Grid delay&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: time between the task is spawed and the task is launched<br>
+ - Elapsed time&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: contribution to the overall compile time<br>
+ - Spawn time&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: time spawning on the grid, taking the spawn time of the first task as reference<br>
+ - Finish time&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: time finishing, taking the spawn time of the first task as reference<br>
+ - Host&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: host where the task was launched (only for tasks external to zCui)<br>
+Compile time with delay (slot and grid)<br>
+<svg width="800" height="300" style="display: block">
+	<circle cx="150.00" cy="150.00" r="141.00" stroke="#3f3f3f"></circle>
+	<path d="M 150.00 150.00 L 147.77 10.02 A140.00 140.00 0 0 1 286.25 117.80" fill="#7f5d2a"/>
+	<path d="M 150.00 150.00 L 285.15 113.48 A140.00 140.00 0 0 1 214.66 274.17" fill="#26bf00"/>
+	<path d="M 150.00 150.00 L 218.58 272.05 A140.00 140.00 0 0 1 170.84 288.44" fill="#55ffff"/>
+	<path d="M 150.00 150.00 L 175.24 287.71 A140.00 140.00 0 0 1 20.91 204.19" fill="#19007f"/>
+	<path d="M 150.00 150.00 L 22.70 208.27 A140.00 140.00 0 0 1 152.23 10.02" fill="#bf3f8c"/>
+	<rect x="310" y="20" width="10" height="10" style="fill:#7f5d2a"/><text x="328" y="30">Check Vcs Binaries Version</text>
+	<rect x="310" y="40" width="10" height="10" style="fill:#26bf00"/><text x="328" y="50">Target Configuration</text>
+	<rect x="310" y="60" width="10" height="10" style="fill:#55ffff"/><text x="328" y="70">Analyze Target Configuration Results</text>
+	<rect x="310" y="80" width="10" height="10" style="fill:#19007f"/><text x="328" y="90">Build Fs Macro Library</text>
+	<rect x="310" y="100" width="10" height="10" style="fill:#bf3f8c"/><text x="328" y="110">VCS</text>
+</svg>
+<a name="anchor_8"><h1>Compile time without delay</h1></a>
+<table class="glogtable">
+<tr><th>&nbsp;Task&nbsp;</th><th>&nbsp;(%)&nbsp;</th><th>&nbsp;Elapsed time&nbsp;</th><th>&nbsp;Host&nbsp;</th></tr>
+<tr><td style="text-align:right">&nbsp;Check Vcs Binaries Version&nbsp;</td><td style="text-align:right">&nbsp;0.00&nbsp;</td><td style="text-align:right">&nbsp;00:00:00&nbsp;</td><td style="text-align:right">&nbsp;csce-quinn-s1.engr.tamu.edu&nbsp;</td></tr>
+<tr><td style="text-align:right">&nbsp;Target Configuration&nbsp;</td><td style="text-align:right">&nbsp;0.00&nbsp;</td><td style="text-align:right">&nbsp;00:00:00&nbsp;</td><td style="text-align:right">&nbsp;csce-quinn-s1.engr.tamu.edu&nbsp;</td></tr>
+<tr><td style="text-align:right">&nbsp;Analyze Target Configuration Results&nbsp;</td><td style="text-align:right">&nbsp;100.00&nbsp;</td><td style="text-align:right">&nbsp;00:00:01&nbsp;</td><td style="text-align:right">&nbsp;&nbsp;</td></tr>
+<tr><td style="text-align:right">&nbsp;Build Fs Macro Script&nbsp;</td><td style="text-align:right">&nbsp;0.00&nbsp;</td><td style="text-align:right">&nbsp;00:00:00&nbsp;</td><td style="text-align:right">&nbsp;&nbsp;</td></tr>
+<tr><td style="text-align:right">&nbsp;Build Fs Macro Library&nbsp;</td><td style="text-align:right">&nbsp;0.00&nbsp;</td><td style="text-align:right">&nbsp;00:00:00&nbsp;</td><td style="text-align:right">&nbsp;&nbsp;</td></tr>
+<tr><td style="text-align:right">&nbsp;Total&nbsp;</td><td style="text-align:right">&nbsp;100.00&nbsp;</td><td style="text-align:right">&nbsp;00:00:01&nbsp;</td><td style="text-align:right">&nbsp;-&nbsp;</td></tr>
+</table>
+Columns:<br>
+ - Task&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: task label<br>
+ - (%)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: percentage of contribution to the overall compile time<br>
+ - Elapsed time&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: contribution to the overall compile time<br>
+ - Host&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: host where the task was launched (only for tasks external to zCui)<br>
+<a name="anchor_9"><h1>Main Compilation Stages</h1></a>
+<a name="anchor_10"><h2>Front End Stages Timing</h2></a>
+<table class="glogtable">
+<tr><th>&nbsp;Task&nbsp;</th><th>&nbsp;Elapsed time&nbsp;</th><th>&nbsp;Execution time&nbsp;</th></tr>
+<tr><td style="text-align:right">&nbsp;Launch VCS&nbsp;</td><td style="text-align:right">&nbsp;00:00:04&nbsp;</td><td style="text-align:right">&nbsp;00:00:02&nbsp;</td></tr>
+<tr><td style="text-align:right">&nbsp;Elaboration Analyzer&nbsp;</td><td style="text-align:right">&nbsp;00:00:00&nbsp;</td><td style="text-align:right">&nbsp;00:00:00&nbsp;</td></tr>
+<tr><td style="text-align:right">&nbsp;Synthesis&nbsp;</td><td style="text-align:right">&nbsp;00:00:00&nbsp;</td><td style="text-align:right">&nbsp;00:00:00&nbsp;</td></tr>
+<tr><td style="text-align:right">&nbsp;Back end Entry&nbsp;</td><td style="text-align:right">&nbsp;00:00:00&nbsp;</td><td style="text-align:right">&nbsp;00:00:00&nbsp;</td></tr>
+</table>
+Columns :<br>
+ - elapsed time&nbsp;&nbsp;&nbsp;: the time for the task being spawed and released<br>
+ - execution time : the time for the task being executed<br>
+<a name="anchor_11"><h2>Back-end Stages</h2></a>
+Back End Stages Timing for backend_default<br>
+<table class="glogtable">
+<tr><th>&nbsp;Task&nbsp;</th><th>&nbsp;Elapsed time&nbsp;</th><th>&nbsp;Execution time&nbsp;</th></tr>
+<tr><td style="text-align:right">&nbsp;Build System&nbsp;</td><td style="text-align:right">&nbsp;00:00:00&nbsp;</td><td style="text-align:right">&nbsp;00:00:00&nbsp;</td></tr>
+<tr><td style="text-align:right">&nbsp;Create Timing DB&nbsp;</td><td style="text-align:right">&nbsp;00:00:00&nbsp;</td><td style="text-align:right">&nbsp;00:00:00&nbsp;</td></tr>
+<tr><td style="text-align:right">&nbsp;Create Timing DB (post FPGA)&nbsp;</td><td style="text-align:right">&nbsp;00:00:00&nbsp;</td><td style="text-align:right">&nbsp;00:00:00&nbsp;</td></tr>
+<tr><td style="text-align:right">&nbsp;Place and Route System&nbsp;</td><td style="text-align:right">&nbsp;00:00:00&nbsp;</td><td style="text-align:right">&nbsp;00:00:00&nbsp;</td></tr>
+</table>
+Columns :<br>
+ - elapsed time&nbsp;&nbsp;&nbsp;: the time for the task being spawed and released<br>
+ - execution time : the time for the task being executed<br>
+<a name="anchor_12"><h1>Hosts</h1></a>
+<table class="glogtable">
+<tr><th>&nbsp;Machine name&nbsp;</th><th>&nbsp;Model name&nbsp;</th><th>&nbsp;CPU (MHz)&nbsp;</th><th>&nbsp;Cache size&nbsp;</th><th>&nbsp;CPU cores&nbsp;</th><th>&nbsp;Bogomips&nbsp;</th><th>&nbsp;Address sizes&nbsp;</th><th>&nbsp;Percent of CPU&nbsp;</th></tr>
+<tr><td style="text-align:right">&nbsp;csce-quinn-s1.engr.tamu.edu&nbsp;</td><td style="text-align:right">&nbsp; Intel(R) Xeon(R) CPU E5-2650 v3 @ 2.30GHz&nbsp;</td><td style="text-align:right">&nbsp; 2666.534&nbsp;</td><td style="text-align:right">&nbsp; 25600 KB&nbsp;</td><td style="text-align:right">&nbsp; 10&nbsp;</td><td style="text-align:right">&nbsp; 4600.38&nbsp;</td><td style="text-align:right">&nbsp; 46 bits physical, 48 bits virtual&nbsp;</td><td style="text-align:right">&nbsp; 106&nbsp;</td></tr>
+</table>
+<a name="anchor_13"><h1>Memory usage</h1></a>
+<table class="glogtable">
+<tr><th>&nbsp;Task&nbsp;</th><th>&nbsp;Maximum resident set size&nbsp;</th><th>&nbsp;Task Label&nbsp;</th><th>&nbsp;Job Queue&nbsp;</th></tr>
+<tr><td style="text-align:right">&nbsp;BE_Version_Checker&nbsp;</td><td style="text-align:right">&nbsp;242.80MB&nbsp;</td><td style="text-align:right">&nbsp;Check Back-End Binaries Version&nbsp;</td><td style="text-align:right">&nbsp;ZebuLocal&nbsp;</td></tr>
+<tr><td style="text-align:right">&nbsp;vcs_splitter_VCS_Task_Builder&nbsp;</td><td style="text-align:right">&nbsp;82.30MB&nbsp;</td><td style="text-align:right">&nbsp;Launch VCS&nbsp;</td><td style="text-align:right">&nbsp;Zebu&nbsp;</td></tr>
+<tr><td style="text-align:right">&nbsp;Vcs_Version_Checker&nbsp;</td><td style="text-align:right">&nbsp;53.58MB&nbsp;</td><td style="text-align:right">&nbsp;Check Vcs Binaries Version&nbsp;</td><td style="text-align:right">&nbsp;ZebuLocal&nbsp;</td></tr>
+<tr><td style="text-align:right">&nbsp;Target_Config&nbsp;</td><td style="text-align:right">&nbsp;36.77MB&nbsp;</td><td style="text-align:right">&nbsp;Target Configuration&nbsp;</td><td style="text-align:right">&nbsp;Zebu&nbsp;</td></tr>
+<tr><td style="text-align:right">&nbsp;FE_Version_Checker&nbsp;</td><td style="text-align:right">&nbsp;10.90MB&nbsp;</td><td style="text-align:right">&nbsp;Check Front-End Binaries Version&nbsp;</td><td style="text-align:right">&nbsp;ZebuLocal&nbsp;</td></tr>
+</table>
+<a name="anchor_14"><h1>Job Queue Memory Analysis</h1></a>
+<table class="glogtable">
+<tr><th>&nbsp;Job queue&nbsp;</th><th>&nbsp;Maximum RSS : max value&nbsp;</th><th>&nbsp;Maximum RSS : average value&nbsp;</th></tr>
+<tr><td style="text-align:right">&nbsp;Zebu&nbsp;</td><td style="text-align:right">&nbsp;82.30MB&nbsp;</td><td style="text-align:right">&nbsp;59.53MB&nbsp;</td></tr>
+<tr><td style="text-align:right">&nbsp;ZebuLocal&nbsp;</td><td style="text-align:right">&nbsp;242.80MB&nbsp;</td><td style="text-align:right">&nbsp;102.43MB&nbsp;</td></tr>
+</table>
+<a name="anchor_15"><h1>Grid Delay</h1></a>
+There are no tasks with grid delay &gt; 30s<br>
+<a name="anchor_16"><h1>Grid Delay Per Job Queue</h1></a>
+<table class="glogtable">
+<tr><th>&nbsp;Job queue&nbsp;</th><th>&nbsp;Wait(max)&nbsp;</th><th>&nbsp;Wait(average)&nbsp;</th></tr>
+<tr><td style="text-align:right">&nbsp;Zebu&nbsp;</td><td style="text-align:right">&nbsp;00:00:02&nbsp;</td><td style="text-align:right">&nbsp;00:00:02&nbsp;</td></tr>
+<tr><td style="text-align:right">&nbsp;ZebuLocal&nbsp;</td><td style="text-align:right">&nbsp;00:00:02&nbsp;</td><td style="text-align:right">&nbsp;00:00:01&nbsp;</td></tr>
+</table>
+<a name="anchor_17"><h1>Compile times</h1></a>
+<table class="glogtable">
+<tr><th>&nbsp;&nbsp;</th><th>&nbsp;CPU time&nbsp;</th><th>&nbsp;Wall clock&nbsp;</th><th>&nbsp;CPU time with grid&nbsp;</th></tr>
+<tr><td style="text-align:right">&nbsp;Front end&nbsp;</td><td style="text-align:right">&nbsp;0s&nbsp;</td><td style="text-align:right">&nbsp;0s&nbsp;</td><td style="text-align:right">&nbsp;0s&nbsp;</td></tr>
+<tr><td style="text-align:right">&nbsp;Back end&nbsp;</td><td style="text-align:right">&nbsp;3s&nbsp;</td><td style="text-align:right">&nbsp;476185h 24min 11s&nbsp;</td><td style="text-align:right">&nbsp;12s&nbsp;</td></tr>
+</table>
+<a name="anchor_18"><h1>FPGA compilation</h1></a>
+Duration per compilation step for each FPGA<br>
+<table class="glogtable">
+<tr><th>&nbsp;FPGA&nbsp;</th><th>&nbsp;WRITE_BITSTREAM&nbsp;</th><th>&nbsp;Total&nbsp;</th></tr>
+<tr><td style="text-align:right">&nbsp;FPGA&nbsp;</td><td style="text-align:right">&nbsp;FPGA&nbsp;</td><td style="text-align:right">&nbsp;total&nbsp;</td></tr>
+<tr><td style="text-align:right">&nbsp;U0_M0_F00/U0_M0_F0&nbsp;</td><td style="text-align:right">&nbsp;2min 22s&nbsp;</td><td style="text-align:right">&nbsp;2min 22s&nbsp;</td></tr>
+</table>
+</div>
+</div>
+</div>
+</div>
+<div style="clear:both"></div>
+<div id="footer">
+<div style="float: left; text-align: center; width: 50%;">Synopsys</div>
+<div style="float: right; text-align: center; width: 50%;">generated by zCui</div>
+</div>
+<script>
+/*
+	RequestAnimationFrame Polyfill
+
+	http://paulirish.com/2011/requestanimationframe-for-smart-animating/
+	http://my.opera.com/emoller/blog/2011/12/20/requestanimationframe-for-smart-er-animating
+	by Erik Möller, fixes from Paul Irish and Tino Zijdel
+
+	MIT license
+ */ 
+
+(function() {
+	var lastTime = 0;
+	var vendors = ['ms', 'moz', 'webkit', 'o'];
+	for(var x = 0; x < vendors.length && !window.requestAnimationFrame; ++x) {
+		window.requestAnimationFrame = window[vendors[x]+'RequestAnimationFrame'];
+		window.cancelAnimationFrame = window[vendors[x]+'CancelAnimationFrame'] || window[vendors[x]+'CancelRequestAnimationFrame'];
+	}
+
+	if ( ! window.requestAnimationFrame ) {
+		window.requestAnimationFrame = function(callback, element) {
+			var currTime = new Date().getTime();
+			var timeToCall = Math.max(0, 16 - (currTime - lastTime));
+			var id = window.setTimeout(function() { callback(currTime + timeToCall); }, 
+			timeToCall);
+			lastTime = currTime + timeToCall;
+			return id;
+		};
+	}
+
+	if ( ! window.cancelAnimationFrame ) {
+		window.cancelAnimationFrame = function(id) {
+			clearTimeout(id);
+		};
+	}
+}());
+
+
+/*
+	Sticky menu script
+ */
+
+(function(w,d,undefined){
+	var el_html = d.documentElement,
+		el_body = d.getElementsByTagName('body')[0],
+		header = d.getElementById('header'),
+		lastScroll = w.pageYOffset || el_body.scrollTop,
+
+		menuIsStuck = function(triggerElement, wScrollTop, lastScroll) {
+			var regexp		= /(nav\-is\-stuck)/i,
+				classFound	= el_html.className.match( regexp ),
+				navHeight	= header.offsetHeight,
+				bodyRect	= el_body.getBoundingClientRect(),
+				scrollValue	= triggerElement ? triggerElement.getBoundingClientRect().top - bodyRect.top - navHeight  : 800,
+				scrollValFix = classFound ? scrollValue : scrollValue + navHeight;
+
+			// if scroll down is 700 or more AND nav-is-stuck class doesn't exist AND we are going up
+			if ( wScrollTop > scrollValFix && !classFound && wScrollTop < lastScroll ) {
+				el_html.className = el_html.className + ' nav-is-stuck';
+				el_body.style.paddingTop = navHeight + 'px';
+			}
+
+			// if we are to high in the page AND nav-is-stuck class exists
+			if ( classFound && wScrollTop > lastScroll ) {
+				el_html.className = el_html.className.replace( regexp, '' );
+				el_body.style.paddingTop = '0px';
+			}
+		},
+
+		onScrolling = function() {
+			var wScrollTop = w.pageYOffset || el_body.scrollTop;
+			
+			// use scroll datas as parameters...
+			menuIsStuck( d.getElementById('main'), wScrollTop, lastScroll );
+			
+			// save current scroll as last scroll position
+			lastScroll = wScrollTop;
+			
+		};
+
+
+	el_html.className = el_html.className + ' js';
+
+	// when you scroll, fire onScrolling() function
+	w.addEventListener('scroll', function(){
+		w.requestAnimationFrame( onScrolling );
+	});
+
+}(window, document));
+</script>
+</body>
+</html>

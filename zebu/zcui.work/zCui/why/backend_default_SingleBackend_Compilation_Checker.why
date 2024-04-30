@@ -5,7 +5,7 @@
  OK input internal dependency (structural) <- Backend: default backend/System Data Base/FPGA PaRs Analyzer
  OK input internal dependency (structural) <- Backend: default backend/System Compilation/Create Timing DB
  KO input internal dependency (always redo) <- Backend: default backend/System Data Base/Create Script (DB PP)
- OK input backend_default/tools/zTime/des_ztime.xref same date <- Backend: default backend/System Data Base/Create Timing DB (post FPGA)
+ OK input backend_default/tools/zTime/des_ztime.xref same checksum <- Backend: default backend/System Data Base/Create Timing DB (post FPGA)
  OK input internal dependency (structural) <- Backend: default backend/System Data Base/zAudit Report
  OK input internal dependency (structural) <- VCS/Launch Verdi
  KO input internal dependency <- Backend: default backend/System Data Base/zSimuFsdbHeader

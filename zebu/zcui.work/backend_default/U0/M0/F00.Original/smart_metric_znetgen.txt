@@ -1,4 +1,4 @@
-High Speed:138
+High Speed:194
 Qiwc:0
 Toggle Activity:0
 SABRE:0

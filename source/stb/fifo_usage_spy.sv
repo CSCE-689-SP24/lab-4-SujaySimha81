@@ -7,26 +7,43 @@
 
 module fifo_usage_spy #(
   parameter WIDTH=5,
-  parameter DEPTH=32
+  parameter DEPTH=32,
+  parameter ADD_WIDTH=5
 )(
-  input  clk,
+  input  rclk,
+  input  wclk,
   input  rstn,
-  input  [WIDTH:0] remain
+  input  [ADD_WIDTH:0] remain,
+  input we,
+  input re,
+  input [WIDTH-1 : 0]datain,
+  input [WIDTH-1 : 0]dataout
 );
 
-  reg [WIDTH:0] min;
+  reg [ADD_WIDTH:0] min;
 
   import "DPI-C" context function void fifo_usage_spy_notify (
-    input bit[WIDTH:0] min
+    input bit we,
+    input bit re,
+    input bit [WIDTH-1 : 0]data
   );
 
-  always @(posedge clk or negedge rstn)
+  always @(posedge wclk or posedge rclk or negedge rstn)begin
     if (!rstn)
       min <= DEPTH;
-    else
+    else begin
       if (remain < min) begin
         min <= remain;
-        fifo_usage_spy_notify(remain);
+        //fifo_usage_spy_notify(remain);
       end
+      if(we)begin
+        fifo_usage_spy_notify(we, 0, datain);
+      end
+      if(re)begin
+        fifo_usage_spy_notify(0, re, dataout);
+      end
+    end
+  end
+
 
 endmodule

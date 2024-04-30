@@ -31,5 +31,5 @@
 #   step REPORT : Writing netlist 'stb' to 'edif/stb/stb.edf.gz'
 #   step EDIF GENERATOR : netlist 'zmerge' has changed - regenerate EDIF file 'edif/stb/stb.edf.gz'
 #   step SERIALIZE : writing netlist 'zmerge' into znl file 'edif/stb/stb.edf.gz'
-#   step SERIALIZE : #bytes in: 26626, #bytes out: 9747, compression ratio: 2.731712
-#   step REPORT : [87.28] Resource usage for stb: 0.069s 0.0M
+#   step SERIALIZE : #bytes in: 26626, #bytes out: 9746, compression ratio: 2.731993
+#   step REPORT : [87.28] Resource usage for stb: 0.071s 0.0M

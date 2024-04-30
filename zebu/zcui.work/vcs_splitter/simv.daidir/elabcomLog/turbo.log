@@ -3,4 +3,4 @@ uname(Linux csce-quinn-s1.engr.tamu.edu 3.10.0-1160.108.1.el7.x86_64 #1 SMP Thu 
 [INFO] error/warning message 'C00371' has been suppressed.
 [INFO] error/warning message 'C00388' has been suppressed.
 [INFO] error/warning message 'C00389' has been suppressed.
-au time 1.620889 0.022838 0.048657 delta 100786176 100786176 total 208191488 208191488
+au time 0.715733 0.018021 0.053175 delta 100794368 100794368 total 208199680 208199680

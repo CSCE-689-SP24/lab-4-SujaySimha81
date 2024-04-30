@@ -1,7 +1,7 @@
 zFAST results analysis:
   Source unit: Design
   RTL group: Default_RTL_Group
-Module: fifo_usage_spy
-  Xcui file design/synth_Default_RTL_Group/xcui/fifo_usage_spy.xcui is read
-  Checksum value 5c7464ceaeb805415ceb6e36b04146fbdc23d919e60b0a7755195e751c60306d16f59b3d4adbb8ebee818e5a5649683f89a20806a4cb4af508b54d22626aa2e0
+Module: fifo_0000
+  Xcui file design/synth_Default_RTL_Group/xcui/fifo_0000.xcui is read
+  Checksum value a0f7d9ff0fcc7d0c791f24dad92062503066e3aac763c4d13bb55ec4fb26f836f414e85533c9c10bee04f2bf1b161dd758782e6d4dfc20654e21269db24e283c
 zFAST output analyzed

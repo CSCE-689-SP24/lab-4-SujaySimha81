@@ -1,132 +1,22 @@
 
 Processing clkg
-before constantPropagate: 0u 0s 1162e 601792kB
-after constantPropagate: 0u 0s 1162e 601792kB
-before removeUnusedSignals circuit: 0u 0s 1162e 601792kB
-after removeUnusedSignals circuit: 0u 0s 1162e 601792kB
-before optimize latch enable: 0u 0s 1162e 601792kB
-after optimize latch enable: 0u 0s 1162e 601792kB
-before removeReadAfterMissingWrite: 0u 0s 1162e 601792kB
-after removeReadAfterMissingWrite: 0u 0s 1162e 601792kB
-before undoDimensionalSplitOfMemories: 0u 0s 1162e 601792kB
-after undoDimensionalSplitOfMemories: 0u 0s 1162e 601792kB
-before extractMemories: 0u 0s 1162e 601792kB
-after extractMemories: 0u 0s 1162e 601792kB
-before extractHolds: 0u 0s 1162e 601792kB
-after extractHolds: 0u 0s 1162e 601792kB
-before simplifyAdders: 0u 0s 1162e 601792kB
-after simplifyAdders: 0u 0s 1162e 601792kB
-before reportUnresolvedType: 0u 0s 1162e 601792kB
-after reportUnresolvedType: 0u 0s 1162e 601792kB
-before dumpingPerModuleScm : 0u 0s 1162e 601792kB
-after dumpingPerModuleScm : 0u 0s 1162e 601792kB
-
-Processing fifo_0000
-before constantPropagate: 0u 0s 1162e 601792kB
-after constantPropagate: 0u 0s 1162e 601792kB
-before removeUnusedSignals circuit: 0u 0s 1162e 601792kB
-after removeUnusedSignals circuit: 0u 0s 1162e 601792kB
-before optimize latch enable: 0u 0s 1162e 601792kB
-after optimize latch enable: 0u 0s 1162e 601792kB
-before removeReadAfterMissingWrite: 0u 0s 1162e 601792kB
-after removeReadAfterMissingWrite: 0u 0s 1162e 601792kB
-before undoDimensionalSplitOfMemories: 0u 0s 1162e 601792kB
-after undoDimensionalSplitOfMemories: 0u 0s 1162e 601792kB
-before extractMemories: 0u 0s 1162e 601792kB
-after extractMemories: 0u 0s 1162e 601792kB
-before extractHolds: 0u 0s 1162e 601792kB
-after extractHolds: 0u 0s 1172e 601792kB
-before simplifyAdders: 0u 0s 1172e 601792kB
-after simplifyAdders: 0u 0s 1172e 601792kB
-before reportUnresolvedType: 0u 0s 1172e 601792kB
-after reportUnresolvedType: 0u 0s 1172e 601792kB
-before dumpingPerModuleScm : 0u 0s 1172e 601792kB
-after dumpingPerModuleScm : 0u 0s 1172e 601792kB
-
-Processing dut
-before constantPropagate: 0u 0s 1172e 601792kB
-after constantPropagate: 0u 0s 1172e 601792kB
-before removeUnusedSignals circuit: 0u 0s 1172e 601792kB
-after removeUnusedSignals circuit: 0u 0s 1172e 601792kB
-before optimize latch enable: 0u 0s 1172e 601792kB
-after optimize latch enable: 0u 0s 1172e 601792kB
-before removeReadAfterMissingWrite: 0u 0s 1172e 601792kB
-after removeReadAfterMissingWrite: 0u 0s 1172e 601792kB
-before undoDimensionalSplitOfMemories: 0u 0s 1172e 601792kB
-after undoDimensionalSplitOfMemories: 0u 0s 1172e 601792kB
-before extractMemories: 0u 0s 1172e 601792kB
-after extractMemories: 0u 0s 1172e 601792kB
-before extractHolds: 0u 0s 1172e 601792kB
-after extractHolds: 0u 0s 1172e 601792kB
-before simplifyAdders: 0u 0s 1172e 601792kB
-after simplifyAdders: 0u 0s 1172e 601792kB
-before reportUnresolvedType: 0u 0s 1172e 601792kB
-after reportUnresolvedType: 0u 0s 1172e 601792kB
-before dumpingPerModuleScm : 0u 0s 1172e 601792kB
-after dumpingPerModuleScm : 0u 0s 1172e 601792kB
-
-Processing rom
-before constantPropagate: 0u 0s 1172e 601792kB
-after constantPropagate: 0u 0s 1172e 601792kB
-before removeUnusedSignals circuit: 0u 0s 1172e 601792kB
-after removeUnusedSignals circuit: 0u 0s 1172e 601792kB
-before optimize latch enable: 0u 0s 1172e 601792kB
-after optimize latch enable: 0u 0s 1172e 601792kB
-before removeReadAfterMissingWrite: 0u 0s 1172e 601792kB
-after removeReadAfterMissingWrite: 0u 0s 1172e 601792kB
-before undoDimensionalSplitOfMemories: 0u 0s 1172e 601792kB
-after undoDimensionalSplitOfMemories: 0u 0s 1172e 601792kB
-before extractMemories: 0u 0s 1172e 601792kB
-after extractMemories: 0u 0s 1186e 601792kB
-before extractHolds: 0u 0s 1185e 601792kB
-after extractHolds: 0u 0s 1185e 601792kB
-before simplifyAdders: 0u 0s 1185e 601792kB
-after simplifyAdders: 0u 0s 1185e 601792kB
-before reportUnresolvedType: 0u 0s 1185e 601792kB
-after reportUnresolvedType: 0u 0s 1185e 601792kB
-before dumpingPerModuleScm : 0u 0s 1185e 601792kB
-after dumpingPerModuleScm : 0u 0s 1185e 601792kB
-
-Processing ram
-before constantPropagate: 0u 0s 1185e 601792kB
-after constantPropagate: 0u 0s 1185e 601792kB
-before removeUnusedSignals circuit: 0u 0s 1185e 601792kB
-after removeUnusedSignals circuit: 0u 0s 1185e 601792kB
-before optimize latch enable: 0u 0s 1185e 601792kB
-after optimize latch enable: 0u 0s 1185e 601792kB
-before removeReadAfterMissingWrite: 0.01u 0s 1185e 601792kB
-after removeReadAfterMissingWrite: 0.01u 0s 1185e 601792kB
-before undoDimensionalSplitOfMemories: 0.01u 0s 1185e 601792kB
-after undoDimensionalSplitOfMemories: 0.01u 0s 1185e 601792kB
-before extractMemories: 0.01u 0s 1185e 601792kB
-after extractMemories: 0.01u 0s 1184e 601792kB
-before extractHolds: 0.01u 0s 1179e 601792kB
-after extractHolds: 0.01u 0s 1179e 601792kB
-before simplifyAdders: 0.01u 0s 1179e 601792kB
-after simplifyAdders: 0.01u 0s 1179e 601792kB
-before reportUnresolvedType: 0.01u 0s 1179e 601792kB
-after reportUnresolvedType: 0.01u 0s 1179e 601792kB
-before dumpingPerModuleScm : 0.01u 0s 1179e 601792kB
-after dumpingPerModuleScm : 0.01u 0s 1179e 601792kB
-
-Processing top
-before constantPropagate: 0.01u 0s 1179e 601792kB
-after constantPropagate: 0.01u 0s 1179e 601792kB
-before removeUnusedSignals circuit: 0.01u 0s 1179e 601792kB
-after removeUnusedSignals circuit: 0.01u 0s 1179e 601792kB
-before optimize latch enable: 0.01u 0s 1179e 601792kB
-after optimize latch enable: 0.01u 0s 1179e 601792kB
-before removeReadAfterMissingWrite: 0.01u 0s 1179e 601792kB
-after removeReadAfterMissingWrite: 0.01u 0s 1179e 601792kB
-before undoDimensionalSplitOfMemories: 0.01u 0s 1179e 601792kB
-after undoDimensionalSplitOfMemories: 0.01u 0s 1179e 601792kB
-before extractMemories: 0.01u 0s 1179e 601792kB
-after extractMemories: 0.01u 0s 1179e 601792kB
-before extractHolds: 0.01u 0s 1179e 601792kB
-after extractHolds: 0.01u 0s 1179e 601792kB
-before simplifyAdders: 0.01u 0s 1179e 601792kB
-after simplifyAdders: 0.01u 0s 1179e 601792kB
-before reportUnresolvedType: 0.01u 0s 1179e 601792kB
-after reportUnresolvedType: 0.01u 0s 1179e 601792kB
-before dumpingPerModuleScm : 0.01u 0s 1179e 601792kB
-after dumpingPerModuleScm : 0.01u 0s 1179e 601792kB
+before constantPropagate: 0u 0s 1231e 602088kB
+after constantPropagate: 0u 0s 1231e 602088kB
+before removeUnusedSignals circuit: 0u 0s 1231e 602088kB
+after removeUnusedSignals circuit: 0u 0s 1231e 602088kB
+before optimize latch enable: 0u 0s 1231e 602088kB
+after optimize latch enable: 0u 0s 1231e 602088kB
+before removeReadAfterMissingWrite: 0u 0s 1231e 602088kB
+after removeReadAfterMissingWrite: 0u 0s 1231e 602088kB
+before undoDimensionalSplitOfMemories: 0u 0s 1231e 602088kB
+after undoDimensionalSplitOfMemories: 0u 0s 1231e 602088kB
+before extractMemories: 0u 0s 1231e 602088kB
+after extractMemories: 0u 0s 1231e 602088kB
+before extractHolds: 0u 0s 1231e 602088kB
+after extractHolds: 0u 0s 1231e 602088kB
+before simplifyAdders: 0u 0s 1231e 602088kB
+after simplifyAdders: 0u 0s 1231e 602088kB
+before reportUnresolvedType: 0u 0s 1231e 602088kB
+after reportUnresolvedType: 0u 0s 1231e 602088kB
+before dumpingPerModuleScm : 0u 0s 1231e 602088kB
+after dumpingPerModuleScm : 0u 0s 1231e 602088kB

@@ -22,7 +22,7 @@
 
 # zNetgen design.tcl 
 
-# start time is Wed Apr 17 23:56:48 2024
+# start time is Mon Apr 29 13:44:27 2024
 
 
 
@@ -30,15 +30,15 @@
 # Build Date : Oct 18 2022 - 00:58:44
 # ---------------------------System Context--------------------------- 
 # Cpu        40 x bogomips - 4604.90 Intel(R) Xeon(R) CPU E5-2650 v3 @ 2.30GHz
-#            Load: 0.23 0.09 0.07 1/484 4482
+#            Load: 0.35 0.17 0.16 2/508 36445
 #            Hostname: csce-quinn-s1.engr.tamu.edu   OS: Linux 3.10.0-1160.108.1.el7.x86_64
-# Memory     Total: 193183 MB Free: 174441 MB
-#            Total Free including cache: 187842 MB
-#            Swap cache: 0 MB Cached space: 13401 MB
+# Memory     Total: 193183 MB Free: 171383 MB
+#            Total Free including cache: 187488 MB
+#            Swap cache: 0 MB Cached space: 16105 MB
 #            Swap space: 4095 MB Free Swap space: 4095 MB
 #            VmSize: 426 MB VmPeak: 426 MB
-# Disk Space Total: 50 GB Available: 27 GB Used: 23 GB
-#            Free inodes: 104738117
+# Disk Space Total: 50 GB Available: 8 GB Used: 42 GB
+#            Free inodes: 104731992
 # Stack                                Soft Limit           Hard Limit  
 #            Max stack size            8388608              unlimited            bytes     
 # -------------------------------------------------------------------- 
@@ -131,7 +131,7 @@ dont_touch -vivado_stop_timing -verbose {0}
 #   step DONT TOUCH : Protect all instances with 'ZEBU_VIVADO_STOP_TIMING' attribute.
 #   step UNIQUIFY : Netlist with Top 'design'
 #   step UNIQUIFY : 0 modules created
-#   step DONT TOUCH : 29 instances have been protected.
+#   step DONT TOUCH : 30 instances have been protected.
 end_quiet_timer {zebu_dont_touch}
 begin_quiet_timer {zebu_gnd_unused_trigger_bits}
 gnd_unused_trigger_bits -verbose {0}
@@ -245,7 +245,7 @@ report_fwc
 #   step STATS :  ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #   step STATS :  |                 reg |                 lut |                bram |                uram |             memsize |              m18x18 |                bufg |                buft |               nbI/O |                nbBB |                nbZV |                nbME |               dsp48 || name
 #   step STATS :  ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-#   step STATS :  |                   0 |                   0 |                   0 |                   0 |                   0 |                   0 |                   0 |                   0 |                 223 |                   0 |                   0 |                   0 |                   0 || $DUMPVARS
+#   step STATS :  |                   0 |                   0 |                   0 |                   0 |                   0 |                   0 |                   0 |                   0 |                 289 |                   0 |                   0 |                   0 |                   0 || $DUMPVARS
 #   step STATS :  ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 section {3.8} {1} {CLEANING CLOCKS}
    ##############################################
@@ -285,33 +285,34 @@ synchro
 #   step CLOCK NETWORK : writing report for design 'design'
 #   info :    #-------- Summary 
 
-#   info :      - 1950 synchronous items
+#   info :      - 2002 synchronous items
 #   info :      - 4 primary clocks 
-#   info :      - 32 derived clocks 
+#   info :      - 33 derived clocks 
 #   info :      - 0 multi-driven clock 
 #   info :      - 14 stuck clocks 
 #   info :      - 0 undriven clock
-#   info :      - Total : 50 clocks
+#   info :      - Total : 51 clocks
 
 #   info :      - 1 zxlsys instance
 
 
 #   info :    #-------- PRIMARY clocks
 
-#   info :        372 items : design.U0_M0_F0.zebu_zdly_z_dclk_delay_12524327392187371745 (BUFG)
+#   info :        370 items : design.U0_M0_F0.zebu_zdly_z_dclk_delay_12524327392187371745 (BUFG)
 #   info :         99 items : design.zkprctrl.wrapper.sysclk_mxfx.u_xst_wrapper_0.sysclk_idly_0.sys_idel_clk (BUFG)
-#   info :         45 items : design.U0_M0_F0.zcgen_w_zcg_filterClock (BUFG)
-#   info :          7 items : design.U0_M0_F0.zcgen_w_zcg_compositeClock (BUFG)
+#   info :         46 items : design.U0_M0_F0.zcgen_w_zcg_filterClock (BUFG)
+#   info :         12 items : design.U0_M0_F0.zcgen_w_zcg_compositeClock (BUFG)
 #   info :  
 
 #   info :    #-------- DERIVED clocks
 
 #   info :        455 items : design.zkprctrl.wrapper.sysclk_mxfx.u_xst_wrapper_0.sysclk_bus_dut_0.x_bufgctrl_ce_fib_clk.u_xst_wrapper_0.O (BUFG)
 #   info :        236 items : design.zkprctrl.wrapper.sysclk_mxfx.u_xst_wrapper_0.sysclk_bus_dut_0.x_bufgctrl_ce_srb_clk.u_xst_wrapper_0.O (BUFG)
-#   info :        183 items : design.U0_M0_F0.U0_M0_F0_core.zebu_filter__I_vcs_cdx_s_rw_topu_stb_clk1.zdelay_regFilterPos
-#   info :        179 items : design.U0_M0_F0.U0_M0_F0_core.zebu_filter__I_vcs_cdx_s_rw_topu_stb_clk0.zdelay_regFilterPos
+#   info :        202 items : design.U0_M0_F0.U0_M0_F0_core.zebu_filter__I_vcs_cdx_s_rw_topu_stb_clk1.zdelay_regFilterPos
+#   info :        189 items : design.U0_M0_F0.U0_M0_F0_core.zebu_filter__I_vcs_cdx_s_rw_topu_stb_clk0.zdelay_regFilterPos
 #   info :        164 items : design.zkprctrl.wrapper.fib_bridge_rx.u_xst_wrapper_0.socket_lvds_sys_slave_0.u_xst_wrapper_0.socket_lvds_gp_in_0.u_xst_wrapper_0.clk_dv
 #   info :         56 items : design.U0_M0_F0.U0_M0_F0_core.u_dut.u_fifo.u0_clkg.zebu_filter_clkout.zdelay_regFilterPos
+#   info :         19 items : design.U0_M0_F0.U0_M0_F0_core.zforce_rstn.zebu_filter_VAL_sync.zdelay_regFilterNeg
 #   info :          9 items : design.zkprctrl.wrapper.sysclk_mxfx.u_xst_wrapper_0.sysclk_bus_dut_0.x_bufgctrl_ce_fib_clk_hs.u_xst_wrapper_0.O (BUFG)
 #   info :          7 items : design.zkprctrl.wrapper.fib_bridge_rx.u_xst_wrapper_0.socket_lvds_sys_slave_0.u_xst_wrapper_0.socket_lvds_gp_in_0.u_xst_wrapper_0.clk_hs
 #   info :          2 items : design.zkprctrl.wrapper.sysclk_mxfx.u_xst_wrapper_0.sysclk_idly_0.x_bufgctrl_3.u_xst_wrapper_0.O (BUFG)
@@ -389,13 +390,13 @@ stat -path {design} -zstatistics {out}
 #   step STATS :  ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #   step STATS :  |                 reg |                 lut |                bram |                uram |             memsize |              m18x18 |                bufg |                buft |               nbI/O |                nbBB |                nbZV |                nbME |               dsp48 || name
 #   step STATS :  ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-#   step STATS :  |                1862 |                1159 |                   2 |                   0 |               65536 |                   0 |                  15 |                  16 |                1162 |                  78 |                   0 |                   0 |                   0 || design
+#   step STATS :  |                1914 |                1163 |                   2 |                   0 |               65536 |                   0 |                  15 |                  16 |                1162 |                  83 |                   0 |                   0 |                   0 || design
 #   step STATS :  ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 stat -path {design.U0_M0_F0.U0_M0_F0_core} -zstatistics {in}
 #   step STATS :  ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #   step STATS :  |                 reg |                 lut |                bram |                uram |             memsize |              m18x18 |                bufg |                buft |               nbI/O |                nbBB |                nbZV |                nbME |               dsp48 || name
 #   step STATS :  ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-#   step STATS :  |                 946 |                 280 |                   0 |                   0 |                   0 |                   0 |                   0 |                   0 |                  56 |                  78 |                   0 |                   0 |                   0 || design.U0_M0_F0.U0_M0_F0_core
+#   step STATS :  |                 998 |                 284 |                   0 |                   0 |                   0 |                   0 |                   0 |                   0 |                  56 |                  83 |                   0 |                   0 |                   0 || design.U0_M0_F0.U0_M0_F0_core
 #   step STATS :  ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 end_quiet_timer {fpga_stats}
 begin_quiet_timer {muxcy_xorcy_processes}
@@ -452,8 +453,8 @@ fwc {zcg_compositeClock} -optimize {area} -version {gen2} -sampling_frequency {5
 #   step UNIQUIFY : 0 modules created
 #   step $DUMPVARS : Starting $dumpvar/dpi/ccall postprocessing.
 #   step $DUMPVARS : Configuring for Virtex V7, waveform capture gen2.
-#   step $DUMPVARS : 6 Logical $dumpvar/dpi/ccall were mapped on 6 physical High Speed packets.
-#   step $DUMPVARS : $dumpvar/dpi/ccall processing done: to dump 138 signals, 6 logical groups were mapped on 6 physical groups.
+#   step $DUMPVARS : 11 Logical $dumpvar/dpi/ccall were mapped on 11 physical High Speed packets.
+#   step $DUMPVARS : $dumpvar/dpi/ccall processing done: to dump 194 signals, 11 logical groups were mapped on 11 physical groups.
 #   step $DUMPVARS : 0 Logical $dumpvar/dpi/ccall were mapped on 0 physical Qiwc packets.
 #   step $DUMPVARS : $dumpvar/dpi/ccall processing done: to dump 0 signals, 0 logical groups were mapped on 0 physical groups.
 #   step $DUMPVARS : 0 Logical $dumpvar/dpi/ccall were mapped on 0 physical Toggle Activity packets.
@@ -510,7 +511,7 @@ add_bufg_constraints
 add_ice_constraints -isOrionpp {0}
 write_znf {./fpga_reports/zNetgen/design_db.znf} -keep_unconnected
 #   step SERIALIZE : writing netlist 'zmerge' into znl file './fpga_reports/zNetgen/design_db.znf'
-#   step SERIALIZE : #bytes in: 3694932, #bytes out: 726979, compression ratio: 5.082584
+#   step SERIALIZE : #bytes in: 3706968, #bytes out: 731555, compression ratio: 5.067245
 end_quiet_timer {design_db}
 section {7} {0} {VIVADO WA}
 ##############################################
@@ -518,7 +519,7 @@ section {7} {0} {VIVADO WA}
 ##############################################
 begin_quiet_timer {vivado_wa}
 aggregate_topgnd -gnd_fanout {500}
-#   step aggregate_topgnd : # info : Found 547464 design IO ports on GND. 1095 new GND driver created
+#   step aggregate_topgnd : # info : Found 547403 design IO ports on GND. 1095 new GND driver created
 replace_inv_with_lut1
 replace_buf_with_lut1
 end_quiet_timer {vivado_wa}
@@ -549,27 +550,27 @@ section {8.1} {2} { STATS}
       ##############################################
 fpga_stats -zstatistics
 #   step FPGA STATS : xilinx primitives
-#   step FPGA STATS :         1188 gnd
-#   step FPGA STATS :          492 fd
-#   step FPGA STATS :          403 lut2
-#   step FPGA STATS :          374 ld
-#   step FPGA STATS :          218 fdc
+#   step FPGA STATS :         1189 gnd
+#   step FPGA STATS :          530 fd
+#   step FPGA STATS :          409 lut2
+#   step FPGA STATS :          372 ld
+#   step FPGA STATS :          213 fdc
 #   step FPGA STATS :          203 muxcy
 #   step FPGA STATS :          199 fdre
-#   step FPGA STATS :          195 fde
+#   step FPGA STATS :          196 fde
 #   step FPGA STATS :          182 lut3
-#   step FPGA STATS :          180 lut4
+#   step FPGA STATS :          179 lut4
 #   step FPGA STATS :          172 lut6
-#   step FPGA STATS :          154 lut1
+#   step FPGA STATS :          160 lut1
 #   step FPGA STATS :          123 fdce
 #   step FPGA STATS :          103 xorcy
-#   step FPGA STATS :           81 lut5
-#   step FPGA STATS :           71 vcc
+#   step FPGA STATS :           80 lut5
+#   step FPGA STATS :           72 vcc
 #   step FPGA STATS :           68 fds
-#   step FPGA STATS :           65 fdp
+#   step FPGA STATS :           66 fdp
+#   step FPGA STATS :           60 fd_1
 #   step FPGA STATS :           53 obuf
 #   step FPGA STATS :           46 fdse
-#   step FPGA STATS :           41 fd_1
 #   step FPGA STATS :           40 carry4
 #   step FPGA STATS :           32 or3
 #   step FPGA STATS :           31 and2
@@ -628,9 +629,9 @@ fpga_stats -zstatistics
 #   step FPGA STATS : 17 => Available slot out
 #   step FPGA STATS : 18 => Available slot in
 #   step FPGA STATS : 
-#   step FPGA STATS : Number of Flip Flop Or Latches controls set (ce, s, r, pre, clr, ge) : 101 
+#   step FPGA STATS : Number of Flip Flop Or Latches controls set (ce, s, r, pre, clr, ge) : 102 
 #   step FPGA STATS : 
-#   step FPGA STATS : Number of Synchronous Elements controls set (ce, s, r, pre, ge, clr, we, clk) : 154 
+#   step FPGA STATS : Number of Synchronous Elements controls set (ce, s, r, pre, ge, clr, we, clk) : 156 
 #   step FPGA STATS : 
 #   step FPGA STATS : Number of Synchronous Elements controls set with Ise approximation used (ce, s, r, pre, clr. clk) : 66 
 #   step FPGA STATS : 
@@ -642,8 +643,8 @@ stat -subsystems
 end_quiet_timer {stats_and_infos}
 begin_quiet_timer {inter_die_tdm}
 inter_die_tdm
-#   step NtgTclTDMRegMarking : Setting inter-die TDM properties ZDEL(366 new, 0 existed) and DUT(874 new, 0 existed) on registers.
-#   step NtgTclTDMRegMarking : inserted 1240 inter-die TDM properties in total.
+#   step NtgTclTDMRegMarking : Setting inter-die TDM properties ZDEL(365 new, 0 existed) and DUT(926 new, 0 existed) on registers.
+#   step NtgTclTDMRegMarking : inserted 1291 inter-die TDM properties in total.
 
 end_quiet_timer {inter_die_tdm}
 begin_quiet_timer {insert_falsepath_feedthroughs}
@@ -652,7 +653,7 @@ insert_falsepath_feedthroughs
 end_quiet_timer {insert_falsepath_feedthroughs}
 begin_quiet_timer {filterReg}
 mark_filter_registers
-#   step NtgTclFilterRegMarking : Setting 0 filter register for replication among 3 total filter registers.
+#   step NtgTclFilterRegMarking : Setting 0 filter register for replication among 4 total filter registers.
 #   step NtgTclFilterRegMarking : Setting 0 LUT1 for replication in Aux --> LUT1(INV) --> LD path.
 end_quiet_timer {filterReg}
 begin_quiet_timer {design.edf}
@@ -681,11 +682,11 @@ end_quiet_timer {extract_information}
 end_zmetrics
 end_quiet_timer {znetgen_fpga}
 mudb_editor -save
---> 4749 advanced commands were hidden.
+--> 4815 advanced commands were hidden.
 
 #   exec summary :    3 warnings,    0 syntax errors,    0 fatal errors,    0 internal errors
-#   exec summary : user 0m28.875s, sys 0m0.945s
-#   exec summary : Total memory: 2189456 kB - RSS memory: 1813096 kB - Data memory: 1820908 kB
+#   exec summary : user 0m28.871s, sys 0m1.86s
+#   exec summary : Total memory: 2189456 kB - RSS memory: 1808336 kB - Data memory: 1820908 kB
 #   exec summary : Successful execution
 
-# end time is Wed Apr 17 23:57:19 2024
+# end time is Mon Apr 29 13:44:58 2024

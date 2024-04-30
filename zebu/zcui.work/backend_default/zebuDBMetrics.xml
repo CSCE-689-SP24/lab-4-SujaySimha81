@@ -5,37 +5,43 @@
    <Value>PASS</Value>
   </Attribute>
   <Attribute id="frontendCompileTime">
-   <Value>27</Value>
+   <Value>26</Value>
   </Attribute>
   <Attribute id="frontendCPU">
-   <Value>13</Value>
+   <Value>9</Value>
   </Attribute>
   <Attribute id="backendCompileTime">
-   <Value>43</Value>
+   <Value>1148</Value>
   </Attribute>
   <Attribute id="backendCPU">
-   <Value>5</Value>
+   <Value>1111</Value>
+  </Attribute>
+  <Attribute id="noFpgaBackendCompileTime">
+   <Value>41</Value>
   </Attribute>
   <Attribute id="overallCompileTime">
-   <Value>70</Value>
+   <Value>1174</Value>
   </Attribute>
   <Attribute id="compileTimeWithGrid">
-   <Value>47</Value>
+   <Value>1175</Value>
   </Attribute>
   <Attribute id="compileTimeWithoutGrid">
-   <Value>18</Value>
+   <Value>1120</Value>
   </Attribute>
   <Attribute id="idealCompileTime">
-   <Value>8</Value>
+   <Value>1039</Value>
+  </Attribute>
+  <Attribute id="ZebuIse_CumulativeTime">
+   <Value>1056</Value>
   </Attribute>
   <Attribute id="ZebuLocal_CumulativeTime">
-   <Value>13</Value>
+   <Value>16</Value>
   </Attribute>
   <Attribute id="ZebuSynthesis_CumulativeTime">
-   <Value>4</Value>
+   <Value>2</Value>
   </Attribute>
   <Attribute id="Zebu_CumulativeTime">
-   <Value>30</Value>
+   <Value>101</Value>
   </Attribute>
   <Attribute id="boardNumber">
    <Value>1</Value>
@@ -50,7 +56,7 @@
    <Value>Q-2020.03-SP1-4</Value>
   </Attribute>
   <Attribute id="driverClockFrequencyKHz">
-   <Value>10000</Value>
+   <Value>5555</Value>
   </Attribute>
   <Table id="main_stage_duration">
    <Header>
@@ -63,27 +69,63 @@
     <SYNTHESIS>
      <Title>synthesis</Title>
     </SYNTHESIS>
+    <BACKEND_ENTRY>
+     <Title>backend entry</Title>
+    </BACKEND_ENTRY>
     <RTLDB_INDEXER>
      <Title>rtldb indexer</Title>
     </RTLDB_INDEXER>
+    <BUILD_SYSTEM>
+     <Title>build system</Title>
+    </BUILD_SYSTEM>
+    <CORES>
+     <Title>cores</Title>
+    </CORES>
+    <FPGAS>
+     <Title>FPGAs</Title>
+    </FPGAS>
+    <BUILD_DATABASE>
+     <Title>build data base</Title>
+    </BUILD_DATABASE>
+    <ZGRAPHGENERATOR>
+     <Title>zgraphgenerator</Title>
+    </ZGRAPHGENERATOR>
    </Header>
    <Row>
-    <VCS>6</VCS>
+    <VCS>7</VCS>
     <VCS_ANALYZER>1</VCS_ANALYZER>
-    <SYNTHESIS>4</SYNTHESIS>
+    <SYNTHESIS>2</SYNTHESIS>
+    <BACKEND_ENTRY>2</BACKEND_ENTRY>
     <RTLDB_INDEXER>2</RTLDB_INDEXER>
+    <BUILD_SYSTEM>8</BUILD_SYSTEM>
+    <CORES>10</CORES>
+    <FPGAS>1056</FPGAS>
+    <BUILD_DATABASE>2</BUILD_DATABASE>
+    <ZGRAPHGENERATOR>2</ZGRAPHGENERATOR>
    </Row>
    <Row>
     <VCS>4</VCS>
     <VCS_ANALYZER>1</VCS_ANALYZER>
-    <SYNTHESIS>2</SYNTHESIS>
+    <SYNTHESIS>1</SYNTHESIS>
+    <BACKEND_ENTRY>1</BACKEND_ENTRY>
     <RTLDB_INDEXER>0</RTLDB_INDEXER>
+    <BUILD_SYSTEM>6</BUILD_SYSTEM>
+    <CORES>8</CORES>
+    <FPGAS>1054</FPGAS>
+    <BUILD_DATABASE>1</BUILD_DATABASE>
+    <ZGRAPHGENERATOR>0</ZGRAPHGENERATOR>
    </Row>
    <Row>
-    <VCS> 160084</VCS>
+    <VCS> 156592</VCS>
     <VCS_ANALYZER>0</VCS_ANALYZER>
-    <SYNTHESIS> 82168</SYNTHESIS>
-    <RTLDB_INDEXER> 77948</RTLDB_INDEXER>
+    <SYNTHESIS> 82272</SYNTHESIS>
+    <BACKEND_ENTRY> 18468</BACKEND_ENTRY>
+    <RTLDB_INDEXER> 77996</RTLDB_INDEXER>
+    <BUILD_SYSTEM> 321716</BUILD_SYSTEM>
+    <CORES> 476824</CORES>
+    <FPGAS> 5489088</FPGAS>
+    <BUILD_DATABASE> 332764</BUILD_DATABASE>
+    <ZGRAPHGENERATOR> 168332</ZGRAPHGENERATOR>
    </Row>
   </Table>
  </Metrics>

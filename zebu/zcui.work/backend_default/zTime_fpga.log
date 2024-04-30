@@ -22,7 +22,7 @@
 
 # zTime zTime_fpga_zcui.tcl -log zTime_fpga.log 
 
-# start time is Thu Apr 18 00:13:19 2024
+# start time is Mon Apr 29 14:02:45 2024
 
 
 
@@ -30,15 +30,15 @@
 # Build Date : Oct 18 2022 - 01:00:12
 # ---------------------------System Context--------------------------- 
 # Cpu        40 x bogomips - 4604.90 Intel(R) Xeon(R) CPU E5-2650 v3 @ 2.30GHz
-#            Load: 0.25 0.61 0.55 2/490 22062
+#            Load: 0.30 0.63 0.62 2/505 7969
 #            Hostname: csce-quinn-s1.engr.tamu.edu   OS: Linux 3.10.0-1160.108.1.el7.x86_64
-# Memory     Total: 193183 MB Free: 174341 MB
-#            Total Free including cache: 187749 MB
-#            Swap cache: 0 MB Cached space: 13408 MB
+# Memory     Total: 193183 MB Free: 171401 MB
+#            Total Free including cache: 187512 MB
+#            Swap cache: 0 MB Cached space: 16111 MB
 #            Swap space: 4095 MB Free Swap space: 4095 MB
 #            VmSize: 313 MB VmPeak: 313 MB
-# Disk Space Total: 50 GB Available: 27 GB Used: 23 GB
-#            Free inodes: 104738035
+# Disk Space Total: 50 GB Available: 8 GB Used: 42 GB
+#            Free inodes: 104731908
 # Stack                                Soft Limit           Hard Limit  
 #            Max stack size            8388608              unlimited            bytes     
 # -------------------------------------------------------------------- 
@@ -174,13 +174,13 @@ import_async_paths {work.Part_0/tools/zTime/global_time.edf.gz} -sdf=true
 #   step IMPORT : Import asynchronous paths from 'work.Part_0/tools/zTime/global_time.edf.gz'
 #   step ZNF PARSER : reading netlist from ZNF file 'work.Part_0/tools/zTime/global_time.edf.gz'
 #   step BINDATA : Reading clock domain file "work.Part_0/tools/zTime/zTime_clock_domain.cds".
-#   step BINDATA : Clock domains read: 2 sets with average 1.000000 and max 1 clock domains per set
+#   step BINDATA : Clock domains read: 4 sets with average 1.000000 and max 1 clock domains per set
 #   step IMPORT : Import asynchronous paths from FPGA 'U0_M0_F0'
 ### warning in zTime-zPar Discrepancy [KTM0674W] : Port U0_M0_F0.z_dclk_delay created by zPar  but not seen by zTime
-#   step IMPORT : Number of timing arcs created: 2, of them 0 are ZCLK
+#   step IMPORT : Number of timing arcs created: 4, of them 0 are ZCLK
 #   step Memories timing paths distribution : 
 # +
-#   step IMPORT : Done in     elapsed:0.1 s      user:0 s      system:0 s       %cpu:0.00       load:0.47       fm:174418 m      vm:375 m       vm:+0 m       um:98 m       um:+0 m
+#   step IMPORT : Done in       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.35       fm:171400 m      vm:375 m       vm:+0 m       um:94 m       um:+0 m
 import_async_paths {tools/zTime/global_rtb_time_U0_M0_IF.edf.gz} -rtb=true
 #   step IMPORT : Starting
 #   step IMPORT : import use ZEBU_EDIF_TRANSFER
@@ -188,7 +188,7 @@ import_async_paths {tools/zTime/global_rtb_time_U0_M0_IF.edf.gz} -rtb=true
 #   step ZNF PARSER : reading netlist from ZNF file 'tools/zTime/global_rtb_time_U0_M0_IF.edf.gz'
 #   step Memories timing paths distribution : 
 # +
-#   step IMPORT : Done in       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.47       fm:174418 m      vm:377 m       vm:+2 m       um:98 m       um:+0 m
+#   step IMPORT : Done in       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.35       fm:171400 m      vm:377 m       vm:+2 m       um:94 m       um:+0 m
 source {work.Part_0/tools/zTime/zCoreBuild_timing.zti}
 #   step SOURCE : Source gzipped file 'work.Part_0/tools/zTime/zCoreBuild_timing.zti' ...
 source {tools/zTime/zParFPGAs_timing.zti}
@@ -221,7 +221,7 @@ annotate
 #   step ANNOTATE : Product type: zse
 #   step ANNOTATE : Socket mode: v5v6v7
 #   step ANNOTATE : Compute delay values of all timing arcs
-#   step ANNOTATE : Annotation of 17 Arcs and 25 Nodes done
+#   step ANNOTATE : Annotation of 19 Arcs and 27 Nodes done
 #   step FPAG DELAY INFO : No delay to apply on port in timing graph
 #   step ZRM : ZRM performance mode auto not enable
 analyze
@@ -251,16 +251,16 @@ analyze
 # +------------------------+-----------+-------------+
 # |              delay name|delay value|delay origine|
 # +------------------------+-----------+-------------+
-# |       DELAY_MIN_ZFILTER|      28120|    U0/M0/F00|
-# |  DELAY_MIN_ZFILTER_SKEW|       6346|    U0/M0/F00|
-# |        DELAY_MIN_DRVCLK|      29184|    U0/M0/F00|
-# |DELAY_MIN_ZFILTER_DRVCLK|       9820|    U0/M0/F00|
+# |       DELAY_MIN_ZFILTER|      25677|    U0/M0/F00|
+# |  DELAY_MIN_ZFILTER_SKEW|       9251|    U0/M0/F00|
+# |        DELAY_MIN_DRVCLK|      27274|     U0/M0/IF|
+# |DELAY_MIN_ZFILTER_DRVCLK|      13875|    U0/M0/F00|
 # +------------------------+-----------+-------------+
 #   step BACK ANNOTATION : Serialized back annotation flow is not activated
-#   step SANITY CHECK (BACK ANNOTATION) : 13 arcs to back annotate (3 IF arcs), 4 well back annotated, 9 not requested, 0 optimized by Xilinx and 0 requested but no delay found. 
+#   step SANITY CHECK (BACK ANNOTATION) : 15 arcs to back annotate (3 IF arcs), 4 well back annotated, 11 not requested, 0 optimized by Xilinx and 0 requested but no delay found. 
 #   step ANALYSIS : Identify primary inputs and outputs
 #   step ANALYSIS : Build topological order
-#   step ANALYSIS : Found 5 inputs and 9 outputs
+#   step ANALYSIS : Found 5 inputs and 13 outputs
 #   step ANALYSIS : Re-propagate false path tag
 #   step Timing : Executing step  FalsePathFlow
 #   step Timing : Executing step ResetFalsePathStep
@@ -269,23 +269,23 @@ analyze
 #   step Timing : Executing step AddFalsePathToResetOnlyNodeStep
 #   step Timing : Executing step ApplyFalsePathSpecToTimingGraphStep
 #   step Timing : Executing step PropagateFalsePathTagStep
-#   step ANALYSIS : The maximum topological depth is 35
+#   step ANALYSIS : The maximum topological depth is 39
 #   step ANALYSIS : The maximum topological depth is 6
 #   step ANALYSIS : Build clock topological order
 #   step ANALYSIS : Build data topological order
-#   step initializeAnalysis. : Done in       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.47       fm:174418 m      vm:377 m       vm:+0 m       um:98 m       um:+0 m
-#   step ANALYSIS : Done in       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.47       fm:174418 m      vm:377 m       vm:+0 m       um:98 m       um:+0 m
+#   step initializeAnalysis. : Done in       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.35       fm:171400 m      vm:377 m       vm:+0 m       um:95 m       um:+0 m
+#   step ANALYSIS : Done in       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.35       fm:171400 m      vm:377 m       vm:+0 m       um:95 m       um:+0 m
 report_out_asyncsr_paths -all
 #   step REPORT : Report output asynchronous set/reset paths statistics
 analyze
 #   step ANALYSIS : Starting
-#   step ANALYSIS : Done in       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.47       fm:174418 m      vm:377 m       vm:+0 m       um:98 m       um:+0 m
+#   step ANALYSIS : Done in       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.35       fm:171400 m      vm:377 m       vm:+0 m       um:95 m       um:+0 m
 build_out_filter_paths -async=true
 #   step Build output paths : Starting
 #   step ANALYSIS : Find worst path for each output filter
-#   step Build output paths : Done in     elapsed:0.1 s      user:0 s      system:0 s       %cpu:0.00       load:0.47       fm:174418 m      vm:401 m      vm:+24 m       um:99 m       um:+1 m
+#   step Build output paths : Done in     elapsed:0.1 s      user:0 s      system:0 s       %cpu:0.00       load:0.35       fm:171398 m      vm:397 m      vm:+20 m       um:97 m       um:+2 m
 #   step REPORT : +-------------------------------------------------------------------------------+
-#   step REPORT :   Longest inter-fpga filter path delay is : 33 ns
+#   step REPORT :   Longest inter-fpga filter path delay is : 31 ns
 #   step REPORT : +-------------------------------------------------------------------------------+
 
 report_out_filter_paths -all
@@ -295,8 +295,8 @@ report_out_filter_paths -all
 # +-------+---------------+-------+------+--------------------------------------------------+-------------------------+
 # | Slack | Required Time | Delay | Fpga |Clock Name Source                                 |Filter Name Target       |
 # +-------+---------------+-------+------+--------------------------------------------------+-------------------------+
-# |   7 ns|  40 ns ( 1FT )|  33 ns|     2|zcg_zceiClock[1]@top._I_vcs_cdx_s_rw_topu_stb_clk0|U0_M0_F0.zcg_zceiClock[1]|
-# |   8 ns|  40 ns ( 1FT )|  32 ns|     2|zcg_zceiClock[0]@top._I_vcs_cdx_s_rw_topu_stb_clk1|U0_M0_F0.zcg_zceiClock[0]|
+# |   9 ns|  40 ns ( 1FT )|  31 ns|     2|zcg_zceiClock[1]@top._I_vcs_cdx_s_rw_topu_stb_clk0|U0_M0_F0.zcg_zceiClock[1]|
+# |  10 ns|  40 ns ( 1FT )|  30 ns|     2|zcg_zceiClock[0]@top._I_vcs_cdx_s_rw_topu_stb_clk1|U0_M0_F0.zcg_zceiClock[0]|
 # +-------+---------------+-------+------+--------------------------------------------------+-------------------------+
 #   step REPORT : A total of 2 inter-fpga path(s) displayed
 
@@ -304,7 +304,7 @@ report_out_filter_paths -all
 #   step REPORT : +-----------+-----------+-----------+-----------+-----------+
 #   step REPORT : | Delay     | Paths     | Max Fpga  | Max Hop   | Max Async |
 #   step REPORT : +-----------+-----------+-----------+-----------+-----------+
-#   step REPORT : |     33 ns |         2 |         2 |         0 |         0 |
+#   step REPORT : |     31 ns |         2 |         2 |         0 |         0 |
 #   step REPORT : +-----------+-----------+-----------+-----------+-----------+
 #   step REPORT : A total of 1 different delay(s) displayed
 
@@ -312,7 +312,7 @@ report_out_filter_paths -all
 #   step REPORT : +---------------------+--------------------------------------------------+
 #   step REPORT : | Delay               | Paths                                            |
 #   step REPORT : +---------------------+--------------------------------------------------+
-#   step REPORT : | [   33 ns         ] |---------------------------------------->        2|
+#   step REPORT : | [   31 ns         ] |---------------------------------------->        2|
 #   step REPORT : +---------------------+--------------------------------------------------+
 #   step REPORT : A total of 1 different delay(s) encountered
 
@@ -321,7 +321,7 @@ drive_out_filter_paths -debug_mode=false -enable_equiId=false -dump_verdi_db=fal
 #   step RTL : RTL NAME IS DISABLED
 build_out_clock_paths -async=true -zfilter=true
 #   step Build output paths : Starting
-#   step Build output paths : Done in       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.47       fm:174417 m      vm:453 m       vm:+0 m      um:101 m       um:+0 m
+#   step Build output paths : Done in       elapsed:0 s      user:0 s    system:0.1 s    %cpu:4000.00       load:0.35       fm:171392 m      vm:445 m       vm:+0 m      um:103 m       um:+0 m
 #   step REPORT : +-------------------------------------------------------------------------------+
 #   step REPORT :   No inter-fpga clock path found
 #   step REPORT : +-------------------------------------------------------------------------------+
@@ -331,7 +331,7 @@ drive_clock_nets
 
 analyze
 #   step ANALYSIS : Starting
-#   step ANALYSIS : Done in       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.47       fm:174418 m      vm:453 m       vm:+0 m      um:101 m       um:+0 m
+#   step ANALYSIS : Done in       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.35       fm:171392 m      vm:445 m       vm:+0 m      um:103 m       um:+0 m
 build_memory_paths
 #   step ANALYSIS : Propagate delays through the timing graph
 #   step ANALYSIS : Find all memories of the board
@@ -373,15 +373,15 @@ build_out_routing_paths -async=true -zdelay=true -nomcp=false
 #   step ANALYSIS : Find worst path for each output ports of the board
 #   step ANALYSIS : Given a zdelay (clock skew) of 60 ns
 #   step ADVANCED_MCP : MCP advanced method: 1
-#   step Build output paths : Done in     elapsed:0.2 s      user:0 s    system:0.1 s      %cpu:57.14       load:0.47       fm:174404 m      vm:529 m      vm:+76 m      um:117 m      um:+16 m
+#   step Build output paths : Done in     elapsed:0.2 s      user:0 s      system:0 s       %cpu:0.00       load:0.35       fm:171380 m      vm:529 m      vm:+84 m      um:115 m      um:+12 m
 #   step REPORT : +-------------------------------------------------------------------------------+
-#   step REPORT :   Critical routing data path delay : 80 ns
-#   step REPORT :   . Constant part    : 20 ns
+#   step REPORT :   Critical routing data path delay : 160 ns
+#   step REPORT :   . Constant part    : 40 ns
 #   step REPORT :   . Multiplexed part : 0 ns
-#   step REPORT :   . Memory latency part : 60 ns
+#   step REPORT :   . Memory latency part : 120 ns
 #   step REPORT :   Xclock frequency is : 450 MHz
 #   step REPORT :   Longest memory latency is : 120 ns
-#   step REPORT :   The theoretical frequency using default settings is 12499 Khz
+#   step REPORT :   The theoretical frequency using default settings is 6249 Khz
 ### warning in ZMetrics [ZTCL0304W] : ZMetrics : File (tools/zMetrics/zTime_fpga_metrics.xml) already exists and has been replaced
 #   step REPORT : +-------------------------------------------------------------------------------+
 
@@ -392,30 +392,35 @@ report_out_routing_paths -all -glog
 #   step REPORT : Report FPGA paths statistics
 #   step REPORT : Report a maximum of 100 first routing data path(s) 
 #   step REPORT : 
-# +-------+------------------+-------+------+-------------------------------------------+-------------------------------------------+--------------------------------------------------+--------------------------------------------------------+
-# | Slack |    Required Time | Delay | Fpga | Clock Domain Source                       | Clock Domain Target                       |Port Name Source                                  |Port Name Target                                        |
-# +-------+------------------+-------+------+-------------------------------------------+-------------------------------------------+--------------------------------------------------+--------------------------------------------------------+
-# |   0 ns|160 ns ( 2 dvrCk )| 160 ns|     2|top._I_vcs_cdx_s_rw_topu_stb_clk0 (posedge)|top._I_vcs_cdx_s_rw_topu_stb_clk0 (posedge)|top.u_stb.u_rom.mem-r0do                          |U0_M0_F0-U0_M0_F0.U0_M0_F0_core.u_dut.u_check.error.D   |
-# |   0 ns|160 ns ( 2 dvrCk )| 160 ns|     2|top._I_vcs_cdx_s_rw_topu_stb_clk0 (posedge)|top.u_dut.u_fifo.u0_clkg.clkout (posedge)  |top.u_stb.u_rom.mem-r0do                          |U0_M0_F0-U0_M0_F0.U0_M0_F0_core.u_dut.u_fifo.mem[0][7].D|
-# |  75 ns| 80 ns ( 1 dvrCk )|   5 ns|     2|DRIVERCLOCK (system)                       |DRIVERCLOCK (system)                       |zcg_zceiClock[1]@top._I_vcs_cdx_s_rw_topu_stb_clk0|U0_M0_F0.zcg_zceiClock[1]                               |
-# +-------+------------------+-------+------+-------------------------------------------+-------------------------------------------+--------------------------------------------------+--------------------------------------------------------+
-#   step REPORT : A total of 3 inter-fpga path(s) displayed
+# +-------+------------------+-------+------+-------------------------------------------+-------------------------------------------+--------------------------------------------------+-----------------------------------------------------------------------------------+
+# | Slack |    Required Time | Delay | Fpga | Clock Domain Source                       | Clock Domain Target                       |Port Name Source                                  |Port Name Target                                                                   |
+# +-------+------------------+-------+------+-------------------------------------------+-------------------------------------------+--------------------------------------------------+-----------------------------------------------------------------------------------+
+# |   0 ns|160 ns ( 1 dvrCk )| 160 ns|     2|top._I_vcs_cdx_s_rw_topu_stb_clk0 (posedge)|top.zforce_rstn.VAL_sync (negedge)         |top.u_stb.u_rom.mem-r0do                          |U0_M0_F0-U0_M0_F0.U0_M0_F0_core.u_dut.u_fifo.u_fifo_usage_spy.zfast_b2jcsmafvke53.D|
+# |   0 ns|160 ns ( 1 dvrCk )| 160 ns|     2|top._I_vcs_cdx_s_rw_topu_stb_clk0 (posedge)|top._I_vcs_cdx_s_rw_topu_stb_clk1 (posedge)|top.u_stb.u_rom.mem-r0do                          |U0_M0_F0-U0_M0_F0.U0_M0_F0_core.u_dut.u_fifo.u_fifo_usage_spy.zfast_wolo7jpfvke53.D|
+# | 155 ns|160 ns ( 1 dvrCk )|   5 ns|     2|DRIVERCLOCK (system)                       |DRIVERCLOCK (system)                       |zcg_zceiClock[1]@top._I_vcs_cdx_s_rw_topu_stb_clk0|U0_M0_F0.zcg_zceiClock[1]                                                          |
+# | 160 ns|320 ns ( 2 dvrCk )| 160 ns|     2|top._I_vcs_cdx_s_rw_topu_stb_clk0 (posedge)|top._I_vcs_cdx_s_rw_topu_stb_clk0 (posedge)|top.u_stb.u_rom.mem-r0do                          |U0_M0_F0-U0_M0_F0.U0_M0_F0_core.u_dut.u_check.error.D                              |
+# | 160 ns|320 ns ( 2 dvrCk )| 160 ns|     2|top._I_vcs_cdx_s_rw_topu_stb_clk0 (posedge)|top.u_dut.u_fifo.u0_clkg.clkout (posedge)  |top.u_stb.u_rom.mem-r0do                          |U0_M0_F0-U0_M0_F0.U0_M0_F0_core.u_dut.u_fifo.mem[0][7].D                           |
+# +-------+------------------+-------+------+-------------------------------------------+-------------------------------------------+--------------------------------------------------+-----------------------------------------------------------------------------------+
+#   step REPORT : A total of 5 inter-fpga path(s) displayed
 
 #   step REPORT : Report a maximum of 50 first different delay(s) 
 #   step REPORT : +-----------+-----------+-----------+-----------+-----------+
 #   step REPORT : | Delay     | Paths     | Max Fpga  | Max Hop   | Max Async |
 #   step REPORT : +-----------+-----------+-----------+-----------+-----------+
-#   step REPORT : |    160 ns |         3 |         2 |         0 |         0 |
+#   step REPORT : |    160 ns |         2 |         2 |         0 |         0 |
+#   step REPORT : |      5 ns |         1 |         2 |         0 |         0 |
+#   step REPORT : |    160 ns |         2 |         2 |         0 |         0 |
 #   step REPORT : +-----------+-----------+-----------+-----------+-----------+
-#   step REPORT : A total of 1 different delay(s) displayed
+#   step REPORT : A total of 3 different delay(s) displayed
 
 #   step REPORT : Histogram with a maximum of 50 first different delay(s) 
 #   step REPORT : +---------------------+--------------------------------------------------+
 #   step REPORT : | Delay               | Paths                                            |
 #   step REPORT : +---------------------+--------------------------------------------------+
-#   step REPORT : | [  160 ns         ] |---------------------------------------->        3|
+#   step REPORT : | [    5 ns:   82 ns] |---------->                                      1|
+#   step REPORT : | ]   82 ns:  160 ns[ |---------------------------------------->        4|
 #   step REPORT : +---------------------+--------------------------------------------------+
-#   step REPORT : A total of 1 different delay(s) encountered
+#   step REPORT : A total of 3 different delay(s) encountered
 
 drive_out_memory_paths -debug_mode=false -enable_equiId=false -dump_verdi_db=false -enable_rtl=false {ztime_memory_out_paths_fpga.html}
 #   step DRIVE PATHS : Drive all memory paths in file 'ztime_memory_out_paths_fpga.html' (HTML format)
@@ -434,7 +439,7 @@ drive_out_memory_paths -debug_mode=false -enable_equiId=false -dump_verdi_db=fal
 # +-----+---------------------+-------+---------+-------+
 #   step REPORT : using fwc  may limit driver clock to 8333 kHz
 #   step   :  
-#   step REPORT : Report the 3 biggest DPI IP
+#   step REPORT : Report the 5 biggest DPI IP
 #   step REPORT : 
 # +---------------------------------+-------------------------+-------+---------+-------+
 # |                            scope|                 function|   size|frequency|IP type|
@@ -442,28 +447,30 @@ drive_out_memory_paths -debug_mode=false -enable_equiId=false -dump_verdi_db=fal
 # |                        top.u_stb|grp0_dummy_import_for_pli|64 bits| 7142 kHz|    FWC|
 # |                        top.u_stb|grp0_dummy_import_for_pli|64 bits| 7142 kHz|    FWC|
 # |top.u_dut.u_fifo.u_fifo_usage_spy|    fifo_usage_spy_notify|32 bits| 8333 kHz|    FWC|
+# |top.u_dut.u_fifo.u_fifo_usage_spy|    fifo_usage_spy_notify|32 bits| 8333 kHz|    FWC|
+# |top.u_dut.u_fifo.u_fifo_usage_spy|    fifo_usage_spy_notify|32 bits| 8333 kHz|    FWC|
 # +---------------------------------+-------------------------+-------+---------+-------+
 #   step REPORT : using DPI may limit driver clock to 7142 kHz
 #   step   :  
 report_out_summary
 #   step REPORT : +-------------------------------------------------------------------------------+
-#   step REPORT :   Longest inter-fpga filter path delay is : 33 ns
-#   step REPORT :   Critical routing data path delay : 80 ns
-#   step REPORT :   . Constant part    : 20 ns
+#   step REPORT :   Longest inter-fpga filter path delay is : 31 ns
+#   step REPORT :   Critical routing data path delay : 160 ns
+#   step REPORT :   . Constant part    : 40 ns
 #   step REPORT :   . Multiplexed part : 0 ns
-#   step REPORT :   . Memory latency part : 60 ns
+#   step REPORT :   . Memory latency part : 120 ns
 #   step REPORT :   Xclock frequency is : 450 MHz
 #   step REPORT :   Longest memory latency is : 120 ns
 #   step REPORT :   Fast Waveform Captures detected, if use at run-time the driverClk frequency might be limited.
-#   step REPORT :   Driver clock frequency is limited by clock paths (driverClk.Period = zClockSkewTime + DELAY_MIN_SKEW_DRVCLK) : 100ns
-#   step REPORT :   The theoretical frequency using default settings is 10000 Khz
+#   step REPORT :   Driver clock frequency is limited by routing data paths : 160ns
+#   step REPORT :   The theoretical frequency using default settings and ignoring clock skew is 6249 Khz
 #   step REPORT : +-------------------------------------------------------------------------------+
 
 display_component_delay
 save_run_param {tools/zTime/des_ztime_post_fpga.xref}
 #   step SAVE RUN PARAM : Save max frequency and clock skew time in file 'tools/zTime/des_ztime_post_fpga.xref'
-#   step SAVE RUN PARAM : driverClk.Period = 100 ns (100 ns before rounding)
-#   step SAVE RUN PARAM : $driverClk.Frequency = 10000 kHz (10000 kHz before rounding)
+#   step SAVE RUN PARAM : driverClk.Period = 180 ns (160 ns before rounding)
+#   step SAVE RUN PARAM : $driverClk.Frequency = 5555 kHz (6249 kHz before rounding)
 #   step SAVE RUN PARAM : $zClockSkewTime = 60 ns (60 ns before rounding)
 #   step SAVE RUN PARAM : $zClockFilterTime = 40 ns (40 ns before rounding)
 drive_index_html -suffix=_fpga {zTime_fpga.html}
@@ -485,15 +492,15 @@ drive_index_html -suffix=_fpga {zTime_fpga.html}
 # |                                   |    improvedMemoryTiming                             |zPar        |     Activated    |
 # +-----------------------------------+-----------------------------------------------------+------------+------------------+
 #   step ZTIME : Display timing arcs distribution 
-#   step NODE STATS : 20 ports, 3 memories, 0 clockgens, 0 msgports, 0 logicals, 10 clock_domains, 2 pins, 0 joins
+#   step NODE STATS : 20 ports, 3 memories, 0 clockgens, 0 msgports, 0 logicals, 12 clock_domains, 4 pins, 0 joins
 #   step ARC STATS : 5 f2s, 5 s2f, 5 s2s_ext, 0 s2s_int
 #   step ARC STATS : 0 f2f, 0 f2i (msg: 0, gen: 0, mem: 0, join: 0, logical: 0), 0 i2f (msg: 0, gen: 0, mem: 0, join: 0, logical: 0)
-#   step ARC STATS : 2 i2i, (gen->gen: 0, gen->mem: 0, gen->msg: 0, gen->join: 0, mem->gen: 0, mem->mem: 0, mem->msg: 0, mem->join: 0, msg->gen: 0, msg->mem: 0, msg->msg: 0, msg->join: 0, join->gen: 0, join->mem: 0, join->msg: 0, join->join: 0)
-#   step ARC STATS : 0 i2i_ext, 0 if2if, 0 if2h, 8 f2cd, 4 cd2f, 1 cd2cd, 0 cd2pin, 0 pin2cd, 0 pin2f, 0 f2pin
+#   step ARC STATS : 4 i2i, (gen->gen: 0, gen->mem: 0, gen->msg: 0, gen->join: 0, mem->gen: 0, mem->mem: 0, mem->msg: 0, mem->join: 0, msg->gen: 0, msg->mem: 0, msg->msg: 0, msg->join: 0, join->gen: 0, join->mem: 0, join->msg: 0, join->join: 0)
+#   step ARC STATS : 0 i2i_ext, 0 if2if, 0 if2h, 10 f2cd, 4 cd2f, 1 cd2cd, 0 cd2pin, 0 pin2cd, 0 pin2f, 0 f2pin
 
 #   exec summary :    8 warnings,    0 syntax errors,    0 fatal errors,    0 internal errors
-#   exec summary : user 0m0.72s, sys 0m0.134s
-#   exec summary : Total memory: 542188 kB - RSS memory: 120376 kB - Data memory: 263416 kB
+#   exec summary : user 0m0.83s, sys 0m0.155s
+#   exec summary : Total memory: 542184 kB - RSS memory: 118904 kB - Data memory: 263412 kB
 #   exec summary : Successful execution
 
-# end time is Thu Apr 18 00:13:22 2024
+# end time is Mon Apr 29 14:02:46 2024

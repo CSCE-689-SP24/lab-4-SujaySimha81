@@ -5,8 +5,13 @@
 // modification, or distribution of the Synopsys ZeBu Lab source code or the associated
 // documentation is strictly prohibited.
 
-bind top.u_dut.u_fifo fifo_usage_spy #(.WIDTH( ADD_WIDTH )) u_fifo_usage_spy (
-  .clk    ( wclk_i   ),
+bind top.u_dut.u_fifo fifo_usage_spy #(.WIDTH( WIDTH ), .ADD_WIDTH( ADD_WIDTH )) u_fifo_usage_spy (
+  .rclk   ( rclk_i   ),
+  .wclk   ( wclk_i   ),
   .rstn   ( rstn_i   ),
-  .remain ( w_remain )
+  .remain ( w_remain ),
+  .we     ( we ),
+  .re     ( re ),
+  .datain ( d_i),
+  .dataout( qa_o)
 );

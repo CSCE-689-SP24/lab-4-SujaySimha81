@@ -76,12 +76,16 @@ create_arc CkNode18 CkNode19 type=s2f lowskew=true
 create_arc CkNode19 CdNode808656997 type=f2f
 create_arc CkNode19 CdNode808657000 type=f2f
 create_arc U0_M0_F0-U0_M0_F0.U0_M0_F0_core.u_dut.u_check.error.D CdNode808657001 type=f2f
-create_arc U0_M0_F0-U0_M0_F0.U0_M0_F0_core.u_dut.u_fifo.mem[0][7].D CdNode808657002 type=f2f
+create_arc U0_M0_F0-U0_M0_F0.U0_M0_F0_core.u_dut.u_fifo.u_fifo_usage_spy.zfast_b2jcsmafvke53.D CdNode808657002 type=f2f
+create_arc U0_M0_F0-U0_M0_F0.U0_M0_F0_core.u_dut.u_fifo.u_fifo_usage_spy.zfast_wolo7jpfvke53.D CdNode808657003 type=f2f
+create_arc U0_M0_F0-U0_M0_F0.U0_M0_F0_core.u_dut.u_fifo.mem[0][7].D CdNode808657004 type=f2f
 create_arc U0_M0_F0-top.u_stb.u_rom.mem-r0do U0_M0_F0-U0_M0_F0.U0_M0_F0_core.u_dut.u_check.error.D type=f2f
+create_arc U0_M0_F0-top.u_stb.u_rom.mem-r0do U0_M0_F0-U0_M0_F0.U0_M0_F0_core.u_dut.u_fifo.u_fifo_usage_spy.zfast_b2jcsmafvke53.D type=f2f
+create_arc U0_M0_F0-top.u_stb.u_rom.mem-r0do U0_M0_F0-U0_M0_F0.U0_M0_F0_core.u_dut.u_fifo.u_fifo_usage_spy.zfast_wolo7jpfvke53.D type=f2f
 create_arc U0_M0_F0-top.u_stb.u_rom.mem-r0do U0_M0_F0-U0_M0_F0.U0_M0_F0_core.u_dut.u_fifo.mem[0][7].D type=f2f
 create_arc CdNode808656995 CkNode0 type=f2f
 create_arc CdNode808656995 CkNode12 type=f2f
 create_arc CdNode808656995 CkNode16 type=f2f
-create_arc CdNode808657003 U0_M0_F0-top.u_stb.u_rom.mem-r0do type=f2f
-create_arc CdNode808657004 CdNode808657003 type=f2f
+create_arc CdNode808657005 U0_M0_F0-top.u_stb.u_rom.mem-r0do type=f2f
+create_arc CdNode808657006 CdNode808657005 type=f2f
 set_fgs_mode onset_fwc_mode on

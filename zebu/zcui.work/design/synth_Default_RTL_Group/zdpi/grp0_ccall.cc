@@ -4,9 +4,13 @@ namespace ZDPI_MOD_grp0_fifo_usage_spy {
 
 void fifo_usage_spy_notify_ZDPI_MOD_grp0_fifo_usage_spy (const unsigned int *din)
 {
-	svBitVecVal _arg_min[SV_PACKED_DATA_NELEMS(4)];
-	*_arg_min = (din[0] & 0xf);
-	fifo_usage_spy_notify (_arg_min);
+	svBit _arg_we = 0;
+	svBit _arg_re = 0;
+	svBitVecVal _arg_data[SV_PACKED_DATA_NELEMS(8)];
+	_arg_we = ((din[0] >> 8) & 0x1);
+	_arg_re = ((din[0] >> 9) & 0x1);
+	*_arg_data = (din[0] & 0xff);
+	fifo_usage_spy_notify (_arg_we, _arg_re, _arg_data);
 }
 
 namespace ZDPI_MOD_grp0_stb {

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Metrics>
 <Attribute id="beginTime">
-  <Value>Wed Apr 17 20:16:25 2024</Value>
+  <Value>Mon Apr 29 13:43:48 2024</Value>
 </Attribute>
 <Attribute id="Chosen part reference for resource evaluation">
   <Value>VIRTEX77vlx2000tff1925 </Value>
@@ -37,8 +37,8 @@
     </QIWC>
   </Header>
   <Row name="Input design size (raw)">
-    <REG>601</REG>
-    <LUT>284</LUT>
+    <REG>654</REG>
+    <LUT>288</LUT>
     <RAMLUT>72</RAMLUT>
     <LUT6>29</LUT6>
     <MUXCY>2</MUXCY>
@@ -47,8 +47,8 @@
     <QIWC>0</QIWC>
   </Row>
   <Row name="Logic to map : raw + instr. _ P_R costs (est.)">
-    <REG>601</REG>
-    <LUT>284</LUT>
+    <REG>654</REG>
+    <LUT>288</LUT>
     <RAMLUT>72</RAMLUT>
     <LUT6>29</LUT6>
     <MUXCY>2</MUXCY>
@@ -95,14 +95,14 @@
   </Header>
   <Row>
     <ZCORE>Part_0</ZCORE>
-    <REG>601</REG>
-    <LUT>284</LUT>
+    <REG>654</REG>
+    <LUT>288</LUT>
     <RAMLUT>72</RAMLUT>
     <LUT6>29</LUT6>
     <MUXCY>2</MUXCY>
     <BRAM>0</BRAM>
     <DSP>0</DSP>
-    <LUT__w_o_weighting_>284</LUT__w_o_weighting_>
+    <LUT__w_o_weighting_>288</LUT__w_o_weighting_>
     <IO>0</IO>
   </Row>
 </Table>
@@ -147,15 +147,15 @@
   </Header>
   <Row>
     <step>   3</step>
-    <vm>504</vm>
-    <vmdelta>21</vmdelta>
-    <um>171</um>
-    <umdelta>29</umdelta>
-    <freeMem>174207</freeMem>
-    <cpu>96.27</cpu>
+    <vm>505</vm>
+    <vmdelta>22</vmdelta>
+    <um>172</um>
+    <umdelta>30</umdelta>
+    <freeMem>171358</freeMem>
+    <cpu>99.76</cpu>
     <load>0.00</load>
-    <elapsedTimeInSec>0.20</elapsedTimeInSec>
-    <userTimeInSec>0.19</userTimeInSec>
+    <elapsedTimeInSec>0.21</elapsedTimeInSec>
+    <userTimeInSec>0.20</userTimeInSec>
     <systemTimeInSec>0.1</systemTimeInSec>
     <name>zTopBuild/Input_loading/Loading_target_configuration.</name>
   </Row>
@@ -163,9 +163,9 @@
     <step>   4</step>
     <vm>525</vm>
     <vmdelta>0</vmdelta>
-    <um>192</um>
+    <um>193</um>
     <umdelta>0</umdelta>
-    <freeMem>174186</freeMem>
+    <freeMem>171337</freeMem>
     <cpu>0.00</cpu>
     <load>0.00</load>
     <elapsedTimeInSec>0</elapsedTimeInSec>
@@ -177,9 +177,9 @@
     <step>   5</step>
     <vm>525</vm>
     <vmdelta>0</vmdelta>
-    <um>192</um>
+    <um>193</um>
     <umdelta>0</umdelta>
-    <freeMem>174186</freeMem>
+    <freeMem>171337</freeMem>
     <cpu>0.00</cpu>
     <load>0.00</load>
     <elapsedTimeInSec>0</elapsedTimeInSec>
@@ -191,9 +191,9 @@
     <step>   6</step>
     <vm>525</vm>
     <vmdelta>0</vmdelta>
-    <um>192</um>
+    <um>193</um>
     <umdelta>0</umdelta>
-    <freeMem>174186</freeMem>
+    <freeMem>171337</freeMem>
     <cpu>0.00</cpu>
     <load>0.00</load>
     <elapsedTimeInSec>0</elapsedTimeInSec>
@@ -205,9 +205,9 @@
     <step>   7</step>
     <vm>525</vm>
     <vmdelta>0</vmdelta>
-    <um>192</um>
+    <um>193</um>
     <umdelta>0</umdelta>
-    <freeMem>174186</freeMem>
+    <freeMem>171337</freeMem>
     <cpu>0.00</cpu>
     <load>0.00</load>
     <elapsedTimeInSec>0</elapsedTimeInSec>
@@ -217,25 +217,25 @@
   </Row>
   <Row>
     <step>   8</step>
-    <vm>526</vm>
-    <vmdelta>1</vmdelta>
-    <um>195</um>
-    <umdelta>3</umdelta>
-    <freeMem>174185</freeMem>
-    <cpu>76.76</cpu>
+    <vm>527</vm>
+    <vmdelta>2</vmdelta>
+    <um>197</um>
+    <umdelta>4</umdelta>
+    <freeMem>171334</freeMem>
+    <cpu>85.29</cpu>
     <load>0.00</load>
-    <elapsedTimeInSec>0.12</elapsedTimeInSec>
+    <elapsedTimeInSec>0.11</elapsedTimeInSec>
     <userTimeInSec>0.9</userTimeInSec>
-    <systemTimeInSec>0</systemTimeInSec>
+    <systemTimeInSec>0.1</systemTimeInSec>
     <name>zTopBuild/Input_loading/Partitionning_setup.</name>
   </Row>
   <Row>
     <step>   9</step>
-    <vm>526</vm>
+    <vm>527</vm>
     <vmdelta>0</vmdelta>
-    <um>195</um>
+    <um>197</um>
     <umdelta>0</umdelta>
-    <freeMem>174185</freeMem>
+    <freeMem>171334</freeMem>
     <cpu>0.00</cpu>
     <load>0.00</load>
     <elapsedTimeInSec>0</elapsedTimeInSec>
@@ -247,9 +247,9 @@
     <step>  13</step>
     <vm>696</vm>
     <vmdelta>0</vmdelta>
-    <um>228</um>
+    <um>238</um>
     <umdelta>0</umdelta>
-    <freeMem>174152</freeMem>
+    <freeMem>171293</freeMem>
     <cpu>0.00</cpu>
     <load>0.00</load>
     <elapsedTimeInSec>0</elapsedTimeInSec>
@@ -261,37 +261,37 @@
     <step>  13</step>
     <vm>696</vm>
     <vmdelta>159</vmdelta>
-    <um>228</um>
-    <umdelta>23</umdelta>
-    <freeMem>174152</freeMem>
-    <cpu>480.00</cpu>
+    <um>238</um>
+    <umdelta>31</umdelta>
+    <freeMem>171293</freeMem>
+    <cpu>333.33</cpu>
     <load>0.00</load>
-    <elapsedTimeInSec>0.2</elapsedTimeInSec>
-    <userTimeInSec>0.6</userTimeInSec>
-    <systemTimeInSec>0.3</systemTimeInSec>
+    <elapsedTimeInSec>0.4</elapsedTimeInSec>
+    <userTimeInSec>0.10</userTimeInSec>
+    <systemTimeInSec>0.5</systemTimeInSec>
     <name>zTopBuild/Input_loading/Loading_source_files./Load_netlists/Parallel_load_of_source_files.</name>
   </Row>
   <Row>
     <step>  13</step>
     <vm>696</vm>
     <vmdelta>159</vmdelta>
-    <um>228</um>
-    <umdelta>23</umdelta>
-    <freeMem>174152</freeMem>
-    <cpu>467.53</cpu>
+    <um>238</um>
+    <umdelta>31</umdelta>
+    <freeMem>171293</freeMem>
+    <cpu>331.49</cpu>
     <load>0.00</load>
-    <elapsedTimeInSec>0.2</elapsedTimeInSec>
-    <userTimeInSec>0.6</userTimeInSec>
-    <systemTimeInSec>0.3</systemTimeInSec>
+    <elapsedTimeInSec>0.4</elapsedTimeInSec>
+    <userTimeInSec>0.10</userTimeInSec>
+    <systemTimeInSec>0.5</systemTimeInSec>
     <name>zTopBuild/Input_loading/Loading_source_files./Load_netlists</name>
   </Row>
   <Row>
     <step>  15</step>
     <vm>696</vm>
     <vmdelta>0</vmdelta>
-    <um>228</um>
+    <um>238</um>
     <umdelta>0</umdelta>
-    <freeMem>174152</freeMem>
+    <freeMem>171292</freeMem>
     <cpu>0.00</cpu>
     <load>0.00</load>
     <elapsedTimeInSec>0</elapsedTimeInSec>
@@ -303,26 +303,26 @@
     <step>  16</step>
     <vm>696</vm>
     <vmdelta>0</vmdelta>
-    <um>228</um>
+    <um>238</um>
     <umdelta>0</umdelta>
-    <freeMem>174152</freeMem>
-    <cpu>666.67</cpu>
+    <freeMem>171292</freeMem>
+    <cpu>0.00</cpu>
     <load>0.00</load>
     <elapsedTimeInSec>0</elapsedTimeInSec>
     <userTimeInSec>0</userTimeInSec>
-    <systemTimeInSec>0.1</systemTimeInSec>
+    <systemTimeInSec>0</systemTimeInSec>
     <name>zTopBuild/Input_loading/Loading_source_files./Merge_of_netlists/Parallel_linking_of_modules</name>
   </Row>
   <Row>
     <step>  17</step>
     <vm>696</vm>
     <vmdelta>0</vmdelta>
-    <um>228</um>
+    <um>238</um>
     <umdelta>0</umdelta>
-    <freeMem>174152</freeMem>
+    <freeMem>171292</freeMem>
     <cpu>0.00</cpu>
     <load>0.00</load>
-    <elapsedTimeInSec>0</elapsedTimeInSec>
+    <elapsedTimeInSec>0.1</elapsedTimeInSec>
     <userTimeInSec>0</userTimeInSec>
     <systemTimeInSec>0</systemTimeInSec>
     <name>zTopBuild/Input_loading/Loading_source_files./Merge_of_netlists/Final_sweep</name>
@@ -331,23 +331,23 @@
     <step>  17</step>
     <vm>696</vm>
     <vmdelta>0</vmdelta>
-    <um>228</um>
+    <um>238</um>
     <umdelta>0</umdelta>
-    <freeMem>174152</freeMem>
+    <freeMem>171292</freeMem>
     <cpu>200.00</cpu>
     <load>0.00</load>
-    <elapsedTimeInSec>0</elapsedTimeInSec>
-    <userTimeInSec>0</userTimeInSec>
-    <systemTimeInSec>0.1</systemTimeInSec>
+    <elapsedTimeInSec>0.1</elapsedTimeInSec>
+    <userTimeInSec>0.1</userTimeInSec>
+    <systemTimeInSec>0</systemTimeInSec>
     <name>zTopBuild/Input_loading/Loading_source_files./Merge_of_netlists</name>
   </Row>
   <Row>
     <step>  18</step>
     <vm>696</vm>
     <vmdelta>0</vmdelta>
-    <um>228</um>
-    <umdelta>0</umdelta>
-    <freeMem>174152</freeMem>
+    <um>239</um>
+    <umdelta>1</umdelta>
+    <freeMem>171292</freeMem>
     <cpu>0.00</cpu>
     <load>0.00</load>
     <elapsedTimeInSec>0</elapsedTimeInSec>
@@ -358,14 +358,14 @@
   <Row>
     <step>  18</step>
     <vm>696</vm>
-    <vmdelta>170</vmdelta>
-    <um>228</um>
-    <umdelta>33</umdelta>
-    <freeMem>174152</freeMem>
-    <cpu>238.10</cpu>
+    <vmdelta>169</vmdelta>
+    <um>239</um>
+    <umdelta>42</umdelta>
+    <freeMem>171292</freeMem>
+    <cpu>245.81</cpu>
     <load>0.00</load>
-    <elapsedTimeInSec>0.6</elapsedTimeInSec>
-    <userTimeInSec>0.9</userTimeInSec>
+    <elapsedTimeInSec>0.9</elapsedTimeInSec>
+    <userTimeInSec>0.16</userTimeInSec>
     <systemTimeInSec>0.6</systemTimeInSec>
     <name>zTopBuild/Input_loading/Loading_source_files.</name>
   </Row>
@@ -373,13 +373,13 @@
     <step>  19</step>
     <vm>696</vm>
     <vmdelta>0</vmdelta>
-    <um>229</um>
-    <umdelta>1</umdelta>
-    <freeMem>174152</freeMem>
-    <cpu>333.33</cpu>
+    <um>239</um>
+    <umdelta>0</umdelta>
+    <freeMem>171292</freeMem>
+    <cpu>0.00</cpu>
     <load>0.00</load>
     <elapsedTimeInSec>0.1</elapsedTimeInSec>
-    <userTimeInSec>0.1</userTimeInSec>
+    <userTimeInSec>0</userTimeInSec>
     <systemTimeInSec>0</systemTimeInSec>
     <name>zTopBuild/Input_loading/Merge_Memory_Blackboxes.</name>
   </Row>
@@ -387,10 +387,10 @@
     <step>  20</step>
     <vm>696</vm>
     <vmdelta>0</vmdelta>
-    <um>229</um>
+    <um>239</um>
     <umdelta>0</umdelta>
-    <freeMem>174152</freeMem>
-    <cpu>117.65</cpu>
+    <freeMem>171292</freeMem>
+    <cpu>111.11</cpu>
     <load>0.00</load>
     <elapsedTimeInSec>0.1</elapsedTimeInSec>
     <userTimeInSec>0.1</userTimeInSec>
@@ -401,9 +401,9 @@
     <step>  21</step>
     <vm>696</vm>
     <vmdelta>0</vmdelta>
-    <um>229</um>
+    <um>239</um>
     <umdelta>0</umdelta>
-    <freeMem>174152</freeMem>
+    <freeMem>171292</freeMem>
     <cpu>0.00</cpu>
     <load>0.00</load>
     <elapsedTimeInSec>0</elapsedTimeInSec>
@@ -415,9 +415,9 @@
     <step>  22</step>
     <vm>696</vm>
     <vmdelta>0</vmdelta>
-    <um>229</um>
+    <um>239</um>
     <umdelta>0</umdelta>
-    <freeMem>174152</freeMem>
+    <freeMem>171292</freeMem>
     <cpu>0.00</cpu>
     <load>0.00</load>
     <elapsedTimeInSec>0</elapsedTimeInSec>
@@ -429,9 +429,9 @@
     <step>  23</step>
     <vm>696</vm>
     <vmdelta>0</vmdelta>
-    <um>229</um>
+    <um>239</um>
     <umdelta>0</umdelta>
-    <freeMem>174152</freeMem>
+    <freeMem>171292</freeMem>
     <cpu>0.00</cpu>
     <load>0.00</load>
     <elapsedTimeInSec>0</elapsedTimeInSec>
@@ -443,9 +443,9 @@
     <step>  25</step>
     <vm>795</vm>
     <vmdelta>0</vmdelta>
-    <um>237</um>
+    <um>248</um>
     <umdelta>0</umdelta>
-    <freeMem>174144</freeMem>
+    <freeMem>171284</freeMem>
     <cpu>0.00</cpu>
     <load>0.00</load>
     <elapsedTimeInSec>0</elapsedTimeInSec>
@@ -457,9 +457,9 @@
     <step>  26</step>
     <vm>795</vm>
     <vmdelta>0</vmdelta>
-    <um>237</um>
+    <um>248</um>
     <umdelta>0</umdelta>
-    <freeMem>174144</freeMem>
+    <freeMem>171284</freeMem>
     <cpu>0.00</cpu>
     <load>0.00</load>
     <elapsedTimeInSec>0</elapsedTimeInSec>
@@ -471,9 +471,9 @@
     <step>  27</step>
     <vm>795</vm>
     <vmdelta>0</vmdelta>
-    <um>237</um>
+    <um>248</um>
     <umdelta>0</umdelta>
-    <freeMem>174144</freeMem>
+    <freeMem>171284</freeMem>
     <cpu>0.00</cpu>
     <load>0.00</load>
     <elapsedTimeInSec>0</elapsedTimeInSec>
@@ -485,9 +485,9 @@
     <step>  28</step>
     <vm>795</vm>
     <vmdelta>0</vmdelta>
-    <um>237</um>
+    <um>248</um>
     <umdelta>0</umdelta>
-    <freeMem>174144</freeMem>
+    <freeMem>171284</freeMem>
     <cpu>0.00</cpu>
     <load>0.00</load>
     <elapsedTimeInSec>0</elapsedTimeInSec>
@@ -499,9 +499,9 @@
     <step>  29</step>
     <vm>795</vm>
     <vmdelta>0</vmdelta>
-    <um>237</um>
+    <um>248</um>
     <umdelta>0</umdelta>
-    <freeMem>174144</freeMem>
+    <freeMem>171284</freeMem>
     <cpu>0.00</cpu>
     <load>0.00</load>
     <elapsedTimeInSec>0</elapsedTimeInSec>
@@ -513,9 +513,9 @@
     <step>  30</step>
     <vm>795</vm>
     <vmdelta>0</vmdelta>
-    <um>237</um>
+    <um>248</um>
     <umdelta>0</umdelta>
-    <freeMem>174144</freeMem>
+    <freeMem>171284</freeMem>
     <cpu>0.00</cpu>
     <load>0.00</load>
     <elapsedTimeInSec>0</elapsedTimeInSec>
@@ -527,9 +527,9 @@
     <step>  31</step>
     <vm>795</vm>
     <vmdelta>0</vmdelta>
-    <um>237</um>
+    <um>248</um>
     <umdelta>0</umdelta>
-    <freeMem>174144</freeMem>
+    <freeMem>171284</freeMem>
     <cpu>0.00</cpu>
     <load>0.00</load>
     <elapsedTimeInSec>0</elapsedTimeInSec>
@@ -541,9 +541,9 @@
     <step>  32</step>
     <vm>795</vm>
     <vmdelta>0</vmdelta>
-    <um>237</um>
+    <um>248</um>
     <umdelta>0</umdelta>
-    <freeMem>174144</freeMem>
+    <freeMem>171283</freeMem>
     <cpu>0.00</cpu>
     <load>0.00</load>
     <elapsedTimeInSec>0</elapsedTimeInSec>
@@ -555,13 +555,13 @@
     <step>  32</step>
     <vm>795</vm>
     <vmdelta>99</vmdelta>
-    <um>237</um>
-    <umdelta>8</umdelta>
-    <freeMem>174144</freeMem>
-    <cpu>91.82</cpu>
+    <um>248</um>
+    <umdelta>9</umdelta>
+    <freeMem>171283</freeMem>
+    <cpu>84.39</cpu>
     <load>0.00</load>
-    <elapsedTimeInSec>0.17</elapsedTimeInSec>
-    <userTimeInSec>0.15</userTimeInSec>
+    <elapsedTimeInSec>0.18</elapsedTimeInSec>
+    <userTimeInSec>0.14</userTimeInSec>
     <systemTimeInSec>0.1</systemTimeInSec>
     <name>zTopBuild/Input_loading/No_dve_netlist_pre-processings.</name>
   </Row>
@@ -569,13 +569,13 @@
     <step>  33</step>
     <vm>795</vm>
     <vmdelta>0</vmdelta>
-    <um>239</um>
+    <um>250</um>
     <umdelta>2</umdelta>
-    <freeMem>174143</freeMem>
-    <cpu>65.57</cpu>
+    <freeMem>171281</freeMem>
+    <cpu>78.43</cpu>
     <load>0.00</load>
-    <elapsedTimeInSec>0.3</elapsedTimeInSec>
-    <userTimeInSec>0.2</userTimeInSec>
+    <elapsedTimeInSec>0.4</elapsedTimeInSec>
+    <userTimeInSec>0.3</userTimeInSec>
     <systemTimeInSec>0</systemTimeInSec>
     <name>zTopBuild/Input_loading/ClockGenerator_building.</name>
   </Row>
@@ -583,9 +583,9 @@
     <step>  34</step>
     <vm>795</vm>
     <vmdelta>0</vmdelta>
-    <um>239</um>
-    <umdelta>0</umdelta>
-    <freeMem>174143</freeMem>
+    <um>251</um>
+    <umdelta>1</umdelta>
+    <freeMem>171281</freeMem>
     <cpu>0.00</cpu>
     <load>0.00</load>
     <elapsedTimeInSec>0</elapsedTimeInSec>
@@ -597,9 +597,9 @@
     <step>  35</step>
     <vm>795</vm>
     <vmdelta>0</vmdelta>
-    <um>239</um>
+    <um>251</um>
     <umdelta>0</umdelta>
-    <freeMem>174143</freeMem>
+    <freeMem>171281</freeMem>
     <cpu>0.00</cpu>
     <load>0.00</load>
     <elapsedTimeInSec>0</elapsedTimeInSec>
@@ -611,9 +611,9 @@
     <step>  36</step>
     <vm>795</vm>
     <vmdelta>0</vmdelta>
-    <um>239</um>
+    <um>251</um>
     <umdelta>0</umdelta>
-    <freeMem>174143</freeMem>
+    <freeMem>171281</freeMem>
     <cpu>0.00</cpu>
     <load>0.00</load>
     <elapsedTimeInSec>0</elapsedTimeInSec>
@@ -625,23 +625,23 @@
     <step>  36</step>
     <vm>795</vm>
     <vmdelta>312</vmdelta>
-    <um>239</um>
-    <umdelta>97</umdelta>
-    <freeMem>174143</freeMem>
-    <cpu>97.59</cpu>
+    <um>251</um>
+    <umdelta>109</umdelta>
+    <freeMem>171281</freeMem>
+    <cpu>101.43</cpu>
     <load>0.00</load>
-    <elapsedTimeInSec>0.76</elapsedTimeInSec>
-    <userTimeInSec>0.64</userTimeInSec>
-    <systemTimeInSec>0.10</systemTimeInSec>
+    <elapsedTimeInSec>0.79</elapsedTimeInSec>
+    <userTimeInSec>0.71</userTimeInSec>
+    <systemTimeInSec>0.9</systemTimeInSec>
     <name>zTopBuild/Input_loading</name>
   </Row>
   <Row>
     <step>  38</step>
     <vm>795</vm>
     <vmdelta>0</vmdelta>
-    <um>239</um>
+    <um>251</um>
     <umdelta>0</umdelta>
-    <freeMem>174143</freeMem>
+    <freeMem>171281</freeMem>
     <cpu>0.00</cpu>
     <load>0.00</load>
     <elapsedTimeInSec>0</elapsedTimeInSec>
@@ -653,23 +653,23 @@
     <step>  42</step>
     <vm>795</vm>
     <vmdelta>0</vmdelta>
-    <um>239</um>
+    <um>251</um>
     <umdelta>0</umdelta>
-    <freeMem>174143</freeMem>
-    <cpu>0.00</cpu>
+    <freeMem>171281</freeMem>
+    <cpu>4000.00</cpu>
     <load>0.00</load>
     <elapsedTimeInSec>0</elapsedTimeInSec>
-    <userTimeInSec>0</userTimeInSec>
-    <systemTimeInSec>0</systemTimeInSec>
+    <userTimeInSec>0.1</userTimeInSec>
+    <systemTimeInSec>0.1</systemTimeInSec>
     <name>zTopBuild/Pre-edit_flow/Buffer_simplification./Buffer_simplification_-_bufe_replacement./Collect_assign_buffers_for_'z'_transmission._/Collect_assign_buffers_for_'z'_transmission:_record_Threaded</name>
   </Row>
   <Row>
     <step>  43</step>
     <vm>795</vm>
     <vmdelta>0</vmdelta>
-    <um>240</um>
-    <umdelta>1</umdelta>
-    <freeMem>174143</freeMem>
+    <um>251</um>
+    <umdelta>0</umdelta>
+    <freeMem>171281</freeMem>
     <cpu>0.00</cpu>
     <load>0.00</load>
     <elapsedTimeInSec>0</elapsedTimeInSec>
@@ -681,41 +681,41 @@
     <step>  43</step>
     <vm>795</vm>
     <vmdelta>0</vmdelta>
-    <um>240</um>
-    <umdelta>1</umdelta>
-    <freeMem>174143</freeMem>
-    <cpu>0.00</cpu>
+    <um>251</um>
+    <umdelta>0</umdelta>
+    <freeMem>171281</freeMem>
+    <cpu>1333.33</cpu>
     <load>0.00</load>
     <elapsedTimeInSec>0</elapsedTimeInSec>
-    <userTimeInSec>0</userTimeInSec>
-    <systemTimeInSec>0</systemTimeInSec>
+    <userTimeInSec>0.1</userTimeInSec>
+    <systemTimeInSec>0.1</systemTimeInSec>
     <name>zTopBuild/Pre-edit_flow/Buffer_simplification./Buffer_simplification_-_bufe_replacement./Collect_assign_buffers_for_'z'_transmission._</name>
   </Row>
   <Row>
     <step>  43</step>
     <vm>795</vm>
     <vmdelta>0</vmdelta>
-    <um>240</um>
-    <umdelta>1</umdelta>
-    <freeMem>174143</freeMem>
-    <cpu>0.00</cpu>
+    <um>251</um>
+    <umdelta>0</umdelta>
+    <freeMem>171281</freeMem>
+    <cpu>1142.86</cpu>
     <load>0.00</load>
     <elapsedTimeInSec>0</elapsedTimeInSec>
-    <userTimeInSec>0</userTimeInSec>
-    <systemTimeInSec>0</systemTimeInSec>
+    <userTimeInSec>0.1</userTimeInSec>
+    <systemTimeInSec>0.1</systemTimeInSec>
     <name>zTopBuild/Pre-edit_flow/Buffer_simplification./Buffer_simplification_-_bufe_replacement.</name>
   </Row>
   <Row>
     <step>  43</step>
     <vm>795</vm>
     <vmdelta>0</vmdelta>
-    <um>240</um>
-    <umdelta>1</umdelta>
-    <freeMem>174143</freeMem>
-    <cpu>363.64</cpu>
+    <um>251</um>
+    <umdelta>0</umdelta>
+    <freeMem>171281</freeMem>
+    <cpu>888.89</cpu>
     <load>0.00</load>
     <elapsedTimeInSec>0</elapsedTimeInSec>
-    <userTimeInSec>0</userTimeInSec>
+    <userTimeInSec>0.1</userTimeInSec>
     <systemTimeInSec>0.1</systemTimeInSec>
     <name>zTopBuild/Pre-edit_flow/Buffer_simplification.</name>
   </Row>
@@ -723,13 +723,13 @@
     <step>  43</step>
     <vm>795</vm>
     <vmdelta>0</vmdelta>
-    <um>240</um>
-    <umdelta>1</umdelta>
-    <freeMem>174143</freeMem>
-    <cpu>266.67</cpu>
+    <um>251</um>
+    <umdelta>0</umdelta>
+    <freeMem>171281</freeMem>
+    <cpu>727.27</cpu>
     <load>0.00</load>
     <elapsedTimeInSec>0</elapsedTimeInSec>
-    <userTimeInSec>0</userTimeInSec>
+    <userTimeInSec>0.1</userTimeInSec>
     <systemTimeInSec>0.1</systemTimeInSec>
     <name>zTopBuild/Pre-edit_flow</name>
   </Row>
@@ -737,9 +737,9 @@
     <step>  44</step>
     <vm>795</vm>
     <vmdelta>0</vmdelta>
-    <um>240</um>
+    <um>251</um>
     <umdelta>0</umdelta>
-    <freeMem>174143</freeMem>
+    <freeMem>171281</freeMem>
     <cpu>0.00</cpu>
     <load>0.00</load>
     <elapsedTimeInSec>0</elapsedTimeInSec>
@@ -751,9 +751,9 @@
     <step>  47</step>
     <vm>795</vm>
     <vmdelta>0</vmdelta>
-    <um>240</um>
+    <um>251</um>
     <umdelta>0</umdelta>
-    <freeMem>174143</freeMem>
+    <freeMem>171281</freeMem>
     <cpu>0.00</cpu>
     <load>0.00</load>
     <elapsedTimeInSec>0</elapsedTimeInSec>
@@ -765,12 +765,12 @@
     <step>  48</step>
     <vm>795</vm>
     <vmdelta>0</vmdelta>
-    <um>240</um>
+    <um>251</um>
     <umdelta>0</umdelta>
-    <freeMem>174143</freeMem>
+    <freeMem>171281</freeMem>
     <cpu>0.00</cpu>
     <load>0.00</load>
-    <elapsedTimeInSec>0</elapsedTimeInSec>
+    <elapsedTimeInSec>0.1</elapsedTimeInSec>
     <userTimeInSec>0</userTimeInSec>
     <systemTimeInSec>0</systemTimeInSec>
     <name>zTopBuild/Main_flow/Pre-split_flow_(pre-equi)/Connection_to_ICE.</name>
@@ -779,23 +779,23 @@
     <step>  50</step>
     <vm>799</vm>
     <vmdelta>4</vmdelta>
-    <um>241</um>
+    <um>252</um>
     <umdelta>1</umdelta>
-    <freeMem>174143</freeMem>
-    <cpu>125.00</cpu>
+    <freeMem>171281</freeMem>
+    <cpu>0.00</cpu>
     <load>0.00</load>
     <elapsedTimeInSec>0.1</elapsedTimeInSec>
     <userTimeInSec>0</userTimeInSec>
-    <systemTimeInSec>0.1</systemTimeInSec>
+    <systemTimeInSec>0</systemTimeInSec>
     <name>zTopBuild/Main_flow/Pre-split_flow_(pre-equi)/Runtime_access/Loading_RTL_DB</name>
   </Row>
   <Row>
     <step>  51</step>
     <vm>799</vm>
     <vmdelta>0</vmdelta>
-    <um>241</um>
+    <um>252</um>
     <umdelta>0</umdelta>
-    <freeMem>174143</freeMem>
+    <freeMem>171281</freeMem>
     <cpu>0.00</cpu>
     <load>0.00</load>
     <elapsedTimeInSec>0</elapsedTimeInSec>
@@ -807,9 +807,9 @@
     <step>  52</step>
     <vm>799</vm>
     <vmdelta>0</vmdelta>
-    <um>241</um>
+    <um>252</um>
     <umdelta>0</umdelta>
-    <freeMem>174143</freeMem>
+    <freeMem>171281</freeMem>
     <cpu>0.00</cpu>
     <load>0.00</load>
     <elapsedTimeInSec>0</elapsedTimeInSec>
@@ -821,12 +821,12 @@
     <step>  52</step>
     <vm>799</vm>
     <vmdelta>4</vmdelta>
-    <um>241</um>
+    <um>252</um>
     <umdelta>1</umdelta>
-    <freeMem>174143</freeMem>
-    <cpu>27.78</cpu>
+    <freeMem>171281</freeMem>
+    <cpu>32.13</cpu>
     <load>0.00</load>
-    <elapsedTimeInSec>0.7</elapsedTimeInSec>
+    <elapsedTimeInSec>0.6</elapsedTimeInSec>
     <userTimeInSec>0.1</userTimeInSec>
     <systemTimeInSec>0.1</systemTimeInSec>
     <name>zTopBuild/Main_flow/Pre-split_flow_(pre-equi)/Runtime_access</name>
@@ -835,9 +835,9 @@
     <step>  53</step>
     <vm>799</vm>
     <vmdelta>0</vmdelta>
-    <um>241</um>
+    <um>252</um>
     <umdelta>0</umdelta>
-    <freeMem>174143</freeMem>
+    <freeMem>171281</freeMem>
     <cpu>0.00</cpu>
     <load>0.00</load>
     <elapsedTimeInSec>0</elapsedTimeInSec>
@@ -849,9 +849,9 @@
     <step>  54</step>
     <vm>799</vm>
     <vmdelta>0</vmdelta>
-    <um>241</um>
+    <um>252</um>
     <umdelta>0</umdelta>
-    <freeMem>174143</freeMem>
+    <freeMem>171281</freeMem>
     <cpu>0.00</cpu>
     <load>0.00</load>
     <elapsedTimeInSec>0</elapsedTimeInSec>
@@ -863,13 +863,13 @@
     <step>  55</step>
     <vm>799</vm>
     <vmdelta>0</vmdelta>
-    <um>241</um>
+    <um>252</um>
     <umdelta>0</umdelta>
-    <freeMem>174143</freeMem>
-    <cpu>1000.00</cpu>
+    <freeMem>171281</freeMem>
+    <cpu>0.00</cpu>
     <load>0.00</load>
     <elapsedTimeInSec>0</elapsedTimeInSec>
-    <userTimeInSec>0.1</userTimeInSec>
+    <userTimeInSec>0</userTimeInSec>
     <systemTimeInSec>0</systemTimeInSec>
     <name>zTopBuild/Main_flow/Pre-split_flow_(pre-equi)/Manipulate_HDL_force/release.</name>
   </Row>
@@ -877,12 +877,12 @@
     <step>  56</step>
     <vm>799</vm>
     <vmdelta>0</vmdelta>
-    <um>241</um>
+    <um>252</um>
     <umdelta>0</umdelta>
-    <freeMem>174143</freeMem>
+    <freeMem>171281</freeMem>
     <cpu>0.00</cpu>
     <load>0.00</load>
-    <elapsedTimeInSec>0.1</elapsedTimeInSec>
+    <elapsedTimeInSec>0</elapsedTimeInSec>
     <userTimeInSec>0</userTimeInSec>
     <systemTimeInSec>0</systemTimeInSec>
     <name>zTopBuild/Main_flow/Pre-split_flow_(pre-equi)/Pre-split_dynamic_force_insertion.</name>
@@ -891,9 +891,9 @@
     <step>  57</step>
     <vm>799</vm>
     <vmdelta>0</vmdelta>
-    <um>241</um>
+    <um>252</um>
     <umdelta>0</umdelta>
-    <freeMem>174143</freeMem>
+    <freeMem>171281</freeMem>
     <cpu>0.00</cpu>
     <load>0.00</load>
     <elapsedTimeInSec>0</elapsedTimeInSec>
@@ -905,9 +905,9 @@
     <step>  58</step>
     <vm>799</vm>
     <vmdelta>0</vmdelta>
-    <um>241</um>
+    <um>252</um>
     <umdelta>0</umdelta>
-    <freeMem>174143</freeMem>
+    <freeMem>171281</freeMem>
     <cpu>0.00</cpu>
     <load>0.00</load>
     <elapsedTimeInSec>0</elapsedTimeInSec>
@@ -919,9 +919,9 @@
     <step>  60</step>
     <vm>799</vm>
     <vmdelta>0</vmdelta>
-    <um>241</um>
+    <um>252</um>
     <umdelta>0</umdelta>
-    <freeMem>174143</freeMem>
+    <freeMem>171281</freeMem>
     <cpu>0.00</cpu>
     <load>0.00</load>
     <elapsedTimeInSec>0</elapsedTimeInSec>
@@ -933,9 +933,9 @@
     <step>  61</step>
     <vm>799</vm>
     <vmdelta>0</vmdelta>
-    <um>241</um>
+    <um>252</um>
     <umdelta>0</umdelta>
-    <freeMem>174143</freeMem>
+    <freeMem>171281</freeMem>
     <cpu>0.00</cpu>
     <load>0.00</load>
     <elapsedTimeInSec>0</elapsedTimeInSec>
@@ -947,9 +947,9 @@
     <step>  62</step>
     <vm>799</vm>
     <vmdelta>0</vmdelta>
-    <um>241</um>
-    <umdelta>0</umdelta>
-    <freeMem>174143</freeMem>
+    <um>253</um>
+    <umdelta>1</umdelta>
+    <freeMem>171281</freeMem>
     <cpu>0.00</cpu>
     <load>0.00</load>
     <elapsedTimeInSec>0</elapsedTimeInSec>
@@ -961,10 +961,10 @@
     <step>  63</step>
     <vm>799</vm>
     <vmdelta>0</vmdelta>
-    <um>241</um>
+    <um>253</um>
     <umdelta>0</umdelta>
-    <freeMem>174143</freeMem>
-    <cpu>1000.00</cpu>
+    <freeMem>171281</freeMem>
+    <cpu>800.00</cpu>
     <load>0.00</load>
     <elapsedTimeInSec>0</elapsedTimeInSec>
     <userTimeInSec>0.1</userTimeInSec>
@@ -975,9 +975,9 @@
     <step>  64</step>
     <vm>799</vm>
     <vmdelta>0</vmdelta>
-    <um>242</um>
-    <umdelta>1</umdelta>
-    <freeMem>174143</freeMem>
+    <um>253</um>
+    <umdelta>0</umdelta>
+    <freeMem>171281</freeMem>
     <cpu>0.00</cpu>
     <load>0.00</load>
     <elapsedTimeInSec>0</elapsedTimeInSec>
@@ -989,10 +989,10 @@
     <step>  64</step>
     <vm>799</vm>
     <vmdelta>0</vmdelta>
-    <um>242</um>
+    <um>253</um>
     <umdelta>1</umdelta>
-    <freeMem>174143</freeMem>
-    <cpu>111.11</cpu>
+    <freeMem>171281</freeMem>
+    <cpu>114.29</cpu>
     <load>0.00</load>
     <elapsedTimeInSec>0.1</elapsedTimeInSec>
     <userTimeInSec>0.1</userTimeInSec>
@@ -1003,9 +1003,9 @@
     <step>  65</step>
     <vm>799</vm>
     <vmdelta>0</vmdelta>
-    <um>242</um>
+    <um>253</um>
     <umdelta>0</umdelta>
-    <freeMem>174143</freeMem>
+    <freeMem>171281</freeMem>
     <cpu>0.00</cpu>
     <load>0.00</load>
     <elapsedTimeInSec>0</elapsedTimeInSec>
@@ -1017,9 +1017,9 @@
     <step>  66</step>
     <vm>799</vm>
     <vmdelta>0</vmdelta>
-    <um>242</um>
+    <um>253</um>
     <umdelta>0</umdelta>
-    <freeMem>174143</freeMem>
+    <freeMem>171281</freeMem>
     <cpu>0.00</cpu>
     <load>0.00</load>
     <elapsedTimeInSec>0</elapsedTimeInSec>
@@ -1031,9 +1031,9 @@
     <step>  67</step>
     <vm>799</vm>
     <vmdelta>0</vmdelta>
-    <um>242</um>
+    <um>253</um>
     <umdelta>0</umdelta>
-    <freeMem>174143</freeMem>
+    <freeMem>171281</freeMem>
     <cpu>0.00</cpu>
     <load>0.00</load>
     <elapsedTimeInSec>0.1</elapsedTimeInSec>
@@ -1045,9 +1045,9 @@
     <step>  68</step>
     <vm>799</vm>
     <vmdelta>0</vmdelta>
-    <um>242</um>
+    <um>253</um>
     <umdelta>0</umdelta>
-    <freeMem>174143</freeMem>
+    <freeMem>171281</freeMem>
     <cpu>0.00</cpu>
     <load>0.00</load>
     <elapsedTimeInSec>0</elapsedTimeInSec>
@@ -1059,9 +1059,9 @@
     <step>  69</step>
     <vm>799</vm>
     <vmdelta>0</vmdelta>
-    <um>242</um>
+    <um>253</um>
     <umdelta>0</umdelta>
-    <freeMem>174143</freeMem>
+    <freeMem>171281</freeMem>
     <cpu>0.00</cpu>
     <load>0.00</load>
     <elapsedTimeInSec>0</elapsedTimeInSec>
@@ -1073,12 +1073,12 @@
     <step>  70</step>
     <vm>799</vm>
     <vmdelta>0</vmdelta>
-    <um>242</um>
+    <um>253</um>
     <umdelta>0</umdelta>
-    <freeMem>174143</freeMem>
+    <freeMem>171281</freeMem>
     <cpu>0.00</cpu>
     <load>0.00</load>
-    <elapsedTimeInSec>0.1</elapsedTimeInSec>
+    <elapsedTimeInSec>0.2</elapsedTimeInSec>
     <userTimeInSec>0</userTimeInSec>
     <systemTimeInSec>0</systemTimeInSec>
     <name>zTopBuild/Main_flow/Pre-split_flow_(pre-equi)/Top_inout_port_direction_fixing.</name>
@@ -1087,10 +1087,10 @@
     <step>  72</step>
     <vm>799</vm>
     <vmdelta>0</vmdelta>
-    <um>242</um>
+    <um>253</um>
     <umdelta>0</umdelta>
-    <freeMem>174142</freeMem>
-    <cpu>800.00</cpu>
+    <freeMem>171281</freeMem>
+    <cpu>4000.00</cpu>
     <load>0.00</load>
     <elapsedTimeInSec>0</elapsedTimeInSec>
     <userTimeInSec>0.1</userTimeInSec>
@@ -1101,9 +1101,9 @@
     <step>  74</step>
     <vm>799</vm>
     <vmdelta>0</vmdelta>
-    <um>242</um>
+    <um>253</um>
     <umdelta>0</umdelta>
-    <freeMem>174142</freeMem>
+    <freeMem>171281</freeMem>
     <cpu>0.00</cpu>
     <load>0.00</load>
     <elapsedTimeInSec>0</elapsedTimeInSec>
@@ -1115,9 +1115,9 @@
     <step>  74</step>
     <vm>799</vm>
     <vmdelta>0</vmdelta>
-    <um>242</um>
+    <um>253</um>
     <umdelta>0</umdelta>
-    <freeMem>174142</freeMem>
+    <freeMem>171281</freeMem>
     <cpu>2000.00</cpu>
     <load>0.00</load>
     <elapsedTimeInSec>0</elapsedTimeInSec>
@@ -1129,69 +1129,69 @@
     <step>  76</step>
     <vm>799</vm>
     <vmdelta>0</vmdelta>
-    <um>242</um>
+    <um>253</um>
     <umdelta>0</umdelta>
-    <freeMem>174142</freeMem>
-    <cpu>8000.00</cpu>
+    <freeMem>171281</freeMem>
+    <cpu>4000.00</cpu>
     <load>0.00</load>
     <elapsedTimeInSec>0</elapsedTimeInSec>
     <userTimeInSec>0.1</userTimeInSec>
-    <systemTimeInSec>0.1</systemTimeInSec>
+    <systemTimeInSec>0</systemTimeInSec>
     <name>zTopBuild/Main_flow/Pre-split_flow_(pre-equi)/Fix_undriven_buffers./Undriven_buffers:_apply/Uniquify</name>
   </Row>
   <Row>
     <step>  76</step>
     <vm>799</vm>
     <vmdelta>0</vmdelta>
-    <um>242</um>
+    <um>253</um>
     <umdelta>0</umdelta>
-    <freeMem>174142</freeMem>
-    <cpu>1600.00</cpu>
+    <freeMem>171281</freeMem>
+    <cpu>2000.00</cpu>
     <load>0.00</load>
     <elapsedTimeInSec>0</elapsedTimeInSec>
     <userTimeInSec>0.1</userTimeInSec>
-    <systemTimeInSec>0.1</systemTimeInSec>
+    <systemTimeInSec>0</systemTimeInSec>
     <name>zTopBuild/Main_flow/Pre-split_flow_(pre-equi)/Fix_undriven_buffers./Undriven_buffers:_apply</name>
   </Row>
   <Row>
     <step>  76</step>
     <vm>799</vm>
     <vmdelta>0</vmdelta>
-    <um>242</um>
+    <um>253</um>
     <umdelta>0</umdelta>
-    <freeMem>174142</freeMem>
-    <cpu>640.00</cpu>
+    <freeMem>171281</freeMem>
+    <cpu>500.00</cpu>
     <load>0.00</load>
     <elapsedTimeInSec>0</elapsedTimeInSec>
     <userTimeInSec>0.3</userTimeInSec>
-    <systemTimeInSec>0.1</systemTimeInSec>
+    <systemTimeInSec>0</systemTimeInSec>
     <name>zTopBuild/Main_flow/Pre-split_flow_(pre-equi)/Fix_undriven_buffers.</name>
   </Row>
   <Row>
     <step>  78</step>
     <vm>799</vm>
     <vmdelta>0</vmdelta>
-    <um>242</um>
+    <um>253</um>
     <umdelta>0</umdelta>
-    <freeMem>174142</freeMem>
-    <cpu>4000.00</cpu>
+    <freeMem>171281</freeMem>
+    <cpu>0.00</cpu>
     <load>0.00</load>
     <elapsedTimeInSec>0</elapsedTimeInSec>
     <userTimeInSec>0</userTimeInSec>
-    <systemTimeInSec>0.1</systemTimeInSec>
+    <systemTimeInSec>0</systemTimeInSec>
     <name>zTopBuild/Main_flow/Pre-split_flow_(pre-equi)/Resolve_strengths_and_multi_driver_nets./Preprocess_Lonely_Bufifs</name>
   </Row>
   <Row>
     <step>  80</step>
     <vm>799</vm>
     <vmdelta>0</vmdelta>
-    <um>242</um>
+    <um>253</um>
     <umdelta>0</umdelta>
-    <freeMem>174142</freeMem>
-    <cpu>666.67</cpu>
+    <freeMem>171281</freeMem>
+    <cpu>4000.00</cpu>
     <load>0.00</load>
-    <elapsedTimeInSec>0</elapsedTimeInSec>
-    <userTimeInSec>0</userTimeInSec>
+    <elapsedTimeInSec>0.1</elapsedTimeInSec>
+    <userTimeInSec>0.1</userTimeInSec>
     <systemTimeInSec>0.1</systemTimeInSec>
     <name>zTopBuild/Main_flow/Pre-split_flow_(pre-equi)/Resolve_strengths_and_multi_driver_nets./Global_Process_Multidrivers/Feedthrough_database</name>
   </Row>
@@ -1199,40 +1199,40 @@
     <step>  81</step>
     <vm>799</vm>
     <vmdelta>0</vmdelta>
-    <um>242</um>
+    <um>253</um>
     <umdelta>0</umdelta>
-    <freeMem>174142</freeMem>
-    <cpu>1600.00</cpu>
+    <freeMem>171281</freeMem>
+    <cpu>2000.00</cpu>
     <load>0.00</load>
     <elapsedTimeInSec>0</elapsedTimeInSec>
     <userTimeInSec>0.1</userTimeInSec>
-    <systemTimeInSec>0.1</systemTimeInSec>
+    <systemTimeInSec>0</systemTimeInSec>
     <name>zTopBuild/Main_flow/Pre-split_flow_(pre-equi)/Resolve_strengths_and_multi_driver_nets./Global_Process_Multidrivers/Reconnect_Assign_buffers.</name>
   </Row>
   <Row>
     <step>  81</step>
     <vm>799</vm>
     <vmdelta>0</vmdelta>
-    <um>242</um>
+    <um>253</um>
     <umdelta>0</umdelta>
-    <freeMem>174142</freeMem>
-    <cpu>480.00</cpu>
+    <freeMem>171281</freeMem>
+    <cpu>600.00</cpu>
     <load>0.00</load>
-    <elapsedTimeInSec>0</elapsedTimeInSec>
-    <userTimeInSec>0.1</userTimeInSec>
-    <systemTimeInSec>0.2</systemTimeInSec>
+    <elapsedTimeInSec>0.1</elapsedTimeInSec>
+    <userTimeInSec>0.2</userTimeInSec>
+    <systemTimeInSec>0.1</systemTimeInSec>
     <name>zTopBuild/Main_flow/Pre-split_flow_(pre-equi)/Resolve_strengths_and_multi_driver_nets./Global_Process_Multidrivers</name>
   </Row>
   <Row>
     <step>  82</step>
     <vm>799</vm>
     <vmdelta>0</vmdelta>
-    <um>242</um>
+    <um>253</um>
     <umdelta>0</umdelta>
-    <freeMem>174142</freeMem>
+    <freeMem>171281</freeMem>
     <cpu>0.00</cpu>
     <load>0.00</load>
-    <elapsedTimeInSec>0</elapsedTimeInSec>
+    <elapsedTimeInSec>0.1</elapsedTimeInSec>
     <userTimeInSec>0</userTimeInSec>
     <systemTimeInSec>0</systemTimeInSec>
     <name>zTopBuild/Main_flow/Pre-split_flow_(pre-equi)/Resolve_strengths_and_multi_driver_nets./Force_undriven_ports.</name>
@@ -1241,26 +1241,26 @@
     <step>  82</step>
     <vm>799</vm>
     <vmdelta>0</vmdelta>
-    <um>242</um>
+    <um>253</um>
     <umdelta>0</umdelta>
-    <freeMem>174142</freeMem>
-    <cpu>355.56</cpu>
+    <freeMem>171281</freeMem>
+    <cpu>260.87</cpu>
     <load>0.00</load>
-    <elapsedTimeInSec>0.1</elapsedTimeInSec>
-    <userTimeInSec>0.1</userTimeInSec>
-    <systemTimeInSec>0.3</systemTimeInSec>
+    <elapsedTimeInSec>0.2</elapsedTimeInSec>
+    <userTimeInSec>0.2</userTimeInSec>
+    <systemTimeInSec>0.1</systemTimeInSec>
     <name>zTopBuild/Main_flow/Pre-split_flow_(pre-equi)/Resolve_strengths_and_multi_driver_nets.</name>
   </Row>
   <Row>
     <step>  84</step>
     <vm>799</vm>
     <vmdelta>0</vmdelta>
-    <um>242</um>
+    <um>253</um>
     <umdelta>0</umdelta>
-    <freeMem>174142</freeMem>
+    <freeMem>171281</freeMem>
     <cpu>0.00</cpu>
     <load>0.00</load>
-    <elapsedTimeInSec>0.1</elapsedTimeInSec>
+    <elapsedTimeInSec>0</elapsedTimeInSec>
     <userTimeInSec>0</userTimeInSec>
     <systemTimeInSec>0</systemTimeInSec>
     <name>zTopBuild/Main_flow/Pre-split_flow_(pre-equi)/Pre-split_native_zforce./Native_zforce-zinject.</name>
@@ -1269,12 +1269,12 @@
     <step>  84</step>
     <vm>799</vm>
     <vmdelta>0</vmdelta>
-    <um>242</um>
+    <um>253</um>
     <umdelta>0</umdelta>
-    <freeMem>174142</freeMem>
+    <freeMem>171281</freeMem>
     <cpu>0.00</cpu>
     <load>0.00</load>
-    <elapsedTimeInSec>0.1</elapsedTimeInSec>
+    <elapsedTimeInSec>0</elapsedTimeInSec>
     <userTimeInSec>0</userTimeInSec>
     <systemTimeInSec>0</systemTimeInSec>
     <name>zTopBuild/Main_flow/Pre-split_flow_(pre-equi)/Pre-split_native_zforce.</name>
@@ -1283,9 +1283,9 @@
     <step>  85</step>
     <vm>799</vm>
     <vmdelta>0</vmdelta>
-    <um>242</um>
+    <um>253</um>
     <umdelta>0</umdelta>
-    <freeMem>174142</freeMem>
+    <freeMem>171281</freeMem>
     <cpu>0.00</cpu>
     <load>0.00</load>
     <elapsedTimeInSec>0</elapsedTimeInSec>
@@ -1297,9 +1297,9 @@
     <step>  86</step>
     <vm>799</vm>
     <vmdelta>0</vmdelta>
-    <um>242</um>
+    <um>253</um>
     <umdelta>0</umdelta>
-    <freeMem>174142</freeMem>
+    <freeMem>171281</freeMem>
     <cpu>0.00</cpu>
     <load>0.00</load>
     <elapsedTimeInSec>0</elapsedTimeInSec>
@@ -1311,37 +1311,37 @@
     <step>  88</step>
     <vm>799</vm>
     <vmdelta>0</vmdelta>
-    <um>242</um>
+    <um>253</um>
     <umdelta>0</umdelta>
-    <freeMem>174142</freeMem>
-    <cpu>571.43</cpu>
+    <freeMem>171281</freeMem>
+    <cpu>4000.00</cpu>
     <load>0.00</load>
     <elapsedTimeInSec>0</elapsedTimeInSec>
     <userTimeInSec>0.1</userTimeInSec>
-    <systemTimeInSec>0</systemTimeInSec>
+    <systemTimeInSec>0.1</systemTimeInSec>
     <name>zTopBuild/Main_flow/Pre-split_flow_(pre-equi)/Post-buffer_simplification_undriven_fixing./Feedthrough_database</name>
   </Row>
   <Row>
     <step>  88</step>
     <vm>799</vm>
     <vmdelta>0</vmdelta>
-    <um>242</um>
+    <um>253</um>
     <umdelta>0</umdelta>
-    <freeMem>174142</freeMem>
-    <cpu>114.29</cpu>
+    <freeMem>171281</freeMem>
+    <cpu>444.44</cpu>
     <load>0.00</load>
     <elapsedTimeInSec>0</elapsedTimeInSec>
     <userTimeInSec>0.1</userTimeInSec>
-    <systemTimeInSec>0</systemTimeInSec>
+    <systemTimeInSec>0.1</systemTimeInSec>
     <name>zTopBuild/Main_flow/Pre-split_flow_(pre-equi)/Post-buffer_simplification_undriven_fixing.</name>
   </Row>
   <Row>
     <step>  89</step>
     <vm>799</vm>
     <vmdelta>0</vmdelta>
-    <um>242</um>
+    <um>253</um>
     <umdelta>0</umdelta>
-    <freeMem>174142</freeMem>
+    <freeMem>171281</freeMem>
     <cpu>0.00</cpu>
     <load>0.00</load>
     <elapsedTimeInSec>0</elapsedTimeInSec>
@@ -1353,12 +1353,12 @@
     <step>  91</step>
     <vm>799</vm>
     <vmdelta>0</vmdelta>
-    <um>242</um>
+    <um>253</um>
     <umdelta>0</umdelta>
-    <freeMem>174142</freeMem>
+    <freeMem>171281</freeMem>
     <cpu>0.00</cpu>
     <load>0.00</load>
-    <elapsedTimeInSec>0.1</elapsedTimeInSec>
+    <elapsedTimeInSec>0</elapsedTimeInSec>
     <userTimeInSec>0</userTimeInSec>
     <systemTimeInSec>0</systemTimeInSec>
     <name>zTopBuild/Main_flow/Pre-split_flow_(pre-equi)/Input_netlist_checks./Instantiate_checkers_db</name>
@@ -1367,9 +1367,9 @@
     <step>  92</step>
     <vm>799</vm>
     <vmdelta>0</vmdelta>
-    <um>242</um>
+    <um>253</um>
     <umdelta>0</umdelta>
-    <freeMem>174142</freeMem>
+    <freeMem>171281</freeMem>
     <cpu>0.00</cpu>
     <load>0.00</load>
     <elapsedTimeInSec>0</elapsedTimeInSec>
@@ -1381,9 +1381,9 @@
     <step>  93</step>
     <vm>799</vm>
     <vmdelta>0</vmdelta>
-    <um>242</um>
+    <um>253</um>
     <umdelta>0</umdelta>
-    <freeMem>174142</freeMem>
+    <freeMem>171281</freeMem>
     <cpu>0.00</cpu>
     <load>0.00</load>
     <elapsedTimeInSec>0</elapsedTimeInSec>
@@ -1395,9 +1395,9 @@
     <step>  94</step>
     <vm>799</vm>
     <vmdelta>0</vmdelta>
-    <um>242</um>
+    <um>253</um>
     <umdelta>0</umdelta>
-    <freeMem>174142</freeMem>
+    <freeMem>171281</freeMem>
     <cpu>0.00</cpu>
     <load>0.00</load>
     <elapsedTimeInSec>0</elapsedTimeInSec>
@@ -1409,9 +1409,9 @@
     <step>  95</step>
     <vm>799</vm>
     <vmdelta>0</vmdelta>
-    <um>242</um>
+    <um>253</um>
     <umdelta>0</umdelta>
-    <freeMem>174142</freeMem>
+    <freeMem>171281</freeMem>
     <cpu>0.00</cpu>
     <load>0.00</load>
     <elapsedTimeInSec>0</elapsedTimeInSec>
@@ -1423,9 +1423,9 @@
     <step>  96</step>
     <vm>799</vm>
     <vmdelta>0</vmdelta>
-    <um>242</um>
+    <um>253</um>
     <umdelta>0</umdelta>
-    <freeMem>174142</freeMem>
+    <freeMem>171281</freeMem>
     <cpu>0.00</cpu>
     <load>0.00</load>
     <elapsedTimeInSec>0</elapsedTimeInSec>
@@ -1437,9 +1437,9 @@
     <step>  97</step>
     <vm>799</vm>
     <vmdelta>0</vmdelta>
-    <um>242</um>
+    <um>253</um>
     <umdelta>0</umdelta>
-    <freeMem>174142</freeMem>
+    <freeMem>171281</freeMem>
     <cpu>0.00</cpu>
     <load>0.00</load>
     <elapsedTimeInSec>0</elapsedTimeInSec>
@@ -1451,9 +1451,9 @@
     <step>  98</step>
     <vm>799</vm>
     <vmdelta>0</vmdelta>
-    <um>242</um>
+    <um>253</um>
     <umdelta>0</umdelta>
-    <freeMem>174142</freeMem>
+    <freeMem>171281</freeMem>
     <cpu>0.00</cpu>
     <load>0.00</load>
     <elapsedTimeInSec>0</elapsedTimeInSec>
@@ -1465,9 +1465,9 @@
     <step>  98</step>
     <vm>799</vm>
     <vmdelta>0</vmdelta>
-    <um>242</um>
+    <um>253</um>
     <umdelta>0</umdelta>
-    <freeMem>174142</freeMem>
+    <freeMem>171281</freeMem>
     <cpu>37.74</cpu>
     <load>0.00</load>
     <elapsedTimeInSec>0.3</elapsedTimeInSec>
@@ -1479,27 +1479,27 @@
     <step> 100</step>
     <vm>814</vm>
     <vmdelta>0</vmdelta>
-    <um>276</um>
+    <um>283</um>
     <umdelta>0</umdelta>
-    <freeMem>174111</freeMem>
-    <cpu>0.00</cpu>
+    <freeMem>171254</freeMem>
+    <cpu>800.00</cpu>
     <load>0.00</load>
     <elapsedTimeInSec>0</elapsedTimeInSec>
     <userTimeInSec>0.1</userTimeInSec>
-    <systemTimeInSec>0.1</systemTimeInSec>
+    <systemTimeInSec>0</systemTimeInSec>
     <name>zTopBuild/Main_flow/Pre-split_flow_(pre-equi)/Fast_waveform_capture/Compute_hier_wires_upfront</name>
   </Row>
   <Row>
     <step> 101</step>
     <vm>814</vm>
     <vmdelta>0</vmdelta>
-    <um>276</um>
-    <umdelta>0</umdelta>
-    <freeMem>174111</freeMem>
-    <cpu>0.00</cpu>
+    <um>284</um>
+    <umdelta>1</umdelta>
+    <freeMem>171254</freeMem>
+    <cpu>2000.00</cpu>
     <load>0.00</load>
     <elapsedTimeInSec>0</elapsedTimeInSec>
-    <userTimeInSec>0</userTimeInSec>
+    <userTimeInSec>0.1</userTimeInSec>
     <systemTimeInSec>0</systemTimeInSec>
     <name>zTopBuild/Main_flow/Pre-split_flow_(pre-equi)/Fast_waveform_capture/Dumpvars_Xrefs_dump</name>
   </Row>
@@ -1507,12 +1507,12 @@
     <step> 101</step>
     <vm>814</vm>
     <vmdelta>0</vmdelta>
-    <um>277</um>
-    <umdelta>2</umdelta>
-    <freeMem>174111</freeMem>
-    <cpu>25.44</cpu>
+    <um>286</um>
+    <umdelta>4</umdelta>
+    <freeMem>171252</freeMem>
+    <cpu>36.36</cpu>
     <load>0.00</load>
-    <elapsedTimeInSec>0.16</elapsedTimeInSec>
+    <elapsedTimeInSec>0.11</elapsedTimeInSec>
     <userTimeInSec>0.3</userTimeInSec>
     <systemTimeInSec>0.1</systemTimeInSec>
     <name>zTopBuild/Main_flow/Pre-split_flow_(pre-equi)/Fast_waveform_capture</name>
@@ -1521,9 +1521,9 @@
     <step> 102</step>
     <vm>814</vm>
     <vmdelta>0</vmdelta>
-    <um>277</um>
+    <um>286</um>
     <umdelta>0</umdelta>
-    <freeMem>174111</freeMem>
+    <freeMem>171252</freeMem>
     <cpu>0.00</cpu>
     <load>0.00</load>
     <elapsedTimeInSec>0</elapsedTimeInSec>
@@ -1535,9 +1535,9 @@
     <step> 103</step>
     <vm>814</vm>
     <vmdelta>0</vmdelta>
-    <um>277</um>
+    <um>286</um>
     <umdelta>0</umdelta>
-    <freeMem>174111</freeMem>
+    <freeMem>171252</freeMem>
     <cpu>0.00</cpu>
     <load>0.00</load>
     <elapsedTimeInSec>0</elapsedTimeInSec>
@@ -1549,79 +1549,79 @@
     <step> 107</step>
     <vm>814</vm>
     <vmdelta>0</vmdelta>
-    <um>277</um>
+    <um>286</um>
     <umdelta>0</umdelta>
-    <freeMem>174111</freeMem>
-    <cpu>1000.00</cpu>
+    <freeMem>171252</freeMem>
+    <cpu>1142.86</cpu>
     <load>0.00</load>
     <elapsedTimeInSec>0</elapsedTimeInSec>
-    <userTimeInSec>0</userTimeInSec>
-    <systemTimeInSec>0.1</systemTimeInSec>
+    <userTimeInSec>0.2</userTimeInSec>
+    <systemTimeInSec>0</systemTimeInSec>
     <name>zTopBuild/Main_flow/Pre-split_flow_(pre-equi)/Generate_runtime_database_files./Generate_zTopBuild_equi_file./Signature_generation/Netlist_signature_generation</name>
   </Row>
   <Row>
     <step> 107</step>
     <vm>814</vm>
     <vmdelta>0</vmdelta>
-    <um>277</um>
+    <um>286</um>
     <umdelta>0</umdelta>
-    <freeMem>174111</freeMem>
-    <cpu>111.11</cpu>
+    <freeMem>171252</freeMem>
+    <cpu>187.50</cpu>
     <load>0.00</load>
-    <elapsedTimeInSec>0.2</elapsedTimeInSec>
-    <userTimeInSec>0.1</userTimeInSec>
-    <systemTimeInSec>0.1</systemTimeInSec>
+    <elapsedTimeInSec>0.1</elapsedTimeInSec>
+    <userTimeInSec>0.3</userTimeInSec>
+    <systemTimeInSec>0</systemTimeInSec>
     <name>zTopBuild/Main_flow/Pre-split_flow_(pre-equi)/Generate_runtime_database_files./Generate_zTopBuild_equi_file./Signature_generation</name>
   </Row>
   <Row>
     <step> 107</step>
     <vm>814</vm>
     <vmdelta>0</vmdelta>
-    <um>277</um>
+    <um>286</um>
     <umdelta>0</umdelta>
-    <freeMem>174110</freeMem>
-    <cpu>71.86</cpu>
+    <freeMem>171252</freeMem>
+    <cpu>82.76</cpu>
     <load>0.00</load>
-    <elapsedTimeInSec>0.5</elapsedTimeInSec>
-    <userTimeInSec>0.2</userTimeInSec>
-    <systemTimeInSec>0.1</systemTimeInSec>
+    <elapsedTimeInSec>0.4</elapsedTimeInSec>
+    <userTimeInSec>0.3</userTimeInSec>
+    <systemTimeInSec>0</systemTimeInSec>
     <name>zTopBuild/Main_flow/Pre-split_flow_(pre-equi)/Generate_runtime_database_files./Generate_zTopBuild_equi_file.</name>
   </Row>
   <Row>
     <step> 107</step>
     <vm>814</vm>
     <vmdelta>0</vmdelta>
-    <um>277</um>
+    <um>286</um>
     <umdelta>0</umdelta>
-    <freeMem>174110</freeMem>
-    <cpu>71.01</cpu>
+    <freeMem>171252</freeMem>
+    <cpu>81.63</cpu>
     <load>0.00</load>
-    <elapsedTimeInSec>0.5</elapsedTimeInSec>
-    <userTimeInSec>0.2</userTimeInSec>
-    <systemTimeInSec>0.1</systemTimeInSec>
+    <elapsedTimeInSec>0.4</elapsedTimeInSec>
+    <userTimeInSec>0.3</userTimeInSec>
+    <systemTimeInSec>0</systemTimeInSec>
     <name>zTopBuild/Main_flow/Pre-split_flow_(pre-equi)/Generate_runtime_database_files.</name>
   </Row>
   <Row>
     <step> 107</step>
     <vm>814</vm>
     <vmdelta>19</vmdelta>
-    <um>277</um>
-    <umdelta>37</umdelta>
-    <freeMem>174110</freeMem>
-    <cpu>57.97</cpu>
+    <um>286</um>
+    <umdelta>35</umdelta>
+    <freeMem>171252</freeMem>
+    <cpu>65.76</cpu>
     <load>0.00</load>
-    <elapsedTimeInSec>0.42</elapsedTimeInSec>
-    <userTimeInSec>0.15</userTimeInSec>
-    <systemTimeInSec>0.9</systemTimeInSec>
+    <elapsedTimeInSec>0.35</elapsedTimeInSec>
+    <userTimeInSec>0.16</userTimeInSec>
+    <systemTimeInSec>0.7</systemTimeInSec>
     <name>zTopBuild/Main_flow/Pre-split_flow_(pre-equi)</name>
   </Row>
   <Row>
     <step> 110</step>
     <vm>814</vm>
     <vmdelta>0</vmdelta>
-    <um>277</um>
+    <um>286</um>
     <umdelta>0</umdelta>
-    <freeMem>174110</freeMem>
+    <freeMem>171252</freeMem>
     <cpu>0.00</cpu>
     <load>0.00</load>
     <elapsedTimeInSec>0</elapsedTimeInSec>
@@ -1633,9 +1633,9 @@
     <step> 112</step>
     <vm>814</vm>
     <vmdelta>0</vmdelta>
-    <um>277</um>
+    <um>286</um>
     <umdelta>0</umdelta>
-    <freeMem>174110</freeMem>
+    <freeMem>171252</freeMem>
     <cpu>0.00</cpu>
     <load>0.00</load>
     <elapsedTimeInSec>0</elapsedTimeInSec>
@@ -1647,9 +1647,9 @@
     <step> 112</step>
     <vm>814</vm>
     <vmdelta>0</vmdelta>
-    <um>277</um>
+    <um>286</um>
     <umdelta>0</umdelta>
-    <freeMem>174110</freeMem>
+    <freeMem>171252</freeMem>
     <cpu>0.00</cpu>
     <load>0.00</load>
     <elapsedTimeInSec>0</elapsedTimeInSec>
@@ -1661,23 +1661,23 @@
     <step> 113</step>
     <vm>814</vm>
     <vmdelta>0</vmdelta>
-    <um>277</um>
+    <um>286</um>
     <umdelta>0</umdelta>
-    <freeMem>174110</freeMem>
-    <cpu>4000.00</cpu>
+    <freeMem>171252</freeMem>
+    <cpu>0.00</cpu>
     <load>0.00</load>
     <elapsedTimeInSec>0</elapsedTimeInSec>
     <userTimeInSec>0</userTimeInSec>
-    <systemTimeInSec>0.1</systemTimeInSec>
+    <systemTimeInSec>0</systemTimeInSec>
     <name>zTopBuild/Main_flow/Pre-split_flow/Pre-split_flow_(post-equi)/ZEMI3_XTOR_Edge_detector_BB_sanity_check</name>
   </Row>
   <Row>
     <step> 114</step>
     <vm>814</vm>
     <vmdelta>0</vmdelta>
-    <um>277</um>
+    <um>286</um>
     <umdelta>0</umdelta>
-    <freeMem>174110</freeMem>
+    <freeMem>171252</freeMem>
     <cpu>0.00</cpu>
     <load>0.00</load>
     <elapsedTimeInSec>0</elapsedTimeInSec>
@@ -1689,9 +1689,9 @@
     <step> 116</step>
     <vm>814</vm>
     <vmdelta>0</vmdelta>
-    <um>277</um>
+    <um>286</um>
     <umdelta>0</umdelta>
-    <freeMem>174110</freeMem>
+    <freeMem>171252</freeMem>
     <cpu>0.00</cpu>
     <load>0.00</load>
     <elapsedTimeInSec>0</elapsedTimeInSec>
@@ -1703,9 +1703,9 @@
     <step> 117</step>
     <vm>814</vm>
     <vmdelta>0</vmdelta>
-    <um>277</um>
+    <um>286</um>
     <umdelta>0</umdelta>
-    <freeMem>174110</freeMem>
+    <freeMem>171252</freeMem>
     <cpu>0.00</cpu>
     <load>0.00</load>
     <elapsedTimeInSec>0</elapsedTimeInSec>
@@ -1717,9 +1717,9 @@
     <step> 117</step>
     <vm>814</vm>
     <vmdelta>0</vmdelta>
-    <um>277</um>
+    <um>286</um>
     <umdelta>0</umdelta>
-    <freeMem>174110</freeMem>
+    <freeMem>171252</freeMem>
     <cpu>0.00</cpu>
     <load>0.00</load>
     <elapsedTimeInSec>0</elapsedTimeInSec>
@@ -1731,9 +1731,9 @@
     <step> 118</step>
     <vm>814</vm>
     <vmdelta>0</vmdelta>
-    <um>277</um>
+    <um>286</um>
     <umdelta>0</umdelta>
-    <freeMem>174110</freeMem>
+    <freeMem>171252</freeMem>
     <cpu>0.00</cpu>
     <load>0.00</load>
     <elapsedTimeInSec>0</elapsedTimeInSec>
@@ -1745,13 +1745,13 @@
     <step> 119</step>
     <vm>814</vm>
     <vmdelta>0</vmdelta>
-    <um>278</um>
-    <umdelta>1</umdelta>
-    <freeMem>174110</freeMem>
-    <cpu>11.11</cpu>
+    <um>286</um>
+    <umdelta>0</umdelta>
+    <freeMem>171251</freeMem>
+    <cpu>0.00</cpu>
     <load>0.00</load>
-    <elapsedTimeInSec>0.9</elapsedTimeInSec>
-    <userTimeInSec>0.1</userTimeInSec>
+    <elapsedTimeInSec>0.10</elapsedTimeInSec>
+    <userTimeInSec>0</userTimeInSec>
     <systemTimeInSec>0</systemTimeInSec>
     <name>zTopBuild/Main_flow/Pre-split_flow/Pre-split_flow_(post-equi)/Collecting_System_Verilog_Assertion_information.</name>
   </Row>
@@ -1759,12 +1759,12 @@
     <step> 121</step>
     <vm>814</vm>
     <vmdelta>0</vmdelta>
-    <um>278</um>
+    <um>287</um>
     <umdelta>0</umdelta>
-    <freeMem>174110</freeMem>
+    <freeMem>171251</freeMem>
     <cpu>0.00</cpu>
     <load>0.00</load>
-    <elapsedTimeInSec>0.1</elapsedTimeInSec>
+    <elapsedTimeInSec>0</elapsedTimeInSec>
     <userTimeInSec>0</userTimeInSec>
     <systemTimeInSec>0</systemTimeInSec>
     <name>zTopBuild/Main_flow/Pre-split_flow/Pre-split_flow_(post-equi)/Netlist_optimization/Buffer_simplification_-_final_cleanups.</name>
@@ -1773,10 +1773,10 @@
     <step> 122</step>
     <vm>814</vm>
     <vmdelta>0</vmdelta>
-    <um>278</um>
+    <um>287</um>
     <umdelta>0</umdelta>
-    <freeMem>174110</freeMem>
-    <cpu>571.43</cpu>
+    <freeMem>171251</freeMem>
+    <cpu>2000.00</cpu>
     <load>0.00</load>
     <elapsedTimeInSec>0</elapsedTimeInSec>
     <userTimeInSec>0.1</userTimeInSec>
@@ -1787,9 +1787,9 @@
     <step> 123</step>
     <vm>814</vm>
     <vmdelta>0</vmdelta>
-    <um>278</um>
+    <um>287</um>
     <umdelta>0</umdelta>
-    <freeMem>174110</freeMem>
+    <freeMem>171251</freeMem>
     <cpu>0.00</cpu>
     <load>0.00</load>
     <elapsedTimeInSec>0</elapsedTimeInSec>
@@ -1801,9 +1801,9 @@
     <step> 126</step>
     <vm>814</vm>
     <vmdelta>0</vmdelta>
-    <um>278</um>
+    <um>287</um>
     <umdelta>0</umdelta>
-    <freeMem>174110</freeMem>
+    <freeMem>171251</freeMem>
     <cpu>0.00</cpu>
     <load>0.00</load>
     <elapsedTimeInSec>0</elapsedTimeInSec>
@@ -1815,26 +1815,26 @@
     <step> 127</step>
     <vm>814</vm>
     <vmdelta>0</vmdelta>
-    <um>278</um>
+    <um>287</um>
     <umdelta>0</umdelta>
-    <freeMem>174110</freeMem>
-    <cpu>2400.00</cpu>
+    <freeMem>171251</freeMem>
+    <cpu>1500.00</cpu>
     <load>0.00</load>
     <elapsedTimeInSec>0</elapsedTimeInSec>
-    <userTimeInSec>0.2</userTimeInSec>
-    <systemTimeInSec>0.1</systemTimeInSec>
+    <userTimeInSec>0.1</userTimeInSec>
+    <systemTimeInSec>0.2</systemTimeInSec>
     <name>zTopBuild/Main_flow/Pre-split_flow/Pre-split_flow_(post-equi)/Netlist_optimization/Pre-clock_logic_optimization/LO/PUSH_CST</name>
   </Row>
   <Row>
     <step> 128</step>
     <vm>814</vm>
     <vmdelta>0</vmdelta>
-    <um>278</um>
+    <um>287</um>
     <umdelta>0</umdelta>
-    <freeMem>174110</freeMem>
-    <cpu>1500.00</cpu>
+    <freeMem>171251</freeMem>
+    <cpu>1200.00</cpu>
     <load>0.00</load>
-    <elapsedTimeInSec>0</elapsedTimeInSec>
+    <elapsedTimeInSec>0.1</elapsedTimeInSec>
     <userTimeInSec>0.2</userTimeInSec>
     <systemTimeInSec>0.1</systemTimeInSec>
     <name>zTopBuild/Main_flow/Pre-split_flow/Pre-split_flow_(post-equi)/Netlist_optimization/Pre-clock_logic_optimization/LO/SIMPLIFY</name>
@@ -1843,37 +1843,37 @@
     <step> 128</step>
     <vm>814</vm>
     <vmdelta>0</vmdelta>
-    <um>278</um>
+    <um>287</um>
     <umdelta>0</umdelta>
-    <freeMem>174110</freeMem>
-    <cpu>1565.22</cpu>
+    <freeMem>171251</freeMem>
+    <cpu>1103.45</cpu>
     <load>0.00</load>
     <elapsedTimeInSec>0.1</elapsedTimeInSec>
-    <userTimeInSec>0.6</userTimeInSec>
-    <systemTimeInSec>0.3</systemTimeInSec>
+    <userTimeInSec>0.4</userTimeInSec>
+    <systemTimeInSec>0.4</systemTimeInSec>
     <name>zTopBuild/Main_flow/Pre-split_flow/Pre-split_flow_(post-equi)/Netlist_optimization/Pre-clock_logic_optimization/LO</name>
   </Row>
   <Row>
     <step> 128</step>
     <vm>814</vm>
     <vmdelta>0</vmdelta>
-    <um>278</um>
+    <um>287</um>
     <umdelta>0</umdelta>
-    <freeMem>174110</freeMem>
-    <cpu>1440.00</cpu>
+    <freeMem>171251</freeMem>
+    <cpu>1000.00</cpu>
     <load>0.00</load>
     <elapsedTimeInSec>0.1</elapsedTimeInSec>
-    <userTimeInSec>0.6</userTimeInSec>
-    <systemTimeInSec>0.3</systemTimeInSec>
+    <userTimeInSec>0.4</userTimeInSec>
+    <systemTimeInSec>0.4</systemTimeInSec>
     <name>zTopBuild/Main_flow/Pre-split_flow/Pre-split_flow_(post-equi)/Netlist_optimization/Pre-clock_logic_optimization</name>
   </Row>
   <Row>
     <step> 129</step>
     <vm>814</vm>
     <vmdelta>0</vmdelta>
-    <um>278</um>
+    <um>287</um>
     <umdelta>0</umdelta>
-    <freeMem>174110</freeMem>
+    <freeMem>171251</freeMem>
     <cpu>0.00</cpu>
     <load>0.00</load>
     <elapsedTimeInSec>0</elapsedTimeInSec>
@@ -1885,13 +1885,13 @@
     <step> 131</step>
     <vm>814</vm>
     <vmdelta>0</vmdelta>
-    <um>278</um>
+    <um>287</um>
     <umdelta>0</umdelta>
-    <freeMem>174110</freeMem>
-    <cpu>1600.00</cpu>
+    <freeMem>171251</freeMem>
+    <cpu>4000.00</cpu>
     <load>0.00</load>
     <elapsedTimeInSec>0</elapsedTimeInSec>
-    <userTimeInSec>0.2</userTimeInSec>
+    <userTimeInSec>0.1</userTimeInSec>
     <systemTimeInSec>0</systemTimeInSec>
     <name>zTopBuild/Main_flow/Pre-split_flow/Pre-split_flow_(post-equi)/Netlist_optimization/Absorb_buf_inv_on_clock_tree./Instantiate_NPCK_zvu_synchro_db</name>
   </Row>
@@ -1899,9 +1899,9 @@
     <step> 132</step>
     <vm>814</vm>
     <vmdelta>0</vmdelta>
-    <um>278</um>
+    <um>287</um>
     <umdelta>0</umdelta>
-    <freeMem>174110</freeMem>
+    <freeMem>171251</freeMem>
     <cpu>0.00</cpu>
     <load>0.00</load>
     <elapsedTimeInSec>0</elapsedTimeInSec>
@@ -1913,9 +1913,9 @@
     <step> 133</step>
     <vm>814</vm>
     <vmdelta>0</vmdelta>
-    <um>278</um>
+    <um>287</um>
     <umdelta>0</umdelta>
-    <freeMem>174110</freeMem>
+    <freeMem>171251</freeMem>
     <cpu>0.00</cpu>
     <load>0.00</load>
     <elapsedTimeInSec>0</elapsedTimeInSec>
@@ -1927,9 +1927,9 @@
     <step> 134</step>
     <vm>814</vm>
     <vmdelta>0</vmdelta>
-    <um>278</um>
+    <um>287</um>
     <umdelta>0</umdelta>
-    <freeMem>174110</freeMem>
+    <freeMem>171251</freeMem>
     <cpu>0.00</cpu>
     <load>0.00</load>
     <elapsedTimeInSec>0</elapsedTimeInSec>
@@ -1941,125 +1941,125 @@
     <step> 134</step>
     <vm>814</vm>
     <vmdelta>0</vmdelta>
-    <um>278</um>
+    <um>287</um>
     <umdelta>0</umdelta>
-    <freeMem>174110</freeMem>
-    <cpu>1090.91</cpu>
+    <freeMem>171251</freeMem>
+    <cpu>1000.00</cpu>
     <load>0.00</load>
     <elapsedTimeInSec>0</elapsedTimeInSec>
-    <userTimeInSec>0.3</userTimeInSec>
-    <systemTimeInSec>0</systemTimeInSec>
+    <userTimeInSec>0.2</userTimeInSec>
+    <systemTimeInSec>0.1</systemTimeInSec>
     <name>zTopBuild/Main_flow/Pre-split_flow/Pre-split_flow_(post-equi)/Netlist_optimization/Absorb_buf_inv_on_clock_tree.</name>
   </Row>
   <Row>
     <step> 137</step>
     <vm>814</vm>
     <vmdelta>0</vmdelta>
-    <um>278</um>
+    <um>287</um>
     <umdelta>0</umdelta>
-    <freeMem>174110</freeMem>
-    <cpu>0.00</cpu>
+    <freeMem>171251</freeMem>
+    <cpu>2000.00</cpu>
     <load>0.00</load>
     <elapsedTimeInSec>0</elapsedTimeInSec>
     <userTimeInSec>0</userTimeInSec>
-    <systemTimeInSec>0</systemTimeInSec>
+    <systemTimeInSec>0.1</systemTimeInSec>
     <name>zTopBuild/Main_flow/Pre-split_flow/Pre-split_flow_(post-equi)/Netlist_optimization/Post-clock_logic_optimization/LO/BUILD_WB</name>
   </Row>
   <Row>
     <step> 138</step>
     <vm>814</vm>
     <vmdelta>0</vmdelta>
-    <um>278</um>
+    <um>287</um>
     <umdelta>0</umdelta>
-    <freeMem>174110</freeMem>
-    <cpu>923.08</cpu>
+    <freeMem>171251</freeMem>
+    <cpu>1000.00</cpu>
     <load>0.00</load>
-    <elapsedTimeInSec>0</elapsedTimeInSec>
-    <userTimeInSec>0.2</userTimeInSec>
-    <systemTimeInSec>0.1</systemTimeInSec>
+    <elapsedTimeInSec>0.1</elapsedTimeInSec>
+    <userTimeInSec>0.3</userTimeInSec>
+    <systemTimeInSec>0</systemTimeInSec>
     <name>zTopBuild/Main_flow/Pre-split_flow/Pre-split_flow_(post-equi)/Netlist_optimization/Post-clock_logic_optimization/LO/TRACE_TFI</name>
   </Row>
   <Row>
     <step> 139</step>
     <vm>814</vm>
     <vmdelta>0</vmdelta>
-    <um>278</um>
+    <um>287</um>
     <umdelta>0</umdelta>
-    <freeMem>174110</freeMem>
-    <cpu>533.33</cpu>
+    <freeMem>171251</freeMem>
+    <cpu>705.88</cpu>
     <load>0.00</load>
-    <elapsedTimeInSec>0.1</elapsedTimeInSec>
-    <userTimeInSec>0.1</userTimeInSec>
-    <systemTimeInSec>0.1</systemTimeInSec>
+    <elapsedTimeInSec>0</elapsedTimeInSec>
+    <userTimeInSec>0.3</userTimeInSec>
+    <systemTimeInSec>0</systemTimeInSec>
     <name>zTopBuild/Main_flow/Pre-split_flow/Pre-split_flow_(post-equi)/Netlist_optimization/Post-clock_logic_optimization/LO/SIMPLIFY</name>
   </Row>
   <Row>
     <step> 139</step>
     <vm>814</vm>
     <vmdelta>0</vmdelta>
-    <um>278</um>
+    <um>287</um>
     <umdelta>0</umdelta>
-    <freeMem>174110</freeMem>
-    <cpu>549.02</cpu>
+    <freeMem>171251</freeMem>
+    <cpu>1052.63</cpu>
     <load>0.00</load>
     <elapsedTimeInSec>0.1</elapsedTimeInSec>
-    <userTimeInSec>0.4</userTimeInSec>
-    <systemTimeInSec>0.3</systemTimeInSec>
+    <userTimeInSec>0.8</userTimeInSec>
+    <systemTimeInSec>0.2</systemTimeInSec>
     <name>zTopBuild/Main_flow/Pre-split_flow/Pre-split_flow_(post-equi)/Netlist_optimization/Post-clock_logic_optimization/LO</name>
   </Row>
   <Row>
     <step> 139</step>
     <vm>814</vm>
     <vmdelta>0</vmdelta>
-    <um>278</um>
+    <um>287</um>
     <umdelta>0</umdelta>
-    <freeMem>174110</freeMem>
-    <cpu>528.30</cpu>
+    <freeMem>171251</freeMem>
+    <cpu>1000.00</cpu>
     <load>0.00</load>
     <elapsedTimeInSec>0.1</elapsedTimeInSec>
-    <userTimeInSec>0.4</userTimeInSec>
-    <systemTimeInSec>0.3</systemTimeInSec>
+    <userTimeInSec>0.8</userTimeInSec>
+    <systemTimeInSec>0.2</systemTimeInSec>
     <name>zTopBuild/Main_flow/Pre-split_flow/Pre-split_flow_(post-equi)/Netlist_optimization/Post-clock_logic_optimization</name>
   </Row>
   <Row>
     <step> 141</step>
     <vm>814</vm>
     <vmdelta>0</vmdelta>
-    <um>278</um>
+    <um>287</um>
     <umdelta>0</umdelta>
-    <freeMem>174110</freeMem>
-    <cpu>1333.33</cpu>
+    <freeMem>171251</freeMem>
+    <cpu>0.00</cpu>
     <load>0.00</load>
     <elapsedTimeInSec>0</elapsedTimeInSec>
     <userTimeInSec>0</userTimeInSec>
-    <systemTimeInSec>0.2</systemTimeInSec>
+    <systemTimeInSec>0</systemTimeInSec>
     <name>zTopBuild/Main_flow/Pre-split_flow/Pre-split_flow_(post-equi)/Netlist_optimization/Auto-fixing_of_undriven_wires_after_logic_optimization./Feedthrough_database</name>
   </Row>
   <Row>
     <step> 141</step>
     <vm>814</vm>
     <vmdelta>0</vmdelta>
-    <um>278</um>
+    <um>287</um>
     <umdelta>0</umdelta>
-    <freeMem>174110</freeMem>
-    <cpu>347.83</cpu>
+    <freeMem>171251</freeMem>
+    <cpu>0.00</cpu>
     <load>0.00</load>
-    <elapsedTimeInSec>0</elapsedTimeInSec>
+    <elapsedTimeInSec>0.1</elapsedTimeInSec>
     <userTimeInSec>0</userTimeInSec>
-    <systemTimeInSec>0.2</systemTimeInSec>
+    <systemTimeInSec>0</systemTimeInSec>
     <name>zTopBuild/Main_flow/Pre-split_flow/Pre-split_flow_(post-equi)/Netlist_optimization/Auto-fixing_of_undriven_wires_after_logic_optimization.</name>
   </Row>
   <Row>
     <step> 143</step>
     <vm>814</vm>
     <vmdelta>0</vmdelta>
-    <um>278</um>
+    <um>287</um>
     <umdelta>0</umdelta>
-    <freeMem>174110</freeMem>
-    <cpu>4000.00</cpu>
+    <freeMem>171251</freeMem>
+    <cpu>0.00</cpu>
     <load>0.00</load>
     <elapsedTimeInSec>0</elapsedTimeInSec>
-    <userTimeInSec>0.1</userTimeInSec>
+    <userTimeInSec>0</userTimeInSec>
     <systemTimeInSec>0</systemTimeInSec>
     <name>zTopBuild/Main_flow/Pre-split_flow/Pre-split_flow_(post-equi)/Netlist_optimization/Dumpvars_optimization/Dumpvars_optimization_(compute)</name>
   </Row>
@@ -2067,9 +2067,9 @@
     <step> 144</step>
     <vm>814</vm>
     <vmdelta>0</vmdelta>
-    <um>278</um>
+    <um>287</um>
     <umdelta>0</umdelta>
-    <freeMem>174110</freeMem>
+    <freeMem>171251</freeMem>
     <cpu>0.00</cpu>
     <load>0.00</load>
     <elapsedTimeInSec>0.1</elapsedTimeInSec>
@@ -2081,13 +2081,13 @@
     <step> 144</step>
     <vm>814</vm>
     <vmdelta>0</vmdelta>
-    <um>278</um>
+    <um>287</um>
     <umdelta>0</umdelta>
-    <freeMem>174110</freeMem>
-    <cpu>153.85</cpu>
+    <freeMem>171251</freeMem>
+    <cpu>347.83</cpu>
     <load>0.00</load>
     <elapsedTimeInSec>0.1</elapsedTimeInSec>
-    <userTimeInSec>0.1</userTimeInSec>
+    <userTimeInSec>0.2</userTimeInSec>
     <systemTimeInSec>0</systemTimeInSec>
     <name>zTopBuild/Main_flow/Pre-split_flow/Pre-split_flow_(post-equi)/Netlist_optimization/Dumpvars_optimization</name>
   </Row>
@@ -2095,23 +2095,23 @@
     <step> 144</step>
     <vm>814</vm>
     <vmdelta>0</vmdelta>
-    <um>278</um>
+    <um>287</um>
     <umdelta>0</umdelta>
-    <freeMem>174110</freeMem>
-    <cpu>436.02</cpu>
+    <freeMem>171251</freeMem>
+    <cpu>513.37</cpu>
     <load>0.00</load>
-    <elapsedTimeInSec>0.6</elapsedTimeInSec>
-    <userTimeInSec>0.15</userTimeInSec>
-    <systemTimeInSec>0.8</systemTimeInSec>
+    <elapsedTimeInSec>0.5</elapsedTimeInSec>
+    <userTimeInSec>0.17</userTimeInSec>
+    <systemTimeInSec>0.7</systemTimeInSec>
     <name>zTopBuild/Main_flow/Pre-split_flow/Pre-split_flow_(post-equi)/Netlist_optimization</name>
   </Row>
   <Row>
     <step> 145</step>
     <vm>814</vm>
     <vmdelta>0</vmdelta>
-    <um>278</um>
+    <um>287</um>
     <umdelta>0</umdelta>
-    <freeMem>174110</freeMem>
+    <freeMem>171251</freeMem>
     <cpu>0.00</cpu>
     <load>0.00</load>
     <elapsedTimeInSec>0</elapsedTimeInSec>
@@ -2123,9 +2123,9 @@
     <step> 146</step>
     <vm>814</vm>
     <vmdelta>0</vmdelta>
-    <um>278</um>
+    <um>287</um>
     <umdelta>0</umdelta>
-    <freeMem>174110</freeMem>
+    <freeMem>171251</freeMem>
     <cpu>0.00</cpu>
     <load>0.00</load>
     <elapsedTimeInSec>0</elapsedTimeInSec>
@@ -2137,24 +2137,24 @@
     <step> 147</step>
     <vm>814</vm>
     <vmdelta>0</vmdelta>
-    <um>278</um>
+    <um>287</um>
     <umdelta>0</umdelta>
-    <freeMem>174110</freeMem>
-    <cpu>102.56</cpu>
+    <freeMem>171251</freeMem>
+    <cpu>205.13</cpu>
     <load>0.00</load>
     <elapsedTimeInSec>0.1</elapsedTimeInSec>
     <userTimeInSec>0.1</userTimeInSec>
-    <systemTimeInSec>0</systemTimeInSec>
+    <systemTimeInSec>0.1</systemTimeInSec>
     <name>zTopBuild/Main_flow/Pre-split_flow/Pre-split_flow_(post-equi)/Check_design_resources_size</name>
   </Row>
   <Row>
     <step> 149</step>
     <vm>814</vm>
     <vmdelta>0</vmdelta>
-    <um>278</um>
+    <um>287</um>
     <umdelta>0</umdelta>
-    <freeMem>174110</freeMem>
-    <cpu>1000.00</cpu>
+    <freeMem>171251</freeMem>
+    <cpu>4000.00</cpu>
     <load>0.00</load>
     <elapsedTimeInSec>0</elapsedTimeInSec>
     <userTimeInSec>0.1</userTimeInSec>
@@ -2165,13 +2165,13 @@
     <step> 150</step>
     <vm>814</vm>
     <vmdelta>0</vmdelta>
-    <um>278</um>
+    <um>287</um>
     <umdelta>0</umdelta>
-    <freeMem>174110</freeMem>
-    <cpu>2400.00</cpu>
+    <freeMem>171251</freeMem>
+    <cpu>8000.00</cpu>
     <load>0.00</load>
     <elapsedTimeInSec>0</elapsedTimeInSec>
-    <userTimeInSec>0.2</userTimeInSec>
+    <userTimeInSec>0.3</userTimeInSec>
     <systemTimeInSec>0.1</systemTimeInSec>
     <name>zTopBuild/Main_flow/Pre-split_flow/Pre-split_flow_(post-equi)/Pre-split_combinational_loops./SCC_Analysis.</name>
   </Row>
@@ -2179,9 +2179,9 @@
     <step> 151</step>
     <vm>814</vm>
     <vmdelta>0</vmdelta>
-    <um>279</um>
+    <um>287</um>
     <umdelta>0</umdelta>
-    <freeMem>174110</freeMem>
+    <freeMem>171251</freeMem>
     <cpu>0.00</cpu>
     <load>0.00</load>
     <elapsedTimeInSec>0</elapsedTimeInSec>
@@ -2193,9 +2193,9 @@
     <step> 152</step>
     <vm>814</vm>
     <vmdelta>0</vmdelta>
-    <um>279</um>
+    <um>287</um>
     <umdelta>0</umdelta>
-    <freeMem>174110</freeMem>
+    <freeMem>171251</freeMem>
     <cpu>0.00</cpu>
     <load>0.00</load>
     <elapsedTimeInSec>0</elapsedTimeInSec>
@@ -2207,9 +2207,9 @@
     <step> 153</step>
     <vm>814</vm>
     <vmdelta>0</vmdelta>
-    <um>287</um>
-    <umdelta>8</umdelta>
-    <freeMem>174102</freeMem>
+    <um>297</um>
+    <umdelta>10</umdelta>
+    <freeMem>171242</freeMem>
     <cpu>0.00</cpu>
     <load>0.00</load>
     <elapsedTimeInSec>0</elapsedTimeInSec>
@@ -2221,27 +2221,27 @@
     <step> 153</step>
     <vm>814</vm>
     <vmdelta>0</vmdelta>
-    <um>287</um>
-    <umdelta>9</umdelta>
-    <freeMem>174102</freeMem>
-    <cpu>558.14</cpu>
+    <um>297</um>
+    <umdelta>10</umdelta>
+    <freeMem>171242</freeMem>
+    <cpu>645.16</cpu>
     <load>0.00</load>
     <elapsedTimeInSec>0.1</elapsedTimeInSec>
-    <userTimeInSec>0.3</userTimeInSec>
-    <systemTimeInSec>0.3</systemTimeInSec>
+    <userTimeInSec>0.4</userTimeInSec>
+    <systemTimeInSec>0.1</systemTimeInSec>
     <name>zTopBuild/Main_flow/Pre-split_flow/Pre-split_flow_(post-equi)/Pre-split_combinational_loops.</name>
   </Row>
   <Row>
     <step> 154</step>
     <vm>814</vm>
     <vmdelta>0</vmdelta>
-    <um>287</um>
+    <um>297</um>
     <umdelta>0</umdelta>
-    <freeMem>174102</freeMem>
-    <cpu>8.21</cpu>
+    <freeMem>171242</freeMem>
+    <cpu>13.64</cpu>
     <load>0.00</load>
-    <elapsedTimeInSec>0.24</elapsedTimeInSec>
-    <userTimeInSec>0.1</userTimeInSec>
+    <elapsedTimeInSec>0.22</elapsedTimeInSec>
+    <userTimeInSec>0.2</userTimeInSec>
     <systemTimeInSec>0.1</systemTimeInSec>
     <name>zTopBuild/Main_flow/Pre-split_flow/Pre-split_flow_(post-equi)/Design_statistics.</name>
   </Row>
@@ -2249,9 +2249,9 @@
     <step> 155</step>
     <vm>814</vm>
     <vmdelta>0</vmdelta>
-    <um>287</um>
+    <um>297</um>
     <umdelta>0</umdelta>
-    <freeMem>174102</freeMem>
+    <freeMem>171242</freeMem>
     <cpu>0.00</cpu>
     <load>0.00</load>
     <elapsedTimeInSec>0</elapsedTimeInSec>
@@ -2263,9 +2263,9 @@
     <step> 156</step>
     <vm>814</vm>
     <vmdelta>0</vmdelta>
-    <um>287</um>
+    <um>297</um>
     <umdelta>0</umdelta>
-    <freeMem>174102</freeMem>
+    <freeMem>171242</freeMem>
     <cpu>0.00</cpu>
     <load>0.00</load>
     <elapsedTimeInSec>0</elapsedTimeInSec>
@@ -2277,55 +2277,55 @@
     <step> 159</step>
     <vm>814</vm>
     <vmdelta>0</vmdelta>
-    <um>287</um>
+    <um>297</um>
     <umdelta>0</umdelta>
-    <freeMem>174102</freeMem>
-    <cpu>0.00</cpu>
+    <freeMem>171242</freeMem>
+    <cpu>4000.00</cpu>
     <load>0.00</load>
     <elapsedTimeInSec>0</elapsedTimeInSec>
-    <userTimeInSec>0.1</userTimeInSec>
-    <systemTimeInSec>0</systemTimeInSec>
+    <userTimeInSec>0</userTimeInSec>
+    <systemTimeInSec>0.1</systemTimeInSec>
     <name>zTopBuild/Main_flow/Pre-split_flow/Pre-split_flow_(post-equi)/Pre-split_clock_processing/Pre-split_compute_clock_input./Compute_hier_wires_upfront</name>
   </Row>
   <Row>
     <step> 160</step>
     <vm>814</vm>
     <vmdelta>0</vmdelta>
-    <um>287</um>
+    <um>297</um>
     <umdelta>0</umdelta>
-    <freeMem>174102</freeMem>
-    <cpu>0.00</cpu>
+    <freeMem>171242</freeMem>
+    <cpu>8000.00</cpu>
     <load>0.00</load>
     <elapsedTimeInSec>0</elapsedTimeInSec>
     <userTimeInSec>0.1</userTimeInSec>
-    <systemTimeInSec>0</systemTimeInSec>
+    <systemTimeInSec>0.1</systemTimeInSec>
     <name>zTopBuild/Main_flow/Pre-split_flow/Pre-split_flow_(post-equi)/Pre-split_clock_processing/Pre-split_compute_clock_input./Uniquify</name>
   </Row>
   <Row>
     <step> 160</step>
     <vm>814</vm>
     <vmdelta>0</vmdelta>
-    <um>287</um>
+    <um>297</um>
     <umdelta>0</umdelta>
-    <freeMem>174102</freeMem>
-    <cpu>4000.00</cpu>
+    <freeMem>171242</freeMem>
+    <cpu>6000.00</cpu>
     <load>0.00</load>
     <elapsedTimeInSec>0.1</elapsedTimeInSec>
-    <userTimeInSec>0.3</userTimeInSec>
-    <systemTimeInSec>0.1</systemTimeInSec>
+    <userTimeInSec>0.4</userTimeInSec>
+    <systemTimeInSec>0.2</systemTimeInSec>
     <name>zTopBuild/Main_flow/Pre-split_flow/Pre-split_flow_(post-equi)/Pre-split_clock_processing/Pre-split_compute_clock_input.</name>
   </Row>
   <Row>
     <step> 161</step>
     <vm>814</vm>
     <vmdelta>0</vmdelta>
-    <um>287</um>
+    <um>297</um>
     <umdelta>0</umdelta>
-    <freeMem>174102</freeMem>
-    <cpu>800.00</cpu>
+    <freeMem>171242</freeMem>
+    <cpu>2000.00</cpu>
     <load>0.00</load>
     <elapsedTimeInSec>0</elapsedTimeInSec>
-    <userTimeInSec>0.1</userTimeInSec>
+    <userTimeInSec>0.2</userTimeInSec>
     <systemTimeInSec>0</systemTimeInSec>
     <name>zTopBuild/Main_flow/Pre-split_flow/Pre-split_flow_(post-equi)/Pre-split_clock_processing/Instantiate_NPCK_zvu_synchro_db</name>
   </Row>
@@ -2333,9 +2333,9 @@
     <step> 162</step>
     <vm>814</vm>
     <vmdelta>0</vmdelta>
-    <um>287</um>
+    <um>297</um>
     <umdelta>0</umdelta>
-    <freeMem>174102</freeMem>
+    <freeMem>171242</freeMem>
     <cpu>0.00</cpu>
     <load>0.00</load>
     <elapsedTimeInSec>0</elapsedTimeInSec>
@@ -2347,13 +2347,13 @@
     <step> 163</step>
     <vm>814</vm>
     <vmdelta>0</vmdelta>
-    <um>287</um>
+    <um>297</um>
     <umdelta>0</umdelta>
-    <freeMem>174102</freeMem>
-    <cpu>1000.00</cpu>
+    <freeMem>171242</freeMem>
+    <cpu>0.00</cpu>
     <load>0.00</load>
     <elapsedTimeInSec>0</elapsedTimeInSec>
-    <userTimeInSec>0.1</userTimeInSec>
+    <userTimeInSec>0</userTimeInSec>
     <systemTimeInSec>0</systemTimeInSec>
     <name>zTopBuild/Main_flow/Pre-split_flow/Pre-split_flow_(post-equi)/Pre-split_clock_processing/Non_system_clocks_marking</name>
   </Row>
@@ -2361,27 +2361,27 @@
     <step> 164</step>
     <vm>814</vm>
     <vmdelta>0</vmdelta>
-    <um>287</um>
+    <um>297</um>
     <umdelta>0</umdelta>
-    <freeMem>174102</freeMem>
-    <cpu>35.09</cpu>
+    <freeMem>171242</freeMem>
+    <cpu>89.89</cpu>
     <load>0.00</load>
-    <elapsedTimeInSec>0.3</elapsedTimeInSec>
+    <elapsedTimeInSec>0.2</elapsedTimeInSec>
     <userTimeInSec>0.1</userTimeInSec>
-    <systemTimeInSec>0</systemTimeInSec>
+    <systemTimeInSec>0.1</systemTimeInSec>
     <name>zTopBuild/Main_flow/Pre-split_flow/Pre-split_flow_(post-equi)/Pre-split_clock_processing/Hierarchical_netlist_for_zTime.</name>
   </Row>
   <Row>
     <step> 166</step>
     <vm>814</vm>
     <vmdelta>0</vmdelta>
-    <um>287</um>
+    <um>297</um>
     <umdelta>0</umdelta>
-    <freeMem>174102</freeMem>
+    <freeMem>171242</freeMem>
     <cpu>0.00</cpu>
     <load>0.00</load>
     <elapsedTimeInSec>0</elapsedTimeInSec>
-    <userTimeInSec>0.1</userTimeInSec>
+    <userTimeInSec>0</userTimeInSec>
     <systemTimeInSec>0</systemTimeInSec>
     <name>zTopBuild/Main_flow/Pre-split_flow/Pre-split_flow_(post-equi)/Pre-split_clock_processing/FILTER_GLITCHES_SYNCHRONOUS/Compute_hier_wires_upfront</name>
   </Row>
@@ -2389,26 +2389,26 @@
     <step> 169</step>
     <vm>814</vm>
     <vmdelta>0</vmdelta>
-    <um>287</um>
+    <um>297</um>
     <umdelta>0</umdelta>
-    <freeMem>174102</freeMem>
-    <cpu>0.00</cpu>
+    <freeMem>171242</freeMem>
+    <cpu>4000.00</cpu>
     <load>0.00</load>
-    <elapsedTimeInSec>0</elapsedTimeInSec>
+    <elapsedTimeInSec>0.1</elapsedTimeInSec>
     <userTimeInSec>0.1</userTimeInSec>
-    <systemTimeInSec>0.1</systemTimeInSec>
+    <systemTimeInSec>0</systemTimeInSec>
     <name>zTopBuild/Main_flow/Pre-split_flow/Pre-split_flow_(post-equi)/Pre-split_clock_processing/FILTER_GLITCHES_SYNCHRONOUS/FGS_process/initClockCone/createClockConeInfos</name>
   </Row>
   <Row>
     <step> 169</step>
     <vm>814</vm>
     <vmdelta>0</vmdelta>
-    <um>287</um>
+    <um>297</um>
     <umdelta>0</umdelta>
-    <freeMem>174102</freeMem>
-    <cpu>1333.33</cpu>
+    <freeMem>171242</freeMem>
+    <cpu>2666.67</cpu>
     <load>0.00</load>
-    <elapsedTimeInSec>0</elapsedTimeInSec>
+    <elapsedTimeInSec>0.1</elapsedTimeInSec>
     <userTimeInSec>0.1</userTimeInSec>
     <systemTimeInSec>0.1</systemTimeInSec>
     <name>zTopBuild/Main_flow/Pre-split_flow/Pre-split_flow_(post-equi)/Pre-split_clock_processing/FILTER_GLITCHES_SYNCHRONOUS/FGS_process/initClockCone</name>
@@ -2417,23 +2417,23 @@
     <step> 173</step>
     <vm>814</vm>
     <vmdelta>0</vmdelta>
-    <um>287</um>
+    <um>297</um>
     <umdelta>0</umdelta>
-    <freeMem>174102</freeMem>
-    <cpu>4000.00</cpu>
+    <freeMem>171242</freeMem>
+    <cpu>0.00</cpu>
     <load>0.00</load>
     <elapsedTimeInSec>0</elapsedTimeInSec>
     <userTimeInSec>0</userTimeInSec>
-    <systemTimeInSec>0.1</systemTimeInSec>
+    <systemTimeInSec>0</systemTimeInSec>
     <name>zTopBuild/Main_flow/Pre-split_flow/Pre-split_flow_(post-equi)/Pre-split_clock_processing/FILTER_GLITCHES_SYNCHRONOUS/FGS_process/handleClockCone/Clock_edge_analysis/Clock_Edge_Analysis/Propagate_constant</name>
   </Row>
   <Row>
     <step> 174</step>
     <vm>814</vm>
     <vmdelta>0</vmdelta>
-    <um>287</um>
+    <um>297</um>
     <umdelta>0</umdelta>
-    <freeMem>174102</freeMem>
+    <freeMem>171242</freeMem>
     <cpu>0.00</cpu>
     <load>0.00</load>
     <elapsedTimeInSec>0</elapsedTimeInSec>
@@ -2445,9 +2445,9 @@
     <step> 175</step>
     <vm>814</vm>
     <vmdelta>0</vmdelta>
-    <um>287</um>
+    <um>297</um>
     <umdelta>0</umdelta>
-    <freeMem>174102</freeMem>
+    <freeMem>171242</freeMem>
     <cpu>0.00</cpu>
     <load>0.00</load>
     <elapsedTimeInSec>0</elapsedTimeInSec>
@@ -2459,13 +2459,13 @@
     <step> 176</step>
     <vm>814</vm>
     <vmdelta>0</vmdelta>
-    <um>287</um>
+    <um>297</um>
     <umdelta>0</umdelta>
-    <freeMem>174102</freeMem>
+    <freeMem>171242</freeMem>
     <cpu>0.00</cpu>
     <load>0.00</load>
     <elapsedTimeInSec>0</elapsedTimeInSec>
-    <userTimeInSec>0.1</userTimeInSec>
+    <userTimeInSec>0</userTimeInSec>
     <systemTimeInSec>0</systemTimeInSec>
     <name>zTopBuild/Main_flow/Pre-split_flow/Pre-split_flow_(post-equi)/Pre-split_clock_processing/FILTER_GLITCHES_SYNCHRONOUS/FGS_process/handleClockCone/Clock_edge_analysis/Clock_Edge_Analysis/Propagate_clock_phase</name>
   </Row>
@@ -2473,13 +2473,13 @@
     <step> 177</step>
     <vm>814</vm>
     <vmdelta>0</vmdelta>
-    <um>287</um>
+    <um>297</um>
     <umdelta>0</umdelta>
-    <freeMem>174102</freeMem>
+    <freeMem>171242</freeMem>
     <cpu>0.00</cpu>
     <load>0.00</load>
     <elapsedTimeInSec>0</elapsedTimeInSec>
-    <userTimeInSec>0</userTimeInSec>
+    <userTimeInSec>0.1</userTimeInSec>
     <systemTimeInSec>0</systemTimeInSec>
     <name>zTopBuild/Main_flow/Pre-split_flow/Pre-split_flow_(post-equi)/Pre-split_clock_processing/FILTER_GLITCHES_SYNCHRONOUS/FGS_process/handleClockCone/Clock_edge_analysis/Clock_Edge_Analysis/analyseGraphLatchesBackProp</name>
   </Row>
@@ -2487,9 +2487,9 @@
     <step> 178</step>
     <vm>814</vm>
     <vmdelta>0</vmdelta>
-    <um>287</um>
+    <um>297</um>
     <umdelta>0</umdelta>
-    <freeMem>174102</freeMem>
+    <freeMem>171242</freeMem>
     <cpu>0.00</cpu>
     <load>0.00</load>
     <elapsedTimeInSec>0</elapsedTimeInSec>
@@ -2501,37 +2501,37 @@
     <step> 178</step>
     <vm>814</vm>
     <vmdelta>0</vmdelta>
-    <um>287</um>
+    <um>297</um>
     <umdelta>0</umdelta>
-    <freeMem>174102</freeMem>
-    <cpu>1200.00</cpu>
+    <freeMem>171243</freeMem>
+    <cpu>571.43</cpu>
     <load>0.00</load>
     <elapsedTimeInSec>0</elapsedTimeInSec>
     <userTimeInSec>0.2</userTimeInSec>
-    <systemTimeInSec>0.1</systemTimeInSec>
+    <systemTimeInSec>0</systemTimeInSec>
     <name>zTopBuild/Main_flow/Pre-split_flow/Pre-split_flow_(post-equi)/Pre-split_clock_processing/FILTER_GLITCHES_SYNCHRONOUS/FGS_process/handleClockCone/Clock_edge_analysis/Clock_Edge_Analysis</name>
   </Row>
   <Row>
     <step> 179</step>
     <vm>814</vm>
     <vmdelta>0</vmdelta>
-    <um>287</um>
+    <um>297</um>
     <umdelta>0</umdelta>
-    <freeMem>174102</freeMem>
-    <cpu>800.00</cpu>
+    <freeMem>171243</freeMem>
+    <cpu>0.00</cpu>
     <load>0.00</load>
     <elapsedTimeInSec>0</elapsedTimeInSec>
     <userTimeInSec>0</userTimeInSec>
-    <systemTimeInSec>0.1</systemTimeInSec>
+    <systemTimeInSec>0</systemTimeInSec>
     <name>zTopBuild/Main_flow/Pre-split_flow/Pre-split_flow_(post-equi)/Pre-split_clock_processing/FILTER_GLITCHES_SYNCHRONOUS/FGS_process/handleClockCone/Clock_edge_analysis/Clock_Edge_Analysis_remove_loadless_logic</name>
   </Row>
   <Row>
     <step> 180</step>
     <vm>814</vm>
     <vmdelta>0</vmdelta>
-    <um>288</um>
-    <umdelta>1</umdelta>
-    <freeMem>174102</freeMem>
+    <um>297</um>
+    <umdelta>0</umdelta>
+    <freeMem>171243</freeMem>
     <cpu>0.00</cpu>
     <load>0.00</load>
     <elapsedTimeInSec>0</elapsedTimeInSec>
@@ -2543,9 +2543,9 @@
     <step> 181</step>
     <vm>814</vm>
     <vmdelta>0</vmdelta>
-    <um>288</um>
+    <um>297</um>
     <umdelta>0</umdelta>
-    <freeMem>174102</freeMem>
+    <freeMem>171243</freeMem>
     <cpu>0.00</cpu>
     <load>0.00</load>
     <elapsedTimeInSec>0</elapsedTimeInSec>
@@ -2557,37 +2557,37 @@
     <step> 181</step>
     <vm>814</vm>
     <vmdelta>0</vmdelta>
-    <um>288</um>
-    <umdelta>1</umdelta>
-    <freeMem>174102</freeMem>
-    <cpu>270.27</cpu>
+    <um>297</um>
+    <umdelta>0</umdelta>
+    <freeMem>171243</freeMem>
+    <cpu>218.18</cpu>
     <load>0.00</load>
-    <elapsedTimeInSec>0.2</elapsedTimeInSec>
+    <elapsedTimeInSec>0.1</elapsedTimeInSec>
     <userTimeInSec>0.3</userTimeInSec>
-    <systemTimeInSec>0.2</systemTimeInSec>
+    <systemTimeInSec>0</systemTimeInSec>
     <name>zTopBuild/Main_flow/Pre-split_flow/Pre-split_flow_(post-equi)/Pre-split_clock_processing/FILTER_GLITCHES_SYNCHRONOUS/FGS_process/handleClockCone/Clock_edge_analysis</name>
   </Row>
   <Row>
     <step> 181</step>
     <vm>814</vm>
     <vmdelta>0</vmdelta>
-    <um>288</um>
-    <umdelta>1</umdelta>
-    <freeMem>174102</freeMem>
-    <cpu>266.67</cpu>
+    <um>297</um>
+    <umdelta>0</umdelta>
+    <freeMem>171243</freeMem>
+    <cpu>218.18</cpu>
     <load>0.00</load>
-    <elapsedTimeInSec>0.2</elapsedTimeInSec>
+    <elapsedTimeInSec>0.1</elapsedTimeInSec>
     <userTimeInSec>0.3</userTimeInSec>
-    <systemTimeInSec>0.2</systemTimeInSec>
+    <systemTimeInSec>0</systemTimeInSec>
     <name>zTopBuild/Main_flow/Pre-split_flow/Pre-split_flow_(post-equi)/Pre-split_clock_processing/FILTER_GLITCHES_SYNCHRONOUS/FGS_process/handleClockCone</name>
   </Row>
   <Row>
     <step> 182</step>
     <vm>814</vm>
     <vmdelta>0</vmdelta>
-    <um>288</um>
+    <um>297</um>
     <umdelta>0</umdelta>
-    <freeMem>174102</freeMem>
+    <freeMem>171243</freeMem>
     <cpu>0.00</cpu>
     <load>0.00</load>
     <elapsedTimeInSec>0</elapsedTimeInSec>
@@ -2599,9 +2599,9 @@
     <step> 184</step>
     <vm>814</vm>
     <vmdelta>0</vmdelta>
-    <um>288</um>
+    <um>297</um>
     <umdelta>0</umdelta>
-    <freeMem>174102</freeMem>
+    <freeMem>171243</freeMem>
     <cpu>0.00</cpu>
     <load>0.00</load>
     <elapsedTimeInSec>0</elapsedTimeInSec>
@@ -2613,9 +2613,9 @@
     <step> 184</step>
     <vm>814</vm>
     <vmdelta>0</vmdelta>
-    <um>288</um>
+    <um>297</um>
     <umdelta>0</umdelta>
-    <freeMem>174102</freeMem>
+    <freeMem>171243</freeMem>
     <cpu>0.00</cpu>
     <load>0.00</load>
     <elapsedTimeInSec>0</elapsedTimeInSec>
@@ -2627,9 +2627,9 @@
     <step> 185</step>
     <vm>814</vm>
     <vmdelta>0</vmdelta>
-    <um>288</um>
+    <um>297</um>
     <umdelta>0</umdelta>
-    <freeMem>174102</freeMem>
+    <freeMem>171243</freeMem>
     <cpu>0.00</cpu>
     <load>0.00</load>
     <elapsedTimeInSec>0</elapsedTimeInSec>
@@ -2641,13 +2641,13 @@
     <step> 186</step>
     <vm>814</vm>
     <vmdelta>0</vmdelta>
-    <um>288</um>
+    <um>297</um>
     <umdelta>0</umdelta>
-    <freeMem>174102</freeMem>
+    <freeMem>171243</freeMem>
     <cpu>0.00</cpu>
     <load>0.00</load>
     <elapsedTimeInSec>0</elapsedTimeInSec>
-    <userTimeInSec>0</userTimeInSec>
+    <userTimeInSec>0.1</userTimeInSec>
     <systemTimeInSec>0</systemTimeInSec>
     <name>zTopBuild/Main_flow/Pre-split_flow/Pre-split_flow_(post-equi)/Pre-split_clock_processing/FILTER_GLITCHES_SYNCHRONOUS/FGS_process/Mark_all_the_clock_cone__instance</name>
   </Row>
@@ -2655,23 +2655,23 @@
     <step> 186</step>
     <vm>818</vm>
     <vmdelta>4</vmdelta>
-    <um>292</um>
-    <umdelta>5</umdelta>
-    <freeMem>174098</freeMem>
-    <cpu>44.14</cpu>
+    <um>301</um>
+    <umdelta>4</umdelta>
+    <freeMem>171240</freeMem>
+    <cpu>70.64</cpu>
     <load>0.00</load>
-    <elapsedTimeInSec>0.18</elapsedTimeInSec>
-    <userTimeInSec>0.5</userTimeInSec>
-    <systemTimeInSec>0.3</systemTimeInSec>
+    <elapsedTimeInSec>0.12</elapsedTimeInSec>
+    <userTimeInSec>0.6</userTimeInSec>
+    <systemTimeInSec>0.2</systemTimeInSec>
     <name>zTopBuild/Main_flow/Pre-split_flow/Pre-split_flow_(post-equi)/Pre-split_clock_processing/FILTER_GLITCHES_SYNCHRONOUS/FGS_process</name>
   </Row>
   <Row>
     <step> 187</step>
     <vm>818</vm>
     <vmdelta>0</vmdelta>
-    <um>292</um>
+    <um>301</um>
     <umdelta>0</umdelta>
-    <freeMem>174098</freeMem>
+    <freeMem>171240</freeMem>
     <cpu>0.00</cpu>
     <load>0.00</load>
     <elapsedTimeInSec>0</elapsedTimeInSec>
@@ -2683,9 +2683,9 @@
     <step> 188</step>
     <vm>818</vm>
     <vmdelta>0</vmdelta>
-    <um>292</um>
+    <um>301</um>
     <umdelta>0</umdelta>
-    <freeMem>174098</freeMem>
+    <freeMem>171240</freeMem>
     <cpu>0.00</cpu>
     <load>0.00</load>
     <elapsedTimeInSec>0</elapsedTimeInSec>
@@ -2697,23 +2697,23 @@
     <step> 188</step>
     <vm>818</vm>
     <vmdelta>4</vmdelta>
-    <um>292</um>
-    <umdelta>5</umdelta>
-    <freeMem>174098</freeMem>
-    <cpu>54.42</cpu>
+    <um>301</um>
+    <umdelta>4</umdelta>
+    <freeMem>171240</freeMem>
+    <cpu>86.39</cpu>
     <load>0.00</load>
-    <elapsedTimeInSec>0.18</elapsedTimeInSec>
-    <userTimeInSec>0.7</userTimeInSec>
-    <systemTimeInSec>0.3</systemTimeInSec>
+    <elapsedTimeInSec>0.12</elapsedTimeInSec>
+    <userTimeInSec>0.8</userTimeInSec>
+    <systemTimeInSec>0.2</systemTimeInSec>
     <name>zTopBuild/Main_flow/Pre-split_flow/Pre-split_flow_(post-equi)/Pre-split_clock_processing/FILTER_GLITCHES_SYNCHRONOUS</name>
   </Row>
   <Row>
     <step> 189</step>
     <vm>818</vm>
     <vmdelta>0</vmdelta>
-    <um>292</um>
+    <um>301</um>
     <umdelta>0</umdelta>
-    <freeMem>174098</freeMem>
+    <freeMem>171240</freeMem>
     <cpu>0.00</cpu>
     <load>0.00</load>
     <elapsedTimeInSec>0</elapsedTimeInSec>
@@ -2725,13 +2725,13 @@
     <step> 191</step>
     <vm>818</vm>
     <vmdelta>0</vmdelta>
-    <um>292</um>
+    <um>301</um>
     <umdelta>0</umdelta>
-    <freeMem>174098</freeMem>
-    <cpu>1000.00</cpu>
+    <freeMem>171240</freeMem>
+    <cpu>0.00</cpu>
     <load>0.00</load>
-    <elapsedTimeInSec>0</elapsedTimeInSec>
-    <userTimeInSec>0.1</userTimeInSec>
+    <elapsedTimeInSec>0.1</elapsedTimeInSec>
+    <userTimeInSec>0</userTimeInSec>
     <systemTimeInSec>0</systemTimeInSec>
     <name>zTopBuild/Main_flow/Pre-split_flow/Pre-split_flow_(post-equi)/Pre-split_clock_processing/SCC_REDUCTION_Post-FGS_Loop_Breaking/Compute_hier_wires_upfront</name>
   </Row>
@@ -2739,9 +2739,9 @@
     <step> 193</step>
     <vm>818</vm>
     <vmdelta>0</vmdelta>
-    <um>292</um>
+    <um>301</um>
     <umdelta>0</umdelta>
-    <freeMem>174098</freeMem>
+    <freeMem>171240</freeMem>
     <cpu>0.00</cpu>
     <load>0.00</load>
     <elapsedTimeInSec>0</elapsedTimeInSec>
@@ -2753,9 +2753,9 @@
     <step> 194</step>
     <vm>818</vm>
     <vmdelta>0</vmdelta>
-    <um>292</um>
+    <um>301</um>
     <umdelta>0</umdelta>
-    <freeMem>174098</freeMem>
+    <freeMem>171240</freeMem>
     <cpu>0.00</cpu>
     <load>0.00</load>
     <elapsedTimeInSec>0</elapsedTimeInSec>
@@ -2767,9 +2767,9 @@
     <step> 194</step>
     <vm>818</vm>
     <vmdelta>0</vmdelta>
-    <um>292</um>
+    <um>301</um>
     <umdelta>0</umdelta>
-    <freeMem>174098</freeMem>
+    <freeMem>171240</freeMem>
     <cpu>0.00</cpu>
     <load>0.00</load>
     <elapsedTimeInSec>0</elapsedTimeInSec>
@@ -2781,10 +2781,10 @@
     <step> 195</step>
     <vm>818</vm>
     <vmdelta>0</vmdelta>
-    <um>292</um>
+    <um>301</um>
     <umdelta>0</umdelta>
-    <freeMem>174098</freeMem>
-    <cpu>2000.00</cpu>
+    <freeMem>171240</freeMem>
+    <cpu>4000.00</cpu>
     <load>0.00</load>
     <elapsedTimeInSec>0</elapsedTimeInSec>
     <userTimeInSec>0.1</userTimeInSec>
@@ -2795,9 +2795,9 @@
     <step> 196</step>
     <vm>818</vm>
     <vmdelta>0</vmdelta>
-    <um>292</um>
+    <um>301</um>
     <umdelta>0</umdelta>
-    <freeMem>174098</freeMem>
+    <freeMem>171240</freeMem>
     <cpu>0.00</cpu>
     <load>0.00</load>
     <elapsedTimeInSec>0</elapsedTimeInSec>
@@ -2809,9 +2809,9 @@
     <step> 197</step>
     <vm>818</vm>
     <vmdelta>0</vmdelta>
-    <um>292</um>
+    <um>301</um>
     <umdelta>0</umdelta>
-    <freeMem>174098</freeMem>
+    <freeMem>171240</freeMem>
     <cpu>0.00</cpu>
     <load>0.00</load>
     <elapsedTimeInSec>0</elapsedTimeInSec>
@@ -2823,13 +2823,13 @@
     <step> 197</step>
     <vm>818</vm>
     <vmdelta>0</vmdelta>
-    <um>292</um>
+    <um>301</um>
     <umdelta>0</umdelta>
-    <freeMem>174098</freeMem>
-    <cpu>1111.11</cpu>
+    <freeMem>171240</freeMem>
+    <cpu>1000.00</cpu>
     <load>0.00</load>
-    <elapsedTimeInSec>0</elapsedTimeInSec>
-    <userTimeInSec>0.4</userTimeInSec>
+    <elapsedTimeInSec>0.1</elapsedTimeInSec>
+    <userTimeInSec>0.3</userTimeInSec>
     <systemTimeInSec>0.1</systemTimeInSec>
     <name>zTopBuild/Main_flow/Pre-split_flow/Pre-split_flow_(post-equi)/Pre-split_clock_processing/SCC_REDUCTION_Post-FGS_Loop_Breaking</name>
   </Row>
@@ -2837,23 +2837,23 @@
     <step> 197</step>
     <vm>818</vm>
     <vmdelta>4</vmdelta>
-    <um>292</um>
-    <umdelta>5</umdelta>
-    <freeMem>174098</freeMem>
-    <cpu>101.05</cpu>
+    <um>301</um>
+    <umdelta>4</umdelta>
+    <freeMem>171240</freeMem>
+    <cpu>159.75</cpu>
     <load>0.00</load>
-    <elapsedTimeInSec>0.24</elapsedTimeInSec>
-    <userTimeInSec>0.19</userTimeInSec>
-    <systemTimeInSec>0.5</systemTimeInSec>
+    <elapsedTimeInSec>0.17</elapsedTimeInSec>
+    <userTimeInSec>0.20</userTimeInSec>
+    <systemTimeInSec>0.6</systemTimeInSec>
     <name>zTopBuild/Main_flow/Pre-split_flow/Pre-split_flow_(post-equi)/Pre-split_clock_processing</name>
   </Row>
   <Row>
     <step> 198</step>
     <vm>818</vm>
     <vmdelta>0</vmdelta>
-    <um>293</um>
+    <um>302</um>
     <umdelta>0</umdelta>
-    <freeMem>174098</freeMem>
+    <freeMem>171240</freeMem>
     <cpu>0.00</cpu>
     <load>0.00</load>
     <elapsedTimeInSec>0</elapsedTimeInSec>
@@ -2865,9 +2865,9 @@
     <step> 199</step>
     <vm>818</vm>
     <vmdelta>0</vmdelta>
-    <um>293</um>
+    <um>302</um>
     <umdelta>0</umdelta>
-    <freeMem>174098</freeMem>
+    <freeMem>171240</freeMem>
     <cpu>0.00</cpu>
     <load>0.00</load>
     <elapsedTimeInSec>0.1</elapsedTimeInSec>
@@ -2879,13 +2879,13 @@
     <step> 200</step>
     <vm>818</vm>
     <vmdelta>0</vmdelta>
-    <um>293</um>
+    <um>302</um>
     <umdelta>0</umdelta>
-    <freeMem>174098</freeMem>
-    <cpu>0.00</cpu>
+    <freeMem>171240</freeMem>
+    <cpu>4000.00</cpu>
     <load>0.00</load>
     <elapsedTimeInSec>0</elapsedTimeInSec>
-    <userTimeInSec>0</userTimeInSec>
+    <userTimeInSec>0.1</userTimeInSec>
     <systemTimeInSec>0</systemTimeInSec>
     <name>zTopBuild/Main_flow/Pre-split_flow/Pre-split_flow_(post-equi)/Dumping_the_properties_of_hierarchies_into_the_Verdi_DB</name>
   </Row>
@@ -2893,13 +2893,13 @@
     <step> 200</step>
     <vm>818</vm>
     <vmdelta>4</vmdelta>
-    <um>293</um>
+    <um>302</um>
     <umdelta>16</umdelta>
-    <freeMem>174098</freeMem>
-    <cpu>79.46</cpu>
+    <freeMem>171240</freeMem>
+    <cpu>99.75</cpu>
     <load>0.00</load>
-    <elapsedTimeInSec>0.81</elapsedTimeInSec>
-    <userTimeInSec>0.47</userTimeInSec>
+    <elapsedTimeInSec>0.71</elapsedTimeInSec>
+    <userTimeInSec>0.52</userTimeInSec>
     <systemTimeInSec>0.18</systemTimeInSec>
     <name>zTopBuild/Main_flow/Pre-split_flow/Pre-split_flow_(post-equi)</name>
   </Row>
@@ -2907,13 +2907,13 @@
     <step> 200</step>
     <vm>818</vm>
     <vmdelta>4</vmdelta>
-    <um>293</um>
+    <um>302</um>
     <umdelta>16</umdelta>
-    <freeMem>174098</freeMem>
-    <cpu>79.44</cpu>
+    <freeMem>171240</freeMem>
+    <cpu>99.75</cpu>
     <load>0.00</load>
-    <elapsedTimeInSec>0.81</elapsedTimeInSec>
-    <userTimeInSec>0.47</userTimeInSec>
+    <elapsedTimeInSec>0.71</elapsedTimeInSec>
+    <userTimeInSec>0.52</userTimeInSec>
     <systemTimeInSec>0.18</systemTimeInSec>
     <name>zTopBuild/Main_flow/Pre-split_flow</name>
   </Row>
@@ -2921,13 +2921,13 @@
     <step> 202</step>
     <vm>1586</vm>
     <vmdelta>768</vmdelta>
-    <um>298</um>
+    <um>307</um>
     <umdelta>4</umdelta>
-    <freeMem>174094</freeMem>
-    <cpu>16.49</cpu>
+    <freeMem>171236</freeMem>
+    <cpu>12.12</cpu>
     <load>0.00</load>
-    <elapsedTimeInSec>0.13</elapsedTimeInSec>
-    <userTimeInSec>0.1</userTimeInSec>
+    <elapsedTimeInSec>0.8</elapsedTimeInSec>
+    <userTimeInSec>0</userTimeInSec>
     <systemTimeInSec>0.1</systemTimeInSec>
     <name>zTopBuild/Main_flow/Partitioning_flow/MODELGEN</name>
   </Row>
@@ -2935,51 +2935,51 @@
     <step> 203</step>
     <vm>1586</vm>
     <vmdelta>0</vmdelta>
-    <um>298</um>
+    <um>307</um>
     <umdelta>0</umdelta>
-    <freeMem>174094</freeMem>
-    <cpu>42.11</cpu>
+    <freeMem>171236</freeMem>
+    <cpu>30.53</cpu>
     <load>0.00</load>
-    <elapsedTimeInSec>0.4</elapsedTimeInSec>
+    <elapsedTimeInSec>0.3</elapsedTimeInSec>
     <userTimeInSec>0.1</userTimeInSec>
-    <systemTimeInSec>0.1</systemTimeInSec>
+    <systemTimeInSec>0</systemTimeInSec>
     <name>zTopBuild/Main_flow/Partitioning_flow/Partitioner</name>
   </Row>
   <Row>
     <step> 203</step>
     <vm>1586</vm>
     <vmdelta>768</vmdelta>
-    <um>299</um>
+    <um>308</um>
     <umdelta>6</umdelta>
-    <freeMem>174094</freeMem>
-    <cpu>21.26</cpu>
+    <freeMem>171236</freeMem>
+    <cpu>26.32</cpu>
     <load>0.00</load>
-    <elapsedTimeInSec>0.42</elapsedTimeInSec>
+    <elapsedTimeInSec>0.30</elapsedTimeInSec>
     <userTimeInSec>0.6</userTimeInSec>
-    <systemTimeInSec>0.3</systemTimeInSec>
+    <systemTimeInSec>0.2</systemTimeInSec>
     <name>zTopBuild/Main_flow/Partitioning_flow</name>
   </Row>
   <Row>
     <step> 204</step>
     <vm>1586</vm>
     <vmdelta>0</vmdelta>
-    <um>299</um>
+    <um>308</um>
     <umdelta>0</umdelta>
-    <freeMem>174094</freeMem>
+    <freeMem>171236</freeMem>
     <cpu>666.67</cpu>
     <load>0.00</load>
     <elapsedTimeInSec>0</elapsedTimeInSec>
-    <userTimeInSec>0</userTimeInSec>
-    <systemTimeInSec>0.1</systemTimeInSec>
+    <userTimeInSec>0.1</userTimeInSec>
+    <systemTimeInSec>0</systemTimeInSec>
     <name>zTopBuild/Main_flow/Data_localization</name>
   </Row>
   <Row>
     <step> 205</step>
     <vm>1586</vm>
     <vmdelta>0</vmdelta>
-    <um>299</um>
+    <um>308</um>
     <umdelta>0</umdelta>
-    <freeMem>174094</freeMem>
+    <freeMem>171236</freeMem>
     <cpu>0.00</cpu>
     <load>0.00</load>
     <elapsedTimeInSec>0</elapsedTimeInSec>
@@ -2991,27 +2991,27 @@
     <step> 209</step>
     <vm>1586</vm>
     <vmdelta>0</vmdelta>
-    <um>299</um>
+    <um>308</um>
     <umdelta>0</umdelta>
-    <freeMem>174094</freeMem>
-    <cpu>12000.00</cpu>
+    <freeMem>171236</freeMem>
+    <cpu>1600.00</cpu>
     <load>0.00</load>
     <elapsedTimeInSec>0</elapsedTimeInSec>
     <userTimeInSec>0.1</userTimeInSec>
-    <systemTimeInSec>0.2</systemTimeInSec>
+    <systemTimeInSec>0.1</systemTimeInSec>
     <name>zTopBuild/Main_flow/Resilient_localize_clock/RLC_Clock_Cone_Light/Instantiate_cone/Instantiate_NPCK_zvu_synchro_db</name>
   </Row>
   <Row>
     <step> 209</step>
     <vm>1586</vm>
     <vmdelta>0</vmdelta>
-    <um>299</um>
+    <um>308</um>
     <umdelta>0</umdelta>
-    <freeMem>174094</freeMem>
-    <cpu>1600.00</cpu>
+    <freeMem>171236</freeMem>
+    <cpu>1818.18</cpu>
     <load>0.00</load>
-    <elapsedTimeInSec>0</elapsedTimeInSec>
-    <userTimeInSec>0.2</userTimeInSec>
+    <elapsedTimeInSec>0.1</elapsedTimeInSec>
+    <userTimeInSec>0.3</userTimeInSec>
     <systemTimeInSec>0.2</systemTimeInSec>
     <name>zTopBuild/Main_flow/Resilient_localize_clock/RLC_Clock_Cone_Light/Instantiate_cone</name>
   </Row>
@@ -3019,13 +3019,13 @@
     <step> 210</step>
     <vm>1586</vm>
     <vmdelta>0</vmdelta>
-    <um>299</um>
+    <um>308</um>
     <umdelta>0</umdelta>
-    <freeMem>174094</freeMem>
-    <cpu>4000.00</cpu>
+    <freeMem>171236</freeMem>
+    <cpu>0.00</cpu>
     <load>0.00</load>
     <elapsedTimeInSec>0</elapsedTimeInSec>
-    <userTimeInSec>0.1</userTimeInSec>
+    <userTimeInSec>0</userTimeInSec>
     <systemTimeInSec>0</systemTimeInSec>
     <name>zTopBuild/Main_flow/Resilient_localize_clock/RLC_Clock_Cone_Light/createClockConeInfos</name>
   </Row>
@@ -3033,9 +3033,9 @@
     <step> 211</step>
     <vm>1586</vm>
     <vmdelta>0</vmdelta>
-    <um>299</um>
+    <um>308</um>
     <umdelta>0</umdelta>
-    <freeMem>174094</freeMem>
+    <freeMem>171236</freeMem>
     <cpu>0.00</cpu>
     <load>0.00</load>
     <elapsedTimeInSec>0</elapsedTimeInSec>
@@ -3047,13 +3047,13 @@
     <step> 211</step>
     <vm>1586</vm>
     <vmdelta>0</vmdelta>
-    <um>299</um>
+    <um>308</um>
     <umdelta>0</umdelta>
-    <freeMem>174094</freeMem>
-    <cpu>1000.00</cpu>
+    <freeMem>171236</freeMem>
+    <cpu>1333.33</cpu>
     <load>0.00</load>
-    <elapsedTimeInSec>0</elapsedTimeInSec>
-    <userTimeInSec>0.3</userTimeInSec>
+    <elapsedTimeInSec>0.1</elapsedTimeInSec>
+    <userTimeInSec>0.4</userTimeInSec>
     <systemTimeInSec>0.2</systemTimeInSec>
     <name>zTopBuild/Main_flow/Resilient_localize_clock/RLC_Clock_Cone_Light</name>
   </Row>
@@ -3061,23 +3061,23 @@
     <step> 212</step>
     <vm>1586</vm>
     <vmdelta>0</vmdelta>
-    <um>299</um>
+    <um>308</um>
     <umdelta>0</umdelta>
-    <freeMem>174094</freeMem>
-    <cpu>4000.00</cpu>
+    <freeMem>171236</freeMem>
+    <cpu>1600.00</cpu>
     <load>0.00</load>
     <elapsedTimeInSec>0</elapsedTimeInSec>
-    <userTimeInSec>0.1</userTimeInSec>
-    <systemTimeInSec>0.1</systemTimeInSec>
+    <userTimeInSec>0</userTimeInSec>
+    <systemTimeInSec>0.2</systemTimeInSec>
     <name>zTopBuild/Main_flow/Resilient_localize_clock/Advanced_localizeClock_getItemInfos</name>
   </Row>
   <Row>
     <step> 214</step>
     <vm>1586</vm>
     <vmdelta>0</vmdelta>
-    <um>299</um>
+    <um>308</um>
     <umdelta>0</umdelta>
-    <freeMem>174094</freeMem>
+    <freeMem>171236</freeMem>
     <cpu>0.00</cpu>
     <load>0.00</load>
     <elapsedTimeInSec>0</elapsedTimeInSec>
@@ -3089,9 +3089,9 @@
     <step> 214</step>
     <vm>1586</vm>
     <vmdelta>0</vmdelta>
-    <um>299</um>
+    <um>308</um>
     <umdelta>0</umdelta>
-    <freeMem>174094</freeMem>
+    <freeMem>171236</freeMem>
     <cpu>0.00</cpu>
     <load>0.00</load>
     <elapsedTimeInSec>0</elapsedTimeInSec>
@@ -3103,9 +3103,9 @@
     <step> 216</step>
     <vm>1586</vm>
     <vmdelta>0</vmdelta>
-    <um>303</um>
+    <um>312</um>
     <umdelta>0</umdelta>
-    <freeMem>174090</freeMem>
+    <freeMem>171232</freeMem>
     <cpu>0.00</cpu>
     <load>0.00</load>
     <elapsedTimeInSec>0</elapsedTimeInSec>
@@ -3117,9 +3117,9 @@
     <step> 216</step>
     <vm>1586</vm>
     <vmdelta>0</vmdelta>
-    <um>303</um>
+    <um>312</um>
     <umdelta>4</umdelta>
-    <freeMem>174090</freeMem>
+    <freeMem>171232</freeMem>
     <cpu>0.00</cpu>
     <load>0.00</load>
     <elapsedTimeInSec>0.2</elapsedTimeInSec>
@@ -3131,23 +3131,23 @@
     <step> 216</step>
     <vm>1586</vm>
     <vmdelta>0</vmdelta>
-    <um>303</um>
+    <um>312</um>
     <umdelta>4</umdelta>
-    <freeMem>174090</freeMem>
-    <cpu>239.32</cpu>
+    <freeMem>171232</freeMem>
+    <cpu>251.97</cpu>
     <load>0.00</load>
     <elapsedTimeInSec>0.3</elapsedTimeInSec>
     <userTimeInSec>0.4</userTimeInSec>
-    <systemTimeInSec>0.3</systemTimeInSec>
+    <systemTimeInSec>0.4</systemTimeInSec>
     <name>zTopBuild/Main_flow/Resilient_localize_clock</name>
   </Row>
   <Row>
     <step> 217</step>
     <vm>1586</vm>
     <vmdelta>0</vmdelta>
-    <um>303</um>
+    <um>312</um>
     <umdelta>0</umdelta>
-    <freeMem>174090</freeMem>
+    <freeMem>171232</freeMem>
     <cpu>0.00</cpu>
     <load>0.00</load>
     <elapsedTimeInSec>0</elapsedTimeInSec>
@@ -3159,9 +3159,9 @@
     <step> 219</step>
     <vm>1586</vm>
     <vmdelta>0</vmdelta>
-    <um>303</um>
+    <um>312</um>
     <umdelta>0</umdelta>
-    <freeMem>174090</freeMem>
+    <freeMem>171232</freeMem>
     <cpu>0.00</cpu>
     <load>0.00</load>
     <elapsedTimeInSec>0</elapsedTimeInSec>
@@ -3173,9 +3173,9 @@
     <step> 220</step>
     <vm>1586</vm>
     <vmdelta>0</vmdelta>
-    <um>303</um>
+    <um>312</um>
     <umdelta>0</umdelta>
-    <freeMem>174090</freeMem>
+    <freeMem>171232</freeMem>
     <cpu>0.00</cpu>
     <load>0.00</load>
     <elapsedTimeInSec>0</elapsedTimeInSec>
@@ -3187,9 +3187,9 @@
     <step> 222</step>
     <vm>1586</vm>
     <vmdelta>0</vmdelta>
-    <um>303</um>
+    <um>312</um>
     <umdelta>0</umdelta>
-    <freeMem>174090</freeMem>
+    <freeMem>171232</freeMem>
     <cpu>0.00</cpu>
     <load>0.00</load>
     <elapsedTimeInSec>0</elapsedTimeInSec>
@@ -3201,12 +3201,12 @@
     <step> 223</step>
     <vm>1586</vm>
     <vmdelta>0</vmdelta>
-    <um>303</um>
+    <um>312</um>
     <umdelta>0</umdelta>
-    <freeMem>174090</freeMem>
+    <freeMem>171232</freeMem>
     <cpu>0.00</cpu>
     <load>0.00</load>
-    <elapsedTimeInSec>0.1</elapsedTimeInSec>
+    <elapsedTimeInSec>0</elapsedTimeInSec>
     <userTimeInSec>0</userTimeInSec>
     <systemTimeInSec>0</systemTimeInSec>
     <name>zTopBuild/Main_flow/Split_flow/Netlist_splitting./Split_connection_copy.</name>
@@ -3215,9 +3215,9 @@
     <step> 225</step>
     <vm>1586</vm>
     <vmdelta>0</vmdelta>
-    <um>303</um>
+    <um>312</um>
     <umdelta>0</umdelta>
-    <freeMem>174090</freeMem>
+    <freeMem>171232</freeMem>
     <cpu>0.00</cpu>
     <load>0.00</load>
     <elapsedTimeInSec>0</elapsedTimeInSec>
@@ -3229,9 +3229,9 @@
     <step> 226</step>
     <vm>1586</vm>
     <vmdelta>0</vmdelta>
-    <um>303</um>
+    <um>312</um>
     <umdelta>0</umdelta>
-    <freeMem>174090</freeMem>
+    <freeMem>171232</freeMem>
     <cpu>0.00</cpu>
     <load>0.00</load>
     <elapsedTimeInSec>0</elapsedTimeInSec>
@@ -3243,9 +3243,9 @@
     <step> 227</step>
     <vm>1586</vm>
     <vmdelta>0</vmdelta>
-    <um>303</um>
+    <um>312</um>
     <umdelta>0</umdelta>
-    <freeMem>174090</freeMem>
+    <freeMem>171232</freeMem>
     <cpu>0.00</cpu>
     <load>0.00</load>
     <elapsedTimeInSec>0</elapsedTimeInSec>
@@ -3257,9 +3257,9 @@
     <step> 227</step>
     <vm>1586</vm>
     <vmdelta>0</vmdelta>
-    <um>303</um>
+    <um>312</um>
     <umdelta>0</umdelta>
-    <freeMem>174090</freeMem>
+    <freeMem>171232</freeMem>
     <cpu>0.00</cpu>
     <load>0.00</load>
     <elapsedTimeInSec>0</elapsedTimeInSec>
@@ -3271,37 +3271,37 @@
     <step> 227</step>
     <vm>1586</vm>
     <vmdelta>0</vmdelta>
-    <um>303</um>
+    <um>312</um>
     <umdelta>0</umdelta>
-    <freeMem>174090</freeMem>
-    <cpu>0.00</cpu>
+    <freeMem>171232</freeMem>
+    <cpu>133.33</cpu>
     <load>0.00</load>
-    <elapsedTimeInSec>0.1</elapsedTimeInSec>
+    <elapsedTimeInSec>0</elapsedTimeInSec>
     <userTimeInSec>0</userTimeInSec>
-    <systemTimeInSec>0</systemTimeInSec>
+    <systemTimeInSec>0.1</systemTimeInSec>
     <name>zTopBuild/Main_flow/Split_flow/Netlist_splitting.</name>
   </Row>
   <Row>
     <step> 227</step>
     <vm>1586</vm>
     <vmdelta>0</vmdelta>
-    <um>303</um>
+    <um>312</um>
     <umdelta>0</umdelta>
-    <freeMem>174090</freeMem>
-    <cpu>56.34</cpu>
+    <freeMem>171232</freeMem>
+    <cpu>97.56</cpu>
     <load>0.00</load>
     <elapsedTimeInSec>0.2</elapsedTimeInSec>
     <userTimeInSec>0.1</userTimeInSec>
-    <systemTimeInSec>0</systemTimeInSec>
+    <systemTimeInSec>0.1</systemTimeInSec>
     <name>zTopBuild/Main_flow/Split_flow</name>
   </Row>
   <Row>
     <step> 229</step>
     <vm>1586</vm>
     <vmdelta>0</vmdelta>
-    <um>303</um>
+    <um>312</um>
     <umdelta>0</umdelta>
-    <freeMem>174090</freeMem>
+    <freeMem>171232</freeMem>
     <cpu>0.00</cpu>
     <load>0.00</load>
     <elapsedTimeInSec>0</elapsedTimeInSec>
@@ -3313,9 +3313,9 @@
     <step> 231</step>
     <vm>1586</vm>
     <vmdelta>0</vmdelta>
-    <um>303</um>
+    <um>312</um>
     <umdelta>0</umdelta>
-    <freeMem>174090</freeMem>
+    <freeMem>171232</freeMem>
     <cpu>0.00</cpu>
     <load>0.00</load>
     <elapsedTimeInSec>0</elapsedTimeInSec>
@@ -3327,9 +3327,9 @@
     <step> 231</step>
     <vm>1586</vm>
     <vmdelta>0</vmdelta>
-    <um>303</um>
+    <um>312</um>
     <umdelta>0</umdelta>
-    <freeMem>174090</freeMem>
+    <freeMem>171232</freeMem>
     <cpu>0.00</cpu>
     <load>0.00</load>
     <elapsedTimeInSec>0</elapsedTimeInSec>
@@ -3341,9 +3341,9 @@
     <step> 236</step>
     <vm>1586</vm>
     <vmdelta>0</vmdelta>
-    <um>303</um>
+    <um>312</um>
     <umdelta>0</umdelta>
-    <freeMem>174090</freeMem>
+    <freeMem>171232</freeMem>
     <cpu>0.00</cpu>
     <load>0.00</load>
     <elapsedTimeInSec>0</elapsedTimeInSec>
@@ -3355,79 +3355,79 @@
     <step> 237</step>
     <vm>1586</vm>
     <vmdelta>0</vmdelta>
-    <um>303</um>
+    <um>312</um>
     <umdelta>0</umdelta>
-    <freeMem>174090</freeMem>
-    <cpu>1333.33</cpu>
+    <freeMem>171232</freeMem>
+    <cpu>571.43</cpu>
     <load>0.00</load>
     <elapsedTimeInSec>0</elapsedTimeInSec>
     <userTimeInSec>0.2</userTimeInSec>
-    <systemTimeInSec>0.1</systemTimeInSec>
+    <systemTimeInSec>0</systemTimeInSec>
     <name>zTopBuild/Main_flow/Post-split_flow/Post-split_cleanups./loadless_logic_removal./Post-split_Netlist_Cleanup./LO/TRACE_TFI</name>
   </Row>
   <Row>
     <step> 238</step>
     <vm>1586</vm>
     <vmdelta>0</vmdelta>
-    <um>303</um>
+    <um>312</um>
     <umdelta>0</umdelta>
-    <freeMem>174090</freeMem>
-    <cpu>1500.00</cpu>
+    <freeMem>171232</freeMem>
+    <cpu>1333.33</cpu>
     <load>0.00</load>
-    <elapsedTimeInSec>0.1</elapsedTimeInSec>
-    <userTimeInSec>0.2</userTimeInSec>
-    <systemTimeInSec>0.1</systemTimeInSec>
+    <elapsedTimeInSec>0</elapsedTimeInSec>
+    <userTimeInSec>0.3</userTimeInSec>
+    <systemTimeInSec>0</systemTimeInSec>
     <name>zTopBuild/Main_flow/Post-split_flow/Post-split_cleanups./loadless_logic_removal./Post-split_Netlist_Cleanup./LO/SIMPLIFY</name>
   </Row>
   <Row>
     <step> 238</step>
     <vm>1586</vm>
     <vmdelta>0</vmdelta>
-    <um>303</um>
+    <um>312</um>
     <umdelta>0</umdelta>
-    <freeMem>174090</freeMem>
-    <cpu>1333.33</cpu>
+    <freeMem>171232</freeMem>
+    <cpu>1103.45</cpu>
     <load>0.00</load>
-    <elapsedTimeInSec>0.1</elapsedTimeInSec>
-    <userTimeInSec>0.5</userTimeInSec>
-    <systemTimeInSec>0.2</systemTimeInSec>
+    <elapsedTimeInSec>0</elapsedTimeInSec>
+    <userTimeInSec>0.8</userTimeInSec>
+    <systemTimeInSec>0</systemTimeInSec>
     <name>zTopBuild/Main_flow/Post-split_flow/Post-split_cleanups./loadless_logic_removal./Post-split_Netlist_Cleanup./LO</name>
   </Row>
   <Row>
     <step> 238</step>
     <vm>1586</vm>
     <vmdelta>0</vmdelta>
-    <um>303</um>
+    <um>312</um>
     <umdelta>0</umdelta>
-    <freeMem>174090</freeMem>
-    <cpu>1272.73</cpu>
+    <freeMem>171232</freeMem>
+    <cpu>1066.67</cpu>
     <load>0.00</load>
-    <elapsedTimeInSec>0.1</elapsedTimeInSec>
-    <userTimeInSec>0.5</userTimeInSec>
-    <systemTimeInSec>0.2</systemTimeInSec>
+    <elapsedTimeInSec>0</elapsedTimeInSec>
+    <userTimeInSec>0.8</userTimeInSec>
+    <systemTimeInSec>0</systemTimeInSec>
     <name>zTopBuild/Main_flow/Post-split_flow/Post-split_cleanups./loadless_logic_removal./Post-split_Netlist_Cleanup.</name>
   </Row>
   <Row>
     <step> 238</step>
     <vm>1586</vm>
     <vmdelta>0</vmdelta>
-    <um>303</um>
+    <um>312</um>
     <umdelta>0</umdelta>
-    <freeMem>174090</freeMem>
-    <cpu>1166.67</cpu>
+    <freeMem>171232</freeMem>
+    <cpu>1032.26</cpu>
     <load>0.00</load>
-    <elapsedTimeInSec>0.1</elapsedTimeInSec>
-    <userTimeInSec>0.5</userTimeInSec>
-    <systemTimeInSec>0.2</systemTimeInSec>
+    <elapsedTimeInSec>0</elapsedTimeInSec>
+    <userTimeInSec>0.8</userTimeInSec>
+    <systemTimeInSec>0</systemTimeInSec>
     <name>zTopBuild/Main_flow/Post-split_flow/Post-split_cleanups./loadless_logic_removal.</name>
   </Row>
   <Row>
     <step> 239</step>
     <vm>1586</vm>
     <vmdelta>0</vmdelta>
-    <um>303</um>
+    <um>312</um>
     <umdelta>0</umdelta>
-    <freeMem>174090</freeMem>
+    <freeMem>171232</freeMem>
     <cpu>0.00</cpu>
     <load>0.00</load>
     <elapsedTimeInSec>0</elapsedTimeInSec>
@@ -3439,23 +3439,23 @@
     <step> 239</step>
     <vm>1586</vm>
     <vmdelta>0</vmdelta>
-    <um>303</um>
+    <um>312</um>
     <umdelta>0</umdelta>
-    <freeMem>174090</freeMem>
-    <cpu>1076.92</cpu>
+    <freeMem>171232</freeMem>
+    <cpu>941.18</cpu>
     <load>0.00</load>
     <elapsedTimeInSec>0.1</elapsedTimeInSec>
-    <userTimeInSec>0.5</userTimeInSec>
-    <systemTimeInSec>0.2</systemTimeInSec>
+    <userTimeInSec>0.8</userTimeInSec>
+    <systemTimeInSec>0</systemTimeInSec>
     <name>zTopBuild/Main_flow/Post-split_flow/Post-split_cleanups.</name>
   </Row>
   <Row>
     <step> 240</step>
     <vm>1586</vm>
     <vmdelta>0</vmdelta>
-    <um>303</um>
+    <um>312</um>
     <umdelta>0</umdelta>
-    <freeMem>174090</freeMem>
+    <freeMem>171232</freeMem>
     <cpu>0.00</cpu>
     <load>0.00</load>
     <elapsedTimeInSec>0</elapsedTimeInSec>
@@ -3467,13 +3467,13 @@
     <step> 243</step>
     <vm>1586</vm>
     <vmdelta>0</vmdelta>
-    <um>303</um>
+    <um>313</um>
     <umdelta>0</umdelta>
-    <freeMem>174090</freeMem>
+    <freeMem>171232</freeMem>
     <cpu>0.00</cpu>
     <load>0.00</load>
     <elapsedTimeInSec>0</elapsedTimeInSec>
-    <userTimeInSec>0.1</userTimeInSec>
+    <userTimeInSec>0</userTimeInSec>
     <systemTimeInSec>0</systemTimeInSec>
     <name>zTopBuild/Main_flow/Post-split_flow/Zcore_ports_marking./Mark_not_clock_wires./Partial_uniquify</name>
   </Row>
@@ -3481,13 +3481,13 @@
     <step> 243</step>
     <vm>1586</vm>
     <vmdelta>0</vmdelta>
-    <um>303</um>
+    <um>313</um>
     <umdelta>0</umdelta>
-    <freeMem>174090</freeMem>
-    <cpu>2000.00</cpu>
+    <freeMem>171232</freeMem>
+    <cpu>0.00</cpu>
     <load>0.00</load>
     <elapsedTimeInSec>0</elapsedTimeInSec>
-    <userTimeInSec>0.1</userTimeInSec>
+    <userTimeInSec>0</userTimeInSec>
     <systemTimeInSec>0</systemTimeInSec>
     <name>zTopBuild/Main_flow/Post-split_flow/Zcore_ports_marking./Mark_not_clock_wires.</name>
   </Row>
@@ -3495,13 +3495,13 @@
     <step> 243</step>
     <vm>1586</vm>
     <vmdelta>0</vmdelta>
-    <um>303</um>
-    <umdelta>0</umdelta>
-    <freeMem>174090</freeMem>
-    <cpu>1000.00</cpu>
+    <um>313</um>
+    <umdelta>1</umdelta>
+    <freeMem>171232</freeMem>
+    <cpu>0.00</cpu>
     <load>0.00</load>
     <elapsedTimeInSec>0</elapsedTimeInSec>
-    <userTimeInSec>0.1</userTimeInSec>
+    <userTimeInSec>0</userTimeInSec>
     <systemTimeInSec>0</systemTimeInSec>
     <name>zTopBuild/Main_flow/Post-split_flow/Zcore_ports_marking.</name>
   </Row>
@@ -3509,13 +3509,13 @@
     <step> 244</step>
     <vm>1586</vm>
     <vmdelta>0</vmdelta>
-    <um>303</um>
+    <um>313</um>
     <umdelta>0</umdelta>
-    <freeMem>174090</freeMem>
-    <cpu>0.00</cpu>
+    <freeMem>171232</freeMem>
+    <cpu>800.00</cpu>
     <load>0.00</load>
     <elapsedTimeInSec>0</elapsedTimeInSec>
-    <userTimeInSec>0</userTimeInSec>
+    <userTimeInSec>0.1</userTimeInSec>
     <systemTimeInSec>0</systemTimeInSec>
     <name>zTopBuild/Main_flow/Post-split_flow/Zcore_probe_generation.</name>
   </Row>
@@ -3523,9 +3523,9 @@
     <step> 245</step>
     <vm>1586</vm>
     <vmdelta>0</vmdelta>
-    <um>303</um>
+    <um>313</um>
     <umdelta>0</umdelta>
-    <freeMem>174090</freeMem>
+    <freeMem>171232</freeMem>
     <cpu>0.00</cpu>
     <load>0.00</load>
     <elapsedTimeInSec>0</elapsedTimeInSec>
@@ -3537,9 +3537,9 @@
     <step> 246</step>
     <vm>1586</vm>
     <vmdelta>0</vmdelta>
-    <um>303</um>
+    <um>313</um>
     <umdelta>0</umdelta>
-    <freeMem>174090</freeMem>
+    <freeMem>171232</freeMem>
     <cpu>0.00</cpu>
     <load>0.00</load>
     <elapsedTimeInSec>0</elapsedTimeInSec>
@@ -3551,23 +3551,23 @@
     <step> 247</step>
     <vm>1586</vm>
     <vmdelta>0</vmdelta>
-    <um>303</um>
+    <um>313</um>
     <umdelta>0</umdelta>
-    <freeMem>174090</freeMem>
-    <cpu>10.20</cpu>
+    <freeMem>171232</freeMem>
+    <cpu>11.76</cpu>
     <load>0.00</load>
-    <elapsedTimeInSec>0.10</elapsedTimeInSec>
-    <userTimeInSec>0</userTimeInSec>
-    <systemTimeInSec>0.1</systemTimeInSec>
+    <elapsedTimeInSec>0.9</elapsedTimeInSec>
+    <userTimeInSec>0.1</userTimeInSec>
+    <systemTimeInSec>0</systemTimeInSec>
     <name>zTopBuild/Main_flow/Post-split_flow/AC_TOP_Output_generation</name>
   </Row>
   <Row>
     <step> 248</step>
     <vm>1586</vm>
     <vmdelta>0</vmdelta>
-    <um>304</um>
+    <um>313</um>
     <umdelta>0</umdelta>
-    <freeMem>174090</freeMem>
+    <freeMem>171232</freeMem>
     <cpu>0.00</cpu>
     <load>0.00</load>
     <elapsedTimeInSec>0</elapsedTimeInSec>
@@ -3579,37 +3579,37 @@
     <step> 249</step>
     <vm>1586</vm>
     <vmdelta>0</vmdelta>
-    <um>304</um>
+    <um>313</um>
     <umdelta>0</umdelta>
-    <freeMem>174090</freeMem>
-    <cpu>33.61</cpu>
+    <freeMem>171232</freeMem>
+    <cpu>41.24</cpu>
     <load>0.00</load>
     <elapsedTimeInSec>0.3</elapsedTimeInSec>
-    <userTimeInSec>0.1</userTimeInSec>
-    <systemTimeInSec>0</systemTimeInSec>
+    <userTimeInSec>0</userTimeInSec>
+    <systemTimeInSec>0.1</systemTimeInSec>
     <name>zTopBuild/Main_flow/Post-split_flow/Generated_Netlist_statistics.</name>
   </Row>
   <Row>
     <step> 249</step>
     <vm>1586</vm>
     <vmdelta>0</vmdelta>
-    <um>304</um>
+    <um>313</um>
     <umdelta>1</umdelta>
-    <freeMem>174090</freeMem>
-    <cpu>64.04</cpu>
+    <freeMem>171232</freeMem>
+    <cpu>71.33</cpu>
     <load>0.00</load>
-    <elapsedTimeInSec>0.20</elapsedTimeInSec>
-    <userTimeInSec>0.8</userTimeInSec>
-    <systemTimeInSec>0.5</systemTimeInSec>
+    <elapsedTimeInSec>0.18</elapsedTimeInSec>
+    <userTimeInSec>0.11</userTimeInSec>
+    <systemTimeInSec>0.2</systemTimeInSec>
     <name>zTopBuild/Main_flow/Post-split_flow</name>
   </Row>
   <Row>
     <step> 251</step>
     <vm>1586</vm>
     <vmdelta>0</vmdelta>
-    <um>304</um>
+    <um>313</um>
     <umdelta>0</umdelta>
-    <freeMem>174090</freeMem>
+    <freeMem>171232</freeMem>
     <cpu>0.00</cpu>
     <load>0.00</load>
     <elapsedTimeInSec>0</elapsedTimeInSec>
@@ -3621,12 +3621,12 @@
     <step> 252</step>
     <vm>1586</vm>
     <vmdelta>0</vmdelta>
-    <um>304</um>
+    <um>313</um>
     <umdelta>0</umdelta>
-    <freeMem>174090</freeMem>
+    <freeMem>171232</freeMem>
     <cpu>0.00</cpu>
     <load>0.00</load>
-    <elapsedTimeInSec>0.1</elapsedTimeInSec>
+    <elapsedTimeInSec>0</elapsedTimeInSec>
     <userTimeInSec>0</userTimeInSec>
     <systemTimeInSec>0</systemTimeInSec>
     <name>zTopBuild/Main_flow/Generate_output_files/Netlist_cleanups</name>
@@ -3635,9 +3635,9 @@
     <step> 255</step>
     <vm>1586</vm>
     <vmdelta>0</vmdelta>
-    <um>304</um>
+    <um>313</um>
     <umdelta>0</umdelta>
-    <freeMem>174090</freeMem>
+    <freeMem>171232</freeMem>
     <cpu>0.00</cpu>
     <load>0.00</load>
     <elapsedTimeInSec>0</elapsedTimeInSec>
@@ -3649,12 +3649,12 @@
     <step> 255</step>
     <vm>1586</vm>
     <vmdelta>0</vmdelta>
-    <um>304</um>
+    <um>313</um>
     <umdelta>0</umdelta>
-    <freeMem>174090</freeMem>
+    <freeMem>171232</freeMem>
     <cpu>0.00</cpu>
     <load>0.00</load>
-    <elapsedTimeInSec>0</elapsedTimeInSec>
+    <elapsedTimeInSec>0.1</elapsedTimeInSec>
     <userTimeInSec>0</userTimeInSec>
     <systemTimeInSec>0</systemTimeInSec>
     <name>zTopBuild/Main_flow/Generate_output_files/Generate_top-wrapper_for_zPar/Signature_generation</name>
@@ -3663,26 +3663,26 @@
     <step> 255</step>
     <vm>1586</vm>
     <vmdelta>0</vmdelta>
-    <um>304</um>
+    <um>313</um>
     <umdelta>0</umdelta>
-    <freeMem>174090</freeMem>
-    <cpu>97.56</cpu>
+    <freeMem>171232</freeMem>
+    <cpu>0.00</cpu>
     <load>0.00</load>
     <elapsedTimeInSec>0.1</elapsedTimeInSec>
     <userTimeInSec>0</userTimeInSec>
-    <systemTimeInSec>0.1</systemTimeInSec>
+    <systemTimeInSec>0</systemTimeInSec>
     <name>zTopBuild/Main_flow/Generate_output_files/Generate_top-wrapper_for_zPar</name>
   </Row>
   <Row>
     <step> 256</step>
     <vm>1586</vm>
     <vmdelta>0</vmdelta>
-    <um>304</um>
+    <um>313</um>
     <umdelta>0</umdelta>
-    <freeMem>174090</freeMem>
+    <freeMem>171232</freeMem>
     <cpu>0.00</cpu>
     <load>0.00</load>
-    <elapsedTimeInSec>0</elapsedTimeInSec>
+    <elapsedTimeInSec>0.1</elapsedTimeInSec>
     <userTimeInSec>0</userTimeInSec>
     <systemTimeInSec>0</systemTimeInSec>
     <name>zTopBuild/Main_flow/Generate_output_files/Generate_commands_for_zPar</name>
@@ -3691,9 +3691,9 @@
     <step> 257</step>
     <vm>1586</vm>
     <vmdelta>0</vmdelta>
-    <um>304</um>
+    <um>313</um>
     <umdelta>0</umdelta>
-    <freeMem>174090</freeMem>
+    <freeMem>171232</freeMem>
     <cpu>0.00</cpu>
     <load>0.00</load>
     <elapsedTimeInSec>0.1</elapsedTimeInSec>
@@ -3705,12 +3705,12 @@
     <step> 258</step>
     <vm>1586</vm>
     <vmdelta>0</vmdelta>
-    <um>304</um>
+    <um>313</um>
     <umdelta>0</umdelta>
-    <freeMem>174090</freeMem>
+    <freeMem>171232</freeMem>
     <cpu>0.00</cpu>
     <load>0.00</load>
-    <elapsedTimeInSec>0.2</elapsedTimeInSec>
+    <elapsedTimeInSec>0.1</elapsedTimeInSec>
     <userTimeInSec>0</userTimeInSec>
     <systemTimeInSec>0</systemTimeInSec>
     <name>zTopBuild/Main_flow/Generate_output_files/Generate_design_configuration_script</name>
@@ -3719,9 +3719,9 @@
     <step> 262</step>
     <vm>1586</vm>
     <vmdelta>0</vmdelta>
-    <um>304</um>
+    <um>313</um>
     <umdelta>0</umdelta>
-    <freeMem>174090</freeMem>
+    <freeMem>171232</freeMem>
     <cpu>0.00</cpu>
     <load>0.00</load>
     <elapsedTimeInSec>0</elapsedTimeInSec>
@@ -3733,12 +3733,12 @@
     <step> 262</step>
     <vm>1586</vm>
     <vmdelta>0</vmdelta>
-    <um>304</um>
+    <um>313</um>
     <umdelta>0</umdelta>
-    <freeMem>174090</freeMem>
-    <cpu>74.07</cpu>
+    <freeMem>171232</freeMem>
+    <cpu>27.03</cpu>
     <load>0.00</load>
-    <elapsedTimeInSec>0.2</elapsedTimeInSec>
+    <elapsedTimeInSec>0.3</elapsedTimeInSec>
     <userTimeInSec>0.1</userTimeInSec>
     <systemTimeInSec>0</systemTimeInSec>
     <name>zTopBuild/Main_flow/Generate_output_files/zCore_netlist_generation./Parallel_edif_Driver/Signature_generation</name>
@@ -3747,12 +3747,12 @@
     <step> 262</step>
     <vm>1586</vm>
     <vmdelta>0</vmdelta>
-    <um>304</um>
+    <um>313</um>
     <umdelta>0</umdelta>
-    <freeMem>174089</freeMem>
-    <cpu>24.39</cpu>
+    <freeMem>171232</freeMem>
+    <cpu>14.55</cpu>
     <load>0.00</load>
-    <elapsedTimeInSec>0.4</elapsedTimeInSec>
+    <elapsedTimeInSec>0.7</elapsedTimeInSec>
     <userTimeInSec>0.1</userTimeInSec>
     <systemTimeInSec>0</systemTimeInSec>
     <name>zTopBuild/Main_flow/Generate_output_files/zCore_netlist_generation./Parallel_edif_Driver</name>
@@ -3761,9 +3761,9 @@
     <step> 263</step>
     <vm>1586</vm>
     <vmdelta>0</vmdelta>
-    <um>304</um>
+    <um>313</um>
     <umdelta>0</umdelta>
-    <freeMem>174089</freeMem>
+    <freeMem>171232</freeMem>
     <cpu>0.00</cpu>
     <load>0.00</load>
     <elapsedTimeInSec>0.1</elapsedTimeInSec>
@@ -3775,12 +3775,12 @@
     <step> 264</step>
     <vm>1586</vm>
     <vmdelta>0</vmdelta>
-    <um>304</um>
+    <um>313</um>
     <umdelta>0</umdelta>
-    <freeMem>174089</freeMem>
+    <freeMem>171232</freeMem>
     <cpu>0.00</cpu>
     <load>0.00</load>
-    <elapsedTimeInSec>0.1</elapsedTimeInSec>
+    <elapsedTimeInSec>0</elapsedTimeInSec>
     <userTimeInSec>0</userTimeInSec>
     <systemTimeInSec>0</systemTimeInSec>
     <name>zTopBuild/Main_flow/Generate_output_files/zCore_netlist_generation./Merge_script_generation</name>
@@ -3789,23 +3789,23 @@
     <step> 265</step>
     <vm>1586</vm>
     <vmdelta>0</vmdelta>
-    <um>304</um>
+    <um>313</um>
     <umdelta>0</umdelta>
-    <freeMem>174089</freeMem>
-    <cpu>173.91</cpu>
+    <freeMem>171232</freeMem>
+    <cpu>85.11</cpu>
     <load>0.00</load>
     <elapsedTimeInSec>0.1</elapsedTimeInSec>
     <userTimeInSec>0.1</userTimeInSec>
-    <systemTimeInSec>0.1</systemTimeInSec>
+    <systemTimeInSec>0</systemTimeInSec>
     <name>zTopBuild/Main_flow/Generate_output_files/zCore_netlist_generation./Signature_generation</name>
   </Row>
   <Row>
     <step> 268</step>
     <vm>1586</vm>
     <vmdelta>0</vmdelta>
-    <um>304</um>
+    <um>313</um>
     <umdelta>0</umdelta>
-    <freeMem>174089</freeMem>
+    <freeMem>171231</freeMem>
     <cpu>0.00</cpu>
     <load>0.00</load>
     <elapsedTimeInSec>0</elapsedTimeInSec>
@@ -3817,40 +3817,40 @@
     <step> 268</step>
     <vm>1586</vm>
     <vmdelta>0</vmdelta>
-    <um>304</um>
+    <um>313</um>
     <umdelta>0</umdelta>
-    <freeMem>174089</freeMem>
-    <cpu>200.00</cpu>
+    <freeMem>171231</freeMem>
+    <cpu>210.53</cpu>
     <load>0.00</load>
     <elapsedTimeInSec>0.1</elapsedTimeInSec>
-    <userTimeInSec>0.1</userTimeInSec>
-    <systemTimeInSec>0</systemTimeInSec>
+    <userTimeInSec>0</userTimeInSec>
+    <systemTimeInSec>0.1</systemTimeInSec>
     <name>zTopBuild/Main_flow/Generate_output_files/zCore_netlist_generation./Interface_netlist_generation/Signature_generation</name>
   </Row>
   <Row>
     <step> 268</step>
     <vm>1586</vm>
     <vmdelta>0</vmdelta>
-    <um>304</um>
+    <um>313</um>
     <umdelta>0</umdelta>
-    <freeMem>174089</freeMem>
-    <cpu>48.19</cpu>
+    <freeMem>171231</freeMem>
+    <cpu>100.00</cpu>
     <load>0.00</load>
     <elapsedTimeInSec>0.2</elapsedTimeInSec>
     <userTimeInSec>0.1</userTimeInSec>
-    <systemTimeInSec>0</systemTimeInSec>
+    <systemTimeInSec>0.1</systemTimeInSec>
     <name>zTopBuild/Main_flow/Generate_output_files/zCore_netlist_generation./Interface_netlist_generation</name>
   </Row>
   <Row>
     <step> 268</step>
     <vm>1586</vm>
     <vmdelta>0</vmdelta>
-    <um>304</um>
+    <um>313</um>
     <umdelta>0</umdelta>
-    <freeMem>174089</freeMem>
-    <cpu>43.01</cpu>
+    <freeMem>171231</freeMem>
+    <cpu>35.01</cpu>
     <load>0.00</load>
-    <elapsedTimeInSec>0.9</elapsedTimeInSec>
+    <elapsedTimeInSec>0.12</elapsedTimeInSec>
     <userTimeInSec>0.3</userTimeInSec>
     <systemTimeInSec>0.1</systemTimeInSec>
     <name>zTopBuild/Main_flow/Generate_output_files/zCore_netlist_generation.</name>
@@ -3859,9 +3859,9 @@
     <step> 269</step>
     <vm>1586</vm>
     <vmdelta>0</vmdelta>
-    <um>304</um>
+    <um>313</um>
     <umdelta>0</umdelta>
-    <freeMem>174089</freeMem>
+    <freeMem>171231</freeMem>
     <cpu>0.00</cpu>
     <load>0.00</load>
     <elapsedTimeInSec>0.1</elapsedTimeInSec>
@@ -3873,9 +3873,9 @@
     <step> 270</step>
     <vm>1586</vm>
     <vmdelta>0</vmdelta>
-    <um>304</um>
+    <um>313</um>
     <umdelta>0</umdelta>
-    <freeMem>174089</freeMem>
+    <freeMem>171231</freeMem>
     <cpu>0.00</cpu>
     <load>0.00</load>
     <elapsedTimeInSec>0.1</elapsedTimeInSec>
@@ -3887,12 +3887,12 @@
     <step> 271</step>
     <vm>1586</vm>
     <vmdelta>0</vmdelta>
-    <um>304</um>
+    <um>313</um>
     <umdelta>0</umdelta>
-    <freeMem>174089</freeMem>
+    <freeMem>171231</freeMem>
     <cpu>0.00</cpu>
     <load>0.00</load>
-    <elapsedTimeInSec>0.1</elapsedTimeInSec>
+    <elapsedTimeInSec>0</elapsedTimeInSec>
     <userTimeInSec>0</userTimeInSec>
     <systemTimeInSec>0</systemTimeInSec>
     <name>zTopBuild/Main_flow/Generate_output_files/Generate_commands_for_zDB</name>
@@ -3901,12 +3901,12 @@
     <step> 272</step>
     <vm>1586</vm>
     <vmdelta>0</vmdelta>
-    <um>304</um>
+    <um>313</um>
     <umdelta>0</umdelta>
-    <freeMem>174089</freeMem>
+    <freeMem>171231</freeMem>
     <cpu>0.00</cpu>
     <load>0.00</load>
-    <elapsedTimeInSec>0</elapsedTimeInSec>
+    <elapsedTimeInSec>0.1</elapsedTimeInSec>
     <userTimeInSec>0</userTimeInSec>
     <systemTimeInSec>0</systemTimeInSec>
     <name>zTopBuild/Main_flow/Generate_output_files/Generate_commands_for_zRDB</name>
@@ -3915,9 +3915,9 @@
     <step> 273</step>
     <vm>1586</vm>
     <vmdelta>0</vmdelta>
-    <um>304</um>
+    <um>313</um>
     <umdelta>0</umdelta>
-    <freeMem>174089</freeMem>
+    <freeMem>171231</freeMem>
     <cpu>0.00</cpu>
     <load>0.00</load>
     <elapsedTimeInSec>0.1</elapsedTimeInSec>
@@ -3929,12 +3929,12 @@
     <step> 273</step>
     <vm>1586</vm>
     <vmdelta>0</vmdelta>
-    <um>304</um>
+    <um>313</um>
     <umdelta>0</umdelta>
-    <freeMem>174089</freeMem>
-    <cpu>23.53</cpu>
+    <freeMem>171231</freeMem>
+    <cpu>20.99</cpu>
     <load>0.00</load>
-    <elapsedTimeInSec>0.30</elapsedTimeInSec>
+    <elapsedTimeInSec>0.33</elapsedTimeInSec>
     <userTimeInSec>0.4</userTimeInSec>
     <systemTimeInSec>0.3</systemTimeInSec>
     <name>zTopBuild/Main_flow/Generate_output_files</name>
@@ -3943,27 +3943,27 @@
     <step> 273</step>
     <vm>1586</vm>
     <vmdelta>791</vmdelta>
-    <um>304</um>
-    <umdelta>64</umdelta>
-    <freeMem>174089</freeMem>
-    <cpu>56.57</cpu>
+    <um>313</um>
+    <umdelta>62</umdelta>
+    <freeMem>171231</freeMem>
+    <cpu>66.78</cpu>
     <load>0.00</load>
-    <elapsedTimeInSec>2</elapsedTimeInSec>
-    <userTimeInSec>0.85</userTimeInSec>
-    <systemTimeInSec>0.43</systemTimeInSec>
+    <elapsedTimeInSec>1</elapsedTimeInSec>
+    <userTimeInSec>0.95</userTimeInSec>
+    <systemTimeInSec>0.37</systemTimeInSec>
     <name>zTopBuild/Main_flow</name>
   </Row>
 </Table>
 <Attribute id="sysTime">
-  <Value>0.701</Value>
+  <Value>0.663</Value>
 </Attribute>
 <Attribute id="totalMemoryInKB">
-  <Value>1624324</Value>
+  <Value>1624312</Value>
 </Attribute>
 <Attribute id="userCompileTime">
-  <Value>1.824</Value>
+  <Value>1.983</Value>
 </Attribute>
 <Attribute id="wallclockTime">
-  <Value>7</Value>
+  <Value>6</Value>
 </Attribute>
 </Metrics>

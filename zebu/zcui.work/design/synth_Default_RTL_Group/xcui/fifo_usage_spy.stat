@@ -3,18 +3,19 @@
 <modname>fifo_usage_spy</modname>
 <interface>
  <ports>
-  <input>3</input>
+  <input>8</input>
  </ports>
  <bits>
-  <input>6</input>
+  <input>25</input>
  </bits>
 </interface>
 <stats>
- <lut size="2">2</lut>
+ <lut size="2">42</lut>
  <lut size="3">4</lut>
- <lut size="4">1</lut>
+ <lut size="4">9</lut>
  <lut size="5">1</lut>
- <state>18</state>
- <ff>18</ff>
+ <state>108</state>
+ <ff>108</ff>
+ <v6macro>36</v6macro>
 </stats>
 </ZeBuUiDoc>

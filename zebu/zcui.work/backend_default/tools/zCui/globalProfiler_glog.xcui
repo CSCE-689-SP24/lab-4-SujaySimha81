@@ -9,13 +9,13 @@
  <p>BETA version: results may not be fully accurate</p>
 <h1>Compilation Summary</h1>
 <p>Last session wall clock times:</p>
-<p>    FE     : 27s</p>
-<p>    BE     : 43s</p>
-<p>    Total  : 1min 10s</p>
+<p>    FE     : 26s</p>
+<p>    BE     : 19min 08s</p>
+<p>    Total  : 19min 34s</p>
 <p></p>
 <p>All sessions cumulative compile times:</p>
-<p>    without delay  : 17min 32s</p>
-<p>    with delay*    : 17min 44s</p>
+<p>    without delay  : 18min 44s</p>
+<p>    with delay*    : 19min 16s</p>
 <p></p>
 <p>*including slot and grid delays, difference with total wall clock time could be NFS wait or internal flow handling delays
 </p>
@@ -67,6 +67,13 @@
 <p> - execution time : the time for the task being executed</p>
 <h2>Top 5 zCore</h2>
 <p>^TABLE(tools/zCui/globalProfilerTable.xml,top_five_zcore,DDD)Top 5 zCore^TABLE-</p>
+<h2>Top 10 FPGAs</h2>
+<p>^TABLE(tools/zCui/globalProfilerTable.xml,top_ten_fpga,DDD)Top 10 FPGAs^TABLE-</p>
+<h1>FPGA Winner Details</h1>
+<p>Duration per compilation step for each FPGA</p>
+<p>^TABLE(tools/zCui/globalProfilerTable.xml,fpga_compilation,DDD)Durations^TABLE-</p>
+<p>Annex :</p>
+<p>WRITE_BIT* : WRITE_BITSTREAM</p>
 <h1>Hosts</h1>
 <p>^TABLE(tools/zCui/globalProfilerTable.xml,machine_names,DDDDDDDD)Hosts^TABLE-</p>
 <h1>Memory usage</h1>

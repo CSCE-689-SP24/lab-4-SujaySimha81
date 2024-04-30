@@ -28,7 +28,7 @@
 
 # zCoreBuild zCoreBuild_ztb.tcl 
 
-# start time is Wed Apr 17 20:16:36 2024
+# start time is Mon Apr 29 13:43:59 2024
 
 
 
@@ -36,15 +36,15 @@
 # Build Date : Oct 18 2022 - 00:58:46
 # ---------------------------System Context--------------------------- 
 # Cpu        40 x bogomips - 4604.90 Intel(R) Xeon(R) CPU E5-2650 v3 @ 2.30GHz
-#            Load: 0.42 0.65 1.48 4/524 25072
+#            Load: 0.40 0.15 0.16 3/505 35943
 #            Hostname: csce-quinn-s1.engr.tamu.edu   OS: Linux 3.10.0-1160.108.1.el7.x86_64
-# Memory     Total: 193183 MB Free: 173948 MB
-#            Total Free including cache: 187340 MB
-#            Swap cache: 0 MB Cached space: 13392 MB
+# Memory     Total: 193183 MB Free: 171105 MB
+#            Total Free including cache: 187215 MB
+#            Swap cache: 0 MB Cached space: 16110 MB
 #            Swap space: 4095 MB Free Swap space: 4095 MB
 #            VmSize: 380 MB VmPeak: 380 MB
-# Disk Space Total: 50 GB Available: 27 GB Used: 23 GB
-#            Free inodes: 104738108
+# Disk Space Total: 50 GB Available: 8 GB Used: 42 GB
+#            Free inodes: 104731924
 # Stack                                Soft Limit           Hard Limit  
 #            Max stack size            8388608              unlimited            bytes     
 # -------------------------------------------------------------------- 
@@ -207,8 +207,8 @@ Post-merge localize gate didn't find any additional path to process.
 
 Net list information:
           +--------------------------------+-----------------------------+
-          |Modules                         |                           66|
-          |Blackbox module(s)              |                           16|
+          |Modules                         |                           71|
+          |Blackbox module(s)              |                           21|
           |Blackbox Memory(ies)            |                            0|
           |Asynchronous ZMEM Memory(ies)   |                            0|
           |Synchronous ZMEM Memory(ies)    |                            2|
@@ -224,8 +224,8 @@ Net list information:
           |Disconnected wire(s)            |                            0|
           |Loadless wire(s)                |                            0|
           |Sourceless wire(s)              |                            0|
-          |Uninitialized register(s)       |                          457|
-          |Initialized register(s)         |                           10|
+          |Uninitialized register(s)       |                          506|
+          |Initialized register(s)         |                           14|
           +--------------------------------+-----------------------------+
 
 
@@ -234,34 +234,35 @@ Primitive count from the top module top
           +--------------------------+--------------------+---------+---------+
           |Primitive                 |              Number|Equiv LUT|Equiv REG|
           +--------------------------+--------------------+---------+---------+
-          |fd                        |                 313|         |      313|
-          |fdc                       |                  39|         |       39|
+          |fd                        |                 350|         |      350|
+          |fd_1                      |                  19|         |       19|
+          |fdc                       |                  34|         |       34|
           |fdce                      |                  19|         |       19|
-          |fde                       |                 132|         |      132|
-          |fdp                       |                   6|         |        6|
+          |fde                       |                 133|         |      133|
+          |fdp                       |                   7|         |        7|
           +--------------------------+--------------------+---------+---------+
-          |Summary Flip-Flops        |                 509|         |      509|
+          |Summary Flip-Flops        |                 562|         |      562|
           =--------------------------+--------------------+---------+---------=
-          |gnd                       |                  14|         |         |
-          |lut2                      |                  63|       63|         |
+          |gnd                       |                  15|         |         |
+          |lut2                      |                  69|       69|         |
           |lut3                      |                  60|       60|         |
-          |lut4                      |                   9|        9|         |
-          |lut5                      |                  10|       10|         |
+          |lut4                      |                   8|        8|         |
+          |lut5                      |                   9|        9|         |
           |lut6                      |                  29|       29|         |
-          |vcc                       |                   6|         |         |
+          |vcc                       |                   7|         |         |
           +--------------------------+--------------------+---------+---------+
-          |Summary General           |  191 (=   171 LUTs)|      171|         |
+          |Summary General           |  197 (=   175 LUTs)|      175|         |
           =--------------------------+--------------------+---------+---------=
           |ld_1                      |                   1|         |        1|
           +--------------------------+--------------------+---------+---------+
           |Summary Latches           |                   1|         |        1|
           =--------------------------+--------------------+---------+---------=
           |and2                      |                  35|       35|         |
-          |inv                       |                  53|         |         |
+          |inv                       |                  59|         |         |
           |xor2                      |                   6|        6|         |
           |xorcy                     |                   2|         |         |
           +--------------------------+--------------------+---------+---------+
-          |Summary Logic Primitives  |   96 (=    41 LUTs)|       41|         |
+          |Summary Logic Primitives  |  102 (=    41 LUTs)|       41|         |
           =--------------------------+--------------------+---------+---------=
           |ram256x1s                 |   18 (=    72 LUTs)|       72|         |
           +--------------------------+--------------------+---------+---------+
@@ -291,18 +292,18 @@ Primitive count from the top module top
 
 Design content summary, Luts, BRams, URAM, Flip-Flops, Latches, Multiplexers, Multipliers, other logic:
           +----------------------------------+---+
-          |Logic LUTs                        |171|
+          |Logic LUTs                        |175|
           |RAMLUTs                           | 72|
-          |Logic LUTs + RAMLUTs              |243|
-          |Logic LUTs + RAMLUTs + other logic|284|
+          |Logic LUTs + RAMLUTs              |247|
+          |Logic LUTs + RAMLUTs + other logic|288|
           |BRAMs                             |  0|
           |URAMs                             |  0|
-          |Flip-Flops                        |509|
+          |Flip-Flops                        |562|
           |Latches                           |  1|
-          |Flip-Flops + Latches + other logic|602|
+          |Flip-Flops + Latches + other logic|655|
           |Multiplexers                      |  2|
           |MULT18/DSP                        |  0|
-          |Other logic                       |408|
+          |Other logic                       |416|
           |Lut equiv other logic             | 41|
           |Reg equiv Other logic             | 92|
           +----------------------------------+---+
@@ -325,17 +326,17 @@ Multi-instantiation cost ordered by REG (flat logic only)
  |Nb Inst.|ALL REG|ALL LUT|ALL BRAM|ALL URAM|ALL DSP|ALL RAMLUT|ALL LUT6|ALL MUXCY|                         Module|REG|LUT|BRAM|URAM|DSP|RAMLUT|LUT6|MUXCY|HLUT|HLUT(raw)|HREG|Nb IOs|
  +--------+-------+-------+--------+--------+-------+----------+--------+---------+-------------------------------+---+---+----+----+---+------+----+-----+----+---------+----+------+
  |1       |298    |26     |0       |0       |0      |0         |0       |0        |                            stb|298|26 |0   |0   |0  |0     |0   |0    |206 |206      |502 |32    |
- |1       |76     |52     |0       |0       |0      |0         |21      |0        |                      fifo_0000|76 |52 |0   |0   |0  |0     |21  |0    |61  |61       |87  |53    |
+ |1       |76     |52     |0       |0       |0      |0         |21      |0        |                      fifo_0000|76 |52 |0   |0   |0  |0     |21  |0    |65  |65       |140 |53    |
+ |1       |63     |12     |0       |0       |0      |0         |0       |0        |                 fifo_usage_spy|63 |12 |0   |0   |0  |0     |0   |0    |12  |12       |63  |25    |
  |1       |43     |10     |0       |0       |0      |0         |0       |0        |                   ram_ZMEM_mem|43 |10 |0   |0   |0  |0     |0   |0    |75  |75       |54  |19    |
  |18      |36     |0      |0       |0       |0      |0         |0       |0        |       zebu_force_sync_LOGICOPT|2  |0  |0   |0   |0  |0     |0   |0    |1   |1        |2   |3     |
  |1       |33     |9      |0       |0       |0      |0         |0       |0        |                   rom_ZMEM_mem|33 |9  |0   |0   |0  |0     |0   |0    |64  |64       |44  |18    |
  |1       |11     |8      |0       |0       |0      |0         |3       |0        |                     proba_0000|11 |8  |0   |0   |0  |0     |3   |0    |8   |8        |11  |13    |
  |1       |11     |8      |0       |0       |0      |0         |3       |0        |                          proba|11 |8  |0   |0   |0  |0     |3   |0    |8   |8        |11  |13    |
- |1       |10     |8      |0       |0       |0      |0         |0       |0        |                 fifo_usage_spy|10 |8  |0   |0   |0  |0     |0   |0    |8   |8        |10  |7     |
  |1       |9      |45     |0       |0       |0      |36        |0       |0        |              rom_ZMEM_mem_base|9  |45 |0   |0   |0  |36    |0   |0    |45  |45       |9   |27    |
  |1       |9      |45     |0       |0       |0      |36        |0       |0        |              ram_ZMEM_mem_base|9  |45 |0   |0   |0  |36    |0   |0    |45  |45       |9   |27    |
  |2       |6      |6      |0       |0       |0      |0         |2       |0        |                   parity_check|3  |3  |0   |0   |0  |0     |1   |0    |5   |5        |4   |13    |
- |1       |5      |6      |0       |0       |0      |0         |0       |0        |                            top|5  |6  |0   |0   |0  |0     |0   |0    |284 |284      |601 |0     |
+ |1       |5      |6      |0       |0       |0      |0         |0       |0        |                            top|5  |6  |0   |0   |0  |0     |0   |0    |288 |288      |654 |0     |
  |4       |4      |8      |0       |0       |0      |0         |0       |0        |                 zsva_trigger_1|1  |2  |0   |0   |0  |0     |0   |0    |2   |2        |1   |6     |
  |2       |4      |0      |0       |0       |0      |0         |0       |0        |                zebu_force_sync|2  |0  |0   |0   |0  |0     |0   |0    |1   |1        |2   |3     |
  |2       |4      |4      |0       |0       |0      |0         |0       |2        |                    counter2_re|2  |2  |0   |0   |0  |0     |0   |1    |2   |2        |2   |7     |
@@ -383,11 +384,12 @@ Multi-instantiation cost ordered by LUT (flat logic only)
  +--------+-------+-------+--------+--------+-------+----------+--------+---------+-------------------------+---+---+----+----+---+------+----+-----+----+---------+----+------+
  |Nb Inst.|ALL REG|ALL LUT|ALL BRAM|ALL URAM|ALL DSP|ALL RAMLUT|ALL LUT6|ALL MUXCY|                   Module|REG|LUT|BRAM|URAM|DSP|RAMLUT|LUT6|MUXCY|HLUT|HLUT(raw)|HREG|Nb IOs|
  +--------+-------+-------+--------+--------+-------+----------+--------+---------+-------------------------+---+---+----+----+---+------+----+-----+----+---------+----+------+
- |1       |76     |52     |0       |0       |0      |0         |21      |0        |                fifo_0000|76 |52 |0   |0   |0  |0     |21  |0    |61  |61       |87  |53    |
+ |1       |76     |52     |0       |0       |0      |0         |21      |0        |                fifo_0000|76 |52 |0   |0   |0  |0     |21  |0    |65  |65       |140 |53    |
  |1       |9      |45     |0       |0       |0      |36        |0       |0        |        rom_ZMEM_mem_base|9  |45 |0   |0   |0  |36    |0   |0    |45  |45       |9   |27    |
  |1       |9      |45     |0       |0       |0      |36        |0       |0        |        ram_ZMEM_mem_base|9  |45 |0   |0   |0  |36    |0   |0    |45  |45       |9   |27    |
  |1       |298    |26     |0       |0       |0      |0         |0       |0        |                      stb|298|26 |0   |0   |0  |0     |0   |0    |206 |206      |502 |32    |
  |18      |0      |18     |0       |0       |0      |0         |0       |0        |       zmux2_1_0_LOGICOPT|0  |1  |0   |0   |0  |0     |0   |0    |1   |1        |0   |4     |
+ |1       |63     |12     |0       |0       |0      |0         |0       |0        |           fifo_usage_spy|63 |12 |0   |0   |0  |0     |0   |0    |12  |12       |63  |25    |
  |1       |43     |10     |0       |0       |0      |0         |0       |0        |             ram_ZMEM_mem|43 |10 |0   |0   |0  |0     |0   |0    |75  |75       |54  |19    |
  |1       |33     |9      |0       |0       |0      |0         |0       |0        |             rom_ZMEM_mem|33 |9  |0   |0   |0  |0     |0   |0    |64  |64       |44  |18    |
  |1       |0      |9      |0       |0       |0      |0         |0       |0        |merge_late_post_cl...(1)*|0  |9  |0   |0   |0  |0     |0   |0    |9   |9        |0   |19    |
@@ -396,8 +398,7 @@ Multi-instantiation cost ordered by LUT (flat logic only)
  |1       |0      |8      |0       |0       |0      |0         |0       |0        |merge_late_post_cl...(3)*|0  |8  |0   |0   |0  |0     |0   |0    |8   |8        |0   |17    |
  |1       |11     |8      |0       |0       |0      |0         |3       |0        |               proba_0000|11 |8  |0   |0   |0  |0     |3   |0    |8   |8        |11  |13    |
  |1       |11     |8      |0       |0       |0      |0         |3       |0        |                    proba|11 |8  |0   |0   |0  |0     |3   |0    |8   |8        |11  |13    |
- |1       |10     |8      |0       |0       |0      |0         |0       |0        |           fifo_usage_spy|10 |8  |0   |0   |0  |0     |0   |0    |8   |8        |10  |7     |
- |1       |5      |6      |0       |0       |0      |0         |0       |0        |                      top|5  |6  |0   |0   |0  |0     |0   |0    |284 |284      |601 |0     |
+ |1       |5      |6      |0       |0       |0      |0         |0       |0        |                      top|5  |6  |0   |0   |0  |0     |0   |0    |288 |288      |654 |0     |
  |2       |6      |6      |0       |0       |0      |0         |2       |0        |             parity_check|3  |3  |0   |0   |0  |0     |1   |0    |5   |5        |4   |13    |
  |2       |4      |4      |0       |0       |0      |0         |0       |2        |              counter2_re|2  |2  |0   |0   |0  |0     |0   |1    |2   |2        |2   |7     |
  |2       |0      |2      |0       |0       |0      |0         |0       |0        |                zmux2_1_0|0  |1  |0   |0   |0  |0     |0   |0    |1   |1        |0   |4     |
@@ -467,7 +468,7 @@ Multi-instantiation cost ordered by LUT6 (flat logic only)
  +--------+-------+-------+--------+--------+-------+----------+--------+---------+------------+---+---+----+----+---+------+----+-----+----+---------+----+------+
  |Nb Inst.|ALL REG|ALL LUT|ALL BRAM|ALL URAM|ALL DSP|ALL RAMLUT|ALL LUT6|ALL MUXCY|      Module|REG|LUT|BRAM|URAM|DSP|RAMLUT|LUT6|MUXCY|HLUT|HLUT(raw)|HREG|Nb IOs|
  +--------+-------+-------+--------+--------+-------+----------+--------+---------+------------+---+---+----+----+---+------+----+-----+----+---------+----+------+
- |1       |76     |52     |0       |0       |0      |0         |21      |0        |   fifo_0000|76 |52 |0   |0   |0  |0     |21  |0    |61  |61       |87  |53    |
+ |1       |76     |52     |0       |0       |0      |0         |21      |0        |   fifo_0000|76 |52 |0   |0   |0  |0     |21  |0    |65  |65       |140 |53    |
  |1       |11     |8      |0       |0       |0      |0         |3       |0        |  proba_0000|11 |8  |0   |0   |0  |0     |3   |0    |8   |8        |11  |13    |
  |1       |11     |8      |0       |0       |0      |0         |3       |0        |       proba|11 |8  |0   |0   |0  |0     |3   |0    |8   |8        |11  |13    |
  |2       |6      |6      |0       |0       |0      |0         |2       |0        |parity_check|3  |3  |0   |0   |0  |0     |1   |0    |5   |5        |4   |13    |
@@ -535,7 +536,7 @@ Multi-instantiation cost ordered by number of instance (flat logic only)
  |2       |0      |0      |0       |0       |0      |0         |0       |0        |zebu_reqsig_clock_zcompositeclock|0  |0  |0   |0   |0  |0     |0   |0    |0   |0        |0   |1     |
  |2       |6      |6      |0       |0       |0      |0         |2       |0        |                     parity_check|3  |3  |0   |0   |0  |0     |1   |0    |5   |5        |4   |13    |
  |2       |0      |0      |0       |0       |0      |0         |0       |0        |                   ZSVA_MOD_PLI_1|0  |0  |0   |0   |0  |0     |0   |0    |0   |0        |0   |10    |
- |1       |5      |6      |0       |0       |0      |0         |0       |0        |                              top|5  |6  |0   |0   |0  |0     |0   |0    |284 |284      |601 |0     |
+ |1       |5      |6      |0       |0       |0      |0         |0       |0        |                              top|5  |6  |0   |0   |0  |0     |0   |0    |288 |288      |654 |0     |
  |1       |0      |0      |0       |0       |0      |0         |0       |0        |                  zebu_bb_zmem_we|0  |0  |0   |0   |0  |0     |0   |0    |0   |0        |0   |1     |
  |1       |1      |0      |0       |0       |0      |0         |0       |0        |  zebu_force_inject_undriven_sync|1  |0  |0   |0   |0  |0     |0   |0    |0   |0        |1   |2     |
  |1       |2      |0      |0       |0       |0      |0         |0       |0        |        ZEBU_FORCE_DYNAMIC_SYNC_9|2  |0  |0   |0   |0  |0     |0   |0    |1   |1        |4   |1     |
@@ -579,7 +580,8 @@ Multi-instantiation cost ordered by (multi-instantiation * number of primitive) 
  |Nb Inst.|ALL REG|ALL LUT|ALL BRAM|ALL URAM|ALL DSP|ALL RAMLUT|ALL LUT6|ALL MUXCY|                           Module|REG|LUT|BRAM|URAM|DSP|RAMLUT|LUT6|MUXCY|HLUT|HLUT(raw)|HREG|Nb IOs|
  +--------+-------+-------+--------+--------+-------+----------+--------+---------+---------------------------------+---+---+----+----+---+------+----+-----+----+---------+----+------+
  |1       |298    |26     |0       |0       |0      |0         |0       |0        |                              stb|298|26 |0   |0   |0  |0     |0   |0    |206 |206      |502 |32    |
- |1       |76     |52     |0       |0       |0      |0         |21      |0        |                        fifo_0000|76 |52 |0   |0   |0  |0     |21  |0    |61  |61       |87  |53    |
+ |1       |76     |52     |0       |0       |0      |0         |21      |0        |                        fifo_0000|76 |52 |0   |0   |0  |0     |21  |0    |65  |65       |140 |53    |
+ |1       |63     |12     |0       |0       |0      |0         |0       |0        |                   fifo_usage_spy|63 |12 |0   |0   |0  |0     |0   |0    |12  |12       |63  |25    |
  |1       |9      |45     |0       |0       |0      |36        |0       |0        |                rom_ZMEM_mem_base|9  |45 |0   |0   |0  |36    |0   |0    |45  |45       |9   |27    |
  |1       |9      |45     |0       |0       |0      |36        |0       |0        |                ram_ZMEM_mem_base|9  |45 |0   |0   |0  |36    |0   |0    |45  |45       |9   |27    |
  |1       |43     |10     |0       |0       |0      |0         |0       |0        |                     ram_ZMEM_mem|43 |10 |0   |0   |0  |0     |0   |0    |75  |75       |54  |19    |
@@ -588,10 +590,9 @@ Multi-instantiation cost ordered by (multi-instantiation * number of primitive) 
  |1       |11     |8      |0       |0       |0      |0         |3       |0        |                       proba_0000|11 |8  |0   |0   |0  |0     |3   |0    |8   |8        |11  |13    |
  |1       |11     |8      |0       |0       |0      |0         |3       |0        |                            proba|11 |8  |0   |0   |0  |0     |3   |0    |8   |8        |11  |13    |
  |18      |0      |18     |0       |0       |0      |0         |0       |0        |               zmux2_1_0_LOGICOPT|0  |1  |0   |0   |0  |0     |0   |0    |1   |1        |0   |4     |
- |1       |10     |8      |0       |0       |0      |0         |0       |0        |                   fifo_usage_spy|10 |8  |0   |0   |0  |0     |0   |0    |8   |8        |10  |7     |
  |4       |4      |8      |0       |0       |0      |0         |0       |0        |                   zsva_trigger_1|1  |2  |0   |0   |0  |0     |0   |0    |2   |2        |1   |6     |
  |2       |6      |6      |0       |0       |0      |0         |2       |0        |                     parity_check|3  |3  |0   |0   |0  |0     |1   |0    |5   |5        |4   |13    |
- |1       |5      |6      |0       |0       |0      |0         |0       |0        |                              top|5  |6  |0   |0   |0  |0     |0   |0    |284 |284      |601 |0     |
+ |1       |5      |6      |0       |0       |0      |0         |0       |0        |                              top|5  |6  |0   |0   |0  |0     |0   |0    |288 |288      |654 |0     |
  |1       |0      |9      |0       |0       |0      |0         |0       |0        |merge_late_post_clock__sel...(1)*|0  |9  |0   |0   |0  |0     |0   |0    |9   |9        |0   |19    |
  |1       |0      |8      |0       |0       |0      |0         |0       |0        |merge_late_post_clock__sel...(2)*|0  |8  |0   |0   |0  |0     |0   |0    |8   |8        |0   |17    |
  |1       |0      |8      |0       |0       |0      |0         |0       |0        |merge_late_post_clock__rom...(3)*|0  |8  |0   |0   |0  |0     |0   |0    |8   |8        |0   |17    |
@@ -648,6 +649,7 @@ Modules ordered by reg/lut ratio (decreasing order, only if 2*reg>lut) (flat log
  |Nb Inst.|HREG|HLUT|HLUT(raw)|                         Module|Nb IOs|
  +--------+----+----+---------+-------------------------------+------+
  |1       |1   |0   |0        |zebu_force_inject_undriven_sync|2     |
+ |1       |63  |12  |12       |                 fifo_usage_spy|25    |
  |1       |4   |1   |1        |      ZEBU_FORCE_DYNAMIC_SYNC_9|1     |
  |1       |4   |1   |1        |      ZEBU_FORCE_DYNAMIC_SYNC_8|1     |
  |1       |4   |1   |1        |      ZEBU_FORCE_DYNAMIC_SYNC_7|1     |
@@ -669,14 +671,13 @@ Modules ordered by reg/lut ratio (decreasing order, only if 2*reg>lut) (flat log
  |1       |4   |1   |1        |      ZEBU_FORCE_DYNAMIC_SYNC_0|1     |
  |1       |4   |1   |1        |        ZEBU_FORCE_DYNAMIC_SYNC|1     |
  |1       |502 |206 |206      |                            stb|32    |
- |1       |601 |284 |284      |                            top|0     |
+ |1       |654 |288 |288      |                            top|0     |
+ |1       |140 |65  |65       |                      fifo_0000|53    |
  |18      |2   |1   |1        |       zebu_force_sync_LOGICOPT|3     |
  |2       |2   |1   |1        |                zebu_force_sync|3     |
- |1       |87  |61  |61       |                      fifo_0000|53    |
+ |1       |144 |72  |72       |                            dut|49    |
  |1       |11  |8   |8        |                     proba_0000|13    |
  |1       |11  |8   |8        |                          proba|13    |
- |1       |91  |68  |68       |                            dut|49    |
- |1       |10  |8   |8        |                 fifo_usage_spy|7     |
  |2       |2   |2   |2        |                    counter2_re|7     |
  |1       |1   |1   |1        |                           clkg|3     |
  |2       |4   |5   |5        |                   parity_check|13    |
@@ -694,76 +695,81 @@ Module     : Module name, long names are truncated and displayed below
 
 
 Cost ordered by biggest variation caused by lut weighting) (flat logic only)
- +--------+----+----+---------+----------------------------------+------+
- |Nb Inst.|HREG|HLUT|HLUT(raw)|                            Module|Nb IOs|
- +--------+----+----+---------+----------------------------------+------+
- |2       |0   |0   |0        |                    z_feed_through|2     |
- |45      |0   |0   |0        |                    zebu_bb_wb_reg|1     |
- |4       |1   |2   |2        |                    zsva_trigger_1|6     |
- |1       |601 |284 |284      |                               top|0     |
- |117     |0   |0   |0        |                             zview|1     |
- |38      |0   |0   |0        |                         zfwc_hs_1|3     |
- |1       |0   |0   |0        |                   zebu_bb_zmem_we|1     |
- |9       |0   |0   |0        |                   zebu_bb_zmem_do|1     |
- |9       |0   |0   |0        |                   zebu_bb_zmem_di|1     |
- |2       |0   |0   |0        |                  zebu_bb_zmem_clk|1     |
- |16      |0   |0   |0        |                 zebu_bb_zmem_addr|1     |
- |18      |2   |1   |1        |          zebu_force_sync_LOGICOPT|3     |
- |2       |2   |1   |1        |                   zebu_force_sync|3     |
- |1       |1   |0   |0        | zebu_force_inject_undriven...(1)*|2     |
- |1       |4   |1   |1        |         ZEBU_FORCE_DYNAMIC_SYNC_9|1     |
- |1       |4   |1   |1        |         ZEBU_FORCE_DYNAMIC_SYNC_8|1     |
- |1       |4   |1   |1        |         ZEBU_FORCE_DYNAMIC_SYNC_7|1     |
- |1       |4   |1   |1        |         ZEBU_FORCE_DYNAMIC_SYNC_6|1     |
- |1       |4   |1   |1        |         ZEBU_FORCE_DYNAMIC_SYNC_5|1     |
- |1       |4   |1   |1        |         ZEBU_FORCE_DYNAMIC_SYNC_4|1     |
- |1       |4   |1   |1        |         ZEBU_FORCE_DYNAMIC_SYNC_3|1     |
- |1       |4   |1   |1        |         ZEBU_FORCE_DYNAMIC_SYNC_2|1     |
- |1       |4   |1   |1        |        ZEBU_FORCE_DYNAMIC_SYNC_18|1     |
- |1       |4   |1   |1        |        ZEBU_FORCE_DYNAMIC_SYNC_17|1     |
- |1       |4   |1   |1        |        ZEBU_FORCE_DYNAMIC_SYNC_16|1     |
- |1       |4   |1   |1        |        ZEBU_FORCE_DYNAMIC_SYNC_15|1     |
- |1       |4   |1   |1        |        ZEBU_FORCE_DYNAMIC_SYNC_14|1     |
- |1       |4   |1   |1        |        ZEBU_FORCE_DYNAMIC_SYNC_13|1     |
- |1       |4   |1   |1        |        ZEBU_FORCE_DYNAMIC_SYNC_12|1     |
- |1       |4   |1   |1        |        ZEBU_FORCE_DYNAMIC_SYNC_11|1     |
- |1       |4   |1   |1        |        ZEBU_FORCE_DYNAMIC_SYNC_10|1     |
- |1       |4   |1   |1        |         ZEBU_FORCE_DYNAMIC_SYNC_1|1     |
- |1       |4   |1   |1        |         ZEBU_FORCE_DYNAMIC_SYNC_0|1     |
- |1       |4   |1   |1        |           ZEBU_FORCE_DYNAMIC_SYNC|1     |
- |21      |0   |0   |0        | zebu_reqsig_clock_drivercl...(2)*|1     |
- |1       |0   |0   |0        |                     zebu_clockGen|26    |
- |1       |9   |45  |45       |                 rom_ZMEM_mem_base|27    |
- |1       |44  |64  |64       |                      rom_ZMEM_mem|18    |
- |1       |9   |45  |45       |                 ram_ZMEM_mem_base|27    |
- |1       |54  |75  |75       |                      ram_ZMEM_mem|19    |
- |18      |0   |1   |1        |                zmux2_1_0_LOGICOPT|4     |
- |2       |0   |1   |1        |                         zmux2_1_0|4     |
- |1       |0   |9   |9        | merge_late_post_clock__sel...(3)*|19    |
- |1       |0   |8   |8        | merge_late_post_clock__sel...(4)*|17    |
- |1       |0   |1   |1        | merge_late_post_clock__sel...(5)*|3     |
- |1       |0   |8   |8        | merge_late_post_clock__rom...(6)*|17    |
- |2       |2   |2   |2        |                       counter2_re|7     |
- |4       |0   |0   |0        |                            ZXLSYS|4     |
- |2       |0   |0   |0        | zebu_reqsig_clock_zcomposi...(7)*|1     |
- |1       |0   |0   |0        | zebu_bb_ZDPI_MOD_stb_ZDPI_...(8)*|49    |
- |1       |0   |0   |0        | zebu_bb_ZDPI_MOD_stb_ZDPI_...(9)*|49    |
- |1       |0   |0   |0        |zebu_bb_ZDPI_MOD_fifo_usag...(10)*|5     |
- |1       |502 |206 |206      |                               stb|32    |
- |1       |44  |64  |64       |                               rom|34    |
- |1       |54  |75  |75       |                               ram|34    |
- |1       |11  |8   |8        |                        proba_0000|13    |
- |1       |11  |8   |8        |                             proba|13    |
- |2       |4   |5   |5        |                      parity_check|13    |
- |1       |0   |2   |2        |                            parity|9     |
- |1       |10  |8   |8        |                    fifo_usage_spy|7     |
- |1       |87  |61  |61       |                         fifo_0000|53    |
- |1       |91  |68  |68       |                               dut|49    |
- |1       |1   |1   |1        |                              clkg|3     |
- |2       |0   |0   |0        |                    ZSVA_MOD_PLI_1|10    |
- |1       |0   |0   |0        |                        ZSVA_MOD_1|10    |
- |1       |0   |0   |0        |                        ZSVA_MOD_0|10    |
- +--------+----+----+---------+----------------------------------+------+
+ +--------+----+----+---------+-------------------------------------+------+
+ |Nb Inst.|HREG|HLUT|HLUT(raw)|                               Module|Nb IOs|
+ +--------+----+----+---------+-------------------------------------+------+
+ |2       |0   |0   |0        |                       z_feed_through|2     |
+ |45      |0   |0   |0        |                       zebu_bb_wb_reg|1     |
+ |4       |1   |2   |2        |                       zsva_trigger_1|6     |
+ |1       |654 |288 |288      |                                  top|0     |
+ |117     |0   |0   |0        |                                zview|1     |
+ |38      |0   |0   |0        |                            zfwc_hs_1|3     |
+ |1       |0   |0   |0        |                      zebu_bb_zmem_we|1     |
+ |9       |0   |0   |0        |                      zebu_bb_zmem_do|1     |
+ |9       |0   |0   |0        |                      zebu_bb_zmem_di|1     |
+ |2       |0   |0   |0        |                     zebu_bb_zmem_clk|1     |
+ |16      |0   |0   |0        |                    zebu_bb_zmem_addr|1     |
+ |18      |2   |1   |1        |             zebu_force_sync_LOGICOPT|3     |
+ |2       |2   |1   |1        |                      zebu_force_sync|3     |
+ |1       |1   |0   |0        |      zebu_force_inject_undriven_sync|2     |
+ |1       |4   |1   |1        |            ZEBU_FORCE_DYNAMIC_SYNC_9|1     |
+ |1       |4   |1   |1        |            ZEBU_FORCE_DYNAMIC_SYNC_8|1     |
+ |1       |4   |1   |1        |            ZEBU_FORCE_DYNAMIC_SYNC_7|1     |
+ |1       |4   |1   |1        |            ZEBU_FORCE_DYNAMIC_SYNC_6|1     |
+ |1       |4   |1   |1        |            ZEBU_FORCE_DYNAMIC_SYNC_5|1     |
+ |1       |4   |1   |1        |            ZEBU_FORCE_DYNAMIC_SYNC_4|1     |
+ |1       |4   |1   |1        |            ZEBU_FORCE_DYNAMIC_SYNC_3|1     |
+ |1       |4   |1   |1        |            ZEBU_FORCE_DYNAMIC_SYNC_2|1     |
+ |1       |4   |1   |1        |           ZEBU_FORCE_DYNAMIC_SYNC_18|1     |
+ |1       |4   |1   |1        |           ZEBU_FORCE_DYNAMIC_SYNC_17|1     |
+ |1       |4   |1   |1        |           ZEBU_FORCE_DYNAMIC_SYNC_16|1     |
+ |1       |4   |1   |1        |           ZEBU_FORCE_DYNAMIC_SYNC_15|1     |
+ |1       |4   |1   |1        |           ZEBU_FORCE_DYNAMIC_SYNC_14|1     |
+ |1       |4   |1   |1        |           ZEBU_FORCE_DYNAMIC_SYNC_13|1     |
+ |1       |4   |1   |1        |           ZEBU_FORCE_DYNAMIC_SYNC_12|1     |
+ |1       |4   |1   |1        |           ZEBU_FORCE_DYNAMIC_SYNC_11|1     |
+ |1       |4   |1   |1        |           ZEBU_FORCE_DYNAMIC_SYNC_10|1     |
+ |1       |4   |1   |1        |            ZEBU_FORCE_DYNAMIC_SYNC_1|1     |
+ |1       |4   |1   |1        |            ZEBU_FORCE_DYNAMIC_SYNC_0|1     |
+ |1       |4   |1   |1        |              ZEBU_FORCE_DYNAMIC_SYNC|1     |
+ |21      |0   |0   |0        |        zebu_reqsig_clock_driverclock|1     |
+ |1       |0   |0   |0        |                        zebu_clockGen|26    |
+ |1       |9   |45  |45       |                    rom_ZMEM_mem_base|27    |
+ |1       |44  |64  |64       |                         rom_ZMEM_mem|18    |
+ |1       |9   |45  |45       |                    ram_ZMEM_mem_base|27    |
+ |1       |54  |75  |75       |                         ram_ZMEM_mem|19    |
+ |18      |0   |1   |1        |                   zmux2_1_0_LOGICOPT|4     |
+ |2       |0   |1   |1        |                            zmux2_1_0|4     |
+ |1       |0   |9   |9        | merge_late_post_clock__select...(1)*|19    |
+ |1       |0   |8   |8        | merge_late_post_clock__select...(2)*|17    |
+ |1       |0   |1   |1        | merge_late_post_clock__select...(3)*|3     |
+ |1       |0   |8   |8        | merge_late_post_clock__rom_ZM...(4)*|17    |
+ |2       |2   |2   |2        |                          counter2_re|7     |
+ |4       |0   |0   |0        |                               ZXLSYS|4     |
+ |2       |0   |0   |0        | zebu_reqsig_clock_zcompositec...(5)*|1     |
+ |1       |0   |0   |0        | zebu_bb_ZDPI_MOD_stb_ZDPI_grp...(6)*|49    |
+ |1       |0   |0   |0        | zebu_bb_ZDPI_MOD_stb_ZDPI_grp...(7)*|49    |
+ |1       |0   |0   |0        | zebu_bb_ZDPI_MOD_fifo_usage_s...(8)*|11    |
+ |1       |0   |0   |0        | zebu_bb_ZDPI_MOD_fifo_usage_s...(9)*|11    |
+ |1       |0   |0   |0        |zebu_bb_ZDPI_MOD_fifo_usage_s...(10)*|11    |
+ |1       |0   |0   |0        |zebu_bb_ZDPI_MOD_fifo_usage_s...(11)*|11    |
+ |1       |0   |0   |0        |zebu_bb_ZDPI_MOD_fifo_usage_s...(12)*|11    |
+ |1       |0   |0   |0        |zebu_bb_ZDPI_MOD_fifo_usage_s...(13)*|11    |
+ |1       |502 |206 |206      |                                  stb|32    |
+ |1       |44  |64  |64       |                                  rom|34    |
+ |1       |54  |75  |75       |                                  ram|34    |
+ |1       |11  |8   |8        |                           proba_0000|13    |
+ |1       |11  |8   |8        |                                proba|13    |
+ |2       |4   |5   |5        |                         parity_check|13    |
+ |1       |0   |2   |2        |                               parity|9     |
+ |1       |63  |12  |12       |                       fifo_usage_spy|25    |
+ |1       |140 |65  |65       |                            fifo_0000|53    |
+ |1       |144 |72  |72       |                                  dut|49    |
+ |1       |1   |1   |1        |                                 clkg|3     |
+ |2       |0   |0   |0        |                       ZSVA_MOD_PLI_1|10    |
+ |1       |0   |0   |0        |                           ZSVA_MOD_1|10    |
+ |1       |0   |0   |0        |                           ZSVA_MOD_0|10    |
+ +--------+----+----+---------+-------------------------------------+------+
 Nb Inst.   : Number of instances
 HREG       : HIER REG_EQUIV
 HLUT       : HIER LUT EQUIV (lut weighting)
@@ -771,32 +777,35 @@ HLUT(raw)  : HIER LUT EQUIV (no lut weighting)
 Module     : Module name, long names are truncated and displayed below
 
 
-10 long names: 
-(1) zebu_force_inject_undriven_sync
-(2) zebu_reqsig_clock_driverclock
-(3) merge_late_post_clock__select_1_9_13
-(4) merge_late_post_clock__select_1_8_13
-(5) merge_late_post_clock__select_1_1_13
-(6) merge_late_post_clock__rom_ZMEM_mem__select_1_8_37_13
-(7) zebu_reqsig_clock_zcompositeclock
-(8) zebu_bb_ZDPI_MOD_stb_ZDPI_grp0_dummy_import_for_pli_call1
-(9) zebu_bb_ZDPI_MOD_stb_ZDPI_grp0_dummy_import_for_pli_call0
-(10) zebu_bb_ZDPI_MOD_fifo_usage_spy_ZDPI_fifo_usage_spy_notify_call0
+13 long names: 
+(1) merge_late_post_clock__select_1_9_13
+(2) merge_late_post_clock__select_1_8_13
+(3) merge_late_post_clock__select_1_1_13
+(4) merge_late_post_clock__rom_ZMEM_mem__select_1_8_37_13
+(5) zebu_reqsig_clock_zcompositeclock
+(6) zebu_bb_ZDPI_MOD_stb_ZDPI_grp0_dummy_import_for_pli_call1
+(7) zebu_bb_ZDPI_MOD_stb_ZDPI_grp0_dummy_import_for_pli_call0
+(8) zebu_bb_ZDPI_MOD_fifo_usage_spy_ZDPI_fifo_usage_spy_notify_call5
+(9) zebu_bb_ZDPI_MOD_fifo_usage_spy_ZDPI_fifo_usage_spy_notify_call4
+(10) zebu_bb_ZDPI_MOD_fifo_usage_spy_ZDPI_fifo_usage_spy_notify_call3
+(11) zebu_bb_ZDPI_MOD_fifo_usage_spy_ZDPI_fifo_usage_spy_notify_call2
+(12) zebu_bb_ZDPI_MOD_fifo_usage_spy_ZDPI_fifo_usage_spy_notify_call1
+(13) zebu_bb_ZDPI_MOD_fifo_usage_spy_ZDPI_fifo_usage_spy_notify_call0
 
 Multi-instantiation cost ordered by number primitives (flat logic only)
  +--------+-------+-------+--------+--------+-------+----------+--------+---------+---------------------------------+---+---+----+----+---+------+----+-----+----+---------+----+------+
  |Nb Inst.|ALL REG|ALL LUT|ALL BRAM|ALL URAM|ALL DSP|ALL RAMLUT|ALL LUT6|ALL MUXCY|                           Module|REG|LUT|BRAM|URAM|DSP|RAMLUT|LUT6|MUXCY|HLUT|HLUT(raw)|HREG|Nb IOs|
  +--------+-------+-------+--------+--------+-------+----------+--------+---------+---------------------------------+---+---+----+----+---+------+----+-----+----+---------+----+------+
  |1       |298    |26     |0       |0       |0      |0         |0       |0        |                              stb|298|26 |0   |0   |0  |0     |0   |0    |206 |206      |502 |32    |
- |1       |76     |52     |0       |0       |0      |0         |21      |0        |                        fifo_0000|76 |52 |0   |0   |0  |0     |21  |0    |61  |61       |87  |53    |
+ |1       |76     |52     |0       |0       |0      |0         |21      |0        |                        fifo_0000|76 |52 |0   |0   |0  |0     |21  |0    |65  |65       |140 |53    |
+ |1       |63     |12     |0       |0       |0      |0         |0       |0        |                   fifo_usage_spy|63 |12 |0   |0   |0  |0     |0   |0    |12  |12       |63  |25    |
  |1       |9      |45     |0       |0       |0      |36        |0       |0        |                rom_ZMEM_mem_base|9  |45 |0   |0   |0  |36    |0   |0    |45  |45       |9   |27    |
  |1       |9      |45     |0       |0       |0      |36        |0       |0        |                ram_ZMEM_mem_base|9  |45 |0   |0   |0  |36    |0   |0    |45  |45       |9   |27    |
  |1       |43     |10     |0       |0       |0      |0         |0       |0        |                     ram_ZMEM_mem|43 |10 |0   |0   |0  |0     |0   |0    |75  |75       |54  |19    |
  |1       |33     |9      |0       |0       |0      |0         |0       |0        |                     rom_ZMEM_mem|33 |9  |0   |0   |0  |0     |0   |0    |64  |64       |44  |18    |
  |1       |11     |8      |0       |0       |0      |0         |3       |0        |                       proba_0000|11 |8  |0   |0   |0  |0     |3   |0    |8   |8        |11  |13    |
  |1       |11     |8      |0       |0       |0      |0         |3       |0        |                            proba|11 |8  |0   |0   |0  |0     |3   |0    |8   |8        |11  |13    |
- |1       |10     |8      |0       |0       |0      |0         |0       |0        |                   fifo_usage_spy|10 |8  |0   |0   |0  |0     |0   |0    |8   |8        |10  |7     |
- |1       |5      |6      |0       |0       |0      |0         |0       |0        |                              top|5  |6  |0   |0   |0  |0     |0   |0    |284 |284      |601 |0     |
+ |1       |5      |6      |0       |0       |0      |0         |0       |0        |                              top|5  |6  |0   |0   |0  |0     |0   |0    |288 |288      |654 |0     |
  |1       |0      |9      |0       |0       |0      |0         |0       |0        |merge_late_post_clock__sel...(1)*|0  |9  |0   |0   |0  |0     |0   |0    |9   |9        |0   |19    |
  |1       |0      |8      |0       |0       |0      |0         |0       |0        |merge_late_post_clock__sel...(2)*|0  |8  |0   |0   |0  |0     |0   |0    |8   |8        |0   |17    |
  |1       |0      |8      |0       |0       |0      |0         |0       |0        |merge_late_post_clock__rom...(3)*|0  |8  |0   |0   |0  |0     |0   |0    |8   |8        |0   |17    |
@@ -909,6 +918,11 @@ BLACKBOX MODULE: ZSVA_MOD_0
 BLACKBOX MODULE: ZSVA_MOD_1
 BLACKBOX MODULE: ZSVA_MOD_PLI_1
 BLACKBOX MODULE: zebu_bb_ZDPI_MOD_fifo_usage_spy_ZDPI_fifo_usage_spy_notify_call0
+BLACKBOX MODULE: zebu_bb_ZDPI_MOD_fifo_usage_spy_ZDPI_fifo_usage_spy_notify_call1
+BLACKBOX MODULE: zebu_bb_ZDPI_MOD_fifo_usage_spy_ZDPI_fifo_usage_spy_notify_call2
+BLACKBOX MODULE: zebu_bb_ZDPI_MOD_fifo_usage_spy_ZDPI_fifo_usage_spy_notify_call3
+BLACKBOX MODULE: zebu_bb_ZDPI_MOD_fifo_usage_spy_ZDPI_fifo_usage_spy_notify_call4
+BLACKBOX MODULE: zebu_bb_ZDPI_MOD_fifo_usage_spy_ZDPI_fifo_usage_spy_notify_call5
 BLACKBOX MODULE: zebu_bb_ZDPI_MOD_stb_ZDPI_grp0_dummy_import_for_pli_call0
 BLACKBOX MODULE: zebu_bb_ZDPI_MOD_stb_ZDPI_grp0_dummy_import_for_pli_call1
 BLACKBOX MODULE: zebu_reqsig_clock_zcompositeclock
@@ -932,8 +946,8 @@ BLACKBOX INSTANCE :       ZSVA_MOD_PLI_1          top.u_dut.u_check.sva_parity_e
 BLACKBOX INSTANCE :           ZSVA_MOD_0          top.assert_design_req1_empty_assert
 BLACKBOX INSTANCE :           ZSVA_MOD_1          top.assert_design_req2_full_assert
 
-Found 272 blackbox instance(s) :
-	 117 blackbox(es)
+Found 277 blackbox instance(s) :
+	 122 blackbox(es)
 	 0 memory(ies)
 	 117 zview(s)
 	 38 fast waveform capture ip(s)
@@ -997,7 +1011,7 @@ NPL COST END
           +-------------+--------------+---------------------+
           |STATIC PROBES|DYNAMIC PROBES|FAST WAVEFORM CAPTURE|
           +-------------+--------------+---------------------+
-          |            0|             0|                  137|
+          |            0|             0|                  193|
           +-------------+--------------+---------------------+
 
 
@@ -1252,7 +1266,7 @@ FPGAs fan-out
     ------------------------------------------
 
 Resources for U0_M0_F0:
-  REG=        72  LUT=      5341  RAMLUT=       138  BRAM=5951  DSP_MULT=   3
+  REG=        72  LUT=      5285  RAMLUT=       194  BRAM=6019  DSP_MULT=   8
 
     3.3.Summary post-clustering
     ---------------------------
@@ -1266,36 +1280,36 @@ Consolidated primitive count from the top DUT top
           +------------------------------------+--------------------+---------+---------+
           |Summary Buffers                     |                   8|         |         |
           =------------------------------------+--------------------+---------+---------=
-          |fd                                  |                 280|         |      280|
-          |fd_1                                |                  41|         |       41|
-          |fdc                                 |                  39|         |       39|
+          |fd                                  |                 318|         |      318|
+          |fd_1                                |                  60|         |       60|
+          |fdc                                 |                  34|         |       34|
           |fdce                                |                  19|         |       19|
-          |fde                                 |                 132|         |      132|
-          |fdp                                 |                   6|         |        6|
+          |fde                                 |                 133|         |      133|
+          |fdp                                 |                   7|         |        7|
           +------------------------------------+--------------------+---------+---------+
-          |Summary Flip-Flops                  |                 517|         |      517|
+          |Summary Flip-Flops                  |                 571|         |      571|
           =------------------------------------+--------------------+---------+---------=
-          |gnd                                 |                  17|         |         |
-          |lut2                                |                  63|       63|         |
+          |gnd                                 |                  18|         |         |
+          |lut2                                |                  69|       69|         |
           |lut3                                |                  60|       60|         |
-          |lut4                                |                   9|        9|         |
-          |lut5                                |                  10|       10|         |
+          |lut4                                |                   8|        8|         |
+          |lut5                                |                   9|        9|         |
           |lut6                                |                  29|       29|         |
-          |vcc                                 |                  11|         |         |
+          |vcc                                 |                  12|         |         |
           +------------------------------------+--------------------+---------+---------+
-          |Summary General                     |  199 (=   171 LUTs)|      171|         |
+          |Summary General                     |  205 (=   175 LUTs)|      175|         |
           =------------------------------------+--------------------+---------+---------=
-          |ld                                  |                 373|         |      373|
+          |ld                                  |                 371|         |      371|
           |ld_1                                |                   1|         |        1|
           +------------------------------------+--------------------+---------+---------+
-          |Summary Latches                     |                 374|         |      374|
+          |Summary Latches                     |                 372|         |      372|
           =------------------------------------+--------------------+---------+---------=
           |and2                                |                  31|       31|         |
-          |inv                                 |                  49|         |         |
+          |inv                                 |                  55|         |         |
           |xor2                                |                   6|        6|         |
           |xorcy                               |                   2|         |         |
           +------------------------------------+--------------------+---------+---------+
-          |Summary Logic Primitives            |   88 (=    37 LUTs)|       37|         |
+          |Summary Logic Primitives            |   94 (=    37 LUTs)|       37|         |
           =------------------------------------+--------------------+---------+---------=
           |ram256x1s                           |   18 (=    72 LUTs)|       72|         |
           +------------------------------------+--------------------+---------+---------+
@@ -1311,41 +1325,42 @@ Consolidated primitive count from the top DUT top
           |ZSVA_MOD_PLI_1                      |                   1|         |         |
           |ZSVA_MOD_PLI_1_bb362c85             |                   1|         |         |
           |ZebuClockFilterClock_filled         |                   1|         |         |
+          |ZebuClockFilterClock_filled_3f276e85|                   1|         |         |
           |ZebuClockFilterClock_filled_4726121e|                   1|         |         |
           |ZebuClockFilterClock_filled_5fcd163e|                   1|         |         |
           |ZebuClockFilterData_filled          |                   1|         |         |
           |carry4                              |                  40|         |         |
           +------------------------------------+--------------------+---------+---------+
-          |Summary                             |                  93|         |       45|
+          |Summary                             |                  94|         |       45|
           =------------------------------------+--------------------+---------+---------=
           |KEEP_ZVIEW                          |                  20|         |       20|
           |ZXLSYS                              |                   7|         |         |
           |zfwc_hs_1                           |                  38|         |         |
-          |zfwc_hs_4                           |                   1|         |         |
+          |zfwc_hs_10                          |                   6|         |         |
           |zfwc_hs_48                          |                   2|         |         |
           |zview                               |                  98|         |         |
           +------------------------------------+--------------------+---------+---------+
-          |Summary ZEBU Special Cells          |                 166|         |       20|
+          |Summary ZEBU Special Cells          |                 171|         |       20|
           +------------------------------------+--------------------+---------+---------+
 
 
 
 Design content summary, Luts, BRams, URAM, Flip-Flops, Latches, Multiplexers, Multipliers, other logic:
           +----------------------------------+----+
-          |Logic LUTs                        | 171|
+          |Logic LUTs                        | 175|
           |RAMLUTs                           |  72|
-          |Logic LUTs + RAMLUTs              | 243|
-          |Logic LUTs + RAMLUTs + other logic| 280|
+          |Logic LUTs + RAMLUTs              | 247|
+          |Logic LUTs + RAMLUTs + other logic| 284|
           |BRAMs                             |   0|
           |URAMs                             |   0|
-          |Flip-Flops                        | 517|
-          |Latches                           | 374|
-          |Flip-Flops + Latches + other logic|1330|
+          |Flip-Flops                        | 571|
+          |Latches                           | 372|
+          |Flip-Flops + Latches + other logic|1380|
           |Multiplexers                      |   2|
           |MULT18/DSP                        |   0|
-          |Other logic                       | 401|
+          |Other logic                       | 415|
           |Lut equiv other logic             |  37|
-          |Reg equiv Other logic             | 439|
+          |Reg equiv Other logic             | 437|
           +----------------------------------+----+
 
 
@@ -1359,8 +1374,8 @@ Checking FPGA resource usage
 Checking FPGA: 'UNIT0.MOD0.F0'
                 BRAM     0 / 1290
      MULT18x18/DSP48     0 / 2160
-                 REG   956 / 2443200
-                 LUT   280 / 1221600
+                 REG  1008 / 2443200
+                 LUT   284 / 1221600
 
               RAMLUT    72 / 344800
 
@@ -1666,10 +1681,11 @@ Primitive count in SYNCHRONOUS ZMEM module (work, rom_ZMEM_mem), Instantiated 1 
 
     6.6.3.ZEBU max registers inserted for each clock for FPGA 'UNIT0.MOD0.F0'
 
-clk U0_M0_F0.U0_M0_F0_core.u_dut.u_fifo.zebu_ckgltch_fifo_0000_1 /top.u_dut.u_fifo.zebu_ckgltch_fifo_0000_1 nb zdelay 168 
-clk U0_M0_F0.U0_M0_F0_core.zebu_ckgltch_top /top.zebu_ckgltch_top nb zdelay 450 
-clk U0_M0_F0.U0_M0_F0_core.zebu_ckgltch_top_0 /top.zebu_ckgltch_top_0 nb zdelay 424 
-Max register insertion for FPGA UNIT0.MOD0.F0 = 1042 
+clk U0_M0_F0.U0_M0_F0_core.u_dut.u_fifo.zebu_ckgltch_fifo_0000_2 /top.u_dut.u_fifo.zebu_ckgltch_fifo_0000_2 nb zdelay 168 
+clk U0_M0_F0.U0_M0_F0_core.zebu_ckgltch_top /top.zebu_ckgltch_top nb zdelay 38 
+clk U0_M0_F0.U0_M0_F0_core.zebu_ckgltch_top_0 /top.zebu_ckgltch_top_0 nb zdelay 488 
+clk U0_M0_F0.U0_M0_F0_core.zebu_ckgltch_top_1 /top.zebu_ckgltch_top_1 nb zdelay 441 
+Max register insertion for FPGA UNIT0.MOD0.F0 = 1135 
 
     6.7.Local FPGA BUFG handling following Xilinx resources
     -------------------------------------------------------
@@ -1677,12 +1693,13 @@ Max register insertion for FPGA UNIT0.MOD0.F0 = 1042
 
     6.7.1.BUFG analysis for FPGA 'UNIT0.MOD0.F0'
 
-    1 BUFG used for clock 'top.z_dclk_delay2' (fanout 45) (system define)
-    1 BUFG used for clock 'top.zsva_zcg_compositeClock_16209639241055482872' (fanout 7) (system define)
+    1 BUFG used for clock 'top.z_dclk_delay2' (fanout 46) (system define)
+    1 BUFG used for clock 'top.zsva_zcg_compositeClock_16209639241055482872' (fanout 12) (system define)
     1 BUFG used for clock 'zdelay' (system define)
-    0 BUFG used for clock 'U0_M0_F0.U0_M0_F0_core.zebu_ckgltch_top' (fanout 183 < fanout min 12000)
-    0 BUFG used for clock 'U0_M0_F0.U0_M0_F0_core.zebu_ckgltch_top_0' (fanout 179 < fanout min 12000)
-    0 BUFG used for clock 'U0_M0_F0.U0_M0_F0_core.u_dut.u_fifo.zebu_ckgltch_fifo_0000_1' (fanout 56 < fanout min 12000)
+    0 BUFG used for clock 'U0_M0_F0.U0_M0_F0_core.zebu_ckgltch_top_0' (fanout 202 < fanout min 12000)
+    0 BUFG used for clock 'U0_M0_F0.U0_M0_F0_core.zebu_ckgltch_top_1' (fanout 189 < fanout min 12000)
+    0 BUFG used for clock 'U0_M0_F0.U0_M0_F0_core.u_dut.u_fifo.zebu_ckgltch_fifo_0000_2' (fanout 56 < fanout min 12000)
+    0 BUFG used for clock 'U0_M0_F0.U0_M0_F0_core.zebu_ckgltch_top' (fanout 19 < fanout min 12000)
 
     6.8.Unspecified register output
     -------------------------------
@@ -1903,13 +1920,13 @@ All defmapping path(s) found.
 Generated Netlist, REG statistics
 Generated Netlist, REG statistics
 
-          +-------------+------------+----------+
-          |FPGA         |         REG|(*)MUXF7,8|
-          +-------------+------------+----------+
-          |UNIT0.MOD0.F0|956 /2443200|         0|
-          +-------------+------------+----------+
-          |SUM          |956 /2443200|        --|
-          +-------------+------------+----------+
+          +-------------+-------------+----------+
+          |FPGA         |          REG|(*)MUXF7,8|
+          +-------------+-------------+----------+
+          |UNIT0.MOD0.F0|1008 /2443200|         0|
+          +-------------+-------------+----------+
+          |SUM          |1008 /2443200|        --|
+          +-------------+-------------+----------+
 
 
 # REG        : REG count in generated netlists / FPGA capacity. 
@@ -1923,9 +1940,9 @@ Generated Netlist, LUT statistics
           +-------------+------------+----------------------------+-----------------+----------+
           |FPGA         |         LUT|                   (**)MUXCY|LUT w/o weighting|    RAMLUT|
           +-------------+------------+----------------------------+-----------------+----------+
-          |UNIT0.MOD0.F0|280 /1221600|2/lut(2)/lut_no_weighting(2)|              280|72 /344800|
+          |UNIT0.MOD0.F0|284 /1221600|2/lut(2)/lut_no_weighting(2)|              284|72 /344800|
           +-------------+------------+----------------------------+-----------------+----------+
-          |SUM          |280 /1221600|2/lut(2)/lut_no_weighting(2)|              280|72 /344800|
+          |SUM          |284 /1221600|2/lut(2)/lut_no_weighting(2)|              284|72 /344800|
           +-------------+------------+----------------------------+-----------------+----------+
 
 
@@ -1942,13 +1959,13 @@ Generated Netlist, LUT statistics
 Generated Netlist, resource mapping summary
 Generated Netlist, resource mapping summary
 
-          +-------------+------------+----------+------------+----------------------------+----------+-------+----+-------+------------+------+
-          |FPGA         |         REG|(*)MUXF7,8|         LUT|                   (**)MUXCY|    RAMLUT|   BRAM|URAM|    DSP|CONTROLS SET|STATUS|
-          +-------------+------------+----------+------------+----------------------------+----------+-------+----+-------+------------+------+
-          |UNIT0.MOD0.F0|956 /2443200|         0|280 /1221600|2/lut(2)/lut_no_weighting(2)|72 /344800|0 /1290|0 /0|0 /2160|          25|    OK|
-          +-------------+------------+----------+------------+----------------------------+----------+-------+----+-------+------------+------+
-          |SUM          |956 /2443200|        --|280 /1221600|2/lut(2)/lut_no_weighting(2)|72 /344800|0 /1290|0 /0|0 /2160|          25|    --|
-          +-------------+------------+----------+------------+----------------------------+----------+-------+----+-------+------------+------+
+          +-------------+-------------+----------+------------+----------------------------+----------+-------+----+-------+------------+------+
+          |FPGA         |          REG|(*)MUXF7,8|         LUT|                   (**)MUXCY|    RAMLUT|   BRAM|URAM|    DSP|CONTROLS SET|STATUS|
+          +-------------+-------------+----------+------------+----------------------------+----------+-------+----+-------+------------+------+
+          |UNIT0.MOD0.F0|1008 /2443200|         0|284 /1221600|2/lut(2)/lut_no_weighting(2)|72 /344800|0 /1290|0 /0|0 /2160|          27|    OK|
+          +-------------+-------------+----------+------------+----------------------------+----------+-------+----+-------+------------+------+
+          |SUM          |1008 /2443200|        --|284 /1221600|2/lut(2)/lut_no_weighting(2)|72 /344800|0 /1290|0 /0|0 /2160|          27|    --|
+          +-------------+-------------+----------+------------+----------------------------+----------+-------+----+-------+------------+------+
 
 
 # REG          : REG count in generated netlists / FPGA capacity. 
@@ -1997,173 +2014,173 @@ Max error FPGA CUT estimate: 0.000000.
  =================
 
 Reset time counter
-   2    elapsed:0.21 s   user:0.19 s    system:0.2 s     %cpu:103.32       load:0.42       fm:174184 m      vm:477 m      vm:+16 m      um:174 m      um:+24 m zCoreBuild/Loading_target_configuration.
-   3    elapsed:0.12 s   user:0.10 s    system:0.1 s      %cpu:90.91       load:0.47       fm:174169 m      vm:494 m      vm:+17 m      um:192 m      um:+17 m zCoreBuild/Pre-load_flow.
-   5       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.47       fm:174169 m      vm:494 m       vm:+0 m      um:192 m       um:+0 m zCoreBuild/loading_files/Dve_parsing.
-   6     elapsed:0.3 s    user:0.2 s    system:0.1 s      %cpu:83.92       load:0.47       fm:174162 m      vm:502 m       vm:+8 m      um:200 m       um:+8 m zCoreBuild/loading_files/Loading_edif_source_files.
-   7     elapsed:0.1 s      user:0 s      system:0 s       %cpu:0.00       load:0.47       fm:174162 m      vm:502 m       vm:+0 m      um:200 m       um:+0 m zCoreBuild/loading_files/Gate_localization.
-   8       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.47       fm:174162 m      vm:502 m       vm:+0 m      um:200 m       um:+0 m zCoreBuild/loading_files/Macro_renaming.
-   8     elapsed:0.5 s    user:0.2 s    system:0.1 s      %cpu:62.18       load:0.47       fm:174162 m      vm:502 m       vm:+8 m      um:200 m       um:+8 m zCoreBuild/loading_files
-   9       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.47       fm:174162 m      vm:502 m       vm:+0 m      um:200 m       um:+0 m zCoreBuild/Merging_compatible_modules.
-  11       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.47       fm:174162 m      vm:502 m       vm:+0 m      um:200 m       um:+0 m zCoreBuild/pre-uniquify_flow./input_netlist_checking
-  12       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.47       fm:174162 m      vm:502 m       vm:+0 m      um:200 m       um:+0 m zCoreBuild/pre-uniquify_flow./Zrm_macros_detection.
-  14       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.47       fm:174162 m      vm:502 m       vm:+0 m      um:200 m       um:+0 m zCoreBuild/pre-uniquify_flow./netlist_preprocessing/flatten_libs
-  14       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.47       fm:174162 m      vm:502 m       vm:+0 m      um:200 m       um:+0 m zCoreBuild/pre-uniquify_flow./netlist_preprocessing
-  16       elapsed:0 s      user:0 s    system:0.1 s     %cpu:266.67       load:0.47       fm:174156 m      vm:579 m      vm:+24 m      um:207 m       um:+4 m zCoreBuild/pre-uniquify_flow./PRE-CLUSTERING_STAT/Compute_hier_wires_upfront
-  16    elapsed:0.16 s    user:0.2 s    system:0.3 s      %cpu:30.49       load:0.47       fm:174143 m      vm:647 m     vm:+145 m      um:218 m      um:+18 m zCoreBuild/pre-uniquify_flow./PRE-CLUSTERING_STAT
-  17       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.47       fm:174143 m      vm:647 m       vm:+0 m      um:218 m       um:+0 m zCoreBuild/pre-uniquify_flow./Clock_module_marking
-  18       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.47       fm:174143 m      vm:647 m       vm:+0 m      um:218 m       um:+0 m zCoreBuild/pre-uniquify_flow./Probe_insertion.
-  18    elapsed:0.17 s    user:0.3 s    system:0.3 s      %cpu:35.29       load:0.47       fm:174143 m      vm:647 m     vm:+145 m      um:218 m      um:+18 m zCoreBuild/pre-uniquify_flow.
-  19       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.47       fm:174143 m      vm:647 m       vm:+0 m      um:218 m       um:+0 m zCoreBuild/Technology_mapping_pre-elaborate
-  21       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.47       fm:174143 m      vm:647 m       vm:+0 m      um:218 m       um:+0 m zCoreBuild/Process_DPIs,_SVAs_and_Waveform_Captures/Remap_DPIs_on_FWC_IPs
-  22       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.47       fm:174143 m      vm:647 m       vm:+0 m      um:218 m       um:+0 m zCoreBuild/Process_DPIs,_SVAs_and_Waveform_Captures/Implement_enables_on_SVAs
-  23       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.47       fm:174143 m      vm:647 m       vm:+0 m      um:218 m       um:+0 m zCoreBuild/Process_DPIs,_SVAs_and_Waveform_Captures/Process_SVA_act_and_readmem/$finish/$fopen_tasks
-  24       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.47       fm:174143 m      vm:647 m       vm:+0 m      um:218 m       um:+0 m zCoreBuild/Process_DPIs,_SVAs_and_Waveform_Captures/Connect_Waveform_Captures_clock_and_enable
-  25       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.47       fm:174143 m      vm:647 m       vm:+0 m      um:219 m       um:+0 m zCoreBuild/Process_DPIs,_SVAs_and_Waveform_Captures/Check_Waveform_Captures_number_against_hardware_capacity
-  25     elapsed:0.1 s      user:0 s    system:0.1 s     %cpu:235.29       load:0.47       fm:174143 m      vm:647 m       vm:+0 m      um:219 m       um:+1 m zCoreBuild/Process_DPIs,_SVAs_and_Waveform_Captures
-  26       elapsed:0 s    user:0.1 s      system:0 s    %cpu:2000.00       load:0.47       fm:174143 m      vm:647 m       vm:+0 m      um:219 m       um:+0 m zCoreBuild/UNIQUIFY
-  28       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.47       fm:174143 m      vm:647 m       vm:+0 m      um:219 m       um:+0 m zCoreBuild/post-uniquify_flow./Gate_insertion
-  28     elapsed:0.2 s      user:0 s      system:0 s       %cpu:0.00       load:0.47       fm:174143 m      vm:648 m       vm:+1 m      um:219 m       um:+0 m zCoreBuild/post-uniquify_flow.
-  31       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.47       fm:174143 m      vm:649 m       vm:+0 m      um:219 m       um:+0 m zCoreBuild/clustering/Pre-split_processing/Technology_mapping_post-elaborate
-  35       elapsed:0 s    user:0.1 s      system:0 s    %cpu:2000.00       load:0.47       fm:174142 m      vm:653 m       vm:+4 m      um:220 m       um:+0 m zCoreBuild/clustering/Pre-split_processing/CONSTANT_PROPAGATION/Constant_propagation/LO/BUILD_WB
-  36       elapsed:0 s    user:0.1 s    system:0.2 s    %cpu:1714.29       load:0.47       fm:174142 m      vm:654 m       vm:+1 m      um:220 m       um:+0 m zCoreBuild/clustering/Pre-split_processing/CONSTANT_PROPAGATION/Constant_propagation/LO/PUSH_CST
-  37       elapsed:0 s    user:0.1 s      system:0 s     %cpu:222.22       load:0.47       fm:174142 m      vm:654 m       vm:+0 m      um:220 m       um:+0 m zCoreBuild/clustering/Pre-split_processing/CONSTANT_PROPAGATION/Constant_propagation/LO/SIMPLIFY
-  37       elapsed:0 s    user:0.5 s    system:0.3 s     %cpu:864.86       load:0.47       fm:174142 m      vm:654 m       vm:+5 m      um:220 m       um:+0 m zCoreBuild/clustering/Pre-split_processing/CONSTANT_PROPAGATION/Constant_propagation/LO
-  37       elapsed:0 s    user:0.5 s    system:0.3 s     %cpu:842.11       load:0.47       fm:174142 m      vm:654 m       vm:+5 m      um:220 m       um:+0 m zCoreBuild/clustering/Pre-split_processing/CONSTANT_PROPAGATION/Constant_propagation
-  37     elapsed:0.1 s    user:0.5 s    system:0.3 s     %cpu:680.85       load:0.47       fm:174142 m      vm:654 m       vm:+5 m      um:220 m       um:+0 m zCoreBuild/clustering/Pre-split_processing/CONSTANT_PROPAGATION
-  39       elapsed:0 s    user:0.1 s      system:0 s    %cpu:4000.00       load:0.47       fm:174142 m      vm:654 m       vm:+0 m      um:220 m       um:+0 m zCoreBuild/clustering/Pre-split_processing/BUFFER/INV_factorizing/Instantiate_factbufinv
-  40       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.47       fm:174142 m      vm:655 m       vm:+1 m      um:220 m       um:+0 m zCoreBuild/clustering/Pre-split_processing/BUFFER/INV_factorizing/Get_Buf_Inv_Hier_wire
-  41       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.47       fm:174142 m      vm:655 m       vm:+0 m      um:220 m       um:+0 m zCoreBuild/clustering/Pre-split_processing/BUFFER/INV_factorizing/Partial_uniquify
-  42       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.47       fm:174142 m      vm:655 m       vm:+0 m      um:220 m       um:+0 m zCoreBuild/clustering/Pre-split_processing/BUFFER/INV_factorizing/Connect
-  42       elapsed:0 s    user:0.1 s    system:0.1 s     %cpu:888.89       load:0.47       fm:174142 m      vm:655 m       vm:+1 m      um:220 m       um:+0 m zCoreBuild/clustering/Pre-split_processing/BUFFER/INV_factorizing
-  46       elapsed:0 s    user:0.1 s      system:0 s    %cpu:4000.00       load:0.47       fm:174142 m      vm:655 m       vm:+0 m      um:220 m       um:+0 m zCoreBuild/clustering/Pre-split_processing/remove_loadless_logic/Remove_unused_logic/LO/BUILD_WB
-  47       elapsed:0 s    user:0.3 s      system:0 s    %cpu:1090.91       load:0.47       fm:174142 m      vm:655 m       vm:+0 m      um:220 m       um:+0 m zCoreBuild/clustering/Pre-split_processing/remove_loadless_logic/Remove_unused_logic/LO/TRACE_TFI
-  48     elapsed:0.1 s    user:0.2 s    system:0.2 s     %cpu:842.11       load:0.47       fm:174142 m      vm:655 m       vm:+0 m      um:220 m       um:+0 m zCoreBuild/clustering/Pre-split_processing/remove_loadless_logic/Remove_unused_logic/LO/SIMPLIFY
-  48     elapsed:0.1 s    user:0.7 s    system:0.2 s    %cpu:1000.00       load:0.47       fm:174142 m      vm:655 m       vm:+0 m      um:220 m       um:+0 m zCoreBuild/clustering/Pre-split_processing/remove_loadless_logic/Remove_unused_logic/LO
-  48     elapsed:0.1 s    user:0.7 s    system:0.2 s     %cpu:947.37       load:0.47       fm:174142 m      vm:655 m       vm:+0 m      um:220 m       um:+0 m zCoreBuild/clustering/Pre-split_processing/remove_loadless_logic/Remove_unused_logic
-  48     elapsed:0.1 s    user:0.7 s    system:0.2 s     %cpu:818.18       load:0.47       fm:174142 m      vm:655 m       vm:+0 m      um:220 m       um:+0 m zCoreBuild/clustering/Pre-split_processing/remove_loadless_logic
-  49       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.47       fm:174142 m      vm:655 m       vm:+0 m      um:220 m       um:+0 m zCoreBuild/clustering/Pre-split_processing/POWER_MANIPULATION
-  51       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.47       fm:174142 m      vm:655 m       vm:+0 m      um:220 m       um:+0 m zCoreBuild/clustering/Pre-split_processing/COVERAGE_MANIPULATION/Manipulate_Coverage_counters
-  51       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.47       fm:174142 m      vm:655 m       vm:+0 m      um:220 m       um:+0 m zCoreBuild/clustering/Pre-split_processing/COVERAGE_MANIPULATION
-  52       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.47       fm:174142 m      vm:655 m       vm:+0 m      um:220 m       um:+0 m zCoreBuild/clustering/Pre-split_processing/Tristate_manip
-  53       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.47       fm:174142 m      vm:655 m       vm:+0 m      um:220 m       um:+0 m zCoreBuild/clustering/Pre-split_processing/Pre-split_detect_memories
-  57       elapsed:0 s    user:0.1 s    system:0.1 s    %cpu:1333.33       load:0.47       fm:174115 m      vm:680 m       vm:+0 m      um:247 m       um:+0 m zCoreBuild/clustering/Pre-split_processing/Pre-split_clock_flow/Pre-(auto)clustering_clock_processing/Absorb_Buf_Inv/Instantiate_NPCK_zvu_synchro_db
-  58       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.47       fm:174115 m      vm:680 m       vm:+0 m      um:247 m       um:+0 m zCoreBuild/clustering/Pre-split_processing/Pre-split_clock_flow/Pre-(auto)clustering_clock_processing/Absorb_Buf_Inv/FillDB
-  59       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.47       fm:174115 m      vm:680 m       vm:+0 m      um:247 m       um:+0 m zCoreBuild/clustering/Pre-split_processing/Pre-split_clock_flow/Pre-(auto)clustering_clock_processing/Absorb_Buf_Inv/Partial_uniquify
-  60       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.47       fm:174115 m      vm:680 m       vm:+0 m      um:247 m       um:+0 m zCoreBuild/clustering/Pre-split_processing/Pre-split_clock_flow/Pre-(auto)clustering_clock_processing/Absorb_Buf_Inv/Batch_reconnection
-  60       elapsed:0 s    user:0.1 s    system:0.2 s     %cpu:923.08       load:0.47       fm:174115 m      vm:680 m       vm:+0 m      um:247 m       um:+0 m zCoreBuild/clustering/Pre-split_processing/Pre-split_clock_flow/Pre-(auto)clustering_clock_processing/Absorb_Buf_Inv
-  62       elapsed:0 s    user:0.1 s    system:0.2 s    %cpu:3000.00       load:0.47       fm:174115 m      vm:680 m       vm:+0 m      um:247 m       um:+0 m zCoreBuild/clustering/Pre-split_processing/Pre-split_clock_flow/Pre-(auto)clustering_clock_processing/Filter_Glitches_Synchronous/Instantiate_NPCK_zvu_synchro_db
-  62       elapsed:0 s    user:0.1 s    system:0.2 s    %cpu:1090.91       load:0.47       fm:174115 m      vm:680 m       vm:+0 m      um:247 m       um:+0 m zCoreBuild/clustering/Pre-split_processing/Pre-split_clock_flow/Pre-(auto)clustering_clock_processing/Filter_Glitches_Synchronous
-  63       elapsed:0 s    user:0.2 s      system:0 s    %cpu:1333.33       load:0.47       fm:174115 m      vm:680 m       vm:+0 m      um:247 m       um:+0 m zCoreBuild/clustering/Pre-split_processing/Pre-split_clock_flow/Pre-(auto)clustering_clock_processing/Instantiate_NPCK_zvu_synchro_db
-  64       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.47       fm:174115 m      vm:680 m       vm:+0 m      um:247 m       um:+0 m zCoreBuild/clustering/Pre-split_processing/Pre-split_clock_flow/Pre-(auto)clustering_clock_processing/FillDB
-  65       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.47       fm:174115 m      vm:680 m       vm:+0 m      um:247 m       um:+0 m zCoreBuild/clustering/Pre-split_processing/Pre-split_clock_flow/Pre-(auto)clustering_clock_processing/Partial_uniquify
-  66       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.47       fm:174115 m      vm:680 m       vm:+0 m      um:247 m       um:+0 m zCoreBuild/clustering/Pre-split_processing/Pre-split_clock_flow/Pre-(auto)clustering_clock_processing/Batch_reconnection
-  69       elapsed:0 s    user:0.2 s      system:0 s    %cpu:4000.00       load:0.47       fm:174090 m      vm:707 m       vm:+0 m      um:274 m       um:+0 m zCoreBuild/clustering/Pre-split_processing/Pre-split_clock_flow/Pre-(auto)clustering_clock_processing/Remove_unused_logic/LO/BUILD_WB
-  70       elapsed:0 s      user:0 s    system:0.2 s     %cpu:666.67       load:0.47       fm:174090 m      vm:707 m       vm:+0 m      um:274 m       um:+0 m zCoreBuild/clustering/Pre-split_processing/Pre-split_clock_flow/Pre-(auto)clustering_clock_processing/Remove_unused_logic/LO/TRACE_TFI
-  71     elapsed:0.1 s    user:0.3 s    system:0.1 s     %cpu:941.18       load:0.47       fm:174090 m      vm:707 m       vm:+0 m      um:274 m       um:+0 m zCoreBuild/clustering/Pre-split_processing/Pre-split_clock_flow/Pre-(auto)clustering_clock_processing/Remove_unused_logic/LO/SIMPLIFY
-  71     elapsed:0.1 s    user:0.7 s    system:0.3 s    %cpu:1081.08       load:0.47       fm:174090 m      vm:707 m       vm:+0 m      um:274 m       um:+0 m zCoreBuild/clustering/Pre-split_processing/Pre-split_clock_flow/Pre-(auto)clustering_clock_processing/Remove_unused_logic/LO
-  71     elapsed:0.1 s    user:0.7 s    system:0.3 s    %cpu:1052.63       load:0.47       fm:174090 m      vm:707 m       vm:+0 m      um:274 m       um:+0 m zCoreBuild/clustering/Pre-split_processing/Pre-split_clock_flow/Pre-(auto)clustering_clock_processing/Remove_unused_logic
-  71       elapsed:2 s      user:2 s   system:0.12 s     %cpu:108.00       load:0.47       fm:174090 m      vm:707 m      vm:+27 m      um:274 m      um:+28 m zCoreBuild/clustering/Pre-split_processing/Pre-split_clock_flow/Pre-(auto)clustering_clock_processing
-  71       elapsed:2 s      user:2 s   system:0.12 s     %cpu:107.99       load:0.47       fm:174090 m      vm:707 m      vm:+27 m      um:274 m      um:+28 m zCoreBuild/clustering/Pre-split_processing/Pre-split_clock_flow
-  72       elapsed:0 s    user:0.1 s      system:0 s    %cpu:1333.33       load:0.47       fm:174090 m      vm:707 m       vm:+0 m      um:274 m       um:+0 m zCoreBuild/clustering/Pre-split_processing/Pre-split_process_attributes_for_false_path
-  74    elapsed:0.30 s      user:0 s    system:0.2 s       %cpu:6.81       load:0.47       fm:174084 m     vm:1476 m     vm:+769 m      um:281 m       um:+7 m zCoreBuild/clustering/Pre-split_processing/ZCOREPARTITIONING/MODELGEN
-  75     elapsed:0.4 s   user:0.13 s    system:0.3 s     %cpu:353.59       load:0.47       fm:174081 m     vm:1479 m       vm:+3 m      um:283 m       um:+2 m zCoreBuild/clustering/Pre-split_processing/ZCOREPARTITIONING/Build_Route_Table
-  76    elapsed:0.20 s    user:0.1 s    system:0.2 s      %cpu:15.19       load:0.51       fm:174081 m     vm:1479 m       vm:+0 m      um:284 m       um:+1 m zCoreBuild/clustering/Pre-split_processing/ZCOREPARTITIONING/Partitioner
-  76    elapsed:0.59 s   user:0.15 s    system:0.8 s      %cpu:38.66       load:0.51       fm:174081 m     vm:1480 m     vm:+773 m      um:284 m      um:+10 m zCoreBuild/clustering/Pre-split_processing/ZCOREPARTITIONING
-  77     elapsed:0.5 s      user:0 s      system:0 s       %cpu:0.00       load:0.51       fm:174080 m     vm:1481 m       vm:+0 m      um:286 m       um:+0 m zCoreBuild/clustering/Pre-split_processing/Pre-split_proc._memories
-  78       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.51       fm:174080 m     vm:1481 m       vm:+0 m      um:286 m       um:+0 m zCoreBuild/clustering/Pre-split_processing/Inter-zcore_protection
-  80       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.51       fm:174080 m     vm:1481 m       vm:+0 m      um:286 m       um:+0 m zCoreBuild/clustering/Pre-split_processing/Localize_zViews/LOC_ZVIEW_DEFMAP_CREATE
-  80       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.51       fm:174080 m     vm:1483 m       vm:+2 m      um:286 m       um:+0 m zCoreBuild/clustering/Pre-split_processing/Localize_zViews
-  81     elapsed:0.1 s    user:0.2 s    system:0.1 s    %cpu:2000.00       load:0.51       fm:174080 m     vm:1483 m       vm:+0 m      um:286 m       um:+0 m zCoreBuild/clustering/Pre-split_processing/Data_localization
-  84       elapsed:0 s    user:0.2 s    system:0.1 s    %cpu:2000.00       load:0.51       fm:174079 m     vm:1483 m       vm:+0 m      um:287 m       um:+1 m zCoreBuild/clustering/Pre-split_processing/Pre-split_clock_processing/advanced_localize_clock/Instantiate_NPCK_zvu_synchro_db
-  85       elapsed:0 s      user:0 s    system:0.1 s     %cpu:800.00       load:0.51       fm:174079 m     vm:1483 m       vm:+0 m      um:287 m       um:+0 m zCoreBuild/clustering/Pre-split_processing/Pre-split_clock_processing/advanced_localize_clock/createClockConeInfos
-  86       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.51       fm:174079 m     vm:1483 m       vm:+0 m      um:287 m       um:+0 m zCoreBuild/clustering/Pre-split_processing/Pre-split_clock_processing/advanced_localize_clock/Partial_uniquify
-  87       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.51       fm:174078 m     vm:1484 m       vm:+0 m      um:288 m       um:+0 m zCoreBuild/clustering/Pre-split_processing/Pre-split_clock_processing/advanced_localize_clock/Advanced_localize_clock_process
-  87     elapsed:0.3 s    user:0.4 s    system:0.3 s     %cpu:261.68       load:0.51       fm:174078 m     vm:1484 m       vm:+1 m      um:288 m       um:+2 m zCoreBuild/clustering/Pre-split_processing/Pre-split_clock_processing/advanced_localize_clock
-  90       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.51       fm:174078 m     vm:1484 m       vm:+0 m      um:288 m       um:+0 m zCoreBuild/clustering/Pre-split_processing/Pre-split_clock_processing/Remove_unused_logic/LO/BUILD_WB
-  91     elapsed:0.1 s    user:0.3 s    system:0.1 s    %cpu:2000.00       load:0.51       fm:174078 m     vm:1484 m       vm:+0 m      um:288 m       um:+0 m zCoreBuild/clustering/Pre-split_processing/Pre-split_clock_processing/Remove_unused_logic/LO/TRACE_TFI
-  92       elapsed:0 s    user:0.3 s    system:0.1 s    %cpu:1142.86       load:0.51       fm:174078 m     vm:1484 m       vm:+0 m      um:288 m       um:+0 m zCoreBuild/clustering/Pre-split_processing/Pre-split_clock_processing/Remove_unused_logic/LO/SIMPLIFY
-  92     elapsed:0.1 s    user:0.7 s    system:0.2 s    %cpu:1285.71       load:0.51       fm:174078 m     vm:1484 m       vm:+0 m      um:288 m       um:+0 m zCoreBuild/clustering/Pre-split_processing/Pre-split_clock_processing/Remove_unused_logic/LO
-  92     elapsed:0.1 s    user:0.7 s    system:0.2 s    %cpu:1285.71       load:0.51       fm:174078 m     vm:1484 m       vm:+0 m      um:288 m       um:+0 m zCoreBuild/clustering/Pre-split_processing/Pre-split_clock_processing/Remove_unused_logic
-  92    elapsed:0.15 s   user:0.23 s    system:0.5 s     %cpu:179.49       load:0.51       fm:174078 m     vm:1484 m       vm:+1 m      um:288 m       um:+2 m zCoreBuild/clustering/Pre-split_processing/Pre-split_clock_processing
-  93       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.51       fm:174078 m     vm:1484 m       vm:+0 m      um:288 m       um:+0 m zCoreBuild/clustering/Pre-split_processing/PowerDB_splitProcess
-  94       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.51       fm:174078 m     vm:1484 m       vm:+0 m      um:288 m       um:+0 m zCoreBuild/clustering/Pre-split_processing/Pre-split_inter-fpga_tristate_processing.
-  94       elapsed:4 s      user:4 s   system:0.34 s      %cpu:94.35       load:0.51       fm:174078 m     vm:1484 m     vm:+836 m      um:288 m      um:+69 m zCoreBuild/clustering/Pre-split_processing
-  95       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.51       fm:174078 m     vm:1484 m       vm:+0 m      um:288 m       um:+0 m zCoreBuild/clustering/system_defmapping_translation
-  98       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.51       fm:174074 m     vm:1487 m       vm:+0 m      um:292 m       um:+0 m zCoreBuild/clustering/Splitting/Split/Prepare_SplitDB
- 100       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.51       fm:174074 m     vm:1487 m       vm:+0 m      um:292 m       um:+0 m zCoreBuild/clustering/Splitting/Split/Split_execution/Split_instance_copy.
- 101       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.51       fm:174074 m     vm:1487 m       vm:+0 m      um:292 m       um:+0 m zCoreBuild/clustering/Splitting/Split/Split_execution/Split_connection_copy.
- 103       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.51       fm:174074 m     vm:1487 m       vm:+0 m      um:292 m       um:+0 m zCoreBuild/clustering/Splitting/Split/Split_execution/Split_cleanup./Zcore_interface_simplification.
- 104       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.51       fm:174074 m     vm:1487 m       vm:+0 m      um:292 m       um:+0 m zCoreBuild/clustering/Splitting/Split/Split_execution/Split_cleanup./Legalization_of_ports'_direction.
- 105     elapsed:0.1 s      user:0 s      system:0 s       %cpu:0.00       load:0.51       fm:174074 m     vm:1487 m       vm:+0 m      um:292 m       um:+0 m zCoreBuild/clustering/Splitting/Split/Split_execution/Split_cleanup./Driver_replication.
- 105     elapsed:0.1 s      user:0 s      system:0 s       %cpu:0.00       load:0.51       fm:174074 m     vm:1487 m       vm:+0 m      um:292 m       um:+0 m zCoreBuild/clustering/Splitting/Split/Split_execution/Split_cleanup.
- 105     elapsed:0.1 s      user:0 s      system:0 s       %cpu:0.00       load:0.51       fm:174074 m     vm:1487 m       vm:+0 m      um:292 m       um:+0 m zCoreBuild/clustering/Splitting/Split/Split_execution
- 106       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.51       fm:174074 m     vm:1487 m       vm:+0 m      um:292 m       um:+0 m zCoreBuild/clustering/Splitting/Split/Post_split_SplitDB_processing
- 106     elapsed:0.1 s      user:0 s      system:0 s       %cpu:0.00       load:0.51       fm:174074 m     vm:1487 m       vm:+0 m      um:292 m       um:+0 m zCoreBuild/clustering/Splitting/Split
- 108       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.51       fm:174074 m     vm:1487 m       vm:+0 m      um:292 m       um:+0 m zCoreBuild/clustering/Splitting/Constant_localization/Constant_Localization
- 108       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.51       fm:174074 m     vm:1487 m       vm:+0 m      um:292 m       um:+0 m zCoreBuild/clustering/Splitting/Constant_localization
- 109     elapsed:0.1 s    user:0.1 s      system:0 s      %cpu:72.73       load:0.51       fm:174070 m     vm:1491 m       vm:+4 m      um:296 m       um:+4 m zCoreBuild/clustering/Splitting/XFE_DB_update
- 109     elapsed:0.2 s    user:0.4 s      system:0 s     %cpu:175.82       load:0.51       fm:174070 m     vm:1491 m       vm:+4 m      um:296 m       um:+4 m zCoreBuild/clustering/Splitting
- 111     elapsed:0.1 s      user:0 s      system:0 s       %cpu:0.00       load:0.51       fm:174070 m     vm:1491 m       vm:+0 m      um:296 m       um:+0 m zCoreBuild/clustering/Post-split_processing/post_split_interco_split
- 112       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.51       fm:174070 m     vm:1491 m       vm:+0 m      um:296 m       um:+0 m zCoreBuild/clustering/Post-split_processing/ICE_connection
- 113       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.51       fm:174070 m     vm:1491 m       vm:+0 m      um:296 m       um:+0 m zCoreBuild/clustering/Post-split_processing/OPTIMIZE_INTER-FPGA_LACES
- 114       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.51       fm:174070 m     vm:1491 m       vm:+0 m      um:296 m       um:+0 m zCoreBuild/clustering/Post-split_processing/Post-split_primary_clock_processing
- 117       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.51       fm:174070 m     vm:1491 m       vm:+0 m      um:296 m       um:+0 m zCoreBuild/clustering/Post-split_processing/Post-split_clock_processing/LO/BUILD_WB
- 118       elapsed:0 s    user:0.3 s      system:0 s    %cpu:1200.00       load:0.51       fm:174070 m     vm:1491 m       vm:+0 m      um:296 m       um:+0 m zCoreBuild/clustering/Post-split_processing/Post-split_clock_processing/LO/TRACE_TFI
- 119       elapsed:0 s    user:0.3 s      system:0 s     %cpu:857.14       load:0.51       fm:174070 m     vm:1491 m       vm:+0 m      um:296 m       um:+0 m zCoreBuild/clustering/Post-split_processing/Post-split_clock_processing/LO/SIMPLIFY
- 119     elapsed:0.1 s    user:0.7 s      system:0 s     %cpu:933.33       load:0.51       fm:174070 m     vm:1491 m       vm:+0 m      um:296 m       um:+0 m zCoreBuild/clustering/Post-split_processing/Post-split_clock_processing/LO
- 120       elapsed:0 s    user:0.2 s    system:0.1 s    %cpu:4000.00       load:0.51       fm:174070 m     vm:1491 m       vm:+0 m      um:296 m       um:+0 m zCoreBuild/clustering/Post-split_processing/Post-split_clock_processing/Instantiate_NPCK_zvu_synchro_db
- 121       elapsed:0 s    user:0.1 s    system:0.1 s    %cpu:1333.33       load:0.51       fm:174070 m     vm:1491 m       vm:+0 m      um:296 m       um:+0 m zCoreBuild/clustering/Post-split_processing/Post-split_clock_processing/Instantiate_NPCK_zvu_synchro_db
- 121     elapsed:0.5 s   user:0.12 s    system:0.2 s     %cpu:259.26       load:0.51       fm:174070 m     vm:1491 m       vm:+0 m      um:296 m       um:+0 m zCoreBuild/clustering/Post-split_processing/Post-split_clock_processing
- 122       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.51       fm:174070 m     vm:1491 m       vm:+0 m      um:296 m       um:+0 m zCoreBuild/clustering/Post-split_processing/Post-split_remap_linked_gates
- 123       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.51       fm:174070 m     vm:1491 m       vm:+0 m      um:296 m       um:+0 m zCoreBuild/clustering/Post-split_processing/Pre-split_implement_zebu_blackbox_protectors.
- 126       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.51       fm:174070 m     vm:1491 m       vm:+0 m      um:296 m       um:+0 m zCoreBuild/clustering/Post-split_processing/POST-SPLIT_MANIPULATION/Post-split_timing_analysis/zTune_monitor_processing
- 127       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.51       fm:174070 m     vm:1491 m       vm:+0 m      um:296 m       um:+0 m zCoreBuild/clustering/Post-split_processing/POST-SPLIT_MANIPULATION/Post-split_timing_analysis/Trigger_instantiation
- 127     elapsed:0.3 s    user:0.3 s      system:0 s     %cpu:100.00       load:0.51       fm:174070 m     vm:1491 m       vm:+0 m      um:297 m       um:+1 m zCoreBuild/clustering/Post-split_processing/POST-SPLIT_MANIPULATION/Post-split_timing_analysis
- 130       elapsed:0 s    user:0.2 s      system:0 s    %cpu:1600.00       load:0.51       fm:174070 m     vm:1491 m       vm:+0 m      um:297 m       um:+0 m zCoreBuild/clustering/Post-split_processing/POST-SPLIT_MANIPULATION/Post-split_manipulation/POST-SPLIT_CLOCK_PROCESS/Instantiate_NPCK_zvu_synchro_db
- 130     elapsed:0.2 s    user:0.3 s    system:0.2 s     %cpu:312.50       load:0.51       fm:174070 m     vm:1491 m       vm:+0 m      um:297 m       um:+0 m zCoreBuild/clustering/Post-split_processing/POST-SPLIT_MANIPULATION/Post-split_manipulation/POST-SPLIT_CLOCK_PROCESS
- 130     elapsed:0.3 s    user:0.3 s    system:0.2 s     %cpu:165.29       load:0.51       fm:174070 m     vm:1491 m       vm:+0 m      um:297 m       um:+0 m zCoreBuild/clustering/Post-split_processing/POST-SPLIT_MANIPULATION/Post-split_manipulation
- 132       elapsed:0 s    user:0.1 s      system:0 s     %cpu:800.00       load:0.51       fm:174070 m     vm:1491 m       vm:+0 m      um:297 m       um:+0 m zCoreBuild/clustering/Post-split_processing/POST-SPLIT_MANIPULATION/Memory_reconnection./Memory_blackbox_handling.
- 132       elapsed:0 s    user:0.1 s      system:0 s     %cpu:400.00       load:0.51       fm:174070 m     vm:1491 m       vm:+0 m      um:297 m       um:+0 m zCoreBuild/clustering/Post-split_processing/POST-SPLIT_MANIPULATION/Memory_reconnection.
- 133       elapsed:0 s    user:0.1 s    system:0.1 s    %cpu:2000.00       load:0.51       fm:174070 m     vm:1491 m       vm:+0 m      um:297 m       um:+0 m zCoreBuild/clustering/Post-split_processing/POST-SPLIT_MANIPULATION/Compute_hier_wires_upfront
- 135       elapsed:0 s    user:0.1 s      system:0 s    %cpu:4000.00       load:0.51       fm:174070 m     vm:1492 m       vm:+0 m      um:297 m       um:+0 m zCoreBuild/clustering/Post-split_processing/POST-SPLIT_MANIPULATION/Post_manipulation_timing_analysis/Compute_hier_wires_upfront
- 135    elapsed:0.11 s    user:0.6 s    system:0.3 s      %cpu:83.72       load:0.51       fm:174070 m     vm:1492 m       vm:+1 m      um:298 m       um:+1 m zCoreBuild/clustering/Post-split_processing/POST-SPLIT_MANIPULATION/Post_manipulation_timing_analysis
- 136       elapsed:1 s   user:0.89 s    system:0.7 s      %cpu:86.06       load:0.51       fm:173912 m     vm:1650 m     vm:+158 m      um:456 m     um:+158 m zCoreBuild/clustering/Post-split_processing/POST-SPLIT_MANIPULATION/Post-split_instr._mem.
- 138       elapsed:0 s    user:0.3 s      system:0 s    %cpu:2000.00       load:0.51       fm:173913 m     vm:1650 m       vm:+0 m      um:456 m       um:+0 m zCoreBuild/clustering/Post-split_processing/POST-SPLIT_MANIPULATION/Post-split_handle_list_mod_mirror/Instantiate_NPCK_zvu_synchro_db
- 139     elapsed:0.1 s    user:0.1 s    system:0.1 s    %cpu:1600.00       load:0.51       fm:173912 m     vm:1650 m       vm:+0 m      um:457 m       um:+0 m zCoreBuild/clustering/Post-split_processing/POST-SPLIT_MANIPULATION/Post-split_handle_list_mod_mirror/Instantiate_NPCK_zvu_synchro_db
- 140       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.51       fm:173912 m     vm:1650 m       vm:+0 m      um:457 m       um:+0 m zCoreBuild/clustering/Post-split_processing/POST-SPLIT_MANIPULATION/Post-split_handle_list_mod_mirror/FillDB
- 141       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.51       fm:173912 m     vm:1650 m       vm:+0 m      um:457 m       um:+0 m zCoreBuild/clustering/Post-split_processing/POST-SPLIT_MANIPULATION/Post-split_handle_list_mod_mirror/Partial_uniquify
- 142       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.51       fm:173912 m     vm:1650 m       vm:+0 m      um:457 m       um:+0 m zCoreBuild/clustering/Post-split_processing/POST-SPLIT_MANIPULATION/Post-split_handle_list_mod_mirror/Batch_reconnection
- 142     elapsed:0.1 s    user:0.6 s    system:0.1 s     %cpu:636.36       load:0.51       fm:173912 m     vm:1650 m       vm:+0 m      um:457 m       um:+1 m zCoreBuild/clustering/Post-split_processing/POST-SPLIT_MANIPULATION/Post-split_handle_list_mod_mirror
- 144       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.51       fm:173912 m     vm:1650 m       vm:+0 m      um:457 m       um:+0 m zCoreBuild/clustering/Post-split_processing/POST-SPLIT_MANIPULATION/Post-split_techmap/Mult-remapping
- 147       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.51       fm:173912 m     vm:1650 m       vm:+0 m      um:457 m       um:+0 m zCoreBuild/clustering/Post-split_processing/POST-SPLIT_MANIPULATION/Post-split_techmap/Per-fpga_post-split_techmapping/post-split_techmapping_on_fpga_U0_M0_F0/U0_M0_F0_(mirror_modules_handling)
- 148       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.51       fm:173912 m     vm:1650 m       vm:+0 m      um:457 m       um:+0 m zCoreBuild/clustering/Post-split_processing/POST-SPLIT_MANIPULATION/Post-split_techmap/Per-fpga_post-split_techmapping/post-split_techmapping_on_fpga_U0_M0_F0/Remove_trigger_Bbox
- 149       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.51       fm:173912 m     vm:1650 m       vm:+0 m      um:457 m       um:+0 m zCoreBuild/clustering/Post-split_processing/POST-SPLIT_MANIPULATION/Post-split_techmap/Per-fpga_post-split_techmapping/post-split_techmapping_on_fpga_U0_M0_F0/U0_M0_F0_(mult-and_handling)
- 150       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.51       fm:173912 m     vm:1650 m       vm:+0 m      um:457 m       um:+0 m zCoreBuild/clustering/Post-split_processing/POST-SPLIT_MANIPULATION/Post-split_techmap/Per-fpga_post-split_techmapping/post-split_techmapping_on_fpga_U0_M0_F0/U0_M0_F0_(zview_aliases)
- 151       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.51       fm:173912 m     vm:1650 m       vm:+0 m      um:457 m       um:+0 m zCoreBuild/clustering/Post-split_processing/POST-SPLIT_MANIPULATION/Post-split_techmap/Per-fpga_post-split_techmapping/post-split_techmapping_on_fpga_U0_M0_F0/U0_M0_F0_(bufg_routing)
- 151       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.51       fm:173912 m     vm:1650 m       vm:+0 m      um:457 m       um:+0 m zCoreBuild/clustering/Post-split_processing/POST-SPLIT_MANIPULATION/Post-split_techmap/Per-fpga_post-split_techmapping/post-split_techmapping_on_fpga_U0_M0_F0
- 151       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.51       fm:173912 m     vm:1650 m       vm:+0 m      um:457 m       um:+0 m zCoreBuild/clustering/Post-split_processing/POST-SPLIT_MANIPULATION/Post-split_techmap/Per-fpga_post-split_techmapping
- 151       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.51       fm:173912 m     vm:1650 m       vm:+0 m      um:457 m       um:+0 m zCoreBuild/clustering/Post-split_processing/POST-SPLIT_MANIPULATION/Post-split_techmap
- 151       elapsed:1 s      user:1 s   system:0.15 s      %cpu:97.51       load:0.51       fm:173912 m     vm:1650 m     vm:+159 m      um:457 m     um:+161 m zCoreBuild/clustering/Post-split_processing/POST-SPLIT_MANIPULATION
- 152       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.51       fm:173912 m     vm:1650 m       vm:+0 m      um:457 m       um:+0 m zCoreBuild/clustering/Post-split_processing/Compute_hier_wires_upfront
- 153       elapsed:0 s    user:0.1 s      system:0 s       %cpu:0.00       load:0.51       fm:173912 m     vm:1650 m       vm:+0 m      um:457 m       um:+0 m zCoreBuild/clustering/Post-split_processing/Compute_hier_wires_upfront
- 155       elapsed:0 s    user:0.1 s      system:0 s    %cpu:4000.00       load:0.51       fm:173912 m     vm:1650 m       vm:+0 m      um:457 m       um:+0 m zCoreBuild/clustering/Post-split_processing/POST-SPLIT_CHECK_RESOURCES/Compute_hier_wires_upfront
- 156       elapsed:0 s    user:0.1 s      system:0 s    %cpu:4000.00       load:0.51       fm:173912 m     vm:1650 m       vm:+0 m      um:457 m       um:+0 m zCoreBuild/clustering/Post-split_processing/POST-SPLIT_CHECK_RESOURCES/Compute_hier_wires_upfront
- 156    elapsed:0.17 s    user:0.5 s    system:0.2 s      %cpu:39.33       load:0.51       fm:173912 m     vm:1650 m       vm:+0 m      um:457 m       um:+0 m zCoreBuild/clustering/Post-split_processing/POST-SPLIT_CHECK_RESOURCES
- 156       elapsed:1 s      user:1 s   system:0.21 s      %cpu:91.38       load:0.51       fm:173912 m     vm:1650 m     vm:+159 m      um:457 m     um:+161 m zCoreBuild/clustering/Post-split_processing
- 156       elapsed:6 s      user:5 s   system:0.55 s      %cpu:93.63       load:0.51       fm:173912 m     vm:1650 m    vm:+1002 m      um:457 m     um:+238 m zCoreBuild/clustering
- 158     elapsed:0.2 s      user:0 s      system:0 s       %cpu:0.00       load:0.51       fm:173912 m     vm:1650 m       vm:+0 m      um:457 m       um:+0 m zCoreBuild/post-clustering_flow./post_split_interco
- 161       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.51       fm:173912 m     vm:1650 m       vm:+0 m      um:457 m       um:+0 m zCoreBuild/post-clustering_flow./dumping/Signature_generation/Netlist_signature_generation
- 161     elapsed:0.1 s      user:0 s      system:0 s       %cpu:0.00       load:0.51       fm:173912 m     vm:1650 m       vm:+0 m      um:457 m       um:+0 m zCoreBuild/post-clustering_flow./dumping/Signature_generation
- 163       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.51       fm:173911 m     vm:1652 m       vm:+0 m      um:458 m       um:+0 m zCoreBuild/post-clustering_flow./dumping/Signature_generation/Netlist_signature_generation
- 163     elapsed:0.1 s      user:0 s      system:0 s       %cpu:0.00       load:0.51       fm:173911 m     vm:1652 m       vm:+0 m      um:458 m       um:+0 m zCoreBuild/post-clustering_flow./dumping/Signature_generation
- 164     elapsed:0.3 s    user:0.1 s      system:0 s      %cpu:32.26       load:0.51       fm:173911 m     vm:1652 m       vm:+0 m      um:458 m       um:+0 m zCoreBuild/post-clustering_flow./dumping/Multiquify_and_signature_generation
- 165       elapsed:0 s      user:0 s    system:0.2 s    %cpu:1600.00       load:0.51       fm:173911 m     vm:1652 m       vm:+0 m      um:458 m       um:+0 m zCoreBuild/post-clustering_flow./dumping/Compute_hier_wires_upfront
- 167     elapsed:0.1 s      user:0 s      system:0 s       %cpu:0.00       load:0.51       fm:173911 m     vm:1652 m       vm:+0 m      um:458 m       um:+0 m zCoreBuild/post-clustering_flow./dumping/Signature_generation/Netlist_signature_generation
- 167     elapsed:0.4 s      user:0 s      system:0 s       %cpu:0.00       load:0.51       fm:173911 m     vm:1652 m       vm:+0 m      um:458 m       um:+0 m zCoreBuild/post-clustering_flow./dumping/Signature_generation
- 167    elapsed:0.81 s    user:0.5 s    system:0.4 s      %cpu:11.13       load:0.51       fm:173909 m     vm:1654 m       vm:+4 m      um:460 m       um:+3 m zCoreBuild/post-clustering_flow./dumping
- 167    elapsed:0.96 s    user:0.5 s    system:0.5 s      %cpu:10.51       load:0.51       fm:173909 m     vm:1654 m       vm:+4 m      um:460 m       um:+3 m zCoreBuild/post-clustering_flow.
- 167       elapsed:9 s      user:6 s   system:0.71 s      %cpu:76.94       load:0.51       fm:173909 m     vm:1654 m    vm:+1213 m      um:460 m     um:+332 m zCoreBuild
+   2    elapsed:0.21 s   user:0.19 s    system:0.2 s     %cpu:101.82       load:0.40       fm:171336 m      vm:478 m      vm:+16 m      um:174 m      um:+22 m zCoreBuild/Loading_target_configuration.
+   3    elapsed:0.12 s    user:0.9 s    system:0.1 s      %cpu:83.51       load:0.44       fm:171321 m      vm:494 m      vm:+16 m      um:193 m      um:+17 m zCoreBuild/Pre-load_flow.
+   5       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.44       fm:171321 m      vm:494 m       vm:+0 m      um:193 m       um:+0 m zCoreBuild/loading_files/Dve_parsing.
+   6     elapsed:0.4 s    user:0.3 s    system:0.1 s     %cpu:101.91       load:0.44       fm:171313 m      vm:502 m       vm:+8 m      um:201 m       um:+8 m zCoreBuild/loading_files/Loading_edif_source_files.
+   7     elapsed:0.1 s      user:0 s      system:0 s       %cpu:0.00       load:0.44       fm:171313 m      vm:502 m       vm:+0 m      um:201 m       um:+0 m zCoreBuild/loading_files/Gate_localization.
+   8       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.44       fm:171313 m      vm:502 m       vm:+0 m      um:201 m       um:+0 m zCoreBuild/loading_files/Macro_renaming.
+   8     elapsed:0.5 s    user:0.3 s    system:0.1 s      %cpu:79.60       load:0.44       fm:171313 m      vm:502 m       vm:+8 m      um:201 m       um:+8 m zCoreBuild/loading_files
+   9       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.44       fm:171313 m      vm:502 m       vm:+0 m      um:201 m       um:+0 m zCoreBuild/Merging_compatible_modules.
+  11       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.44       fm:171313 m      vm:502 m       vm:+0 m      um:201 m       um:+0 m zCoreBuild/pre-uniquify_flow./input_netlist_checking
+  12       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.44       fm:171313 m      vm:502 m       vm:+0 m      um:201 m       um:+0 m zCoreBuild/pre-uniquify_flow./Zrm_macros_detection.
+  14       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.44       fm:171313 m      vm:502 m       vm:+0 m      um:201 m       um:+0 m zCoreBuild/pre-uniquify_flow./netlist_preprocessing/flatten_libs
+  14       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.44       fm:171313 m      vm:502 m       vm:+0 m      um:201 m       um:+0 m zCoreBuild/pre-uniquify_flow./netlist_preprocessing
+  16       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.44       fm:171309 m      vm:576 m      vm:+37 m      um:204 m       um:+1 m zCoreBuild/pre-uniquify_flow./PRE-CLUSTERING_STAT/Compute_hier_wires_upfront
+  16    elapsed:0.13 s    user:0.2 s    system:0.3 s      %cpu:36.56       load:0.44       fm:171292 m      vm:652 m     vm:+150 m      um:221 m      um:+20 m zCoreBuild/pre-uniquify_flow./PRE-CLUSTERING_STAT
+  17       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.44       fm:171292 m      vm:652 m       vm:+0 m      um:221 m       um:+0 m zCoreBuild/pre-uniquify_flow./Clock_module_marking
+  18       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.44       fm:171292 m      vm:652 m       vm:+0 m      um:221 m       um:+0 m zCoreBuild/pre-uniquify_flow./Probe_insertion.
+  18    elapsed:0.14 s    user:0.2 s    system:0.4 s      %cpu:42.11       load:0.44       fm:171292 m      vm:652 m     vm:+150 m      um:221 m      um:+20 m zCoreBuild/pre-uniquify_flow.
+  19     elapsed:0.1 s      user:0 s      system:0 s       %cpu:0.00       load:0.44       fm:171292 m      vm:652 m       vm:+0 m      um:221 m       um:+0 m zCoreBuild/Technology_mapping_pre-elaborate
+  21       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.44       fm:171292 m      vm:652 m       vm:+0 m      um:221 m       um:+0 m zCoreBuild/Process_DPIs,_SVAs_and_Waveform_Captures/Remap_DPIs_on_FWC_IPs
+  22       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.44       fm:171292 m      vm:652 m       vm:+0 m      um:221 m       um:+0 m zCoreBuild/Process_DPIs,_SVAs_and_Waveform_Captures/Implement_enables_on_SVAs
+  23       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.44       fm:171292 m      vm:652 m       vm:+0 m      um:221 m       um:+0 m zCoreBuild/Process_DPIs,_SVAs_and_Waveform_Captures/Process_SVA_act_and_readmem/$finish/$fopen_tasks
+  24       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.44       fm:171292 m      vm:652 m       vm:+0 m      um:221 m       um:+0 m zCoreBuild/Process_DPIs,_SVAs_and_Waveform_Captures/Connect_Waveform_Captures_clock_and_enable
+  25       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.44       fm:171292 m      vm:652 m       vm:+0 m      um:222 m       um:+0 m zCoreBuild/Process_DPIs,_SVAs_and_Waveform_Captures/Check_Waveform_Captures_number_against_hardware_capacity
+  25       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.44       fm:171292 m      vm:652 m       vm:+0 m      um:222 m       um:+1 m zCoreBuild/Process_DPIs,_SVAs_and_Waveform_Captures
+  26       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.44       fm:171292 m      vm:652 m       vm:+0 m      um:222 m       um:+0 m zCoreBuild/UNIQUIFY
+  28       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.44       fm:171292 m      vm:652 m       vm:+0 m      um:222 m       um:+0 m zCoreBuild/post-uniquify_flow./Gate_insertion
+  28     elapsed:0.2 s      user:0 s      system:0 s       %cpu:0.00       load:0.44       fm:171292 m      vm:653 m       vm:+1 m      um:222 m       um:+0 m zCoreBuild/post-uniquify_flow.
+  31       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.44       fm:171291 m      vm:653 m       vm:+0 m      um:223 m       um:+0 m zCoreBuild/clustering/Pre-split_processing/Technology_mapping_post-elaborate
+  35       elapsed:0 s    user:0.1 s      system:0 s    %cpu:4000.00       load:0.44       fm:171291 m      vm:654 m       vm:+1 m      um:223 m       um:+0 m zCoreBuild/clustering/Pre-split_processing/CONSTANT_PROPAGATION/Constant_propagation/LO/BUILD_WB
+  36     elapsed:0.1 s    user:0.2 s      system:0 s     %cpu:888.89       load:0.44       fm:171291 m      vm:655 m       vm:+1 m      um:223 m       um:+0 m zCoreBuild/clustering/Pre-split_processing/CONSTANT_PROPAGATION/Constant_propagation/LO/PUSH_CST
+  37       elapsed:0 s    user:0.2 s      system:0 s     %cpu:444.44       load:0.44       fm:171291 m      vm:655 m       vm:+0 m      um:223 m       um:+0 m zCoreBuild/clustering/Pre-split_processing/CONSTANT_PROPAGATION/Constant_propagation/LO/SIMPLIFY
+  37     elapsed:0.1 s    user:0.6 s    system:0.1 s     %cpu:777.78       load:0.44       fm:171291 m      vm:655 m       vm:+2 m      um:223 m       um:+0 m zCoreBuild/clustering/Pre-split_processing/CONSTANT_PROPAGATION/Constant_propagation/LO
+  37     elapsed:0.1 s    user:0.6 s    system:0.1 s     %cpu:736.84       load:0.44       fm:171291 m      vm:655 m       vm:+2 m      um:223 m       um:+0 m zCoreBuild/clustering/Pre-split_processing/CONSTANT_PROPAGATION/Constant_propagation
+  37     elapsed:0.1 s    user:0.6 s    system:0.1 s     %cpu:636.36       load:0.44       fm:171291 m      vm:655 m       vm:+2 m      um:223 m       um:+0 m zCoreBuild/clustering/Pre-split_processing/CONSTANT_PROPAGATION
+  39       elapsed:0 s    user:0.1 s      system:0 s    %cpu:4000.00       load:0.44       fm:171291 m      vm:656 m       vm:+1 m      um:223 m       um:+0 m zCoreBuild/clustering/Pre-split_processing/BUFFER/INV_factorizing/Instantiate_factbufinv
+  40       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.44       fm:171291 m      vm:656 m       vm:+0 m      um:223 m       um:+0 m zCoreBuild/clustering/Pre-split_processing/BUFFER/INV_factorizing/Get_Buf_Inv_Hier_wire
+  41       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.44       fm:171291 m      vm:656 m       vm:+0 m      um:223 m       um:+0 m zCoreBuild/clustering/Pre-split_processing/BUFFER/INV_factorizing/Partial_uniquify
+  42       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.44       fm:171291 m      vm:656 m       vm:+0 m      um:223 m       um:+0 m zCoreBuild/clustering/Pre-split_processing/BUFFER/INV_factorizing/Connect
+  42       elapsed:0 s    user:0.1 s      system:0 s     %cpu:444.44       load:0.44       fm:171291 m      vm:656 m       vm:+1 m      um:223 m       um:+0 m zCoreBuild/clustering/Pre-split_processing/BUFFER/INV_factorizing
+  46       elapsed:0 s    user:0.1 s      system:0 s    %cpu:2000.00       load:0.44       fm:171291 m      vm:656 m       vm:+0 m      um:223 m       um:+0 m zCoreBuild/clustering/Pre-split_processing/remove_loadless_logic/Remove_unused_logic/LO/BUILD_WB
+  47       elapsed:0 s    user:0.2 s    system:0.1 s     %cpu:705.88       load:0.44       fm:171291 m      vm:656 m       vm:+0 m      um:223 m       um:+0 m zCoreBuild/clustering/Pre-split_processing/remove_loadless_logic/Remove_unused_logic/LO/TRACE_TFI
+  48       elapsed:0 s    user:0.3 s      system:0 s     %cpu:857.14       load:0.44       fm:171291 m      vm:656 m       vm:+0 m      um:223 m       um:+0 m zCoreBuild/clustering/Pre-split_processing/remove_loadless_logic/Remove_unused_logic/LO/SIMPLIFY
+  48       elapsed:0 s    user:0.8 s    system:0.1 s    %cpu:1028.57       load:0.44       fm:171291 m      vm:656 m       vm:+0 m      um:223 m       um:+0 m zCoreBuild/clustering/Pre-split_processing/remove_loadless_logic/Remove_unused_logic/LO
+  48       elapsed:0 s    user:0.8 s    system:0.1 s     %cpu:972.97       load:0.44       fm:171291 m      vm:656 m       vm:+0 m      um:223 m       um:+0 m zCoreBuild/clustering/Pre-split_processing/remove_loadless_logic/Remove_unused_logic
+  48       elapsed:0 s    user:0.8 s    system:0.1 s     %cpu:837.21       load:0.44       fm:171291 m      vm:656 m       vm:+0 m      um:223 m       um:+0 m zCoreBuild/clustering/Pre-split_processing/remove_loadless_logic
+  49       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.44       fm:171291 m      vm:656 m       vm:+0 m      um:223 m       um:+0 m zCoreBuild/clustering/Pre-split_processing/POWER_MANIPULATION
+  51       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.44       fm:171291 m      vm:656 m       vm:+0 m      um:223 m       um:+0 m zCoreBuild/clustering/Pre-split_processing/COVERAGE_MANIPULATION/Manipulate_Coverage_counters
+  51       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.44       fm:171291 m      vm:656 m       vm:+0 m      um:223 m       um:+0 m zCoreBuild/clustering/Pre-split_processing/COVERAGE_MANIPULATION
+  52       elapsed:0 s      user:0 s    system:0.1 s     %cpu:333.33       load:0.44       fm:171291 m      vm:656 m       vm:+0 m      um:224 m       um:+1 m zCoreBuild/clustering/Pre-split_processing/Tristate_manip
+  53       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.44       fm:171291 m      vm:656 m       vm:+0 m      um:224 m       um:+0 m zCoreBuild/clustering/Pre-split_processing/Pre-split_detect_memories
+  57       elapsed:0 s    user:0.1 s    system:0.1 s    %cpu:1333.33       load:0.44       fm:171263 m      vm:681 m       vm:+0 m      um:250 m       um:+0 m zCoreBuild/clustering/Pre-split_processing/Pre-split_clock_flow/Pre-(auto)clustering_clock_processing/Absorb_Buf_Inv/Instantiate_NPCK_zvu_synchro_db
+  58       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.44       fm:171263 m      vm:681 m       vm:+0 m      um:250 m       um:+0 m zCoreBuild/clustering/Pre-split_processing/Pre-split_clock_flow/Pre-(auto)clustering_clock_processing/Absorb_Buf_Inv/FillDB
+  59       elapsed:0 s      user:0 s    system:0.1 s    %cpu:4000.00       load:0.44       fm:171263 m      vm:681 m       vm:+0 m      um:250 m       um:+0 m zCoreBuild/clustering/Pre-split_processing/Pre-split_clock_flow/Pre-(auto)clustering_clock_processing/Absorb_Buf_Inv/Partial_uniquify
+  60       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.44       fm:171263 m      vm:681 m       vm:+0 m      um:250 m       um:+0 m zCoreBuild/clustering/Pre-split_processing/Pre-split_clock_flow/Pre-(auto)clustering_clock_processing/Absorb_Buf_Inv/Batch_reconnection
+  60       elapsed:0 s    user:0.2 s    system:0.2 s    %cpu:1454.55       load:0.44       fm:171263 m      vm:681 m       vm:+0 m      um:250 m       um:+0 m zCoreBuild/clustering/Pre-split_processing/Pre-split_clock_flow/Pre-(auto)clustering_clock_processing/Absorb_Buf_Inv
+  62       elapsed:0 s    user:0.2 s      system:0 s    %cpu:1600.00       load:0.44       fm:171263 m      vm:681 m       vm:+0 m      um:250 m       um:+0 m zCoreBuild/clustering/Pre-split_processing/Pre-split_clock_flow/Pre-(auto)clustering_clock_processing/Filter_Glitches_Synchronous/Instantiate_NPCK_zvu_synchro_db
+  62       elapsed:0 s    user:0.2 s      system:0 s     %cpu:666.67       load:0.44       fm:171263 m      vm:681 m       vm:+0 m      um:251 m       um:+1 m zCoreBuild/clustering/Pre-split_processing/Pre-split_clock_flow/Pre-(auto)clustering_clock_processing/Filter_Glitches_Synchronous
+  63       elapsed:0 s    user:0.1 s    system:0.1 s    %cpu:1333.33       load:0.44       fm:171263 m      vm:681 m       vm:+0 m      um:251 m       um:+0 m zCoreBuild/clustering/Pre-split_processing/Pre-split_clock_flow/Pre-(auto)clustering_clock_processing/Instantiate_NPCK_zvu_synchro_db
+  64       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.44       fm:171263 m      vm:681 m       vm:+0 m      um:251 m       um:+0 m zCoreBuild/clustering/Pre-split_processing/Pre-split_clock_flow/Pre-(auto)clustering_clock_processing/FillDB
+  65       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.44       fm:171263 m      vm:681 m       vm:+0 m      um:251 m       um:+0 m zCoreBuild/clustering/Pre-split_processing/Pre-split_clock_flow/Pre-(auto)clustering_clock_processing/Partial_uniquify
+  66       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.44       fm:171263 m      vm:681 m       vm:+0 m      um:251 m       um:+0 m zCoreBuild/clustering/Pre-split_processing/Pre-split_clock_flow/Pre-(auto)clustering_clock_processing/Batch_reconnection
+  69       elapsed:0 s    user:0.1 s    system:0.1 s    %cpu:1333.33       load:0.44       fm:171239 m      vm:708 m       vm:+0 m      um:277 m       um:+0 m zCoreBuild/clustering/Pre-split_processing/Pre-split_clock_flow/Pre-(auto)clustering_clock_processing/Remove_unused_logic/LO/BUILD_WB
+  70     elapsed:0.1 s    user:0.1 s    system:0.2 s     %cpu:923.08       load:0.44       fm:171239 m      vm:708 m       vm:+0 m      um:277 m       um:+0 m zCoreBuild/clustering/Pre-split_processing/Pre-split_clock_flow/Pre-(auto)clustering_clock_processing/Remove_unused_logic/LO/TRACE_TFI
+  71       elapsed:0 s    user:0.3 s    system:0.1 s     %cpu:941.18       load:0.44       fm:171239 m      vm:708 m       vm:+0 m      um:277 m       um:+0 m zCoreBuild/clustering/Pre-split_processing/Pre-split_clock_flow/Pre-(auto)clustering_clock_processing/Remove_unused_logic/LO/SIMPLIFY
+  71     elapsed:0.1 s    user:0.6 s    system:0.5 s    %cpu:1100.00       load:0.44       fm:171239 m      vm:708 m       vm:+0 m      um:277 m       um:+0 m zCoreBuild/clustering/Pre-split_processing/Pre-split_clock_flow/Pre-(auto)clustering_clock_processing/Remove_unused_logic/LO
+  71     elapsed:0.1 s    user:0.6 s    system:0.5 s    %cpu:1047.62       load:0.44       fm:171239 m      vm:708 m       vm:+0 m      um:277 m       um:+0 m zCoreBuild/clustering/Pre-split_processing/Pre-split_clock_flow/Pre-(auto)clustering_clock_processing/Remove_unused_logic
+  71       elapsed:2 s      user:2 s   system:0.10 s     %cpu:107.52       load:0.44       fm:171239 m      vm:708 m      vm:+27 m      um:277 m      um:+28 m zCoreBuild/clustering/Pre-split_processing/Pre-split_clock_flow/Pre-(auto)clustering_clock_processing
+  71       elapsed:2 s      user:2 s   system:0.11 s     %cpu:107.95       load:0.44       fm:171239 m      vm:708 m      vm:+27 m      um:277 m      um:+28 m zCoreBuild/clustering/Pre-split_processing/Pre-split_clock_flow
+  72       elapsed:0 s    user:0.1 s      system:0 s    %cpu:1333.33       load:0.44       fm:171239 m      vm:708 m       vm:+0 m      um:277 m       um:+0 m zCoreBuild/clustering/Pre-split_processing/Pre-split_process_attributes_for_false_path
+  74     elapsed:0.5 s    user:0.1 s    system:0.1 s      %cpu:35.09       load:0.44       fm:171234 m     vm:1476 m     vm:+768 m      um:283 m       um:+5 m zCoreBuild/clustering/Pre-split_processing/ZCOREPARTITIONING/MODELGEN
+  75     elapsed:0.5 s   user:0.13 s    system:0.2 s     %cpu:327.87       load:0.44       fm:171233 m     vm:1480 m       vm:+4 m      um:285 m       um:+2 m zCoreBuild/clustering/Pre-split_processing/ZCOREPARTITIONING/Build_Route_Table
+  76     elapsed:0.4 s    user:0.1 s      system:0 s      %cpu:22.86       load:0.44       fm:171233 m     vm:1480 m       vm:+0 m      um:286 m       um:+0 m zCoreBuild/clustering/Pre-split_processing/ZCOREPARTITIONING/Partitioner
+  76    elapsed:0.18 s   user:0.18 s    system:0.4 s     %cpu:122.22       load:0.44       fm:171232 m     vm:1480 m     vm:+772 m      um:286 m       um:+9 m zCoreBuild/clustering/Pre-split_processing/ZCOREPARTITIONING
+  77     elapsed:0.2 s    user:0.1 s      system:0 s      %cpu:56.34       load:0.49       fm:171230 m     vm:1481 m       vm:+0 m      um:288 m       um:+0 m zCoreBuild/clustering/Pre-split_processing/Pre-split_proc._memories
+  78       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.49       fm:171230 m     vm:1481 m       vm:+0 m      um:288 m       um:+0 m zCoreBuild/clustering/Pre-split_processing/Inter-zcore_protection
+  80       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.49       fm:171230 m     vm:1481 m       vm:+0 m      um:288 m       um:+0 m zCoreBuild/clustering/Pre-split_processing/Localize_zViews/LOC_ZVIEW_DEFMAP_CREATE
+  80       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.49       fm:171230 m     vm:1483 m       vm:+2 m      um:288 m       um:+0 m zCoreBuild/clustering/Pre-split_processing/Localize_zViews
+  81     elapsed:0.1 s    user:0.2 s      system:0 s    %cpu:1000.00       load:0.49       fm:171230 m     vm:1483 m       vm:+0 m      um:288 m       um:+0 m zCoreBuild/clustering/Pre-split_processing/Data_localization
+  84       elapsed:0 s    user:0.4 s      system:0 s    %cpu:4000.00       load:0.49       fm:171230 m     vm:1483 m       vm:+0 m      um:289 m       um:+0 m zCoreBuild/clustering/Pre-split_processing/Pre-split_clock_processing/advanced_localize_clock/Instantiate_NPCK_zvu_synchro_db
+  85     elapsed:0.1 s      user:0 s      system:0 s       %cpu:0.00       load:0.49       fm:171230 m     vm:1483 m       vm:+0 m      um:289 m       um:+0 m zCoreBuild/clustering/Pre-split_processing/Pre-split_clock_processing/advanced_localize_clock/createClockConeInfos
+  86       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.49       fm:171230 m     vm:1483 m       vm:+0 m      um:289 m       um:+0 m zCoreBuild/clustering/Pre-split_processing/Pre-split_clock_processing/advanced_localize_clock/Partial_uniquify
+  87       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.49       fm:171229 m     vm:1484 m       vm:+0 m      um:290 m       um:+0 m zCoreBuild/clustering/Pre-split_processing/Pre-split_clock_processing/advanced_localize_clock/Advanced_localize_clock_process
+  87     elapsed:0.2 s    user:0.7 s      system:0 s     %cpu:314.61       load:0.49       fm:171229 m     vm:1484 m       vm:+1 m      um:290 m       um:+2 m zCoreBuild/clustering/Pre-split_processing/Pre-split_clock_processing/advanced_localize_clock
+  90       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.49       fm:171229 m     vm:1484 m       vm:+0 m      um:290 m       um:+0 m zCoreBuild/clustering/Pre-split_processing/Pre-split_clock_processing/Remove_unused_logic/LO/BUILD_WB
+  91       elapsed:0 s    user:0.3 s      system:0 s    %cpu:1500.00       load:0.49       fm:171229 m     vm:1484 m       vm:+0 m      um:290 m       um:+0 m zCoreBuild/clustering/Pre-split_processing/Pre-split_clock_processing/Remove_unused_logic/LO/TRACE_TFI
+  92     elapsed:0.1 s    user:0.2 s    system:0.1 s     %cpu:800.00       load:0.49       fm:171229 m     vm:1484 m       vm:+0 m      um:290 m       um:+0 m zCoreBuild/clustering/Pre-split_processing/Pre-split_clock_processing/Remove_unused_logic/LO/SIMPLIFY
+  92     elapsed:0.1 s    user:0.6 s    system:0.3 s    %cpu:1000.00       load:0.49       fm:171229 m     vm:1484 m       vm:+0 m      um:290 m       um:+0 m zCoreBuild/clustering/Pre-split_processing/Pre-split_clock_processing/Remove_unused_logic/LO
+  92     elapsed:0.1 s    user:0.6 s    system:0.3 s     %cpu:947.37       load:0.49       fm:171229 m     vm:1484 m       vm:+0 m      um:290 m       um:+0 m zCoreBuild/clustering/Pre-split_processing/Pre-split_clock_processing/Remove_unused_logic
+  92    elapsed:0.16 s   user:0.24 s    system:0.4 s     %cpu:173.37       load:0.49       fm:171229 m     vm:1484 m       vm:+1 m      um:290 m       um:+2 m zCoreBuild/clustering/Pre-split_processing/Pre-split_clock_processing
+  93       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.49       fm:171229 m     vm:1484 m       vm:+0 m      um:290 m       um:+0 m zCoreBuild/clustering/Pre-split_processing/PowerDB_splitProcess
+  94       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.49       fm:171229 m     vm:1484 m       vm:+0 m      um:290 m       um:+0 m zCoreBuild/clustering/Pre-split_processing/Pre-split_inter-fpga_tristate_processing.
+  94       elapsed:4 s      user:4 s   system:0.25 s     %cpu:109.80       load:0.49       fm:171229 m     vm:1484 m     vm:+831 m      um:290 m      um:+68 m zCoreBuild/clustering/Pre-split_processing
+  95       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.49       fm:171229 m     vm:1484 m       vm:+0 m      um:290 m       um:+0 m zCoreBuild/clustering/system_defmapping_translation
+  98       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.49       fm:171226 m     vm:1487 m       vm:+0 m      um:294 m       um:+0 m zCoreBuild/clustering/Splitting/Split/Prepare_SplitDB
+ 100       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.49       fm:171226 m     vm:1487 m       vm:+0 m      um:294 m       um:+0 m zCoreBuild/clustering/Splitting/Split/Split_execution/Split_instance_copy.
+ 101       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.49       fm:171226 m     vm:1487 m       vm:+0 m      um:294 m       um:+0 m zCoreBuild/clustering/Splitting/Split/Split_execution/Split_connection_copy.
+ 103       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.49       fm:171226 m     vm:1487 m       vm:+0 m      um:294 m       um:+0 m zCoreBuild/clustering/Splitting/Split/Split_execution/Split_cleanup./Zcore_interface_simplification.
+ 104       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.49       fm:171226 m     vm:1487 m       vm:+0 m      um:294 m       um:+0 m zCoreBuild/clustering/Splitting/Split/Split_execution/Split_cleanup./Legalization_of_ports'_direction.
+ 105       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.49       fm:171226 m     vm:1487 m       vm:+0 m      um:294 m       um:+0 m zCoreBuild/clustering/Splitting/Split/Split_execution/Split_cleanup./Driver_replication.
+ 105       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.49       fm:171226 m     vm:1487 m       vm:+0 m      um:294 m       um:+0 m zCoreBuild/clustering/Splitting/Split/Split_execution/Split_cleanup.
+ 105       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.49       fm:171226 m     vm:1487 m       vm:+0 m      um:294 m       um:+0 m zCoreBuild/clustering/Splitting/Split/Split_execution
+ 106       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.49       fm:171226 m     vm:1487 m       vm:+0 m      um:294 m       um:+0 m zCoreBuild/clustering/Splitting/Split/Post_split_SplitDB_processing
+ 106       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.49       fm:171226 m     vm:1487 m       vm:+0 m      um:294 m       um:+0 m zCoreBuild/clustering/Splitting/Split
+ 108       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.49       fm:171226 m     vm:1487 m       vm:+0 m      um:294 m       um:+0 m zCoreBuild/clustering/Splitting/Constant_localization/Constant_Localization
+ 108       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.49       fm:171226 m     vm:1487 m       vm:+0 m      um:294 m       um:+0 m zCoreBuild/clustering/Splitting/Constant_localization
+ 109     elapsed:0.2 s    user:0.1 s      system:0 s      %cpu:67.80       load:0.49       fm:171222 m     vm:1491 m       vm:+3 m      um:298 m       um:+4 m zCoreBuild/clustering/Splitting/XFE_DB_update
+ 109     elapsed:0.2 s    user:0.2 s    system:0.1 s     %cpu:116.50       load:0.49       fm:171222 m     vm:1491 m       vm:+4 m      um:298 m       um:+4 m zCoreBuild/clustering/Splitting
+ 111       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.49       fm:171222 m     vm:1491 m       vm:+0 m      um:298 m       um:+0 m zCoreBuild/clustering/Post-split_processing/post_split_interco_split
+ 112       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.49       fm:171222 m     vm:1491 m       vm:+0 m      um:298 m       um:+0 m zCoreBuild/clustering/Post-split_processing/ICE_connection
+ 113       elapsed:0 s    user:0.1 s      system:0 s    %cpu:4000.00       load:0.49       fm:171222 m     vm:1491 m       vm:+0 m      um:298 m       um:+0 m zCoreBuild/clustering/Post-split_processing/OPTIMIZE_INTER-FPGA_LACES
+ 114       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.49       fm:171222 m     vm:1491 m       vm:+0 m      um:298 m       um:+0 m zCoreBuild/clustering/Post-split_processing/Post-split_primary_clock_processing
+ 117       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.49       fm:171222 m     vm:1491 m       vm:+0 m      um:298 m       um:+0 m zCoreBuild/clustering/Post-split_processing/Post-split_clock_processing/LO/BUILD_WB
+ 118       elapsed:0 s    user:0.2 s      system:0 s     %cpu:888.89       load:0.49       fm:171222 m     vm:1491 m       vm:+0 m      um:298 m       um:+0 m zCoreBuild/clustering/Post-split_processing/Post-split_clock_processing/LO/TRACE_TFI
+ 119     elapsed:0.1 s    user:0.2 s    system:0.1 s     %cpu:857.14       load:0.49       fm:171222 m     vm:1491 m       vm:+0 m      um:298 m       um:+0 m zCoreBuild/clustering/Post-split_processing/Post-split_clock_processing/LO/SIMPLIFY
+ 119     elapsed:0.1 s    user:0.5 s    system:0.3 s     %cpu:969.70       load:0.49       fm:171222 m     vm:1491 m       vm:+0 m      um:298 m       um:+0 m zCoreBuild/clustering/Post-split_processing/Post-split_clock_processing/LO
+ 120       elapsed:0 s    user:0.1 s      system:0 s    %cpu:2000.00       load:0.49       fm:171222 m     vm:1491 m       vm:+0 m      um:298 m       um:+0 m zCoreBuild/clustering/Post-split_processing/Post-split_clock_processing/Instantiate_NPCK_zvu_synchro_db
+ 121     elapsed:0.1 s    user:0.2 s      system:0 s    %cpu:1333.33       load:0.49       fm:171222 m     vm:1491 m       vm:+0 m      um:298 m       um:+0 m zCoreBuild/clustering/Post-split_processing/Post-split_clock_processing/Instantiate_NPCK_zvu_synchro_db
+ 121     elapsed:0.6 s   user:0.12 s    system:0.3 s     %cpu:277.78       load:0.49       fm:171222 m     vm:1491 m       vm:+0 m      um:298 m       um:+0 m zCoreBuild/clustering/Post-split_processing/Post-split_clock_processing
+ 122       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.49       fm:171222 m     vm:1491 m       vm:+0 m      um:298 m       um:+0 m zCoreBuild/clustering/Post-split_processing/Post-split_remap_linked_gates
+ 123       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.49       fm:171222 m     vm:1491 m       vm:+0 m      um:298 m       um:+0 m zCoreBuild/clustering/Post-split_processing/Pre-split_implement_zebu_blackbox_protectors.
+ 126       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.49       fm:171222 m     vm:1491 m       vm:+0 m      um:298 m       um:+0 m zCoreBuild/clustering/Post-split_processing/POST-SPLIT_MANIPULATION/Post-split_timing_analysis/zTune_monitor_processing
+ 127       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.49       fm:171222 m     vm:1491 m       vm:+0 m      um:298 m       um:+0 m zCoreBuild/clustering/Post-split_processing/POST-SPLIT_MANIPULATION/Post-split_timing_analysis/Trigger_instantiation
+ 127     elapsed:0.2 s    user:0.2 s      system:0 s      %cpu:90.91       load:0.49       fm:171222 m     vm:1491 m       vm:+0 m      um:299 m       um:+1 m zCoreBuild/clustering/Post-split_processing/POST-SPLIT_MANIPULATION/Post-split_timing_analysis
+ 130       elapsed:0 s    user:0.1 s    system:0.1 s    %cpu:1600.00       load:0.49       fm:171222 m     vm:1491 m       vm:+0 m      um:299 m       um:+0 m zCoreBuild/clustering/Post-split_processing/POST-SPLIT_MANIPULATION/Post-split_manipulation/POST-SPLIT_CLOCK_PROCESS/Instantiate_NPCK_zvu_synchro_db
+ 130     elapsed:0.2 s    user:0.3 s    system:0.2 s     %cpu:263.16       load:0.49       fm:171221 m     vm:1491 m       vm:+0 m      um:299 m       um:+0 m zCoreBuild/clustering/Post-split_processing/POST-SPLIT_MANIPULATION/Post-split_manipulation/POST-SPLIT_CLOCK_PROCESS
+ 130     elapsed:0.3 s    user:0.3 s    system:0.2 s     %cpu:160.00       load:0.49       fm:171221 m     vm:1491 m       vm:+0 m      um:299 m       um:+0 m zCoreBuild/clustering/Post-split_processing/POST-SPLIT_MANIPULATION/Post-split_manipulation
+ 132       elapsed:0 s    user:0.1 s    system:0.1 s    %cpu:2666.67       load:0.49       fm:171221 m     vm:1491 m       vm:+0 m      um:299 m       um:+0 m zCoreBuild/clustering/Post-split_processing/POST-SPLIT_MANIPULATION/Memory_reconnection./Memory_blackbox_handling.
+ 132       elapsed:0 s    user:0.1 s    system:0.1 s    %cpu:1142.86       load:0.49       fm:171221 m     vm:1491 m       vm:+0 m      um:299 m       um:+0 m zCoreBuild/clustering/Post-split_processing/POST-SPLIT_MANIPULATION/Memory_reconnection.
+ 133       elapsed:0 s      user:0 s    system:0.1 s     %cpu:800.00       load:0.49       fm:171221 m     vm:1491 m       vm:+0 m      um:299 m       um:+0 m zCoreBuild/clustering/Post-split_processing/POST-SPLIT_MANIPULATION/Compute_hier_wires_upfront
+ 135       elapsed:0 s      user:0 s    system:0.1 s    %cpu:1000.00       load:0.49       fm:171221 m     vm:1491 m       vm:+0 m      um:300 m       um:+0 m zCoreBuild/clustering/Post-split_processing/POST-SPLIT_MANIPULATION/Post_manipulation_timing_analysis/Compute_hier_wires_upfront
+ 135     elapsed:0.7 s    user:0.4 s    system:0.4 s     %cpu:108.84       load:0.49       fm:171220 m     vm:1492 m       vm:+1 m      um:301 m       um:+2 m zCoreBuild/clustering/Post-split_processing/POST-SPLIT_MANIPULATION/Post_manipulation_timing_analysis
+ 136    elapsed:0.96 s   user:0.87 s    system:0.8 s      %cpu:98.17       load:0.49       fm:171062 m     vm:1650 m     vm:+158 m      um:458 m     um:+157 m zCoreBuild/clustering/Post-split_processing/POST-SPLIT_MANIPULATION/Post-split_instr._mem.
+ 138     elapsed:0.1 s    user:0.2 s      system:0 s    %cpu:1333.33       load:0.49       fm:171062 m     vm:1650 m       vm:+0 m      um:459 m       um:+1 m zCoreBuild/clustering/Post-split_processing/POST-SPLIT_MANIPULATION/Post-split_handle_list_mod_mirror/Instantiate_NPCK_zvu_synchro_db
+ 139       elapsed:0 s    user:0.1 s    system:0.2 s    %cpu:1714.29       load:0.49       fm:171062 m     vm:1650 m       vm:+0 m      um:459 m       um:+0 m zCoreBuild/clustering/Post-split_processing/POST-SPLIT_MANIPULATION/Post-split_handle_list_mod_mirror/Instantiate_NPCK_zvu_synchro_db
+ 140       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.49       fm:171062 m     vm:1650 m       vm:+0 m      um:459 m       um:+0 m zCoreBuild/clustering/Post-split_processing/POST-SPLIT_MANIPULATION/Post-split_handle_list_mod_mirror/FillDB
+ 141       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.49       fm:171062 m     vm:1650 m       vm:+0 m      um:459 m       um:+0 m zCoreBuild/clustering/Post-split_processing/POST-SPLIT_MANIPULATION/Post-split_handle_list_mod_mirror/Partial_uniquify
+ 142       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.49       fm:171062 m     vm:1650 m       vm:+0 m      um:459 m       um:+0 m zCoreBuild/clustering/Post-split_processing/POST-SPLIT_MANIPULATION/Post-split_handle_list_mod_mirror/Batch_reconnection
+ 142     elapsed:0.1 s    user:0.6 s    system:0.2 s     %cpu:711.11       load:0.49       fm:171062 m     vm:1650 m       vm:+0 m      um:459 m       um:+1 m zCoreBuild/clustering/Post-split_processing/POST-SPLIT_MANIPULATION/Post-split_handle_list_mod_mirror
+ 144       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.49       fm:171062 m     vm:1650 m       vm:+0 m      um:459 m       um:+0 m zCoreBuild/clustering/Post-split_processing/POST-SPLIT_MANIPULATION/Post-split_techmap/Mult-remapping
+ 147       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.49       fm:171062 m     vm:1650 m       vm:+0 m      um:459 m       um:+0 m zCoreBuild/clustering/Post-split_processing/POST-SPLIT_MANIPULATION/Post-split_techmap/Per-fpga_post-split_techmapping/post-split_techmapping_on_fpga_U0_M0_F0/U0_M0_F0_(mirror_modules_handling)
+ 148       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.49       fm:171062 m     vm:1650 m       vm:+0 m      um:459 m       um:+0 m zCoreBuild/clustering/Post-split_processing/POST-SPLIT_MANIPULATION/Post-split_techmap/Per-fpga_post-split_techmapping/post-split_techmapping_on_fpga_U0_M0_F0/Remove_trigger_Bbox
+ 149       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.49       fm:171062 m     vm:1650 m       vm:+0 m      um:459 m       um:+0 m zCoreBuild/clustering/Post-split_processing/POST-SPLIT_MANIPULATION/Post-split_techmap/Per-fpga_post-split_techmapping/post-split_techmapping_on_fpga_U0_M0_F0/U0_M0_F0_(mult-and_handling)
+ 150       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.49       fm:171062 m     vm:1650 m       vm:+0 m      um:459 m       um:+0 m zCoreBuild/clustering/Post-split_processing/POST-SPLIT_MANIPULATION/Post-split_techmap/Per-fpga_post-split_techmapping/post-split_techmapping_on_fpga_U0_M0_F0/U0_M0_F0_(zview_aliases)
+ 151       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.49       fm:171062 m     vm:1650 m       vm:+0 m      um:459 m       um:+0 m zCoreBuild/clustering/Post-split_processing/POST-SPLIT_MANIPULATION/Post-split_techmap/Per-fpga_post-split_techmapping/post-split_techmapping_on_fpga_U0_M0_F0/U0_M0_F0_(bufg_routing)
+ 151       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.49       fm:171062 m     vm:1650 m       vm:+0 m      um:459 m       um:+0 m zCoreBuild/clustering/Post-split_processing/POST-SPLIT_MANIPULATION/Post-split_techmap/Per-fpga_post-split_techmapping/post-split_techmapping_on_fpga_U0_M0_F0
+ 151     elapsed:0.1 s      user:0 s      system:0 s       %cpu:0.00       load:0.49       fm:171062 m     vm:1650 m       vm:+0 m      um:459 m       um:+0 m zCoreBuild/clustering/Post-split_processing/POST-SPLIT_MANIPULATION/Post-split_techmap/Per-fpga_post-split_techmapping
+ 151     elapsed:0.1 s      user:0 s      system:0 s       %cpu:0.00       load:0.49       fm:171062 m     vm:1650 m       vm:+0 m      um:459 m       um:+0 m zCoreBuild/clustering/Post-split_processing/POST-SPLIT_MANIPULATION/Post-split_techmap
+ 151       elapsed:1 s      user:1 s   system:0.20 s     %cpu:110.27       load:0.49       fm:171062 m     vm:1650 m     vm:+159 m      um:459 m     um:+161 m zCoreBuild/clustering/Post-split_processing/POST-SPLIT_MANIPULATION
+ 152       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.49       fm:171062 m     vm:1650 m       vm:+0 m      um:459 m       um:+0 m zCoreBuild/clustering/Post-split_processing/Compute_hier_wires_upfront
+ 153       elapsed:0 s    user:0.1 s      system:0 s       %cpu:0.00       load:0.49       fm:171062 m     vm:1650 m       vm:+0 m      um:459 m       um:+0 m zCoreBuild/clustering/Post-split_processing/Compute_hier_wires_upfront
+ 155       elapsed:0 s    user:0.1 s    system:0.1 s       %cpu:0.00       load:0.49       fm:171062 m     vm:1650 m       vm:+0 m      um:459 m       um:+0 m zCoreBuild/clustering/Post-split_processing/POST-SPLIT_CHECK_RESOURCES/Compute_hier_wires_upfront
+ 156       elapsed:0 s    user:0.1 s      system:0 s    %cpu:4000.00       load:0.49       fm:171062 m     vm:1650 m       vm:+0 m      um:459 m       um:+0 m zCoreBuild/clustering/Post-split_processing/POST-SPLIT_CHECK_RESOURCES/Compute_hier_wires_upfront
+ 156     elapsed:0.2 s    user:0.7 s    system:0.1 s     %cpu:432.43       load:0.49       fm:171062 m     vm:1650 m       vm:+0 m      um:459 m       um:+0 m zCoreBuild/clustering/Post-split_processing/POST-SPLIT_CHECK_RESOURCES
+ 156       elapsed:1 s      user:1 s   system:0.27 s     %cpu:125.18       load:0.49       fm:171062 m     vm:1650 m     vm:+159 m      um:459 m     um:+161 m zCoreBuild/clustering/Post-split_processing
+ 156       elapsed:5 s      user:5 s   system:0.54 s     %cpu:113.30       load:0.49       fm:171062 m     vm:1650 m     vm:+997 m      um:459 m     um:+237 m zCoreBuild/clustering
+ 158       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.49       fm:171062 m     vm:1650 m       vm:+0 m      um:459 m       um:+0 m zCoreBuild/post-clustering_flow./post_split_interco
+ 161       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.49       fm:171062 m     vm:1650 m       vm:+0 m      um:459 m       um:+0 m zCoreBuild/post-clustering_flow./dumping/Signature_generation/Netlist_signature_generation
+ 161       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.49       fm:171062 m     vm:1650 m       vm:+0 m      um:459 m       um:+0 m zCoreBuild/post-clustering_flow./dumping/Signature_generation
+ 163       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.49       fm:171061 m     vm:1651 m       vm:+0 m      um:460 m       um:+0 m zCoreBuild/post-clustering_flow./dumping/Signature_generation/Netlist_signature_generation
+ 163       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.49       fm:171061 m     vm:1651 m       vm:+0 m      um:460 m       um:+0 m zCoreBuild/post-clustering_flow./dumping/Signature_generation
+ 164     elapsed:0.1 s    user:0.1 s      system:0 s      %cpu:93.02       load:0.49       fm:171061 m     vm:1651 m       vm:+0 m      um:460 m       um:+0 m zCoreBuild/post-clustering_flow./dumping/Multiquify_and_signature_generation
+ 165       elapsed:0 s    user:0.1 s      system:0 s       %cpu:0.00       load:0.49       fm:171061 m     vm:1651 m       vm:+0 m      um:460 m       um:+0 m zCoreBuild/post-clustering_flow./dumping/Compute_hier_wires_upfront
+ 167     elapsed:0.1 s      user:0 s      system:0 s       %cpu:0.00       load:0.49       fm:171061 m     vm:1651 m       vm:+0 m      um:460 m       um:+0 m zCoreBuild/post-clustering_flow./dumping/Signature_generation/Netlist_signature_generation
+ 167     elapsed:0.2 s      user:0 s      system:0 s       %cpu:0.00       load:0.49       fm:171061 m     vm:1651 m       vm:+0 m      um:460 m       um:+0 m zCoreBuild/post-clustering_flow./dumping/Signature_generation
+ 167    elapsed:0.19 s    user:0.5 s    system:0.4 s      %cpu:45.69       load:0.49       fm:171059 m     vm:1653 m       vm:+3 m      um:462 m       um:+3 m zCoreBuild/post-clustering_flow./dumping
+ 167    elapsed:0.25 s    user:0.5 s    system:0.5 s      %cpu:40.08       load:0.49       fm:171059 m     vm:1653 m       vm:+3 m      um:462 m       um:+3 m zCoreBuild/post-clustering_flow.
+ 167       elapsed:7 s      user:6 s   system:0.70 s      %cpu:95.25       load:0.49       fm:171059 m     vm:1653 m    vm:+1212 m      um:462 m     um:+332 m zCoreBuild
 
 
  18.BlackBox instance path report
@@ -2378,7 +2395,12 @@ FPGA = U0_M0_F0, Module = zfwc_hs_1, Instance Path = U0_M0_F0.U0_M0_F0_core.u_st
 FPGA = U0_M0_F0, Module = zfwc_hs_1, Instance Path = U0_M0_F0.U0_M0_F0_core.u_stb.u_check.zfwc_ip_monitor 
 FPGA = U0_M0_F0, Module = zfwc_hs_48, Instance Path = U0_M0_F0.U0_M0_F0_core.u_stb.zfwc_ip_monitor_0 
 FPGA = U0_M0_F0, Module = zfwc_hs_48, Instance Path = U0_M0_F0.U0_M0_F0_core.u_stb.zfwc_ip_monitor 
-FPGA = U0_M0_F0, Module = zfwc_hs_4, Instance Path = U0_M0_F0.U0_M0_F0_core.u_dut.u_fifo.u_fifo_usage_spy.zfwc_ip_monitor 
+FPGA = U0_M0_F0, Module = zfwc_hs_10, Instance Path = U0_M0_F0.U0_M0_F0_core.u_dut.u_fifo.u_fifo_usage_spy.zfwc_ip_monitor_4 
+FPGA = U0_M0_F0, Module = zfwc_hs_10, Instance Path = U0_M0_F0.U0_M0_F0_core.u_dut.u_fifo.u_fifo_usage_spy.zfwc_ip_monitor_3 
+FPGA = U0_M0_F0, Module = zfwc_hs_10, Instance Path = U0_M0_F0.U0_M0_F0_core.u_dut.u_fifo.u_fifo_usage_spy.zfwc_ip_monitor_2 
+FPGA = U0_M0_F0, Module = zfwc_hs_10, Instance Path = U0_M0_F0.U0_M0_F0_core.u_dut.u_fifo.u_fifo_usage_spy.zfwc_ip_monitor_1 
+FPGA = U0_M0_F0, Module = zfwc_hs_10, Instance Path = U0_M0_F0.U0_M0_F0_core.u_dut.u_fifo.u_fifo_usage_spy.zfwc_ip_monitor_0 
+FPGA = U0_M0_F0, Module = zfwc_hs_10, Instance Path = U0_M0_F0.U0_M0_F0_core.u_dut.u_fifo.u_fifo_usage_spy.zfwc_ip_monitor 
 FPGA = U0_M0_F0, Module = zmark, Instance Path = U0_M0_F0.U0_M0_F0_core.u_stb.u_rom.mem.wire_sysFreq_zmpostfix 
 FPGA = U0_M0_F0, Module = zmark, Instance Path = U0_M0_F0.U0_M0_F0_core.u_stb.u_rom.mem.memory_base.wire_sysFreq_zmpostfix 
 FPGA = U0_M0_F0, Module = zmark, Instance Path = U0_M0_F0.U0_M0_F0_core.u_stb.u_ram.mem.wire_sysFreq_zmpostfix 
@@ -2422,5 +2444,6 @@ FPGA = U0_M0_F0, Module = zebu_bb_zmem_do, Instance Path = U0_M0_F0.U0_M0_F0_cor
 FPGA = U0_M0_F0, Module = zebu_bb_zmem_do, Instance Path = U0_M0_F0.U0_M0_F0_core.u_stb.u_rom.mem.zebu_bb_zmem_do 
 FPGA = U0_M0_F0, Module = zmark, Instance Path = U0_M0_F0.U0_M0_F0_core.zcg_filterClock_zmpostfix 
 FPGA = U0_M0_F0, Module = zmark, Instance Path = U0_M0_F0.U0_M0_F0_core.top\.zsva_zcg_compositeClock_16209639241055482872_zmpostfix 
+FPGA = U0_M0_F0, Module = zmark, Instance Path = U0_M0_F0.U0_M0_F0_core.rstn_zmpostfix 
 FPGA = U0_M0_F0, Module = zmark, Instance Path = U0_M0_F0.U0_M0_F0_core.clk1_zmpostfix 
 FPGA = U0_M0_F0, Module = zmark, Instance Path = U0_M0_F0.U0_M0_F0_core.clk0_zmpostfix 

@@ -28,7 +28,7 @@
 
 # zTopBuild zTopBuild.tcl 
 
-# start time is Wed Apr 17 20:16:25 2024
+# start time is Mon Apr 29 13:43:48 2024
 
 
 
@@ -36,15 +36,15 @@
 # Build Date : Oct 18 2022 - 01:04:07
 # ---------------------------System Context--------------------------- 
 # Cpu        40 x bogomips - 4604.90 Intel(R) Xeon(R) CPU E5-2650 v3 @ 2.30GHz
-#            Load: 0.41 0.66 1.49 2/518 24826
+#            Load: 0.38 0.14 0.15 3/503 35761
 #            Hostname: csce-quinn-s1.engr.tamu.edu   OS: Linux 3.10.0-1160.108.1.el7.x86_64
-# Memory     Total: 193183 MB Free: 174235 MB
-#            Total Free including cache: 187627 MB
-#            Swap cache: 0 MB Cached space: 13392 MB
+# Memory     Total: 193183 MB Free: 171387 MB
+#            Total Free including cache: 187497 MB
+#            Swap cache: 0 MB Cached space: 16110 MB
 #            Swap space: 4095 MB Free Swap space: 4095 MB
 #            VmSize: 420 MB VmPeak: 420 MB
-# Disk Space Total: 50 GB Available: 27 GB Used: 23 GB
-#            Free inodes: 104738110
+# Disk Space Total: 50 GB Available: 8 GB Used: 42 GB
+#            Free inodes: 104731925
 # Stack                                Soft Limit           Hard Limit  
 #            Max stack size            8388608              unlimited            bytes     
 # -------------------------------------------------------------------- 
@@ -304,22 +304,22 @@ This check can be (de)activated with the tcl command 'check_input_netlist -check
 
 Net list information:
           +--------------------------------+--------------------------------+
-          |Modules                         |                              67|
+          |Modules                         |                              72|
           |Blackbox Module(s)              |                              13|
           |Blackbox Memory(ies)            |                               0|
           |Blackbox ZView(s)               |                               1|
           |Fast Waveform Capture IP box(es)|                               1|
-          |DPI Module(s)                   |                               3|
+          |DPI Module(s)                   |                               8|
           |Qiwc IP box(es)                 |                               0|
           |Asynchronous ZMEM Memory(ies)   |                               0|
           |Synchronous ZMEM Memory(ies)    |                               2|
-          |Disconnected Module Port(s)     |   [in=2 out=0 inout=0]        2|
-          |Disconnected Instance Port(s)   |[in=73 out=181 inout=0]      254|
+          |Disconnected Module Port(s)     |   [in=4 out=0 inout=0]        4|
+          |Disconnected Instance Port(s)   |[in=75 out=183 inout=0]      258|
           |Disconnected Wire(s)            |                               0|
-          |Loadless Wire(s)                |                               4|
+          |Loadless Wire(s)                |                               6|
           |Sourceless Wire(s)              |                               2|
-          |Uninitialized register(s)       |                             457|
-          |Initialized register(s)         |                              10|
+          |Uninitialized register(s)       |                             506|
+          |Initialized register(s)         |                              14|
           +--------------------------------+--------------------------------+
 
 
@@ -328,34 +328,35 @@ Primitive count from the top module top
           +----------------------------------------------------------------+------+---------+---------+
           |Primitive                                                       |Number|Equiv LUT|Equiv REG|
           +----------------------------------------------------------------+------+---------+---------+
-          |fd                                                              |   313|         |      313|
-          |fdc                                                             |    39|         |       39|
+          |fd                                                              |   350|         |      350|
+          |fd_1                                                            |    19|         |       19|
+          |fdc                                                             |    34|         |       34|
           |fdce                                                            |    19|         |       19|
-          |fde                                                             |   132|         |      132|
-          |fdp                                                             |     6|         |        6|
+          |fde                                                             |   133|         |      133|
+          |fdp                                                             |     7|         |        7|
           +----------------------------------------------------------------+------+---------+---------+
-          |Summary Flip-Flops                                              |   509|         |      509|
+          |Summary Flip-Flops                                              |   562|         |      562|
           +----------------------------------------------------------------+------+---------+---------+
-          |gnd                                                             |    13|         |         |
-          |lut2                                                            |    63|       63|         |
+          |gnd                                                             |    14|         |         |
+          |lut2                                                            |    69|       69|         |
           |lut3                                                            |    60|       60|         |
-          |lut4                                                            |     9|        9|         |
-          |lut5                                                            |    10|       10|         |
+          |lut4                                                            |     8|        8|         |
+          |lut5                                                            |     9|        9|         |
           |lut6                                                            |    29|       29|         |
-          |vcc                                                             |     6|         |         |
+          |vcc                                                             |     7|         |         |
           +----------------------------------------------------------------+------+---------+---------+
-          |Summary General                                                 |   190|      171|         |
+          |Summary General                                                 |   196|      175|         |
           +----------------------------------------------------------------+------+---------+---------+
           |ld_1                                                            |     1|         |        1|
           +----------------------------------------------------------------+------+---------+---------+
           |Summary Latches                                                 |     1|         |        1|
           +----------------------------------------------------------------+------+---------+---------+
           |and2                                                            |    35|       35|         |
-          |inv                                                             |    53|         |         |
+          |inv                                                             |    59|         |         |
           |xor2                                                            |     6|        6|         |
           |xorcy                                                           |     2|         |         |
           +----------------------------------------------------------------+------+---------+---------+
-          |Summary Logic Primitives                                        |    96|       41|         |
+          |Summary Logic Primitives                                        |   102|       41|         |
           +----------------------------------------------------------------+------+---------+---------+
           |ram256x1s                                                       |    18|       72|         |
           +----------------------------------------------------------------+------+---------+---------+
@@ -368,6 +369,11 @@ Primitive count from the top module top
           |carry4                                                          |    40|         |         |
           |zebu_bb_wb_reg                                                  |    45|         |       45|
           |zebu_bb_ZDPI_MOD_fifo_usage_spy_ZDPI_fifo_usage_spy_notify_call0|     1|         |         |
+          |zebu_bb_ZDPI_MOD_fifo_usage_spy_ZDPI_fifo_usage_spy_notify_call1|     1|         |         |
+          |zebu_bb_ZDPI_MOD_fifo_usage_spy_ZDPI_fifo_usage_spy_notify_call2|     1|         |         |
+          |zebu_bb_ZDPI_MOD_fifo_usage_spy_ZDPI_fifo_usage_spy_notify_call3|     1|         |         |
+          |zebu_bb_ZDPI_MOD_fifo_usage_spy_ZDPI_fifo_usage_spy_notify_call4|     1|         |         |
+          |zebu_bb_ZDPI_MOD_fifo_usage_spy_ZDPI_fifo_usage_spy_notify_call5|     1|         |         |
           |zebu_bb_ZDPI_MOD_stb_ZDPI_grp0_dummy_import_for_pli_call0       |     1|         |         |
           |zebu_bb_ZDPI_MOD_stb_ZDPI_grp0_dummy_import_for_pli_call1       |     1|         |         |
           |zebu_bb_zmem_addr                                               |    16|         |         |
@@ -382,7 +388,7 @@ Primitive count from the top module top
           |ZSVA_MOD_1                                                      |     1|         |         |
           |ZSVA_MOD_PLI_1                                                  |     2|         |         |
           +----------------------------------------------------------------+------+---------+---------+
-          |Summary                                                         |   153|         |       45|
+          |Summary                                                         |   158|         |       45|
           +----------------------------------------------------------------+------+---------+---------+
           |zfwc_hs_1                                                       |    38|         |         |
           |zview                                                           |   117|         |         |
@@ -395,17 +401,17 @@ Primitive count from the top module top
 
 Design content summary, Luts, BRams, Flip-Flops, Latches, Multiplexers, Multipliers, other logic:
           +----------------------------------+---+
-          |Logic LUTs                        |171|
+          |Logic LUTs                        |175|
           |RAMLUTs                           | 72|
-          |Logic LUTs + RAMLUTs              |243|
-          |Logic LUTs + RAMLUTs + other logic|284|
+          |Logic LUTs + RAMLUTs              |247|
+          |Logic LUTs + RAMLUTs + other logic|288|
           |BRAMs                             |  0|
-          |Flip-Flops                        |509|
+          |Flip-Flops                        |562|
           |Latches                           |  1|
-          |Flip-Flops + Latches + other logic|556|
+          |Flip-Flops + Latches + other logic|609|
           |Multiplexers                      |  2|
           |MULT18/DSP                        |  0|
-          |Other logic                       |445|
+          |Other logic                       |458|
           |Lut equiv other logic             | 41|
           |Reg equiv Other logic             | 46|
           +----------------------------------+---+
@@ -545,7 +551,7 @@ Multi-instantiation cost ordered by number of instance (flat logic only)
  |18      |36     |0      |0       |0      |0         |0       |0        |         zebu_force_sync_LOGICOPT|2  |0  |0   |0  |0     |0   |0    |1   |1        |2   |3     |
  |18      |0      |18     |0       |0      |0         |0       |0        |               zmux2_1_0_LOGICOPT|0  |1  |0   |0  |0     |0   |0    |1   |1        |0   |4     |
  |16      |0      |0      |0       |0      |0         |0       |0        |                zebu_bb_zmem_addr|0  |0  |0   |0  |0     |0   |0    |0   |0        |0   |1     |
- |13      |0      |0      |0       |0      |0         |0       |0        |zebu_FT_inout_mod_hidden_wire_new|0  |0  |0   |0  |0     |0   |0    |0   |0        |0   |2     |
+ |12      |0      |0      |0       |0      |0         |0       |0        |zebu_FT_inout_mod_hidden_wire_new|0  |0  |0   |0  |0     |0   |0    |0   |0        |0   |2     |
  |9       |0      |0      |0       |0      |0         |0       |0        |                  zebu_bb_zmem_do|0  |0  |0   |0  |0     |0   |0    |0   |0        |0   |1     |
  |9       |0      |0      |0       |0      |0         |0       |0        |                  zebu_bb_zmem_di|0  |0  |0   |0  |0     |0   |0    |0   |0        |0   |1     |
  |4       |0      |0      |0       |0      |0         |0       |0        |                           ZXLSYS|0  |0  |0   |0  |0     |0   |0    |0   |0        |0   |4     |
@@ -559,7 +565,7 @@ Multi-instantiation cost ordered by number of instance (flat logic only)
  |2       |0      |0      |0       |0      |0         |0       |0        |                   z_feed_through|0  |0  |0   |0  |0     |0   |0    |0   |0        |0   |2     |
  |2       |4      |0      |0       |0      |0         |0       |0        |                  zebu_force_sync|2  |0  |0   |0  |0     |0   |0    |1   |1        |2   |3     |
  |1       |298    |26     |0       |0      |0         |0       |0        |                              stb|298|26 |0   |0  |0     |0   |0    |206 |206      |502 |32    |
- |0       |0      |0      |0       |0      |0         |0       |0        |                              top|5  |6  |0   |0  |0     |0   |0    |284 |284      |601 |0     |
+ |0       |0      |0      |0       |0      |0         |0       |0        |                              top|5  |6  |0   |0  |0     |0   |0    |288 |288      |654 |0     |
  +--------+-------+-------+--------+-------+----------+--------+---------+---------------------------------+---+---+----+---+------+----+-----+----+---------+----+------+
 Nb Inst.    : Number of instances
 ALL REG     : Nb inst. * Nb REG
@@ -591,7 +597,7 @@ Multi-instantiation cost ordered by (multi-instantiation * number of primitive) 
  |2       |4      |0      |0       |0      |0         |0       |0        |                  zebu_force_sync|2  |0  |0   |0  |0     |0   |0    |1   |1        |2   |3     |
  |2       |0      |2      |0       |0      |0         |0       |0        |                        zmux2_1_0|0  |1  |0   |0  |0     |0   |0    |1   |1        |0   |4     |
  |16      |0      |0      |0       |0      |0         |0       |0        |                zebu_bb_zmem_addr|0  |0  |0   |0  |0     |0   |0    |0   |0        |0   |1     |
- |13      |0      |0      |0       |0      |0         |0       |0        |zebu_FT_inout_mod_hidden_wire_new|0  |0  |0   |0  |0     |0   |0    |0   |0        |0   |2     |
+ |12      |0      |0      |0       |0      |0         |0       |0        |zebu_FT_inout_mod_hidden_wire_new|0  |0  |0   |0  |0     |0   |0    |0   |0        |0   |2     |
  |9       |0      |0      |0       |0      |0         |0       |0        |                  zebu_bb_zmem_do|0  |0  |0   |0  |0     |0   |0    |0   |0        |0   |1     |
  |9       |0      |0      |0       |0      |0         |0       |0        |                  zebu_bb_zmem_di|0  |0  |0   |0  |0     |0   |0    |0   |0        |0   |1     |
  |4       |0      |0      |0       |0      |0         |0       |0        |                           ZXLSYS|0  |0  |0   |0  |0     |0   |0    |0   |0        |0   |4     |
@@ -602,7 +608,7 @@ Multi-instantiation cost ordered by (multi-instantiation * number of primitive) 
  |21      |0      |0      |0       |0      |0         |0       |0        |    zebu_reqsig_clock_driverclock|0  |0  |0   |0  |0     |0   |0    |0   |0        |0   |1     |
  |2       |0      |0      |0       |0      |0         |0       |0        |                   z_feed_through|0  |0  |0   |0  |0     |0   |0    |0   |0        |0   |2     |
  |38      |0      |0      |0       |0      |0         |0       |0        |                        zfwc_hs_1|0  |0  |0   |0  |0     |0   |0    |0   |0        |0   |3     |
- |0       |0      |0      |0       |0      |0         |0       |0        |                              top|5  |6  |0   |0  |0     |0   |0    |284 |284      |601 |0     |
+ |0       |0      |0      |0       |0      |0         |0       |0        |                              top|5  |6  |0   |0  |0     |0   |0    |288 |288      |654 |0     |
  +--------+-------+-------+--------+-------+----------+--------+---------+---------------------------------+---+---+----+---+------+----+-----+----+---------+----+------+
 Nb Inst.    : Number of instances
 ALL REG     : Nb inst. * Nb REG
@@ -629,7 +635,7 @@ Modules ordered by reg/lut ratio (decreasing order, only if 2*reg>lut) (flat log
  +--------+----+----+---------+------------------------+------+
  |45      |1   |0   |0        |          zebu_bb_wb_reg|1     |
  |1       |502 |206 |206      |                     stb|32    |
- |0       |601 |284 |284      |                     top|0     |
+ |0       |654 |288 |288      |                     top|0     |
  |2       |2   |1   |1        |         zebu_force_sync|3     |
  |18      |2   |1   |1        |zebu_force_sync_LOGICOPT|3     |
  |2       |2   |2   |2        |             counter2_re|7     |
@@ -647,7 +653,7 @@ Cost ordered by biggest variation caused by lut weighting) (flat logic only)
  +--------+----+----+---------+---------------------------------+------+
  |Nb Inst.|HREG|HLUT|HLUT(raw)|                           Module|Nb IOs|
  +--------+----+----+---------+---------------------------------+------+
- |13      |0   |0   |0        |zebu_FT_inout_mod_hidden_wire_new|2     |
+ |12      |0   |0   |0        |zebu_FT_inout_mod_hidden_wire_new|2     |
  |18      |0   |1   |1        |               zmux2_1_0_LOGICOPT|4     |
  |2       |0   |1   |1        |                        zmux2_1_0|4     |
  |4       |1   |2   |2        |                   zsva_trigger_1|6     |
@@ -655,7 +661,7 @@ Cost ordered by biggest variation caused by lut weighting) (flat logic only)
  |2       |2   |2   |2        |                      counter2_re|7     |
  |18      |2   |1   |1        |         zebu_force_sync_LOGICOPT|3     |
  |2       |2   |1   |1        |                  zebu_force_sync|3     |
- |0       |601 |284 |284      |                              top|0     |
+ |0       |654 |288 |288      |                              top|0     |
  |1       |502 |206 |206      |                              stb|32    |
  |16      |0   |0   |0        |                zebu_bb_zmem_addr|1     |
  |45      |1   |0   |0        |                   zebu_bb_wb_reg|1     |
@@ -683,7 +689,7 @@ Multi-instantiation cost ordered by number primitives (flat logic only)
  |Nb Inst.|ALL REG|ALL LUT|ALL BRAM|ALL DSP|ALL RAMLUT|ALL LUT6|ALL MUXCY|                           Module|REG|LUT|BRAM|DSP|RAMLUT|LUT6|MUXCY|HLUT|HLUT(raw)|HREG|Nb IOs|
  +--------+-------+-------+--------+-------+----------+--------+---------+---------------------------------+---+---+----+---+------+----+-----+----+---------+----+------+
  |1       |298    |26     |0       |0      |0         |0       |0        |                              stb|298|26 |0   |0  |0     |0   |0    |206 |206      |502 |32    |
- |0       |0      |0      |0       |0      |0         |0       |0        |                              top|5  |6  |0   |0  |0     |0   |0    |284 |284      |601 |0     |
+ |0       |0      |0      |0       |0      |0         |0       |0        |                              top|5  |6  |0   |0  |0     |0   |0    |288 |288      |654 |0     |
  |2       |6      |6      |0       |0      |0         |2       |0        |                     parity_check|3  |3  |0   |0  |0     |1   |0    |5   |5        |4   |13    |
  |2       |4      |4      |0       |0      |0         |0       |2        |                      counter2_re|2  |2  |0   |0  |0     |0   |1    |2   |2        |2   |7     |
  |4       |4      |8      |0       |0      |0         |0       |0        |                   zsva_trigger_1|1  |2  |0   |0  |0     |0   |0    |2   |2        |1   |6     |
@@ -693,7 +699,7 @@ Multi-instantiation cost ordered by number primitives (flat logic only)
  |45      |45     |0      |0       |0      |0         |0       |0        |                   zebu_bb_wb_reg|1  |0  |0   |0  |0     |0   |0    |0   |0        |1   |1     |
  |2       |0      |2      |0       |0      |0         |0       |0        |                        zmux2_1_0|0  |1  |0   |0  |0     |0   |0    |1   |1        |0   |4     |
  |16      |0      |0      |0       |0      |0         |0       |0        |                zebu_bb_zmem_addr|0  |0  |0   |0  |0     |0   |0    |0   |0        |0   |1     |
- |13      |0      |0      |0       |0      |0         |0       |0        |zebu_FT_inout_mod_hidden_wire_new|0  |0  |0   |0  |0     |0   |0    |0   |0        |0   |2     |
+ |12      |0      |0      |0       |0      |0         |0       |0        |zebu_FT_inout_mod_hidden_wire_new|0  |0  |0   |0  |0     |0   |0    |0   |0        |0   |2     |
  |9       |0      |0      |0       |0      |0         |0       |0        |                  zebu_bb_zmem_di|0  |0  |0   |0  |0     |0   |0    |0   |0        |0   |1     |
  |4       |0      |0      |0       |0      |0         |0       |0        |                           ZXLSYS|0  |0  |0   |0  |0     |0   |0    |0   |0        |0   |4     |
  |117     |0      |0      |0       |0      |0         |0       |0        |                            zview|0  |0  |0   |0  |0     |0   |0    |0   |0        |0   |1     |
@@ -738,6 +744,11 @@ BLACKBOX MODULE   : zebu_bb_zmem_addr
 BLACKBOX MODULE   : zebu_bb_zmem_we
 BLACKBOX MODULE   : zebu_bb_zmem_do
 BLACKBOX MODULE   : zebu_reqsig_clock_driverclock
+DPI MODULE : zebu_bb_ZDPI_MOD_fifo_usage_spy_ZDPI_fifo_usage_spy_notify_call5
+DPI MODULE : zebu_bb_ZDPI_MOD_fifo_usage_spy_ZDPI_fifo_usage_spy_notify_call4
+DPI MODULE : zebu_bb_ZDPI_MOD_fifo_usage_spy_ZDPI_fifo_usage_spy_notify_call3
+DPI MODULE : zebu_bb_ZDPI_MOD_fifo_usage_spy_ZDPI_fifo_usage_spy_notify_call2
+DPI MODULE : zebu_bb_ZDPI_MOD_fifo_usage_spy_ZDPI_fifo_usage_spy_notify_call1
 DPI MODULE : zebu_bb_ZDPI_MOD_fifo_usage_spy_ZDPI_fifo_usage_spy_notify_call0
 BLACKBOX MODULE   : ZSVA_MOD_0
 BLACKBOX MODULE   : ZSVA_MOD_1
@@ -747,7 +758,7 @@ BLACKBOX MODULE   : zebu_clockGen
     ----------------------
 
 
-Found 272 blackbox instance(s) : 114 blackbox(es), 0 memory(ies), 117 zview(s), 38 fast waveform capture ip(s), 3 fast waveform captures marks, 0 dpi instances, 0 qiwc ip instances.
+Found 277 blackbox instance(s) : 114 blackbox(es), 0 memory(ies), 117 zview(s), 38 fast waveform capture ip(s), 8 fast waveform captures marks, 0 dpi instances, 0 qiwc ip instances.
 
     5.5.ZMem resource utilization
     -----------------------------
@@ -869,7 +880,7 @@ FPGA SIZE          =     REG=2443200    LUT=1221600 RAMLUT= 344800   LUT6=122160
 FILLING CONSTRAINT =     REG=     22    LUT=     50 RAMLUT=     40   LUT6=     20  MUXCY=     30 BRAM=  50  DSP_MULT=  50   QIWC=     40
 ADJUSTED FPGA SIZE =     REG= 537504    LUT= 610800 RAMLUT= 137920   LUT6= 244320  MUXCY= 366480 BRAM= 645  DSP_MULT=1080   QIWC= 209715
 
-DESIGN SIZE        =     REG=    601    LUT=    284 RAMLUT=     72   LUT6=     29  MUXCY=      2 BRAM=   0  DSP_MULT=   0   QIWC=      0
+DESIGN SIZE        =     REG=    654    LUT=    288 RAMLUT=     72   LUT6=     29  MUXCY=      2 BRAM=   0  DSP_MULT=   0   QIWC=      0
 
 
 
@@ -882,7 +893,7 @@ FPGA SIZE          =     REG=2443200    LUT=1221600 RAMLUT= 344800   LUT6=122160
 FILLING CONSTRAINT =     REG=     22    LUT=     50 RAMLUT=     40   LUT6=     20  MUXCY=     30 BRAM=  50  DSP_MULT=  50   QIWC=     40
 ADJUSTED FPGA SIZE =     REG= 537504    LUT= 610800 RAMLUT= 137920   LUT6= 244320  MUXCY= 366480 BRAM= 645  DSP_MULT=1080   QIWC= 209715
 
-DESIGN SIZE        =     REG=    601    LUT=    284 RAMLUT=     72   LUT6=     29  MUXCY=      2 BRAM=   0  DSP_MULT=   0   QIWC=      0
+DESIGN SIZE        =     REG=    654    LUT=    288 RAMLUT=     72   LUT6=     29  MUXCY=      2 BRAM=   0  DSP_MULT=   0   QIWC=      0
 
 
 
@@ -895,7 +906,7 @@ FPGA SIZE          =     REG=2443200    LUT=1221600 RAMLUT= 344800   LUT6=122160
 FILLING CONSTRAINT =     REG=     22    LUT=     50 RAMLUT=     40   LUT6=     20  MUXCY=     30 BRAM=  50  DSP_MULT=  50   QIWC=     40
 ADJUSTED FPGA SIZE =     REG= 537504    LUT= 610800 RAMLUT= 137920   LUT6= 244320  MUXCY= 366480 BRAM= 645  DSP_MULT=1080   QIWC= 209715
 
-DESIGN SIZE        =     REG=    601    LUT=    284 RAMLUT=     72   LUT6=     29  MUXCY=      2 BRAM=   0  DSP_MULT=   0   QIWC=      0
+DESIGN SIZE        =     REG=    654    LUT=    288 RAMLUT=     72   LUT6=     29  MUXCY=      2 BRAM=   0  DSP_MULT=   0   QIWC=      0
 
 
 
@@ -908,7 +919,7 @@ FPGA SIZE          =     REG=2443200    LUT=1221600 RAMLUT= 344800   LUT6=122160
 FILLING CONSTRAINT =     REG=     22    LUT=     50 RAMLUT=     40   LUT6=     20  MUXCY=     30 BRAM=  50  DSP_MULT=  50   QIWC=     40
 ADJUSTED FPGA SIZE =     REG= 537504    LUT= 610800 RAMLUT= 137920   LUT6= 244320  MUXCY= 366480 BRAM= 645  DSP_MULT=1080   QIWC= 209715
 
-DESIGN SIZE        =     REG=    601    LUT=    284 RAMLUT=     72   LUT6=     29  MUXCY=      2 BRAM=   0  DSP_MULT=   0   QIWC=      0
+DESIGN SIZE        =     REG=    654    LUT=    288 RAMLUT=     72   LUT6=     29  MUXCY=      2 BRAM=   0  DSP_MULT=   0   QIWC=      0
 
 
 
@@ -921,7 +932,7 @@ FPGA SIZE          =     REG=2443200    LUT=1221600 RAMLUT= 344800   LUT6=122160
 FILLING CONSTRAINT =     REG=     22    LUT=     50 RAMLUT=     40   LUT6=     20  MUXCY=     30 BRAM=  50  DSP_MULT=  50   QIWC=     40
 ADJUSTED FPGA SIZE =     REG= 537504    LUT= 610800 RAMLUT= 137920   LUT6= 244320  MUXCY= 366480 BRAM= 645  DSP_MULT=1080   QIWC= 209715
 
-DESIGN SIZE        =     REG=    601    LUT=    284 RAMLUT=     72   LUT6=     29  MUXCY=      2 BRAM=   0  DSP_MULT=   0   QIWC=      0
+DESIGN SIZE        =     REG=    654    LUT=    288 RAMLUT=     72   LUT6=     29  MUXCY=      2 BRAM=   0  DSP_MULT=   0   QIWC=      0
 
 
 
@@ -934,7 +945,7 @@ FPGA SIZE          =     REG=2443200    LUT=1221600 RAMLUT= 344800   LUT6=122160
 FILLING CONSTRAINT =     REG=     22    LUT=     50 RAMLUT=     40   LUT6=     20  MUXCY=     30 BRAM=  50  DSP_MULT=  50   QIWC=     40
 ADJUSTED FPGA SIZE =     REG= 537504    LUT= 610800 RAMLUT= 137920   LUT6= 244320  MUXCY= 366480 BRAM= 645  DSP_MULT=1080   QIWC= 209715
 
-DESIGN SIZE        =     REG=    601    LUT=    284 RAMLUT=     72   LUT6=     29  MUXCY=      2 BRAM=   0  DSP_MULT=   0   QIWC=      0
+DESIGN SIZE        =     REG=    654    LUT=    288 RAMLUT=     72   LUT6=     29  MUXCY=      2 BRAM=   0  DSP_MULT=   0   QIWC=      0
 
 
 
@@ -947,7 +958,7 @@ FPGA SIZE          =     REG=2443200    LUT=1221600 RAMLUT= 344800   LUT6=122160
 FILLING CONSTRAINT =     REG=     22    LUT=     50 RAMLUT=     40   LUT6=     20  MUXCY=     30 BRAM=  50  DSP_MULT=  50   QIWC=     40
 ADJUSTED FPGA SIZE =     REG= 537504    LUT= 610800 RAMLUT= 137920   LUT6= 244320  MUXCY= 366480 BRAM= 645  DSP_MULT=1080   QIWC= 209715
 
-DESIGN SIZE        =     REG=    601    LUT=    284 RAMLUT=     72   LUT6=     29  MUXCY=      2 BRAM=   0  DSP_MULT=   0   QIWC=      0
+DESIGN SIZE        =     REG=    654    LUT=    288 RAMLUT=     72   LUT6=     29  MUXCY=      2 BRAM=   0  DSP_MULT=   0   QIWC=      0
 
 
 
@@ -960,7 +971,7 @@ FPGA SIZE          =     REG=2443200    LUT=1221600 RAMLUT= 344800   LUT6=122160
 FILLING CONSTRAINT =     REG=     22    LUT=     50 RAMLUT=     40   LUT6=     20  MUXCY=     30 BRAM=  50  DSP_MULT=  50   QIWC=     40
 ADJUSTED FPGA SIZE =     REG= 537504    LUT= 610800 RAMLUT= 137920   LUT6= 244320  MUXCY= 366480 BRAM= 645  DSP_MULT=1080   QIWC= 209715
 
-DESIGN SIZE        =     REG=    601    LUT=    284 RAMLUT=     72   LUT6=     29  MUXCY=      2 BRAM=   0  DSP_MULT=   0   QIWC=      0
+DESIGN SIZE        =     REG=    654    LUT=    288 RAMLUT=     72   LUT6=     29  MUXCY=      2 BRAM=   0  DSP_MULT=   0   QIWC=      0
 
 
 
@@ -973,7 +984,7 @@ FPGA SIZE          =     REG=2443200    LUT=1221600 RAMLUT= 344800   LUT6=122160
 FILLING CONSTRAINT =     REG=     22    LUT=     50 RAMLUT=     40   LUT6=     20  MUXCY=     30 BRAM=  50  DSP_MULT=  50   QIWC=     40
 ADJUSTED FPGA SIZE =     REG= 537504    LUT= 610800 RAMLUT= 137920   LUT6= 244320  MUXCY= 366480 BRAM= 645  DSP_MULT=1080   QIWC= 209715
 
-DESIGN SIZE        =     REG=    601    LUT=    284 RAMLUT=     72   LUT6=     29  MUXCY=      2 BRAM=   0  DSP_MULT=   0   QIWC=      0
+DESIGN SIZE        =     REG=    654    LUT=    288 RAMLUT=     72   LUT6=     29  MUXCY=      2 BRAM=   0  DSP_MULT=   0   QIWC=      0
 
 
 
@@ -986,7 +997,7 @@ FPGA SIZE          =     REG=2443200    LUT=1221600 RAMLUT= 344800   LUT6=122160
 FILLING CONSTRAINT =     REG=     22    LUT=     50 RAMLUT=     40   LUT6=     20  MUXCY=     30 BRAM=  50  DSP_MULT=  50   QIWC=     40
 ADJUSTED FPGA SIZE =     REG= 537504    LUT= 610800 RAMLUT= 137920   LUT6= 244320  MUXCY= 366480 BRAM= 645  DSP_MULT=1080   QIWC= 209715
 
-DESIGN SIZE        =     REG=    601    LUT=    284 RAMLUT=     72   LUT6=     29  MUXCY=      2 BRAM=   0  DSP_MULT=   0   QIWC=      0
+DESIGN SIZE        =     REG=    654    LUT=    288 RAMLUT=     72   LUT6=     29  MUXCY=      2 BRAM=   0  DSP_MULT=   0   QIWC=      0
 
 
 
@@ -999,7 +1010,7 @@ FPGA SIZE          =     REG=2443200    LUT=1221600 RAMLUT= 344800   LUT6=122160
 FILLING CONSTRAINT =     REG=     22    LUT=     50 RAMLUT=     40   LUT6=     20  MUXCY=     30 BRAM=  50  DSP_MULT=  50   QIWC=     40
 ADJUSTED FPGA SIZE =     REG= 537504    LUT= 610800 RAMLUT= 137920   LUT6= 244320  MUXCY= 366480 BRAM= 645  DSP_MULT=1080   QIWC= 209715
 
-DESIGN SIZE        =     REG=    601    LUT=    284 RAMLUT=     72   LUT6=     29  MUXCY=      2 BRAM=   0  DSP_MULT=   0   QIWC=      0
+DESIGN SIZE        =     REG=    654    LUT=    288 RAMLUT=     72   LUT6=     29  MUXCY=      2 BRAM=   0  DSP_MULT=   0   QIWC=      0
 
 
 
@@ -1012,7 +1023,7 @@ FPGA SIZE          =     REG=2443200    LUT=1221600 RAMLUT= 344800   LUT6=122160
 FILLING CONSTRAINT =     REG=     22    LUT=     50 RAMLUT=     40   LUT6=     20  MUXCY=     30 BRAM=  50  DSP_MULT=  50   QIWC=     40
 ADJUSTED FPGA SIZE =     REG= 537504    LUT= 610800 RAMLUT= 137920   LUT6= 244320  MUXCY= 366480 BRAM= 645  DSP_MULT=1080   QIWC= 209715
 
-DESIGN SIZE        =     REG=    601    LUT=    284 RAMLUT=     72   LUT6=     29  MUXCY=      2 BRAM=   0  DSP_MULT=   0   QIWC=      0
+DESIGN SIZE        =     REG=    654    LUT=    288 RAMLUT=     72   LUT6=     29  MUXCY=      2 BRAM=   0  DSP_MULT=   0   QIWC=      0
 
 
 
@@ -1025,7 +1036,7 @@ FPGA SIZE          =     REG=2443200    LUT=1221600 RAMLUT= 344800   LUT6=122160
 FILLING CONSTRAINT =     REG=     22    LUT=     50 RAMLUT=     40   LUT6=     20  MUXCY=     30 BRAM=  50  DSP_MULT=  50   QIWC=     40
 ADJUSTED FPGA SIZE =     REG= 537504    LUT= 610800 RAMLUT= 137920   LUT6= 244320  MUXCY= 366480 BRAM= 645  DSP_MULT=1080   QIWC= 209715
 
-DESIGN SIZE        =     REG=    601    LUT=    284 RAMLUT=     72   LUT6=     29  MUXCY=      2 BRAM=   0  DSP_MULT=   0   QIWC=      0
+DESIGN SIZE        =     REG=    654    LUT=    288 RAMLUT=     72   LUT6=     29  MUXCY=      2 BRAM=   0  DSP_MULT=   0   QIWC=      0
 
 
 
@@ -1038,7 +1049,7 @@ FPGA SIZE          =     REG=2443200    LUT=1221600 RAMLUT= 344800   LUT6=122160
 FILLING CONSTRAINT =     REG=     22    LUT=     50 RAMLUT=     40   LUT6=     20  MUXCY=     30 BRAM=  50  DSP_MULT=  50   QIWC=     40
 ADJUSTED FPGA SIZE =     REG= 537504    LUT= 610800 RAMLUT= 137920   LUT6= 244320  MUXCY= 366480 BRAM= 645  DSP_MULT=1080   QIWC= 209715
 
-DESIGN SIZE        =     REG=    601    LUT=    284 RAMLUT=     72   LUT6=     29  MUXCY=      2 BRAM=   0  DSP_MULT=   0   QIWC=      0
+DESIGN SIZE        =     REG=    654    LUT=    288 RAMLUT=     72   LUT6=     29  MUXCY=      2 BRAM=   0  DSP_MULT=   0   QIWC=      0
 
 
 
@@ -1051,7 +1062,7 @@ FPGA SIZE          =     REG=2443200    LUT=1221600 RAMLUT= 344800   LUT6=122160
 FILLING CONSTRAINT =     REG=     22    LUT=     50 RAMLUT=     40   LUT6=     20  MUXCY=     30 BRAM=  50  DSP_MULT=  50   QIWC=     40
 ADJUSTED FPGA SIZE =     REG= 537504    LUT= 610800 RAMLUT= 137920   LUT6= 244320  MUXCY= 366480 BRAM= 645  DSP_MULT=1080   QIWC= 209715
 
-DESIGN SIZE        =     REG=    601    LUT=    284 RAMLUT=     72   LUT6=     29  MUXCY=      2 BRAM=   0  DSP_MULT=   0   QIWC=      0
+DESIGN SIZE        =     REG=    654    LUT=    288 RAMLUT=     72   LUT6=     29  MUXCY=      2 BRAM=   0  DSP_MULT=   0   QIWC=      0
 
 
 
@@ -1064,7 +1075,7 @@ FPGA SIZE          =     REG=2443200    LUT=1221600 RAMLUT= 344800   LUT6=122160
 FILLING CONSTRAINT =     REG=     22    LUT=     50 RAMLUT=     40   LUT6=     20  MUXCY=     30 BRAM=  50  DSP_MULT=  50   QIWC=     40
 ADJUSTED FPGA SIZE =     REG= 537504    LUT= 610800 RAMLUT= 137920   LUT6= 244320  MUXCY= 366480 BRAM= 645  DSP_MULT=1080   QIWC= 209715
 
-DESIGN SIZE        =     REG=    601    LUT=    284 RAMLUT=     72   LUT6=     29  MUXCY=      2 BRAM=   0  DSP_MULT=   0   QIWC=      0
+DESIGN SIZE        =     REG=    654    LUT=    288 RAMLUT=     72   LUT6=     29  MUXCY=      2 BRAM=   0  DSP_MULT=   0   QIWC=      0
 
 
 
@@ -1074,22 +1085,24 @@ DESIGN SIZE        =     REG=    601    LUT=    284 RAMLUT=     72   LUT6=     2
 
    #-------- Summary
 
-     - 488 synchronous items
+     - 541 synchronous items
      - 0 synchronous firmware items
-     - 27 primary clocks
+     - 28 primary clocks
      - 0 derived clock
      - 0 multi-driven clock
      - 0 stuck clock 
      - 0 undriven clock
-     - Total : 27 clocks
+     - Total : 28 clocks
 
 
    #-------- PRIMARY clocks
 
 
-      - top._I_vcs_cdx_s_rw_topu_stb_clk1 generated in module top (fanout 183)
-      - top._I_vcs_cdx_s_rw_topu_stb_clk0 generated in module top (fanout 179)
+      - top._I_vcs_cdx_s_rw_topu_stb_clk1 generated in module top (fanout 202)
+      - top._I_vcs_cdx_s_rw_topu_stb_clk0 generated in module top (fanout 189)
       - top.u_dut.u_fifo.u0_clkg.clkout generated in module clkg (fanout 56)
+      - top.zforce_rstn.VAL_sync generated in module zebu_force_inject_undriven_sync (fanout 19)
+      - top.u_dut.u_fifo.u_fifo_usage_spy.zsva_clock generated in module fifo_usage_spy (fanout 6)
       - top.zsva_zcg_compositeClock_16209639241055482872 generated in module top (fanout 4)
       - top.u_stb.zforce_proba_wr_0_.zebu_force_ins.zebu_reqsig_clock_driverclock generated in module zebu_force_sync_LOGICOPT (fanout 3)
       - top.u_stb.zforce_proba_wr_1_.zebu_force_ins.zebu_reqsig_clock_driverclock generated in module zebu_force_sync_LOGICOPT (fanout 3)
@@ -1113,7 +1126,6 @@ DESIGN SIZE        =     REG=    601    LUT=    284 RAMLUT=     72   LUT6=     2
       - top.u_stb.zforce_proba_rd_9_.zebu_force_ins.zebu_reqsig_clock_driverclock generated in module zebu_force_sync (fanout 3)
       - top.u_stb.zsva_clock generated in module stb (fanout 2)
       - top.zforce_rstn.zebu_reqsig_clock_driverclock generated in module zebu_force_inject_undriven_sync (fanout 2)
-      - top.u_dut.u_fifo.u_fifo_usage_spy.zsva_clock generated in module fifo_usage_spy (fanout 1)
 
 
 
@@ -1601,7 +1613,7 @@ No undriven nets to fix.
     -------------------------------------------
 
 Resources for Part_0:
-  REG=        72  LUT=      1250  RAMLUT=       138  BRAM=1218  DSP_MULT=   3
+  REG=        72  LUT=      2666  RAMLUT=       194  BRAM=1726  DSP_MULT=   8
 
 
  21.Netlist split.
@@ -1792,40 +1804,41 @@ Resulting SOSED (Sum Of Square External Degrees): 0
     27.8.1.Stats on core 0: Part_0
 
 
-Rank of Part_0: 885s
+Rank of Part_0: 942s
 
 Primitive count from the zcore module Part_0
           +----------------------------------------------------------------+------+---------+---------+
           |Primitive                                                       |Number|Equiv LUT|Equiv REG|
           +----------------------------------------------------------------+------+---------+---------+
-          |fd                                                              |   313|         |      313|
-          |fdc                                                             |    39|         |       39|
+          |fd                                                              |   350|         |      350|
+          |fd_1                                                            |    19|         |       19|
+          |fdc                                                             |    34|         |       34|
           |fdce                                                            |    19|         |       19|
-          |fde                                                             |   132|         |      132|
-          |fdp                                                             |     6|         |        6|
+          |fde                                                             |   133|         |      133|
+          |fdp                                                             |     7|         |        7|
           +----------------------------------------------------------------+------+---------+---------+
-          |Summary Flip-Flops                                              |   509|         |      509|
+          |Summary Flip-Flops                                              |   562|         |      562|
           +----------------------------------------------------------------+------+---------+---------+
-          |gnd                                                             |    14|         |         |
-          |lut2                                                            |    63|       63|         |
+          |gnd                                                             |    15|         |         |
+          |lut2                                                            |    69|       69|         |
           |lut3                                                            |    60|       60|         |
-          |lut4                                                            |     9|        9|         |
-          |lut5                                                            |    10|       10|         |
+          |lut4                                                            |     8|        8|         |
+          |lut5                                                            |     9|        9|         |
           |lut6                                                            |    29|       29|         |
-          |vcc                                                             |     6|         |         |
+          |vcc                                                             |     7|         |         |
           +----------------------------------------------------------------+------+---------+---------+
-          |Summary General                                                 |   191|      171|         |
+          |Summary General                                                 |   197|      175|         |
           +----------------------------------------------------------------+------+---------+---------+
           |ld_1                                                            |     1|         |        1|
           +----------------------------------------------------------------+------+---------+---------+
           |Summary Latches                                                 |     1|         |        1|
           +----------------------------------------------------------------+------+---------+---------+
           |and2                                                            |    35|       35|         |
-          |inv                                                             |    53|         |         |
+          |inv                                                             |    59|         |         |
           |xor2                                                            |     6|        6|         |
           |xorcy                                                           |     2|         |         |
           +----------------------------------------------------------------+------+---------+---------+
-          |Summary Logic Primitives                                        |    96|       41|         |
+          |Summary Logic Primitives                                        |   102|       41|         |
           +----------------------------------------------------------------+------+---------+---------+
           |ram256x1s                                                       |    18|       72|         |
           +----------------------------------------------------------------+------+---------+---------+
@@ -1838,6 +1851,11 @@ Primitive count from the zcore module Part_0
           |carry4                                                          |    40|         |         |
           |zebu_bb_wb_reg                                                  |    45|         |       45|
           |zebu_bb_ZDPI_MOD_fifo_usage_spy_ZDPI_fifo_usage_spy_notify_call0|     1|         |         |
+          |zebu_bb_ZDPI_MOD_fifo_usage_spy_ZDPI_fifo_usage_spy_notify_call1|     1|         |         |
+          |zebu_bb_ZDPI_MOD_fifo_usage_spy_ZDPI_fifo_usage_spy_notify_call2|     1|         |         |
+          |zebu_bb_ZDPI_MOD_fifo_usage_spy_ZDPI_fifo_usage_spy_notify_call3|     1|         |         |
+          |zebu_bb_ZDPI_MOD_fifo_usage_spy_ZDPI_fifo_usage_spy_notify_call4|     1|         |         |
+          |zebu_bb_ZDPI_MOD_fifo_usage_spy_ZDPI_fifo_usage_spy_notify_call5|     1|         |         |
           |zebu_bb_ZDPI_MOD_stb_ZDPI_grp0_dummy_import_for_pli_call0       |     1|         |         |
           |zebu_bb_ZDPI_MOD_stb_ZDPI_grp0_dummy_import_for_pli_call1       |     1|         |         |
           |zebu_bb_zmem_addr                                               |    16|         |         |
@@ -1852,7 +1870,7 @@ Primitive count from the zcore module Part_0
           |ZSVA_MOD_1                                                      |     1|         |         |
           |ZSVA_MOD_PLI_1                                                  |     2|         |         |
           +----------------------------------------------------------------+------+---------+---------+
-          |Summary                                                         |   153|         |       45|
+          |Summary                                                         |   158|         |       45|
           +----------------------------------------------------------------+------+---------+---------+
           |zfwc_hs_1                                                       |    38|         |         |
           |zview                                                           |   117|         |         |
@@ -1867,9 +1885,9 @@ Primitive count from the zcore module Part_0
  28.Object IDs statistics.
  =========================
 
-unique Object IDs: 11015, no collisions: 88%, average collisions: 0.120109, max collisions: 4
- total Collisions: 1323, with no collisions: 9698
-24 netlists, 104 libraries, 10887 modules.
+unique Object IDs: 11028, no collisions: 88%, average collisions: 0.119967, max collisions: 4
+ total Collisions: 1323, with no collisions: 9711
+24 netlists, 104 libraries, 10900 modules.
 
 
  29.Ice connection processing.
@@ -1927,42 +1945,42 @@ Strongly connected components will be reported as gates fanout graphs.
 
 ################################################################################
 # MEMORY REPORT v1.0                                                           #
-# Wed Apr 17 20:16:27 2024
+# Mon Apr 29 13:43:50 2024
                                                     #
 ################################################################################
 
 
-TOTAL MEMORY: 4.25095 MB
-    -netlist data base               : 4.25095 MB
+TOTAL MEMORY: 4.31738 MB
+    -netlist data base               : 4.31738 MB
 
 STATISTICS FOR OBJECTS IN THE DATABASE #########################################
 netlist object type      number of occurrences    used memory         average memory per object     size of the object  average attribute per object  alias count         
 netlists:                1                        72 bytes            72                            72                  0                             0                   
 libraries:               9                        52.552  KB          5839.11                       80                  0                             0                   
-hierarchical modules:    90                       58.216  KB          646.844                       392                 1.08889                       0                   
+hierarchical modules:    95                       61.616  KB          648.589                       392                 1.08421                       0                   
 leaf modules:            1310                     1.2831 MB           979.469                       360                 2                             0                   
-hierarchical instances:  117                      23.4  KB            200                           136                 0.615385                      0                   
-leaf instances:          1120                     133.728  KB         119.4                         104                 0.23125                       0                   
-hierarchical ports:      1633                     86.264  KB          52.8255                       48                  0                             0                   
-leaf ports:              49005                    1.96071 MB          40.0104                       40                  0.000326497                   0                   
-port vectors:            3109                     537.576  KB         172.91                        80                  0                             0                   
-wires:                   1784                     115.328  KB         64.6457                       64                  0.0201794                     0                   
+hierarchical instances:  122                      25.52  KB           209.18                        136                 0.795082                      0                   
+leaf instances:          1265                     151.504  KB         119.766                       104                 0.242688                      0                   
+hierarchical ports:      1793                     94.584  KB          52.7518                       48                  0                             0                   
+leaf ports:              49556                    1.98275 MB          40.0103                       40                  0.000322867                   0                   
+port vectors:            3123                     539.848  KB         172.862                       80                  0                             0                   
+wires:                   1948                     125.824  KB         64.5914                       64                  0.0184805                     0                   
 
 Detailed statistics for hierarchical modules:
-Module count :                                    90                  
-Memory in modules :                               58216               
+Module count :                                    95                  
+Memory in modules :                               61616               
 Xilinx module number :                            0                   
 
  -- Module summary table:
 Module object type  total               average             median              max                 
-ports               985                 10.9444             21                  90                  
-port-vectors        94                  1.04444             3                   8                   
-instances           1237                13.7444             177                 576                 
-wires               1784                19.8222             192                 752                 
+ports               1065                11.2105             19                  90                  
+port-vectors        101                 1.06316             3                   8                   
+instances           1387                14.6                179                 576                 
+wires               1948                20.5053             193                 752                 
 
  -- Module instantiation statistics:
 total               average             median              max                 
-117                 1.3                 4                   26                  
+122                 1.28421             4                   26                  
 
 
 Detailed statistics for leaf modules:
@@ -1979,55 +1997,55 @@ wires               0                   0                   0                   
 
  -- Module instantiation statistics:
 total               average             median              max                 
-1120                0.854962            260                 333                 
+1265                0.965649            85                  328                 
 
 
 Detailled statistics for hier ports:
-port count :                            1633                
-Memory in ports :                       86.264  KB          
-Module port number :                    985                 
-Instance port number :                  648                 
-Vector port number :                    1148                
+port count :                            1793                
+Memory in ports :                       94.584  KB          
+Module port number :                    1065                
+Instance port number :                  728                 
+Vector port number :                    1292                
 
 Detailled statistics for leaf ports:
-port count :                            49005               
-Memory in ports :                       1.96071 MB          
+port count :                            49556               
+Memory in ports :                       1.98275 MB          
 Module port number :                    44371               
-Instance port number :                  4634                
+Instance port number :                  5185                
 Vector port number :                    34959               
 
 Detailed statistics for hierarchical instances:
-Instance count :                        117                      
-Memory in instances :                   23.4  KB                 
+Instance count :                        122                      
+Memory in instances :                   25.52  KB                
 Xilinx instance number :                0                        
-Average port number :                   5.53846                  
-Average port-vector number :            0.581197                 
+Average port number :                   5.96721                  
+Average port-vector number :            0.614754                 
 
 Detailed statistics for leaf instances:
-Instance count :                        1120                     
-Memory in instances :                   133.728  KB              
-Xilinx instance number :                1120                     
-Average port number :                   4.1375                   
-Average port-vector number :            0.158929                 
+Instance count :                        1265                     
+Memory in instances :                   151.504  KB              
+Xilinx instance number :                1265                     
+Average port number :                   4.09881                  
+Average port-vector number :            0.140711                 
 
 Detailed statistics for wires:
-Wire count :                            1784                
-Memory in wires :                       115.328  KB         
-Average port number :                   3.15527             
+Wire count :                            1948                
+Memory in wires :                       125.824  KB         
+Average port number :                   3.22331             
 
 Detailled statistics for attributes:
-Memory in attributes :                  4.411  KB
-Attribute count :                       4411
+Memory in attributes :                  4.489  KB
+Attribute count :                       4489
 
 Uniquification ratios for the netlist 'zTopBuild_netlist : 
 Top module 'top' : 
-1093 occurences of leaf instances in the hierarchy out of 1075 leaf instances in the folded model.
-Resulting ratio: 1.02
-1626 occurences of wires in the hierarchy out of 1626 wires in the folded model.
+1243 occurences of leaf instances in the hierarchy out of 1225 leaf instances in the folded model.
+Resulting ratio: 1.01
+1790 occurences of wires in the hierarchy out of 1790 wires in the folded model.
 The ratio resulting from the hierarchical instances and modules: 
-The number of hierarchical instances excluding fs_macros: 117
-The number of hierarchical modules excluding fs_macros: 54
-Resulting ratio: 2.17
+The number of hierarchical instances excluding fs_macros: 122
+The number of hierarchical modules excluding fs_macros: 59
+Resulting ratio: 2.07
 
 
  34.Detailed execution time and memory usage.

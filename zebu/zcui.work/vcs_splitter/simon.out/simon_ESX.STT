@@ -149,15 +149,27 @@ Module proba {
 	Net sht_a {9:0} wire -dir UN -sign UN
 }
 Module fifo_usage_spy {
-	Port clk IN
+	Port rclk IN
+	Port wclk IN
 	Port rstn IN
 	Port remain IN
-	Net clk wire -dir IN -sign UN
+	Port we IN
+	Port re IN
+	Port datain IN
+	Port dataout IN
+	Net rclk wire -dir IN -sign UN
+	Net wclk wire -dir IN -sign UN
 	Net rstn wire -dir IN -sign UN
 	Net remain {3:0} wire -dir IN -sign UN
+	Net we wire -dir IN -sign UN
+	Net re wire -dir IN -sign UN
+	Net datain {7:0} wire -dir IN -sign UN
+	Net dataout {7:0} wire -dir IN -sign UN
 	Net min {3:0} reg -dir UN -sign UN
 	Function fifo_usage_spy_notify {
-		Var min {3:0} bit -sign UN
+		Var we bit -sign UN
+		Var re bit -sign UN
+		Var data {7:0} bit -sign UN
 	}
 }
 Module zceiClockPort {

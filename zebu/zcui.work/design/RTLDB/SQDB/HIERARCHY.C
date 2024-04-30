@@ -17,7 +17,12 @@ u0_clkg -> u0_clkg -> clkg
 <end>
 <begin>
 fifo_usage_spy
-sqnod25 -> sqnod25 -> zebu_bb_ZDPI_MOD_fifo_usage_spy_ZDPI_fifo_usage_spy_notify_call0
+sqnod215 -> sqnod215 -> zebu_bb_ZDPI_MOD_fifo_usage_spy_ZDPI_fifo_usage_spy_notify_call5
+sqnod201 -> sqnod201 -> zebu_bb_ZDPI_MOD_fifo_usage_spy_ZDPI_fifo_usage_spy_notify_call4
+sqnod187 -> sqnod187 -> zebu_bb_ZDPI_MOD_fifo_usage_spy_ZDPI_fifo_usage_spy_notify_call3
+sqnod173 -> sqnod173 -> zebu_bb_ZDPI_MOD_fifo_usage_spy_ZDPI_fifo_usage_spy_notify_call2
+sqnod159 -> sqnod159 -> zebu_bb_ZDPI_MOD_fifo_usage_spy_ZDPI_fifo_usage_spy_notify_call1
+sqnod145 -> sqnod145 -> zebu_bb_ZDPI_MOD_fifo_usage_spy_ZDPI_fifo_usage_spy_notify_call0
 sva_clock_inst -> sva_clock_inst -> zebu_reqsig_clock_zcompositeclock
 <end>
 <begin>
@@ -52,10 +57,6 @@ u_ram -> u_ram -> ram
 u1_proba -> u1_proba -> proba_0000
 u_rom -> u_rom -> rom
 u0_proba -> u0_proba -> proba
-u_clk0 -> u_clk0 -> zceiClockPort
-u_clk1 -> u_clk1 -> zceiClockPort
-u_clk0 -> u_clk0 -> zceiClockPort
-u_clk1 -> u_clk1 -> zceiClockPort
 u_clk0 -> u_clk0 -> zceiClockPort
 u_clk1 -> u_clk1 -> zceiClockPort
 u_clk0 -> u_clk0 -> zceiClockPort

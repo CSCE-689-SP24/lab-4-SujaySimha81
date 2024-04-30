@@ -2,7 +2,7 @@
 extern "C" {
 #endif
 
-extern void fifo_usage_spy_notify (const svBitVecVal* _arg_min);
+extern void fifo_usage_spy_notify (svBit _arg_we, svBit _arg_re, const svBitVecVal* _arg_data);
 
 void fifo_usage_spy_notify_ZDPI_MOD_grp0_fifo_usage_spy (const unsigned int *din);
 

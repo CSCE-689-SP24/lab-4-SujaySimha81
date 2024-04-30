@@ -22,7 +22,7 @@
 
 # zRDB -krb -edf ./fpga_reports/zNetgen/design_db.znf -virtex 7 -o zrdb/ZebuDB.zdb -xdl design.loc -db zxl_base.zdb -forceTopName top -fpga F0 -unit U0 -module M0 
 
-# start time is Thu Apr 18 00:10:10 2024
+# start time is Mon Apr 29 13:59:33 2024
 
 
 
@@ -30,15 +30,15 @@
 # Build Date : Oct 18 2022 - 01:00:11
 # ---------------------------System Context--------------------------- 
 # Cpu        40 x bogomips - 4604.90 Intel(R) Xeon(R) CPU E5-2650 v3 @ 2.30GHz
-#            Load: 1.19 0.99 0.63 1/493 17671
+#            Load: 1.06 1.07 0.74 1/507 5235
 #            Hostname: csce-quinn-s1.engr.tamu.edu   OS: Linux 3.10.0-1160.108.1.el7.x86_64
-# Memory     Total: 193183 MB Free: 174290 MB
-#            Total Free including cache: 187697 MB
-#            Swap cache: 0 MB Cached space: 13407 MB
+# Memory     Total: 193183 MB Free: 171281 MB
+#            Total Free including cache: 187391 MB
+#            Swap cache: 0 MB Cached space: 16110 MB
 #            Swap space: 4095 MB Free Swap space: 4095 MB
 #            VmSize: 353 MB VmPeak: 353 MB
-# Disk Space Total: 50 GB Available: 27 GB Used: 23 GB
-#            Free inodes: 104738057
+# Disk Space Total: 50 GB Available: 8 GB Used: 42 GB
+#            Free inodes: 104731932
 # Stack                                Soft Limit           Hard Limit  
 #            Max stack size            8388608              unlimited            bytes     
 # -------------------------------------------------------------------- 
@@ -76,19 +76,19 @@
 #   step DATABASE : reading data base 'zxl_base.zdb'
 #   step ZVP : Reading vivado placement log file 'design.loc'
 #   step ZVP : 'design.loc':1 - reading a FD/LD section
-#   step ZVP : 'design.loc':3800 - reading a FD/LD section
-#   step ZVP : 'design.loc':4176 - reading a BRAM section
-#   step ZVP : 'design.loc':4182 - reading a URAM section
-#   step ZVP : 'design.loc':4184 - reading a RAMLUT section
-#   step ZVP : 420 ramluts found, 264 unsupported or unknown ramluts
-#   step ZVP : 'design.loc':4660 - reading an SRL section
-#   step ZVP : 'design.loc':5079 - reading a DSP48 section
+#   step ZVP : 'design.loc':4409 - reading a FD/LD section
+#   step ZVP : 'design.loc':4783 - reading a BRAM section
+#   step ZVP : 'design.loc':4789 - reading a URAM section
+#   step ZVP : 'design.loc':4791 - reading a RAMLUT section
+#   step ZVP : 740 ramluts found, 424 unsupported or unknown ramluts
+#   step ZVP : 'design.loc':5587 - reading an SRL section
+#   step ZVP : 'design.loc':6326 - reading a DSP48 section
 #   step ZVP : File 'design.loc' : read complete in 0 seconds
 #   step ZVP : Reading vivado simplifications log file 'vivado_opt.log'
 #   step ZVP : Fetching constants
 #   step ZVP : Fetching removed
 #   step ZVP : File 'vivado_opt.log' : read complete in 0 seconds
-#   step VVD : Collected 4171 register locations, 4926 constant or removed registers, 417 SRL locations, 4 BRAM locations, 0 URAM locations, and 210 RAMLUT locations.
+#   step VVD : Collected 4778 register locations, 4362 constant or removed registers, 737 SRL locations, 4 BRAM locations, 0 URAM locations, and 370 RAMLUT locations.
 #   step DATABASE : adding signals to data base 'zxl_base.zdb'
 #   step KRB : Building top list
 #   step KRB : added top 'U0_M0_F0/U0_M0_F0_core'
@@ -125,30 +125,30 @@
 #   step FWC : Saving to file './zrdb/fwc_local_table.zrdb'
 #   step FILE : Opening file './zrdb/fwc_local_table.zrdb' in write mode
 #   step DICTIONARY : Serializing dictionary
-#   step DICTIONARY : Serialized dictionary in 0 seconds, 184 different names
+#   step DICTIONARY : Serialized dictionary in 0 seconds, 194 different names
 #   step FWC : Serializing 3 ValueSets
 #   step FWC : Serializing value set 'ZSVA'
 #   step FWC : Serializing valueset
 #   step FWC : Serialized 14 hierarchical references, 21 signals, 24 coordinates in 0 seconds
 #   step FWC : Serializing value set 'fwc_essential_signals'
 #   step FWC : Serializing valueset
-#   step FWC : Serialized 16 hierarchical references, 22 signals, 22 coordinates in 0 seconds
+#   step FWC : Serialized 16 hierarchical references, 23 signals, 23 coordinates in 0 seconds
 #   step FWC : Serializing value set 'fwc_fifo_ports'
 #   step FWC : Serializing valueset
-#   step FWC : Serialized 18 hierarchical references, 220 signals, 220 coordinates in 0 seconds
+#   step FWC : Serialized 19 hierarchical references, 238 signals, 238 coordinates in 0 seconds
 #   step FWC : All ValueSets serialized in 0 seconds
 #   step FWC : Saved in 0 seconds'
 #   step FWC : All done in '0 seconds'
-### warning in DATABASE [RDB0289W] : Found 7239 mismatches between Xilinx file and Edif netlist
+### warning in DATABASE [RDB0289W] : Found 7230 mismatches between Xilinx file and Edif netlist
 #   step KRB : Writing SAC to './zrdb/tree.zrdb'.
 #   step KRB : Wrote SAC in 0 seconds.
 #   step CompositeBuilder : Saving composite DB to './zrdb/composites.zrdb'
 #   step FILE : Opening file './zrdb/composites.zrdb' in write mode
 
-#   step zlog : Ran into 417 messages with id 'Netlist', yet only 16 were displayed in the log as per user request.
-#   exec summary :  422 warnings,    0 syntax errors,    0 fatal errors,    0 internal errors
-#   exec summary : wall clock 0m2s, user 0m1.38s, sys 0m0.187s
-#   exec summary : Total memory: 892176 kB - RSS memory: 482972 kB - Data memory: 728144 kB
+#   step zlog : Ran into 737 messages with id 'Netlist', yet only 16 were displayed in the log as per user request.
+#   exec summary :  742 warnings,    0 syntax errors,    0 fatal errors,    0 internal errors
+#   exec summary : wall clock 0m1s, user 0m1.142s, sys 0m0.209s
+#   exec summary : Total memory: 893200 kB - RSS memory: 479504 kB - Data memory: 729168 kB
 #   exec summary : Successful execution
 
-# end time is Thu Apr 18 00:10:12 2024
+# end time is Mon Apr 29 13:59:34 2024

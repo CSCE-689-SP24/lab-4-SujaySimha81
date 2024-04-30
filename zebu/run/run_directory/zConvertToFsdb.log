@@ -22,7 +22,7 @@
 
 # zConvertToFsdb --zebu-work ../../zcui.work/zebu.work --ztdb runtime_output/fwc_dump.ztdb --fsdb fwc_dump_2 --timescale 1ns 
 
-# start time is Thu Apr 18 00:16:42 2024
+# start time is Mon Apr 29 13:35:22 2024
 
 
 
@@ -30,15 +30,15 @@
 # Build Date : Oct 18 2022 - 01:01:24
 # ---------------------------System Context--------------------------- 
 # Cpu        40 x bogomips - 4604.90 Intel(R) Xeon(R) CPU E5-2650 v3 @ 2.30GHz
-#            Load: 0.46 0.54 0.53 1/478 24320
+#            Load: 0.15 0.15 0.20 2/496 32813
 #            Hostname: csce-quinn-s1.engr.tamu.edu   OS: Linux 3.10.0-1160.108.1.el7.x86_64
-# Memory     Total: 193183 MB Free: 174402 MB
-#            Total Free including cache: 187811 MB
-#            Swap cache: 0 MB Cached space: 13409 MB
+# Memory     Total: 193183 MB Free: 171353 MB
+#            Total Free including cache: 187462 MB
+#            Swap cache: 0 MB Cached space: 16109 MB
 #            Swap space: 4095 MB Free Swap space: 4095 MB
 #            VmSize: 387 MB VmPeak: 387 MB
-# Disk Space Total: 50 GB Available: 27 GB Used: 23 GB
-#            Free inodes: 104738009
+# Disk Space Total: 50 GB Available: 8 GB Used: 42 GB
+#            Free inodes: 104731957
 # Stack                                Soft Limit           Hard Limit  
 #            Max stack size            8388608              unlimited            bytes     
 # -------------------------------------------------------------------- 
@@ -60,8 +60,8 @@
 #   step CONVERT : Closing device...
 
 #   exec summary :    0 warnings,    0 syntax errors,    0 fatal errors,    0 internal errors
-#   exec summary : wall clock 0m1s, user 0m0.135s, sys 0m0.132s
-#   exec summary : Total memory: 663052 kB - RSS memory: 292964 kB - Data memory: 424852 kB
+#   exec summary : wall clock 0m1s, user 0m0.139s, sys 0m0.174s
+#   exec summary : Total memory: 663056 kB - RSS memory: 280372 kB - Data memory: 424856 kB
 #   exec summary : Successful execution
 
-# end time is Thu Apr 18 00:16:43 2024
+# end time is Mon Apr 29 13:35:23 2024

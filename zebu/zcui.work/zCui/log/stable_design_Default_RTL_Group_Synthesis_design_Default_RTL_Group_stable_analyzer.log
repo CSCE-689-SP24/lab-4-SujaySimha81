@@ -7,9 +7,9 @@ Module: clkg
 Module: dut
   Xcui file design/synth_Default_RTL_Group/xcui/dut.xcui is read
   Checksum value 42460cb786fdfb64cce990e36415cc643c01f893501abe9e0d6be387a883b1f8d276e845270f9f62b4c008e3f922321e9d9445f6a929702ccc03e9bde468fb82
-Module: fifo_0000
-  Xcui file design/synth_Default_RTL_Group/xcui/fifo_0000.xcui is read
-  Checksum value 0cabb10015c30358b1f22bedb9cff5421305205b302bd600a893e4b92b4777c76de6d801870633e53e4369d5aad307478512dc3ede49be6b6409447595199665
+Module: fifo_usage_spy
+  Xcui file design/synth_Default_RTL_Group/xcui/fifo_usage_spy.xcui is read
+  Checksum value 5e54cff60e21ab825b2aa9ac2a4b2ca4975329ba7306f40bb08946d13dd27912748d2b21b9f52b239d15a6813113b9caa250092640d102e44b5138694cdc5ccf
 Module: parity
   Xcui file design/synth_Default_RTL_Group/xcui/parity.xcui is read
   Checksum value 3d78445ad023fa23ded07bcfea53b92b215702e603cbc3fec295d98b3ebe5499332e934c72e225426c8debc038afc7f74254024d7f0440a650c867ad8a3f1607
@@ -35,5 +35,5 @@ Module: stb
   Checksum value 36cb3a64813338c862c4cc73aa8a6b47d5fba995e4845d4198ac24bd3513f367573334166b99145f7c2a7c6e842f1345453c5fb7a1dbf5de5d30040e6b3aecb6
 Module: top
   Xcui file design/synth_Default_RTL_Group/xcui/top.xcui is read
-  Checksum value b4c5eda67bf494721e7bb8aad25e0e4ac11282b228f7ac79d5df77c8d9c2992252c29298c2bccdf47bf6d4dcd5d26633d76e2ecdf078ba992d53e548fa979a8f
+  Checksum value cdaeb42bb454a572bf14616b75844bdb332a210c9f4ddcaadbb2a9c5ef643265ec6f85650833fda1271e92975e3ac0d508c466c7ecef97553e3faf7792cc6343
 zFAST output analyzed

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ZeBuUiDoc type="xcui" version="1.0" creator="glog">
     <author>zCoreBuild</author>
-    <date>Wed Apr 17 20:16:46 2024</date>
+    <date>Mon Apr 29 13:44:07 2024</date>
     <views>
         <view name="Warnings/Errors">
             <h1>zCoreCompilation : default</h1>
@@ -23,7 +23,7 @@
                 <p>[RAS0020W] ZBNF Resources: No resource information can be found for Module zebu_bb_zmem_do</p>
                 <p>[RAS0020W] ZBNF Resources: No resource information can be found for Module zfwc_hs_48</p>
                 <p>[RAS0020W] ZBNF Resources: No resource information can be found for Module ZebuClockFilterData</p>
-                <p>[RAS0020W] ZBNF Resources: No resource information can be found for Module zfwc_hs_4</p>
+                <p>[RAS0020W] ZBNF Resources: No resource information can be found for Module zfwc_hs_10</p>
                 <p>[RAS0020W] ZBNF Resources: No resource information can be found for Module ZebuClockFilterClock</p>
                 <p>[RAS0020W] ZBNF Resources: No resource information can be found for Module zebu_clockGen</p>
                 <p>[ZTCL0304W] ZMetrics : File (tools/zMetrics/post_partitioning_metrics.xml) already exists and has been replaced</p>
@@ -55,9 +55,9 @@
                 <p>+-------------------------+-----------+---------+-----------+---------+----------+-----------+--+</p>
                 <p>|FPGA\ Res(Used/Available)|        LUT|     LUT6|        REG|   RAMLUT|FWC_IP_NUM|FWC_IP_BITS|IO|</p>
                 <p>+-------------------------+-----------+---------+-----------+---------+----------+-----------+--+</p>
-                <p>|                U0_M0_F00|5341/671880|29/342048|5951/659664|72/172400|     3/843|  138/68567| 0|</p>
+                <p>|                U0_M0_F00|5285/671880|29/342048|6019/659664|72/172400|     8/843|  194/68567| 0|</p>
                 <p>+-------------------------+-----------+---------+-----------+---------+----------+-----------+--+</p>
-                <p>|                      SUM|5341/671880|29/342048|5951/659664|72/172400|     3/843|  138/68567| 0|</p>
+                <p>|                      SUM|5285/671880|29/342048|6019/659664|72/172400|     8/843|  194/68567| 0|</p>
                 <p>+-------------------------+-----------+---------+-----------+---------+----------+-----------+--+</p>
                 <p></p>
                 <p></p>
@@ -89,13 +89,13 @@
                 <p> FPGAs after partitioning and clock localization steps.</p>
                 <p></p>
                 <p> FPGAs after partitioning and clock localization steps.</p>
-                <p>+-------------+------------+----------+------------+----------+----------------------------+-------+----+-------+---+------+</p>
-                <p>|FPGA         |         REG|(*)MUXF7,8|         LUT|    RAMLUT|                   (**)MUXCY|   BRAM|URAM|    DSP|CUT|STATUS|</p>
-                <p>+-------------+------------+----------+------------+----------+----------------------------+-------+----+-------+---+------+</p>
-                <p>|UNIT0.MOD0.F0|956 /2443200|         0|280 /1221600|72 /344800|2/lut(2)/lut_no_weighting(2)|0 /1290|0 /0|0 /2160|  5|    OK|</p>
-                <p>+-------------+------------+----------+------------+----------+----------------------------+-------+----+-------+---+------+</p>
-                <p>|SUM          |956 /2443200|        --|280 /1221600|72 /344800|2/lut(2)/lut_no_weighting(2)|0 /1290|0 /0|0 /2160|  5|    --|</p>
-                <p>+-------------+------------+----------+------------+----------+----------------------------+-------+----+-------+---+------+</p>
+                <p>+-------------+-------------+----------+------------+----------+----------------------------+-------+----+-------+---+------+</p>
+                <p>|FPGA         |          REG|(*)MUXF7,8|         LUT|    RAMLUT|                   (**)MUXCY|   BRAM|URAM|    DSP|CUT|STATUS|</p>
+                <p>+-------------+-------------+----------+------------+----------+----------------------------+-------+----+-------+---+------+</p>
+                <p>|UNIT0.MOD0.F0|1008 /2443200|         0|284 /1221600|72 /344800|2/lut(2)/lut_no_weighting(2)|0 /1290|0 /0|0 /2160|  5|    OK|</p>
+                <p>+-------------+-------------+----------+------------+----------+----------------------------+-------+----+-------+---+------+</p>
+                <p>|SUM          |1008 /2443200|        --|284 /1221600|72 /344800|2/lut(2)/lut_no_weighting(2)|0 /1290|0 /0|0 /2160|  5|    --|</p>
+                <p>+-------------+-------------+----------+------------+----------+----------------------------+-------+----+-------+---+------+</p>
                 <p></p>
                 <p> REG        : REG count in generated netlists / FPGA capacity. </p>
                 <p> (*)MUXF7,8 : MUXF7 and MUXF8 count in generated netlists. A cost of 1 register is associated to each MUXF7 or MUXF8, </p>

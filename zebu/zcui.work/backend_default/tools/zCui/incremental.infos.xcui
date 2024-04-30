@@ -24,9 +24,9 @@
 		</task>
 		<task name="Profiling_Results_Analyzer">
 			<profiling>
-				<Duration>2</Duration>
+				<Duration>4</Duration>
 				<DurationSlot>0</DurationSlot>
-				<DurationTotal>2</DurationTotal>
+				<DurationTotal>4</DurationTotal>
 			</profiling>
 		</task>
 		<task name="RhinoFsdb_Builder">
@@ -60,15 +60,15 @@
 		<task name="Vcs_Version_Checker">
 			<profiling>
 				<Duration>0</Duration>
-				<DurationSlot>3</DurationSlot>
-				<DurationTotal>3</DurationTotal>
+				<DurationSlot>2</DurationSlot>
+				<DurationTotal>2</DurationTotal>
 			</profiling>
 		</task>
 		<task name="Verdi_Compilation">
 			<profiling>
-				<Duration>1</Duration>
-				<DurationSlot>3</DurationSlot>
-				<DurationTotal>4</DurationTotal>
+				<Duration>0</Duration>
+				<DurationSlot>2</DurationSlot>
+				<DurationTotal>2</DurationTotal>
 			</profiling>
 		</task>
 		<task name="backend_default_BackendEntry">
@@ -108,15 +108,15 @@
 		</task>
 		<task name="backend_default_Intermediate_Profiling_Results_Analyzer_VCSAnalyzer">
 			<profiling>
-				<Duration>5</Duration>
+				<Duration>3</Duration>
 				<DurationSlot>1</DurationSlot>
-				<DurationTotal>6</DurationTotal>
+				<DurationTotal>4</DurationTotal>
 			</profiling>
 		</task>
 		<task name="backend_default_Intermediate_Profiling_Results_Analyzer_ZParAnalyzer">
 			<profiling>
-				<Duration>0</Duration>
-				<DurationSlot>2</DurationSlot>
+				<Duration>1</Duration>
+				<DurationSlot>1</DurationSlot>
 				<DurationTotal>2</DurationTotal>
 			</profiling>
 		</task>
@@ -136,23 +136,23 @@
 		</task>
 		<task name="backend_default_PostFpgaCompilationJoin">
 			<profiling>
-				<Duration>2</Duration>
+				<Duration>1</Duration>
 				<DurationSlot>0</DurationSlot>
-				<DurationTotal>2</DurationTotal>
+				<DurationTotal>1</DurationTotal>
 			</profiling>
 		</task>
 		<task name="backend_default_PostZCoreCompilationJoin">
 			<profiling>
-				<Duration>5</Duration>
+				<Duration>0</Duration>
 				<DurationSlot>0</DurationSlot>
-				<DurationTotal>5</DurationTotal>
+				<DurationTotal>0</DurationTotal>
 			</profiling>
 		</task>
 		<task name="backend_default_PostZFpgaTimingJoin">
 			<profiling>
-				<Duration>1</Duration>
+				<Duration>0</Duration>
 				<DurationSlot>0</DurationSlot>
-				<DurationTotal>1</DurationTotal>
+				<DurationTotal>0</DurationTotal>
 			</profiling>
 		</task>
 		<task name="backend_default_PreParScriptBuilder">
@@ -213,15 +213,15 @@
 		</task>
 		<task name="backend_default_SingleBackend_Compilation_Checker">
 			<profiling>
-				<Duration>6</Duration>
+				<Duration>8</Duration>
 				<DurationSlot>0</DurationSlot>
-				<DurationTotal>6</DurationTotal>
+				<DurationTotal>8</DurationTotal>
 			</profiling>
 		</task>
 		<task name="backend_default_U0_M0_F00_Cleaning">
 			<profiling>
-				<Duration>1</Duration>
-				<DurationSlot>1</DurationSlot>
+				<Duration>0</Duration>
+				<DurationSlot>2</DurationSlot>
 				<DurationTotal>2</DurationTotal>
 			</profiling>
 		</task>
@@ -241,23 +241,23 @@
 		</task>
 		<task name="backend_default_U0_M0_F00_Original">
 			<profiling>
-				<Duration>951</Duration>
-				<DurationSlot>1</DurationSlot>
-				<DurationTotal>952</DurationTotal>
+				<Duration>1054</Duration>
+				<DurationSlot>2</DurationSlot>
+				<DurationTotal>1056</DurationTotal>
 			</profiling>
 		</task>
 		<task name="backend_default_U0_M0_F00_PaR_Controller">
 			<profiling>
-				<Duration>998</Duration>
+				<Duration>1100</Duration>
 				<DurationSlot>0</DurationSlot>
-				<DurationTotal>998</DurationTotal>
+				<DurationTotal>1100</DurationTotal>
 			</profiling>
 		</task>
 		<task name="backend_default_U0_M0_F00_zFpgaTiming">
 			<profiling>
-				<Duration>3</Duration>
-				<DurationSlot>1</DurationSlot>
-				<DurationTotal>4</DurationTotal>
+				<Duration>4</Duration>
+				<DurationSlot>3</DurationSlot>
+				<DurationTotal>7</DurationTotal>
 			</profiling>
 		</task>
 		<task name="backend_default_U0_M0_F08_Cleaning">
@@ -374,23 +374,23 @@
 		</task>
 		<task name="backend_default_zCoreBuild_Part_0">
 			<profiling>
-				<Duration>11</Duration>
-				<DurationSlot>1</DurationSlot>
-				<DurationTotal>12</DurationTotal>
+				<Duration>8</Duration>
+				<DurationSlot>2</DurationSlot>
+				<DurationTotal>10</DurationTotal>
 			</profiling>
 		</task>
 		<task name="backend_default_zDB_Global">
 			<profiling>
 				<Duration>1</Duration>
-				<DurationSlot>2</DurationSlot>
-				<DurationTotal>3</DurationTotal>
+				<DurationSlot>1</DurationSlot>
+				<DurationTotal>2</DurationTotal>
 			</profiling>
 		</task>
 		<task name="backend_default_zDB_Global_Controller">
 			<profiling>
-				<Duration>2</Duration>
+				<Duration>1107</Duration>
 				<DurationSlot>0</DurationSlot>
-				<DurationTotal>2</DurationTotal>
+				<DurationTotal>1107</DurationTotal>
 			</profiling>
 		</task>
 		<task name="backend_default_zDveTool">
@@ -416,16 +416,16 @@
 		</task>
 		<task name="backend_default_zGraphGenerator">
 			<profiling>
-				<Duration>1</Duration>
-				<DurationSlot>1</DurationSlot>
+				<Duration>0</Duration>
+				<DurationSlot>2</DurationSlot>
 				<DurationTotal>2</DurationTotal>
 			</profiling>
 		</task>
 		<task name="backend_default_zPar">
 			<profiling>
-				<Duration>12</Duration>
-				<DurationSlot>2</DurationSlot>
-				<DurationTotal>14</DurationTotal>
+				<Duration>11</Duration>
+				<DurationSlot>1</DurationSlot>
+				<DurationTotal>12</DurationTotal>
 			</profiling>
 		</task>
 		<task name="backend_default_zRtlToEqui">
@@ -444,30 +444,30 @@
 		</task>
 		<task name="backend_default_zSimzilla">
 			<profiling>
-				<Duration>1</Duration>
-				<DurationSlot>1</DurationSlot>
+				<Duration>0</Duration>
+				<DurationSlot>2</DurationSlot>
 				<DurationTotal>2</DurationTotal>
 			</profiling>
 		</task>
 		<task name="backend_default_zTime">
 			<profiling>
-				<Duration>2</Duration>
-				<DurationSlot>2</DurationSlot>
-				<DurationTotal>4</DurationTotal>
+				<Duration>1</Duration>
+				<DurationSlot>1</DurationSlot>
+				<DurationTotal>2</DurationTotal>
 			</profiling>
 		</task>
 		<task name="backend_default_zTimeFpga">
 			<profiling>
-				<Duration>2</Duration>
+				<Duration>1</Duration>
 				<DurationSlot>2</DurationSlot>
-				<DurationTotal>4</DurationTotal>
+				<DurationTotal>3</DurationTotal>
 			</profiling>
 		</task>
 		<task name="backend_default_zTopBuild">
 			<profiling>
-				<Duration>8</Duration>
+				<Duration>6</Duration>
 				<DurationSlot>2</DurationSlot>
-				<DurationTotal>10</DurationTotal>
+				<DurationTotal>8</DurationTotal>
 			</profiling>
 		</task>
 		<task name="backend_default_zTopBuildResultAnalyzer">
@@ -479,9 +479,9 @@
 		</task>
 		<task name="design_Default_RTL_GroupBundle_0_Synthesis">
 			<profiling>
-				<Duration>2</Duration>
-				<DurationSlot>2</DurationSlot>
-				<DurationTotal>4</DurationTotal>
+				<Duration>1</Duration>
+				<DurationSlot>1</DurationSlot>
+				<DurationTotal>2</DurationTotal>
 			</profiling>
 		</task>
 		<task name="design_Default_RTL_GroupBundle_0_Synthesis_Bundle_0_analyzer">
@@ -515,8 +515,8 @@
 		<task name="vcs_splitter_VCS_Task_Builder">
 			<profiling>
 				<Duration>4</Duration>
-				<DurationSlot>2</DurationSlot>
-				<DurationTotal>6</DurationTotal>
+				<DurationSlot>3</DurationSlot>
+				<DurationTotal>7</DurationTotal>
 			</profiling>
 		</task>
 	</Graph_tasks>

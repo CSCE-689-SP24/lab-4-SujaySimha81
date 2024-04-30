@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Metrics>
 <Attribute id="Critical routing data path delay(ns)">
-  <Value>80</Value>
+  <Value>160</Value>
 </Attribute>
 <Attribute id="NumberMGTInTopDataPath">
   <Value>0</Value>
@@ -19,13 +19,13 @@
   <Value>450</Value>
 </Attribute>
 <Attribute id="zTime freq">
-  <Value>8333 Khz</Value>
+  <Value>6249 Khz</Value>
 </Attribute>
 <Attribute id="driverClockFrequencyKHz">
-  <Value>8333</Value>
+  <Value>5555</Value>
 </Attribute>
 <Attribute id="driverClockPeriodNs">
-  <Value>120</Value>
+  <Value>180</Value>
 </Attribute>
 <Attribute id="zClockSkewTimeNs">
   <Value>80</Value>
@@ -34,21 +34,21 @@
   <Value>40</Value>
 </Attribute>
 <Attribute id="beginTime">
-  <Value>Wed Apr 17 20:17:02 2024</Value>
+  <Value>Mon Apr 29 13:44:20 2024</Value>
 </Attribute>
 <Attribute id="TotalMemoryInKB">
-  <Value>542188</Value>
+  <Value>542184</Value>
 </Attribute>
 <Attribute id="elapsedTime">
-  <Value>3</Value>
+  <Value>1</Value>
 </Attribute>
 <Attribute id="endTime">
-  <Value>Wed Apr 17 20:17:05 2024</Value>
+  <Value>Mon Apr 29 13:44:21 2024</Value>
 </Attribute>
 <Attribute id="sysTime">
-  <Value>0.133</Value>
+  <Value>0.151</Value>
 </Attribute>
 <Attribute id="userCompileTime">
-  <Value>0.76</Value>
+  <Value>0.75</Value>
 </Attribute>
 </Metrics>

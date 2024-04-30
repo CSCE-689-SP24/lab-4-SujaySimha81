@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ZeBuUiDoc type="xcui" version="1.0" creator="glog">
     <author>zTopBuild</author>
-    <date>Wed Apr 17 20:16:32 2024</date>
+    <date>Mon Apr 29 13:43:54 2024</date>
     <views>
         <view name="Warnings/Errors">
             <h1>System Compilation</h1>
@@ -28,10 +28,12 @@
                 <p>[RAS0020W] ZBNF Resources: No resource information can be found for Module zebu_bb_zmem_we</p>
                 <p>[RAS0020W] ZBNF Resources: No resource information can be found for Module zebu_bb_zmem_do</p>
                 <p>[RAS0020W] ZBNF Resources: No resource information can be found for Module zebu_reqsig_clock_driverclock</p>
+                <p>[RAS0020W] ZBNF Resources: No resource information can be found for Module zebu_bb_ZDPI_MOD_fifo_usage_spy_ZDPI_fifo_usage_spy_notify_call5</p>
+                <p>[RAS0020W] ZBNF Resources: No resource information can be found for Module zebu_bb_ZDPI_MOD_fifo_usage_spy_ZDPI_fifo_usage_spy_notify_call4</p>
+                <p>[RAS0020W] ZBNF Resources: No resource information can be found for Module zebu_bb_ZDPI_MOD_fifo_usage_spy_ZDPI_fifo_usage_spy_notify_call3</p>
+                <p>[RAS0020W] ZBNF Resources: No resource information can be found for Module zebu_bb_ZDPI_MOD_fifo_usage_spy_ZDPI_fifo_usage_spy_notify_call2</p>
+                <p>[RAS0020W] ZBNF Resources: No resource information can be found for Module zebu_bb_ZDPI_MOD_fifo_usage_spy_ZDPI_fifo_usage_spy_notify_call1</p>
                 <p>[RAS0020W] ZBNF Resources: No resource information can be found for Module zebu_bb_ZDPI_MOD_fifo_usage_spy_ZDPI_fifo_usage_spy_notify_call0</p>
-                <p>[RAS0020W] ZBNF Resources: No resource information can be found for Module ZSVA_MOD_0</p>
-                <p>[RAS0020W] ZBNF Resources: No resource information can be found for Module ZSVA_MOD_1</p>
-                <p>[RAS0020W] ZBNF Resources: No resource information can be found for Module zebu_clockGen</p>
                 <p>[ZTCL0304W] ZMetrics : File (tools/zMetrics/post_partitioning_metrics.xml) already exists and has been replaced</p>
                 <p>[KBD0213W] cannot open report file for writing make sure &#39;./.zTopBuild_AC_report.log.dir/SEC_AC_OPT_SOLUTION_CORE_SIZE&#39; has writing rights.</p>
                 <p>[KBD0213W] cannot open report file for writing make sure &#39;./.zTopBuild_AC_report.log.dir/SEC_AC_OPT_SOLUTION_CORE_XO&#39; has writing rights.</p>
@@ -63,11 +65,11 @@
                 <p>+-------------------------------+------+------+------+------+----------+-----------+</p>
                 <p>|Resource usage                 |LUT   |LUT6  |REG   |RAMLUT|FWC_IP_NUM|FWC_IP_BITS|</p>
                 <p>+-------------------------------+------+------+------+------+----------+-----------+</p>
-                <p>|Estimated size of the design   |1,254 |29    |1,254 |72    |3         |138        |</p>
+                <p>|Estimated size of the design   |2,670 |29    |1,761 |72    |8         |194        |</p>
                 <p>|Board size with user fill-rates|5,497K|2,199K|4,838K|1,241K|7,137     |617K       |</p>
                 <p>+-------------------------------+------+------+------+------+----------+-----------+</p>
-                <p>| For 1 boards                  |0.0%  |0.0%  |0.0%  |0.0%  |0.0%      |0.0%       |</p>
-                <p>|                  For 2 boards |0.0%  |0.0%  |0.0%  |0.0%  |0.0%      |0.0%       |</p>
+                <p>| For 1 boards                  |0.0%  |0.0%  |0.0%  |0.0%  |0.1%      |0.0%       |</p>
+                <p>|                  For 2 boards |0.0%  |0.0%  |0.0%  |0.0%  |0.1%      |0.0%       |</p>
                 <p>|                  For 3 boards |0.0%  |0.0%  |0.0%  |0.0%  |0.0%      |0.0%       |</p>
                 <p>|                  For 4 boards |0.0%  |0.0%  |0.0%  |0.0%  |0.0%      |0.0%       |</p>
                 <p>|                  For 5 boards |0.0%  |0.0%  |0.0%  |0.0%  |0.0%      |0.0%       |</p>
@@ -144,32 +146,32 @@
                 <p>+-----------+---+---+---------+------+----+-----+----+---+</p>
                 <p>|           |REG|LUT|LUT W/O W|RAMLUT|LUT6|MUXCY|BRAM|DSP|</p>
                 <p>+-----------+---+---+---------+------+----+-----+----+---+</p>
-                <p>|Design size|601|284|      284|    72|  29|    2|   0|  0|</p>
+                <p>|Design size|654|288|      288|    72|  29|    2|   0|  0|</p>
                 <p>+-----------+---+---+---------+------+----+-----+----+---+</p>
                 <p></p>
-                <p>       67	Module(s)</p>
+                <p>       72	Module(s)</p>
                 <p>       13	Blackbox module(s)</p>
                 <p>        0	External memory module(s)</p>
                 <p>        1	Fast Waveform Capture IP module(s)</p>
-                <p>        3	DPI module(s)</p>
+                <p>        8	DPI module(s)</p>
                 <p>        0	Qiwc IP module(s)</p>
                 <p>        0	Asynchronous ZMEM module(s)</p>
                 <p>        2	Synchronous ZMEM module(s)</p>
-                <p>        2	Disconnected module port(s)    [in=2 out=0 inout=0]</p>
-                <p>      254	Disconnected instance port(s)  [in=73 out=181 inout=0]</p>
+                <p>        4	Disconnected module port(s)    [in=4 out=0 inout=0]</p>
+                <p>      258	Disconnected instance port(s)  [in=75 out=183 inout=0]</p>
                 <p>        0	Disconnected wire(s)</p>
-                <p>        4	Loadless wire(s)</p>
+                <p>        6	Loadless wire(s)</p>
                 <p>        2	Sourceless wire(s)</p>
-                <p>      457	Uninitialized Register(s)</p>
-                <p>       10	Initialized Register(s)</p>
+                <p>      506	Uninitialized Register(s)</p>
+                <p>       14	Initialized Register(s)</p>
                 <p></p>
                 <p>Detailed manipulation logic size (*)</p>
                 <p>+------------------------------+---------------+---------------+---------------+---------------+---------------+----------+---------------+---------------+</p>
                 <p>|                              |            REG|            LUT|         RAMLUT|           LUT6|          MUXCY|      BRAM|            DSP|           QIWC|</p>
                 <p>+------------------------------+---------------+---------------+---------------+---------------+---------------+----------+---------------+---------------+</p>
-                <p>|        Post-split design size|            601|            284|             72|             29|              2|         0|              0|              0|</p>
+                <p>|        Post-split design size|            654|            288|             72|             29|              2|         0|              0|              0|</p>
                 <p>|Sync elements routing cost(**)|              0|              0|              0|              0|              0|         0|              0|              0|</p>
-                <p>|                           SUM|            601|            284|             72|             29|              2|         0|              0|              0|</p>
+                <p>|                           SUM|            654|            288|             72|             29|              2|         0|              0|              0|</p>
                 <p>+------------------------------+---------------+---------------+---------------+---------------+---------------+----------+---------------+---------------+</p>
                 <p></p>
                 <p>(**)Note that sync elements routing cost include :  reg cost of non-reg sync elements.</p>
@@ -202,7 +204,7 @@
                 <p> +------+---+---+------+----+-----+----+---+-------------------+--+</p>
                 <p> |ZCORE |REG|LUT|RAMLUT|LUT6|MUXCY|BRAM|DSP|LUT (w/o weighting)|IO|</p>
                 <p> +------+---+---+------+----+-----+----+---+-------------------+--+</p>
-                <p> |Part_0|601|284|    72|  29|    2|   0|  0|                284| 0|</p>
+                <p> |Part_0|654|288|    72|  29|    2|   0|  0|                288| 0|</p>
                 <p> +------+---+---+------+----+-----+----+---+-------------------+--+</p>
         </view>
     </views>

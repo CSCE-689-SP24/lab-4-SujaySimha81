@@ -18,7 +18,7 @@
 <scriptLine>cluster set -max_fill_qiwc_bit 40</scriptLine>
 </target>
 <target type="filesaved" desc="zTopDefmap" name="zTopBuild_AC_input_defcoremap.tcl" label="zTopBuild">
-<scriptLine>cluster_generated -part_name Part_0 -lut 1250 -bram 1218 -reg 72 -dsp 3 -ramlut 138 -cut 0</scriptLine>
+<scriptLine>cluster_generated -part_name Part_0 -lut 2666 -bram 1726 -reg 72 -dsp 8 -ramlut 194 -cut 0</scriptLine>
 <scriptLine>defcoremapping {top} Part_0</scriptLine>
 </target>
 <target type="filesaved" desc="none" name="zTopBuild_AC_input_defmapfpga.tcl" label="zTopBuild">
@@ -37,17 +37,17 @@
 </target>
 <target type="filesaved" desc="none" name="work.Part_0//zCoreBuild_AC_input_defmapping.tcl" label="Part_0">
 <scriptLine>disable defmapping_error_check</scriptLine>
-<scriptLine>cluster_generated -part_name U0_M0_F00 -lut 5341 -bram 5951 -reg 72 -dsp 3 -ramlut 138 -cut 0</scriptLine>
+<scriptLine>cluster_generated -part_name U0_M0_F00 -lut 5285 -bram 6019 -reg 72 -dsp 8 -ramlut 194 -cut 0</scriptLine>
 <scriptLine>defmapping {top} U0_M0_F00</scriptLine>
 </target>
 <target type="filesaved" desc="zCoreDefmap" name="work.Part_0//zCoreBuild_AC_input_defmapping.tcl" label="Part_0">
 <scriptLine>disable defmapping_error_check</scriptLine>
-<scriptLine>cluster_generated -part_name U0_M0_F00 -lut 5341 -bram 5951 -reg 72 -dsp 3 -ramlut 138 -cut 0</scriptLine>
+<scriptLine>cluster_generated -part_name U0_M0_F00 -lut 5285 -bram 6019 -reg 72 -dsp 8 -ramlut 194 -cut 0</scriptLine>
 <scriptLine>defmapping {top} U0_M0_F00</scriptLine>
 </target>
 <target type="filesaved" desc="zCoreDefmapincr" name="work.Part_0//zCoreBuild_AC_input_incremental_defmapping.tcl" label="Part_0">
 <scriptLine>disable defmapping_error_check</scriptLine>
-<scriptLine>cluster_generated -part_name U0_M0_F00 -lut 5341 -bram 5951 -reg 72 -dsp 3 -ramlut 138 -cut 0</scriptLine>
+<scriptLine>cluster_generated -part_name U0_M0_F00 -lut 5285 -bram 6019 -reg 72 -dsp 8 -ramlut 194 -cut 0</scriptLine>
 <scriptLine>defmapping {top.assert_design_req1_empty_assert} U0_M0_F00</scriptLine>
 <scriptLine>defmapping {top.assert_design_req1_empty_assert_sva_enable} U0_M0_F00</scriptLine>
 <scriptLine>defmapping {top.assert_design_req2_full_assert} U0_M0_F00</scriptLine>

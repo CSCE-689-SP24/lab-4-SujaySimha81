@@ -38,8 +38,8 @@ $idelClk.Frequency = 200000;
 # Note: Prefer the "$timingSetting" parameter describes above, to constraint the driver clock frequency.
 # WARNING: Don't use "$driverClk.Frequency" parameter when "$timingSetting" parameter is set.
 #          Theses parameters are not compatible !!
-$driverClk.Frequency = 10000;
-$driverClk.MaxFrequency = 10000;
+$driverClk.Frequency = 5555;
+$driverClk.MaxFrequency = 5555;
 # Note : number of driverClock cycles while reset is active
 $driverClk.Reset = 0;
 # Note : for no automatic frequency change during FWC set $driverClk.FwcsFrequency = "driverClk.Frequency";

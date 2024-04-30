@@ -1,4 +1,4 @@
-$driverClk.zpar.variable = "450000    0"; # kHz, ns
+$driverClk.zpar.variable = "450000   60"; # kHz, ns
 $driverClk.zpar.constante =  120; # ns
 $zClockSkewTime =   80; # ns
 $zClockFilterTime =   40; # ns

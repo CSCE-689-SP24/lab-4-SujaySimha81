@@ -12,23 +12,46 @@
 #include <iostream>
 #include <iomanip>
 #include <string>
-#include "Collect.hh"
 
-using namespace std;
-extern "C" void fifo_usage_spy_notify (const svBitVecVal *_arg_min)
+
+int r=0;
+int w=0;
+int c=0;
+
+extern "C" void fifo_usage_spy_notify(int we, int re, const svBitVecVal *data)
 {
-// to retrieve the scope, the function must be declared as 'context'
-  svScope scope = svGetScope ();
+ // TODO
+ std::cout<<"DPI_C fifo_usage_spy_notify called with we_"<<we<<"  re_"<<re<<"  data_"<<data[0]<<"\n";
+ 
+ 
+ FILE *f_dataout = fopen("dataout.txt", "ab");
+ FILE *f_datain  = fopen("datain.txt", "ab");
+ int flag=0;
 
-  void *ctx = svGetUserData(scope, (void*)(fifo_usage_spy_notify));
-  if (ctx == NULL)
-  {
-    // first call
-    const char *i_name = svGetNameFromScope (scope);
-    ctx = new Collect(i_name);
-    svPutUserData(scope, (void*)fifo_usage_spy_notify, ctx);
-  }
-
-  ((Collect*)ctx)->setMin(_arg_min[0]);
+ if(!f_datain){
+   std::cout<<"Error opening file datain.txt";
+   flag = 1;
+ }
+ if(!f_dataout){
+   std::cout<<"Error opening file dataout.txt";
+   flag = 1;
+ }
+ if(!flag){
   
+    if(we){
+      std::cout<<"DPI_C fifo_usage_spy_notify Writing Data_in : "<<std::hex<<data[0]<<"\n";
+      fprintf(f_datain, "%x\n",data[0]);
+      w++;
+    }
+    if(re){
+      std::cout<<"DPI_C fifo_usage_spy_notify Reading Data_out : "<<std::hex<<data[0]<<"\n";
+      fprintf(f_dataout, "%x\n",data[0]);
+      r++;
+    }
+  
+  
+ }
+ fclose(f_datain);
+ fclose(f_dataout);
+ 
 }

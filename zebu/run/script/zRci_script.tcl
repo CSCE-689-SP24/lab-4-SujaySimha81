@@ -136,6 +136,49 @@ dump -close -fid $dp_fid
 dump -close -fid $fwc_fid
 #------------END OF SECTION for FWC ---------------------------
 
+
+#-------------------------------------------------------
+# Section for Comparing Write and Read data of the FIFO
+#-------------------------------------------------------
+#Write data : datain.txt
+#Read  data : dataout.txt
+
+set datain "./datain.txt"
+set dataout "./dataout.txt"
+
+#Check if the files exist
+if {![file exists $datain]} {
+        puts "Error opening $datain"
+}
+if {![file exists $dataout]} {
+        puts "Error opening $dataout"
+}
+#Opening the files for reading
+set f_datain  [open $datain "r"]
+set f_dataout [open $dataout "r"]
+#Read and compare contents of files
+#set f 1
+#while {![eof $f_datain] && ![eof $f_dataout]} {
+#        set line_in [gets $f_datain]
+#        set line_out [gets $f_dataout]
+#        if {$line1 ne $line2} {
+#            set f 0
+#            break
+#        }
+#}
+#if {[eof $f_datain] != [eof $f_dataout]} {
+#        set f 0
+#}
+set data_wr [read $f_datain]
+set data_rd [read $f_dataout]
+if {$data_rd eq $data_wr} {
+        puts "Input and output data are identical"
+} else {
+        puts "Input and output data are not identical"
+}
+close $f_datain
+close $f_dataout
+
 #----------------------------------------------------------------
 # TODO: Closing Emulation - Last command of script, for all scenarios
 #----------------------------------------------------------------

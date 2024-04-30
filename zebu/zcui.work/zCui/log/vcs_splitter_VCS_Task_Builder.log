@@ -10,7 +10,7 @@ Warning-[DEBUG_DEP] Option will be deprecated
   '-debug_acc+pp+dmptf -debug_region+cell+encrypt' instead.
 
                          Chronologic VCS (TM)
-     Version Q-2020.03-SP2-12_Full64 -- Thu Apr 18 02:44:01 2024
+     Version Q-2020.03-SP2-12_Full64 -- Mon Apr 29 13:43:27 2024
                Copyright (c) 1991-2020 by Synopsys Inc.
                          ALL RIGHTS RESERVED
 
@@ -70,14 +70,14 @@ stb, "zceiClockPort u_clk1( .cclock (clk1));"
 [UFE_FLOW PROBES]: Status after DIRECTED matching: Processed 5 probes: 5 matched, resulting 5 signals collected for protection.
 
 Warning-[ZEBU_SVA-NOAB] Assertion with an action block
-../source/stb/top.sv, 54
+../source/stb/top.sv, 56
 "assert_design_req1_empty_assert: assert property(p1)$display("FIFO empty assertion passed");  else $error("FIFO empty assertion failed"); "
   Only severity is supported in user defined fail action block, ignoring any 
   other statements in the action block
 
 
 Warning-[ZEBU_SVA-NOAB] Assertion with an action block
-../source/stb/top.sv, 60
+../source/stb/top.sv, 62
 "assert_design_req2_full_assert: assert property(p2)$display("FIFO full assertion passed");  else $error("FIFO full assertion failed"); "
   Only severity is supported in user defined fail action block, ignoring any 
   other statements in the action block
@@ -99,7 +99,8 @@ parity_check, "assert((!error));  else $error("SVA: Parity error detected.");"
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------+
 |        Function Name|          Path|# Inp|# Out|                    Source File|Source L|Call |                         Filtered Reason|DPI Type|       Status|
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------+
-|fifo_usage_spy_notify|fifo_usage_spy|    4|    0|../source/stb/fifo_usage_spy.sv|      29|    1|        DPI synthesis enabled for module|  import|  synthesized|
+|fifo_usage_spy_notify|fifo_usage_spy|   10|    0|../source/stb/fifo_usage_spy.sv|      40|    1|        DPI synthesis enabled for module|  import|  synthesized|
+|fifo_usage_spy_notify|fifo_usage_spy|   10|    0|../source/stb/fifo_usage_spy.sv|      43|    1|        DPI synthesis enabled for module|  import|  synthesized|
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------+
 Processing DPI imported functions in module fifo_usage_spy.
 Processing DPI imported functions in module stb.
@@ -107,7 +108,7 @@ Processing DPI imported functions in module stb.
 Info: Invoking Simon...
 Info: Simon VCS Start
                                 SIMON
-     Version Q-2020.03-SP2-12_Full64 -- Thu Apr 18 02:44:02 2024
+     Version Q-2020.03-SP2-12_Full64 -- Mon Apr 29 13:43:28 2024
                Copyright (c) 1991-2020 by Synopsys Inc.
                          ALL RIGHTS RESERVED
 
@@ -117,7 +118,7 @@ controlling such use and disclosure.
 
 
 Note-[SM_PME] Processing Module/Entity
-  Processing: fifo_usage_spy Parameterized Name: fifo_usage_spy
+  Processing: fifo_0000 Parameterized Name: fifo_0000
 
 
 Note-[SM_PF] Processing finished
@@ -197,9 +198,11 @@ Note-[SM_POF] Processing finished
 
 
 Warning-[SM_BB_LIST] Blackbox module list
-  List of modules in design which are blackboxed by tool/user (7): 
-  M_RTL_ZDPI_TASK00 M_RTL_ZDPI_TASK01 M_RTL_ZDPI_TASK10 M_RTL_ZDPI_TASK110 
-  M_RTL_ZDPI_TASK20 M_RTL_ZDPI_TASK21 M_RTL_ZSVA_IMM_TASK30
+  List of modules in design which are blackboxed by tool/user (14): 
+  M_RTL_ZDPI_TASK00 M_RTL_ZDPI_TASK01 M_RTL_ZDPI_TASK02 M_RTL_ZDPI_TASK03 
+  M_RTL_ZDPI_TASK10 M_RTL_ZDPI_TASK11 M_RTL_ZDPI_TASK110 M_RTL_ZDPI_TASK12 
+  M_RTL_ZDPI_TASK13 M_RTL_ZDPI_TASK20 M_RTL_ZDPI_TASK21 M_RTL_ZDPI_TASK30 
+  M_RTL_ZDPI_TASK31 M_RTL_ZSVA_IMM_TASK30
 
 
 Warning-[SM_INFRA_BB_LIST] Infra blackbox module list
@@ -208,25 +211,25 @@ Warning-[SM_INFRA_BB_LIST] Infra blackbox module list
   eVe_initial zebu_reqsig_clock_zcompositeclock
 
 =======================================================
-VCS pre-synth CPU Time        : 0.41 sec
+VCS pre-synth CPU Time        : 0.42 sec
 VCS pre-synth Wall-Clock Time : 1.00 sec
 VCS pre-synth Current Memory  : 585 MB
 SIMON Master CPU Time         : 0.14 sec
 SIMON Total  CPU Time         : 0.14 sec
-SIMON Master Wall-Clock Time  : 2.17 sec
+SIMON Master Wall-Clock Time  : 2.09 sec
 SIMON Master Current Memory   : 592 MB
 SIMON Master Peak Memory      : 592 MB
-SIMON Distribution            : 0.01,0.00,0.00,0.00 sec
+SIMON Distribution            : 0.00,0.00,0.00,0.01 sec
 =======================================================
 Info: Simon VCS Finished
 Info: Simon call complete 
 Info: Exiting after Simon Analysis 
 
-#   exec summary : wall clock 0m3s, user 0m0.344s, sys 0m0.225s
-#   exec summary : Total memory: 606676kB - RSS memory: 157224 kB - Data memory: 158844 kB
+#   exec summary : wall clock 0m3s, user 0m0.376s, sys 0m0.201s
+#   exec summary : Total memory: 607224kB - RSS memory: 153756 kB - Data memory: 159392 kB
 #   exec summary : Successful execution
 
-# end time is Thu Apr 18 02:44:04 2024
+# end time is Mon Apr 29 13:43:30 2024
 
-CPU time: .688 seconds to compile
+CPU time: .697 seconds to compile
 command exit code is '0'

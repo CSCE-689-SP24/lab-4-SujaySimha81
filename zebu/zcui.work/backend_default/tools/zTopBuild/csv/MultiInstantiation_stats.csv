@@ -6,7 +6,7 @@ Nb_Inst.,ALL_REG,ALL_LUT,ALL_BRAM,ALL_DSP,ALL_RAMLUT,ALL_LUT6,ALL_MUXCY,Module,R
 18,36,0,0,0,0,0,0,zebu_force_sync_LOGICOPT,2,0,0,0,0,0,0,1,1,2,3
 18,0,18,0,0,0,0,0,zmux2_1_0_LOGICOPT,0,1,0,0,0,0,0,1,1,0,4
 16,0,0,0,0,0,0,0,zebu_bb_zmem_addr,0,0,0,0,0,0,0,0,0,0,1
-13,0,0,0,0,0,0,0,zebu_FT_inout_mod_hidden_wire_new,0,0,0,0,0,0,0,0,0,0,2
+12,0,0,0,0,0,0,0,zebu_FT_inout_mod_hidden_wire_new,0,0,0,0,0,0,0,0,0,0,2
 9,0,0,0,0,0,0,0,zebu_bb_zmem_do,0,0,0,0,0,0,0,0,0,0,1
 9,0,0,0,0,0,0,0,zebu_bb_zmem_di,0,0,0,0,0,0,0,0,0,0,1
 4,0,0,0,0,0,0,0,ZXLSYS,0,0,0,0,0,0,0,0,0,0,4

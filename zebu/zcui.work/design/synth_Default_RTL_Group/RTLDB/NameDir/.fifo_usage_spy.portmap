@@ -4,6 +4,21 @@ Module zebu_reqsig_clock_zcompositeclock{
 }
 Module zebu_bb_ZDPI_MOD_fifo_usage_spy_ZDPI_fifo_usage_spy_notify_call0{
 }
+Module zebu_bb_ZDPI_MOD_fifo_usage_spy_ZDPI_fifo_usage_spy_notify_call1{
+}
+Module zebu_bb_ZDPI_MOD_fifo_usage_spy_ZDPI_fifo_usage_spy_notify_call2{
+}
+Module zebu_bb_ZDPI_MOD_fifo_usage_spy_ZDPI_fifo_usage_spy_notify_call3{
+}
+Module zebu_bb_ZDPI_MOD_fifo_usage_spy_ZDPI_fifo_usage_spy_notify_call4{
+}
+Module zebu_bb_ZDPI_MOD_fifo_usage_spy_ZDPI_fifo_usage_spy_notify_call5{
+}
 
+EdfPortBounds fifo_usage_spy{
+7 0 datain
+7 0 dataout
+3 0 remain
+}
 NonAliasNets fifo_usage_spy{
 }
