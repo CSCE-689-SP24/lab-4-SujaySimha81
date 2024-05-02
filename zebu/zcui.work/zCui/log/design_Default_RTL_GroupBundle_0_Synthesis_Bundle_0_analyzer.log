@@ -1,7 +1,13 @@
 zFAST results analysis:
   Source unit: Design
   RTL group: Default_RTL_Group
+Module: dut
+  Xcui file design/synth_Default_RTL_Group/xcui/dut.xcui is read
+  Checksum value 42460cb786fdfb64cce990e36415cc643c01f893501abe9e0d6be387a883b1f8d276e845270f9f62b4c008e3f922321e9d9445f6a929702ccc03e9bde468fb82
 Module: fifo_0000
   Xcui file design/synth_Default_RTL_Group/xcui/fifo_0000.xcui is read
   Checksum value a0f7d9ff0fcc7d0c791f24dad92062503066e3aac763c4d13bb55ec4fb26f836f414e85533c9c10bee04f2bf1b161dd758782e6d4dfc20654e21269db24e283c
+Module: top
+  Xcui file design/synth_Default_RTL_Group/xcui/top.xcui is read
+  Checksum value 64ad98ee96ac5b9adcc4ae814a062cb2513fb792f0deb88c3110736813fed9ba0bf233377ed3034cfc6938644b8e484849b7c4aecc610efd2e46f8f4191725cc
 zFAST output analyzed

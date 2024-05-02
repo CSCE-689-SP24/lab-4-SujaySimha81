@@ -29,37 +29,37 @@
 	</Header>
 	<Row>
 		<Phase>VCS</Phase>
-		<Percentage>0.354924589</Percentage>
+		<Percentage>0.648148119</Percentage>
 		<SlotDuration>0</SlotDuration>
-		<SpawnDuration>3</SpawnDuration>
-		<ElapsedTime>4</ElapsedTime>
+		<SpawnDuration>1</SpawnDuration>
+		<ElapsedTime>7</ElapsedTime>
 		<Host>csce-quinn-s1.engr.tamu.edu</Host>
 		<TotalJobsFired>1</TotalJobsFired>
-		<MaxMemory>152.92MB</MaxMemory>
+		<MaxMemory>152.99MB</MaxMemory>
 	</Row>
 	<Row>
 		<Phase>zTopBuild</Phase>
-		<Percentage>0.532386839</Percentage>
-		<SlotDuration>0</SlotDuration>
-		<SpawnDuration>2</SpawnDuration>
-		<ElapsedTime>6</ElapsedTime>
-		<Host>csce-quinn-s1.engr.tamu.edu</Host>
-		<TotalJobsFired>1</TotalJobsFired>
-		<MaxMemory>314.18MB</MaxMemory>
-	</Row>
-	<Row>
-		<Phase>zCoreBuild</Phase>
-		<Percentage>0.709849179</Percentage>
+		<Percentage>0.740740716</Percentage>
 		<SlotDuration>0</SlotDuration>
 		<SpawnDuration>2</SpawnDuration>
 		<ElapsedTime>8</ElapsedTime>
 		<Host>csce-quinn-s1.engr.tamu.edu</Host>
 		<TotalJobsFired>1</TotalJobsFired>
-		<MaxMemory>465.65MB</MaxMemory>
+		<MaxMemory>302.96MB</MaxMemory>
+	</Row>
+	<Row>
+		<Phase>zCoreBuild</Phase>
+		<Percentage>0.833333313</Percentage>
+		<SlotDuration>0</SlotDuration>
+		<SpawnDuration>1</SpawnDuration>
+		<ElapsedTime>9</ElapsedTime>
+		<Host>csce-quinn-s1.engr.tamu.edu</Host>
+		<TotalJobsFired>1</TotalJobsFired>
+		<MaxMemory>462.80MB</MaxMemory>
 	</Row>
 	<Row>
 		<Phase>zPar</Phase>
-		<Percentage>0.976042569</Percentage>
+		<Percentage>1.01851857</Percentage>
 		<SlotDuration>0</SlotDuration>
 		<SpawnDuration>0</SpawnDuration>
 		<ElapsedTime>11</ElapsedTime>
@@ -69,30 +69,30 @@
 	</Row>
 	<Row>
 		<Phase>FPGA Compile</Phase>
-		<Percentage>93.5226288</Percentage>
+		<Percentage>91.5740738</Percentage>
 		<SlotDuration>0</SlotDuration>
-		<SpawnDuration>2</SpawnDuration>
-		<ElapsedTime>1054</ElapsedTime>
+		<SpawnDuration>1</SpawnDuration>
+		<ElapsedTime>989</ElapsedTime>
 		<Host>csce-quinn-s1.engr.tamu.edu</Host>
 		<TotalJobsFired>0 Orig</TotalJobsFired>
 		<MaxMemory>5.23GB</MaxMemory>
 	</Row>
 	<Row>
 		<Phase>Create Timing DB (post FPGA)</Phase>
-		<Percentage>0.0887311473</Percentage>
+		<Percentage>0.185185179</Percentage>
 		<SlotDuration>0</SlotDuration>
 		<SpawnDuration>2</SpawnDuration>
-		<ElapsedTime>1</ElapsedTime>
+		<ElapsedTime>2</ElapsedTime>
 		<Host>csce-quinn-s1.engr.tamu.edu</Host>
 		<TotalJobsFired>1</TotalJobsFired>
-		<MaxMemory>116.89MB</MaxMemory>
+		<MaxMemory>123.51MB</MaxMemory>
 	</Row>
 	<Row>
 		<Phase>Other tasks</Phase>
-		<Percentage>3.46051478</Percentage>
+		<Percentage>4.72222185</Percentage>
 		<SlotDuration>0</SlotDuration>
-		<SpawnDuration>15</SpawnDuration>
-		<ElapsedTime>39</ElapsedTime>
+		<SpawnDuration>18</SpawnDuration>
+		<ElapsedTime>51</ElapsedTime>
 		<Host>-</Host>
 		<TotalJobsFired>10</TotalJobsFired>
 		<MaxMemory>-</MaxMemory>
@@ -101,8 +101,8 @@
 		<Phase>Total</Phase>
 		<Percentage>100</Percentage>
 		<SlotDuration>0</SlotDuration>
-		<SpawnDuration>29</SpawnDuration>
-		<ElapsedTime>1127</ElapsedTime>
+		<SpawnDuration>26</SpawnDuration>
+		<ElapsedTime>1080</ElapsedTime>
 		<Host>-</Host>
 		<TotalJobsFired>16</TotalJobsFired>
 		<MaxMemory>-</MaxMemory>
@@ -157,12 +157,12 @@
 	</Row>
 	<Row>
 		<TNAME>Analyze Target Configuration Results</TNAME>
-		<Percentage>0</Percentage>
+		<Percentage>0.0925925896</Percentage>
 		<SlotDuration>0</SlotDuration>
 		<SpawnDuration>0</SpawnDuration>
-		<ElapsedTime>0</ElapsedTime>
+		<ElapsedTime>1</ElapsedTime>
 		<SpawnTime>4</SpawnTime>
-		<FinishTime>4</FinishTime>
+		<FinishTime>5</FinishTime>
 		<Host></Host>
 	</Row>
 	<Row>
@@ -171,8 +171,8 @@
 		<SlotDuration>0</SlotDuration>
 		<SpawnDuration>0</SpawnDuration>
 		<ElapsedTime>0</ElapsedTime>
-		<SpawnTime>6</SpawnTime>
-		<FinishTime>6</FinishTime>
+		<SpawnTime>7</SpawnTime>
+		<FinishTime>7</FinishTime>
 		<Host></Host>
 	</Row>
 	<Row>
@@ -187,52 +187,52 @@
 	</Row>
 	<Row>
 		<TNAME>VCS</TNAME>
-		<Percentage>0.354924589</Percentage>
+		<Percentage>0.648148119</Percentage>
 		<SlotDuration>0</SlotDuration>
-		<SpawnDuration>3</SpawnDuration>
-		<ElapsedTime>4</ElapsedTime>
-		<SpawnTime>8</SpawnTime>
-		<FinishTime>15</FinishTime>
+		<SpawnDuration>1</SpawnDuration>
+		<ElapsedTime>7</ElapsedTime>
+		<SpawnTime>11</SpawnTime>
+		<FinishTime>19</FinishTime>
 		<Host>csce-quinn-s1.engr.tamu.edu</Host>
 	</Row>
 	<Row>
 		<TNAME>Analyze VCS Results</TNAME>
-		<Percentage>0.0887311473</Percentage>
+		<Percentage>0.185185179</Percentage>
 		<SlotDuration>0</SlotDuration>
 		<SpawnDuration>0</SpawnDuration>
-		<ElapsedTime>1</ElapsedTime>
-		<SpawnTime>15</SpawnTime>
-		<FinishTime>16</FinishTime>
+		<ElapsedTime>2</ElapsedTime>
+		<SpawnTime>19</SpawnTime>
+		<FinishTime>21</FinishTime>
 		<Host></Host>
 	</Row>
 	<Row>
 		<TNAME>Compilation Profiler (after VCSAnalyzer)</TNAME>
-		<Percentage>0.26619342</Percentage>
+		<Percentage>0.833333313</Percentage>
 		<SlotDuration>0</SlotDuration>
-		<SpawnDuration>1</SpawnDuration>
-		<ElapsedTime>3</ElapsedTime>
-		<SpawnTime>16</SpawnTime>
-		<FinishTime>20</FinishTime>
+		<SpawnDuration>3</SpawnDuration>
+		<ElapsedTime>9</ElapsedTime>
+		<SpawnTime>24</SpawnTime>
+		<FinishTime>36</FinishTime>
 		<Host>csce-quinn-s1.engr.tamu.edu</Host>
 	</Row>
 	<Row>
 		<TNAME>Prepare Backend Flow</TNAME>
-		<Percentage>0.0887311473</Percentage>
+		<Percentage>0.0925925896</Percentage>
 		<SlotDuration>0</SlotDuration>
 		<SpawnDuration>0</SpawnDuration>
 		<ElapsedTime>1</ElapsedTime>
-		<SpawnTime>24</SpawnTime>
-		<FinishTime>25</FinishTime>
+		<SpawnTime>36</SpawnTime>
+		<FinishTime>37</FinishTime>
 		<Host></Host>
 	</Row>
 	<Row>
 		<TNAME>Make RTL DB indexes</TNAME>
-		<Percentage>0</Percentage>
+		<Percentage>0.0925925896</Percentage>
 		<SlotDuration>0</SlotDuration>
-		<SpawnDuration>2</SpawnDuration>
-		<ElapsedTime>0</ElapsedTime>
-		<SpawnTime>27</SpawnTime>
-		<FinishTime>29</FinishTime>
+		<SpawnDuration>1</SpawnDuration>
+		<ElapsedTime>1</ElapsedTime>
+		<SpawnTime>39</SpawnTime>
+		<FinishTime>41</FinishTime>
 		<Host>csce-quinn-s1.engr.tamu.edu</Host>
 	</Row>
 	<Row>
@@ -241,38 +241,38 @@
 		<SlotDuration>0</SlotDuration>
 		<SpawnDuration>2</SpawnDuration>
 		<ElapsedTime>0</ElapsedTime>
-		<SpawnTime>29</SpawnTime>
-		<FinishTime>31</FinishTime>
+		<SpawnTime>41</SpawnTime>
+		<FinishTime>43</FinishTime>
 		<Host>csce-quinn-s1.engr.tamu.edu</Host>
 	</Row>
 	<Row>
 		<TNAME>zTopBuild</TNAME>
-		<Percentage>0.532386839</Percentage>
+		<Percentage>0.740740716</Percentage>
 		<SlotDuration>0</SlotDuration>
 		<SpawnDuration>2</SpawnDuration>
-		<ElapsedTime>6</ElapsedTime>
-		<SpawnTime>31</SpawnTime>
-		<FinishTime>39</FinishTime>
+		<ElapsedTime>8</ElapsedTime>
+		<SpawnTime>43</SpawnTime>
+		<FinishTime>53</FinishTime>
 		<Host>csce-quinn-s1.engr.tamu.edu</Host>
 	</Row>
 	<Row>
 		<TNAME>Analyze System Building Results</TNAME>
-		<Percentage>0</Percentage>
+		<Percentage>0.0925925896</Percentage>
 		<SlotDuration>0</SlotDuration>
 		<SpawnDuration>0</SpawnDuration>
-		<ElapsedTime>0</ElapsedTime>
-		<SpawnTime>39</SpawnTime>
-		<FinishTime>39</FinishTime>
+		<ElapsedTime>1</ElapsedTime>
+		<SpawnTime>53</SpawnTime>
+		<FinishTime>54</FinishTime>
 		<Host></Host>
 	</Row>
 	<Row>
 		<TNAME>Build zCore Part_0</TNAME>
-		<Percentage>0.709849179</Percentage>
+		<Percentage>0.833333313</Percentage>
 		<SlotDuration>0</SlotDuration>
-		<SpawnDuration>2</SpawnDuration>
-		<ElapsedTime>8</ElapsedTime>
-		<SpawnTime>41</SpawnTime>
-		<FinishTime>51</FinishTime>
+		<SpawnDuration>1</SpawnDuration>
+		<ElapsedTime>9</ElapsedTime>
+		<SpawnTime>56</SpawnTime>
+		<FinishTime>66</FinishTime>
 		<Host>csce-quinn-s1.engr.tamu.edu</Host>
 	</Row>
 	<Row>
@@ -281,18 +281,18 @@
 		<SlotDuration>0</SlotDuration>
 		<SpawnDuration>0</SpawnDuration>
 		<ElapsedTime>0</ElapsedTime>
-		<SpawnTime>52</SpawnTime>
-		<FinishTime>52</FinishTime>
+		<SpawnTime>66</SpawnTime>
+		<FinishTime>66</FinishTime>
 		<Host></Host>
 	</Row>
 	<Row>
 		<TNAME>Post ZCore Compilation Join</TNAME>
-		<Percentage>0</Percentage>
+		<Percentage>0.0925925896</Percentage>
 		<SlotDuration>0</SlotDuration>
 		<SpawnDuration>0</SpawnDuration>
-		<ElapsedTime>0</ElapsedTime>
-		<SpawnTime>54</SpawnTime>
-		<FinishTime>54</FinishTime>
+		<ElapsedTime>1</ElapsedTime>
+		<SpawnTime>68</SpawnTime>
+		<FinishTime>69</FinishTime>
 		<Host></Host>
 	</Row>
 	<Row>
@@ -301,13 +301,13 @@
 		<SlotDuration>0</SlotDuration>
 		<SpawnDuration>0</SpawnDuration>
 		<ElapsedTime>0</ElapsedTime>
-		<SpawnTime>54</SpawnTime>
-		<FinishTime>54</FinishTime>
+		<SpawnTime>71</SpawnTime>
+		<FinishTime>71</FinishTime>
 		<Host></Host>
 	</Row>
 	<Row>
 		<TNAME>zPar</TNAME>
-		<Percentage>0.976042569</Percentage>
+		<Percentage>1.01851857</Percentage>
 		<SlotDuration>0</SlotDuration>
 		<SpawnDuration>0</SpawnDuration>
 		<ElapsedTime>11</ElapsedTime>
@@ -321,86 +321,86 @@
 		<SlotDuration>0</SlotDuration>
 		<SpawnDuration>0</SpawnDuration>
 		<ElapsedTime>0</ElapsedTime>
-		<SpawnTime>56</SpawnTime>
-		<FinishTime>56</FinishTime>
+		<SpawnTime>71</SpawnTime>
+		<FinishTime>71</FinishTime>
 		<Host></Host>
 	</Row>
 	<Row>
 		<TNAME>U0_M0_F00 Cleaning All PaRs</TNAME>
-		<Percentage>0</Percentage>
+		<Percentage>0.0925925896</Percentage>
 		<SlotDuration>0</SlotDuration>
-		<SpawnDuration>2</SpawnDuration>
-		<ElapsedTime>0</ElapsedTime>
-		<SpawnTime>61</SpawnTime>
-		<FinishTime>63</FinishTime>
+		<SpawnDuration>3</SpawnDuration>
+		<ElapsedTime>1</ElapsedTime>
+		<SpawnTime>76</SpawnTime>
+		<FinishTime>80</FinishTime>
 		<Host>csce-quinn-s1.engr.tamu.edu</Host>
 	</Row>
 	<Row>
 		<TNAME>U0_M0_F00 Original</TNAME>
-		<Percentage>93.5226288</Percentage>
+		<Percentage>91.5740738</Percentage>
 		<SlotDuration>0</SlotDuration>
-		<SpawnDuration>2</SpawnDuration>
-		<ElapsedTime>1054</ElapsedTime>
-		<SpawnTime>65</SpawnTime>
-		<FinishTime>1121</FinishTime>
+		<SpawnDuration>1</SpawnDuration>
+		<ElapsedTime>989</ElapsedTime>
+		<SpawnTime>82</SpawnTime>
+		<FinishTime>1072</FinishTime>
 		<Host>csce-quinn-s1.engr.tamu.edu</Host>
 	</Row>
 	<Row>
 		<TNAME>U0_M0_F00 Finish</TNAME>
-		<Percentage>2.66193438</Percentage>
+		<Percentage>2.77777767</Percentage>
 		<SlotDuration>0</SlotDuration>
 		<SpawnDuration>2</SpawnDuration>
 		<ElapsedTime>30</ElapsedTime>
-		<SpawnTime>1125</SpawnTime>
-		<FinishTime>1157</FinishTime>
+		<SpawnTime>1076</SpawnTime>
+		<FinishTime>1108</FinishTime>
 		<Host>csce-quinn-s1.engr.tamu.edu</Host>
 	</Row>
 	<Row>
 		<TNAME>Create Timing DB (SDF Mode)</TNAME>
-		<Percentage>0.354924589</Percentage>
+		<Percentage>0.277777791</Percentage>
 		<SlotDuration>0</SlotDuration>
-		<SpawnDuration>3</SpawnDuration>
-		<ElapsedTime>4</ElapsedTime>
-		<SpawnTime>1160</SpawnTime>
-		<FinishTime>1167</FinishTime>
+		<SpawnDuration>1</SpawnDuration>
+		<ElapsedTime>3</ElapsedTime>
+		<SpawnTime>1111</SpawnTime>
+		<FinishTime>1115</FinishTime>
 		<Host>csce-quinn-s1.engr.tamu.edu</Host>
 	</Row>
 	<Row>
 		<TNAME>Create Timing DB (post FPGA)</TNAME>
-		<Percentage>0.0887311473</Percentage>
+		<Percentage>0.185185179</Percentage>
 		<SlotDuration>0</SlotDuration>
 		<SpawnDuration>2</SpawnDuration>
-		<ElapsedTime>1</ElapsedTime>
-		<SpawnTime>1167</SpawnTime>
-		<FinishTime>1170</FinishTime>
+		<ElapsedTime>2</ElapsedTime>
+		<SpawnTime>1116</SpawnTime>
+		<FinishTime>1120</FinishTime>
 		<Host>csce-quinn-s1.engr.tamu.edu</Host>
 	</Row>
 	<Row>
 		<TNAME>zAudit Report</TNAME>
 		<Percentage>0</Percentage>
 		<SlotDuration>0</SlotDuration>
-		<SpawnDuration>2</SpawnDuration>
+		<SpawnDuration>3</SpawnDuration>
 		<ElapsedTime>0</ElapsedTime>
-		<SpawnTime>1170</SpawnTime>
-		<FinishTime>1172</FinishTime>
+		<SpawnTime>1120</SpawnTime>
+		<FinishTime>1123</FinishTime>
 		<Host>csce-quinn-s1.engr.tamu.edu</Host>
 	</Row>
 	<Row>
 		<TNAME>Analyze Compilation Profiler Results</TNAME>
-		<Percentage>0.354924589</Percentage>
+		<Percentage>0.370370358</Percentage>
 		<SlotDuration>0</SlotDuration>
 		<SpawnDuration>0</SpawnDuration>
 		<ElapsedTime>4</ElapsedTime>
-		<SpawnTime>1172</SpawnTime>
-		<FinishTime>1176</FinishTime>
+		<SpawnTime>1125</SpawnTime>
+		<FinishTime>1129</FinishTime>
 		<Host></Host>
 	</Row>
 	<Row>
 		<TNAME>Total time</TNAME>
 		<Percentage>100</Percentage>
 		<SlotDuration>0</SlotDuration>
-		<SpawnDuration>29</SpawnDuration>
-		<ElapsedTime>1127</ElapsedTime>
+		<SpawnDuration>26</SpawnDuration>
+		<ElapsedTime>1080</ElapsedTime>
 		<SpawnTime>-1</SpawnTime>
 		<FinishTime>-1</FinishTime>
 		<Host>-</Host>
@@ -424,20 +424,24 @@
 		<ExecDuration>4</ExecDuration>
 	</Row>
 	<Row>
+		<TNAME>Analyze Target Configuration Results</TNAME>
+		<ExecDuration>1</ExecDuration>
+	</Row>
+	<Row>
 		<TNAME>Build Fs Macro Library</TNAME>
 		<ExecDuration>4</ExecDuration>
 	</Row>
 	<Row>
 		<TNAME>VCS</TNAME>
-		<ExecDuration>10</ExecDuration>
+		<ExecDuration>9</ExecDuration>
 	</Row>
 	<Row>
 		<TNAME>Analyze VCS Results</TNAME>
-		<ExecDuration>1</ExecDuration>
+		<ExecDuration>2</ExecDuration>
 	</Row>
 	<Row>
 		<TNAME>Compilation Profiler (after VCSAnalyzer)</TNAME>
-		<ExecDuration>5</ExecDuration>
+		<ExecDuration>15</ExecDuration>
 	</Row>
 	<Row>
 		<TNAME>Prepare Backend Flow</TNAME>
@@ -445,7 +449,7 @@
 	</Row>
 	<Row>
 		<TNAME>Make RTL DB indexes</TNAME>
-		<ExecDuration>4</ExecDuration>
+		<ExecDuration>3</ExecDuration>
 	</Row>
 	<Row>
 		<TNAME>Make RTL DB link</TNAME>
@@ -453,11 +457,19 @@
 	</Row>
 	<Row>
 		<TNAME>zTopBuild</TNAME>
-		<ExecDuration>10</ExecDuration>
+		<ExecDuration>12</ExecDuration>
+	</Row>
+	<Row>
+		<TNAME>Analyze System Building Results</TNAME>
+		<ExecDuration>1</ExecDuration>
 	</Row>
 	<Row>
 		<TNAME>Build zCore Part_0</TNAME>
-		<ExecDuration>12</ExecDuration>
+		<ExecDuration>11</ExecDuration>
+	</Row>
+	<Row>
+		<TNAME>Post ZCore Compilation Join</TNAME>
+		<ExecDuration>1</ExecDuration>
 	</Row>
 	<Row>
 		<TNAME>zPar</TNAME>
@@ -465,11 +477,11 @@
 	</Row>
 	<Row>
 		<TNAME>U0_M0_F00 Cleaning All PaRs</TNAME>
-		<ExecDuration>4</ExecDuration>
+		<ExecDuration>7</ExecDuration>
 	</Row>
 	<Row>
 		<TNAME>U0_M0_F00 Original</TNAME>
-		<ExecDuration>1058</ExecDuration>
+		<ExecDuration>991</ExecDuration>
 	</Row>
 	<Row>
 		<TNAME>U0_M0_F00 Finish</TNAME>
@@ -477,15 +489,15 @@
 	</Row>
 	<Row>
 		<TNAME>Create Timing DB (SDF Mode)</TNAME>
-		<ExecDuration>10</ExecDuration>
-	</Row>
-	<Row>
-		<TNAME>Create Timing DB (post FPGA)</TNAME>
 		<ExecDuration>5</ExecDuration>
 	</Row>
 	<Row>
+		<TNAME>Create Timing DB (post FPGA)</TNAME>
+		<ExecDuration>6</ExecDuration>
+	</Row>
+	<Row>
 		<TNAME>zAudit Report</TNAME>
-		<ExecDuration>4</ExecDuration>
+		<ExecDuration>6</ExecDuration>
 	</Row>
 	<Row>
 		<TNAME>Analyze Compilation Profiler Results</TNAME>
@@ -508,9 +520,9 @@
 		</Host>
 	</Header>
 	<Row>
-		<TNAME>Check Vcs Binaries Version</TNAME>
-		<Percentage>0</Percentage>
-		<ElapsedTime>0</ElapsedTime>
+		<TNAME>Check Back-End Binaries Version</TNAME>
+		<Percentage>0.0924214423</Percentage>
+		<ElapsedTime>1</ElapsedTime>
 		<Host>csce-quinn-s1.engr.tamu.edu</Host>
 	</Row>
 	<Row>
@@ -521,8 +533,8 @@
 	</Row>
 	<Row>
 		<TNAME>Analyze Target Configuration Results</TNAME>
-		<Percentage>0</Percentage>
-		<ElapsedTime>0</ElapsedTime>
+		<Percentage>0.0924214423</Percentage>
+		<ElapsedTime>1</ElapsedTime>
 		<Host></Host>
 	</Row>
 	<Row>
@@ -539,68 +551,50 @@
 	</Row>
 	<Row>
 		<TNAME>VCS</TNAME>
-		<Percentage>0.355871886</Percentage>
-		<ElapsedTime>4</ElapsedTime>
+		<Percentage>0.646950066</Percentage>
+		<ElapsedTime>7</ElapsedTime>
 		<Host>csce-quinn-s1.engr.tamu.edu</Host>
 	</Row>
 	<Row>
 		<TNAME>Analyze VCS Results</TNAME>
-		<Percentage>0.0889679715</Percentage>
-		<ElapsedTime>1</ElapsedTime>
+		<Percentage>0.184842885</Percentage>
+		<ElapsedTime>2</ElapsedTime>
 		<Host></Host>
 	</Row>
 	<Row>
-		<TNAME>Synthesize no need to be redone</TNAME>
-		<Percentage>0</Percentage>
-		<ElapsedTime>0</ElapsedTime>
-		<Host></Host>
-	</Row>
-	<Row>
-		<TNAME>design_Default_RTL_Group_stable_Analyzer</TNAME>
-		<Percentage>0</Percentage>
-		<ElapsedTime>0</ElapsedTime>
-		<Host></Host>
-	</Row>
-	<Row>
-		<TNAME>Memory ram_zMem</TNAME>
-		<Percentage>0</Percentage>
-		<ElapsedTime>0</ElapsedTime>
-		<Host></Host>
-	</Row>
-	<Row>
-		<TNAME>Prepare Backend Flow</TNAME>
-		<Percentage>0.0889679715</Percentage>
-		<ElapsedTime>1</ElapsedTime>
-		<Host></Host>
-	</Row>
-	<Row>
-		<TNAME>Make RTL DB indexes</TNAME>
-		<Percentage>0</Percentage>
-		<ElapsedTime>0</ElapsedTime>
+		<TNAME>Compilation Profiler (after VCSAnalyzer)</TNAME>
+		<Percentage>0.831792951</Percentage>
+		<ElapsedTime>9</ElapsedTime>
 		<Host>csce-quinn-s1.engr.tamu.edu</Host>
 	</Row>
 	<Row>
-		<TNAME>Make RTL DB link</TNAME>
-		<Percentage>0</Percentage>
-		<ElapsedTime>0</ElapsedTime>
+		<TNAME>Prepare Backend Flow</TNAME>
+		<Percentage>0.0924214423</Percentage>
+		<ElapsedTime>1</ElapsedTime>
+		<Host></Host>
+	</Row>
+	<Row>
+		<TNAME>Compilation Profiler (after BackendEntry)</TNAME>
+		<Percentage>0.184842885</Percentage>
+		<ElapsedTime>2</ElapsedTime>
 		<Host>csce-quinn-s1.engr.tamu.edu</Host>
 	</Row>
 	<Row>
 		<TNAME>zTopBuild</TNAME>
-		<Percentage>0.533807814</Percentage>
-		<ElapsedTime>6</ElapsedTime>
+		<Percentage>0.739371538</Percentage>
+		<ElapsedTime>8</ElapsedTime>
 		<Host>csce-quinn-s1.engr.tamu.edu</Host>
 	</Row>
 	<Row>
 		<TNAME>Analyze System Building Results</TNAME>
-		<Percentage>0</Percentage>
-		<ElapsedTime>0</ElapsedTime>
+		<Percentage>0.0924214423</Percentage>
+		<ElapsedTime>1</ElapsedTime>
 		<Host></Host>
 	</Row>
 	<Row>
 		<TNAME>Build zCore Part_0</TNAME>
-		<Percentage>0.711743772</Percentage>
-		<ElapsedTime>8</ElapsedTime>
+		<Percentage>0.831792951</Percentage>
+		<ElapsedTime>9</ElapsedTime>
 		<Host>csce-quinn-s1.engr.tamu.edu</Host>
 	</Row>
 	<Row>
@@ -611,8 +605,8 @@
 	</Row>
 	<Row>
 		<TNAME>Post ZCore Compilation Join</TNAME>
-		<Percentage>0</Percentage>
-		<ElapsedTime>0</ElapsedTime>
+		<Percentage>0.0924214423</Percentage>
+		<ElapsedTime>1</ElapsedTime>
 		<Host></Host>
 	</Row>
 	<Row>
@@ -623,7 +617,7 @@
 	</Row>
 	<Row>
 		<TNAME>zPar</TNAME>
-		<Percentage>0.978647709</Percentage>
+		<Percentage>1.01663589</Percentage>
 		<ElapsedTime>11</ElapsedTime>
 		<Host></Host>
 	</Row>
@@ -635,32 +629,32 @@
 	</Row>
 	<Row>
 		<TNAME>U0_M0_F00 Cleaning All PaRs</TNAME>
-		<Percentage>0</Percentage>
-		<ElapsedTime>0</ElapsedTime>
+		<Percentage>0.0924214423</Percentage>
+		<ElapsedTime>1</ElapsedTime>
 		<Host>csce-quinn-s1.engr.tamu.edu</Host>
 	</Row>
 	<Row>
 		<TNAME>U0_M0_F00 Original</TNAME>
-		<Percentage>93.7722397</Percentage>
-		<ElapsedTime>1054</ElapsedTime>
+		<Percentage>91.404808</Percentage>
+		<ElapsedTime>989</ElapsedTime>
 		<Host>csce-quinn-s1.engr.tamu.edu</Host>
 	</Row>
 	<Row>
 		<TNAME>U0_M0_F00 Finish</TNAME>
-		<Percentage>2.66903925</Percentage>
+		<Percentage>2.77264333</Percentage>
 		<ElapsedTime>30</ElapsedTime>
 		<Host>csce-quinn-s1.engr.tamu.edu</Host>
 	</Row>
 	<Row>
 		<TNAME>Create Timing DB (SDF Mode)</TNAME>
-		<Percentage>0.355871886</Percentage>
-		<ElapsedTime>4</ElapsedTime>
+		<Percentage>0.277264327</Percentage>
+		<ElapsedTime>3</ElapsedTime>
 		<Host>csce-quinn-s1.engr.tamu.edu</Host>
 	</Row>
 	<Row>
 		<TNAME>Create Timing DB (post FPGA)</TNAME>
-		<Percentage>0.0889679715</Percentage>
-		<ElapsedTime>1</ElapsedTime>
+		<Percentage>0.184842885</Percentage>
+		<ElapsedTime>2</ElapsedTime>
 		<Host>csce-quinn-s1.engr.tamu.edu</Host>
 	</Row>
 	<Row>
@@ -671,14 +665,14 @@
 	</Row>
 	<Row>
 		<TNAME>Analyze Compilation Profiler Results</TNAME>
-		<Percentage>0.355871886</Percentage>
+		<Percentage>0.369685769</Percentage>
 		<ElapsedTime>4</ElapsedTime>
 		<Host></Host>
 	</Row>
 	<Row>
 		<TNAME>Total</TNAME>
 		<Percentage>100</Percentage>
-		<ElapsedTime>1124</ElapsedTime>
+		<ElapsedTime>1082</ElapsedTime>
 		<Host>-</Host>
 	</Row>
 </Table>
@@ -692,32 +686,60 @@
 		</ExecDuration>
 	</Header>
 	<Row>
+		<TNAME>Check Back-End Binaries Version</TNAME>
+		<ExecDuration>1</ExecDuration>
+	</Row>
+	<Row>
+		<TNAME>Analyze Target Configuration Results</TNAME>
+		<ExecDuration>1</ExecDuration>
+	</Row>
+	<Row>
 		<TNAME>VCS</TNAME>
-		<ExecDuration>4</ExecDuration>
+		<ExecDuration>7</ExecDuration>
 	</Row>
 	<Row>
 		<TNAME>Analyze VCS Results</TNAME>
-		<ExecDuration>1</ExecDuration>
+		<ExecDuration>2</ExecDuration>
+	</Row>
+	<Row>
+		<TNAME>Compilation Profiler (after VCSAnalyzer)</TNAME>
+		<ExecDuration>9</ExecDuration>
 	</Row>
 	<Row>
 		<TNAME>Prepare Backend Flow</TNAME>
 		<ExecDuration>1</ExecDuration>
 	</Row>
 	<Row>
+		<TNAME>Compilation Profiler (after BackendEntry)</TNAME>
+		<ExecDuration>2</ExecDuration>
+	</Row>
+	<Row>
 		<TNAME>zTopBuild</TNAME>
-		<ExecDuration>6</ExecDuration>
+		<ExecDuration>8</ExecDuration>
+	</Row>
+	<Row>
+		<TNAME>Analyze System Building Results</TNAME>
+		<ExecDuration>1</ExecDuration>
 	</Row>
 	<Row>
 		<TNAME>Build zCore Part_0</TNAME>
-		<ExecDuration>8</ExecDuration>
+		<ExecDuration>9</ExecDuration>
+	</Row>
+	<Row>
+		<TNAME>Post ZCore Compilation Join</TNAME>
+		<ExecDuration>1</ExecDuration>
 	</Row>
 	<Row>
 		<TNAME>zPar</TNAME>
 		<ExecDuration>11</ExecDuration>
 	</Row>
 	<Row>
+		<TNAME>U0_M0_F00 Cleaning All PaRs</TNAME>
+		<ExecDuration>1</ExecDuration>
+	</Row>
+	<Row>
 		<TNAME>U0_M0_F00 Original</TNAME>
-		<ExecDuration>1054</ExecDuration>
+		<ExecDuration>989</ExecDuration>
 	</Row>
 	<Row>
 		<TNAME>U0_M0_F00 Finish</TNAME>
@@ -725,11 +747,11 @@
 	</Row>
 	<Row>
 		<TNAME>Create Timing DB (SDF Mode)</TNAME>
-		<ExecDuration>4</ExecDuration>
+		<ExecDuration>3</ExecDuration>
 	</Row>
 	<Row>
 		<TNAME>Create Timing DB (post FPGA)</TNAME>
-		<ExecDuration>1</ExecDuration>
+		<ExecDuration>2</ExecDuration>
 	</Row>
 	<Row>
 		<TNAME>Analyze Compilation Profiler Results</TNAME>
@@ -750,28 +772,28 @@
 	</Header>
 	<Row>
 		<TNAME>Launch VCS</TNAME>
-		<ElapsedDuration>7</ElapsedDuration>
-		<ExecutionDuration>4</ExecutionDuration>
+		<ElapsedDuration>8</ElapsedDuration>
+		<ExecutionDuration>7</ExecutionDuration>
 	</Row>
 	<Row>
 		<TNAME>Elaboration Analyzer</TNAME>
-		<ElapsedDuration>1</ElapsedDuration>
-		<ExecutionDuration>1</ExecutionDuration>
+		<ElapsedDuration>2</ElapsedDuration>
+		<ExecutionDuration>2</ExecutionDuration>
 	</Row>
 	<Row>
 		<TNAME>Launch Verdi</TNAME>
-		<ElapsedDuration>2</ElapsedDuration>
-		<ExecutionDuration>0</ExecutionDuration>
+		<ElapsedDuration>5</ElapsedDuration>
+		<ExecutionDuration>1</ExecutionDuration>
 	</Row>
 	<Row>
 		<TNAME>Synthesis</TNAME>
-		<ElapsedDuration>2</ElapsedDuration>
-		<ExecutionDuration>1</ExecutionDuration>
+		<ElapsedDuration>5</ElapsedDuration>
+		<ExecutionDuration>3</ExecutionDuration>
 	</Row>
 	<Row>
 		<TNAME>Back end Entry</TNAME>
-		<ElapsedDuration>2</ElapsedDuration>
-		<ExecutionDuration>1</ExecutionDuration>
+		<ElapsedDuration>4</ElapsedDuration>
+		<ExecutionDuration>2</ExecutionDuration>
 	</Row>
 </Table>
 <Table id="top_ten_synth" name="">
@@ -787,9 +809,9 @@
 		</TotalDuration>
 	</Header>
 	<Row>
-		<ExecDuration>Bundle 0 (1s)</ExecDuration>
-		<WaitingSlotDuration>Bundle 0 (1s)</WaitingSlotDuration>
-		<TotalDuration>Bundle 0 (2s)</TotalDuration>
+		<ExecDuration>Bundle 0 (3s)</ExecDuration>
+		<WaitingSlotDuration>Bundle 0 (2s)</WaitingSlotDuration>
+		<TotalDuration>Bundle 0 (5s)</TotalDuration>
 	</Row>
 </Table>
 <Table id="back_end_stages" name="">
@@ -811,13 +833,13 @@
 	</Row>
 	<Row>
 		<TNAME>Build System</TNAME>
-		<ElapsedDuration>8</ElapsedDuration>
-		<ExecutionDuration>6</ExecutionDuration>
+		<ElapsedDuration>10</ElapsedDuration>
+		<ExecutionDuration>8</ExecutionDuration>
 	</Row>
 	<Row>
 		<TNAME>Build zCore Part_0</TNAME>
 		<ElapsedDuration>10</ElapsedDuration>
-		<ExecutionDuration>8</ExecutionDuration>
+		<ExecutionDuration>9</ExecutionDuration>
 	</Row>
 	<Row>
 		<TNAME>Convert Netlist</TNAME>
@@ -827,7 +849,7 @@
 	<Row>
 		<TNAME>Create Global DB</TNAME>
 		<ElapsedDuration>2</ElapsedDuration>
-		<ExecutionDuration>1</ExecutionDuration>
+		<ExecutionDuration>0</ExecutionDuration>
 	</Row>
 	<Row>
 		<TNAME>Create Timing DB</TNAME>
@@ -836,13 +858,13 @@
 	</Row>
 	<Row>
 		<TNAME>Create Timing DB (SDF Mode)</TNAME>
-		<ElapsedDuration>7</ElapsedDuration>
-		<ExecutionDuration>4</ExecutionDuration>
+		<ElapsedDuration>4</ElapsedDuration>
+		<ExecutionDuration>3</ExecutionDuration>
 	</Row>
 	<Row>
 		<TNAME>Create Timing DB (post FPGA)</TNAME>
-		<ElapsedDuration>3</ElapsedDuration>
-		<ExecutionDuration>1</ExecutionDuration>
+		<ElapsedDuration>4</ElapsedDuration>
+		<ExecutionDuration>2</ExecutionDuration>
 	</Row>
 	<Row>
 		<TNAME>Place and Route System</TNAME>
@@ -868,8 +890,8 @@
 		</TotalDuration>
 	</Header>
 	<Row>
-		<ExecDuration>Build zCore Part_0 (8s)</ExecDuration>
-		<WaitingSlotDuration>Build zCore Part_0 (2s)</WaitingSlotDuration>
+		<ExecDuration>Build zCore Part_0 (9s)</ExecDuration>
+		<WaitingSlotDuration>Build zCore Part_0 (1s)</WaitingSlotDuration>
 		<TotalDuration>Build zCore Part_0 (10s)</TotalDuration>
 	</Row>
 </Table>
@@ -886,9 +908,9 @@
 		</TotalDuration>
 	</Header>
 	<Row>
-		<ExecDuration>U0_M0_F00 Original (17min 34s)</ExecDuration>
-		<WaitingSlotDuration>U0_M0_F00 Original (2s)</WaitingSlotDuration>
-		<TotalDuration>U0_M0_F00 Original (17min 36s)</TotalDuration>
+		<ExecDuration>U0_M0_F00 Original (16min 29s)</ExecDuration>
+		<WaitingSlotDuration>U0_M0_F00 Original (1s)</WaitingSlotDuration>
+		<TotalDuration>U0_M0_F00 Original (16min 30s)</TotalDuration>
 	</Row>
 </Table>
 <Table id="fpga_compilation" name="">
@@ -910,8 +932,8 @@
 	</Row>
 	<Row>
 		<FPGA>U0_M0_F00/U0_M0_F0</FPGA>
-		<WRITE_BITSTREAM>174</WRITE_BITSTREAM>
-		<total>174</total>
+		<WRITE_BITSTREAM>169</WRITE_BITSTREAM>
+		<total>169</total>
 	</Row>
 </Table>
 <Table id="machine_names" name="">
@@ -944,12 +966,12 @@
 	<Row>
 		<Machine>csce-quinn-s1.engr.tamu.edu</Machine>
 		<Model> Intel(R) Xeon(R) CPU E5-2650 v3 @ 2.30GHz</Model>
-		<CPU> 2434.625</CPU>
+		<CPU> 1982.879</CPU>
 		<Cache> 25600 KB</Cache>
 		<Core> 10</Core>
 		<Bogomips> 4600.38</Bogomips>
 		<Address> 46 bits physical, 48 bits virtual</Address>
-		<PercentCPU> 13%</PercentCPU>
+		<PercentCPU> 3%</PercentCPU>
 	</Row>
 </Table>
 <Table id="memory_usage" name="">
@@ -969,121 +991,121 @@
 	</Header>
 	<Row>
 		<TNAME>backend_default_U0_M0_F00_Original</TNAME>
-		<Max_resident_size>5489088</Max_resident_size>
+		<Max_resident_size>5485032</Max_resident_size>
 		<TaskLabel>Original</TaskLabel>
 		<TaskQueue>ZebuIse</TaskQueue>
 	</Row>
 	<Row>
 		<TNAME>backend_default_zCoreBuild_Part_0</TNAME>
-		<Max_resident_size>476824</Max_resident_size>
+		<Max_resident_size>473904</Max_resident_size>
 		<TaskLabel>Build zCore Part_0</TaskLabel>
 		<TaskQueue>Zebu</TaskQueue>
 	</Row>
 	<Row>
-		<TNAME>backend_default_U0_M0_F00_zFpgaTiming</TNAME>
-		<Max_resident_size>394776</Max_resident_size>
-		<TaskLabel>Create Timing DB (SDF Mode)</TaskLabel>
-		<TaskQueue>Zebu</TaskQueue>
-	</Row>
-	<Row>
 		<TNAME>backend_default_zSimzilla</TNAME>
-		<Max_resident_size>362852</Max_resident_size>
+		<Max_resident_size>387012</Max_resident_size>
 		<TaskLabel>Simulate Graphs</TaskLabel>
 		<TaskQueue>Zebu</TaskQueue>
 	</Row>
 	<Row>
+		<TNAME>backend_default_U0_M0_F00_zFpgaTiming</TNAME>
+		<Max_resident_size>384360</Max_resident_size>
+		<TaskLabel>Create Timing DB (SDF Mode)</TaskLabel>
+		<TaskQueue>Zebu</TaskQueue>
+	</Row>
+	<Row>
 		<TNAME>backend_default_zDB_Global</TNAME>
-		<Max_resident_size>332764</Max_resident_size>
+		<Max_resident_size>328864</Max_resident_size>
 		<TaskLabel>Create Global DB</TaskLabel>
 		<TaskQueue>Zebu</TaskQueue>
 	</Row>
 	<Row>
 		<TNAME>backend_default_zTopBuild</TNAME>
-		<Max_resident_size>321716</Max_resident_size>
+		<Max_resident_size>310228</Max_resident_size>
 		<TaskLabel>Build System</TaskLabel>
 		<TaskQueue>Zebu</TaskQueue>
 	</Row>
 	<Row>
 		<TNAME>BE_Version_Checker</TNAME>
-		<Max_resident_size>247824</Max_resident_size>
+		<Max_resident_size>247820</Max_resident_size>
 		<TaskLabel>Check Back-End Binaries Version</TaskLabel>
 		<TaskQueue>ZebuLocal</TaskQueue>
 	</Row>
 	<Row>
 		<TNAME>backend_default_zGraphGenerator</TNAME>
-		<Max_resident_size>168332</Max_resident_size>
+		<Max_resident_size>164280</Max_resident_size>
 		<TaskLabel>Build Accessibility Graphs</TaskLabel>
 		<TaskQueue>Zebu</TaskQueue>
 	</Row>
 	<Row>
 		<TNAME>backend_default_zRtlToEqui</TNAME>
-		<Max_resident_size>162460</Max_resident_size>
+		<Max_resident_size>158612</Max_resident_size>
 		<TaskLabel>Convert Netlist</TaskLabel>
 		<TaskQueue>Zebu</TaskQueue>
 	</Row>
 	<Row>
 		<TNAME>vcs_splitter_VCS_Task_Builder</TNAME>
-		<Max_resident_size>156592</Max_resident_size>
+		<Max_resident_size>156660</Max_resident_size>
 		<TaskLabel>Launch VCS</TaskLabel>
 		<TaskQueue>Zebu</TaskQueue>
 	</Row>
 	<Row>
 		<TNAME>backend_default_U0_M0_F08_FpgaPostProc</TNAME>
-		<Max_resident_size>143348</Max_resident_size>
+		<Max_resident_size>149148</Max_resident_size>
 		<TaskLabel>FPGA post Process</TaskLabel>
 		<TaskQueue>Zebu</TaskQueue>
 	</Row>
 	<Row>
 		<TNAME>backend_default_zTimeFpga</TNAME>
-		<Max_resident_size>119700</Max_resident_size>
+		<Max_resident_size>126472</Max_resident_size>
 		<TaskLabel>Create Timing DB (post FPGA)</TaskLabel>
 		<TaskQueue>Zebu</TaskQueue>
 	</Row>
 	<Row>
 		<TNAME>backend_default_zEquiGenerator</TNAME>
-		<Max_resident_size>118864</Max_resident_size>
+		<Max_resident_size>120540</Max_resident_size>
 		<TaskLabel>Build Equipotentials</TaskLabel>
 		<TaskQueue>Zebu</TaskQueue>
 	</Row>
 	<Row>
 		<TNAME>backend_default_zTime</TNAME>
-		<Max_resident_size>107456</Max_resident_size>
+		<Max_resident_size>114268</Max_resident_size>
 		<TaskLabel>Create Timing DB</TaskLabel>
 		<TaskQueue>Zebu</TaskQueue>
 	</Row>
 	<Row>
 		<TNAME>backend_default_zSimuFsdbHeader</TNAME>
-		<Max_resident_size>105820</Max_resident_size>
+		<Max_resident_size>109892</Max_resident_size>
 		<TaskLabel>zSimuFsdbHeader</TaskLabel>
 		<TaskQueue>Zebu</TaskQueue>
 	</Row>
 	<Row>
 		<TNAME>RhinoFsdb_Builder</TNAME>
-		<Max_resident_size>85048</Max_resident_size>
+		<Max_resident_size>85032</Max_resident_size>
 		<TaskLabel>Build Rhino Fsdb</TaskLabel>
 		<TaskQueue>Zebu</TaskQueue>
 	</Row>
 	<Row>
 		<TNAME>design_Default_RTL_GroupBundle_0_Synthesis</TNAME>
-		<Max_resident_size>82272</Max_resident_size>
+		<Max_resident_size>82320</Max_resident_size>
 		<TaskLabel>Bundle 0</TaskLabel>
 		<TaskQueue>ZebuSynthesis</TaskQueue>
 	</Row>
 	<Row>
 		<TNAME>backend_default_RTL_DB_Indexer</TNAME>
-		<Max_resident_size>77996</Max_resident_size>
+		<Max_resident_size>78008</Max_resident_size>
 		<TaskLabel>Make RTL DB indexes</TaskLabel>
 		<TaskQueue>Zebu</TaskQueue>
 	</Row>
 	<Row>
 		<TNAME>backend_default_zAuditReport</TNAME>
-		<Max_resident_size>58188</Max_resident_size>
+		<Max_resident_size>58384</Max_resident_size>
 		<TaskLabel>zAudit Report</TaskLabel>
 		<TaskQueue>ZebuLocal</TaskQueue>
 	</Row>
 	<Row>
 		<TNAME>Vcs_Version_Checker</TNAME>
-		<Max_resident_size>49944</Max_resident_size>
+		<Max_resident_size>54868</Max_resident_size>
 		<TaskLabel>Check Vcs Binaries Version</TaskLabel>
 		<TaskQueue>ZebuLocal</TaskQueue>
 	</Row>
@@ -1095,20 +1117,20 @@
 	</Row>
 	<Row>
 		<TNAME>backend_default_RTL_DB_RunTime</TNAME>
-		<Max_resident_size>45444</Max_resident_size>
+		<Max_resident_size>45428</Max_resident_size>
 		<TaskLabel>Make RTL DB for Run Time</TaskLabel>
 		<TaskQueue>Zebu</TaskQueue>
 	</Row>
 	<Row>
-		<TNAME>Verdi_Compilation</TNAME>
-		<Max_resident_size>44200</Max_resident_size>
-		<TaskLabel>Launch Verdi</TaskLabel>
+		<TNAME>Target_Config</TNAME>
+		<Max_resident_size>37644</Max_resident_size>
+		<TaskLabel>Target Configuration</TaskLabel>
 		<TaskQueue>Zebu</TaskQueue>
 	</Row>
 	<Row>
-		<TNAME>Target_Config</TNAME>
-		<Max_resident_size>38504</Max_resident_size>
-		<TaskLabel>Target Configuration</TaskLabel>
+		<TNAME>Verdi_Compilation</TNAME>
+		<Max_resident_size>34400</Max_resident_size>
+		<TaskLabel>Launch Verdi</TaskLabel>
 		<TaskQueue>Zebu</TaskQueue>
 	</Row>
 	<Row>
@@ -1119,38 +1141,38 @@
 	</Row>
 	<Row>
 		<TNAME>backend_default_Intermediate_Profiling_Results_Analyzer_VCSAnalyzer</TNAME>
-		<Max_resident_size>18468</Max_resident_size>
+		<Max_resident_size>18464</Max_resident_size>
 		<TaskLabel>Compilation Profiler (after VCSAnalyzer)</TaskLabel>
 		<TaskQueue>ZebuLocal</TaskQueue>
 	</Row>
 	<Row>
 		<TNAME>backend_default_Intermediate_Profiling_Results_Analyzer_ZTopBuildAnalyzer</TNAME>
-		<Max_resident_size>18468</Max_resident_size>
+		<Max_resident_size>18464</Max_resident_size>
 		<TaskLabel>Compilation Profiler (after ZTopBuildAnalyzer)</TaskLabel>
 		<TaskQueue>ZebuLocal</TaskQueue>
 	</Row>
 	<Row>
 		<TNAME>FE_Version_Checker</TNAME>
-		<Max_resident_size>11156</Max_resident_size>
+		<Max_resident_size>11160</Max_resident_size>
 		<TaskLabel>Check Front-End Binaries Version</TaskLabel>
 		<TaskQueue>ZebuLocal</TaskQueue>
 	</Row>
 	<Row>
 		<TNAME>backend_default_FpgaResultAnalyzer</TNAME>
-		<Max_resident_size>7920</Max_resident_size>
+		<Max_resident_size>7924</Max_resident_size>
 		<TaskLabel>FPGA PaRs Analyzer</TaskLabel>
-		<TaskQueue>Zebu</TaskQueue>
-	</Row>
-	<Row>
-		<TNAME>backend_default_U0_M0_F00_Finish</TNAME>
-		<Max_resident_size>2084</Max_resident_size>
-		<TaskLabel>Finish</TaskLabel>
 		<TaskQueue>Zebu</TaskQueue>
 	</Row>
 	<Row>
 		<TNAME>backend_default_U0_M0_F00_Cleaning</TNAME>
 		<Max_resident_size>2080</Max_resident_size>
 		<TaskLabel>Cleaning All PaRs</TaskLabel>
+		<TaskQueue>Zebu</TaskQueue>
+	</Row>
+	<Row>
+		<TNAME>backend_default_U0_M0_F00_Finish</TNAME>
+		<Max_resident_size>2076</Max_resident_size>
+		<TaskLabel>Finish</TaskLabel>
 		<TaskQueue>Zebu</TaskQueue>
 	</Row>
 </Table>
@@ -1168,23 +1190,23 @@
 	</Header>
 	<Row>
 		<TaskQueue>Zebu</TaskQueue>
-		<Max>476824</Max>
-		<Average>150919</Average>
+		<Max>473904</Max>
+		<Average>151012</Average>
 	</Row>
 	<Row>
 		<TaskQueue>ZebuIse</TaskQueue>
-		<Max>5489088</Max>
-		<Average>5489088</Average>
+		<Max>5485032</Max>
+		<Average>5485032</Average>
 	</Row>
 	<Row>
 		<TaskQueue>ZebuLocal</TaskQueue>
-		<Max>247824</Max>
-		<Average>60359</Average>
+		<Max>247820</Max>
+		<Average>61089</Average>
 	</Row>
 	<Row>
 		<TaskQueue>ZebuSynthesis</TaskQueue>
-		<Max>82272</Max>
-		<Average>82272</Average>
+		<Max>82320</Max>
+		<Average>82320</Average>
 	</Row>
 </Table>
 <Table id="max_avg_grid_delay_per_job_queue" name="">
@@ -1201,23 +1223,23 @@
 	</Header>
 	<Row>
 		<job_queue>Zebu</job_queue>
-		<max_grid_delay_per_jq>3</max_grid_delay_per_jq>
+		<max_grid_delay_per_jq>4</max_grid_delay_per_jq>
 		<average_grid_delay_per_jq>1</average_grid_delay_per_jq>
 	</Row>
 	<Row>
 		<job_queue>ZebuIse</job_queue>
-		<max_grid_delay_per_jq>2</max_grid_delay_per_jq>
-		<average_grid_delay_per_jq>2</average_grid_delay_per_jq>
+		<max_grid_delay_per_jq>1</max_grid_delay_per_jq>
+		<average_grid_delay_per_jq>1</average_grid_delay_per_jq>
 	</Row>
 	<Row>
 		<job_queue>ZebuLocal</job_queue>
-		<max_grid_delay_per_jq>2</max_grid_delay_per_jq>
-		<average_grid_delay_per_jq>1</average_grid_delay_per_jq>
+		<max_grid_delay_per_jq>3</max_grid_delay_per_jq>
+		<average_grid_delay_per_jq>2</average_grid_delay_per_jq>
 	</Row>
 	<Row>
 		<job_queue>ZebuSynthesis</job_queue>
-		<max_grid_delay_per_jq>1</max_grid_delay_per_jq>
-		<average_grid_delay_per_jq>1</average_grid_delay_per_jq>
+		<max_grid_delay_per_jq>2</max_grid_delay_per_jq>
+		<average_grid_delay_per_jq>2</average_grid_delay_per_jq>
 	</Row>
 </Table>
 </Metrics>

@@ -11,7 +11,7 @@ set triton_violated_worst 0.000ns
 set triton_timing_violated 0
 set triton_violated_clock  CLK_fib_clk
 set triton_violated_path 0
-set triton_cpu_time 88
+set triton_cpu_time 90
 set triton_slice_util  1.0
 set triton_max_slr_util 4.1
 set triton_very_high_SLL  0

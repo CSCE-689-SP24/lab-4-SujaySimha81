@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.1_EP06_159265 (lin64) Build 0 Fri Oct 11 16:37:07 PDT 2019
-| Date         : Mon Apr 29 13:54:12 2024
+| Date         : Wed May  1 20:00:38 2024
 | Host         : csce-quinn-s1.engr.tamu.edu running 64-bit Red Hat Enterprise Linux Server release 7.9 (Maipo)
 | Command      : report_design_analysis -congestion -file ./fpga_reports/vivado/report_design_analysis__place_congestion.rpt
 | Design       : fx_top

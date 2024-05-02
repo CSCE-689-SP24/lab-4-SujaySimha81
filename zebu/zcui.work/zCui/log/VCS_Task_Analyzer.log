@@ -18,11 +18,12 @@ Evaluating synthesis (3/10)
    Synthesis incrementability is enabled
    Cache statistics 33 hits on 48 calls
    Number of unrealizable synthesis 0
-   Number of synthesis to be redone 1
-   Number of stable synthesis 11
+   Number of synthesis to be redone 3
+   Number of stable synthesis 9
 Making synthesis bundles (4/10)
    Size method: 23
-Number of regular stable synthesis: 11
+Number of regular stable synthesis: 9
 Number of regular synthesis to be redone: 1
 File ./zCui/why/design_Default_RTL_Group_Synthesis_Result.why written
    Making dummy stable bundle task
+Task executed in 2s

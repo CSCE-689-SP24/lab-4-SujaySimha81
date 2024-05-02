@@ -11,3 +11,5 @@ u_clk0 -> u_clk0 -> zceiClockPort
 u_clk1 -> u_clk1 -> zceiClockPort
 u_clk0 -> u_clk0 -> zceiClockPort
 u_clk1 -> u_clk1 -> zceiClockPort
+u_clk0 -> u_clk0 -> zceiClockPort
+u_clk1 -> u_clk1 -> zceiClockPort

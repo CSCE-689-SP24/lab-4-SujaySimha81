@@ -378,7 +378,7 @@ GoToLineForm_base = 523,332,234,111
 QwUserAskDlg = 577,292,324,134
 QwWarnMsgDlg = 330,235,600,250
 openFileDlg = 339,146,602,483
-qWaveSignalDialog = 240,148,800,479
+qWaveSignalDialog = 189,97,800,479
 [Relationship]
 hideRecursiceNode = FALSE
 [Session Cache]
@@ -488,6 +488,9 @@ nLineSize = 1024
 [Test]
 verbose_progress = FALSE
 [TestBenchBrowser]
+hideWatchView = TRUE
+hideMemberView = TRUE
+hideLocalView = TRUE
 -showUVMDynamicHierTreeWin = FALSE
 [Text]
 hdlTypeName = blue4
@@ -663,34 +666,34 @@ DefaultLogTimeUnit = "1.000000ns"
 [VIA.oneSearch.preference.vgifColumnSettingRC.setting0]
 parRuleSets = ""
 [VIA.oneSearch.preference.vgifColumnSettingRC.setting0.column0]
-name = Severity
-width = 60
-visualIndex = 1
-isHidden = TRUE
-isUserChangeColumnVisible = FALSE
-[VIA.oneSearch.preference.vgifColumnSettingRC.setting0.column1]
-name = Time
-width = 60
-visualIndex = 0
-isHidden = TRUE
-isUserChangeColumnVisible = FALSE
-[VIA.oneSearch.preference.vgifColumnSettingRC.setting0.column2]
-name = Code
-width = 60
-visualIndex = 2
-isHidden = TRUE
-isUserChangeColumnVisible = FALSE
-[VIA.oneSearch.preference.vgifColumnSettingRC.setting0.column3]
 name = Type
 width = 60
 visualIndex = 3
 isHidden = TRUE
 isUserChangeColumnVisible = FALSE
-[VIA.oneSearch.preference.vgifColumnSettingRC.setting0.column4]
+[VIA.oneSearch.preference.vgifColumnSettingRC.setting0.column1]
 name = Message
 width = 2000
 visualIndex = 4
 isHidden = FALSE
+isUserChangeColumnVisible = FALSE
+[VIA.oneSearch.preference.vgifColumnSettingRC.setting0.column2]
+name = Time
+width = 60
+visualIndex = 0
+isHidden = TRUE
+isUserChangeColumnVisible = FALSE
+[VIA.oneSearch.preference.vgifColumnSettingRC.setting0.column3]
+name = Code
+width = 60
+visualIndex = 2
+isHidden = TRUE
+isUserChangeColumnVisible = FALSE
+[VIA.oneSearch.preference.vgifColumnSettingRC.setting0.column4]
+name = Severity
+width = 60
+visualIndex = 1
+isHidden = TRUE
 isUserChangeColumnVisible = FALSE
 [Vi]
 ViFont = "Clean 14"
@@ -1027,7 +1030,7 @@ displayVerticalGrid = FALSE
 displayHorizontalGrid = FALSE
 waveClickMemberNode = FALSE
 RotateAnalogColor = ID_RED5 ID_ORANGE5 ID_YELLOW5 ID_GREEN5 ID_CYAN5 ID_BLUE5 ID_PURPLE5 ID_RED7 ID_ORANGE7 ID_YELLOW4 ID_GREEN7 ID_CYAN7 ID_BLUE7 ID_PURPLE7 ID_ORANGE4 ID_YELLOW5
-getSignalForm = 240 148 800 479 164 381 390 89
+getSignalForm = 189 97 800 479 245 381 505 183
 [cov_hier_name_column]
 justify = TRUE
 [coverageColors]

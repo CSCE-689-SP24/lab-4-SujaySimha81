@@ -22,7 +22,7 @@
 
 # zSimzilla --zebu-work . --generate-graphs 
 
-# start time is Mon Apr 29 13:43:59 2024
+# start time is Wed May  1 19:51:29 2024
 
 
 
@@ -30,15 +30,15 @@
 # Build Date : Oct 18 2022 - 01:01:26
 # ---------------------------System Context--------------------------- 
 # Cpu        40 x bogomips - 4604.90 Intel(R) Xeon(R) CPU E5-2650 v3 @ 2.30GHz
-#            Load: 0.40 0.15 0.16 3/505 35942
+#            Load: 0.69 0.22 0.10 3/522 6106
 #            Hostname: csce-quinn-s1.engr.tamu.edu   OS: Linux 3.10.0-1160.108.1.el7.x86_64
-# Memory     Total: 193183 MB Free: 171137 MB
-#            Total Free including cache: 187247 MB
-#            Swap cache: 0 MB Cached space: 16110 MB
+# Memory     Total: 193183 MB Free: 170825 MB
+#            Total Free including cache: 187163 MB
+#            Swap cache: 0 MB Cached space: 16338 MB
 #            Swap space: 4095 MB Free Swap space: 4095 MB
 #            VmSize: 389 MB VmPeak: 389 MB
 # Disk Space Total: 50 GB Available: 8 GB Used: 42 GB
-#            Free inodes: 104731922
+#            Free inodes: 104730544
 # Stack                                Soft Limit           Hard Limit  
 #            Max stack size            8388608              unlimited            bytes     
 # -------------------------------------------------------------------- 
@@ -46,7 +46,7 @@
 
 #   step SIMZILLA : --threads: using 10 threads (maximum is 40).
 #   step Update options by env : Starting
-#   step Update options by env : Done in       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.40       fm:171109 m      vm:453 m       vm:+0 m      um:209 m       um:+0 m
+#   step Update options by env : Done in       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.69       fm:170821 m      vm:453 m       vm:+0 m      um:212 m       um:+0 m
 #   step SMZ : Disable virtual slicing during graph generation
 ### warning in SIMZILLA [PRL0001W] : SMZ0079 - Disable '--pgb-enable-distributed-header-generation' in non-PGB flow
 #   step EDIF LOADER : reading EDIF file '/opt/coe/synopsys/zebu/Q-2020.03-SP1-4/etc/libXilinx.edif.gz'
@@ -54,7 +54,7 @@
 #   step === Load equi netlist : Starting
 #   step SMZ : reading netlist ./tools/zDB/zTopBuild_equi.edf.gz
 #   step ZNF PARSER : reading netlist from ZNF file './tools/zDB/zTopBuild_equi.edf.gz'
-#   step === Load equi netlist : Done in     elapsed:0.2 s    user:0.2 s      system:0 s      %cpu:78.43       load:0.40       fm:171027 m      vm:467 m       vm:+1 m      um:224 m       um:+0 m
+#   step === Load equi netlist : Done in     elapsed:0.3 s    user:0.3 s      system:0 s     %cpu:122.45       load:0.69       fm:170788 m      vm:467 m       vm:+1 m      um:228 m       um:+1 m
 #   step LINK : Starting
 #   step SMZ : linkMacros = 2
 #   step EDIF LOADER : reading EDIF file '/opt/coe/synopsys/zebu/Q-2020.03-SP1-4/etc/zSimzilla/edifs/extra_cells.edf.txt'
@@ -108,14 +108,14 @@
 #   step SMZ : 	 module fs_macros.mult27x18: 0 up-insts
 #   step SMZ : replaced module (old -> new, #up-insts): xcve.carry4 -> simzilla_extra_cells.CARRY4, 41
 #   step SMZ : replaced module (old -> new, #up-insts): xcve.carry8 -> simzilla_extra_cells.CARRY8, 0
-#   step LINK : Done in     elapsed:0.2 s    user:0.2 s    system:0.1 s     %cpu:176.47       load:0.40       fm:171023 m      vm:470 m       vm:+3 m      um:228 m       um:+4 m
+#   step LINK : Done in     elapsed:0.1 s    user:0.1 s      system:0 s      %cpu:58.82       load:0.69       fm:170780 m      vm:470 m       vm:+3 m      um:233 m       um:+5 m
 #   step === GraphBuilder : Starting
 #   step Build WB : Starting
-#   step Build WB : Done in       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.40       fm:171021 m      vm:503 m      vm:+33 m      um:230 m       um:+2 m
+#   step Build WB : Done in       elapsed:0 s      user:0 s    system:0.1 s     %cpu:800.00       load:0.69       fm:170777 m      vm:503 m      vm:+33 m      um:236 m       um:+3 m
 #   step Build HW : Starting
 #   step SMZ : #hierWires: 1309
 #   step SMZ : #equis:     1309
-#   step Build HW : Done in       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.40       fm:171021 m      vm:503 m       vm:+0 m      um:230 m       um:+0 m
+#   step Build HW : Done in       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.69       fm:170777 m      vm:503 m       vm:+0 m      um:236 m       um:+0 m
 #   step report unknown models : Starting
 #   step SMZ : #unknown behavior driver modules: 9
 #   step SMZ : Module rom_ZMEM_mem (memory): 1 occurences
@@ -128,24 +128,24 @@
 #   step SMZ : Module ZSVA_MOD_0: 1 occurences
 #   step SMZ : Module ZSVA_MOD_1: 1 occurences
 #   step SMZ : #unknown behavior driver instances: 112
-#   step report unknown models : Done in       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.40       fm:171021 m      vm:503 m       vm:+0 m      um:230 m       um:+0 m
+#   step report unknown models : Done in       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.69       fm:170773 m      vm:503 m       vm:+0 m      um:236 m       um:+0 m
 #   step Load AnnotationDB : Starting
 #   step AnoDB : Anotation file './tools/zDB/zTopBuild_equi.inf' successfully opened
 #   step Annotation DB : Closing file './tools/zDB/zTopBuild_equi.inf'
 #   step SMZ : #constants           from AnnotationDB: 9
 #   step SMZ : #transparent latches from AnnotationDB: 0
-#   step Load AnnotationDB : Done in       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.40       fm:171021 m      vm:503 m       vm:+0 m      um:230 m       um:+0 m
+#   step Load AnnotationDB : Done in       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.69       fm:170765 m      vm:503 m       vm:+0 m      um:236 m       um:+0 m
 #   step resize cells : Starting
-#   step resize cells : Done in       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.40       fm:171021 m      vm:503 m       vm:+0 m      um:230 m       um:+0 m
+#   step resize cells : Done in       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.69       fm:170765 m      vm:503 m       vm:+0 m      um:236 m       um:+0 m
 #   step Build indexer for equiID : Starting
 #   step SMZ : #EquiID (#unfolded wire on equi netlist): 1309 (1784)
-#   step Build indexer for equiID : Done in       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.40       fm:171016 m     vm:1271 m     vm:+768 m      um:234 m       um:+4 m
+#   step Build indexer for equiID : Done in       elapsed:0 s    user:0.1 s      system:0 s     %cpu:800.00       load:0.69       fm:170751 m     vm:1271 m     vm:+768 m      um:240 m       um:+4 m
 #   step Set EquiID of cells : Starting
-#   step Set EquiID of cells : Done in       elapsed:0 s    user:0.1 s      system:0 s    %cpu:2000.00       load:0.40       fm:171016 m     vm:1271 m       vm:+0 m      um:234 m       um:+0 m
+#   step Set EquiID of cells : Done in       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.69       fm:170751 m     vm:1271 m       vm:+0 m      um:240 m       um:+0 m
 #   step SMZ : EquiID done with 0 errors
 #   step Create rtl2Equi : Starting
 #   step SMZ : rtl2Equi uses mmap iterator
-#   step Create rtl2Equi : Done in       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.40       fm:171016 m     vm:1271 m       vm:+0 m      um:234 m       um:+0 m
+#   step Create rtl2Equi : Done in     elapsed:0.1 s      user:0 s      system:0 s       %cpu:0.00       load:0.69       fm:170751 m     vm:1271 m       vm:+0 m      um:240 m       um:+0 m
 #   step populate cells : Starting
 #   step SMZ : ##################################simplified LUT: 75
 #   step SMZ : #LUT3: avg.#products/#ops (nodes): 50 / 2.22 / 3.48 (4.58)
@@ -157,27 +157,27 @@
 #   step SMZ : #LUT5: avg.#products/#ops for min: 7 / 7 / 19
 #   step SMZ : #LUT6: avg.#products/#ops for min: 13 / 9.15385 / 40.3846
 #   step SMZ : #transparent latches (#processed): 0(0)
-#   step populate cells : Done in     elapsed:0.2 s    user:0.5 s    system:0.5 s     %cpu:689.66       load:0.40       fm:170955 m     vm:1362 m      vm:+91 m      um:322 m      um:+88 m
+#   step populate cells : Done in     elapsed:0.2 s    user:0.5 s    system:0.6 s     %cpu:647.06       load:0.69       fm:170646 m     vm:1366 m      vm:+95 m      um:335 m      um:+95 m
 #   step Populating MacroCells : Starting
-#   step Populating MacroCells : Done in       elapsed:0 s    user:0.3 s      system:0 s     %cpu:800.00       load:0.40       fm:170952 m     vm:1362 m       vm:+0 m      um:325 m       um:+3 m
+#   step Populating MacroCells : Done in     elapsed:0.1 s    user:0.3 s      system:0 s     %cpu:750.00       load:0.69       fm:170638 m     vm:1366 m       vm:+0 m      um:336 m       um:+1 m
 #   step Substituting MacroCells : Starting
 #   step SMZ : Total 40 macro cells are substituted
-#   step Substituting MacroCells : Done in       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.40       fm:170952 m     vm:1362 m       vm:+0 m      um:325 m       um:+0 m
+#   step Substituting MacroCells : Done in       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.69       fm:170637 m     vm:1366 m       vm:+0 m      um:336 m       um:+0 m
 #   step SCC computation : Starting
 #   step SMZ : #SCCs: 0
-#   step SCC computation : Done in     elapsed:0.1 s      user:0 s    system:0.1 s     %cpu:400.00       load:0.40       fm:170926 m     vm:2130 m     vm:+768 m      um:350 m      um:+25 m
+#   step SCC computation : Done in       elapsed:0 s    user:0.1 s    system:0.2 s     %cpu:857.14       load:0.69       fm:170591 m     vm:2134 m     vm:+768 m      um:376 m      um:+40 m
 #   step Compute level of cells for combinational graph : Starting
-#   step Compute level of cells for combinational graph : Done in       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.40       fm:170926 m     vm:2130 m       vm:+0 m      um:350 m       um:+0 m
+#   step Compute level of cells for combinational graph : Done in       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.69       fm:170590 m     vm:2134 m       vm:+0 m      um:376 m       um:+0 m
 #   step SMZ : DeadLogicRemoval is disabled.
 #   step Reordering cells : Starting
 #   step Sort cells by level : Starting
 #   step SMZ : #cells= 1756
-#   step Sort cells by level : Done in       elapsed:0 s    user:0.1 s      system:0 s    %cpu:4000.00       load:0.40       fm:170926 m     vm:2130 m       vm:+0 m      um:350 m       um:+0 m
+#   step Sort cells by level : Done in       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.69       fm:170589 m     vm:2134 m       vm:+0 m      um:376 m       um:+0 m
 #   step Reorder cells : Starting
-#   step Reorder cells : Done in       elapsed:0 s      user:0 s    system:0.1 s    %cpu:2000.00       load:0.40       fm:170926 m     vm:2130 m       vm:+0 m      um:350 m       um:+0 m
-#   step Reordering cells : Done in       elapsed:0 s    user:0.1 s    system:0.1 s    %cpu:1333.33       load:0.40       fm:170934 m     vm:2130 m       vm:+0 m      um:350 m       um:+0 m
+#   step Reorder cells : Done in       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.69       fm:170588 m     vm:2134 m       vm:+0 m      um:376 m       um:+0 m
+#   step Reordering cells : Done in       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.69       fm:170588 m     vm:2134 m       vm:+0 m      um:376 m       um:+0 m
 #   step insert MID to SCC : Starting
-#   step insert MID to SCC : Done in       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.40       fm:170942 m     vm:2130 m       vm:+0 m      um:350 m       um:+0 m
+#   step insert MID to SCC : Done in       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.69       fm:170587 m     vm:2134 m       vm:+0 m      um:376 m       um:+0 m
 #EquiID in rtl2equi  =1309
 #EquiID in transactor=0
 #EquiID in graph     =1309
@@ -216,23 +216,23 @@
 #   step SMZ : #PrimarySeq/#Seqs (0/719) = 0%
 #   step === Write graph : Starting
 #   step 	(1. save cid2Nnames) : Starting
-#   step 	(1. save cid2Nnames) : Done in     elapsed:0.2 s      user:0 s      system:0 s       %cpu:0.00       load:0.40       fm:171048 m     vm:2130 m       vm:+0 m      um:352 m       um:+2 m
+#   step 	(1. save cid2Nnames) : Done in     elapsed:0.2 s      user:0 s      system:0 s       %cpu:0.00       load:0.69       fm:170581 m     vm:2134 m       vm:+0 m      um:376 m       um:+0 m
 #   step 	(2. save equi2cid) : Starting
-#   step 	(2. save equi2cid) : Done in     elapsed:0.1 s      user:0 s      system:0 s       %cpu:0.00       load:0.40       fm:171046 m     vm:2130 m       vm:+0 m      um:352 m       um:+0 m
+#   step 	(2. save equi2cid) : Done in     elapsed:0.1 s      user:0 s      system:0 s       %cpu:0.00       load:0.69       fm:170580 m     vm:2134 m       vm:+0 m      um:376 m       um:+0 m
 #   step 	(3. save graph) : Starting
-#   step 	(3. save graph) : Done in     elapsed:0.1 s      user:0 s      system:0 s       %cpu:0.00       load:0.40       fm:171046 m     vm:2130 m       vm:+0 m      um:353 m       um:+1 m
+#   step 	(3. save graph) : Done in     elapsed:0.2 s      user:0 s      system:0 s       %cpu:0.00       load:0.69       fm:170579 m     vm:2134 m       vm:+0 m      um:376 m       um:+0 m
 #   step 	(4. serialize cells) : Starting
 #   step SMZ : saving 1701 cell(s) to keyed file by 10 partition(s) w. 10 thread(s)
-#   step 	(4. serialize cells) : Done in     elapsed:0.2 s      user:0 s    system:0.1 s      %cpu:40.40       load:0.40       fm:171045 m     vm:2130 m       vm:+0 m      um:353 m       um:+0 m
-#   step === Write graph : Done in     elapsed:0.6 s      user:0 s    system:0.1 s      %cpu:16.19       load:0.40       fm:171045 m     vm:2130 m       vm:+0 m      um:353 m       um:+3 m
-#   step === GraphBuilder : Done in    elapsed:0.10 s   user:0.10 s    system:0.9 s     %cpu:184.91       load:0.40       fm:171045 m     vm:2130 m    vm:+1660 m      um:353 m     um:+125 m
+#   step 	(4. serialize cells) : Done in     elapsed:0.3 s    user:0.1 s    system:0.1 s      %cpu:64.52       load:0.69       fm:170598 m     vm:2134 m       vm:+0 m      um:377 m       um:+1 m
+#   step === Write graph : Done in     elapsed:0.8 s    user:0.1 s    system:0.1 s      %cpu:25.00       load:0.69       fm:170598 m     vm:2134 m       vm:+0 m      um:377 m       um:+1 m
+#   step === GraphBuilder : Done in    elapsed:0.14 s   user:0.11 s   system:0.10 s     %cpu:153.28       load:0.69       fm:170598 m     vm:2134 m    vm:+1664 m      um:377 m     um:+144 m
 #   step SMZ : Created Archive File ./tools/zCui/zSimzilla_archive.xcui
 #   step SMZ : END OF SIMZILLA JOB
 
 #   exec summary :    1 warnings,    0 syntax errors,    0 fatal errors,    0 internal errors
-#   exec summary : wall clock 0m0s, user 0m0.311s, sys 0m0.181s
-#   exec summary : Total memory: 2177720 kB - RSS memory: 361056 kB - Data memory: 1937416 kB
+#   exec summary : wall clock 0m1s, user 0m0.315s, sys 0m0.195s
+#   exec summary : Total memory: 2181792 kB - RSS memory: 385224 kB - Data memory: 1941488 kB
 #   exec summary : Successful execution
 
-# end time is Mon Apr 29 13:43:59 2024
+# end time is Wed May  1 19:51:30 2024
 command exit code is '0'

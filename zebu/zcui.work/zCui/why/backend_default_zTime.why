@@ -6,9 +6,9 @@
  OK input /home/grads/s/sujaysimha/CSCE_689/lab-4-SujaySimha81/zebu/zcui.work/utf_generatefiles/new_zTime_config.tcl same checksum
  OK input /home/grads/s/sujaysimha/CSCE_689/lab-4-SujaySimha81/zebu/zcui.work/utf_generatefiles/new_zTime_report_config.tcl same checksum
  OK input internal dependency (structural) <- Final Check/Compilation Profiler (after ZParAnalyzer)
- KO input backend_default/tools/zTime/zTime_hierarchy.edf.gz out of date (non equal checksum) <- Backend: default backend/System Compilation/Analyze System Building Results
+ OK input backend_default/tools/zTime/zTime_hierarchy.edf.gz same checksum <- Backend: default backend/System Compilation/Analyze System Building Results
  OK input backend_default/work.Part_0//./tools/zTime/zCoreBuild_timing.zti same checksum <- Backend: default backend/System Compilation/zCore Compilation/Analyze zCore Building Results Part_0
- KO input backend_default/work.Part_0//./tools/zTime/global_time.edf.gz out of date (non equal checksum) <- Backend: default backend/System Compilation/zCore Compilation/Analyze zCore Building Results Part_0
+ OK input backend_default/work.Part_0//./tools/zTime/global_time.edf.gz same checksum <- Backend: default backend/System Compilation/zCore Compilation/Analyze zCore Building Results Part_0
  KO input backend_default/work.Part_0//./tools/zTime/zTime_clock_domain.cds out of date (non equal checksum) <- Backend: default backend/System Compilation/zCore Compilation/Analyze zCore Building Results Part_0
  OK input internal dependency (structural) <- Backend: default backend/System Compilation/Analyze zRTB_FW result: U0_M0_IF
  OK input backend_default/tools/zTime/zPar_timing.zti same date <- Backend: default backend/System Compilation/Analyze zPar result

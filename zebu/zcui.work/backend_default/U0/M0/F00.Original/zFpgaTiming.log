@@ -22,7 +22,7 @@
 
 # /opt/coe/synopsys/zebu/Q-2020.03-SP1-4/bin/zFpgaTiming /opt/coe/synopsys/zebu/Q-2020.03-SP1-4/etc/zfpgatiming/zFpgaTiming.tcl 
 
-# start time is Mon Apr 29 14:02:38 2024
+# start time is Wed May  1 20:09:04 2024
 
 
 
@@ -30,15 +30,15 @@
 # Build Date : Oct 18 2022 - 01:00:15
 # ---------------------------System Context--------------------------- 
 # Cpu        40 x bogomips - 4604.90 Intel(R) Xeon(R) CPU E5-2650 v3 @ 2.30GHz
-#            Load: 0.06 0.59 0.61 2/505 6428
+#            Load: 0.25 0.62 0.58 2/512 16187
 #            Hostname: csce-quinn-s1.engr.tamu.edu   OS: Linux 3.10.0-1160.108.1.el7.x86_64
-# Memory     Total: 193183 MB Free: 171425 MB
-#            Total Free including cache: 187536 MB
-#            Swap cache: 0 MB Cached space: 16111 MB
+# Memory     Total: 193183 MB Free: 171143 MB
+#            Total Free including cache: 187481 MB
+#            Swap cache: 0 MB Cached space: 16338 MB
 #            Swap space: 4095 MB Free Swap space: 4095 MB
 #            VmSize: 316 MB VmPeak: 316 MB
 # Disk Space Total: 50 GB Available: 8 GB Used: 42 GB
-#            Free inodes: 104731918
+#            Free inodes: 104730542
 # Stack                                Soft Limit           Hard Limit  
 #            Max stack size            8388608              unlimited            bytes     
 # -------------------------------------------------------------------- 
@@ -68,29 +68,29 @@
 #   step SDF Parser : Delay of between ports RST and RDY on instance design/zkprctrl/wrapper/sysclk_mxfx/u_xst_wrapper_0/sysclk_idly_0/idelayctrl_0 is excessive (3213600ps) and will be reduced to 50ns.
 #   step SDF Parser : Delay of between ports RST and RDY on instance design/zkprctrl/wrapper/sysclk_mxfx/u_xst_wrapper_0/sysclk_idly_0/idelayctrl_0_REPLICATED_0 is excessive (3213600ps) and will be reduced to 50ns.
 #   step SDF Parser : Delay of between ports RST and RDY on instance design/zkprctrl/wrapper/sysclk_mxfx/u_xst_wrapper_0/sysclk_idly_0/idelayctrl_0_REPLICATED_0_1 is excessive (3213600ps) and will be reduced to 50ns.
-#   step read SDF file : Done in    elapsed:0.46 s   user:0.45 s    system:0.1 s      %cpu:99.73       load:0.06       fm:171386 m      vm:414 m      vm:+36 m      um:136 m      um:+36 m
+#   step read SDF file : Done in    elapsed:0.47 s   user:0.45 s    system:0.1 s      %cpu:99.41       load:0.25       fm:171105 m      vm:414 m      vm:+36 m      um:131 m      um:+37 m
 #   step XDL rename : Starting
 #   info : 0 XDL name to replace.
-#   step XDL rename : Done in       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.06       fm:171386 m      vm:414 m       vm:+0 m      um:136 m       um:+0 m
+#   step XDL rename : Done in       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.25       fm:171105 m      vm:414 m       vm:+0 m      um:131 m       um:+0 m
 #   step Transformations Identification : Starting
-#   step Transformations Identification : Done in       elapsed:0 s    user:0.1 s      system:0 s     %cpu:142.86       load:0.06       fm:171386 m      vm:414 m       vm:+0 m      um:136 m       um:+0 m
+#   step Transformations Identification : Done in     elapsed:0.1 s    user:0.1 s      system:0 s     %cpu:142.86       load:0.25       fm:171104 m      vm:414 m       vm:+0 m      um:131 m       um:+0 m
 #   step Find properties based on SDF names : Starting
 #   step FW CLOCK : design/zkprctrl/wrapper/sysclk_mxfx/u_xst_wrapper_0/sysclk_bus_dut_0/x_bufgctrl_ce_fib_clk/u_xst_wrapper_0/virtex7_bufgctrl_0/O
 #   step FW CLOCK : design/zkprctrl/wrapper/sysclk_mxfx/u_xst_wrapper_0/sysclk_bus_dut_0/x_bufgctrl_ce_fib_clk_hs/u_xst_wrapper_0/virtex7_bufgctrl_0/O
 #   step FW CLOCK : design/zkprctrl/wrapper/sysclk_mxfx/u_xst_wrapper_0/sysclk_bus_dut_0/x_bufgctrl_ce_srb_clk/u_xst_wrapper_0/virtex7_bufgctrl_0/O
 #   step FW CLOCK : design/zkprctrl/wrapper/sysclk_mxfx/u_xst_wrapper_0/sysclk_idly_0/bufg_0/O
 #   step FW CLOCK : design/zkprctrl/wrapper/sysclk_mxfx/u_xst_wrapper_0/sysclk_idly_0/x_bufgctrl_2/u_xst_wrapper_0/virtex7_bufgctrl_0/O
+#   step FILTER CLOCK : design/U0_M0_F0/zbufg_zcgen_w_zcg_filterClock/O
 #   step ZXLSYS : design/zkprctrl/wrapper/sysclk_mxfx/u_xst_wrapper_0/sysclk_xclk2_0/bufgctrl_en_and00001/O
 #   step ZXLSYS : design/zkprctrl/wrapper/sysclk_mxfx/u_xst_wrapper_0/sysclk_xclk_0/bufgctrl_en_and00001/O
-#   step FILTER CLOCK : design/U0_M0_F0/zbufg_zcgen_w_zcg_filterClock/O
-#   step Find properties based on SDF names : Done in     elapsed:0.7 s      user:2 s    system:0.2 s    %cpu:3465.70       load:0.06       fm:171351 m      vm:568 m     vm:+154 m      um:170 m      um:+34 m
+#   step Find properties based on SDF names : Done in     elapsed:0.7 s      user:2 s    system:0.1 s    %cpu:3376.81       load:0.25       fm:171078 m      vm:568 m     vm:+154 m      um:158 m      um:+27 m
 #   step Modify instance connections : Starting
-#   step Modify instance connections : Done in       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.06       fm:171351 m      vm:568 m       vm:+0 m      um:170 m       um:+0 m
+#   step Modify instance connections : Done in       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.25       fm:171078 m      vm:568 m       vm:+0 m      um:158 m       um:+0 m
 #   info : Initialize requested paths.
 #   step False Timing Arcs : Starting
-#   step False Timing Arcs : Done in       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.06       fm:171351 m      vm:568 m       vm:+0 m      um:170 m       um:+0 m
+#   step False Timing Arcs : Done in       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.25       fm:171078 m      vm:568 m       vm:+0 m      um:158 m       um:+0 m
 #   step User Manipulations : Starting
-#   step User Manipulations : Done in       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.06       fm:171351 m      vm:568 m       vm:+0 m      um:170 m       um:+0 m
+#   step User Manipulations : Done in       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.25       fm:171078 m      vm:568 m       vm:+0 m      um:158 m       um:+0 m
 #   step False Paths Marking : Starting
 #   info : ----------------------------------
 #   info :     False Paths Information
@@ -155,7 +155,7 @@
 #   info : 'design/U0_M0_F0/zview_zebu_move_w_i_8/D' matches 'TO' pattern of rule '2'.
 #   info : 'design/U0_M0_F0/zview_zebu_move_w_i_9/D' matches 'TO' pattern of rule '2'.
 #   info :  
-#   step False Paths Marking : Done in     elapsed:0.1 s   user:0.26 s      system:0 s    %cpu:3151.52       load:0.06       fm:171351 m      vm:568 m       vm:+0 m      um:170 m       um:+0 m
+#   step False Paths Marking : Done in     elapsed:0.1 s   user:0.27 s    system:0.1 s    %cpu:4000.00       load:0.25       fm:171078 m      vm:568 m       vm:+0 m      um:158 m       um:+0 m
 #   step Clock Relationship : Starting
 #   step Clock Relationship DB populator : Starting
 #   step Clock Relationship Populator : Loading clock relationship graph from file 'clock_dependencies.db'
@@ -165,16 +165,16 @@
 #   step EDIF LOADER : reading EDIF file '/opt/coe/synopsys/zebu/Q-2020.03-SP1-4/etc/libXilinx.edif.gz'
 #   step EDIF LOADER : reading EDIF file 'design.edf'
 #   step INSTPORTATTR : EDIF parser: Replaced 24 instance port attributes back
-#   step Loading EDIF : Done in       elapsed:1 s      user:1 s   system:0.10 s      %cpu:99.84       load:0.30       fm:171124 m      vm:779 m     vm:+211 m      um:377 m     um:+207 m
+#   step Loading EDIF : Done in       elapsed:1 s      user:1 s   system:0.12 s      %cpu:99.89       load:0.25       fm:170846 m      vm:779 m     vm:+211 m      um:367 m     um:+209 m
 #   step Loading SDC file : Starting
-#   step Loading SDC file : Done in       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.30       fm:171124 m      vm:779 m       vm:+0 m      um:377 m       um:+0 m
+#   step Loading SDC file : Done in       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.25       fm:170846 m      vm:779 m       vm:+0 m      um:367 m       um:+0 m
 #   step Clock Relationship Populator : Couldn't find 5784 entries in SDF Graph.
 #   step Diagnose and fix populator : Starting
-#   step Diagnose and fix populator : Done in       elapsed:0 s    user:0.1 s    system:0.4 s    %cpu:1052.63       load:0.30       fm:171125 m      vm:779 m       vm:+0 m      um:378 m       um:+0 m
-#   step Clock Relationship DB populator : Done in       elapsed:2 s      user:1 s   system:0.18 s     %cpu:105.97       load:0.30       fm:171123 m      vm:779 m     vm:+211 m      um:378 m     um:+208 m
-#   step Clock Relationship : Done in       elapsed:2 s      user:1 s   system:0.18 s     %cpu:105.93       load:0.30       fm:171124 m      vm:779 m     vm:+211 m      um:378 m     um:+208 m
+#   step Diagnose and fix populator : Done in       elapsed:0 s    user:0.1 s    system:0.4 s    %cpu:1428.57       load:0.25       fm:170847 m      vm:779 m       vm:+0 m      um:368 m       um:+1 m
+#   step Clock Relationship DB populator : Done in       elapsed:1 s      user:1 s   system:0.21 s     %cpu:105.96       load:0.25       fm:170849 m      vm:779 m     vm:+211 m      um:368 m     um:+210 m
+#   step Clock Relationship : Done in       elapsed:1 s      user:1 s   system:0.21 s     %cpu:105.95       load:0.25       fm:170849 m      vm:779 m     vm:+211 m      um:368 m     um:+210 m
 #   step Sanity Check : Starting
-#   step Sanity Check : Done in       elapsed:0 s    user:0.1 s      system:0 s    %cpu:4000.00       load:0.30       fm:171124 m      vm:779 m       vm:+0 m      um:378 m       um:+0 m
+#   step Sanity Check : Done in       elapsed:0 s    user:0.1 s      system:0 s    %cpu:4000.00       load:0.25       fm:170849 m      vm:779 m       vm:+0 m      um:368 m       um:+0 m
 #   step ANALYSIS : Multi-cycle path analysis disabled
 #   step Skew Paths Analysis : Starting
 #   info :  
@@ -198,7 +198,7 @@
 #   info : | Delay  | ArrivalTime | Fanout | 1558ps
 #   info : |      0 |           0 |     56 | design/U0_M0_F0/U0_M0_F0_core/u_dut/u_fifo/u0_clkg/zebu_filter_clkout/zdelay_regFilterPos/Q (FDRE)
 #   info : |   1558 |        1558 |      1 | design/U0_M0_F0/U0_M0_F0_core/u_dut/u_fifo/mem\[3\]\[5\]/C (FDRE)
-#   step Skew Paths Analysis : Done in       elapsed:0 s    user:0.1 s      system:0 s     %cpu:666.67       load:0.30       fm:171121 m      vm:779 m       vm:+0 m      um:378 m       um:+0 m
+#   step Skew Paths Analysis : Done in       elapsed:0 s    user:0.1 s      system:0 s     %cpu:666.67       load:0.25       fm:170846 m      vm:779 m       vm:+0 m      um:368 m       um:+0 m
 #   step Filter Paths Analysis : Starting
 #   info :  
 #   info :  
@@ -259,7 +259,7 @@
 #   info : |    632 |        6038 |      1 | design/U0_M0_F0/U0_M0_F0_core/u_stb/inv4_RnM/I0 (LUT1)
 #   info : |     53 |        6091 |      1 | design/U0_M0_F0/U0_M0_F0_core/u_stb/inv4_RnM/O (LUT1)
 #   info : |     57 |        6148 |      0 | design/U0_M0_F0/U0_M0_F0_core/u_stb/zebu_filter_data_zebu_zbi_pseudo_wire_inv4_output/zdelay_regFilter/D (LDCE)
-#   step Filter Paths Analysis : Done in     elapsed:0.3 s    user:0.3 s      system:0 s     %cpu:105.26       load:0.30       fm:171119 m      vm:779 m       vm:+0 m      um:380 m       um:+2 m
+#   step Filter Paths Analysis : Done in     elapsed:0.2 s    user:0.3 s    system:0.1 s     %cpu:148.15       load:0.25       fm:170847 m      vm:779 m       vm:+0 m      um:370 m       um:+2 m
 #   step Internal Data Paths Analysis : Starting
 #   info :  
 #   info :  
@@ -566,7 +566,7 @@
 #   info :  
 #   info : | Delay  | ArrivalTime | Fanout | 0ps
 #   info : |      0 |           0 |      0 | design/U0_M0_F0/U0_M0_F0_core/u_dut/u_fifo/u0_clkg/zebu_filter_clkout/zdelay_regFilterPos/R (FDRE)
-#   step Internal Data Paths Analysis : Done in     elapsed:0.3 s   user:0.26 s    system:0.4 s     %cpu:952.38       load:0.30       fm:171117 m      vm:779 m       vm:+0 m      um:384 m       um:+4 m
+#   step Internal Data Paths Analysis : Done in     elapsed:0.4 s   user:0.28 s    system:0.4 s     %cpu:955.22       load:0.25       fm:170844 m      vm:779 m       vm:+0 m      um:374 m       um:+4 m
 #   step From FPGA inputs to data analysis : Starting
 #   info :  
 #   info :  
@@ -627,14 +627,14 @@
 #   info : |   1977 |        5209 |      1 | design/U0_M0_F0/U0_M0_F0_core/zforce_rstn/VAL_sync/C (FDRE)
 #   info : |    197 |        5406 |      7 | design/U0_M0_F0/U0_M0_F0_core/zforce_rstn/VAL_sync/Q (FDRE)
 #   info : |   1328 |        6734 |      1 | design/U0_M0_F0/U0_M0_F0_core/u_dut/u_fifo/u_fifo_usage_spy/zfast_prfq7t3bop9a2/I0 (LUT2)
-#   step From FPGA inputs to data analysis : Done in       elapsed:0 s    user:0.1 s      system:0 s     %cpu:266.67       load:0.30       fm:171117 m      vm:779 m       vm:+0 m      um:384 m       um:+0 m
+#   step From FPGA inputs to data analysis : Done in       elapsed:0 s    user:0.1 s    system:0.1 s     %cpu:470.59       load:0.25       fm:170843 m      vm:779 m       vm:+0 m      um:374 m       um:+0 m
 #   step From FPGA inputs to socket analysis : Starting
 #   info :  
 #   info :  
 #   info : ----------------------------------------------------------
 #   info : -----  FROM SOCKET TO SOCKET PATHS: 0/0 reported paths
 #   info : ----------------------------------------------------------
-#   step From FPGA inputs to socket analysis : Done in       elapsed:0 s    user:0.1 s    system:0.1 s     %cpu:615.38       load:0.30       fm:171117 m      vm:779 m       vm:+0 m      um:384 m       um:+0 m
+#   step From FPGA inputs to socket analysis : Done in     elapsed:0.1 s    user:0.1 s      system:0 s     %cpu:285.71       load:0.25       fm:170843 m      vm:779 m       vm:+0 m      um:374 m       um:+0 m
 #   step From data to FPGA outputs analysis : Starting
 #   info :  
 #   info :  
@@ -662,11 +662,11 @@
 #   info : ----------------------------------------------------------
 #   info : -----  FROM DATA TO SOCKET PATHS (FILTERED): 0/0 reported paths
 #   info : ----------------------------------------------------------
-#   step From data to FPGA outputs analysis : Done in       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.30       fm:171117 m      vm:779 m       vm:+0 m      um:384 m       um:+0 m
+#   step From data to FPGA outputs analysis : Done in       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.25       fm:170842 m      vm:779 m       vm:+0 m      um:374 m       um:+0 m
 
 #   exec summary :    0 warnings,    0 syntax errors,    0 fatal errors,    0 internal errors
-#   exec summary : wall clock 0m4s, user 0m5.470s, sys 0m0.364s
-#   exec summary : Total memory: 797796 kB - RSS memory: 393820 kB - Data memory: 516496 kB
+#   exec summary : wall clock 0m4s, user 0m5.351s, sys 0m0.430s
+#   exec summary : Total memory: 797796 kB - RSS memory: 383244 kB - Data memory: 516496 kB
 #   exec summary : Successful execution
 
-# end time is Mon Apr 29 14:02:42 2024
+# end time is Wed May  1 20:09:08 2024

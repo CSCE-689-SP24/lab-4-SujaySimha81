@@ -22,7 +22,7 @@
 
 # zGraphGenerator -l backend_default_zGraphGenerator.log -i tools/zDB/zTopBuild_equi.edf.gz -r top 
 
-# start time is Mon Apr 29 13:43:59 2024
+# start time is Wed May  1 19:51:29 2024
 
 
 
@@ -30,28 +30,28 @@
 # Build Date : Oct 18 2022 - 00:46:34
 # ---------------------------System Context--------------------------- 
 # Cpu        40 x bogomips - 4604.90 Intel(R) Xeon(R) CPU E5-2650 v3 @ 2.30GHz
-#            Load: 0.40 0.15 0.16 4/505 35941
+#            Load: 0.69 0.22 0.10 3/522 6105
 #            Hostname: csce-quinn-s1.engr.tamu.edu   OS: Linux 3.10.0-1160.108.1.el7.x86_64
-# Memory     Total: 193183 MB Free: 171180 MB
-#            Total Free including cache: 187290 MB
-#            Swap cache: 0 MB Cached space: 16110 MB
+# Memory     Total: 193183 MB Free: 170905 MB
+#            Total Free including cache: 187243 MB
+#            Swap cache: 0 MB Cached space: 16338 MB
 #            Swap space: 4095 MB Free Swap space: 4095 MB
 #            VmSize: 172 MB VmPeak: 172 MB
 # Disk Space Total: 50 GB Available: 8 GB Used: 42 GB
-#            Free inodes: 104731919
+#            Free inodes: 104730543
 # Stack                                Soft Limit           Hard Limit  
 #            Max stack size            8388608              unlimited            bytes     
 # -------------------------------------------------------------------- 
 
 
 #   step CSA : 
-# begin time is Mon Apr 29 13:43:59 2024
+# begin time is Wed May  1 19:51:29 2024
 
 # zGraphGenerator -l backend_default_zGraphGenerator.log -i tools/zDB/zTopBuild_equi.edf.gz -r top
 
 #   step CSA : Using 40 threads (maximum is 40).
 #   step CSA : Run the Graph Builder...
-#   exec summary : Total memory: 177984 kB - RSS memory: 83216 kB - Data memory: 90172 kB
+#   exec summary : Total memory: 177984 kB - RSS memory: 83220 kB - Data memory: 90172 kB
 #   step CSA : Netlist loading...
 #   step EDIF LOADER : reading EDIF file '/opt/coe/synopsys/zebu/Q-2020.03-SP1-4/etc/libXilinx.edif.gz'
 #   step CSA : Netlist loaded
@@ -65,22 +65,22 @@
 #   exec summary : Total memory: 205632 kB - RSS memory: 103320 kB - Data memory: 117820 kB
 #   step WB : Initializing whiteboard
 #   step Building WB : Starting
-#   step Building WB : Done in       elapsed:0 s      user:0 s    system:0.1 s     %cpu:266.67       load:0.40       fm:171083 m      vm:292 m      vm:+92 m      um:115 m      um:+15 m
-#   exec summary : Total memory: 1148888 kB - RSS memory: 130212 kB - Data memory: 1061076 kB
+#   step Building WB : Done in     elapsed:0.1 s      user:0 s    system:0.1 s     %cpu:250.00       load:0.69       fm:170751 m      vm:348 m     vm:+148 m      um:123 m      um:+23 m
+#   exec summary : Total memory: 1148888 kB - RSS memory: 126132 kB - Data memory: 1061076 kB
 #   step HW : Starting
-#   step HW : Done in       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.40       fm:171070 m     vm:1121 m       vm:+0 m      um:127 m       um:+0 m
+#   step HW : Done in       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.69       fm:170751 m     vm:1121 m       vm:+0 m      um:123 m       um:+0 m
 #   step CSA : Whiteboard build in 0.0 s - 1367 instances, 1784 wires
-#   exec summary : Total memory: 1148888 kB - RSS memory: 130212 kB - Data memory: 1061076 kB
-#   exec summary : Total memory: 1198548 kB - RSS memory: 166720 kB - Data memory: 1096332 kB
+#   exec summary : Total memory: 1148888 kB - RSS memory: 126132 kB - Data memory: 1061076 kB
+#   exec summary : Total memory: 1199572 kB - RSS memory: 162644 kB - Data memory: 1097356 kB
 #   step CSA : Simulation DB creating...
 #   step CSA : Get System modules...
 #   step CSA : System modules identified in 0.0 s
-#   exec summary : Total memory: 1198560 kB - RSS memory: 166828 kB - Data memory: 1096332 kB
+#   exec summary : Total memory: 1199584 kB - RSS memory: 162752 kB - Data memory: 1097356 kB
 ### warning in GateMapping [GTMP0003W] : Unknown simulation macro 'zclkgen_library/zebu_reqsig_clock_driverclock'.
 #   step CSA : Explore hierarchicaly the modules from the top module 'top' to down
 
 #   step CSA : Modules explored in 0.0 s
-#   exec summary : Total memory: 1198560 kB - RSS memory: 167988 kB - Data memory: 1096332 kB
+#   exec summary : Total memory: 1199584 kB - RSS memory: 163912 kB - Data memory: 1097356 kB
 
 #   step CSA : Graph 1 (cutId: 1): Nodes created: 295
 #   step CSA : Graph 1 : Wires created: 1049
@@ -92,7 +92,7 @@
 #   step DICTIONARY : Serializing dictionary
 #   step DICTIONARY : Serialized dictionary in 0 seconds, 252 different names
 #   step CSA : Graph 1 serialized in 0.0 s
-#   exec summary : Total memory: 1198560 kB - RSS memory: 168120 kB - Data memory: 1096332 kB
+#   exec summary : Total memory: 1199584 kB - RSS memory: 164036 kB - Data memory: 1097356 kB
 #   step CSA : Graph 1: Graph levelizing...
 #   step CSA : Graph 1: Graph levelized done in 0.0 s
 #   step CSA : Graph 1 serializing...
@@ -101,7 +101,7 @@
 #   step DICTIONARY : Serializing dictionary
 #   step DICTIONARY : Serialized dictionary in 0 seconds, 0 different names
 #   step CSA : Graph 1 serialized in 0.0 s
-#   exec summary : Total memory: 1198560 kB - RSS memory: 168156 kB - Data memory: 1096332 kB
+#   exec summary : Total memory: 1199584 kB - RSS memory: 164072 kB - Data memory: 1097356 kB
 #   step stat : ----------------------------------------------------------------------
 #   step stat : All gates Mapped in 0.0 s
 #   step stat : ----------------------------------------------------------------------
@@ -109,15 +109,15 @@
 #   step CSA : Graph built in 0.2 s
 #   step CSA : DB serializing...
 #   step CSA : DB serialized in 0.0 s
-#   exec summary : Total memory: 1198548 kB - RSS memory: 168300 kB - Data memory: 1096332 kB
+#   exec summary : Total memory: 1199572 kB - RSS memory: 164216 kB - Data memory: 1097356 kB
 #   step CSA : Cleaning DB...
 #   step CSA : DB cleaned in 0.0 s
-#   exec summary : Total memory: 1198548 kB - RSS memory: 168320 kB - Data memory: 1096332 kB
-#   step browsing : Total approximate work time is 0.30 s
+#   exec summary : Total memory: 1199572 kB - RSS memory: 164236 kB - Data memory: 1097356 kB
+#   step browsing : Total approximate work time is 0.47 s
 
 #   exec summary :    1 warnings,    0 syntax errors,    0 fatal errors,    0 internal errors
-#   exec summary : wall clock 0m0s, user 0m0.161s, sys 0m0.105s
-#   exec summary : Total memory: 1194448 kB - RSS memory: 142716 kB - Data memory: 1059432 kB
+#   exec summary : wall clock 0m1s, user 0m0.163s, sys 0m0.102s
+#   exec summary : Total memory: 1195472 kB - RSS memory: 142832 kB - Data memory: 1072756 kB
 #   exec summary : Successful execution
 
-# end time is Mon Apr 29 13:43:59 2024
+# end time is Wed May  1 19:51:30 2024

@@ -19,6 +19,7 @@
 #   step STATS :  |                   0 |                   0 |                   0 |                   0 |                   0 |                   0 |                   0 |                   0 |                  31 |                   3 |                   0 |                   0 |                   0 || dut
 #   step STATS :  ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #   step REPORT : Writing netlist 'dut' to 'edif/dut/dut.edf.gz'
+#   step EDIF GENERATOR : netlist 'zmerge' has changed - regenerate EDIF file 'edif/dut/dut.edf.gz'
 #   step SERIALIZE : writing netlist 'zmerge' into znl file 'edif/dut/dut.edf.gz'
 #   step SERIALIZE : #bytes in: 1718, #bytes out: 839, compression ratio: 2.047676
-#   step REPORT : [87.28] Resource usage for dut: 0.028s 0.0M
+#   step REPORT : [87.28] Resource usage for dut: 0.026s 0.0M

@@ -69,6 +69,8 @@
 .. The first backend_default_24_4_29_12_44_20 task started at Mon, 29 Apr 2024 17:44:22 UTC
 .. Reading /home/grads/s/sujaysimha/CSCE_689/lab-4-SujaySimha81/zebu/zcui.work/zCui/backup/backend_default_24_4_29_13_43_15/prof/tracerun.cui ...
 .. The first backend_default_24_4_29_13_43_15 task started at Mon, 29 Apr 2024 18:43:17 UTC
+.. Reading /home/grads/s/sujaysimha/CSCE_689/lab-4-SujaySimha81/zebu/zcui.work/zCui/backup/backend_default_24_5_1_19_50_30/prof/tracerun.cui ...
+.. The first backend_default_24_5_1_19_50_30 task started at Thu, 02 May 2024 00:50:33 UTC
 ** UNKNOWN COMMAND: backend_default_U0_M0_F08_FpgaPostProc (duration: 1)
 ** UNKNOWN COMMAND: backend_default_zTime (duration: 2)
 ** UNKNOWN COMMAND: backend_default_U0_M0_F00_Cleaning (duration: 0)
@@ -151,46 +153,48 @@ Gap between runs                                 0:49
 R25               04-29 12:44 to 04-29 13:03     0:19
 Gap between runs                                 0:39
 R26               04-29 13:43 to 04-29 14:02     0:19
+Gap between runs                                53:47
+R27               05-01 19:50 to 05-01 20:09     0:18
 ============================================ ========
-Total time                                     311:07 (3:58 without gaps)
+Total time                                     365:14 (4:16 without gaps)
 
 *** Back-end name: default backend ***
 
-                                                                           ---- R00 ------  ---- R01 ------  ---- R02 ------  ---- R03 ------  ---- R04 ------  ---- R05 ------  ---- R06 ------  ---- R07 ------  ---- R08 ------  ---- R09 ------  ---- R10 ------  ---- R11 ------  ---- R12 ------  ---- R13 ------  ---- R14 ------  ---- R15 ------  ---- R16 ------  ---- R17 ------  ---- R18 ------  ---- R19 ------  ---- R20 ------  ---- R21 ------  ---- R22 ------  ---- R23 ------  ---- R24 ------  ---- R25 ------  ---- R26 ------
-Stage name                                                                   Time %total F    Time %total F    Time %total F    Time %total F    Time %total F    Time %total F    Time %total F    Time %total F    Time %total F    Time %total F    Time %total F    Time %total F    Time %total F    Time %total F    Time %total F    Time %total F    Time %total F    Time %total F    Time %total F    Time %total F    Time %total F    Time %total F    Time %total F    Time %total F    Time %total F    Time %total F    Time %total F  Max time
-=========================================================================  ====== ====== =  ====== ====== =  ====== ====== =  ====== ====== =  ====== ====== =  ====== ====== =  ====== ====== =  ====== ====== =  ====== ====== =  ====== ====== =  ====== ====== =  ====== ====== =  ====== ====== =  ====== ====== =  ====== ====== =  ====== ====== =  ====== ====== =  ====== ====== =  ====== ====== =  ====== ====== =  ====== ====== =  ====== ====== =  ====== ====== =  ====== ====== =  ====== ====== =  ====== ====== =  ====== ====== =  ========
-Checks + config                                                              0:00   0.16      0:00  10.42      0:00  10.66      0:00  13.21      0:00   5.54      0:00   5.38      0:00   6.10      0:00   5.94      0:00   0.16      0:00   4.28      0:00   5.74      0:00   0.17      0:00   4.67      0:00  10.55      0:00  39.72      0:00   0.17      0:00   6.61      0:00   0.17      0:00   4.79      0:00   0.18      0:00   0.18      0:00   0.17      0:00   0.17      0:00   7.11      0:00   0.16      0:00   0.16      0:00   0.15        0:00
-design_Fs_Macro                                                              0:00   0.08                                                                                                                                                                                                                                                                                                                                                                                                                                                                  0:00
-vcs_splitter_VCS_Task_Builder                                                0:00   0.80      0:00  40.80      0:00  45.29      0:00  42.16      0:00  17.94      0:00  26.93      0:00  28.93      0:00  21.02      0:00   0.36      0:00  29.76      0:00  17.90      0:00   0.42      0:00  77.63      0:00  30.74      0:00  20.85      0:00   0.51      0:00  16.96      0:00   0.47      0:00  18.04      0:00   0.47      0:00   0.46      0:00   0.46      0:00   0.57      0:00  17.91      0:00   0.36      0:00   0.48      0:00   0.43        0:00
-FE + synthesis                                                               0:00   0.51                       0:00  16.25                       0:00   5.19      0:00   4.45      0:00   7.76      0:00   6.80                       0:00   9.46      0:00   5.99                                                                          0:00   0.15                                                                                                                                                                                                   0:00
-RTL DB index + link                                                          0:00   0.10      0:00  22.06      0:00   8.72      0:00   9.39      0:00   6.83      0:00   6.78      0:00   5.45      0:00   5.39      0:00   0.18      0:00   3.61      0:00   4.47      0:00   0.23      0:00   2.98      0:00   5.79      0:00   6.76      0:00   0.09      0:00   3.92                       0:00   3.73                                                                                           0:00   0.10                                          0:00
-backend_default_zTopBuild                                                    0:00   0.71                                                         0:00  31.21      0:00  30.11      0:00  34.80      0:00  22.25                       0:00  23.10      0:00  26.00                                                                          0:00   0.58      0:00  25.43      0:00   0.49      0:00  18.24      0:00   0.53      0:00   0.78      0:00   0.56      0:00   0.59      0:00  22.72                       0:00   0.71      0:00   0.55        0:00
-Build zCore                                                                  0:00   1.21                                                                                                            0:00  38.60                       0:00  29.78      0:00  39.91                                                                          0:00   0.85      0:00  39.30      0:00   1.01      0:00  30.07      0:00   0.84      0:00   0.89      0:00   0.87      0:00   0.89      0:00  35.89                       0:00   0.89      0:00   0.78        0:00
-backend_default_zPar                                                         0:00   1.14                                                                                                                                                                                                                                                                                      0:00   1.04                       0:00   1.06                                                                                                                               0:00
-P&R                                                                          0:16  94.48                                                                                                                                                                                                                                                                                                                                                                                                                                                                  0:16
-backend_default_U0_M0_F00_zFpgaTiming                                        0:00   0.53                                                                                                                                                                                                                                                                                                                                                                                                                                                                  0:00
-backend_default_zTimeFpga                                                    0:00   0.24                                                         0:00   9.23      0:00   6.82                                        0:00   0.22                                        0:00   0.28                                                         0:00   0.17                       0:00   0.15                       0:00   0.21      0:00   0.31      0:00   0.19      0:00   0.17                       0:00   0.18      0:00   0.15      0:00   0.16        0:00
-backend_default_zAuditReport                                                 0:00   0.04 F                                                       0:00   1.64 F    0:00   1.51 F                                      0:00   0.05 F                                      0:00   0.04 F                                                       0:00   0.04 F                     0:00   0.04 F                     0:00   0.04 F    0:00   0.04 F    0:00   0.05 F    0:00   0.04 F                     0:00   0.04 F    0:00   0.04 F    0:00   0.04 F      0:00
-RhinoFsdb_Builder                                                                             0:00   5.82                                                                                                                                                                                                                                                                                                                                                                                                                                                 0:00
-backend_default_FpgaResultAnalyzer                                                            0:00  20.89      0:00  19.07                                                                                                                                                                                0:00  18.01      0:00  18.45                                                                                                                                                                                                                    0:00
-backend_default_Intermediate_Profiling_Results_Analyzer_VCSAnalyzer                                                             0:00   7.64                                                                          0:00   0.20                                        0:00   0.35      0:00   5.80      0:00  34.92      0:00  14.23                       0:00   7.77      0:00   0.22      0:00  25.13      0:00   0.21      0:00   0.31      0:00   0.26      0:00   0.29      0:00   9.86      0:00   0.82      0:00   0.21      0:00   0.28        0:00
-FPGA post Process                                                                                                               0:00  27.61                                        0:00  11.43                                                                                           0:00   8.92                                                                                                                                                                                                                                                      0:00
-backend_default_Intermediate_Profiling_Results_Analyzer_ZTopBuildAnalyzer                                                                        0:00   2.02      0:00   2.60      0:00   5.52                                                                                                                                                                                                                                                                                                                                                            0:00
-backend_default_zTime                                                                                                                            0:00  20.41      0:00  15.42                                                                                                                                                                                                                                                                                                                                                                             0:00
-Fxx P&R                                                                                                                                                                                                              0:16  98.34                                        0:16  98.11                                                         0:17  97.11                       0:17  95.98                       0:16  95.99      0:16  96.50      0:16  96.91      0:16  96.76                       0:17  97.93      0:17  96.89      0:18  97.07        0:18
-Create Timing DB (SDF Mode)                                                                                                                                                                                          0:00   0.49                                        0:00   0.39                                                         0:00   0.33                       0:00   0.33                       0:00   0.36      0:00   0.38      0:00   0.42      0:00   0.35                       0:00   0.40      0:00   0.33      0:00   0.38        0:00
-backend_default_Intermediate_Profiling_Results_Analyzer_BackendEntry                                                                                                                                                                                                                                                                                                          0:00   0.10                       0:00   0.11      0:00   0.15      0:00   0.12      0:00   0.15      0:00   6.51                       0:00   0.14      0:00   0.16        0:00
-=========================================================================  ====== ====== =  ====== ====== =  ====== ====== =  ====== ====== =  ====== ====== =  ====== ====== =  ====== ====== =  ====== ====== =  ====== ====== =  ====== ====== =  ====== ====== =  ====== ====== =  ====== ====== =  ====== ====== =  ====== ====== =  ====== ====== =  ====== ====== =  ====== ====== =  ====== ====== =  ====== ====== =  ====== ====== =  ====== ====== =  ====== ====== =  ====== ====== =  ====== ====== =  ====== ====== =  ====== ====== =  ========
-Total time w/o delays                                                        0:17 100.00      0:00 100.00      0:00 100.00      0:00 100.00      0:00 100.00      0:00 100.00      0:00 100.00      0:00 100.00      0:16 100.00      0:00 100.00      0:00 100.00      0:16 100.00      0:00 100.00      0:00 100.00      0:00 100.00      0:18 100.00      0:00 100.00      0:18 100.00      0:00 100.00      0:17 100.00      0:16 100.00      0:16 100.00      0:17 100.00      0:00 100.00      0:17 100.00      0:18 100.00      0:18 100.00        0:36
+                                                                           ---- R00 ------  ---- R01 ------  ---- R02 ------  ---- R03 ------  ---- R04 ------  ---- R05 ------  ---- R06 ------  ---- R07 ------  ---- R08 ------  ---- R09 ------  ---- R10 ------  ---- R11 ------  ---- R12 ------  ---- R13 ------  ---- R14 ------  ---- R15 ------  ---- R16 ------  ---- R17 ------  ---- R18 ------  ---- R19 ------  ---- R20 ------  ---- R21 ------  ---- R22 ------  ---- R23 ------  ---- R24 ------  ---- R25 ------  ---- R26 ------  ---- R27 ------
+Stage name                                                                   Time %total F    Time %total F    Time %total F    Time %total F    Time %total F    Time %total F    Time %total F    Time %total F    Time %total F    Time %total F    Time %total F    Time %total F    Time %total F    Time %total F    Time %total F    Time %total F    Time %total F    Time %total F    Time %total F    Time %total F    Time %total F    Time %total F    Time %total F    Time %total F    Time %total F    Time %total F    Time %total F    Time %total F  Max time
+=========================================================================  ====== ====== =  ====== ====== =  ====== ====== =  ====== ====== =  ====== ====== =  ====== ====== =  ====== ====== =  ====== ====== =  ====== ====== =  ====== ====== =  ====== ====== =  ====== ====== =  ====== ====== =  ====== ====== =  ====== ====== =  ====== ====== =  ====== ====== =  ====== ====== =  ====== ====== =  ====== ====== =  ====== ====== =  ====== ====== =  ====== ====== =  ====== ====== =  ====== ====== =  ====== ====== =  ====== ====== =  ====== ====== =  ========
+Checks + config                                                              0:00   0.16      0:00  10.42      0:00  10.66      0:00  13.21      0:00   5.54      0:00   5.38      0:00   6.10      0:00   5.94      0:00   0.16      0:00   4.28      0:00   5.74      0:00   0.17      0:00   4.67      0:00  10.55      0:00  39.72      0:00   0.17      0:00   6.61      0:00   0.17      0:00   4.79      0:00   0.18      0:00   0.18      0:00   0.17      0:00   0.17      0:00   7.11      0:00   0.16      0:00   0.16      0:00   0.15      0:00   0.20        0:00
+design_Fs_Macro                                                              0:00   0.08                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   0:00
+vcs_splitter_VCS_Task_Builder                                                0:00   0.80      0:00  40.80      0:00  45.29      0:00  42.16      0:00  17.94      0:00  26.93      0:00  28.93      0:00  21.02      0:00   0.36      0:00  29.76      0:00  17.90      0:00   0.42      0:00  77.63      0:00  30.74      0:00  20.85      0:00   0.51      0:00  16.96      0:00   0.47      0:00  18.04      0:00   0.47      0:00   0.46      0:00   0.46      0:00   0.57      0:00  17.91      0:00   0.36      0:00   0.48      0:00   0.43      0:00   0.74        0:00
+FE + synthesis                                                               0:00   0.51                       0:00  16.25                       0:00   5.19      0:00   4.45      0:00   7.76      0:00   6.80                       0:00   9.46      0:00   5.99                                                                          0:00   0.15                                                                                                                                                                                                                    0:00
+RTL DB index + link                                                          0:00   0.10      0:00  22.06      0:00   8.72      0:00   9.39      0:00   6.83      0:00   6.78      0:00   5.45      0:00   5.39      0:00   0.18      0:00   3.61      0:00   4.47      0:00   0.23      0:00   2.98      0:00   5.79      0:00   6.76      0:00   0.09      0:00   3.92                       0:00   3.73                                                                                           0:00   0.10                                                           0:00
+backend_default_zTopBuild                                                    0:00   0.71                                                         0:00  31.21      0:00  30.11      0:00  34.80      0:00  22.25                       0:00  23.10      0:00  26.00                                                                          0:00   0.58      0:00  25.43      0:00   0.49      0:00  18.24      0:00   0.53      0:00   0.78      0:00   0.56      0:00   0.59      0:00  22.72                       0:00   0.71      0:00   0.55      0:00   0.81        0:00
+Build zCore                                                                  0:00   1.21                                                                                                            0:00  38.60                       0:00  29.78      0:00  39.91                                                                          0:00   0.85      0:00  39.30      0:00   1.01      0:00  30.07      0:00   0.84      0:00   0.89      0:00   0.87      0:00   0.89      0:00  35.89                       0:00   0.89      0:00   0.78      0:00   0.88        0:00
+backend_default_zPar                                                         0:00   1.14                                                                                                                                                                                                                                                                                      0:00   1.04                       0:00   1.06                                                                                                                                                0:00
+P&R                                                                          0:16  94.48                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   0:16
+backend_default_U0_M0_F00_zFpgaTiming                                        0:00   0.53                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   0:00
+backend_default_zTimeFpga                                                    0:00   0.24                                                         0:00   9.23      0:00   6.82                                        0:00   0.22                                        0:00   0.28                                                         0:00   0.17                       0:00   0.15                       0:00   0.21      0:00   0.31      0:00   0.19      0:00   0.17                       0:00   0.18      0:00   0.15      0:00   0.16      0:00   0.22        0:00
+backend_default_zAuditReport                                                 0:00   0.04 F                                                       0:00   1.64 F    0:00   1.51 F                                      0:00   0.05 F                                      0:00   0.04 F                                                       0:00   0.04 F                     0:00   0.04 F                     0:00   0.04 F    0:00   0.04 F    0:00   0.05 F    0:00   0.04 F                     0:00   0.04 F    0:00   0.04 F    0:00   0.04 F    0:00   0.04 F      0:00
+RhinoFsdb_Builder                                                                             0:00   5.82                                                                                                                                                                                                                                                                                                                                                                                                                                                                  0:00
+backend_default_FpgaResultAnalyzer                                                            0:00  20.89      0:00  19.07                                                                                                                                                                                0:00  18.01      0:00  18.45                                                                                                                                                                                                                                     0:00
+backend_default_Intermediate_Profiling_Results_Analyzer_VCSAnalyzer                                                             0:00   7.64                                                                          0:00   0.20                                        0:00   0.35      0:00   5.80      0:00  34.92      0:00  14.23                       0:00   7.77      0:00   0.22      0:00  25.13      0:00   0.21      0:00   0.31      0:00   0.26      0:00   0.29      0:00   9.86      0:00   0.82      0:00   0.21      0:00   0.28      0:00   0.86        0:00
+FPGA post Process                                                                                                               0:00  27.61                                        0:00  11.43                                                                                           0:00   8.92                                                                                                                                                                                                                                                                       0:00
+backend_default_Intermediate_Profiling_Results_Analyzer_ZTopBuildAnalyzer                                                                        0:00   2.02      0:00   2.60      0:00   5.52                                                                                                                                                                                                                                                                                                                                                                             0:00
+backend_default_zTime                                                                                                                            0:00  20.41      0:00  15.42                                                                                                                                                                                                                                                                                                                                                                                              0:00
+Fxx P&R                                                                                                                                                                                                              0:16  98.34                                        0:16  98.11                                                         0:17  97.11                       0:17  95.98                       0:16  95.99      0:16  96.50      0:16  96.91      0:16  96.76                       0:17  97.93      0:17  96.89      0:18  97.07      0:17  95.67        0:18
+Create Timing DB (SDF Mode)                                                                                                                                                                                          0:00   0.49                                        0:00   0.39                                                         0:00   0.33                       0:00   0.33                       0:00   0.36      0:00   0.38      0:00   0.42      0:00   0.35                       0:00   0.40      0:00   0.33      0:00   0.38      0:00   0.37        0:00
+backend_default_Intermediate_Profiling_Results_Analyzer_BackendEntry                                                                                                                                                                                                                                                                                                          0:00   0.10                       0:00   0.11      0:00   0.15      0:00   0.12      0:00   0.15      0:00   6.51                       0:00   0.14      0:00   0.16      0:00   0.20        0:00
+=========================================================================  ====== ====== =  ====== ====== =  ====== ====== =  ====== ====== =  ====== ====== =  ====== ====== =  ====== ====== =  ====== ====== =  ====== ====== =  ====== ====== =  ====== ====== =  ====== ====== =  ====== ====== =  ====== ====== =  ====== ====== =  ====== ====== =  ====== ====== =  ====== ====== =  ====== ====== =  ====== ====== =  ====== ====== =  ====== ====== =  ====== ====== =  ====== ====== =  ====== ====== =  ====== ====== =  ====== ====== =  ====== ====== =  ========
+Total time w/o delays                                                        0:17 100.00      0:00 100.00      0:00 100.00      0:00 100.00      0:00 100.00      0:00 100.00      0:00 100.00      0:00 100.00      0:16 100.00      0:00 100.00      0:00 100.00      0:16 100.00      0:00 100.00      0:00 100.00      0:00 100.00      0:18 100.00      0:00 100.00      0:18 100.00      0:00 100.00      0:17 100.00      0:16 100.00      0:16 100.00      0:17 100.00      0:00 100.00      0:17 100.00      0:18 100.00      0:18 100.00      0:17 100.00        0:36
 
 === P&R Summary (by time)
 
                                                  -- Actual timing --                    W/o grid delay
 FPGA name (run)  Win  Tasks R's L's %CPU, Grade  MiF Elapsed  %max    PARFF scheduled   Elapsed %max
 ---------------  ---- ------------- -----------  -------------------  ----------------  --------------
-U0_M0_F00 (R26)  Orig    1          96.54  1.00    1    0:17 100.00%                      0:17 100.00%
-U0_M0_IF  (R00)  Orig    1          96.43  1.00    1    0:11  64.17%                      0:11  64.17%
-U0_M0_F08 (R00)  Orig    1          86.30  1.00    1    0:10  59.19%                      0:10  59.19%
+U0_M0_F00 (R27)  Orig    1          96.26  1.00    1    0:16 100.00%                      0:16 100.00%
+U0_M0_IF  (R00)  Orig    1          96.43  1.00    1    0:11  68.39%                      0:11  68.39%
+U0_M0_F08 (R00)  Orig    1          86.30  1.00    1    0:10  63.08%                      0:10  63.08%
 
 Columns:
 - Win: label of the winning P&R strategy.
@@ -4281,5 +4285,186 @@ Columns:
 Sched. Startd Ended   S.dlay Duratn %CPU   Grade RSS [MB]  Task
 ------ ------ ------  ------ ------ ------ ----- --------  ----
  13:43  13:43  13:43    0:00   0:00  55.71  1.00     80.3  design_Default_RTL_GroupBundle_0_Synthesis
+
+
+***
+*** Detailed report for R27 (backend_default_24_5_1_19_50_30)
+***
+
+Grade  Bogomips  Cache   Count  CPU model (sample machine)
+-----  --------  ------  -----  --------------------------
+ 1.00      4600   25600      1  Intel(R) Xeon(R) CPU E5-2650 v3 @ 2.30GHz (csce-quinn-s1.engr.tamu.edu)
+
+
+======================================================================
+*** Back-end name: default backend ***
+
+Critical path, based on actual execution timing
+===============================================
+
+Elapsed  %total   SElapsed   SE/E  CPUtime  Stage
+-------  ------  ----------------  -------  -----
+   0:00   0.32%       0:00    0.7    0:00  Checks + config
+   0:00   0.71%       0:00    1.0    0:00  Launch VCS
+   0:00   0.82%       0:00    1.0    0:00  Compilation Profiler (after VCSAnalyzer)
+   0:00   0.20%       0:00    0.6    0:00  RTL DB index + link
+   0:00   0.78%       0:00    1.0    0:00  Build System
+   0:00   0.84%       0:00    1.0    0:00  Build zCore
+   0:17  91.86%       0:17    1.0    0:15  Fxx P&R
+   0:00   0.35%       0:00    1.0    0:00  Create Timing DB (SDF Mode)
+   0:00   0.21%       0:00    1.0    0:00  Create Timing DB (post FPGA)
+   0:00   0.04%       0:00    1.0    0:00  zAudit Report [1 FAILED]
+-------  ------  ----------------  -------  -----
+   0:17  96.12%       0:17    1.0  * Total *
+
+Columns:
+- Elapsed: the difference between Finish and Submit times [hh:mm].
+- %total: the percentage of Elapsed time in overall compilation. Note that
+  it may add up to less than 100% if there were any gaps between Finish and
+  Submit times of successive stages.
+- SElapsed: sum of Elapsed times for all tasks constituting the stage. It
+  may be greater than Elapsed if some or all of these tasks were executed
+  in parallel [hh:mm].
+- SE/E: equal to SElapsed/Elapsed. A value greater than 1.0 indicates that
+  tasks were executed in parallel.
+- CPUtime: the CPUtime of each task in the stage
+Critical path, assuming timing without scheduling or grid delays
+================================================================
+
+Elapsed  %total   SElapsed   SE/E  CPUtime  Stage
+-------  ------  ----------------  -------  -----
+   0:00   0.20%       0:00    1.2    0:00  Checks + config
+   0:00   0.74%       0:00    1.0    0:00  Launch VCS
+   0:00   0.86%       0:00    1.0    0:00  Compilation Profiler (after VCSAnalyzer)
+   0:00   0.20%       0:00    1.0    0:00  Compilation Profiler (after BackendEntry)
+   0:00   0.81%       0:00    1.0    0:00  Build System
+   0:00   0.88%       0:00    1.0    0:00  Build zCore
+   0:17  95.67%       0:17    1.0    0:15  Fxx P&R
+   0:00   0.37%       0:00    1.0    0:00  Create Timing DB (SDF Mode)
+   0:00   0.22%       0:00    1.0    0:00  Create Timing DB (post FPGA)
+   0:00   0.04%       0:00    1.0    0:00  zAudit Report [1 FAILED]
+-------  ------  ----------------  -------  -----
+   0:17 100.00%       0:17    1.0  * Total *
+
+
+Critical path, assuming timing without delays, no PARFF and >= 100% CPU usage
+=============================================================================
+
+Elapsed  %total   SElapsed   SE/E  CPUtime  Stage
+-------  ------  ----------------  -------  -----
+   0:00   0.17%       0:00    1.2    0:00  Checks + config
+   0:00   0.23%       0:00    1.0    0:00  Launch VCS
+   0:00   0.09%       0:00    1.0    0:00  FE + synthesis
+   0:00   0.05%       0:00    1.0    0:00  Compilation Profiler (after BackendEntry)
+   0:00   0.27%       0:00    1.0    0:00  Build System
+   0:00   0.77%       0:00    1.0    0:00  Build zCore
+   0:15  97.94%       0:15    1.0    0:15  Fxx P&R
+   0:00   0.40%       0:00    1.0    0:00  Create Timing DB (SDF Mode)
+   0:00   0.03%       0:00    1.0    0:00  Create Timing DB (post FPGA)
+   0:00   0.04%       0:00    1.0    0:00  zAudit Report [1 FAILED]
+-------  ------  ----------------  -------  -----
+   0:16 100.00%       0:16    1.0  * Total *
+
+
+Major compilation stages, ordered by submit time
+================================================
+
+Submit Elapsd %total   SExec  SE/E Tasks    %CPU Grade  Stage
+------ ------------- ------------- -------------------  -----
+ 19:50   0:00   0.32    0:00   0.7     4   83.14  1.00  Checks + config
+ 19:50   0:00   0.71    0:00   1.0     1   27.81  1.00  Launch VCS
+ 19:50   0:00   0.05    0:00   1.0     1   22.81  1.00  Build Rhino Fsdb
+ 19:50   0:00   0.17    0:00   1.0     1    7.18  1.00  Launch Verdi
+ 19:50   0:00   0.29    0:00   1.0     1   27.41  1.00  FE + synthesis
+ 19:50   0:00   0.82    0:00   1.0     1    6.43  1.00  Compilation Profiler (after VCSAnalyzer)
+ 19:51   0:00   0.19    0:00   1.0     1   24.41  1.00  Compilation Profiler (after BackendEntry)
+ 19:51   0:00   0.20    0:00   0.6     2   35.66  1.00  RTL DB index + link
+ 19:51   0:00   0.05    0:00   1.0     1   35.85  1.00  Make RTL DB for Run Time
+ 19:51   0:00   0.78    0:00   1.0     1   30.57  1.00  Build System
+ 19:51   0:00   0.07    0:00   1.0     1   16.67  1.00  zSimuFsdbHeader
+ 19:51   0:00   0.07    0:00   1.0     1   48.78  1.00  Build Equipotentials
+ 19:51   0:00   0.15    0:00   1.0     1   20.81  1.00  Convert Netlist
+ 19:51   0:00   0.22    0:00   1.0     1   21.54  1.00  Compilation Profiler (after ZTopBuildAnalyzer)
+ 19:51   0:00   0.05    0:00   1.0     1   51.67  1.00  Build Accessibility Graphs
+ 19:51   0:00   0.05    0:00   1.0     1   86.89  1.00  Simulate Graphs
+ 19:51   0:00   0.84    0:00   1.0     1   79.37  1.00  Build zCore
+ 19:51   0:00   0.16    0:00   1.0     1   17.58  1.00  FPGA post Process
+ 19:51   0:17  91.86    0:17   1.0     3   93.25  1.00  Fxx P&R
+ 19:51   0:00   0.13    0:00   1.0     1   15.89  1.00  Create Timing DB
+ 20:09   0:00   0.35    0:00   1.0     1  151.03  1.00  Create Timing DB (SDF Mode)
+ 20:09   0:00   0.25    0:00   1.0     1  137.09  1.00  FPGA PaRs Analyzer
+ 20:09   0:00   0.21    0:00   1.0     1   39.13  1.00  Global DB
+ 20:09   0:00   0.21    0:00   1.0     1   10.50  1.00  Create Timing DB (post FPGA)
+ 20:09   0:00   0.04    0:00   1.0     1   93.48  1.00  zAudit Report [1 FAILED]
+
+Columns:
+- Submit: the submit time of the first task in the stage [hh:mm].
+- Elapsd: the duration of the stage, based on actual timing [hh:mm].
+- %total: the percentage of Elapsd time in overall compilation.
+- SExec: sum of execution times (excluding scheduling and grid delays) for
+  all tasks constituting the stage. It may be greater than Elapsd if some
+  or all of these tasks were executed in parallel [hh:mm].
+- SE/E: equal to SExec/Elapsd. A value greater than 1.0 indicates that
+  tasks were executed in parallel.
+- %CPU: average CPU utilization: total CPU time divided by SExec.
+- Grade: average host grade.
+
+
+Memory usage:  Max Resident Set Size [MB]
+Known Unknown  Min      Avg      Max      Stage
+----- -------  -------- -------- -------- -----
+    4       0      10.9     85.8    242.0 Checks + config
+    1       0     153.0    153.0    153.0 Launch VCS
+    1       0      83.0     83.0     83.0 Build Rhino Fsdb
+    1       0      33.6     33.6     33.6 Launch Verdi
+    1       0      80.4     80.4     80.4 FE + synthesis
+    1       0      18.0     18.0     18.0 Compilation Profiler (after VCSAnalyzer)
+    1       0      18.0     18.0     18.0 Compilation Profiler (after BackendEntry)
+    2       0      44.4     60.3     76.2 RTL DB index + link
+    1       0      44.4     44.4     44.4 Make RTL DB for Run Time
+    1       0     303.0    303.0    303.0 Build System
+    1       0     107.3    107.3    107.3 zSimuFsdbHeader
+    1       0     117.7    117.7    117.7 Build Equipotentials
+    1       0     154.9    154.9    154.9 Convert Netlist
+    1       0      18.0     18.0     18.0 Compilation Profiler (after ZTopBuildAnalyzer)
+    1       0     160.4    160.4    160.4 Build Accessibility Graphs
+    1       0     377.9    377.9    377.9 Simulate Graphs
+    1       0     462.8    462.8    462.8 Build zCore
+    1       0     145.7    145.7    145.7 FPGA post Process
+    3       0       2.0   1786.8   5356.5 Fxx P&R
+    1       0     111.6    111.6    111.6 Create Timing DB
+    1       0     375.4    375.4    375.4 Create Timing DB (SDF Mode)
+    1       0       7.7      7.7      7.7 FPGA PaRs Analyzer
+    1       0     321.2    321.2    321.2 Global DB
+    1       0     123.5    123.5    123.5 Create Timing DB (post FPGA)
+    1       0      57.0     57.0     57.0 zAudit Report [1 FAILED]
+
+
+** There were no tasks with grid delays >= 30 s
+
+=== P&R Summary (by time)
+
+                                           -- Actual timing --                    W/o grid delay
+FPGA name  Win  Tasks R's L's %CPU, Grade  MiF Elapsed  %max    PARFF scheduled   Elapsed %max
+---------  ---- ------------- -----------  -------------------  ----------------  --------------
+U0_M0_F00  Orig    1          96.26  1.00    1    0:16 100.00%                      0:16 100.00%
+
+Columns:
+- Win: label of the winning P&R strategy.
+- Tasks: number of tasks launched.
+- R's: number of task re-runs.
+- L's: number of PARFF tasks launched.
+- %CPU: average CPU utilization.
+- Grade: average host grade.
+- MiF: max number of tasks being executed at the same time (Max in Flight).
+- Elapsed: elapsed wall time [hh:mm].
+- %max: percentage of max Elapsed time of all FPGAs.
+- PARFF: the time from the start of P&R and the start of the first PARFF task.
+
+=== Details on task group 'Synthesis'
+
+Sched. Startd Ended   S.dlay Duratn %CPU   Grade RSS [MB]  Task
+------ ------ ------  ------ ------ ------ ----- --------  ----
+ 19:50  19:50  19:51    0:00   0:00  27.41  1.00     80.4  design_Default_RTL_GroupBundle_0_Synthesis
 
 command exit code is '0'

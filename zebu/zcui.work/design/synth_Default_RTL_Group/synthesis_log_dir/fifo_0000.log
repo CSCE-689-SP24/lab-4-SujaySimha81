@@ -30,5 +30,5 @@
 #   step REPORT : Writing netlist 'fifo_0000' to 'edif/fifo_0000/fifo_0000.edf.gz'
 #   step EDIF GENERATOR : netlist 'zmerge' has changed - regenerate EDIF file 'edif/fifo_0000/fifo_0000.edf.gz'
 #   step SERIALIZE : writing netlist 'zmerge' into znl file 'edif/fifo_0000/fifo_0000.edf.gz'
-#   step SERIALIZE : #bytes in: 6107, #bytes out: 3311, compression ratio: 1.844458
-#   step REPORT : [87.28] Resource usage for fifo_0000: 0.187s 32.1M
+#   step SERIALIZE : #bytes in: 6107, #bytes out: 3310, compression ratio: 1.845015
+#   step REPORT : [87.28] Resource usage for fifo_0000: 0.178s 32.1M

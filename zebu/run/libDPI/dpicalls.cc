@@ -21,7 +21,7 @@ int c=0;
 extern "C" void fifo_usage_spy_notify(int we, int re, const svBitVecVal *data)
 {
  // TODO
- std::cout<<"DPI_C fifo_usage_spy_notify called with we_"<<we<<"  re_"<<re<<"  data_"<<data[0]<<"\n";
+ std::cout<<"DPI_C fifo_usage_spy_notify called with we_"<<we<<"  re_"<<re<<"  data_"<<std::hex<<data[0]<<"\n";
  
  
  FILE *f_dataout = fopen("dataout.txt", "ab");
@@ -39,12 +39,12 @@ extern "C" void fifo_usage_spy_notify(int we, int re, const svBitVecVal *data)
  if(!flag){
   
     if(we){
-      std::cout<<"DPI_C fifo_usage_spy_notify Writing Data_in : "<<std::hex<<data[0]<<"\n";
+      std::cout<<"DPI_C fifo_usage_spy_notify Writing "<<w<<" Data_in : "<<std::hex<<data[0]<<"\n";
       fprintf(f_datain, "%x\n",data[0]);
       w++;
     }
     if(re){
-      std::cout<<"DPI_C fifo_usage_spy_notify Reading Data_out : "<<std::hex<<data[0]<<"\n";
+      std::cout<<"DPI_C fifo_usage_spy_notify Reading "<<r<<" Data_out : "<<std::hex<<data[0]<<"\n";
       fprintf(f_dataout, "%x\n",data[0]);
       r++;
     }

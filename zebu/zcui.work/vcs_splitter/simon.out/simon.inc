@@ -33,7 +33,7 @@ rtran 0 0 /home/grads/s/sujaysimha/CSCE_689/lab-4-SujaySimha81/zebu/zcui.work/vc
 rtranif0 0 0 /home/grads/s/sujaysimha/CSCE_689/lab-4-SujaySimha81/zebu/zcui.work/vcs_splitter/simon.out/simon_inc.scm
 rtranif1 0 0 /home/grads/s/sujaysimha/CSCE_689/lab-4-SujaySimha81/zebu/zcui.work/vcs_splitter/simon.out/simon_inc.scm
 stb 1713291099 865478936 /home/grads/s/sujaysimha/CSCE_689/lab-4-SujaySimha81/zebu/zcui.work/vcs_splitter/simon.out/simon_inc.scm
-top 1714352730 2006938931 /home/grads/s/sujaysimha/CSCE_689/lab-4-SujaySimha81/zebu/zcui.work/vcs_splitter/simon.out/simon_inc.scm
+top 1714465283 3144623580 /home/grads/s/sujaysimha/CSCE_689/lab-4-SujaySimha81/zebu/zcui.work/vcs_splitter/simon.out/simon_inc.scm
 tran 0 0 /home/grads/s/sujaysimha/CSCE_689/lab-4-SujaySimha81/zebu/zcui.work/vcs_splitter/simon.out/simon_inc.scm
 tranif0 0 0 /home/grads/s/sujaysimha/CSCE_689/lab-4-SujaySimha81/zebu/zcui.work/vcs_splitter/simon.out/simon_inc.scm
 tranif1 0 0 /home/grads/s/sujaysimha/CSCE_689/lab-4-SujaySimha81/zebu/zcui.work/vcs_splitter/simon.out/simon_inc.scm

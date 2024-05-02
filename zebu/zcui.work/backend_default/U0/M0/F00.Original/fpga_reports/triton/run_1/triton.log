@@ -69,7 +69,7 @@ pack_info: Used Clustering Limit:
 pack_info: Used Clustering Bonus: LUT_FF_NET
 pack_info: Used Clustering Limit:
 ................................
-Design checksum: 40195500
+Design checksum: d288a61e
 
 
 Placement and Timing Optimization...
@@ -81,7 +81,7 @@ Optimize Stage 1
 ==========================================
  OPT     0    0.593        0.000      0
  OPT     1    0.593        0.000      0
-Design checksum: e0c123d0
+Design checksum: 733074ee
  OPT     2    0.493        0.000      0
 Optimize Stage 2
 ==========================================
@@ -106,7 +106,7 @@ Optimize Stage 2
 --------------------------------------------------
 
 Placement Total Wirelength = 93989
-Design checksum: 139c6de6
+Design checksum: a60bbf04
 
 Slice Utilization:   1.0% (  3124 out of 305400)
             SLR 3:   0.0% (     2 out of  76350)
@@ -136,11 +136,11 @@ Design:fx_top
   Worst negative slack:      0.000ns
 
 Placement Completed
-[MEM_RPT] Placement                     : Peak = 1835MB, Current = 1834MB
+[MEM_RPT] Placement                     : Peak = 1834MB, Current = 1834MB
 
-Total Placement Runtime: CPU time: 75 secs (1.2 mins)    Wall time: 59 secs (1.0 mins)
+Total Placement Runtime: CPU time: 76 secs (1.3 mins)    Wall time: 60 secs (1.0 mins)
 
-TCL-1 "place all" finished in 1.2 CPU minutes (59 Wall seconds)
+TCL-1 "place all" finished in 1.3 CPU minutes (60 Wall seconds)
 **********************************************************
                    Timing Path Report
 **********************************************************
@@ -185,5 +185,5 @@ Writing output files...
   Annotated 10289 BEL constraints (93.9%)
   opening file ./unplaced
 
-Total Runtime: CPU time: 88 secs (1.5 mins)    Wall time: 72 secs (1.2 mins)
+Total Runtime: CPU time: 90 secs (1.5 mins)    Wall time: 73 secs (1.2 mins)
 

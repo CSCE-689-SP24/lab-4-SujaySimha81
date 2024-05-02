@@ -1,2 +1,2 @@
-      elapsed:0 s      user:0 s    system:0.1 s     %cpu:266.67       load:0.40       fm:171083 m      vm:292 m      vm:+92 m      um:115 m      um:+15 m -- Building WB
-      elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.40       fm:171070 m     vm:1121 m       vm:+0 m      um:127 m       um:+0 m -- HW
+    elapsed:0.1 s      user:0 s    system:0.1 s     %cpu:250.00       load:0.69       fm:170751 m      vm:348 m     vm:+148 m      um:123 m      um:+23 m -- Building WB
+      elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.69       fm:170751 m     vm:1121 m       vm:+0 m      um:123 m       um:+0 m -- HW

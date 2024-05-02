@@ -1,72 +1,72 @@
 design/synth_Default_RTL_Group/edif/clkg/clkg.edf.gz
-	design/synth_Default_RTL_Group/script/clkg.tcl:1714416209 1183148826
-	design/synth_Default_RTL_Group/../zfepp_Default_RTL_Group.tcl:1714416212 4124740339
-	/home/grads/s/sujaysimha/CSCE_689/lab-4-SujaySimha81/zebu/zcui.work/utf_generatefiles/new_global_utf_config.hcsrc:1714416195 4128308467
-	/home/grads/s/sujaysimha/CSCE_689/lab-4-SujaySimha81/zebu/zcui.work/utf_generatefiles/global_utf.hcsrc:1714416195 930629965
-	design/synth_Default_RTL_Group/src/clkg.scm:1714416208 1906332338
-design/synth_Default_RTL_Group/edif/dut/dut.edf.gz
-	design/synth_Default_RTL_Group/script/dut.tcl:1714416209 1787079408
-	design/synth_Default_RTL_Group/../zfepp_Default_RTL_Group.tcl:1714416212 4124740339
-	/home/grads/s/sujaysimha/CSCE_689/lab-4-SujaySimha81/zebu/zcui.work/utf_generatefiles/new_global_utf_config.hcsrc:1714416195 4128308467
-	/home/grads/s/sujaysimha/CSCE_689/lab-4-SujaySimha81/zebu/zcui.work/utf_generatefiles/global_utf.hcsrc:1714416195 930629965
-	design/synth_Default_RTL_Group/src/dut.scm:1714416208 1252060778
+	design/synth_Default_RTL_Group/script/clkg.tcl:1714611049 1183148826
+	design/synth_Default_RTL_Group/../zfepp_Default_RTL_Group.tcl:1714611054 4124740339
+	/home/grads/s/sujaysimha/CSCE_689/lab-4-SujaySimha81/zebu/zcui.work/utf_generatefiles/new_global_utf_config.hcsrc:1714611031 4128308467
+	/home/grads/s/sujaysimha/CSCE_689/lab-4-SujaySimha81/zebu/zcui.work/utf_generatefiles/global_utf.hcsrc:1714611031 930629965
+	design/synth_Default_RTL_Group/src/clkg.scm:1714611048 1906332338
 design/synth_Default_RTL_Group/edif/fifo_usage_spy/fifo_usage_spy.edf.gz
-	design/synth_Default_RTL_Group/script/fifo_usage_spy.tcl:1714416209 4063347349
-	design/synth_Default_RTL_Group/../zfepp_Default_RTL_Group.tcl:1714416212 4124740339
-	/home/grads/s/sujaysimha/CSCE_689/lab-4-SujaySimha81/zebu/zcui.work/utf_generatefiles/new_global_utf_config.hcsrc:1714416195 4128308467
-	/home/grads/s/sujaysimha/CSCE_689/lab-4-SujaySimha81/zebu/zcui.work/utf_generatefiles/global_utf.hcsrc:1714416195 930629965
-	design/synth_Default_RTL_Group/src/fifo_usage_spy.scm:1714416208 1205529233
+	design/synth_Default_RTL_Group/script/fifo_usage_spy.tcl:1714611049 4063347349
+	design/synth_Default_RTL_Group/../zfepp_Default_RTL_Group.tcl:1714611054 4124740339
+	/home/grads/s/sujaysimha/CSCE_689/lab-4-SujaySimha81/zebu/zcui.work/utf_generatefiles/new_global_utf_config.hcsrc:1714611031 4128308467
+	/home/grads/s/sujaysimha/CSCE_689/lab-4-SujaySimha81/zebu/zcui.work/utf_generatefiles/global_utf.hcsrc:1714611031 930629965
+	design/synth_Default_RTL_Group/src/fifo_usage_spy.scm:1714611048 1205529233
 design/synth_Default_RTL_Group/edif/parity/parity.edf.gz
-	design/synth_Default_RTL_Group/script/parity.tcl:1714416209 2357633938
-	design/synth_Default_RTL_Group/../zfepp_Default_RTL_Group.tcl:1714416212 4124740339
-	/home/grads/s/sujaysimha/CSCE_689/lab-4-SujaySimha81/zebu/zcui.work/utf_generatefiles/new_global_utf_config.hcsrc:1714416195 4128308467
-	/home/grads/s/sujaysimha/CSCE_689/lab-4-SujaySimha81/zebu/zcui.work/utf_generatefiles/global_utf.hcsrc:1714416195 930629965
-	design/synth_Default_RTL_Group/src/parity.scm:1714416208 2811465419
+	design/synth_Default_RTL_Group/script/parity.tcl:1714611049 2357633938
+	design/synth_Default_RTL_Group/../zfepp_Default_RTL_Group.tcl:1714611054 4124740339
+	/home/grads/s/sujaysimha/CSCE_689/lab-4-SujaySimha81/zebu/zcui.work/utf_generatefiles/new_global_utf_config.hcsrc:1714611031 4128308467
+	/home/grads/s/sujaysimha/CSCE_689/lab-4-SujaySimha81/zebu/zcui.work/utf_generatefiles/global_utf.hcsrc:1714611031 930629965
+	design/synth_Default_RTL_Group/src/parity.scm:1714611048 2811465419
 design/synth_Default_RTL_Group/edif/parity_check/parity_check.edf.gz
-	design/synth_Default_RTL_Group/script/parity_check.tcl:1714416209 170400428
-	design/synth_Default_RTL_Group/../zfepp_Default_RTL_Group.tcl:1714416212 4124740339
-	/home/grads/s/sujaysimha/CSCE_689/lab-4-SujaySimha81/zebu/zcui.work/utf_generatefiles/new_global_utf_config.hcsrc:1714416195 4128308467
-	/home/grads/s/sujaysimha/CSCE_689/lab-4-SujaySimha81/zebu/zcui.work/utf_generatefiles/global_utf.hcsrc:1714416195 930629965
-	design/synth_Default_RTL_Group/src/parity_check.scm:1714416208 3230221940
+	design/synth_Default_RTL_Group/script/parity_check.tcl:1714611049 170400428
+	design/synth_Default_RTL_Group/../zfepp_Default_RTL_Group.tcl:1714611054 4124740339
+	/home/grads/s/sujaysimha/CSCE_689/lab-4-SujaySimha81/zebu/zcui.work/utf_generatefiles/new_global_utf_config.hcsrc:1714611031 4128308467
+	/home/grads/s/sujaysimha/CSCE_689/lab-4-SujaySimha81/zebu/zcui.work/utf_generatefiles/global_utf.hcsrc:1714611031 930629965
+	design/synth_Default_RTL_Group/src/parity_check.scm:1714611048 3230221940
 design/synth_Default_RTL_Group/edif/proba/proba.edf.gz
-	design/synth_Default_RTL_Group/script/proba.tcl:1714416209 503826569
-	design/synth_Default_RTL_Group/../zfepp_Default_RTL_Group.tcl:1714416212 4124740339
-	/home/grads/s/sujaysimha/CSCE_689/lab-4-SujaySimha81/zebu/zcui.work/utf_generatefiles/new_global_utf_config.hcsrc:1714416195 4128308467
-	/home/grads/s/sujaysimha/CSCE_689/lab-4-SujaySimha81/zebu/zcui.work/utf_generatefiles/global_utf.hcsrc:1714416195 930629965
-	design/synth_Default_RTL_Group/src/proba.scm:1714416208 3140989805
+	design/synth_Default_RTL_Group/script/proba.tcl:1714611049 503826569
+	design/synth_Default_RTL_Group/../zfepp_Default_RTL_Group.tcl:1714611054 4124740339
+	/home/grads/s/sujaysimha/CSCE_689/lab-4-SujaySimha81/zebu/zcui.work/utf_generatefiles/new_global_utf_config.hcsrc:1714611031 4128308467
+	/home/grads/s/sujaysimha/CSCE_689/lab-4-SujaySimha81/zebu/zcui.work/utf_generatefiles/global_utf.hcsrc:1714611031 930629965
+	design/synth_Default_RTL_Group/src/proba.scm:1714611048 3140989805
 design/synth_Default_RTL_Group/edif/proba_0000/proba_0000.edf.gz
-	design/synth_Default_RTL_Group/script/proba_0000.tcl:1714416209 3617844314
-	design/synth_Default_RTL_Group/../zfepp_Default_RTL_Group.tcl:1714416212 4124740339
-	/home/grads/s/sujaysimha/CSCE_689/lab-4-SujaySimha81/zebu/zcui.work/utf_generatefiles/new_global_utf_config.hcsrc:1714416195 4128308467
-	/home/grads/s/sujaysimha/CSCE_689/lab-4-SujaySimha81/zebu/zcui.work/utf_generatefiles/global_utf.hcsrc:1714416195 930629965
-	design/synth_Default_RTL_Group/src/proba_0000.scm:1714416208 3427616504
+	design/synth_Default_RTL_Group/script/proba_0000.tcl:1714611049 3617844314
+	design/synth_Default_RTL_Group/../zfepp_Default_RTL_Group.tcl:1714611054 4124740339
+	/home/grads/s/sujaysimha/CSCE_689/lab-4-SujaySimha81/zebu/zcui.work/utf_generatefiles/new_global_utf_config.hcsrc:1714611031 4128308467
+	/home/grads/s/sujaysimha/CSCE_689/lab-4-SujaySimha81/zebu/zcui.work/utf_generatefiles/global_utf.hcsrc:1714611031 930629965
+	design/synth_Default_RTL_Group/src/proba_0000.scm:1714611048 3427616504
 design/synth_Default_RTL_Group/edif/ram/ram.edf.gz
-	design/synth_Default_RTL_Group/script/ram.tcl:1714416209 2476068030
-	design/synth_Default_RTL_Group/../zfepp_Default_RTL_Group.tcl:1714416212 4124740339
-	/home/grads/s/sujaysimha/CSCE_689/lab-4-SujaySimha81/zebu/zcui.work/utf_generatefiles/new_global_utf_config.hcsrc:1714416195 4128308467
-	/home/grads/s/sujaysimha/CSCE_689/lab-4-SujaySimha81/zebu/zcui.work/utf_generatefiles/global_utf.hcsrc:1714416195 930629965
-	design/synth_Default_RTL_Group/src/ram.scm:1714416208 3790739360
+	design/synth_Default_RTL_Group/script/ram.tcl:1714611049 2476068030
+	design/synth_Default_RTL_Group/../zfepp_Default_RTL_Group.tcl:1714611054 4124740339
+	/home/grads/s/sujaysimha/CSCE_689/lab-4-SujaySimha81/zebu/zcui.work/utf_generatefiles/new_global_utf_config.hcsrc:1714611031 4128308467
+	/home/grads/s/sujaysimha/CSCE_689/lab-4-SujaySimha81/zebu/zcui.work/utf_generatefiles/global_utf.hcsrc:1714611031 930629965
+	design/synth_Default_RTL_Group/src/ram.scm:1714611048 3790739360
 design/synth_Default_RTL_Group/edif/rom/rom.edf.gz
-	design/synth_Default_RTL_Group/script/rom.tcl:1714416209 1469435646
-	design/synth_Default_RTL_Group/../zfepp_Default_RTL_Group.tcl:1714416212 4124740339
-	/home/grads/s/sujaysimha/CSCE_689/lab-4-SujaySimha81/zebu/zcui.work/utf_generatefiles/new_global_utf_config.hcsrc:1714416195 4128308467
-	/home/grads/s/sujaysimha/CSCE_689/lab-4-SujaySimha81/zebu/zcui.work/utf_generatefiles/global_utf.hcsrc:1714416195 930629965
-	design/synth_Default_RTL_Group/src/rom.scm:1714416208 1169943002
+	design/synth_Default_RTL_Group/script/rom.tcl:1714611049 1469435646
+	design/synth_Default_RTL_Group/../zfepp_Default_RTL_Group.tcl:1714611054 4124740339
+	/home/grads/s/sujaysimha/CSCE_689/lab-4-SujaySimha81/zebu/zcui.work/utf_generatefiles/new_global_utf_config.hcsrc:1714611031 4128308467
+	/home/grads/s/sujaysimha/CSCE_689/lab-4-SujaySimha81/zebu/zcui.work/utf_generatefiles/global_utf.hcsrc:1714611031 930629965
+	design/synth_Default_RTL_Group/src/rom.scm:1714611048 1169943002
 design/synth_Default_RTL_Group/edif/stb/stb.edf.gz
-	design/synth_Default_RTL_Group/script/stb.tcl:1714416209 495053709
-	design/synth_Default_RTL_Group/../zfepp_Default_RTL_Group.tcl:1714416212 4124740339
-	/home/grads/s/sujaysimha/CSCE_689/lab-4-SujaySimha81/zebu/zcui.work/utf_generatefiles/new_global_utf_config.hcsrc:1714416195 4128308467
-	/home/grads/s/sujaysimha/CSCE_689/lab-4-SujaySimha81/zebu/zcui.work/utf_generatefiles/global_utf.hcsrc:1714416195 930629965
-	design/synth_Default_RTL_Group/src/stb.scm:1714416208 514175380
-design/synth_Default_RTL_Group/edif/top/top.edf.gz
-	design/synth_Default_RTL_Group/script/top.tcl:1714416209 2548379491
-	design/synth_Default_RTL_Group/../zfepp_Default_RTL_Group.tcl:1714416212 4124740339
-	/home/grads/s/sujaysimha/CSCE_689/lab-4-SujaySimha81/zebu/zcui.work/utf_generatefiles/new_global_utf_config.hcsrc:1714416195 4128308467
-	/home/grads/s/sujaysimha/CSCE_689/lab-4-SujaySimha81/zebu/zcui.work/utf_generatefiles/global_utf.hcsrc:1714416195 930629965
-	design/synth_Default_RTL_Group/src/top.scm:1714416208 3314933938
+	design/synth_Default_RTL_Group/script/stb.tcl:1714611049 495053709
+	design/synth_Default_RTL_Group/../zfepp_Default_RTL_Group.tcl:1714611054 4124740339
+	/home/grads/s/sujaysimha/CSCE_689/lab-4-SujaySimha81/zebu/zcui.work/utf_generatefiles/new_global_utf_config.hcsrc:1714611031 4128308467
+	/home/grads/s/sujaysimha/CSCE_689/lab-4-SujaySimha81/zebu/zcui.work/utf_generatefiles/global_utf.hcsrc:1714611031 930629965
+	design/synth_Default_RTL_Group/src/stb.scm:1714611048 514175380
+design/synth_Default_RTL_Group/edif/dut/dut.edf.gz
+	design/synth_Default_RTL_Group/script/dut.tcl:1714611049 1787079408
+	design/synth_Default_RTL_Group/../zfepp_Default_RTL_Group.tcl:1714611054 4124740339
+	/home/grads/s/sujaysimha/CSCE_689/lab-4-SujaySimha81/zebu/zcui.work/utf_generatefiles/new_global_utf_config.hcsrc:1714611031 4128308467
+	/home/grads/s/sujaysimha/CSCE_689/lab-4-SujaySimha81/zebu/zcui.work/utf_generatefiles/global_utf.hcsrc:1714611031 930629965
+	design/synth_Default_RTL_Group/src/dut.scm:1714611048 1080952999
 design/synth_Default_RTL_Group/edif/fifo_0000/fifo_0000.edf.gz
-	design/synth_Default_RTL_Group/script/fifo_0000.tcl:1714416209 837698039
-	design/synth_Default_RTL_Group/../zfepp_Default_RTL_Group.tcl:1714416212 4124740339
-	/home/grads/s/sujaysimha/CSCE_689/lab-4-SujaySimha81/zebu/zcui.work/utf_generatefiles/new_global_utf_config.hcsrc:1714416195 4128308467
-	/home/grads/s/sujaysimha/CSCE_689/lab-4-SujaySimha81/zebu/zcui.work/utf_generatefiles/global_utf.hcsrc:1714416195 930629965
-	design/synth_Default_RTL_Group/src/fifo_0000.scm:1714416208 451118369
+	design/synth_Default_RTL_Group/script/fifo_0000.tcl:1714611049 837698039
+	design/synth_Default_RTL_Group/../zfepp_Default_RTL_Group.tcl:1714611054 4124740339
+	/home/grads/s/sujaysimha/CSCE_689/lab-4-SujaySimha81/zebu/zcui.work/utf_generatefiles/new_global_utf_config.hcsrc:1714611031 4128308467
+	/home/grads/s/sujaysimha/CSCE_689/lab-4-SujaySimha81/zebu/zcui.work/utf_generatefiles/global_utf.hcsrc:1714611031 930629965
+	design/synth_Default_RTL_Group/src/fifo_0000.scm:1714611048 3046097110
+design/synth_Default_RTL_Group/edif/top/top.edf.gz
+	design/synth_Default_RTL_Group/script/top.tcl:1714611049 2548379491
+	design/synth_Default_RTL_Group/../zfepp_Default_RTL_Group.tcl:1714611054 4124740339
+	/home/grads/s/sujaysimha/CSCE_689/lab-4-SujaySimha81/zebu/zcui.work/utf_generatefiles/new_global_utf_config.hcsrc:1714611031 4128308467
+	/home/grads/s/sujaysimha/CSCE_689/lab-4-SujaySimha81/zebu/zcui.work/utf_generatefiles/global_utf.hcsrc:1714611031 930629965
+	design/synth_Default_RTL_Group/src/top.scm:1714611048 1954245480

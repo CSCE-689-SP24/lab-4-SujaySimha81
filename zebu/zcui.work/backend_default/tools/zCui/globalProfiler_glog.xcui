@@ -9,13 +9,13 @@
  <p>BETA version: results may not be fully accurate</p>
 <h1>Compilation Summary</h1>
 <p>Last session wall clock times:</p>
-<p>    FE     : 26s</p>
-<p>    BE     : 19min 08s</p>
-<p>    Total  : 19min 34s</p>
+<p>    FE     : 38s</p>
+<p>    BE     : 18min 07s</p>
+<p>    Total  : 18min 45s</p>
 <p></p>
 <p>All sessions cumulative compile times:</p>
-<p>    without delay  : 18min 44s</p>
-<p>    with delay*    : 19min 16s</p>
+<p>    without delay  : 18min 02s</p>
+<p>    with delay*    : 18min 26s</p>
 <p></p>
 <p>*including slot and grid delays, difference with total wall clock time could be NFS wait or internal flow handling delays
 </p>

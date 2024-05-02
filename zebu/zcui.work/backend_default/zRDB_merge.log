@@ -22,7 +22,7 @@
 
 # zRDB -merge -script zDB_final_zcui.tcl 
 
-# start time is Mon Apr 29 14:02:42 2024
+# start time is Wed May  1 20:09:10 2024
 
 
 
@@ -30,15 +30,15 @@
 # Build Date : Oct 18 2022 - 01:00:11
 # ---------------------------System Context--------------------------- 
 # Cpu        40 x bogomips - 4604.90 Intel(R) Xeon(R) CPU E5-2650 v3 @ 2.30GHz
-#            Load: 0.30 0.63 0.62 4/513 7639
+#            Load: 0.31 0.63 0.58 1/516 17675
 #            Hostname: csce-quinn-s1.engr.tamu.edu   OS: Linux 3.10.0-1160.108.1.el7.x86_64
-# Memory     Total: 193183 MB Free: 171241 MB
-#            Total Free including cache: 187352 MB
-#            Swap cache: 0 MB Cached space: 16111 MB
+# Memory     Total: 193183 MB Free: 170871 MB
+#            Total Free including cache: 187210 MB
+#            Swap cache: 0 MB Cached space: 16339 MB
 #            Swap space: 4095 MB Free Swap space: 4095 MB
 #            VmSize: 353 MB VmPeak: 353 MB
 # Disk Space Total: 50 GB Available: 8 GB Used: 42 GB
-#            Free inodes: 104731912
+#            Free inodes: 104730534
 # Stack                                Soft Limit           Hard Limit  
 #            Max stack size            8388608              unlimited            bytes     
 # -------------------------------------------------------------------- 
@@ -97,7 +97,7 @@ merge_db
 #   step DB LOAD : Loading DB stamp from file './nofpga/zrdb/stamp.zrdb'
 #   step FILE : Opening file './nofpga/zrdb/stamp.zrdb' in read mode
 #   step DB LOAD : Version stamp is 2021.2.0
-#   step DB LOAD : The database was generated on : Mon Apr 29 13:43:57 2024
+#   step DB LOAD : The database was generated on : Wed May  1 19:51:27 2024
 #   step DB LOAD : Stored database CRC is : ffffffff
 #   step DB LOAD : Deserializing database : start
 #   step DB LOAD : Database version is 2021.2.0
@@ -248,12 +248,12 @@ merge_db
 #   step AnoDB : 0 signals anotated, 0 memories added, 0 removed ZceiMessagePorts added.
 #   step Annotation DB : Closing file 'work.Part_0/zCoreBuild_equi.inf'
 #   step MERGE : Completed task 'ImportConstants' in 0 seconds
-#   exec summary : Total memory: 1080276 kB - RSS memory: 317804 kB - Data memory: 798152 kB
+#   exec summary : Total memory: 1129480 kB - RSS memory: 317912 kB - Data memory: 847356 kB
 #   step POWER : No power domain needs to be copied
-#   exec summary : Total memory: 1080276 kB - RSS memory: 317804 kB - Data memory: 798152 kB
+#   exec summary : Total memory: 1129480 kB - RSS memory: 317912 kB - Data memory: 847356 kB
 #   step MERGE : Starting task 'EquiConsolidation'
 #   step MERGE : Completed task 'EquiConsolidation' in 0 seconds
-#   exec summary : Total memory: 1080276 kB - RSS memory: 317804 kB - Data memory: 798152 kB
+#   exec summary : Total memory: 1129480 kB - RSS memory: 317912 kB - Data memory: 847356 kB
 #   step FILE : Opening file 'zDB_Controller.cui' in read mode
 #   step FPGA : Merging 'U0/M0/F08' - start
 #   step FPGA : Trying SAC format.
@@ -279,8 +279,8 @@ merge_db
 #   step FWC : Loaded in 0 seconds'
 #   step FPGA : Consolidation of 1912 modified equis
 #   step FPGA : Consolidation completed in 0 seconds.
-#   step FPGA : Merging 'U0/M0/F08' - done in 0 sec
-#   exec summary : Total memory: 1177940 kB - RSS memory: 322200 kB - Data memory: 895816 kB
+#   step FPGA : Merging 'U0/M0/F08' - done in 1 sec
+#   exec summary : Total memory: 1227144 kB - RSS memory: 322280 kB - Data memory: 945020 kB
 #   step FPGA : Merging 'U0/M0/IF' - start
 #   step FPGA : Trying SAC format.
 #   step Merge : Merging 'U0/M0/IF'
@@ -303,7 +303,7 @@ merge_db
 #   step FPGA : Consolidation of 9876 modified equis
 #   step FPGA : Consolidation completed in 0 seconds.
 #   step FPGA : Merging 'U0/M0/IF' - done in 0 sec
-#   exec summary : Total memory: 1177940 kB - RSS memory: 322224 kB - Data memory: 895816 kB
+#   exec summary : Total memory: 1227144 kB - RSS memory: 322304 kB - Data memory: 945020 kB
 #   step FPGA : Merging 'U0/M0/F00' - start
 #   step FPGA : Trying SAC format.
 #   step Merge : Merging 'U0/M0/F00'
@@ -346,15 +346,15 @@ merge_db
 #   step Fwc : Importing FWC coordinates for ValueSet : 'fwc_fifo_ports'
 #   step FPGA : Consolidation of 1656 modified equis
 #   step FPGA : Consolidation completed in 0 seconds.
-#   step FPGA : Merging 'U0/M0/F00' - done in 1 sec
-#   exec summary : Total memory: 1177940 kB - RSS memory: 322320 kB - Data memory: 895816 kB
+#   step FPGA : Merging 'U0/M0/F00' - done in 0 sec
+#   exec summary : Total memory: 1227144 kB - RSS memory: 322388 kB - Data memory: 945020 kB
 #   step FPGA : Merged all FPGAs : total time 1 sec, work time : 1 sec, wait time : 0 sec
 #   step MERGE : Starting task 'MergeZebuDb'
 #   step Merge : Merging zdb into zrdb
 #   step Merge : Done merging zdb - Time : 0 seconds
 #   step MERGE : Completed task 'MergeZebuDb' in 0 seconds
-#   exec summary : Total memory: 1177940 kB - RSS memory: 322372 kB - Data memory: 895816 kB
-#   exec summary : Total memory: 1223040 kB - RSS memory: 326468 kB - Data memory: 945016 kB
+#   exec summary : Total memory: 1227144 kB - RSS memory: 322440 kB - Data memory: 945020 kB
+#   exec summary : Total memory: 1227144 kB - RSS memory: 322440 kB - Data memory: 945020 kB
 #   step MERGE : Starting task 'ImportProperties'
 #   step Properties : Importing properties from 'tools/zTopBuild/zTopBuild_propertyDB.gz' to database
 #   step Property DB : reading property DB from file 'tools/zTopBuild/zTopBuild_propertyDB.gz'
@@ -368,41 +368,41 @@ merge_db
 #   step PropertyDB : Serializing...
 #   step PropertyDB : Serialized in 0 seconds
 #   step MERGE : Completed task 'ImportProperties' in 0 seconds
-#   exec summary : Total memory: 1227140 kB - RSS memory: 326552 kB - Data memory: 945016 kB
+#   exec summary : Total memory: 1227144 kB - RSS memory: 322524 kB - Data memory: 945020 kB
 #   step MERGE : Running merge flow, threading is on
 #   step MERGE : Starting task 'ZebuPowerOnReplication'
 #   step POWER DOMAIN DB : Loading power domain database from file './zrdb/power.zrdb'
 #   step POWER DOMAIN DB : Database file './zrdb/power.zrdb' not found - power domain db not available
 #   step PWDB : No power domain information found
 #   step MERGE : Completed task 'ZebuPowerOnReplication' in 0 seconds
-#   exec summary : Total memory: 1227140 kB - RSS memory: 326560 kB - Data memory: 945016 kB
+#   exec summary : Total memory: 1227144 kB - RSS memory: 322532 kB - Data memory: 945020 kB
 #   step MERGE : Starting task 'CoordConsolidation'
 #   step COORDS : Updating writability
 #   step COORDS : Updated writability in 0 seconds
 #   step MERGE : Completed task 'CoordConsolidation' in 0 seconds
-#   exec summary : Total memory: 1227140 kB - RSS memory: 326568 kB - Data memory: 945016 kB
+#   exec summary : Total memory: 1227144 kB - RSS memory: 322540 kB - Data memory: 945020 kB
 #   step MERGE : Starting task 'FlagSignalsAndVectors'
 #   step MERGE : Completed task 'FlagSignalsAndVectors' in 0 seconds
-#   exec summary : Total memory: 1227140 kB - RSS memory: 326576 kB - Data memory: 945016 kB
+#   exec summary : Total memory: 1227144 kB - RSS memory: 322548 kB - Data memory: 945020 kB
 #   step MERGE : Starting task 'FlagNodes'
 #   step MERGE : Completed task 'FlagNodes' in 0 seconds
-#   exec summary : Total memory: 1227140 kB - RSS memory: 326576 kB - Data memory: 945016 kB
+#   exec summary : Total memory: 1227144 kB - RSS memory: 322548 kB - Data memory: 945020 kB
 #   step MERGE : Starting task 'BackslashMemDb'
 #   step DB : Backslash mem db names
 #   step DB : Backslash mem db names : done
 #   step MERGE : Completed task 'BackslashMemDb' in 0 seconds
-#   exec summary : Total memory: 1227140 kB - RSS memory: 326576 kB - Data memory: 945016 kB
+#   exec summary : Total memory: 1227144 kB - RSS memory: 322548 kB - Data memory: 945020 kB
 #   step MERGE : Starting task 'ComputeAndSaveCRC'
 #   step DB SAVE : Saving stamp in file './zrdb/stamp.zrdb'
 #   step FILE : Opening file './zrdb/stamp.zrdb' in write mode
 #   step DB SAVE : Stamp saved
 #   step FILE : Opening file './zrdb/zrdb.xref' in write mode
 #   step MERGE : Completed task 'ComputeAndSaveCRC' in 0 seconds
-#   exec summary : Total memory: 1227140 kB - RSS memory: 326620 kB - Data memory: 945016 kB
+#   exec summary : Total memory: 1227144 kB - RSS memory: 322592 kB - Data memory: 945020 kB
 #   step MERGE : Starting task 'CopyPowerDomainStatusCoordinates'
 #   step PWDB : No power domain database found.
 #   step MERGE : Completed task 'CopyPowerDomainStatusCoordinates' in 0 seconds
-#   exec summary : Total memory: 1227140 kB - RSS memory: 326624 kB - Data memory: 945016 kB
+#   exec summary : Total memory: 1227144 kB - RSS memory: 322596 kB - Data memory: 945020 kB
 #   step MERGE : Starting task 'SaveMemories'
 #   step DB SAVE : Saving memories to file './zrdb/mems.zrdb'
 #   step MEMS : Saving memories to file './zrdb/mems.zrdb'
@@ -412,45 +412,45 @@ merge_db
 #   step MEMS : Serializing memories table : finished in 0 seconds
 #   step MEMS : Memories saved
 #   step MERGE : Completed task 'SaveMemories' in 0 seconds
-#   exec summary : Total memory: 1227140 kB - RSS memory: 326628 kB - Data memory: 945016 kB
+#   exec summary : Total memory: 1227144 kB - RSS memory: 322600 kB - Data memory: 945020 kB
 #   step MERGE : Starting task 'BuildExtendedPowerDomainDB'
 #   step PWDB : 
 #   step MERGE : Starting task 'DefaultSelection'
-#   step MERGE : Building default selection with all CSA support registers and transactors, saving to './zrdb/csa_supports.zrdb'
 #   step SELECT : Building default selection with all CSA support registers and transactors, saving to './zrdb/csa_supports.zrdb'
-#   step DICTIONARY : Indexing database names
-#   step MERGE : Adjusted to 32768 names per chunk
-#   step DICTIONARY : Adjusted to 32768 names per chunk
 #   step MERGE : Starting task 'ExportToMuDb'
-#   step MERGE : Completed task 'BuildExtendedPowerDomainDB' in 0 seconds
+#   step MERGE : Starting task 'IndexNames'
+#   step DICTIONARY : Starting task 'SaveCoords'
+#   step MUDB : Adjusted to 32768 names per chunk
+#   step DICTIONARY : Adjusted to 32768 names per chunk
+#   step MERGE : Adjusted to 32768 names per chunk
 #   step DB SAVE : Saving coordinates to file './zrdb/coords.zrdb'
 #   step COORDS : Saving coordinates to file './zrdb/coords.zrdb'
-#   step MUDB : Opening file './zrdb/coords.zrdb' in write mode
+#   step MERGE : Opening file './zrdb/coords.zrdb' in write mode
 #   step FILE : Opening file './zrdb/coords.zrdb' in write mode
 #   step Selection : Building selected readable register coordinates table
-#   exec summary : Total memory: 1259924 kB - RSS memory: 326644 kB - Data memory: 977800 kB
 #   step Selection : Got 607 coordinates (for 1003 selected signals) in 0s
-#   step SELECT : Setting selection id to '30339b8f'
+#   step SELECT : Setting selection id to 'b893a45c'
 #   step SELECTION DB : Saving selection to file './zrdb/csa_supports.zrdb'
+#   exec summary : Total memory: 1259928 kB - RSS memory: 326708 kB - Data memory: 977804 kB
 #   step FILE : Opening file './zrdb/csa_supports.zrdb' in write mode
 #   step MERGE : Completed task 'IndexNames' in 0 seconds
-#   step COORDS : Serializing coordinates table : start
-#   exec summary : Total memory: 1259924 kB - RSS memory: 326732 kB - Data memory: 977800 kB
-#   step MERGE : Starting task 'SaveNames'
-#   step MERGE : Starting task 'SetSaveTreeParameters'
+#   exec summary : Total memory: 1259928 kB - RSS memory: 326796 kB - Data memory: 977804 kB
 #   step MERGE : Starting task 'SaveEquis'
-#   step DB SAVE : Saving names to path './zrdb'
-#   step MERGE : Saving 8321 dictionary entries
-#   step EQUI DB : Saving 8321 dictionary entries
-#   step DICTIONARY : Finishing load
+#   step EQUI DB : Saving equi database to path './zrdb'
 #   step EQUI DB : Finishing load
-#   step EQUI DB : Nothing to load
+#   step EQUI DB : Starting task 'SaveNames'ath './zrdb'
 #   step EQUI DB : Saving to path './zrdb'
+#   step MERGE : Opening file 1/8 : './zrdb/0_equis.zrdb'
 #   step EQUI DB : Opening file 1/8 : './zrdb/0_equis.zrdb'
-#   step FILE : Opening file './zrdb/0_equis.zrdb' in write mode
+#   step FILE : Saving names to path './zrdb'
+#   step DB SAVE : Saving names to path './zrdb'
+#   step DICTIONARY : Starting task 'SetSaveTreeParameters'
+#   step MERGE : Starting task 'SetSaveTreeParameters'
+#   step MERGE : Completed task 'SetSaveTreeParameters' in 0 seconds
+#   step COORDS : Serializing coordinates table : start
 #   step FILE : Opening file './zrdb/dictionary/names.zrdb' in write mode
 #   step COORDS : Serializing coordinates table : finished in 0 seconds
-#   exec summary : Total memory: 1284512 kB - RSS memory: 326744 kB - Data memory: 1002388 kB
+#   exec summary : Total memory: 1284516 kB - RSS memory: 328856 kB - Data memory: 1002392 kB
 #   step MERGE : Starting task 'SaveTreeLight'
 #   step DATABASE : Saving database to path './zrdb'
 #   step DB LOAD : Loading names
@@ -462,10 +462,10 @@ merge_db
 #   step MERGE : Completed task 'SaveCoords' in 0 seconds
 #   step SELECTION DB : Saved selection to file './zrdb/csa_supports.zrdb'
 #   step MERGE : Completed task 'DefaultSelection' in 0 seconds
-#   exec summary : Total memory: 1284512 kB - RSS memory: 326764 kB - Data memory: 1002388 kB
-#   exec summary : Total memory: 1284512 kB - RSS memory: 326816 kB - Data memory: 1002388 kB
 #   step EQUI DB : Opening file 2/8 : './zrdb/1_equis.zrdb'
 #   step FILE : Opening file './zrdb/1_equis.zrdb' in write mode
+#   exec summary : Total memory: 1284516 kB - RSS memory: 328864 kB - Data memory: 1002392 kB
+#   exec summary : Total memory: 1284516 kB - RSS memory: 326868 kB - Data memory: 1002392 kB
 #   step FILE : Opening file './zrdb/signals_1.zrdb' in write mode
 #   step EQUI DB : Opening file 3/8 : './zrdb/2_equis.zrdb'
 #   step FILE : Opening file './zrdb/2_equis.zrdb' in write mode
@@ -473,28 +473,56 @@ merge_db
 #   step FILE : Opening file './zrdb/signals_2.zrdb' in write mode
 #   step EQUI DB : Opening file 4/8 : './zrdb/3_equis.zrdb'
 #   step FILE : Opening file './zrdb/3_equis.zrdb' in write mode
-#   step DICTIONARY : Chunk 0 contains 8321 dictionary entries
 #   step FILE : Opening file './zrdb/signals_3.zrdb' in write mode
+#   step DICTIONARY : Chunk 0 contains 8321 dictionary entries
 #   step DICTIONARY : Saved 8321 dictionary entries in 0 seconds
 #   step MERGE : Completed task 'SaveNames' in 0 seconds
 #   step EQUI DB : Opening file 5/8 : './zrdb/4_equis.zrdb'
-#   step FILE : Opening file './zrdb/4_equis.zrdb' in write mode
-#   exec summary : Total memory: 1284512 kB - RSS memory: 326956 kB - Data memory: 1002388 kB
+#   step FILE : Total memory: 1284528 kB
+#   exec summary : Total memory: 1284528 kB - RSS memory: 324964 kB - Data memory: 1002392 kB
 #   step MERGE : Starting task 'SaveXCui'
 #   step DB SAVE : Saving xcui for runtime archive
 #   step FILE : Opening file './tools/zCui/zRDB_archive.xcui' in write mode
 #   step FILE : Opening file './zrdb/signals_4.zrdb' in write mode
+#   step FILE : Opening file './zrdb/signals_5.zrdb' in write mode
 #   step EQUI DB : Opening file 6/8 : './zrdb/5_equis.zrdb'
 #   step FILE : Opening file './zrdb/5_equis.zrdb' in write mode
+#   step FILE : Opening file './zrdb/signals_6.zrdb' in write mode
 #   step MERGE : Completed task 'SaveXCui' in 0 seconds
-#   exec summary : Total memory: 1284524 kB - RSS memory: 326956 kB - Data memory: 1002388 kB
-#   step FILE : Opening file './zrdb/signals_5.zrdb' in write mode
+#   exec summary : Total memory: 1284540 kB - RSS memory: 324964 kB - Data memory: 1002392 kB
 #   step EQUI DB : Opening file 7/8 : './zrdb/6_equis.zrdb'
 #   step FILE : Opening file './zrdb/6_equis.zrdb' in write mode
-#   step FILE : Opening file './zrdb/signals_6.zrdb' in write mode
+#   step FILE : Opening file './zrdb/signals_7.zrdb' in write mode
 #   step EQUI DB : Opening file 8/8 : './zrdb/7_equis.zrdb'
 #   step FILE : Opening file './zrdb/7_equis.zrdb' in write mode
-#   step FILE : Opening file './zrdb/signals_7.zrdb' in write mode
+#   step ZTREEDB : Serializing tree in file ./zrdb/stree.zrdb.
+#   step FILE : Opening file './zrdb/stree.zrdb' in write mode
+#   step DB : Writing index for './zrdb/0_equis.zrdb' (8 entries)
+#   step DB : Wrote index for './zrdb/0_equis.zrdb' in 0 seconds
+#   step DB : Wrote index for './zrdb/0_equis.zrdb' in 0 seconds
+#   step DB : Wrote index for './zrdb/2_equis.zrdb' in 0 seconds
+#   step DB : Wrote index for './zrdb/3_equis.zrdb' in 0 seconds
+#   step DB : Wrote index for './zrdb/3_equis.zrdb' in 0 seconds
+#   step DB : Wrote index for './zrdb/3_equis.zrdb' in 0 seconds
+#   step DB : Wrote index for './zrdb/4_equis.zrdb' in 0 seconds
+#   step DB : Wrote index for './zrdb/4_equis.zrdb' in 0 seconds
+#   step DB : Wrote index for './zrdb/4_equis.zrdb' in 0 seconds
+#   step DB : Wrote index for './zrdb/4_equis.zrdb' in 0 seconds
+#   step DB : Wrote index for './zrdb/6_equis.zrdb' in 0 seconds
+#   step DB : Wrote index for './zrdb/5_equis.zrdb' in 0 seconds
+#   step DB : Wrote index for './zrdb/7_equis.zrdb' in 0 seconds
+#   step DB : Wrote index for './zrdb/7_equis.zrdb' in 0 seconds
+#   step DB : Wrote index for './zrdb/7_equis.zrdb' in 0 seconds
+#   step TREE : Serializing database
+#   step TREE : Serializing Chips ...
+#   step TREE : Serializing tree : start
+#   step TREE : Serializing tree : done in 0 seconds
+#   step TREE : Serializing database : done in 0 seconds
+#   step DB : Database './zrdb/4_equis.zrdb' closed
+#   step DB : Database './zrdb/6_equis.zrdb' closed
+#   step DB : Database './zrdb/2_equis.zrdb' closed
+#   step DB : Database './zrdb/0_equis.zrdb' closed
+#   step DB : Database './zrdb/1_equis.zrdb' closed
 #   step ALWAYS : 
 
                                     ZeBu (R)
@@ -519,43 +547,15 @@ merge_db
                         https://solvnetplus.synopsys.com)
 
 #   step INFO : RTLDB version is Build Q-2020.03-SP1-4 Oct 17 2022 (4399324)
-#   step DB : Writing index for './zrdb/0_equis.zrdb' (8 entries)
-#   step DB : Writing index for './zrdb/5_equis.zrdb' (6 entries)
-#   step DB : Writing index for './zrdb/5_equis.zrdb' (6 entries)
-#   step DB : Writing index for './zrdb/5_equis.zrdb' (6 entries)
-#   step DB : Writing index for './zrdb/5_equis.zrdb' (6 entries)
-#   step DB : Writing index for './zrdb/5_equis.zrdb' (6 entries)
-#   step DB : Wrote index for './zrdb/6_equis.zrdb' in 0 seconds
-#   step DB : Wrote index for './zrdb/1_equis.zrdb' in 0 seconds
-#   step DB : Wrote index for './zrdb/1_equis.zrdb' in 0 seconds
-#   step DB : Wrote index for './zrdb/2_equis.zrdb' in 0 seconds
-#   step DB : Wrote index for './zrdb/2_equis.zrdb' in 0 seconds
-#   step DB : Wrote index for './zrdb/3_equis.zrdb' in 0 seconds
-#   step DB : Wrote index for './zrdb/3_equis.zrdb' in 0 seconds
-#   step DB : Wrote index for './zrdb/3_equis.zrdb' in 0 seconds
-#   step DB : Wrote index for './zrdb/3_equis.zrdb' in 0 seconds
-#   step DB : Wrote index for './zrdb/5_equis.zrdb' in 0 seconds
-#   step DB : Database './zrdb/1_equis.zrdb' closed
-#   step DB : Database './zrdb/6_equis.zrdb' closed
-#   step DB : Database './zrdb/2_equis.zrdb' closed
-#   step DB : Database './zrdb/3_equis.zrdb' closed
-#   step DB : Database './zrdb/5_equis.zrdb' closed
-#   step DB : Database './zrdb/0_equis.zrdb' closed
 #   step DB : Database './zrdb/7_equis.zrdb' closed
-#   step DB : Database './zrdb/4_equis.zrdb' closed
-#   step EQUI DB : Serialized 682 entries in 0 seconds
-#   step MERGE : Completed task 'SaveEquis' in 0 seconds
-#   step ZTREEDB : Serializing tree in file ./zrdb/stree.zrdb.
-#   step FILE : Opening file './zrdb/stree.zrdb' in write mode
-#   exec summary : Total memory: 1289404 kB - RSS memory: 327788 kB - Data memory: 1002436 kB
-#   step TREE : Serializing database
-#   step TREE : Serializing Chips ...
-#   step TREE : Serializing tree : start
-#   step TREE : Serializing tree : done in 0 seconds
-#   step TREE : Serializing database : done in 0 seconds
+#   step DB : Database './zrdb/5_equis.zrdb' closed
 #   step DATABASE : Closing auxillary databases
 #   step DB : Writing index for './zrdb/signals_0.zrdb' (44 entries)
 #   step DB : Wrote index for './zrdb/signals_0.zrdb' in 0 seconds
+#   step DB : Database './zrdb/3_equis.zrdb' closed
+#   step EQUI DB : Serialized 682 entries in 0 seconds
+#   step MERGE : Completed task 'SaveEquis' in 0 seconds
+#   exec summary : Total memory: 1289408 kB - RSS memory: 325776 kB - Data memory: 1002440 kB
 #   step DB : Database './zrdb/signals_0.zrdb' closed
 #   step DB : Writing index for './zrdb/signals_1.zrdb' (52 entries)
 #   step DB : Wrote index for './zrdb/signals_1.zrdb' in 0 seconds
@@ -586,7 +586,7 @@ merge_db
 #   step NameTable : Serializing '4' names
 #   step FWC : Saved FWC value sets table
 #   step MERGE : Completed task 'SaveTreeLight' in 0 seconds
-#   exec summary : Total memory: 1289404 kB - RSS memory: 328028 kB - Data memory: 1002436 kB
+#   exec summary : Total memory: 1289408 kB - RSS memory: 323980 kB - Data memory: 1002440 kB
 ### warning in ConvertToMuDb [RDB0572W] : Start point 776 has no coordinate.
 ### warning in ConvertToMuDb [RDB0572W] : Start point 800 has no coordinate.
 ### warning in ConvertToMuDb [RDB0572W] : Start point 810 has no coordinate.
@@ -603,8 +603,8 @@ merge_db
 ### warning in ConvertToMuDb [RDB0572W] : Start point 1103 has no coordinate.
 ### warning in ConvertToMuDb [RDB0572W] : Start point 1106 has no coordinate.
 ### warning in ConvertToMuDb [RDB0572W] : Reached max count for message, next warning of this id won't be displayed.
-#   step MERGE : Completed task 'ExportToMuDb' in 0 seconds
-#   exec summary : Total memory: 1551512 kB - RSS memory: 332744 kB - Data memory: 1264580 kB
+#   step MERGE : Completed task 'ExportToMuDb' in 1 seconds
+#   exec summary : Total memory: 1551516 kB - RSS memory: 326648 kB - Data memory: 1264584 kB
 #   step MERGE : Starting task 'SaveCoords'
 #   step DB SAVE : Saving coordinates to file './zrdb/coords.zrdb'
 #   step COORDS : Saving coordinates to file './zrdb/coords.zrdb'
@@ -613,25 +613,25 @@ merge_db
 #   step COORDS : Serializing coordinates table : finished in 0 seconds
 #   step COORDS : Coordinates saved
 #   step MERGE : Completed task 'SaveCoords' in 0 seconds
-#   exec summary : Total memory: 1551512 kB - RSS memory: 332744 kB - Data memory: 1264580 kB
+#   exec summary : Total memory: 1551516 kB - RSS memory: 326648 kB - Data memory: 1264584 kB
 #   step MERGE : Starting task 'CleanZebuDb'
 #   step MERGE : Completed task 'CleanZebuDb' in 0 seconds
-#   exec summary : Total memory: 1526924 kB - RSS memory: 332672 kB - Data memory: 1239992 kB
+#   exec summary : Total memory: 1526928 kB - RSS memory: 326576 kB - Data memory: 1239996 kB
 #   step MERGE : Starting task 'SaveZebuDb'
 #   step DB : Saving ZebuDB in file './zrdb/ZebuDB.zdb'
 #   step DB : Save ZebuDB : done in 0 seconds
 #   step MERGE : Completed task 'SaveZebuDb' in 0 seconds
-#   exec summary : Total memory: 1526924 kB - RSS memory: 332708 kB - Data memory: 1239992 kB
+#   exec summary : Total memory: 1526928 kB - RSS memory: 326612 kB - Data memory: 1239996 kB
 #   step DB : Closed ZebuDB
-#   step MERGE : Completed post merge tasks in 0 seconds
-#   step MERGE : Completed merge flow tasks in 1 seconds
+#   step MERGE : Completed post merge tasks in 1 seconds
+#   step MERGE : Completed merge flow tasks in 2 seconds
 #   step MERGE : Total time waiting for data : 0 seconds
-#   step MERGE : Contribution to overall compil time : 6 seconds
+#   step MERGE : Contribution to overall compil time : 8 seconds
 
 #   step zlog : Ran into 25 messages with id 'RDB0572W', yet only 16 were displayed in the log as per user request.
 #   exec summary :   25 warnings,    0 syntax errors,    0 fatal errors,    0 internal errors
-#   exec summary : wall clock 0m1s, user 0m0.618s, sys 0m0.274s
-#   exec summary : Total memory: 1510532 kB - RSS memory: 316964 kB - Data memory: 1199008 kB
+#   exec summary : wall clock 0m2s, user 0m0.695s, sys 0m0.179s
+#   exec summary : Total memory: 1502340 kB - RSS memory: 317308 kB - Data memory: 1186712 kB
 #   exec summary : Successful execution
 
-# end time is Mon Apr 29 14:02:43 2024
+# end time is Wed May  1 20:09:12 2024

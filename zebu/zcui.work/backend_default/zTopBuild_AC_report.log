@@ -174,6 +174,6 @@ Design content summary, Luts, BRams, URAM, Flip-Flops, Latches, Multiplexers, Mu
  =======================
 
 Reset time counter
-   1    elapsed:0.16 s    user:0.4 s    system:0.2 s      %cpu:36.36       load:0.43       fm:171236 m     vm:1586 m     vm:+768 m      um:307 m       um:+5 m ZTOPPARTITIONING
-   2     elapsed:0.1 s    user:0.1 s      system:0 s      %cpu:88.89       load:0.43       fm:171236 m     vm:1586 m       vm:+0 m      um:308 m       um:+0 m AC_netlist_stat
-   3     elapsed:0.2 s      user:0 s      system:0 s       %cpu:0.00       load:0.43       fm:171236 m     vm:1586 m       vm:+0 m      um:308 m       um:+0 m AC_global_cost_estimate
+   1    elapsed:0.29 s    user:0.4 s    system:0.1 s      %cpu:17.54       load:0.54       fm:170946 m     vm:1586 m     vm:+768 m      um:298 m       um:+5 m ZTOPPARTITIONING
+   2     elapsed:0.2 s      user:0 s      system:0 s       %cpu:0.00       load:0.54       fm:170946 m     vm:1586 m       vm:+0 m      um:299 m       um:+1 m AC_netlist_stat
+   3     elapsed:0.3 s      user:0 s      system:0 s       %cpu:0.00       load:0.54       fm:170946 m     vm:1586 m       vm:+0 m      um:299 m       um:+0 m AC_global_cost_estimate

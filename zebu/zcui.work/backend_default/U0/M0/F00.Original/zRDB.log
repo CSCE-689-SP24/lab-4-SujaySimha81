@@ -22,7 +22,7 @@
 
 # zRDB -krb -edf ./fpga_reports/zNetgen/design_db.znf -virtex 7 -o zrdb/ZebuDB.zdb -xdl design.loc -db zxl_base.zdb -forceTopName top -fpga F0 -unit U0 -module M0 
 
-# start time is Mon Apr 29 13:59:33 2024
+# start time is Wed May  1 20:06:01 2024
 
 
 
@@ -30,15 +30,15 @@
 # Build Date : Oct 18 2022 - 01:00:11
 # ---------------------------System Context--------------------------- 
 # Cpu        40 x bogomips - 4604.90 Intel(R) Xeon(R) CPU E5-2650 v3 @ 2.30GHz
-#            Load: 1.06 1.07 0.74 1/507 5235
+#            Load: 1.06 1.01 0.67 2/519 15022
 #            Hostname: csce-quinn-s1.engr.tamu.edu   OS: Linux 3.10.0-1160.108.1.el7.x86_64
-# Memory     Total: 193183 MB Free: 171281 MB
-#            Total Free including cache: 187391 MB
-#            Swap cache: 0 MB Cached space: 16110 MB
+# Memory     Total: 193183 MB Free: 170978 MB
+#            Total Free including cache: 187316 MB
+#            Swap cache: 0 MB Cached space: 16338 MB
 #            Swap space: 4095 MB Free Swap space: 4095 MB
 #            VmSize: 353 MB VmPeak: 353 MB
 # Disk Space Total: 50 GB Available: 8 GB Used: 42 GB
-#            Free inodes: 104731932
+#            Free inodes: 104730556
 # Stack                                Soft Limit           Hard Limit  
 #            Max stack size            8388608              unlimited            bytes     
 # -------------------------------------------------------------------- 
@@ -141,14 +141,14 @@
 #   step FWC : All done in '0 seconds'
 ### warning in DATABASE [RDB0289W] : Found 7230 mismatches between Xilinx file and Edif netlist
 #   step KRB : Writing SAC to './zrdb/tree.zrdb'.
-#   step KRB : Wrote SAC in 0 seconds.
+#   step KRB : Wrote SAC in 1 seconds.
 #   step CompositeBuilder : Saving composite DB to './zrdb/composites.zrdb'
 #   step FILE : Opening file './zrdb/composites.zrdb' in write mode
 
 #   step zlog : Ran into 737 messages with id 'Netlist', yet only 16 were displayed in the log as per user request.
 #   exec summary :  742 warnings,    0 syntax errors,    0 fatal errors,    0 internal errors
-#   exec summary : wall clock 0m1s, user 0m1.142s, sys 0m0.209s
-#   exec summary : Total memory: 893200 kB - RSS memory: 479504 kB - Data memory: 729168 kB
+#   exec summary : wall clock 0m2s, user 0m1.172s, sys 0m0.237s
+#   exec summary : Total memory: 893204 kB - RSS memory: 481048 kB - Data memory: 729172 kB
 #   exec summary : Successful execution
 
-# end time is Mon Apr 29 13:59:34 2024
+# end time is Wed May  1 20:06:03 2024

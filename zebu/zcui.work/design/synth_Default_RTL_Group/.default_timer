@@ -1,2 +1,6 @@
-      elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.36       fm:171443 m      vm:326 m       vm:+0 m       um:57 m       um:+1 m -- Netlist signature generation
-      elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.36       fm:171443 m      vm:326 m       vm:+0 m       um:57 m       um:+0 m -- Netlist signature generation
+      elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.45       fm:171122 m      vm:326 m       vm:+0 m       um:56 m       um:+0 m -- Netlist signature generation
+      elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.45       fm:171121 m      vm:326 m       vm:+0 m       um:57 m       um:+0 m -- Netlist signature generation
+      elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.45       fm:171136 m      vm:326 m       vm:+0 m       um:58 m       um:+0 m -- Netlist signature generation
+      elapsed:0 s      user:0 s    system:0.1 s    %cpu:4000.00       load:0.45       fm:171136 m      vm:326 m       vm:+0 m       um:58 m       um:+0 m -- Netlist signature generation
+      elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.45       fm:171136 m      vm:326 m       vm:+0 m       um:58 m       um:+0 m -- Netlist signature generation
+      elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.45       fm:171136 m      vm:326 m       vm:+0 m       um:58 m       um:+0 m -- Netlist signature generation

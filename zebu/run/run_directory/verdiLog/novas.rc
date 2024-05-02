@@ -489,6 +489,9 @@ nLineSize = 1024
 verbose_progress = FALSE
 [TestBenchBrowser]
 -showUVMDynamicHierTreeWin = FALSE
+hideWatchView = TRUE
+hideMemberView = TRUE
+hideLocalView = TRUE
 [Text]
 hdlTypeName = blue4
 hdlLibrary = blue4

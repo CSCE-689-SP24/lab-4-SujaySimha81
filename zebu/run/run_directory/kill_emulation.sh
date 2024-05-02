@@ -9,7 +9,7 @@
 # WARNING : this script sends SIGKILL, use it carefully!
 ################################################################
 # kill the process
-kill -9 26167
+kill -9 25491
 sleep 1
 # remove remaining files
-rm -f /zebu/queue/queue.sujaysimha.7674787745.26167.0.1714421422
+rm -f /zebu/queue/queue.sujaysimha.7674787745.25491.0.1714613929

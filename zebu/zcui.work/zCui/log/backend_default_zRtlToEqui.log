@@ -22,7 +22,7 @@
 
 # zRtlToEqui --zebu-work . 
 
-# start time is Mon Apr 29 13:43:56 2024
+# start time is Wed May  1 19:51:27 2024
 
 
 
@@ -30,15 +30,15 @@
 # Build Date : Oct 18 2022 - 01:00:24
 # ---------------------------System Context--------------------------- 
 # Cpu        40 x bogomips - 4604.90 Intel(R) Xeon(R) CPU E5-2650 v3 @ 2.30GHz
-#            Load: 0.40 0.15 0.16 5/509 35865
+#            Load: 0.58 0.19 0.09 2/523 6030
 #            Hostname: csce-quinn-s1.engr.tamu.edu   OS: Linux 3.10.0-1160.108.1.el7.x86_64
-# Memory     Total: 193183 MB Free: 171300 MB
-#            Total Free including cache: 187409 MB
-#            Swap cache: 0 MB Cached space: 16109 MB
+# Memory     Total: 193183 MB Free: 170997 MB
+#            Total Free including cache: 187335 MB
+#            Swap cache: 0 MB Cached space: 16338 MB
 #            Swap space: 4095 MB Free Swap space: 4095 MB
 #            VmSize: 147 MB VmPeak: 147 MB
 # Disk Space Total: 50 GB Available: 8 GB Used: 42 GB
-#            Free inodes: 104731921
+#            Free inodes: 104730545
 # Stack                                Soft Limit           Hard Limit  
 #            Max stack size            8388608              unlimited            bytes     
 # -------------------------------------------------------------------- 
@@ -47,19 +47,19 @@
 #   step RTE : --threads: using 10 threads (maximum is 40).
 #   step Load NameDb : Starting
 #   step RTE : Loading NameDb (RHINODB) from '/opt/coe/synopsys/vcs/Q-2020.03-SP2-12/linux64/lib/libNameDB.so'...
-#   step Load NameDb : Done in     elapsed:0.2 s      user:0 s    system:0.1 s      %cpu:64.52       load:0.40       fm:171184 m      vm:260 m      vm:+46 m      um:119 m      um:+36 m
+#   step Load NameDb : Done in     elapsed:0.2 s      user:0 s    system:0.1 s      %cpu:67.80       load:0.58       fm:170878 m      vm:260 m      vm:+46 m      um:118 m      um:+35 m
 #   step Compute indexes : Starting
 #   step RTE : signals = 131, vectors = 627.
-#   step Compute indexes : Done in       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.40       fm:171184 m      vm:260 m       vm:+0 m      um:119 m       um:+0 m
+#   step Compute indexes : Done in       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.58       fm:170878 m      vm:260 m       vm:+0 m      um:118 m       um:+0 m
 #   step Load equi netlist : Starting
 #   step EDIF LOADER : reading EDIF file '/opt/coe/synopsys/zebu/Q-2020.03-SP1-4/etc/libXilinx.edif.gz'
 #   step ZNF PARSER : reading netlist from ZNF file './tools/zDB/zTopBuild_equi.edf.gz'
-#   step Load equi netlist : Done in    elapsed:0.13 s   user:0.12 s    system:0.1 s     %cpu:100.58       load:0.40       fm:171257 m      vm:283 m      vm:+23 m      um:138 m      um:+19 m
+#   step Load equi netlist : Done in    elapsed:0.13 s   user:0.12 s    system:0.1 s      %cpu:96.65       load:0.58       fm:170848 m      vm:283 m      vm:+23 m      um:140 m      um:+22 m
 #   step Build whiteboard : Starting
-#   step Build whiteboard : Done in       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.40       fm:171256 m      vm:317 m      vm:+32 m      um:141 m       um:+2 m
+#   step Build whiteboard : Done in       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.58       fm:170845 m      vm:317 m      vm:+32 m      um:143 m       um:+2 m
 #   step Build indexer : Starting
 #   step RTE : 1309 equis, 1784 unfolded wires.
-#   step Build indexer : Done in       elapsed:0 s      user:0 s    system:0.1 s    %cpu:1333.33       load:0.40       fm:171254 m     vm:1085 m     vm:+768 m      um:143 m       um:+2 m
+#   step Build indexer : Done in       elapsed:0 s    user:0.1 s    system:0.1 s    %cpu:2000.00       load:0.58       fm:170843 m     vm:1085 m     vm:+768 m      um:145 m       um:+2 m
 #   step Build MuDb : Starting
 #   step RTE : Constants file loading...
 #   step AnoDB : Anotation file './tools/zDB/zTopBuild_equi.inf' successfully opened
@@ -67,19 +67,19 @@
 #   step RTE : 0 aliases have been loaded.
 #   step Annotation DB : Closing file './tools/zDB/zTopBuild_equi.inf'
 ### warning in GateMapping [GTMP0003W] : Unknown simulation macro 'zclkgen_library/zebu_reqsig_clock_driverclock'.
-#   step Build MuDb : Done in     elapsed:0.1 s    user:0.1 s      system:0 s     %cpu:148.15       load:0.40       fm:171251 m     vm:1085 m       vm:+0 m      um:145 m       um:+2 m
-#   step RTE : Build EquiIndexToZrdbRep started at Mon Apr 29 13:43:57 2024.
+#   step Build MuDb : Done in     elapsed:0.1 s      user:0 s      system:0 s       %cpu:0.00       load:0.58       fm:170841 m     vm:1085 m       vm:+0 m      um:147 m       um:+2 m
+#   step RTE : Build EquiIndexToZrdbRep started at Wed May  1 19:51:28 2024.
 #   step Build RTL to equi mapping : Starting
 #   step Creating resolvers : Starting
-#   step Creating resolvers : Done in       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.40       fm:171254 m     vm:1085 m       vm:+0 m      um:145 m       um:+0 m
+#   step Creating resolvers : Done in       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.58       fm:170841 m     vm:1085 m       vm:+0 m      um:147 m       um:+0 m
 #   step RTE : 8 resolvers created.
-#   step RTE : Build EquiIndexToZrdbRep ended at Mon Apr 29 13:43:57 2024.
+#   step RTE : Build EquiIndexToZrdbRep ended at Wed May  1 19:51:28 2024.
 #   step Running resolvers : Starting
-#   step Running resolvers : Done in     elapsed:0.2 s      user:0 s      system:0 s       %cpu:0.00       load:0.40       fm:171340 m     vm:1088 m       vm:+0 m      um:148 m       um:+1 m
+#   step Running resolvers : Done in     elapsed:0.1 s    user:0.1 s    system:0.1 s     %cpu:190.48       load:0.58       fm:171038 m     vm:1088 m       vm:+0 m      um:147 m       um:+0 m
 #   step Serialize data : Starting
 #   step RTE : signals = 131, vectors = 619.
-#   step Serialize data : Done in     elapsed:0.5 s      user:0 s    system:0.1 s      %cpu:21.74       load:0.40       fm:171335 m     vm:1091 m       vm:+3 m      um:152 m       um:+4 m
-#   step Build RTL to equi mapping : Done in    elapsed:0.35 s    user:0.2 s    system:0.2 s      %cpu:11.38       load:0.40       fm:171335 m     vm:1091 m       vm:+6 m      um:152 m       um:+7 m
+#   step Serialize data : Done in    elapsed:0.13 s      user:0 s    system:0.1 s       %cpu:7.92       load:0.58       fm:171033 m     vm:1091 m       vm:+3 m      um:150 m       um:+3 m
+#   step Build RTL to equi mapping : Done in    elapsed:0.47 s    user:0.1 s    system:0.3 s       %cpu:8.42       load:0.58       fm:171033 m     vm:1091 m       vm:+6 m      um:150 m       um:+3 m
 #   step Property DB : reading property DB from file './tools/zTopBuild/zTopBuild_propertyDB.gz'
 #   step Property DB : reading property DB from file './tools/zTopBuild/zTopBuild_propertyDB.gz'
 #   step RTE : Print MuDb stats before remapping
@@ -113,10 +113,10 @@ Maximal number of leaves for an equiClass: 1 reached for the class with master e
 
 
 #   exec summary :    1 warnings,    0 syntax errors,    0 fatal errors,    0 internal errors
-#   exec summary : wall clock 0m1s, user 0m0.195s, sys 0m0.122s
-#   exec summary : Total memory: 1375940 kB - RSS memory: 160592 kB - Data memory: 1233392 kB
+#   exec summary : wall clock 0m2s, user 0m0.201s, sys 0m0.120s
+#   exec summary : Total memory: 1375940 kB - RSS memory: 158316 kB - Data memory: 1233392 kB
 #   exec summary : Successful execution
 
-# end time is Mon Apr 29 13:43:57 2024
+# end time is Wed May  1 19:51:29 2024
 ### warning in ZMetrics [ZTCL0304W] : ZMetrics : File (tools/zMetrics/zRtlToEqui_metrics.xml) already exists and has been replaced
 command exit code is '0'

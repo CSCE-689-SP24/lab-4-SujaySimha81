@@ -12,8 +12,8 @@ Module ZSVA_MOD_1{
 }
 
 EdfPortBounds fifo_usage_spy{
-2 0 datain
-2 0 dataout
+7 0 datain
+7 0 dataout
 3 0 remain
 }
 EdfPortBounds dut{

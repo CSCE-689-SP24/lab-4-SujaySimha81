@@ -19,8 +19,8 @@
 	</Row>
 	<Row>
 		<FPGA>U0_M0_F00/U0_M0_F0</FPGA>
-		<WRITE_BITSTREAM>174</WRITE_BITSTREAM>
-		<total>174</total>
+		<WRITE_BITSTREAM>169</WRITE_BITSTREAM>
+		<total>169</total>
 	</Row>
 </Table>
 </Metrics>

@@ -22,7 +22,7 @@
 
 # zDB -edf ./fpga_reports/zNetgen/design_db.znf -virtex 7 -o zrdb/ZebuDB.zdb -xdl design.loc -db zxl_base.zdb -forceTopName top -fpga F0 -board U0/M0 
 
-# start time is Mon Apr 29 13:59:35 2024
+# start time is Wed May  1 20:06:03 2024
 
 
 
@@ -30,15 +30,15 @@
 # Build Date : Oct 18 2022 - 00:58:07
 # ---------------------------System Context--------------------------- 
 # Cpu        40 x bogomips - 4604.90 Intel(R) Xeon(R) CPU E5-2650 v3 @ 2.30GHz
-#            Load: 1.06 1.07 0.74 2/507 5307
+#            Load: 1.06 1.01 0.67 1/519 15094
 #            Hostname: csce-quinn-s1.engr.tamu.edu   OS: Linux 3.10.0-1160.108.1.el7.x86_64
-# Memory     Total: 193183 MB Free: 171463 MB
-#            Total Free including cache: 187573 MB
-#            Swap cache: 0 MB Cached space: 16110 MB
+# Memory     Total: 193183 MB Free: 171163 MB
+#            Total Free including cache: 187501 MB
+#            Swap cache: 0 MB Cached space: 16338 MB
 #            Swap space: 4095 MB Free Swap space: 4095 MB
 #            VmSize: 111 MB VmPeak: 111 MB
 # Disk Space Total: 50 GB Available: 8 GB Used: 42 GB
-#            Free inodes: 104731927
+#            Free inodes: 104730551
 # Stack                                Soft Limit           Hard Limit  
 #            Max stack size            8388608              unlimited            bytes     
 # -------------------------------------------------------------------- 
@@ -80,7 +80,7 @@
 #   step ZVP : 740 ramluts found, 424 unsupported or unknown ramluts
 #   step ZVP : 'design.loc':5587 - reading an SRL section
 #   step ZVP : 'design.loc':6326 - reading a DSP48 section
-#   step ZVP : File 'design.loc' : read complete in 1 seconds
+#   step ZVP : File 'design.loc' : read complete in 0 seconds
 #   step ZVP : Reading vivado simplifications log file 'vivado_opt.log'
 #   step ZVP : Fetching constants
 #   step ZVP : Fetching removed
@@ -445,8 +445,8 @@
 #   step DATABASE : writing data base 'zrdb/ZebuDB.zdb'
 
 #   exec summary :  354 warnings,    0 syntax errors,    0 fatal errors,    0 internal errors
-#   exec summary : user 0m0.973s, sys 0m0.102s
-#   exec summary : Total memory: 501576 kB - RSS memory: 257380 kB - Data memory: 378648 kB
+#   exec summary : user 0m0.997s, sys 0m0.117s
+#   exec summary : Total memory: 501580 kB - RSS memory: 251484 kB - Data memory: 378652 kB
 #   exec summary : Successful execution
 
-# end time is Mon Apr 29 13:59:36 2024
+# end time is Wed May  1 20:06:04 2024

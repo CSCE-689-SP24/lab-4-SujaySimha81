@@ -4,34 +4,34 @@ Phase 4 Post Placement Optimization and Clean-Up
 Phase 4.1 Post Commit Optimization
 Phase 4.1 Post Commit Optimization | Checksum: 1e5552393
 
-Time (s): cpu = 00:00:14 ; elapsed = 00:00:13 . Memory (MB): peak = 4540.395 ; gain = 27.020 ; free physical = 168668 ; free virtual = 188897
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:13 . Memory (MB): peak = 4548.395 ; gain = 35.020 ; free physical = 168367 ; free virtual = 188824
 
 Phase 4.2 Post Placement Cleanup
 Phase 4.2 Post Placement Cleanup | Checksum: 1e5552393
 
-Time (s): cpu = 00:00:14 ; elapsed = 00:00:13 . Memory (MB): peak = 4540.395 ; gain = 27.020 ; free physical = 168704 ; free virtual = 188933
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:13 . Memory (MB): peak = 4548.395 ; gain = 35.020 ; free physical = 168402 ; free virtual = 188860
 
 Phase 4.3 Placer Reporting
 
 Phase 4.3.1 updateTiming final
 Phase 4.3.1 updateTiming final | Checksum: 1e5552393
 
-Time (s): cpu = 00:00:14 ; elapsed = 00:00:13 . Memory (MB): peak = 4540.395 ; gain = 27.020 ; free physical = 168704 ; free virtual = 188933
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:13 . Memory (MB): peak = 4548.395 ; gain = 35.020 ; free physical = 168402 ; free virtual = 188860
 Phase 4.3 Placer Reporting | Checksum: 1e5552393
 
-Time (s): cpu = 00:00:14 ; elapsed = 00:00:13 . Memory (MB): peak = 4540.395 ; gain = 27.020 ; free physical = 168704 ; free virtual = 188933
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:13 . Memory (MB): peak = 4548.395 ; gain = 35.020 ; free physical = 168402 ; free virtual = 188860
 
 Phase 4.4 Final Placement Cleanup
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 4540.395 ; gain = 0.000 ; free physical = 168704 ; free virtual = 188933
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 4548.395 ; gain = 0.000 ; free physical = 168402 ; free virtual = 188860
 Phase 4.4 Final Placement Cleanup | Checksum: 1f9dcfe5b
 
-Time (s): cpu = 00:00:14 ; elapsed = 00:00:13 . Memory (MB): peak = 4540.395 ; gain = 27.020 ; free physical = 168704 ; free virtual = 188933
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:13 . Memory (MB): peak = 4548.395 ; gain = 35.020 ; free physical = 168402 ; free virtual = 188860
 Phase 4 Post Placement Optimization and Clean-Up | Checksum: 1f9dcfe5b
 
-Time (s): cpu = 00:00:15 ; elapsed = 00:00:13 . Memory (MB): peak = 4540.395 ; gain = 27.020 ; free physical = 168704 ; free virtual = 188933
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:13 . Memory (MB): peak = 4548.395 ; gain = 35.020 ; free physical = 168402 ; free virtual = 188860
 Ending Placer Task | Checksum: 16783b8fc
 
-Time (s): cpu = 00:00:15 ; elapsed = 00:00:13 . Memory (MB): peak = 4540.395 ; gain = 27.020 ; free physical = 168705 ; free virtual = 188934
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:13 . Memory (MB): peak = 4548.395 ; gain = 35.020 ; free physical = 168403 ; free virtual = 188861
 INFO: [Common 17-83] Releasing license: Implementation
 139312 Infos, 1191 Warnings, 8 Critical Warnings and 0 Errors encountered.
 place_design completed successfully

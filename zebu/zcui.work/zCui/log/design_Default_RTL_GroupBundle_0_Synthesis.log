@@ -27,7 +27,7 @@
 #   info : Setup
 #   info : #----------------------------------------------------------------
 # command line is /opt/coe/synopsys/zebu/Q-2020.03-SP1-4/bin/zFe compile_hdr.tcl script/Bundle_0_synp.tcl -log Bundle_0.log -zlog 1 
-# start time is Mon Apr 29 13:43:35 CDT 2024
+# start time is Wed May 01 19:50:58 CDT 2024
 #   step Setup : CVS $Revision: #14 $
 #   step Setup : CVS $Date: 2021/08/23 $
 #   step Setup :         NEXT CALL to cmn::option fe_hcsrc /opt/coe/synopsys/zebu/Q-2020.03-SP1-4/etc/vhs/hc ...
@@ -41,6 +41,8 @@
 #   info : #----------------------------------------------------------------
 #   step Synth :         NEXT CALL to fs::simple_compile -technology vtx7 -mode block_based -version NewMixe ...
 #   step REPORT : Synthesizing module : fifo_0000
+#   step REPORT : Synthesizing module : top
+#   step REPORT : Synthesizing module : dut
 #   step REPORT : [39.349] Optimizing module : fifo_0000
 #   step REPORT : [6.1690] There are 5 levels of combinational cells
 #   step REPORT : [6.1689] There are 12 distinct nets driving control pins
@@ -72,49 +74,107 @@
 #   step REPORT : Writing netlist 'fifo_0000' to 'edif/fifo_0000/fifo_0000.edf.gz'
 #   step EDIF GENERATOR : netlist 'zmerge' has changed - regenerate EDIF file 'edif/fifo_0000/fifo_0000.edf.gz'
 #   step SERIALIZE : writing netlist 'zmerge' into znl file 'edif/fifo_0000/fifo_0000.edf.gz'
-#   step SERIALIZE : #bytes in: 6107, #bytes out: 3311, compression ratio: 1.844458
-#   step REPORT : [87.28] Resource usage for fifo_0000: 0.187s 32.1M
+#   step SERIALIZE : #bytes in: 6107, #bytes out: 3310, compression ratio: 1.845015
+#   step REPORT : [87.28] Resource usage for fifo_0000: 0.178s 32.1M
+#   step REPORT : [39.349] Optimizing module : top
+#   step REPORT : [6.1690] There are 4 levels of combinational cells
+#   step REPORT : [6.1689] There are 4 distinct nets driving control pins
+#   step REPORT : [6.1695] 2-input LUTs: 4
+#   step REPORT : [6.1695] 3-input LUTs: 2
+#   step REPORT : [6.1696] Total LUT area: 6
+#   step REPORT : [6.1697] State    : 4
+#   step REPORT : [6.1697]   (FF)   : 4
+#   step REPORT : [6.1884] Renaming SVA module instances in the netlist
+#   step REPORT : [6.1882] Renaming special verilog names in the netlist
+#   step REPORT : [6.1882] Special names renaming stats:
+#   step REPORT : [6.1882] Total time                 : 0.000 seconds
+#   step REPORT : [6.1882] Total wires renamed        : 0
+#   step REPORT : [6.1882] Total instances renamed    : 0
+#   step REPORT : [6.1883] Renaming wires like ports
+#   step REPORT : [6.1883] Renamed wires like ports (0 ports)
+#   step REPORT : [6.1885] Emitting RTLDB information for the netlist
+#   step REPORT : Converting netlist 'top' to znl format
+#   step STATS :  ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+#   step STATS :  |                 reg |                 lut |                bram |                uram |             memsize |              m18x18 |                bufg |                buft |               nbI/O |                nbBB |                nbZV |                nbME |               dsp48 || name
+#   step STATS :  ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+#   step STATS :  |                   4 |                   6 |                   0 |                   0 |                   0 |                   0 |                   0 |                   0 |                   2 |                   4 |                   0 |                   0 |                   0 || top
+#   step STATS :  ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+#   step REPORT : Writing netlist 'top' to 'edif/top/top.edf.gz'
+#   step EDIF GENERATOR : netlist 'zmerge' has changed - regenerate EDIF file 'edif/top/top.edf.gz'
+#   step SERIALIZE : writing netlist 'zmerge' into znl file 'edif/top/top.edf.gz'
+#   step SERIALIZE : #bytes in: 3667, #bytes out: 1665, compression ratio: 2.202402
+#   step REPORT : [87.28] Resource usage for top: 0.034s 0.0M
+#   step REPORT : [39.349] Optimizing module : dut
+#   step REPORT : [6.1690] There are 2 levels of combinational cells
+#   step REPORT : [6.1689] There are 0 distinct nets driving control pins
+#   step REPORT : [6.1696] Total LUT area: 0
+#   step REPORT : [6.1884] Renaming SVA module instances in the netlist
+#   step REPORT : [6.1882] Renaming special verilog names in the netlist
+#   step REPORT : [6.1882] Special names renaming stats:
+#   step REPORT : [6.1882] Total time                 : 0.000 seconds
+#   step REPORT : [6.1882] Total wires renamed        : 0
+#   step REPORT : [6.1882] Total instances renamed    : 0
+#   step REPORT : [6.1883] Renaming wires like ports
+#   step REPORT : [6.1883] Renamed wires like ports (0 ports)
+#   step REPORT : [6.1885] Emitting RTLDB information for the netlist
+#   step REPORT : Converting netlist 'dut' to znl format
+#   step STATS :  ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+#   step STATS :  |                 reg |                 lut |                bram |                uram |             memsize |              m18x18 |                bufg |                buft |               nbI/O |                nbBB |                nbZV |                nbME |               dsp48 || name
+#   step STATS :  ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+#   step STATS :  |                   0 |                   0 |                   0 |                   0 |                   0 |                   0 |                   0 |                   0 |                  31 |                   3 |                   0 |                   0 |                   0 || dut
+#   step STATS :  ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+#   step REPORT : Writing netlist 'dut' to 'edif/dut/dut.edf.gz'
+#   step EDIF GENERATOR : netlist 'zmerge' has changed - regenerate EDIF file 'edif/dut/dut.edf.gz'
+#   step SERIALIZE : writing netlist 'zmerge' into znl file 'edif/dut/dut.edf.gz'
+#   step SERIALIZE : #bytes in: 1718, #bytes out: 839, compression ratio: 2.047676
+#   step REPORT : [87.28] Resource usage for dut: 0.026s 0.0M
 #   step Synth : RhinoDB status is set by default value: rhino_default_status:1.
 #   step Synth : Using zCreateNameDB from /opt/coe/synopsys/vcs/Q-2020.03-SP2-12/bin/zCreateNameDB for RhinoDB population.
-#   step Synth : Running RhinoDB gate population on 1 modules. To skip this step please set SNPS_RHINODB_INTERNAL_3STEP_DISABLE env var.
-Running in 3step flow - bundle population mode, for bundle,modules = Bundle_0,fifo_0000,
+#   step Synth : Running RhinoDB gate population on 3 modules. To skip this step please set SNPS_RHINODB_INTERNAL_3STEP_DISABLE env var.
+Running in 3step flow - bundle population mode, for bundle,modules = Bundle_0,dut,top,fifo_0000,
 Got following -X option = show_times
-#     Mon Apr 29 13:43:36 2024 : zCreateNameDB Started
+#     Wed May  1 19:51:01 2024 : zCreateNameDB Started
 #      : Reading the Serializing VCS Version
-[2024-04-29 13:43:36.711119] [0x00007f7e5164a780] [info]    #      : Reading the Serializing VCS Version
+[2024-05-01 19:51:01.229321] [0x00007f8521800780] [info]    #      : Reading the Serializing VCS Version
 
 #      : Deserializing names dictionary
-[2024-04-29 13:43:36.711939] [0x00007f7e5164a780] [info]    #      : Deserializing names dictionary
+[2024-05-01 19:51:01.230154] [0x00007f8521800780] [info]    #      : Deserializing names dictionary
 
 #      : Deserializing libraries
-[2024-04-29 13:43:36.712912] [0x00007f7e5164a780] [info]    #      : Deserializing libraries
+[2024-05-01 19:51:01.231270] [0x00007f8521800780] [info]    #      : Deserializing libraries
 
 #      : Deserializing RTL
-[2024-04-29 13:43:36.713725] [0x00007f7e5164a780] [info]    #      : Deserializing RTL
+[2024-05-01 19:51:01.232118] [0x00007f8521800780] [info]    #      : Deserializing RTL
 
 #      : Deserializing Gate
-[2024-04-29 13:43:36.714464] [0x00007f7e5164a780] [info]    #      : Deserializing Gate
+[2024-05-01 19:51:01.232863] [0x00007f8521800780] [info]    #      : Deserializing Gate
 
 #      : Deserializing design object
-[2024-04-29 13:43:36.715111] [0x00007f7e5164a780] [info]    #      : Deserializing design object
+[2024-05-01 19:51:01.233647] [0x00007f8521800780] [info]    #      : Deserializing design object
 
 #      : Populating Dfs Table
-[2024-04-29 13:43:36.716104] [0x00007f7e5164a780] [info]    #      : Populating Dfs Table
+[2024-05-01 19:51:01.234542] [0x00007f8521800780] [info]    #      : Populating Dfs Table
 
-### Mon Apr 29 13:43:36 2024 : RTL Deserialized
-### Mon Apr 29 13:43:36 2024 : Starting CHUNK Population
-#     Mon Apr 29 13:43:36 2024 : Populating CHUNK fifo_0000
-#     Mon Apr 29 13:43:36 2024 : Gate Building light signal container for module fifo_0000
-#     Mon Apr 29 13:43:36 2024 : End of Gate Building light signal container for module fifo_0000
-### Mon Apr 29 13:43:36 2024(+0s) : CHUNK Population done
+### Wed May  1 19:51:01 2024 : RTL Deserialized
+### Wed May  1 19:51:01 2024 : Starting CHUNK Population
+#     Wed May  1 19:51:01 2024 : Populating CHUNK dut
+#     Wed May  1 19:51:01 2024 : Gate Building light signal container for module dut
+#     Wed May  1 19:51:01 2024 : End of Gate Building light signal container for module dut
+#     Wed May  1 19:51:01 2024 : Populating CHUNK top
+#     Wed May  1 19:51:01 2024 : Gate Building light signal container for module top
+#     Wed May  1 19:51:01 2024 : End of Gate Building light signal container for module top
+#     Wed May  1 19:51:01 2024 : Populating CHUNK fifo_0000
+#     Wed May  1 19:51:01 2024 : Gate Building light signal container for module fifo_0000
+#     Wed May  1 19:51:01 2024 : End of Gate Building light signal container for module fifo_0000
+### Wed May  1 19:51:01 2024(+0s) : CHUNK Population done
 zCreateNameDB finished without errors or warnings.
-#     Mon Apr 29 13:43:36 2024 : zCreateNameDB Ended
-#   step Synth : Synthesis called the following command: '/opt/coe/synopsys/vcs/Q-2020.03-SP2-12/bin/zCreateNameDB -bundle Bundle_0,fifo_0000,  -v -X show_times -z /home/grads/s/sujaysimha/CSCE_689/lab-4-SujaySimha81/zebu/zcui.work/design/synth_Default_RTL_Group'
+#     Wed May  1 19:51:01 2024 : zCreateNameDB Ended
+#   step Synth : Synthesis called the following command: '/opt/coe/synopsys/vcs/Q-2020.03-SP2-12/bin/zCreateNameDB -bundle Bundle_0,dut,top,fifo_0000,  -v -X show_times -z /home/grads/s/sujaysimha/CSCE_689/lab-4-SujaySimha81/zebu/zcui.work/design/synth_Default_RTL_Group'
 
-#   step exec summary : time 0m1.348s
+#   step exec summary : time 0m3.121s
 #   exec summary : Total memory: 124000 kB minimum 
 #   exec summary : Successful execution
 
-# end time is Mon Apr 29 13:43:36 CDT 2024
+# end time is Wed May 01 19:51:01 CDT 2024
 zFe exit status: 0
 command exit code is '0'

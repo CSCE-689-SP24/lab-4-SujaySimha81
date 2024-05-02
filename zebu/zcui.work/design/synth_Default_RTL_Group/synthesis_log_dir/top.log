@@ -25,5 +25,5 @@
 #   step REPORT : Writing netlist 'top' to 'edif/top/top.edf.gz'
 #   step EDIF GENERATOR : netlist 'zmerge' has changed - regenerate EDIF file 'edif/top/top.edf.gz'
 #   step SERIALIZE : writing netlist 'zmerge' into znl file 'edif/top/top.edf.gz'
-#   step SERIALIZE : #bytes in: 3669, #bytes out: 1669, compression ratio: 2.198322
-#   step REPORT : [87.28] Resource usage for top: 0.030s 0.0M
+#   step SERIALIZE : #bytes in: 3667, #bytes out: 1665, compression ratio: 2.202402
+#   step REPORT : [87.28] Resource usage for top: 0.034s 0.0M

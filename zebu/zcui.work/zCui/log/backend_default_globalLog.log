@@ -23,13 +23,13 @@ View: Compile profile
       BETA version: results may not be fully accurate
   Compilation Summary
       Last session wall clock times:
-          FE     : 26s
-          BE     : 19min 08s
-          Total  : 19min 34s
+          FE     : 38s
+          BE     : 18min 07s
+          Total  : 18min 45s
       
       All sessions cumulative compile times:
-          without delay  : 18min 44s
-          with delay*    : 19min 16s
+          without delay  : 18min 02s
+          with delay*    : 18min 26s
       
       *including slot and grid delays, difference with total wall clock time could be NFS wait or internal flow handling delays
 

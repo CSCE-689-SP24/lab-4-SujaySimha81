@@ -4,9 +4,6 @@ zFAST results analysis:
 Module: clkg
   Xcui file design/synth_Default_RTL_Group/xcui/clkg.xcui is read
   Checksum value 2e59fe94582826bbd8a6520f40c57a188800bd0a2304eb68a97faff896eaf007b6e508ef26a789f6c03a7bf6b8f2ea6000d04aa46e6d477a30a5db416e73ba1b
-Module: dut
-  Xcui file design/synth_Default_RTL_Group/xcui/dut.xcui is read
-  Checksum value 42460cb786fdfb64cce990e36415cc643c01f893501abe9e0d6be387a883b1f8d276e845270f9f62b4c008e3f922321e9d9445f6a929702ccc03e9bde468fb82
 Module: fifo_usage_spy
   Xcui file design/synth_Default_RTL_Group/xcui/fifo_usage_spy.xcui is read
   Checksum value 5e54cff60e21ab825b2aa9ac2a4b2ca4975329ba7306f40bb08946d13dd27912748d2b21b9f52b239d15a6813113b9caa250092640d102e44b5138694cdc5ccf
@@ -33,7 +30,4 @@ Module: rom
 Module: stb
   Xcui file design/synth_Default_RTL_Group/xcui/stb.xcui is read
   Checksum value 36cb3a64813338c862c4cc73aa8a6b47d5fba995e4845d4198ac24bd3513f367573334166b99145f7c2a7c6e842f1345453c5fb7a1dbf5de5d30040e6b3aecb6
-Module: top
-  Xcui file design/synth_Default_RTL_Group/xcui/top.xcui is read
-  Checksum value cdaeb42bb454a572bf14616b75844bdb332a210c9f4ddcaadbb2a9c5ef643265ec6f85650833fda1271e92975e3ac0d508c466c7ecef97553e3faf7792cc6343
 zFAST output analyzed

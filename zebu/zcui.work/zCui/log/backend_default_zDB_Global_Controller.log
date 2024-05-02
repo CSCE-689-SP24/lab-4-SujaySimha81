@@ -1,38 +1,38 @@
-#   29/04/24  13:44:20 - Fpga backend_default_U0_M0_F08_PaR_Controller is passed
-#   29/04/24  13:44:20 - Fpga backend_default_U0_M0_IF_PaR_Controller is passed
-#   29/04/24  13:44:20 - zDB_Global will be launched
-#   29/04/24  14:02:37 - Fpga backend_default_U0_M0_F00_PaR_Controller is passed
-#   29/04/24  14:02:40 - zDBGlobal Script Written
-#   29/04/24  14:02:40 - #   Mon 29 Apr 2024 02:02:40 PM CDT - backend_default_zDB_Global Spawned
-#   29/04/24  14:02:44 - ZRDB merge breakdown:
-#   29/04/24  14:02:44 -     - Initial_load : 0s
-#   29/04/24  14:02:44 -     - ImportConstants : 0s
-#   29/04/24  14:02:44 -     - EquiConsolidation : 0s
-#   29/04/24  14:02:44 -     - Import_FPGA_U0/M0/F08 : 0s
-#   29/04/24  14:02:44 -     - Import_FPGA_U0/M0/IF : 0s
-#   29/04/24  14:02:44 -     - Import_FPGA_U0/M0/F00 : 1s
-#   29/04/24  14:02:44 -     - MergeZebuDb : 0s
-#   29/04/24  14:02:44 -     - ImportProperties : 0s
-#   29/04/24  14:02:44 -     - ZebuPowerOnReplication : 0s
-#   29/04/24  14:02:44 -     - CoordConsolidation : 0s
-#   29/04/24  14:02:44 -     - FlagSignalsAndVectors : 0s
-#   29/04/24  14:02:44 -     - FlagNodes : 0s
-#   29/04/24  14:02:44 -     - BackslashMemDb : 0s
-#   29/04/24  14:02:44 -     - ComputeAndSaveCRC : 0s
-#   29/04/24  14:02:44 -     - CopyPowerDomainStatusCoordinates : 0s
-#   29/04/24  14:02:45 -     - SaveMemories : 0s
-#   29/04/24  14:02:45 -     - BuildExtendedPowerDomainDB : 0s
-#   29/04/24  14:02:45 -     - IndexNames : 0s
-#   29/04/24  14:02:45 -     - SetSaveTreeParameters : 0s
-#   29/04/24  14:02:45 -     - SaveCoords : 0s
-#   29/04/24  14:02:45 -     - DefaultSelection : 0s
-#   29/04/24  14:02:45 -     - SaveNames : 0s
-#   29/04/24  14:02:45 -     - SaveXCui : 0s
-#   29/04/24  14:02:45 -     - SaveEquis : 0s
-#   29/04/24  14:02:45 -     - SaveTreeLight : 0s
-#   29/04/24  14:02:45 -     - ExportToMuDb : 0s
-#   29/04/24  14:02:45 -     - SaveCoords : 0s
-#   29/04/24  14:02:45 -     - CleanZebuDb : 0s
-#   29/04/24  14:02:45 -     - SaveZebuDb : 0s
-#   29/04/24  14:02:45 - Total computation : 1s
-#   29/04/24  14:02:45 - zDBGlobal is passed
+#   01/05/24  19:51:51 - Fpga backend_default_U0_M0_F08_PaR_Controller is passed
+#   01/05/24  19:51:51 - Fpga backend_default_U0_M0_IF_PaR_Controller is passed
+#   01/05/24  19:51:51 - zDB_Global will be launched
+#   01/05/24  20:09:04 - Fpga backend_default_U0_M0_F00_PaR_Controller is passed
+#   01/05/24  20:09:06 - zDBGlobal Script Written
+#   01/05/24  20:09:06 - #   Wed 01 May 2024 08:09:06 PM CDT - backend_default_zDB_Global Spawned
+#   01/05/24  20:09:13 - ZRDB merge breakdown:
+#   01/05/24  20:09:13 -     - Initial_load : 0s
+#   01/05/24  20:09:13 -     - ImportConstants : 0s
+#   01/05/24  20:09:13 -     - EquiConsolidation : 0s
+#   01/05/24  20:09:13 -     - Import_FPGA_U0/M0/F08 : 1s
+#   01/05/24  20:09:13 -     - Import_FPGA_U0/M0/IF : 0s
+#   01/05/24  20:09:13 -     - Import_FPGA_U0/M0/F00 : 0s
+#   01/05/24  20:09:13 -     - MergeZebuDb : 0s
+#   01/05/24  20:09:13 -     - ImportProperties : 0s
+#   01/05/24  20:09:13 -     - ZebuPowerOnReplication : 0s
+#   01/05/24  20:09:14 -     - CoordConsolidation : 0s
+#   01/05/24  20:09:14 -     - FlagSignalsAndVectors : 0s
+#   01/05/24  20:09:14 -     - FlagNodes : 0s
+#   01/05/24  20:09:14 -     - BackslashMemDb : 0s
+#   01/05/24  20:09:14 -     - ComputeAndSaveCRC : 0s
+#   01/05/24  20:09:14 -     - CopyPowerDomainStatusCoordinates : 0s
+#   01/05/24  20:09:14 -     - SaveMemories : 0s
+#   01/05/24  20:09:14 -     - BuildExtendedPowerDomainDB : 0s
+#   01/05/24  20:09:14 -     - IndexNames : 0s
+#   01/05/24  20:09:14 -     - SetSaveTreeParameters : 0s
+#   01/05/24  20:09:14 -     - SaveCoords : 0s
+#   01/05/24  20:09:14 -     - DefaultSelection : 0s
+#   01/05/24  20:09:14 -     - SaveNames : 0s
+#   01/05/24  20:09:14 -     - SaveXCui : 0s
+#   01/05/24  20:09:14 -     - SaveEquis : 0s
+#   01/05/24  20:09:14 -     - SaveTreeLight : 0s
+#   01/05/24  20:09:14 -     - ExportToMuDb : 1s
+#   01/05/24  20:09:14 -     - SaveCoords : 0s
+#   01/05/24  20:09:14 -     - CleanZebuDb : 0s
+#   01/05/24  20:09:14 -     - SaveZebuDb : 0s
+#   01/05/24  20:09:14 - Total computation : 2s
+#   01/05/24  20:09:14 - zDBGlobal is passed

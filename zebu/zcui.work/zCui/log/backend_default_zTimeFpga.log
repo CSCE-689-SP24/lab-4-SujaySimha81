@@ -22,7 +22,7 @@
 
 # zTime zTime_fpga_zcui.tcl -log zTime_fpga.log 
 
-# start time is Mon Apr 29 14:02:45 2024
+# start time is Wed May  1 20:09:10 2024
 
 
 
@@ -30,15 +30,15 @@
 # Build Date : Oct 18 2022 - 01:00:12
 # ---------------------------System Context--------------------------- 
 # Cpu        40 x bogomips - 4604.90 Intel(R) Xeon(R) CPU E5-2650 v3 @ 2.30GHz
-#            Load: 0.30 0.63 0.62 2/505 7969
+#            Load: 0.31 0.63 0.58 4/516 17676
 #            Hostname: csce-quinn-s1.engr.tamu.edu   OS: Linux 3.10.0-1160.108.1.el7.x86_64
-# Memory     Total: 193183 MB Free: 171401 MB
-#            Total Free including cache: 187512 MB
-#            Swap cache: 0 MB Cached space: 16111 MB
+# Memory     Total: 193183 MB Free: 170870 MB
+#            Total Free including cache: 187209 MB
+#            Swap cache: 0 MB Cached space: 16339 MB
 #            Swap space: 4095 MB Free Swap space: 4095 MB
 #            VmSize: 313 MB VmPeak: 313 MB
 # Disk Space Total: 50 GB Available: 8 GB Used: 42 GB
-#            Free inodes: 104731908
+#            Free inodes: 104730534
 # Stack                                Soft Limit           Hard Limit  
 #            Max stack size            8388608              unlimited            bytes     
 # -------------------------------------------------------------------- 
@@ -69,14 +69,14 @@
 #   step IMPORT : Number of timing arcs created: 4, of them 0 are ZCLK
 #   step Memories timing paths distribution : 
 # +
-#   step IMPORT : Done in       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.35       fm:171400 m      vm:375 m       vm:+0 m       um:94 m       um:+0 m
+#   step IMPORT : Done in     elapsed:0.3 s      user:0 s      system:0 s       %cpu:0.00       load:0.31       fm:170806 m      vm:375 m       vm:+0 m       um:99 m       um:+0 m
 #   step IMPORT : Starting
 #   step IMPORT : import use ZEBU_EDIF_TRANSFER
 #   step IMPORT : Import asynchronous paths from 'tools/zTime/global_rtb_time_U0_M0_IF.edf.gz'
 #   step ZNF PARSER : reading netlist from ZNF file 'tools/zTime/global_rtb_time_U0_M0_IF.edf.gz'
 #   step Memories timing paths distribution : 
 # +
-#   step IMPORT : Done in       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.35       fm:171400 m      vm:377 m       vm:+2 m       um:94 m       um:+0 m
+#   step IMPORT : Done in       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.31       fm:170806 m      vm:377 m       vm:+2 m       um:99 m       um:+0 m
 #   step SOURCE : Source gzipped file 'work.Part_0/tools/zTime/zCoreBuild_timing.zti' ...
 #   step SOURCE : Source gzipped file 'tools/zTime/zParFPGAs_timing.zti' ...
 #   step SOURCE : Source file 'U0/M0/F00/zFpgaTiming.zti' ...
@@ -150,14 +150,14 @@ source ../utf_generatefiles/zTime_config.tcl
 #   step ANALYSIS : The maximum topological depth is 6
 #   step ANALYSIS : Build clock topological order
 #   step ANALYSIS : Build data topological order
-#   step initializeAnalysis. : Done in       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.35       fm:171400 m      vm:377 m       vm:+0 m       um:95 m       um:+0 m
-#   step ANALYSIS : Done in       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.35       fm:171400 m      vm:377 m       vm:+0 m       um:95 m       um:+0 m
+#   step initializeAnalysis. : Done in       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.31       fm:170806 m      vm:377 m       vm:+0 m      um:100 m       um:+1 m
+#   step ANALYSIS : Done in       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.31       fm:170806 m      vm:377 m       vm:+0 m      um:100 m       um:+1 m
 #   step REPORT : Report output asynchronous set/reset paths statistics
 #   step ANALYSIS : Starting
-#   step ANALYSIS : Done in       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.35       fm:171400 m      vm:377 m       vm:+0 m       um:95 m       um:+0 m
+#   step ANALYSIS : Done in       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.31       fm:170806 m      vm:377 m       vm:+0 m      um:100 m       um:+0 m
 #   step Build output paths : Starting
 #   step ANALYSIS : Find worst path for each output filter
-#   step Build output paths : Done in     elapsed:0.1 s      user:0 s      system:0 s       %cpu:0.00       load:0.35       fm:171398 m      vm:397 m      vm:+20 m       um:97 m       um:+2 m
+#   step Build output paths : Done in       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.31       fm:170806 m      vm:401 m      vm:+24 m      um:100 m       um:+0 m
 #   step REPORT : +-------------------------------------------------------------------------------+
 #   step REPORT :   Longest inter-fpga filter path delay is : 31 ns
 #   step REPORT : +-------------------------------------------------------------------------------+
@@ -192,7 +192,7 @@ source ../utf_generatefiles/zTime_config.tcl
 #   step DRIVE PATHS : Drive all paths in file 'ztime_filter_out_paths_fpga.html' (HTML format)
 #   step RTL : RTL NAME IS DISABLED
 #   step Build output paths : Starting
-#   step Build output paths : Done in       elapsed:0 s      user:0 s    system:0.1 s    %cpu:4000.00       load:0.35       fm:171392 m      vm:445 m       vm:+0 m      um:103 m       um:+0 m
+#   step Build output paths : Done in       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.31       fm:170800 m      vm:453 m       vm:+0 m      um:106 m       um:+0 m
 #   step REPORT : +-------------------------------------------------------------------------------+
 #   step REPORT :   No inter-fpga clock path found
 #   step REPORT : +-------------------------------------------------------------------------------+
@@ -200,7 +200,7 @@ source ../utf_generatefiles/zTime_config.tcl
 #   step DRIVE NETS : Drive all clock nets in file 'clock_nets.dump'
 
 #   step ANALYSIS : Starting
-#   step ANALYSIS : Done in       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.35       fm:171392 m      vm:445 m       vm:+0 m      um:103 m       um:+0 m
+#   step ANALYSIS : Done in       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.31       fm:170800 m      vm:453 m       vm:+0 m      um:106 m       um:+0 m
 #   step ANALYSIS : Propagate delays through the timing graph
 #   step ANALYSIS : Find all memories of the board
 #   step ANALYSIS : Final number of memories explored: 2
@@ -239,7 +239,7 @@ source ../utf_generatefiles/zTime_config.tcl
 #   step ANALYSIS : Find worst path for each output ports of the board
 #   step ANALYSIS : Given a zdelay (clock skew) of 60 ns
 #   step ADVANCED_MCP : MCP advanced method: 1
-#   step Build output paths : Done in     elapsed:0.2 s      user:0 s      system:0 s       %cpu:0.00       load:0.35       fm:171380 m      vm:529 m      vm:+84 m      um:115 m      um:+12 m
+#   step Build output paths : Done in     elapsed:0.1 s      user:0 s    system:0.1 s      %cpu:74.07       load:0.31       fm:170782 m      vm:529 m      vm:+76 m      um:122 m      um:+16 m
 #   step REPORT : +-------------------------------------------------------------------------------+
 #   step REPORT :   Critical routing data path delay : 160 ns
 #   step REPORT :   . Constant part    : 40 ns
@@ -358,9 +358,9 @@ source ../utf_generatefiles/zTime_config.tcl
 #   step ARC STATS : 0 i2i_ext, 0 if2if, 0 if2h, 10 f2cd, 4 cd2f, 1 cd2cd, 0 cd2pin, 0 pin2cd, 0 pin2f, 0 f2pin
 
 #   exec summary :    8 warnings,    0 syntax errors,    0 fatal errors,    0 internal errors
-#   exec summary : user 0m0.83s, sys 0m0.155s
-#   exec summary : Total memory: 542184 kB - RSS memory: 118904 kB - Data memory: 263412 kB
+#   exec summary : user 0m0.81s, sys 0m0.133s
+#   exec summary : Total memory: 542184 kB - RSS memory: 125688 kB - Data memory: 263412 kB
 #   exec summary : Successful execution
 
-# end time is Mon Apr 29 14:02:46 2024
+# end time is Wed May  1 20:09:12 2024
 command exit code is '0'
